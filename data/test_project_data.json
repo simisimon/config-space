@@ -1,0 +1,11 @@
+[
+  {
+    "commit_hash": "643b6134b92bfec74c822d0436fc7c57ded16935",
+    "author": "Sebastian Simon <Bastisimon95@googlemail.com>",
+    "commit_mgs": "Initial commit\n",
+    "files_changed": 2,
+    "insertions": 86,
+    "deletions": 0,
+    "network_data": {
+      "links": 15,
+      "concepts": 
