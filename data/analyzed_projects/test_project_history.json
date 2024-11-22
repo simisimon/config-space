@@ -1,0 +1,1184 @@
+[
+  {
+    "commit_hash": "157a941cd30350e745bb28db886fd483c43451ce",
+    "parent_commit": null,
+    "is_config_related": true,
+    "author": "Sebastian Simon <bastisimon95@googlemail.com>",
+    "commit_mgs": "Initial commit\n",
+    "files_changed": 2,
+    "insertions": 86,
+    "deletions": 0,
+    "network_data": {
+      "links": 5,
+      "concepts": [
+        "docker",
+        "maven"
+      ],
+      "config_files": [
+        "src/pom.xml",
+        "src/Dockerfile"
+      ],
+      "config_files_data": [
+        {
+          "file_path": "src/Dockerfile",
+          "options": 18,
+          "pairs": [
+            {
+              "option": "file",
+              "value": "src/Dockerfile",
+              "type": "PATH"
+            },
+            {
+              "option": "FROM.image",
+              "value": "maven:3.8.6-eclipse-temurin-17",
+              "type": "IMAGE"
+            },
+            {
+              "option": "FROM.name",
+              "value": "build",
+              "type": "NAME"
+            },
+            {
+              "option": "WORKDIR",
+              "value": "/app",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.src",
+              "value": "pom.xml",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.dest",
+              "value": ".",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.src",
+              "value": "src",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.dest",
+              "value": "./src",
+              "type": "PATH"
+            },
+            {
+              "option": "FROM",
+              "value": "eclipse-temurin:17-jdk-alpine",
+              "type": "IMAGE"
+            },
+            {
+              "option": "WORKDIR",
+              "value": "/app",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.src",
+              "value": "app/target/spring-boot-app-0.0.1-SNAPSHOT.jar",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.dest",
+              "value": "app.jar",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.--from",
+              "value": "build",
+              "type": "NAME"
+            },
+            {
+              "option": "EXPOSE",
+              "value": "8080",
+              "type": "PORT"
+            },
+            {
+              "option": "ENTRYPOINT.exec_command",
+              "value": "java -jar app.jar",
+              "type": "COMMAND"
+            },
+            {
+              "option": "ENTRYPOINT.param0",
+              "value": "java",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "ENTRYPOINT.param1",
+              "value": "-jar",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "ENTRYPOINT.param2",
+              "value": "app.jar",
+              "type": "PATH"
+            }
+          ],
+          "insertions": 24,
+          "deletions": 0,
+          "total_changes": 24,
+          "diff": null
+        },
+        {
+          "file_path": "src/pom.xml",
+          "options": 17,
+          "pairs": [
+            {
+              "option": "file",
+              "value": "src/pom.xml",
+              "type": "PATH"
+            },
+            {
+              "option": "project.modelVersion",
+              "value": "4.0.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.groupId",
+              "value": "com.example",
+              "type": "NAME"
+            },
+            {
+              "option": "project.artifactId",
+              "value": "spring-boot-app",
+              "type": "NAME"
+            },
+            {
+              "option": "project.version",
+              "value": "0.0.1-SNAPSHOT",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.packaging",
+              "value": "jar",
+              "type": "TYPE"
+            },
+            {
+              "option": "project.name",
+              "value": "spring-boot-app",
+              "type": "NAME"
+            },
+            {
+              "option": "project.description",
+              "value": "Simple Spring Boot Application",
+              "type": "COMMAND"
+            },
+            {
+              "option": "project.parent.groupId",
+              "value": "org.springframework.boot",
+              "type": "NAME"
+            },
+            {
+              "option": "project.parent.artifactId",
+              "value": "spring-boot-starter-parent",
+              "type": "NAME"
+            },
+            {
+              "option": "project.parent.version",
+              "value": "3.1.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.properties.java.version",
+              "value": "17",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.properties.spring.boot.version",
+              "value": "3.1.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
+              "value": "org.springframework.boot",
+              "type": "ID"
+            },
+            {
+              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
+              "value": "spring-boot-maven-plugin",
+              "type": "ID"
+            },
+            {
+              "option": "ExecutableName",
+              "value": "target/spring-boot-app-0.0.1-SNAPSHOT.jar",
+              "type": "PATH"
+            },
+            {
+              "option": "ExecutableNameNoVersion",
+              "value": "target/spring-boot-app.jar",
+              "type": "PATH"
+            }
+          ],
+          "insertions": 62,
+          "deletions": 0,
+          "total_changes": 62,
+          "diff": null
+        }
+      ]
+    }
+  },
+  {
+    "commit_hash": "52493393998af4d9593e3d5579a529ee787d6ce5",
+    "parent_commit": null,
+    "is_config_related": true,
+    "author": "Sebastian Simon <bastisimon95@googlemail.com>",
+    "commit_mgs": "Add docker compose file\n",
+    "files_changed": 1,
+    "insertions": 13,
+    "deletions": 0,
+    "network_data": {
+      "links": 8,
+      "concepts": [
+        "docker",
+        "docker-compose",
+        "maven"
+      ],
+      "config_files": [
+        "src/docker-compose.yml",
+        "src/Dockerfile",
+        "src/pom.xml"
+      ],
+      "config_files_data": [
+        {
+          "file_path": "src/Dockerfile",
+          "options": 18,
+          "pairs": [
+            {
+              "option": "file",
+              "value": "src/Dockerfile",
+              "type": "PATH"
+            },
+            {
+              "option": "FROM.image",
+              "value": "maven:3.8.6-eclipse-temurin-17",
+              "type": "IMAGE"
+            },
+            {
+              "option": "FROM.name",
+              "value": "build",
+              "type": "NAME"
+            },
+            {
+              "option": "WORKDIR",
+              "value": "/app",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.src",
+              "value": "pom.xml",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.dest",
+              "value": ".",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.src",
+              "value": "src",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.dest",
+              "value": "./src",
+              "type": "PATH"
+            },
+            {
+              "option": "FROM",
+              "value": "eclipse-temurin:17-jdk-alpine",
+              "type": "IMAGE"
+            },
+            {
+              "option": "WORKDIR",
+              "value": "/app",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.src",
+              "value": "app/target/spring-boot-app-0.0.1-SNAPSHOT.jar",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.dest",
+              "value": "app.jar",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.--from",
+              "value": "build",
+              "type": "NAME"
+            },
+            {
+              "option": "EXPOSE",
+              "value": "8080",
+              "type": "PORT"
+            },
+            {
+              "option": "ENTRYPOINT.exec_command",
+              "value": "java -jar app.jar",
+              "type": "COMMAND"
+            },
+            {
+              "option": "ENTRYPOINT.param0",
+              "value": "java",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "ENTRYPOINT.param1",
+              "value": "-jar",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "ENTRYPOINT.param2",
+              "value": "app.jar",
+              "type": "PATH"
+            }
+          ]
+        },
+        {
+          "file_path": "src/docker-compose.yml",
+          "options": 8,
+          "pairs": [
+            {
+              "option": "file",
+              "value": "src/docker-compose.yml",
+              "type": "PATH"
+            },
+            {
+              "option": "version",
+              "value": "3.8",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "services.app.build.context",
+              "value": ".",
+              "type": "NAME"
+            },
+            {
+              "option": "services.app.build.dockerfile",
+              "value": "Dockerfile",
+              "type": "NAME"
+            },
+            {
+              "option": "services.app.ports.host",
+              "value": "8080",
+              "type": "PORT"
+            },
+            {
+              "option": "services.app.ports.container",
+              "value": "8080",
+              "type": "PORT"
+            },
+            {
+              "option": "services.app.environment.SPRING_PROFILES_ACTIVE",
+              "value": "prod",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "services.app.restart",
+              "value": "always",
+              "type": "UNKNOWN"
+            }
+          ],
+          "insertions": 13,
+          "deletions": 0,
+          "total_changes": 13,
+          "diff": "diff --git a/src/docker-compose.yml b/src/docker-compose.yml\nnew file mode 100644\nindex 0000000..cd21fd6\n--- /dev/null\n+++ b/src/docker-compose.yml\n@@ -0,0 +1,13 @@\n+version: '3.8'\n+\n+services:\n+  app:\n+    build:\n+      context: .\n+      dockerfile: Dockerfile\n+    ports:\n+      - \"8080:8080\"\n+    environment:\n+      # Define environment variables here if needed\n+      SPRING_PROFILES_ACTIVE: prod\n+    restart: always\n"
+        },
+        {
+          "file_path": "src/pom.xml",
+          "options": 17,
+          "pairs": [
+            {
+              "option": "file",
+              "value": "src/pom.xml",
+              "type": "PATH"
+            },
+            {
+              "option": "project.modelVersion",
+              "value": "4.0.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.groupId",
+              "value": "com.example",
+              "type": "NAME"
+            },
+            {
+              "option": "project.artifactId",
+              "value": "spring-boot-app",
+              "type": "NAME"
+            },
+            {
+              "option": "project.version",
+              "value": "0.0.1-SNAPSHOT",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.packaging",
+              "value": "jar",
+              "type": "TYPE"
+            },
+            {
+              "option": "project.name",
+              "value": "spring-boot-app",
+              "type": "NAME"
+            },
+            {
+              "option": "project.description",
+              "value": "Simple Spring Boot Application",
+              "type": "COMMAND"
+            },
+            {
+              "option": "project.parent.groupId",
+              "value": "org.springframework.boot",
+              "type": "NAME"
+            },
+            {
+              "option": "project.parent.artifactId",
+              "value": "spring-boot-starter-parent",
+              "type": "NAME"
+            },
+            {
+              "option": "project.parent.version",
+              "value": "3.1.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.properties.java.version",
+              "value": "17",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.properties.spring.boot.version",
+              "value": "3.1.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
+              "value": "org.springframework.boot",
+              "type": "ID"
+            },
+            {
+              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
+              "value": "spring-boot-maven-plugin",
+              "type": "ID"
+            },
+            {
+              "option": "ExecutableName",
+              "value": "target/spring-boot-app-0.0.1-SNAPSHOT.jar",
+              "type": "PATH"
+            },
+            {
+              "option": "ExecutableNameNoVersion",
+              "value": "target/spring-boot-app.jar",
+              "type": "PATH"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "commit_hash": "603a1e0912af80ca1947adfa9df9904ff9f4848c",
+    "parent_commit": null,
+    "is_config_related": true,
+    "author": "Sebastian Simon <bastisimon95@googlemail.com>",
+    "commit_mgs": "Remove dependencies in pom.xml\n",
+    "files_changed": 1,
+    "insertions": 1,
+    "deletions": 20,
+    "network_data": {
+      "links": 8,
+      "concepts": [
+        "docker",
+        "docker-compose",
+        "maven"
+      ],
+      "config_files": [
+        "src/docker-compose.yml",
+        "src/Dockerfile",
+        "src/pom.xml"
+      ],
+      "config_files_data": [
+        {
+          "file_path": "src/Dockerfile",
+          "options": 18,
+          "pairs": [
+            {
+              "option": "file",
+              "value": "src/Dockerfile",
+              "type": "PATH"
+            },
+            {
+              "option": "FROM.image",
+              "value": "maven:3.8.6-eclipse-temurin-17",
+              "type": "IMAGE"
+            },
+            {
+              "option": "FROM.name",
+              "value": "build",
+              "type": "NAME"
+            },
+            {
+              "option": "WORKDIR",
+              "value": "/app",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.src",
+              "value": "pom.xml",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.dest",
+              "value": ".",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.src",
+              "value": "src",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.dest",
+              "value": "./src",
+              "type": "PATH"
+            },
+            {
+              "option": "FROM",
+              "value": "eclipse-temurin:17-jdk-alpine",
+              "type": "IMAGE"
+            },
+            {
+              "option": "WORKDIR",
+              "value": "/app",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.src",
+              "value": "app/target/spring-boot-app-0.0.1-SNAPSHOT.jar",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.dest",
+              "value": "app.jar",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.--from",
+              "value": "build",
+              "type": "NAME"
+            },
+            {
+              "option": "EXPOSE",
+              "value": "8080",
+              "type": "PORT"
+            },
+            {
+              "option": "ENTRYPOINT.exec_command",
+              "value": "java -jar app.jar",
+              "type": "COMMAND"
+            },
+            {
+              "option": "ENTRYPOINT.param0",
+              "value": "java",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "ENTRYPOINT.param1",
+              "value": "-jar",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "ENTRYPOINT.param2",
+              "value": "app.jar",
+              "type": "PATH"
+            }
+          ]
+        },
+        {
+          "file_path": "src/docker-compose.yml",
+          "options": 8,
+          "pairs": [
+            {
+              "option": "file",
+              "value": "src/docker-compose.yml",
+              "type": "PATH"
+            },
+            {
+              "option": "version",
+              "value": "3.8",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "services.app.build.context",
+              "value": ".",
+              "type": "NAME"
+            },
+            {
+              "option": "services.app.build.dockerfile",
+              "value": "Dockerfile",
+              "type": "NAME"
+            },
+            {
+              "option": "services.app.ports.host",
+              "value": "8080",
+              "type": "PORT"
+            },
+            {
+              "option": "services.app.ports.container",
+              "value": "8080",
+              "type": "PORT"
+            },
+            {
+              "option": "services.app.environment.SPRING_PROFILES_ACTIVE",
+              "value": "prod",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "services.app.restart",
+              "value": "always",
+              "type": "UNKNOWN"
+            }
+          ]
+        },
+        {
+          "file_path": "src/pom.xml",
+          "options": 17,
+          "pairs": [
+            {
+              "option": "file",
+              "value": "src/pom.xml",
+              "type": "PATH"
+            },
+            {
+              "option": "project.modelVersion",
+              "value": "4.0.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.groupId",
+              "value": "com.example",
+              "type": "NAME"
+            },
+            {
+              "option": "project.artifactId",
+              "value": "spring-boot-app",
+              "type": "NAME"
+            },
+            {
+              "option": "project.version",
+              "value": "0.0.1-SNAPSHOT",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.packaging",
+              "value": "jar",
+              "type": "TYPE"
+            },
+            {
+              "option": "project.name",
+              "value": "spring-boot-app",
+              "type": "NAME"
+            },
+            {
+              "option": "project.description",
+              "value": "Simple Spring Boot Application",
+              "type": "COMMAND"
+            },
+            {
+              "option": "project.parent.groupId",
+              "value": "org.springframework.boot",
+              "type": "NAME"
+            },
+            {
+              "option": "project.parent.artifactId",
+              "value": "spring-boot-starter-parent",
+              "type": "NAME"
+            },
+            {
+              "option": "project.parent.version",
+              "value": "3.1.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.properties.java.version",
+              "value": "17",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.properties.spring.boot.version",
+              "value": "3.1.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
+              "value": "org.springframework.boot",
+              "type": "ID"
+            },
+            {
+              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
+              "value": "spring-boot-maven-plugin",
+              "type": "ID"
+            },
+            {
+              "option": "ExecutableName",
+              "value": "target/spring-boot-app-0.0.1-SNAPSHOT.jar",
+              "type": "PATH"
+            },
+            {
+              "option": "ExecutableNameNoVersion",
+              "value": "target/spring-boot-app.jar",
+              "type": "PATH"
+            }
+          ],
+          "insertions": 1,
+          "deletions": 20,
+          "total_changes": 21,
+          "diff": "diff --git a/src/pom.xml b/src/pom.xml\nindex ca9ccdc..f00fc23 100644\n--- a/src/pom.xml\n+++ b/src/pom.xml\n@@ -28,26 +28,7 @@\n             <groupId>org.springframework.boot</groupId>\n             <artifactId>spring-boot-starter-web</artifactId>\n         </dependency>\n-\n-        <!-- Optional: Spring Boot Starter for JPA (database access) -->\n-        <dependency>\n-            <groupId>org.springframework.boot</groupId>\n-            <artifactId>spring-boot-starter-data-jpa</artifactId>\n-        </dependency>\n-\n-        <!-- Optional: Database driver (e.g., H2 for in-memory DB) -->\n-        <dependency>\n-            <groupId>com.h2database</groupId>\n-            <artifactId>h2</artifactId>\n-            <scope>runtime</scope>\n-        </dependency>\n-\n-        <!-- Optional: Spring Boot Test Starter for unit testing -->\n-        <dependency>\n-            <groupId>org.springframework.boot</groupId>\n-            <artifactId>spring-boot-starter-test</artifactId>\n-            <scope>test</scope>\n-        </dependency>\n+        \n     </dependencies>\n \n     <build>\n"
+        }
+      ]
+    }
+  },
+  {
+    "commit_hash": "2cc878cf8a8770a3b0f6958c10c41105b6c3c538",
+    "parent_commit": null,
+    "is_config_related": true,
+    "author": "Sebastian Simon <bastisimon95@googlemail.com>",
+    "commit_mgs": "Add config file\n",
+    "files_changed": 1,
+    "insertions": 58,
+    "deletions": 0,
+    "network_data": {
+      "links": 11,
+      "concepts": [
+        "docker",
+        "yaml",
+        "docker-compose",
+        "maven"
+      ],
+      "config_files": [
+        "src/docker-compose.yml",
+        "src/config.yml",
+        "src/Dockerfile",
+        "src/pom.xml"
+      ],
+      "config_files_data": [
+        {
+          "file_path": "src/Dockerfile",
+          "options": 18,
+          "pairs": [
+            {
+              "option": "file",
+              "value": "src/Dockerfile",
+              "type": "PATH"
+            },
+            {
+              "option": "FROM.image",
+              "value": "maven:3.8.6-eclipse-temurin-17",
+              "type": "IMAGE"
+            },
+            {
+              "option": "FROM.name",
+              "value": "build",
+              "type": "NAME"
+            },
+            {
+              "option": "WORKDIR",
+              "value": "/app",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.src",
+              "value": "pom.xml",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.dest",
+              "value": ".",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.src",
+              "value": "src",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.dest",
+              "value": "./src",
+              "type": "PATH"
+            },
+            {
+              "option": "FROM",
+              "value": "eclipse-temurin:17-jdk-alpine",
+              "type": "IMAGE"
+            },
+            {
+              "option": "WORKDIR",
+              "value": "/app",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.src",
+              "value": "app/target/spring-boot-app-0.0.1-SNAPSHOT.jar",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.dest",
+              "value": "app.jar",
+              "type": "PATH"
+            },
+            {
+              "option": "COPY.--from",
+              "value": "build",
+              "type": "NAME"
+            },
+            {
+              "option": "EXPOSE",
+              "value": "8080",
+              "type": "PORT"
+            },
+            {
+              "option": "ENTRYPOINT.exec_command",
+              "value": "java -jar app.jar",
+              "type": "COMMAND"
+            },
+            {
+              "option": "ENTRYPOINT.param0",
+              "value": "java",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "ENTRYPOINT.param1",
+              "value": "-jar",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "ENTRYPOINT.param2",
+              "value": "app.jar",
+              "type": "PATH"
+            }
+          ]
+        },
+        {
+          "file_path": "src/config.yml",
+          "options": 34,
+          "pairs": [
+            {
+              "option": "file",
+              "value": "src/config.yml",
+              "type": "PATH"
+            },
+            {
+              "option": "app.name",
+              "value": "SampleSpringApp",
+              "type": "NAME"
+            },
+            {
+              "option": "app.version",
+              "value": "1.0.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "app.environment",
+              "value": "production",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "server.port",
+              "value": "8080",
+              "type": "PORT"
+            },
+            {
+              "option": "server.context-path",
+              "value": "/api",
+              "type": "PATH"
+            },
+            {
+              "option": "database.host",
+              "value": "localhost",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "database.port",
+              "value": "5432",
+              "type": "PORT"
+            },
+            {
+              "option": "database.name",
+              "value": "sampledb",
+              "type": "NAME"
+            },
+            {
+              "option": "database.username",
+              "value": "dbuser",
+              "type": "USERNAME"
+            },
+            {
+              "option": "database.password",
+              "value": "dbpassword",
+              "type": "PASSWORD"
+            },
+            {
+              "option": "database.max-connections",
+              "value": "20",
+              "type": "NUMBER"
+            },
+            {
+              "option": "database.min-idle-connections",
+              "value": "5",
+              "type": "ID"
+            },
+            {
+              "option": "logging.level",
+              "value": "INFO",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "logging.file.path",
+              "value": "/var/log/sample-spring-app",
+              "type": "PATH"
+            },
+            {
+              "option": "logging.file.max-size",
+              "value": "10MB",
+              "type": "SIZE"
+            },
+            {
+              "option": "logging.file.max-history",
+              "value": "7",
+              "type": "NUMBER"
+            },
+            {
+              "option": "cache.enabled",
+              "value": "true",
+              "type": "BOOLEAN"
+            },
+            {
+              "option": "cache.ttl",
+              "value": "300",
+              "type": "NUMBER"
+            },
+            {
+              "option": "cache.max-entries",
+              "value": "1000",
+              "type": "NUMBER"
+            },
+            {
+              "option": "security.enable-https",
+              "value": "true",
+              "type": "BOOLEAN"
+            },
+            {
+              "option": "security.allowed-origins",
+              "value": "https://example.com",
+              "type": "URL"
+            },
+            {
+              "option": "security.allowed-origins",
+              "value": "https://another-domain.com",
+              "type": "URL"
+            },
+            {
+              "option": "security.api-key",
+              "value": "random-generated-api-key",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "mail.enabled",
+              "value": "true",
+              "type": "EMAIL"
+            },
+            {
+              "option": "mail.host",
+              "value": "smtp.mailserver.com",
+              "type": "EMAIL"
+            },
+            {
+              "option": "mail.port",
+              "value": "587",
+              "type": "EMAIL"
+            },
+            {
+              "option": "mail.username",
+              "value": "noreply@example.com",
+              "type": "EMAIL"
+            },
+            {
+              "option": "mail.password",
+              "value": "mailpassword",
+              "type": "PASSWORD"
+            },
+            {
+              "option": "mail.from-address",
+              "value": "noreply@example.com",
+              "type": "IMAGE"
+            },
+            {
+              "option": "mail.timeout",
+              "value": "5000",
+              "type": "TIME"
+            },
+            {
+              "option": "features.enable-new-dashboard",
+              "value": "true",
+              "type": "BOOLEAN"
+            },
+            {
+              "option": "features.enable-advanced-search",
+              "value": "false",
+              "type": "BOOLEAN"
+            },
+            {
+              "option": "features.show-beta-banner",
+              "value": "true",
+              "type": "BOOLEAN"
+            }
+          ],
+          "insertions": 58,
+          "deletions": 0,
+          "total_changes": 58,
+          "diff": "diff --git a/src/config.yml b/src/config.yml\nnew file mode 100644\nindex 0000000..f0d3bc0\n--- /dev/null\n+++ b/src/config.yml\n@@ -0,0 +1,58 @@\n+# Application configuration\n+app:\n+  name: \"SampleSpringApp\"\n+  version: \"1.0.0\"\n+  environment: \"production\"\n+\n+# Server configuration\n+server:\n+  port: 8080\n+  context-path: \"/api\"\n+\n+# Database configuration\n+database:\n+  host: \"localhost\"\n+  port: 5432\n+  name: \"sampledb\"\n+  username: \"dbuser\"\n+  password: \"dbpassword\"\n+  max-connections: 20\n+  min-idle-connections: 5\n+\n+# Logging configuration\n+logging:\n+  level: \"INFO\"\n+  file:\n+    path: \"/var/log/sample-spring-app\"\n+    max-size: \"10MB\"\n+    max-history: 7\n+\n+# Cache configuration\n+cache:\n+  enabled: true\n+  ttl: 300  # Time-to-live in seconds\n+  max-entries: 1000\n+\n+# Security configuration\n+security:\n+  enable-https: true\n+  allowed-origins:\n+    - \"https://example.com\"\n+    - \"https://another-domain.com\"\n+  api-key: \"random-generated-api-key\"\n+\n+# Mail configuration\n+mail:\n+  enabled: true\n+  host: \"smtp.mailserver.com\"\n+  port: 587\n+  username: \"noreply@example.com\"\n+  password: \"mailpassword\"\n+  from-address: \"noreply@example.com\"\n+  timeout: 5000  # timeout in milliseconds\n+\n+# Feature toggles\n+features:\n+  enable-new-dashboard: true\n+  enable-advanced-search: false\n+  show-beta-banner: true\n"
+        },
+        {
+          "file_path": "src/docker-compose.yml",
+          "options": 8,
+          "pairs": [
+            {
+              "option": "file",
+              "value": "src/docker-compose.yml",
+              "type": "PATH"
+            },
+            {
+              "option": "version",
+              "value": "3.8",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "services.app.build.context",
+              "value": ".",
+              "type": "NAME"
+            },
+            {
+              "option": "services.app.build.dockerfile",
+              "value": "Dockerfile",
+              "type": "NAME"
+            },
+            {
+              "option": "services.app.ports.host",
+              "value": "8080",
+              "type": "PORT"
+            },
+            {
+              "option": "services.app.ports.container",
+              "value": "8080",
+              "type": "PORT"
+            },
+            {
+              "option": "services.app.environment.SPRING_PROFILES_ACTIVE",
+              "value": "prod",
+              "type": "UNKNOWN"
+            },
+            {
+              "option": "services.app.restart",
+              "value": "always",
+              "type": "UNKNOWN"
+            }
+          ]
+        },
+        {
+          "file_path": "src/pom.xml",
+          "options": 17,
+          "pairs": [
+            {
+              "option": "file",
+              "value": "src/pom.xml",
+              "type": "PATH"
+            },
+            {
+              "option": "project.modelVersion",
+              "value": "4.0.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.groupId",
+              "value": "com.example",
+              "type": "NAME"
+            },
+            {
+              "option": "project.artifactId",
+              "value": "spring-boot-app",
+              "type": "NAME"
+            },
+            {
+              "option": "project.version",
+              "value": "0.0.1-SNAPSHOT",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.packaging",
+              "value": "jar",
+              "type": "TYPE"
+            },
+            {
+              "option": "project.name",
+              "value": "spring-boot-app",
+              "type": "NAME"
+            },
+            {
+              "option": "project.description",
+              "value": "Simple Spring Boot Application",
+              "type": "COMMAND"
+            },
+            {
+              "option": "project.parent.groupId",
+              "value": "org.springframework.boot",
+              "type": "NAME"
+            },
+            {
+              "option": "project.parent.artifactId",
+              "value": "spring-boot-starter-parent",
+              "type": "NAME"
+            },
+            {
+              "option": "project.parent.version",
+              "value": "3.1.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.properties.java.version",
+              "value": "17",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.properties.spring.boot.version",
+              "value": "3.1.0",
+              "type": "VERSION_NUMBER"
+            },
+            {
+              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
+              "value": "org.springframework.boot",
+              "type": "ID"
+            },
+            {
+              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
+              "value": "spring-boot-maven-plugin",
+              "type": "ID"
+            },
+            {
+              "option": "ExecutableName",
+              "value": "target/spring-boot-app-0.0.1-SNAPSHOT.jar",
+              "type": "PATH"
+            },
+            {
+              "option": "ExecutableNameNoVersion",
+              "value": "target/spring-boot-app.jar",
+              "type": "PATH"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

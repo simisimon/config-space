@@ -1,0 +1,6 @@
+CfgNet @ git+https://github.com/AI-4-SE/CfgNet.git@ce5c316c39171fb6d76b71a16aeef320034d684a
+matplotlib==3.9.2
+numpy==2.1.2
+pandas==2.2.3
+seaborn==0.13.2
+tqdm==4.67.0
