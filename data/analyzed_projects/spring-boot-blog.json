@@ -1,946 +1,951 @@
-[
-  {
-    "commit_hash": "bf660b8ee4650b223e8fd4216d021c4d58fdcdf0",
-    "parent_commit": null,
-    "is_config_related": true,
-    "author": "Du\u0161an Reljic <reljicd@gmail.com>",
-    "commit_mgs": "Initial commit\n",
-    "files_changed": 49,
-    "insertions": 2533,
-    "deletions": 0,
-    "network_data": {
-      "links": 2,
-      "config_files": [
-        "pom.xml",
-        ".mvn/wrapper/maven-wrapper.properties",
-        "src/main/resources/application.properties"
-      ],
-      "config_files_data": [
-        {
-          "file_path": ".mvn/wrapper/maven-wrapper.properties",
-          "concept": "configparser",
-          "options": 2,
-          "pairs": [
-            {
-              "option": "file",
-              "value": ".mvn/wrapper/maven-wrapper.properties",
-              "type": "PATH"
-            },
-            {
-              "option": "distributionurl",
-              "value": "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.zip",
-              "type": "URL"
-            }
-          ],
-          "insertions": 1,
-          "deletions": 0,
-          "total_changes": 1,
-          "diff": null
-        },
-        {
-          "file_path": "pom.xml",
-          "concept": "maven",
-          "options": 18,
-          "pairs": [
-            {
-              "option": "file",
-              "value": "pom.xml",
-              "type": "PATH"
-            },
-            {
-              "option": "project.modelVersion",
-              "value": "4.0.0",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.groupId",
-              "value": "com.reljicd",
-              "type": "NAME"
-            },
-            {
-              "option": "project.artifactId",
-              "value": "blog-demo",
-              "type": "NAME"
-            },
-            {
-              "option": "project.version",
-              "value": "0.0.1-SNAPSHOT",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.packaging",
-              "value": "jar",
-              "type": "TYPE"
-            },
-            {
-              "option": "project.name",
-              "value": "blog-demo",
-              "type": "NAME"
-            },
-            {
-              "option": "project.description",
-              "value": "Blog Demo project using Spring Boot",
-              "type": "COMMAND"
-            },
-            {
-              "option": "project.parent.groupId",
-              "value": "org.springframework.boot",
-              "type": "NAME"
-            },
-            {
-              "option": "project.parent.artifactId",
-              "value": "spring-boot-starter-parent",
-              "type": "NAME"
-            },
-            {
-              "option": "project.parent.version",
-              "value": "1.5.3.RELEASE",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.properties.project.build.sourceEncoding",
-              "value": "UTF-8",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "project.properties.project.reporting.outputEncoding",
-              "value": "UTF-8",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "project.properties.java.version",
-              "value": "1.8",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
-              "value": "org.springframework.boot",
-              "type": "ID"
-            },
-            {
-              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
-              "value": "spring-boot-maven-plugin",
-              "type": "ID"
-            },
-            {
-              "option": "ExecutableName",
-              "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
-              "type": "PATH"
-            },
-            {
-              "option": "ExecutableNameNoVersion",
-              "value": "target/blog-demo.jar",
-              "type": "PATH"
-            }
-          ],
-          "insertions": 122,
-          "deletions": 0,
-          "total_changes": 122,
-          "diff": null
-        },
-        {
-          "file_path": "src/main/resources/application.properties",
-          "concept": "spring",
-          "options": 11,
-          "pairs": [
-            {
-              "option": "file",
-              "value": "src/main/resources/application.properties",
-              "type": "PATH"
-            },
-            {
-              "option": "server.port",
-              "value": "8090",
-              "type": "PORT"
-            },
-            {
-              "option": "spring.datasource.url",
-              "value": "jdbc:h2:mem:blog_simple_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
-              "type": "URL"
-            },
-            {
-              "option": "spring.datasource.username",
-              "value": "sa",
-              "type": "USERNAME"
-            },
-            {
-              "option": "spring.datasource.data",
-              "value": "classpath:/import-h2.sql",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "spring.h2.console.enabled",
-              "value": "true",
-              "type": "BOOLEAN"
-            },
-            {
-              "option": "spring.h2.console.path",
-              "value": "/h2-console",
-              "type": "PATH"
-            },
-            {
-              "option": "spring.queries.users-query",
-              "value": "select username, password, active from user where username=?",
-              "type": "USERNAME"
-            },
-            {
-              "option": "spring.queries.roles-query",
-              "value": "select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "spring.admin.username",
-              "value": "admin",
-              "type": "USERNAME"
-            },
-            {
-              "option": "spring.admin.password",
-              "value": "admin",
-              "type": "PASSWORD"
-            }
-          ],
-          "insertions": 24,
-          "deletions": 0,
-          "total_changes": 24,
-          "diff": null
-        }
-      ]
+{
+  "project_name": "spring-boot-blog",
+  "analysis_time": 4.757278203964233,
+  "len_commits": 34,
+  "config_commit_data": [
+    {
+      "commit_hash": "bf660b8ee4650b223e8fd4216d021c4d58fdcdf0",
+      "is_config_related": true,
+      "parent_commit": null,
+      "author": "Du\u0161an Reljic <reljicd@gmail.com>",
+      "commit_mgs": "Initial commit\n",
+      "files_changed": 49,
+      "insertions": 2533,
+      "deletions": 0,
+      "network_data": {
+        "links": 2,
+        "config_files": [
+          "pom.xml",
+          ".mvn/wrapper/maven-wrapper.properties",
+          "src/main/resources/application.properties"
+        ],
+        "config_files_data": [
+          {
+            "file_path": ".mvn/wrapper/maven-wrapper.properties",
+            "concept": "configparser",
+            "options": 2,
+            "pairs": [
+              {
+                "option": "file",
+                "value": ".mvn/wrapper/maven-wrapper.properties",
+                "type": "PATH"
+              },
+              {
+                "option": "distributionurl",
+                "value": "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.zip",
+                "type": "URL"
+              }
+            ],
+            "insertions": 1,
+            "deletions": 0,
+            "total_changes": 1,
+            "diff": null
+          },
+          {
+            "file_path": "pom.xml",
+            "concept": "maven",
+            "options": 18,
+            "pairs": [
+              {
+                "option": "file",
+                "value": "pom.xml",
+                "type": "PATH"
+              },
+              {
+                "option": "project.modelVersion",
+                "value": "4.0.0",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.groupId",
+                "value": "com.reljicd",
+                "type": "NAME"
+              },
+              {
+                "option": "project.artifactId",
+                "value": "blog-demo",
+                "type": "NAME"
+              },
+              {
+                "option": "project.version",
+                "value": "0.0.1-SNAPSHOT",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.packaging",
+                "value": "jar",
+                "type": "TYPE"
+              },
+              {
+                "option": "project.name",
+                "value": "blog-demo",
+                "type": "NAME"
+              },
+              {
+                "option": "project.description",
+                "value": "Blog Demo project using Spring Boot",
+                "type": "COMMAND"
+              },
+              {
+                "option": "project.parent.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.parent.artifactId",
+                "value": "spring-boot-starter-parent",
+                "type": "NAME"
+              },
+              {
+                "option": "project.parent.version",
+                "value": "1.5.3.RELEASE",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.properties.project.build.sourceEncoding",
+                "value": "UTF-8",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.properties.project.reporting.outputEncoding",
+                "value": "UTF-8",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.properties.java.version",
+                "value": "1.8",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
+                "value": "org.springframework.boot",
+                "type": "ID"
+              },
+              {
+                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
+                "value": "spring-boot-maven-plugin",
+                "type": "ID"
+              },
+              {
+                "option": "ExecutableName",
+                "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
+                "type": "PATH"
+              },
+              {
+                "option": "ExecutableNameNoVersion",
+                "value": "target/blog-demo.jar",
+                "type": "PATH"
+              }
+            ],
+            "insertions": 122,
+            "deletions": 0,
+            "total_changes": 122,
+            "diff": null
+          },
+          {
+            "file_path": "src/main/resources/application.properties",
+            "concept": "spring",
+            "options": 11,
+            "pairs": [
+              {
+                "option": "file",
+                "value": "src/main/resources/application.properties",
+                "type": "PATH"
+              },
+              {
+                "option": "server.port",
+                "value": "8090",
+                "type": "PORT"
+              },
+              {
+                "option": "spring.datasource.url",
+                "value": "jdbc:h2:mem:blog_simple_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
+                "type": "URL"
+              },
+              {
+                "option": "spring.datasource.username",
+                "value": "sa",
+                "type": "USERNAME"
+              },
+              {
+                "option": "spring.datasource.data",
+                "value": "classpath:/import-h2.sql",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "spring.h2.console.enabled",
+                "value": "true",
+                "type": "BOOLEAN"
+              },
+              {
+                "option": "spring.h2.console.path",
+                "value": "/h2-console",
+                "type": "PATH"
+              },
+              {
+                "option": "spring.queries.users-query",
+                "value": "select username, password, active from user where username=?",
+                "type": "USERNAME"
+              },
+              {
+                "option": "spring.queries.roles-query",
+                "value": "select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "spring.admin.username",
+                "value": "admin",
+                "type": "USERNAME"
+              },
+              {
+                "option": "spring.admin.password",
+                "value": "admin",
+                "type": "PASSWORD"
+              }
+            ],
+            "insertions": 24,
+            "deletions": 0,
+            "total_changes": 24,
+            "diff": null
+          }
+        ]
+      }
+    },
+    {
+      "commit_hash": "89545acfde6f7d9bed79031b3b91a2923652e477",
+      "is_config_related": true,
+      "parent_commit": null,
+      "author": "Du\u0161an Relji\u0107 <reljicd@gmail.com>",
+      "commit_mgs": "Added comments, and all of their functionality\n",
+      "files_changed": 16,
+      "insertions": 455,
+      "deletions": 135,
+      "network_data": {
+        "links": 2,
+        "config_files": [
+          "pom.xml",
+          ".mvn/wrapper/maven-wrapper.properties",
+          "src/main/resources/application.properties"
+        ],
+        "config_files_data": [
+          {
+            "file_path": ".mvn/wrapper/maven-wrapper.properties",
+            "concept": "configparser",
+            "options": 2,
+            "pairs": [
+              {
+                "option": "file",
+                "value": ".mvn/wrapper/maven-wrapper.properties",
+                "type": "PATH"
+              },
+              {
+                "option": "distributionurl",
+                "value": "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.zip",
+                "type": "URL"
+              }
+            ]
+          },
+          {
+            "file_path": "pom.xml",
+            "concept": "maven",
+            "options": 18,
+            "pairs": [
+              {
+                "option": "file",
+                "value": "pom.xml",
+                "type": "PATH"
+              },
+              {
+                "option": "project.modelVersion",
+                "value": "4.0.0",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.groupId",
+                "value": "com.reljicd",
+                "type": "NAME"
+              },
+              {
+                "option": "project.artifactId",
+                "value": "blog-demo",
+                "type": "NAME"
+              },
+              {
+                "option": "project.version",
+                "value": "0.0.1-SNAPSHOT",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.packaging",
+                "value": "jar",
+                "type": "TYPE"
+              },
+              {
+                "option": "project.name",
+                "value": "blog-demo",
+                "type": "NAME"
+              },
+              {
+                "option": "project.description",
+                "value": "Blog Demo project using Spring Boot",
+                "type": "COMMAND"
+              },
+              {
+                "option": "project.parent.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.parent.artifactId",
+                "value": "spring-boot-starter-parent",
+                "type": "NAME"
+              },
+              {
+                "option": "project.parent.version",
+                "value": "1.5.3.RELEASE",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.properties.project.build.sourceEncoding",
+                "value": "UTF-8",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.properties.project.reporting.outputEncoding",
+                "value": "UTF-8",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.properties.java.version",
+                "value": "1.8",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
+                "value": "org.springframework.boot",
+                "type": "ID"
+              },
+              {
+                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
+                "value": "spring-boot-maven-plugin",
+                "type": "ID"
+              },
+              {
+                "option": "ExecutableName",
+                "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
+                "type": "PATH"
+              },
+              {
+                "option": "ExecutableNameNoVersion",
+                "value": "target/blog-demo.jar",
+                "type": "PATH"
+              }
+            ]
+          },
+          {
+            "file_path": "src/main/resources/application.properties",
+            "concept": "spring",
+            "options": 11,
+            "pairs": [
+              {
+                "option": "file",
+                "value": "src/main/resources/application.properties",
+                "type": "PATH"
+              },
+              {
+                "option": "server.port",
+                "value": "8090",
+                "type": "PORT"
+              },
+              {
+                "option": "spring.datasource.url",
+                "value": "jdbc:h2:mem:blog_simple_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
+                "type": "URL"
+              },
+              {
+                "option": "spring.datasource.username",
+                "value": "sa",
+                "type": "USERNAME"
+              },
+              {
+                "option": "spring.datasource.data",
+                "value": "classpath:/sql/import-h2.sql",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "spring.h2.console.enabled",
+                "value": "true",
+                "type": "BOOLEAN"
+              },
+              {
+                "option": "spring.h2.console.path",
+                "value": "/h2-console",
+                "type": "PATH"
+              },
+              {
+                "option": "spring.queries.users-query",
+                "value": "select username, password, active from user where username=?",
+                "type": "USERNAME"
+              },
+              {
+                "option": "spring.queries.roles-query",
+                "value": "select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "spring.admin.username",
+                "value": "admin",
+                "type": "USERNAME"
+              },
+              {
+                "option": "spring.admin.password",
+                "value": "admin",
+                "type": "PASSWORD"
+              }
+            ],
+            "insertions": 1,
+            "deletions": 1,
+            "total_changes": 2,
+            "diff": "diff --git a/src/main/resources/application.properties b/src/main/resources/application.properties\nindex 3c95b56..28b7361 100644\n--- a/src/main/resources/application.properties\n+++ b/src/main/resources/application.properties\n@@ -8,7 +8,7 @@ spring.datasource.username=sa\n spring.datasource.password=\n #spring.datasource.driver-class-name=org.h2.Driver\n #spring.datasource.platform=h2\n-spring.datasource.data=classpath:/import-h2.sql\n+spring.datasource.data=classpath:/sql/import-h2.sql\n ##################################################\n # enable H2 web console and set url for web console\n # http://localhost:8090/h2-console\n"
+          }
+        ]
+      }
+    },
+    {
+      "commit_hash": "c6ebd1199d26f58d92a5b5d906928f3e76fae9a1",
+      "is_config_related": true,
+      "parent_commit": null,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "added Dockerfile\n",
+      "files_changed": 1,
+      "insertions": 11,
+      "deletions": 0,
+      "network_data": {
+        "links": 4,
+        "config_files": [
+          "src/main/resources/application.properties",
+          "pom.xml",
+          ".mvn/wrapper/maven-wrapper.properties",
+          "docker/Dockerfile"
+        ],
+        "config_files_data": [
+          {
+            "file_path": ".mvn/wrapper/maven-wrapper.properties",
+            "concept": "configparser",
+            "options": 2,
+            "pairs": [
+              {
+                "option": "file",
+                "value": ".mvn/wrapper/maven-wrapper.properties",
+                "type": "PATH"
+              },
+              {
+                "option": "distributionurl",
+                "value": "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.zip",
+                "type": "URL"
+              }
+            ]
+          },
+          {
+            "file_path": "docker/Dockerfile",
+            "concept": "docker",
+            "options": 11,
+            "pairs": [
+              {
+                "option": "file",
+                "value": "docker/Dockerfile",
+                "type": "PATH"
+              },
+              {
+                "option": "FROM",
+                "value": "openjdk:8u151-jdk-alpine3.7",
+                "type": "IMAGE"
+              },
+              {
+                "option": "EXPOSE",
+                "value": "8090",
+                "type": "PORT"
+              },
+              {
+                "option": "COPY.src",
+                "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
+                "type": "PATH"
+              },
+              {
+                "option": "COPY.dest",
+                "value": "$APP_HOME/app.jar",
+                "type": "PATH"
+              },
+              {
+                "option": "WORKDIR",
+                "value": "$APP_HOME",
+                "type": "PATH"
+              },
+              {
+                "option": "ENTRYPOINT.exec_command",
+                "value": "exec java -jar app.jar",
+                "type": "COMMAND"
+              },
+              {
+                "option": "ENTRYPOINT.param0",
+                "value": "exec",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "ENTRYPOINT.param1",
+                "value": "java",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "ENTRYPOINT.param2",
+                "value": "-jar",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "ENTRYPOINT.param3",
+                "value": "app.jar",
+                "type": "PATH"
+              }
+            ],
+            "insertions": 11,
+            "deletions": 0,
+            "total_changes": 11,
+            "diff": "diff --git a/docker/Dockerfile b/docker/Dockerfile\nnew file mode 100644\nindex 0000000..9b82eea\n--- /dev/null\n+++ b/docker/Dockerfile\n@@ -0,0 +1,11 @@\n+FROM openjdk:8u151-jdk-alpine3.7\n+\n+EXPOSE 8090\n+\n+ENV APP_HOME /usr/src/app\n+\n+COPY target/blog-demo-0.0.1-SNAPSHOT.jar $APP_HOME/app.jar\n+\n+WORKDIR $APP_HOME\n+\n+ENTRYPOINT exec java -jar app.jar\n\\ No newline at end of file\n"
+          },
+          {
+            "file_path": "pom.xml",
+            "concept": "maven",
+            "options": 18,
+            "pairs": [
+              {
+                "option": "file",
+                "value": "pom.xml",
+                "type": "PATH"
+              },
+              {
+                "option": "project.modelVersion",
+                "value": "4.0.0",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.groupId",
+                "value": "com.reljicd",
+                "type": "NAME"
+              },
+              {
+                "option": "project.artifactId",
+                "value": "blog-demo",
+                "type": "NAME"
+              },
+              {
+                "option": "project.version",
+                "value": "0.0.1-SNAPSHOT",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.packaging",
+                "value": "jar",
+                "type": "TYPE"
+              },
+              {
+                "option": "project.name",
+                "value": "blog-demo",
+                "type": "NAME"
+              },
+              {
+                "option": "project.description",
+                "value": "Blog Demo project using Spring Boot",
+                "type": "COMMAND"
+              },
+              {
+                "option": "project.parent.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.parent.artifactId",
+                "value": "spring-boot-starter-parent",
+                "type": "NAME"
+              },
+              {
+                "option": "project.parent.version",
+                "value": "1.5.3.RELEASE",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.properties.project.build.sourceEncoding",
+                "value": "UTF-8",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.properties.project.reporting.outputEncoding",
+                "value": "UTF-8",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.properties.java.version",
+                "value": "1.8",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
+                "value": "org.springframework.boot",
+                "type": "ID"
+              },
+              {
+                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
+                "value": "spring-boot-maven-plugin",
+                "type": "ID"
+              },
+              {
+                "option": "ExecutableName",
+                "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
+                "type": "PATH"
+              },
+              {
+                "option": "ExecutableNameNoVersion",
+                "value": "target/blog-demo.jar",
+                "type": "PATH"
+              }
+            ]
+          },
+          {
+            "file_path": "src/main/resources/application.properties",
+            "concept": "spring",
+            "options": 11,
+            "pairs": [
+              {
+                "option": "file",
+                "value": "src/main/resources/application.properties",
+                "type": "PATH"
+              },
+              {
+                "option": "server.port",
+                "value": "8090",
+                "type": "PORT"
+              },
+              {
+                "option": "spring.datasource.url",
+                "value": "jdbc:h2:mem:blog_simple_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
+                "type": "URL"
+              },
+              {
+                "option": "spring.datasource.username",
+                "value": "sa",
+                "type": "USERNAME"
+              },
+              {
+                "option": "spring.datasource.data",
+                "value": "classpath:/sql/import-h2.sql",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "spring.h2.console.enabled",
+                "value": "true",
+                "type": "BOOLEAN"
+              },
+              {
+                "option": "spring.h2.console.path",
+                "value": "/h2-console",
+                "type": "PATH"
+              },
+              {
+                "option": "spring.queries.users-query",
+                "value": "select username, password, active from user where username=?",
+                "type": "USERNAME"
+              },
+              {
+                "option": "spring.queries.roles-query",
+                "value": "select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "spring.admin.username",
+                "value": "admin",
+                "type": "USERNAME"
+              },
+              {
+                "option": "spring.admin.password",
+                "value": "admin",
+                "type": "PASSWORD"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "commit_hash": "600ac125de0f4fb1f67eb4212b21de6a59b9d8f0",
+      "is_config_related": true,
+      "parent_commit": null,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "fixed thymeleaf template resolution\n",
+      "files_changed": 22,
+      "insertions": 71,
+      "deletions": 67,
+      "network_data": {
+        "links": 4,
+        "config_files": [
+          "src/main/resources/application.properties",
+          "pom.xml",
+          ".mvn/wrapper/maven-wrapper.properties",
+          "docker/Dockerfile"
+        ],
+        "config_files_data": [
+          {
+            "file_path": ".mvn/wrapper/maven-wrapper.properties",
+            "concept": "configparser",
+            "options": 2,
+            "pairs": [
+              {
+                "option": "file",
+                "value": ".mvn/wrapper/maven-wrapper.properties",
+                "type": "PATH"
+              },
+              {
+                "option": "distributionurl",
+                "value": "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.zip",
+                "type": "URL"
+              }
+            ]
+          },
+          {
+            "file_path": "docker/Dockerfile",
+            "concept": "docker",
+            "options": 11,
+            "pairs": [
+              {
+                "option": "file",
+                "value": "docker/Dockerfile",
+                "type": "PATH"
+              },
+              {
+                "option": "FROM",
+                "value": "openjdk:8u151-jdk-alpine3.7",
+                "type": "IMAGE"
+              },
+              {
+                "option": "EXPOSE",
+                "value": "8090",
+                "type": "PORT"
+              },
+              {
+                "option": "COPY.src",
+                "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
+                "type": "PATH"
+              },
+              {
+                "option": "COPY.dest",
+                "value": "$APP_HOME/app.jar",
+                "type": "PATH"
+              },
+              {
+                "option": "WORKDIR",
+                "value": "$APP_HOME",
+                "type": "PATH"
+              },
+              {
+                "option": "ENTRYPOINT.exec_command",
+                "value": "exec java -jar app.jar",
+                "type": "COMMAND"
+              },
+              {
+                "option": "ENTRYPOINT.param0",
+                "value": "exec",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "ENTRYPOINT.param1",
+                "value": "java",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "ENTRYPOINT.param2",
+                "value": "-jar",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "ENTRYPOINT.param3",
+                "value": "app.jar",
+                "type": "PATH"
+              }
+            ]
+          },
+          {
+            "file_path": "pom.xml",
+            "concept": "maven",
+            "options": 18,
+            "pairs": [
+              {
+                "option": "file",
+                "value": "pom.xml",
+                "type": "PATH"
+              },
+              {
+                "option": "project.modelVersion",
+                "value": "4.0.0",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.groupId",
+                "value": "com.reljicd",
+                "type": "NAME"
+              },
+              {
+                "option": "project.artifactId",
+                "value": "blog-demo",
+                "type": "NAME"
+              },
+              {
+                "option": "project.version",
+                "value": "0.0.1-SNAPSHOT",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.packaging",
+                "value": "jar",
+                "type": "TYPE"
+              },
+              {
+                "option": "project.name",
+                "value": "blog-demo",
+                "type": "NAME"
+              },
+              {
+                "option": "project.description",
+                "value": "Blog Demo project using Spring Boot",
+                "type": "COMMAND"
+              },
+              {
+                "option": "project.parent.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.parent.artifactId",
+                "value": "spring-boot-starter-parent",
+                "type": "NAME"
+              },
+              {
+                "option": "project.parent.version",
+                "value": "1.5.3.RELEASE",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.properties.project.build.sourceEncoding",
+                "value": "UTF-8",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.properties.project.reporting.outputEncoding",
+                "value": "UTF-8",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.properties.java.version",
+                "value": "1.8",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
+                "value": "org.springframework.boot",
+                "type": "ID"
+              },
+              {
+                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
+                "value": "spring-boot-maven-plugin",
+                "type": "ID"
+              },
+              {
+                "option": "ExecutableName",
+                "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
+                "type": "PATH"
+              },
+              {
+                "option": "ExecutableNameNoVersion",
+                "value": "target/blog-demo.jar",
+                "type": "PATH"
+              }
+            ]
+          },
+          {
+            "file_path": "src/main/resources/application.properties",
+            "concept": "spring",
+            "options": 13,
+            "pairs": [
+              {
+                "option": "file",
+                "value": "src/main/resources/application.properties",
+                "type": "PATH"
+              },
+              {
+                "option": "server.port",
+                "value": "8090",
+                "type": "PORT"
+              },
+              {
+                "option": "spring.datasource.url",
+                "value": "jdbc:h2:mem:blog_simple_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
+                "type": "URL"
+              },
+              {
+                "option": "spring.datasource.username",
+                "value": "sa",
+                "type": "USERNAME"
+              },
+              {
+                "option": "spring.datasource.data",
+                "value": "classpath:/sql/import-h2.sql",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "spring.h2.console.enabled",
+                "value": "true",
+                "type": "BOOLEAN"
+              },
+              {
+                "option": "spring.h2.console.path",
+                "value": "/h2-console",
+                "type": "PATH"
+              },
+              {
+                "option": "spring.queries.users-query",
+                "value": "select username, password, active from user where username=?",
+                "type": "USERNAME"
+              },
+              {
+                "option": "spring.queries.roles-query",
+                "value": "select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "spring.admin.username",
+                "value": "admin",
+                "type": "USERNAME"
+              },
+              {
+                "option": "spring.admin.password",
+                "value": "admin",
+                "type": "PASSWORD"
+              },
+              {
+                "option": "spring.thymeleaf.cache",
+                "value": "false",
+                "type": "BOOLEAN"
+              },
+              {
+                "option": "spring.thymeleaf.prefix",
+                "value": "classpath:/templates",
+                "type": "UNKNOWN"
+              }
+            ],
+            "insertions": 5,
+            "deletions": 1,
+            "total_changes": 6,
+            "diff": "diff --git a/src/main/resources/application.properties b/src/main/resources/application.properties\nindex 28b7361..185253b 100644\n--- a/src/main/resources/application.properties\n+++ b/src/main/resources/application.properties\n@@ -21,4 +21,8 @@ spring.queries.users-query=select username, password, active from user where use\n spring.queries.roles-query=select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?\n # Admin username and password\n spring.admin.username=admin\n-spring.admin.password=admin\n\\ No newline at end of file\n+spring.admin.password=admin\n+##################################################\n+# Thymeleaf\n+spring.thymeleaf.cache=false\n+spring.thymeleaf.prefix=classpath:/templates\n\\ No newline at end of file\n"
+          }
+        ]
+      }
     }
-  },
-  {
-    "commit_hash": "89545acfde6f7d9bed79031b3b91a2923652e477",
-    "parent_commit": null,
-    "is_config_related": true,
-    "author": "Du\u0161an Relji\u0107 <reljicd@gmail.com>",
-    "commit_mgs": "Added comments, and all of their functionality\n",
-    "files_changed": 16,
-    "insertions": 455,
-    "deletions": 135,
-    "network_data": {
-      "links": 2,
-      "config_files": [
-        "pom.xml",
-        ".mvn/wrapper/maven-wrapper.properties",
-        "src/main/resources/application.properties"
-      ],
-      "config_files_data": [
-        {
-          "file_path": ".mvn/wrapper/maven-wrapper.properties",
-          "concept": "configparser",
-          "options": 2,
-          "pairs": [
-            {
-              "option": "file",
-              "value": ".mvn/wrapper/maven-wrapper.properties",
-              "type": "PATH"
-            },
-            {
-              "option": "distributionurl",
-              "value": "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.zip",
-              "type": "URL"
-            }
-          ]
-        },
-        {
-          "file_path": "pom.xml",
-          "concept": "maven",
-          "options": 18,
-          "pairs": [
-            {
-              "option": "file",
-              "value": "pom.xml",
-              "type": "PATH"
-            },
-            {
-              "option": "project.modelVersion",
-              "value": "4.0.0",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.groupId",
-              "value": "com.reljicd",
-              "type": "NAME"
-            },
-            {
-              "option": "project.artifactId",
-              "value": "blog-demo",
-              "type": "NAME"
-            },
-            {
-              "option": "project.version",
-              "value": "0.0.1-SNAPSHOT",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.packaging",
-              "value": "jar",
-              "type": "TYPE"
-            },
-            {
-              "option": "project.name",
-              "value": "blog-demo",
-              "type": "NAME"
-            },
-            {
-              "option": "project.description",
-              "value": "Blog Demo project using Spring Boot",
-              "type": "COMMAND"
-            },
-            {
-              "option": "project.parent.groupId",
-              "value": "org.springframework.boot",
-              "type": "NAME"
-            },
-            {
-              "option": "project.parent.artifactId",
-              "value": "spring-boot-starter-parent",
-              "type": "NAME"
-            },
-            {
-              "option": "project.parent.version",
-              "value": "1.5.3.RELEASE",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.properties.project.build.sourceEncoding",
-              "value": "UTF-8",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "project.properties.project.reporting.outputEncoding",
-              "value": "UTF-8",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "project.properties.java.version",
-              "value": "1.8",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
-              "value": "org.springframework.boot",
-              "type": "ID"
-            },
-            {
-              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
-              "value": "spring-boot-maven-plugin",
-              "type": "ID"
-            },
-            {
-              "option": "ExecutableName",
-              "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
-              "type": "PATH"
-            },
-            {
-              "option": "ExecutableNameNoVersion",
-              "value": "target/blog-demo.jar",
-              "type": "PATH"
-            }
-          ]
-        },
-        {
-          "file_path": "src/main/resources/application.properties",
-          "concept": "spring",
-          "options": 11,
-          "pairs": [
-            {
-              "option": "file",
-              "value": "src/main/resources/application.properties",
-              "type": "PATH"
-            },
-            {
-              "option": "server.port",
-              "value": "8090",
-              "type": "PORT"
-            },
-            {
-              "option": "spring.datasource.url",
-              "value": "jdbc:h2:mem:blog_simple_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
-              "type": "URL"
-            },
-            {
-              "option": "spring.datasource.username",
-              "value": "sa",
-              "type": "USERNAME"
-            },
-            {
-              "option": "spring.datasource.data",
-              "value": "classpath:/sql/import-h2.sql",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "spring.h2.console.enabled",
-              "value": "true",
-              "type": "BOOLEAN"
-            },
-            {
-              "option": "spring.h2.console.path",
-              "value": "/h2-console",
-              "type": "PATH"
-            },
-            {
-              "option": "spring.queries.users-query",
-              "value": "select username, password, active from user where username=?",
-              "type": "USERNAME"
-            },
-            {
-              "option": "spring.queries.roles-query",
-              "value": "select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "spring.admin.username",
-              "value": "admin",
-              "type": "USERNAME"
-            },
-            {
-              "option": "spring.admin.password",
-              "value": "admin",
-              "type": "PASSWORD"
-            }
-          ],
-          "insertions": 1,
-          "deletions": 1,
-          "total_changes": 2,
-          "diff": "diff --git a/src/main/resources/application.properties b/src/main/resources/application.properties\nindex 3c95b56..28b7361 100644\n--- a/src/main/resources/application.properties\n+++ b/src/main/resources/application.properties\n@@ -8,7 +8,7 @@ spring.datasource.username=sa\n spring.datasource.password=\n #spring.datasource.driver-class-name=org.h2.Driver\n #spring.datasource.platform=h2\n-spring.datasource.data=classpath:/import-h2.sql\n+spring.datasource.data=classpath:/sql/import-h2.sql\n ##################################################\n # enable H2 web console and set url for web console\n # http://localhost:8090/h2-console\n"
-        }
-      ]
-    }
-  },
-  {
-    "commit_hash": "c6ebd1199d26f58d92a5b5d906928f3e76fae9a1",
-    "parent_commit": null,
-    "is_config_related": true,
-    "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
-    "commit_mgs": "added Dockerfile\n",
-    "files_changed": 1,
-    "insertions": 11,
-    "deletions": 0,
-    "network_data": {
-      "links": 4,
-      "config_files": [
-        "pom.xml",
-        ".mvn/wrapper/maven-wrapper.properties",
-        "src/main/resources/application.properties",
-        "docker/Dockerfile"
-      ],
-      "config_files_data": [
-        {
-          "file_path": ".mvn/wrapper/maven-wrapper.properties",
-          "concept": "configparser",
-          "options": 2,
-          "pairs": [
-            {
-              "option": "file",
-              "value": ".mvn/wrapper/maven-wrapper.properties",
-              "type": "PATH"
-            },
-            {
-              "option": "distributionurl",
-              "value": "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.zip",
-              "type": "URL"
-            }
-          ]
-        },
-        {
-          "file_path": "docker/Dockerfile",
-          "concept": "docker",
-          "options": 11,
-          "pairs": [
-            {
-              "option": "file",
-              "value": "docker/Dockerfile",
-              "type": "PATH"
-            },
-            {
-              "option": "FROM",
-              "value": "openjdk:8u151-jdk-alpine3.7",
-              "type": "IMAGE"
-            },
-            {
-              "option": "EXPOSE",
-              "value": "8090",
-              "type": "PORT"
-            },
-            {
-              "option": "COPY.src",
-              "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
-              "type": "PATH"
-            },
-            {
-              "option": "COPY.dest",
-              "value": "$APP_HOME/app.jar",
-              "type": "PATH"
-            },
-            {
-              "option": "WORKDIR",
-              "value": "$APP_HOME",
-              "type": "PATH"
-            },
-            {
-              "option": "ENTRYPOINT.exec_command",
-              "value": "exec java -jar app.jar",
-              "type": "COMMAND"
-            },
-            {
-              "option": "ENTRYPOINT.param0",
-              "value": "exec",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "ENTRYPOINT.param1",
-              "value": "java",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "ENTRYPOINT.param2",
-              "value": "-jar",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "ENTRYPOINT.param3",
-              "value": "app.jar",
-              "type": "PATH"
-            }
-          ],
-          "insertions": 11,
-          "deletions": 0,
-          "total_changes": 11,
-          "diff": "diff --git a/docker/Dockerfile b/docker/Dockerfile\nnew file mode 100644\nindex 0000000..9b82eea\n--- /dev/null\n+++ b/docker/Dockerfile\n@@ -0,0 +1,11 @@\n+FROM openjdk:8u151-jdk-alpine3.7\n+\n+EXPOSE 8090\n+\n+ENV APP_HOME /usr/src/app\n+\n+COPY target/blog-demo-0.0.1-SNAPSHOT.jar $APP_HOME/app.jar\n+\n+WORKDIR $APP_HOME\n+\n+ENTRYPOINT exec java -jar app.jar\n\\ No newline at end of file\n"
-        },
-        {
-          "file_path": "pom.xml",
-          "concept": "maven",
-          "options": 18,
-          "pairs": [
-            {
-              "option": "file",
-              "value": "pom.xml",
-              "type": "PATH"
-            },
-            {
-              "option": "project.modelVersion",
-              "value": "4.0.0",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.groupId",
-              "value": "com.reljicd",
-              "type": "NAME"
-            },
-            {
-              "option": "project.artifactId",
-              "value": "blog-demo",
-              "type": "NAME"
-            },
-            {
-              "option": "project.version",
-              "value": "0.0.1-SNAPSHOT",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.packaging",
-              "value": "jar",
-              "type": "TYPE"
-            },
-            {
-              "option": "project.name",
-              "value": "blog-demo",
-              "type": "NAME"
-            },
-            {
-              "option": "project.description",
-              "value": "Blog Demo project using Spring Boot",
-              "type": "COMMAND"
-            },
-            {
-              "option": "project.parent.groupId",
-              "value": "org.springframework.boot",
-              "type": "NAME"
-            },
-            {
-              "option": "project.parent.artifactId",
-              "value": "spring-boot-starter-parent",
-              "type": "NAME"
-            },
-            {
-              "option": "project.parent.version",
-              "value": "1.5.3.RELEASE",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.properties.project.build.sourceEncoding",
-              "value": "UTF-8",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "project.properties.project.reporting.outputEncoding",
-              "value": "UTF-8",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "project.properties.java.version",
-              "value": "1.8",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
-              "value": "org.springframework.boot",
-              "type": "ID"
-            },
-            {
-              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
-              "value": "spring-boot-maven-plugin",
-              "type": "ID"
-            },
-            {
-              "option": "ExecutableName",
-              "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
-              "type": "PATH"
-            },
-            {
-              "option": "ExecutableNameNoVersion",
-              "value": "target/blog-demo.jar",
-              "type": "PATH"
-            }
-          ]
-        },
-        {
-          "file_path": "src/main/resources/application.properties",
-          "concept": "spring",
-          "options": 11,
-          "pairs": [
-            {
-              "option": "file",
-              "value": "src/main/resources/application.properties",
-              "type": "PATH"
-            },
-            {
-              "option": "server.port",
-              "value": "8090",
-              "type": "PORT"
-            },
-            {
-              "option": "spring.datasource.url",
-              "value": "jdbc:h2:mem:blog_simple_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
-              "type": "URL"
-            },
-            {
-              "option": "spring.datasource.username",
-              "value": "sa",
-              "type": "USERNAME"
-            },
-            {
-              "option": "spring.datasource.data",
-              "value": "classpath:/sql/import-h2.sql",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "spring.h2.console.enabled",
-              "value": "true",
-              "type": "BOOLEAN"
-            },
-            {
-              "option": "spring.h2.console.path",
-              "value": "/h2-console",
-              "type": "PATH"
-            },
-            {
-              "option": "spring.queries.users-query",
-              "value": "select username, password, active from user where username=?",
-              "type": "USERNAME"
-            },
-            {
-              "option": "spring.queries.roles-query",
-              "value": "select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "spring.admin.username",
-              "value": "admin",
-              "type": "USERNAME"
-            },
-            {
-              "option": "spring.admin.password",
-              "value": "admin",
-              "type": "PASSWORD"
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "commit_hash": "600ac125de0f4fb1f67eb4212b21de6a59b9d8f0",
-    "parent_commit": null,
-    "is_config_related": true,
-    "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
-    "commit_mgs": "fixed thymeleaf template resolution\n",
-    "files_changed": 22,
-    "insertions": 71,
-    "deletions": 67,
-    "network_data": {
-      "links": 4,
-      "config_files": [
-        "pom.xml",
-        ".mvn/wrapper/maven-wrapper.properties",
-        "src/main/resources/application.properties",
-        "docker/Dockerfile"
-      ],
-      "config_files_data": [
-        {
-          "file_path": ".mvn/wrapper/maven-wrapper.properties",
-          "concept": "configparser",
-          "options": 2,
-          "pairs": [
-            {
-              "option": "file",
-              "value": ".mvn/wrapper/maven-wrapper.properties",
-              "type": "PATH"
-            },
-            {
-              "option": "distributionurl",
-              "value": "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.zip",
-              "type": "URL"
-            }
-          ]
-        },
-        {
-          "file_path": "docker/Dockerfile",
-          "concept": "docker",
-          "options": 11,
-          "pairs": [
-            {
-              "option": "file",
-              "value": "docker/Dockerfile",
-              "type": "PATH"
-            },
-            {
-              "option": "FROM",
-              "value": "openjdk:8u151-jdk-alpine3.7",
-              "type": "IMAGE"
-            },
-            {
-              "option": "EXPOSE",
-              "value": "8090",
-              "type": "PORT"
-            },
-            {
-              "option": "COPY.src",
-              "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
-              "type": "PATH"
-            },
-            {
-              "option": "COPY.dest",
-              "value": "$APP_HOME/app.jar",
-              "type": "PATH"
-            },
-            {
-              "option": "WORKDIR",
-              "value": "$APP_HOME",
-              "type": "PATH"
-            },
-            {
-              "option": "ENTRYPOINT.exec_command",
-              "value": "exec java -jar app.jar",
-              "type": "COMMAND"
-            },
-            {
-              "option": "ENTRYPOINT.param0",
-              "value": "exec",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "ENTRYPOINT.param1",
-              "value": "java",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "ENTRYPOINT.param2",
-              "value": "-jar",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "ENTRYPOINT.param3",
-              "value": "app.jar",
-              "type": "PATH"
-            }
-          ]
-        },
-        {
-          "file_path": "pom.xml",
-          "concept": "maven",
-          "options": 18,
-          "pairs": [
-            {
-              "option": "file",
-              "value": "pom.xml",
-              "type": "PATH"
-            },
-            {
-              "option": "project.modelVersion",
-              "value": "4.0.0",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.groupId",
-              "value": "com.reljicd",
-              "type": "NAME"
-            },
-            {
-              "option": "project.artifactId",
-              "value": "blog-demo",
-              "type": "NAME"
-            },
-            {
-              "option": "project.version",
-              "value": "0.0.1-SNAPSHOT",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.packaging",
-              "value": "jar",
-              "type": "TYPE"
-            },
-            {
-              "option": "project.name",
-              "value": "blog-demo",
-              "type": "NAME"
-            },
-            {
-              "option": "project.description",
-              "value": "Blog Demo project using Spring Boot",
-              "type": "COMMAND"
-            },
-            {
-              "option": "project.parent.groupId",
-              "value": "org.springframework.boot",
-              "type": "NAME"
-            },
-            {
-              "option": "project.parent.artifactId",
-              "value": "spring-boot-starter-parent",
-              "type": "NAME"
-            },
-            {
-              "option": "project.parent.version",
-              "value": "1.5.3.RELEASE",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.properties.project.build.sourceEncoding",
-              "value": "UTF-8",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "project.properties.project.reporting.outputEncoding",
-              "value": "UTF-8",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "project.properties.java.version",
-              "value": "1.8",
-              "type": "VERSION_NUMBER"
-            },
-            {
-              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
-              "value": "org.springframework.boot",
-              "type": "ID"
-            },
-            {
-              "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
-              "value": "spring-boot-maven-plugin",
-              "type": "ID"
-            },
-            {
-              "option": "ExecutableName",
-              "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
-              "type": "PATH"
-            },
-            {
-              "option": "ExecutableNameNoVersion",
-              "value": "target/blog-demo.jar",
-              "type": "PATH"
-            }
-          ]
-        },
-        {
-          "file_path": "src/main/resources/application.properties",
-          "concept": "spring",
-          "options": 13,
-          "pairs": [
-            {
-              "option": "file",
-              "value": "src/main/resources/application.properties",
-              "type": "PATH"
-            },
-            {
-              "option": "server.port",
-              "value": "8090",
-              "type": "PORT"
-            },
-            {
-              "option": "spring.datasource.url",
-              "value": "jdbc:h2:mem:blog_simple_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
-              "type": "URL"
-            },
-            {
-              "option": "spring.datasource.username",
-              "value": "sa",
-              "type": "USERNAME"
-            },
-            {
-              "option": "spring.datasource.data",
-              "value": "classpath:/sql/import-h2.sql",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "spring.h2.console.enabled",
-              "value": "true",
-              "type": "BOOLEAN"
-            },
-            {
-              "option": "spring.h2.console.path",
-              "value": "/h2-console",
-              "type": "PATH"
-            },
-            {
-              "option": "spring.queries.users-query",
-              "value": "select username, password, active from user where username=?",
-              "type": "USERNAME"
-            },
-            {
-              "option": "spring.queries.roles-query",
-              "value": "select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?",
-              "type": "UNKNOWN"
-            },
-            {
-              "option": "spring.admin.username",
-              "value": "admin",
-              "type": "USERNAME"
-            },
-            {
-              "option": "spring.admin.password",
-              "value": "admin",
-              "type": "PASSWORD"
-            },
-            {
-              "option": "spring.thymeleaf.cache",
-              "value": "false",
-              "type": "BOOLEAN"
-            },
-            {
-              "option": "spring.thymeleaf.prefix",
-              "value": "classpath:/templates",
-              "type": "UNKNOWN"
-            }
-          ],
-          "insertions": 5,
-          "deletions": 1,
-          "total_changes": 6,
-          "diff": "diff --git a/src/main/resources/application.properties b/src/main/resources/application.properties\nindex 28b7361..185253b 100644\n--- a/src/main/resources/application.properties\n+++ b/src/main/resources/application.properties\n@@ -21,4 +21,8 @@ spring.queries.users-query=select username, password, active from user where use\n spring.queries.roles-query=select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?\n # Admin username and password\n spring.admin.username=admin\n-spring.admin.password=admin\n\\ No newline at end of file\n+spring.admin.password=admin\n+##################################################\n+# Thymeleaf\n+spring.thymeleaf.cache=false\n+spring.thymeleaf.prefix=classpath:/templates\n\\ No newline at end of file\n"
-        }
-      ]
-    }
-  }
-]
+  ]
+}

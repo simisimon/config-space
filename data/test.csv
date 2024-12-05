@@ -1,0 +1,58 @@
+File Path,Option,Concept,Values,unchanged,changed in project
+src/Dockerfile,COPY.--from,docker,['build'],True,0
+src/Dockerfile,COPY.dest,docker,"['.', './src', 'app.jar']",False,2
+src/Dockerfile,COPY.src,docker,"['app/target/spring-boot-app-0.0.1-SNAPSHOT.jar', 'pom.xml', 'src']",False,2
+src/Dockerfile,ENTRYPOINT.exec_command,docker,['java -jar app.jar'],True,0
+src/Dockerfile,ENTRYPOINT.param0,docker,['java'],True,0
+src/Dockerfile,ENTRYPOINT.param1,docker,['-jar'],True,0
+src/Dockerfile,ENTRYPOINT.param2,docker,['app.jar'],True,0
+src/Dockerfile,EXPOSE,docker,"['3000', '8080']",False,1
+src/Dockerfile,FROM,docker,['eclipse-temurin:17-jdk-alpine'],True,0
+src/Dockerfile,FROM.image,docker,['maven:3.8.6-eclipse-temurin-17'],True,0
+src/Dockerfile,FROM.name,docker,['build'],True,0
+src/Dockerfile,WORKDIR,docker,['/app'],True,0
+src/Dockerfile,file,docker,['src/Dockerfile'],True,0
+src/config.yml,file,yaml,['src/config.yml'],True,0
+src/config.yml,pwd,yaml,['1234Test'],True,0
+src/config.yml,server.port,yaml,['4000'],True,0
+src/config.yml,user,yaml,['user_name'],True,0
+src/frontend/Dockerfile,CMD.exec_command,docker,['nginx -g daemon off;'],True,0
+src/frontend/Dockerfile,CMD.param0,docker,['nginx'],True,0
+src/frontend/Dockerfile,CMD.param1,docker,['-g'],True,0
+src/frontend/Dockerfile,CMD.param2,docker,['daemon off;'],True,0
+src/frontend/Dockerfile,COPY.--from,docker,['build'],True,0
+src/frontend/Dockerfile,COPY.dest,docker,"['.', './', '/usr/share/nginx/html']",False,2
+src/frontend/Dockerfile,COPY.src,docker,"['.', 'app/dist', 'package*.json']",False,2
+src/frontend/Dockerfile,EXPOSE,docker,['80'],True,0
+src/frontend/Dockerfile,FROM,docker,['nginx:stable-alpine'],True,0
+src/frontend/Dockerfile,FROM.image,docker,['node:18-alpine'],True,0
+src/frontend/Dockerfile,FROM.name,docker,['build'],True,0
+src/frontend/Dockerfile,WORKDIR,docker,['/app'],True,0
+src/frontend/Dockerfile,file,docker,['src/frontend/Dockerfile'],True,0
+src/pom.xml,ExecutableName,maven,['target/spring-boot-app-0.0.1-SNAPSHOT.jar'],True,0
+src/pom.xml,ExecutableNameNoVersion,maven,['target/spring-boot-app.jar'],True,0
+src/pom.xml,file,maven,['src/pom.xml'],True,0
+src/pom.xml,project.artifactId,maven,['spring-boot-app'],True,0
+src/pom.xml,project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId,maven,['spring-boot-maven-plugin'],True,0
+src/pom.xml,project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId,maven,['org.springframework.boot'],True,0
+src/pom.xml,project.dependencies.dependency.com.h2database:h2.artifactId,maven,['h2'],True,0
+src/pom.xml,project.dependencies.dependency.com.h2database:h2.groupId,maven,['com.h2database'],True,0
+src/pom.xml,project.dependencies.dependency.com.h2database:h2.scope,maven,['runtime'],True,0
+src/pom.xml,project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.artifactId,maven,['spring-boot-starter-data-jpa'],True,0
+src/pom.xml,project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.groupId,maven,['org.springframework.boot'],True,0
+src/pom.xml,project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.artifactId,maven,['spring-boot-starter-test'],True,0
+src/pom.xml,project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.groupId,maven,['org.springframework.boot'],True,0
+src/pom.xml,project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.scope,maven,['test'],True,0
+src/pom.xml,project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId,maven,['spring-boot-starter-web'],True,0
+src/pom.xml,project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId,maven,['org.springframework.boot'],True,0
+src/pom.xml,project.description,maven,['Simple Spring Boot Application'],True,0
+src/pom.xml,project.groupId,maven,['com.example'],True,0
+src/pom.xml,project.modelVersion,maven,['4.0.0'],True,0
+src/pom.xml,project.name,maven,['spring-boot-app'],True,0
+src/pom.xml,project.packaging,maven,['jar'],True,0
+src/pom.xml,project.parent.artifactId,maven,['spring-boot-starter-parent'],True,0
+src/pom.xml,project.parent.groupId,maven,['org.springframework.boot'],True,0
+src/pom.xml,project.parent.version,maven,['3.1.0'],True,0
+src/pom.xml,project.properties.java.version,maven,['17'],True,0
+src/pom.xml,project.properties.spring.boot.version,maven,['3.1.0'],True,0
+src/pom.xml,project.version,maven,['0.0.1-SNAPSHOT'],True,0
