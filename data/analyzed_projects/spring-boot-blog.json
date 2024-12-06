@@ -1,23 +1,23 @@
 {
   "project_name": "spring-boot-blog",
-  "analysis_time": 4.757278203964233,
+  "analysis_time": 3.2452664375305176,
   "len_commits": 34,
   "config_commit_data": [
     {
       "commit_hash": "bf660b8ee4650b223e8fd4216d021c4d58fdcdf0",
-      "is_config_related": true,
       "parent_commit": null,
+      "is_config_related": true,
       "author": "Du\u0161an Reljic <reljicd@gmail.com>",
       "commit_mgs": "Initial commit\n",
       "files_changed": 49,
       "insertions": 2533,
       "deletions": 0,
       "network_data": {
-        "links": 2,
+        "links": 39,
         "config_files": [
-          "pom.xml",
           ".mvn/wrapper/maven-wrapper.properties",
-          "src/main/resources/application.properties"
+          "src/main/resources/application.properties",
+          "pom.xml"
         ],
         "config_files_data": [
           {
@@ -44,7 +44,7 @@
           {
             "file_path": "pom.xml",
             "concept": "maven",
-            "options": 18,
+            "options": 48,
             "pairs": [
               {
                 "option": "file",
@@ -117,14 +117,164 @@
                 "type": "VERSION_NUMBER"
               },
               {
-                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.groupId",
                 "value": "org.springframework.boot",
-                "type": "ID"
+                "type": "NAME"
               },
               {
-                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.artifactId",
+                "value": "spring-boot-starter-data-jpa",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.artifactId",
+                "value": "spring-boot-starter-data-rest",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.groupId",
+                "value": "org.springframework.data",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.artifactId",
+                "value": "spring-data-rest-hal-browser",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.artifactId",
+                "value": "spring-boot-starter-security",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
+                "value": "spring-boot-starter-thymeleaf",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.groupId",
+                "value": "org.thymeleaf.extras",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.artifactId",
+                "value": "thymeleaf-extras-springsecurity4",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
+                "value": "spring-boot-starter-web",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.artifactId",
+                "value": "spring-boot-devtools",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.scope",
+                "value": "runtime",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.dependencies.dependency.com.h2database:h2.groupId",
+                "value": "com.h2database",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.com.h2database:h2.artifactId",
+                "value": "h2",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.mysql:mysql-connector-java.groupId",
+                "value": "mysql",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.mysql:mysql-connector-java.artifactId",
+                "value": "mysql-connector-java",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.artifactId",
+                "value": "spring-boot-starter-test",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.scope",
+                "value": "test",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.groupId",
+                "value": "org.webjars",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.artifactId",
+                "value": "bootstrap",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.version",
+                "value": "3.3.7",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.groupId",
+                "value": "org.webjars",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.artifactId",
+                "value": "jquery",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.version",
+                "value": "2.1.4",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
-                "type": "ID"
+                "type": "NAME"
               },
               {
                 "option": "ExecutableName",
@@ -212,20 +362,31 @@
       }
     },
     {
-      "commit_hash": "89545acfde6f7d9bed79031b3b91a2923652e477",
-      "is_config_related": true,
+      "commit_hash": "c5f24b6ed3921165136d9ba362e5f65939237c5a",
       "parent_commit": null,
+      "is_config_related": false,
+      "author": "Du\u0161an Reljic <reljicd@gmail.com>",
+      "commit_mgs": "Some styling of html pages\n",
+      "files_changed": 3,
+      "insertions": 31,
+      "deletions": 22,
+      "network_data": null
+    },
+    {
+      "commit_hash": "89545acfde6f7d9bed79031b3b91a2923652e477",
+      "parent_commit": null,
+      "is_config_related": true,
       "author": "Du\u0161an Relji\u0107 <reljicd@gmail.com>",
       "commit_mgs": "Added comments, and all of their functionality\n",
       "files_changed": 16,
       "insertions": 455,
       "deletions": 135,
       "network_data": {
-        "links": 2,
+        "links": 39,
         "config_files": [
-          "pom.xml",
           ".mvn/wrapper/maven-wrapper.properties",
-          "src/main/resources/application.properties"
+          "src/main/resources/application.properties",
+          "pom.xml"
         ],
         "config_files_data": [
           {
@@ -248,7 +409,7 @@
           {
             "file_path": "pom.xml",
             "concept": "maven",
-            "options": 18,
+            "options": 48,
             "pairs": [
               {
                 "option": "file",
@@ -321,14 +482,164 @@
                 "type": "VERSION_NUMBER"
               },
               {
-                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.groupId",
                 "value": "org.springframework.boot",
-                "type": "ID"
+                "type": "NAME"
               },
               {
-                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.artifactId",
+                "value": "spring-boot-starter-data-jpa",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.artifactId",
+                "value": "spring-boot-starter-data-rest",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.groupId",
+                "value": "org.springframework.data",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.artifactId",
+                "value": "spring-data-rest-hal-browser",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.artifactId",
+                "value": "spring-boot-starter-security",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
+                "value": "spring-boot-starter-thymeleaf",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.groupId",
+                "value": "org.thymeleaf.extras",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.artifactId",
+                "value": "thymeleaf-extras-springsecurity4",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
+                "value": "spring-boot-starter-web",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.artifactId",
+                "value": "spring-boot-devtools",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.scope",
+                "value": "runtime",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.dependencies.dependency.com.h2database:h2.groupId",
+                "value": "com.h2database",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.com.h2database:h2.artifactId",
+                "value": "h2",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.mysql:mysql-connector-java.groupId",
+                "value": "mysql",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.mysql:mysql-connector-java.artifactId",
+                "value": "mysql-connector-java",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.artifactId",
+                "value": "spring-boot-starter-test",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.scope",
+                "value": "test",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.groupId",
+                "value": "org.webjars",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.artifactId",
+                "value": "bootstrap",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.version",
+                "value": "3.3.7",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.groupId",
+                "value": "org.webjars",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.artifactId",
+                "value": "jquery",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.version",
+                "value": "2.1.4",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
-                "type": "ID"
+                "type": "NAME"
               },
               {
                 "option": "ExecutableName",
@@ -412,20 +723,53 @@
       }
     },
     {
-      "commit_hash": "c6ebd1199d26f58d92a5b5d906928f3e76fae9a1",
-      "is_config_related": true,
+      "commit_hash": "40e090d78ba2f53f033342d6d5f66ccf499aca74",
       "parent_commit": null,
+      "is_config_related": false,
+      "author": "Du\u0161an <reljicd@gmail.com>",
+      "commit_mgs": "Create LICENSE",
+      "files_changed": 1,
+      "insertions": 201,
+      "deletions": 0,
+      "network_data": null
+    },
+    {
+      "commit_hash": "567281c05fd2ee2332cbe6da23cb6129b452ac56",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "centering fixes\n",
+      "files_changed": 2,
+      "insertions": 2,
+      "deletions": 2,
+      "network_data": null
+    },
+    {
+      "commit_hash": "d1654f2eb5e8271234a245b33b7d84c78862aea0",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "moved mvnw scripts to scripts folder\n",
+      "files_changed": 4,
+      "insertions": 368,
+      "deletions": 368,
+      "network_data": null
+    },
+    {
+      "commit_hash": "c6ebd1199d26f58d92a5b5d906928f3e76fae9a1",
+      "parent_commit": null,
+      "is_config_related": true,
       "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
       "commit_mgs": "added Dockerfile\n",
       "files_changed": 1,
       "insertions": 11,
       "deletions": 0,
       "network_data": {
-        "links": 4,
+        "links": 41,
         "config_files": [
+          ".mvn/wrapper/maven-wrapper.properties",
           "src/main/resources/application.properties",
           "pom.xml",
-          ".mvn/wrapper/maven-wrapper.properties",
           "docker/Dockerfile"
         ],
         "config_files_data": [
@@ -515,7 +859,7 @@
           {
             "file_path": "pom.xml",
             "concept": "maven",
-            "options": 18,
+            "options": 48,
             "pairs": [
               {
                 "option": "file",
@@ -588,14 +932,164 @@
                 "type": "VERSION_NUMBER"
               },
               {
-                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.groupId",
                 "value": "org.springframework.boot",
-                "type": "ID"
+                "type": "NAME"
               },
               {
-                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.artifactId",
+                "value": "spring-boot-starter-data-jpa",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.artifactId",
+                "value": "spring-boot-starter-data-rest",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.groupId",
+                "value": "org.springframework.data",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.artifactId",
+                "value": "spring-data-rest-hal-browser",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.artifactId",
+                "value": "spring-boot-starter-security",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
+                "value": "spring-boot-starter-thymeleaf",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.groupId",
+                "value": "org.thymeleaf.extras",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.artifactId",
+                "value": "thymeleaf-extras-springsecurity4",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
+                "value": "spring-boot-starter-web",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.artifactId",
+                "value": "spring-boot-devtools",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.scope",
+                "value": "runtime",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.dependencies.dependency.com.h2database:h2.groupId",
+                "value": "com.h2database",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.com.h2database:h2.artifactId",
+                "value": "h2",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.mysql:mysql-connector-java.groupId",
+                "value": "mysql",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.mysql:mysql-connector-java.artifactId",
+                "value": "mysql-connector-java",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.artifactId",
+                "value": "spring-boot-starter-test",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.scope",
+                "value": "test",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.groupId",
+                "value": "org.webjars",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.artifactId",
+                "value": "bootstrap",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.version",
+                "value": "3.3.7",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.groupId",
+                "value": "org.webjars",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.artifactId",
+                "value": "jquery",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.version",
+                "value": "2.1.4",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
-                "type": "ID"
+                "type": "NAME"
               },
               {
                 "option": "ExecutableName",
@@ -675,20 +1169,42 @@
       }
     },
     {
-      "commit_hash": "600ac125de0f4fb1f67eb4212b21de6a59b9d8f0",
-      "is_config_related": true,
+      "commit_hash": "31e6630fa66e0e71a3325601c5225cad5c6c512c",
       "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "added run_docker.sh util script\n",
+      "files_changed": 1,
+      "insertions": 23,
+      "deletions": 0,
+      "network_data": null
+    },
+    {
+      "commit_hash": "e76292a3cdf80d27a87228afb979280777c6122b",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "updated README.md\n",
+      "files_changed": 1,
+      "insertions": 123,
+      "deletions": 18,
+      "network_data": null
+    },
+    {
+      "commit_hash": "600ac125de0f4fb1f67eb4212b21de6a59b9d8f0",
+      "parent_commit": null,
+      "is_config_related": true,
       "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
       "commit_mgs": "fixed thymeleaf template resolution\n",
       "files_changed": 22,
       "insertions": 71,
       "deletions": 67,
       "network_data": {
-        "links": 4,
+        "links": 41,
         "config_files": [
+          ".mvn/wrapper/maven-wrapper.properties",
           "src/main/resources/application.properties",
           "pom.xml",
-          ".mvn/wrapper/maven-wrapper.properties",
           "docker/Dockerfile"
         ],
         "config_files_data": [
@@ -774,7 +1290,7 @@
           {
             "file_path": "pom.xml",
             "concept": "maven",
-            "options": 18,
+            "options": 48,
             "pairs": [
               {
                 "option": "file",
@@ -847,14 +1363,164 @@
                 "type": "VERSION_NUMBER"
               },
               {
-                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}groupId",
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.groupId",
                 "value": "org.springframework.boot",
-                "type": "ID"
+                "type": "NAME"
               },
               {
-                "option": "project.{http://maven.apache.org/POM/4.0.0}build.{http://maven.apache.org/POM/4.0.0}plugins.{http://maven.apache.org/POM/4.0.0}plugin.{http://maven.apache.org/POM/4.0.0}artifactId",
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.artifactId",
+                "value": "spring-boot-starter-data-jpa",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.artifactId",
+                "value": "spring-boot-starter-data-rest",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.groupId",
+                "value": "org.springframework.data",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.artifactId",
+                "value": "spring-data-rest-hal-browser",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.artifactId",
+                "value": "spring-boot-starter-security",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
+                "value": "spring-boot-starter-thymeleaf",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.groupId",
+                "value": "org.thymeleaf.extras",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.artifactId",
+                "value": "thymeleaf-extras-springsecurity4",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
+                "value": "spring-boot-starter-web",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.artifactId",
+                "value": "spring-boot-devtools",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.scope",
+                "value": "runtime",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.dependencies.dependency.com.h2database:h2.groupId",
+                "value": "com.h2database",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.com.h2database:h2.artifactId",
+                "value": "h2",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.mysql:mysql-connector-java.groupId",
+                "value": "mysql",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.mysql:mysql-connector-java.artifactId",
+                "value": "mysql-connector-java",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.artifactId",
+                "value": "spring-boot-starter-test",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.scope",
+                "value": "test",
+                "type": "UNKNOWN"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.groupId",
+                "value": "org.webjars",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.artifactId",
+                "value": "bootstrap",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.version",
+                "value": "3.3.7",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.groupId",
+                "value": "org.webjars",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.artifactId",
+                "value": "jquery",
+                "type": "NAME"
+              },
+              {
+                "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.version",
+                "value": "2.1.4",
+                "type": "VERSION_NUMBER"
+              },
+              {
+                "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
+                "value": "org.springframework.boot",
+                "type": "NAME"
+              },
+              {
+                "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
-                "type": "ID"
+                "type": "NAME"
               },
               {
                 "option": "ExecutableName",
@@ -946,6 +1612,270 @@
           }
         ]
       }
+    },
+    {
+      "commit_hash": "edb7fb1eba73b60b01c51f8306a1b659696100a9",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "pagination fix\n",
+      "files_changed": 5,
+      "insertions": 61,
+      "deletions": 108,
+      "network_data": null
+    },
+    {
+      "commit_hash": "116a116aa5b256a437833cfb11461bd739a92cb5",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "various style fixes\n",
+      "files_changed": 5,
+      "insertions": 64,
+      "deletions": 72,
+      "network_data": null
+    },
+    {
+      "commit_hash": "eaa3889f211397e549c4c3aee6f4febb05fd56de",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "cleanup\n",
+      "files_changed": 11,
+      "insertions": 5,
+      "deletions": 66,
+      "network_data": null
+    },
+    {
+      "commit_hash": "6db14610ed4edc6332ad7bb23e897f8c6c46418c",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "added screenshots\n",
+      "files_changed": 1,
+      "insertions": 3,
+      "deletions": 1,
+      "network_data": null
+    },
+    {
+      "commit_hash": "a509138c8be76159d8c5d3d7cd19814299271bd9",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "additional style fixes\n",
+      "files_changed": 2,
+      "insertions": 14,
+      "deletions": 17,
+      "network_data": null
+    },
+    {
+      "commit_hash": "69670eb5b0a9dd0a9e44d53ba8cc859126be8786",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "refactoring for constructor DI\n",
+      "files_changed": 12,
+      "insertions": 117,
+      "deletions": 80,
+      "network_data": null
+    },
+    {
+      "commit_hash": "a6af28c0848fd02dee3e02cf469a0673cae2565e",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "cleanup\n",
+      "files_changed": 1,
+      "insertions": 0,
+      "deletions": 11,
+      "network_data": null
+    },
+    {
+      "commit_hash": "591ac2f08320bbef17cab2f35936e649f6f13305",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "moved MyAccessDeniedHandler.java to config package\n",
+      "files_changed": 2,
+      "insertions": 39,
+      "deletions": 39,
+      "network_data": null
+    },
+    {
+      "commit_hash": "33bc84705b9897a7d7ef5e7f0c34ae31412cf18d",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "refactoring to use Optional, and cleanup\n",
+      "files_changed": 4,
+      "insertions": 21,
+      "deletions": 26,
+      "network_data": null
+    },
+    {
+      "commit_hash": "da6344931e07050e836d413feda488a6b6cdb5c5",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "cleanup\n",
+      "files_changed": 8,
+      "insertions": 1,
+      "deletions": 106,
+      "network_data": null
+    },
+    {
+      "commit_hash": "95870c496810b98acc7d89aec6e3307a4f13ea6a",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "refactored annotations to fields\n",
+      "files_changed": 4,
+      "insertions": 58,
+      "deletions": 45,
+      "network_data": null
+    },
+    {
+      "commit_hash": "135980300e7038e74f319cdf019a92245e61f9ac",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "moved ErrorController to config package, and renamed it\n",
+      "files_changed": 2,
+      "insertions": 33,
+      "deletions": 33,
+      "network_data": null
+    },
+    {
+      "commit_hash": "0d234f76cadfea666745774c062ae44e5e1e4d1f",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "modified security configuration\n",
+      "files_changed": 1,
+      "insertions": 5,
+      "deletions": 4,
+      "network_data": null
+    },
+    {
+      "commit_hash": "e3ca03a5141bd2c9983fc5a6478db7e95ef2487d",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "added BlogErrorController\n",
+      "files_changed": 1,
+      "insertions": 28,
+      "deletions": 0,
+      "network_data": null
+    },
+    {
+      "commit_hash": "e918857fedddda312d4adf8e4929e228cdf7e5a9",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "deleting unused files\n",
+      "files_changed": 6,
+      "insertions": 0,
+      "deletions": 189,
+      "network_data": null
+    },
+    {
+      "commit_hash": "4d7476c28e2ad7d8fa9b0162b8ae61ce38d36804",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "refactoring for Optional, and cleanup\n",
+      "files_changed": 7,
+      "insertions": 76,
+      "deletions": 79,
+      "network_data": null
+    },
+    {
+      "commit_hash": "3aa39e63d614e8a87b99f325462a3cd49df6c549",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "fix for HAL Browser\n",
+      "files_changed": 2,
+      "insertions": 2,
+      "deletions": 2,
+      "network_data": null
+    },
+    {
+      "commit_hash": "e2a1bba67810cf0cb6d646e4db4daef06a3f9f0a",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "refactoring methods and variables names, and some methods signatures\n",
+      "files_changed": 11,
+      "insertions": 25,
+      "deletions": 28,
+      "network_data": null
+    },
+    {
+      "commit_hash": "50c5366d3e1dca18229cb5381a05748c3e5b478b",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "moved page index calculation to PostServiceImp.java, and removed Optionals from method parameters\n",
+      "files_changed": 3,
+      "insertions": 10,
+      "deletions": 22,
+      "network_data": null
+    },
+    {
+      "commit_hash": "6b1cee0684e97c2dd28773a58f8ed5171838a822",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "removed unused import\n",
+      "files_changed": 1,
+      "insertions": 4,
+      "deletions": 2,
+      "network_data": null
+    },
+    {
+      "commit_hash": "5a1dc7e39624280d6336833df10ce38de26c73fd",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "removed redundant this calls\n",
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 1,
+      "network_data": null
+    },
+    {
+      "commit_hash": "29e88802fcde1c3411eb7205e9d34a37c85112a1",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "refactored reused functionality to isPrincipalOwnerOfPost method\n",
+      "files_changed": 1,
+      "insertions": 31,
+      "deletions": 24,
+      "network_data": null
+    },
+    {
+      "commit_hash": "aba3c8dc18b28e9b26deb0385081287e7bc37642",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "reusing posts from pager\n",
+      "files_changed": 2,
+      "insertions": 5,
+      "deletions": 1,
+      "network_data": null
+    },
+    {
+      "commit_hash": "ad754f162b0140cc1f81bea8c8cc9e8a35ce4001",
+      "parent_commit": null,
+      "is_config_related": false,
+      "author": "Dus\u030can Reljic\u0301 <reljicd@gmail.com>",
+      "commit_mgs": "refactored to use Model instead of ModelAndView. formatting\n",
+      "files_changed": 8,
+      "insertions": 104,
+      "deletions": 104,
+      "network_data": null
     }
   ]
 }

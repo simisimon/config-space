@@ -1,6 +1,6 @@
 {
   "project_name": "test_project_history",
-  "analysis_time": 0.5433251857757568,
+  "analysis_time": 0.5141115188598633,
   "len_commits": 8,
   "config_commit_data": [
     {
@@ -15,8 +15,8 @@
       "network_data": {
         "links": 15,
         "config_files": [
-          "src/pom.xml",
-          "src/Dockerfile"
+          "src/Dockerfile",
+          "src/pom.xml"
         ],
         "config_files_data": [
           {
@@ -292,8 +292,8 @@
       "network_data": {
         "links": 8,
         "config_files": [
-          "src/pom.xml",
-          "src/Dockerfile"
+          "src/Dockerfile",
+          "src/pom.xml"
         ],
         "config_files_data": [
           {
@@ -514,8 +514,8 @@
       "network_data": {
         "links": 8,
         "config_files": [
-          "src/pom.xml",
-          "src/Dockerfile"
+          "src/Dockerfile",
+          "src/pom.xml"
         ],
         "config_files_data": [
           {
@@ -736,8 +736,8 @@
       "network_data": {
         "links": 8,
         "config_files": [
-          "src/pom.xml",
           "src/Dockerfile",
+          "src/pom.xml",
           "src/config.yml"
         ],
         "config_files_data": [
@@ -986,10 +986,10 @@
       "network_data": {
         "links": 17,
         "config_files": [
-          "src/pom.xml",
           "src/Dockerfile",
-          "src/config.yml",
-          "src/frontend/Dockerfile"
+          "src/frontend/Dockerfile",
+          "src/pom.xml",
+          "src/config.yml"
         ],
         "config_files_data": [
           {
@@ -1329,10 +1329,10 @@
       "network_data": {
         "links": 16,
         "config_files": [
-          "src/pom.xml",
           "src/Dockerfile",
-          "src/config.yml",
-          "src/frontend/Dockerfile"
+          "src/frontend/Dockerfile",
+          "src/pom.xml",
+          "src/config.yml"
         ],
         "config_files_data": [
           {
@@ -1652,8 +1652,8 @@
         "links": 11,
         "config_files": [
           "src/Dockerfile",
-          "src/config.yml",
-          "src/frontend/Dockerfile"
+          "src/frontend/Dockerfile",
+          "src/config.yml"
         ],
         "config_files_data": [
           {

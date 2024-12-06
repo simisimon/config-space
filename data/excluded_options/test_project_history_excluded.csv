@@ -1,0 +1,6 @@
+File,Option,Concept
+src/frontend/Dockerfile,COPY.dest,docker
+src/Dockerfile,COPY.src,docker
+src/frontend/Dockerfile,COPY.src,docker
+src/Dockerfile,WORKDIR,docker
+src/Dockerfile,COPY.dest,docker
