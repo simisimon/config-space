@@ -7,32 +7,22 @@ File Path,Option,Concept,Values,Changed internally,Removed
 .travis.yml,env.global.secure/Gl6a03cI88dKHV4rjP1IkYqCdVe7IM0XNcEzFDCxmvXHWSpqlotntOYtgvtRKsYOzb0cfdQwgFuwj80glUbFX5vbX1y5r+qR5sQSrJVi61e8Pijn0MT7rE/d2gCJwaRTkR2lvtRRTIX41LA+aZ6F7+xFSd+ni82IlaXtDywQJWpCEmxcSqSUd5nVhHzH5JZmkYQmQ8fjxzGUhpeePfapYThPxXsHGxmJeoIlEDM1TEFtxVf3Zo9D10812uesa7EwNSKL6MOBU/Me7+liIHdRRpRwVmOjaFAZLeHsUfZQWcLWer0ODULov1U/YMdF860gV1X8PPYxAYNnWqevOGZIsYTX60yem/dCq90Lx7cIiK/TBZIS7x9k65QwP/shnO/RK8PPANBt8bJ4FBxmDPRMPRvgCPp4wQIYTyaiXd0M6BmK+LysS5cRgOOg7YF+ZRqKjNGY9rkNeGs0x8LIaE4Vz138tJCVJ0U+r2OOZFLCIu4dmvuOo1rWf4Hzh+Xt/nx8RrAwwqHKWRyayHkZEbQv2dNGcJsZyAzXsxA6NTDGQfKYloX5oY4qq3BMCkRoid9sLHoJvZrfkN6mjbZkEd2Ed3RzyTIxasmRUeD45vfr7go9ts1a6ppDrRYJWLi26pqyPhimTI0ljEYXp4QnK5JMya2y6H0wo/hJmzrqfXj4+C0=.secure,travis,['Gl6a03cI88dKHV4rjP1IkYqCdVe7IM0XNcEzFDCxmvXHWSpqlotntOYtgvtRKsYOzb0cfdQwgFuwj80glUbFX5vbX1y5r+qR5sQSrJVi61e8Pijn0MT7rE/d2gCJwaRTkR2lvtRRTIX41LA+aZ6F7+xFSd+ni82IlaXtDywQJWpCEmxcSqSUd5nVhHzH5JZmkYQmQ8fjxzGUhpeePfapYThPxXsHGxmJeoIlEDM1TEFtxVf3Zo9D10812uesa7EwNSKL6MOBU/Me7+liIHdRRpRwVmOjaFAZLeHsUfZQWcLWer0ODULov1U/YMdF860gV1X8PPYxAYNnWqevOGZIsYTX60yem/dCq90Lx7cIiK/TBZIS7x9k65QwP/shnO/RK8PPANBt8bJ4FBxmDPRMPRvgCPp4wQIYTyaiXd0M6BmK+LysS5cRgOOg7YF+ZRqKjNGY9rkNeGs0x8LIaE4Vz138tJCVJ0U+r2OOZFLCIu4dmvuOo1rWf4Hzh+Xt/nx8RrAwwqHKWRyayHkZEbQv2dNGcJsZyAzXsxA6NTDGQfKYloX5oY4qq3BMCkRoid9sLHoJvZrfkN6mjbZkEd2Ed3RzyTIxasmRUeD45vfr7go9ts1a6ppDrRYJWLi26pqyPhimTI0ljEYXp4QnK5JMya2y6H0wo/hJmzrqfXj4+C0='],0,False
 .travis.yml,env.global.secure/Kt8hRbEIkYW3CYJgvqEK9zCyS/l54XOI90799xEuXWgFQtZCH9Rjp6pthk+CxNg+zWndAcxaOm48uccDIEHgyVg/iL5LiwhuZtUNN2NBssSmvhaZM2dXt4fthVF/lp9JcGqeY9g4VvtDV6ODUvtzTXc1oSp0+vxYb94DNJjXvSOJj74Ia3qk67LxrvC+t4pwKb3NZ7vb07Ttjd97Cou2cNoCtj7GyHcsWvfhe2Txxx8XAo/wvSL96YJOd3cooio+n7hzm7PPgid+8G1EeBdOVca/4DI3Q4Z9a2dPFlvBMYSLfd03CVJ/AORiH0xiqMBI/X2K9Go3fLgXDeQhJDdbCXp7dR+ijtV0nEIh8MHeZdBJXMvjtDmKZkIovW6yxRG8qguYpbiFjSvPd8t0gZaEXSaM3uh/Vqn5kmZ21uhUArKZs4mc3ENnXEmo4IMd6C/eQNCXJoMolx9PPdfWZtQfBCWIlYA6GrWPeYWZganfU/1/zVb60gBmuXBl1sFRHAfY2uTGGocYGBcS7P13vPuXC9zSekSvMKI9PKQh+HEakXSlTPYsXqEtGBh/2xv99egk7fynChWiXJ5gML/5WsYA+cFp+mkd24fXEIK2H/3jqFc+UTKw+74q0t0KeBHmSf1bgoXiomhhXqGxx5w5eAHi6a6aWPSQIruhTKGaXuBvztU=.secure,travis,['Kt8hRbEIkYW3CYJgvqEK9zCyS/l54XOI90799xEuXWgFQtZCH9Rjp6pthk+CxNg+zWndAcxaOm48uccDIEHgyVg/iL5LiwhuZtUNN2NBssSmvhaZM2dXt4fthVF/lp9JcGqeY9g4VvtDV6ODUvtzTXc1oSp0+vxYb94DNJjXvSOJj74Ia3qk67LxrvC+t4pwKb3NZ7vb07Ttjd97Cou2cNoCtj7GyHcsWvfhe2Txxx8XAo/wvSL96YJOd3cooio+n7hzm7PPgid+8G1EeBdOVca/4DI3Q4Z9a2dPFlvBMYSLfd03CVJ/AORiH0xiqMBI/X2K9Go3fLgXDeQhJDdbCXp7dR+ijtV0nEIh8MHeZdBJXMvjtDmKZkIovW6yxRG8qguYpbiFjSvPd8t0gZaEXSaM3uh/Vqn5kmZ21uhUArKZs4mc3ENnXEmo4IMd6C/eQNCXJoMolx9PPdfWZtQfBCWIlYA6GrWPeYWZganfU/1/zVb60gBmuXBl1sFRHAfY2uTGGocYGBcS7P13vPuXC9zSekSvMKI9PKQh+HEakXSlTPYsXqEtGBh/2xv99egk7fynChWiXJ5gML/5WsYA+cFp+mkd24fXEIK2H/3jqFc+UTKw+74q0t0KeBHmSf1bgoXiomhhXqGxx5w5eAHi6a6aWPSQIruhTKGaXuBvztU='],0,True
 .travis.yml,env.global.secure/VRlJyPOz7fUmtFdpTdO51BVcjKUGP5t7KF5bG7TSJPXsal7SSxjt6desLQ6zv31tKBp/SrgbnH4hloeAe38hL1I5gQKLPuNjOYhtolgLHlCO3aJiJ0vn0o6mgxOok4S/ul6EMy8VLbKzwt7GrruoaDNVadwc98NY+Grr1eLUzD5CVxa4luSahtKASheCtM29OQOj42Ivnc/MUUMYMymYa/zgIkROqI1ZbQK12NGwx13FzjjF2C9WyTR8IMFOeiuL/Ha8wxT2VeYExWkNw8TQKg35WT26axSoI92BBjPHY+l4IDQ0g8N176sAG52gbz4WXx60kRgqHrn+b5cjO/v1PknqXCqwWVrskm/mgGxJ4IVmpqa7ItDYtoVPzW4hyPsEHWyPMjii5280VdqVRueHyxSBH/uF3iQCDwR0hRdVnPPvgrt40/jbiD3pBhnDQErHCu54FA7uzfFT8LUvj3PgHn19KWAb4gKMpP0AZA3aDOD/3+db1x25ozhDXoCLPFk+kK0lp5mwTKka910lX4L25wp2P3RDdbGQTeVjBBp5+IxzfBuF7m2aEww7HgpB/TmHGaxo61cZfLFwcU2tfIQnPVRiomMqh85xFHIkDETNJJMdV1o+Im5maOzg3u5iy7E6dJec6jTYSCIzh6BemM+scYVZzLkYZVRyrUQkUj7ldoI=.secure,travis,['VRlJyPOz7fUmtFdpTdO51BVcjKUGP5t7KF5bG7TSJPXsal7SSxjt6desLQ6zv31tKBp/SrgbnH4hloeAe38hL1I5gQKLPuNjOYhtolgLHlCO3aJiJ0vn0o6mgxOok4S/ul6EMy8VLbKzwt7GrruoaDNVadwc98NY+Grr1eLUzD5CVxa4luSahtKASheCtM29OQOj42Ivnc/MUUMYMymYa/zgIkROqI1ZbQK12NGwx13FzjjF2C9WyTR8IMFOeiuL/Ha8wxT2VeYExWkNw8TQKg35WT26axSoI92BBjPHY+l4IDQ0g8N176sAG52gbz4WXx60kRgqHrn+b5cjO/v1PknqXCqwWVrskm/mgGxJ4IVmpqa7ItDYtoVPzW4hyPsEHWyPMjii5280VdqVRueHyxSBH/uF3iQCDwR0hRdVnPPvgrt40/jbiD3pBhnDQErHCu54FA7uzfFT8LUvj3PgHn19KWAb4gKMpP0AZA3aDOD/3+db1x25ozhDXoCLPFk+kK0lp5mwTKka910lX4L25wp2P3RDdbGQTeVjBBp5+IxzfBuF7m2aEww7HgpB/TmHGaxo61cZfLFwcU2tfIQnPVRiomMqh85xFHIkDETNJJMdV1o+Im5maOzg3u5iy7E6dJec6jTYSCIzh6BemM+scYVZzLkYZVRyrUQkUj7ldoI='],0,False
-.travis.yml,file,travis,['.travis.yml'],0,False
 .travis.yml,jdk,travis,['oraclejdk8'],0,False
 .travis.yml,language,travis,['java'],0,False
 .travis.yml,services,travis,['docker'],0,False
 .travis.yml,sudo,travis,['required'],0,False
-Dockerfile,ADD.dest,docker,['/usr/local/tomcat/webapps/ROOT.war'],0,True
-Dockerfile,ADD.src,docker,['target/ROOT.war'],0,True
+Dockerfile,ADD,docker,['target/ROOT.war /usr/local/tomcat/webapps/ROOT.war'],0,True
 Dockerfile,EXPOSE,docker,['8080'],0,True
 Dockerfile,FROM,docker,['tomcat:8.0'],0,True
+Dockerfile,RUN,docker,['rm -rf /usr/local/tomcat/webapps/ROOT'],0,True
 Dockerfile,WORKDIR,docker,['/usr/local/tomcat/'],0,True
-Dockerfile,file,docker,['Dockerfile'],0,True
 account-service/.mvn/wrapper/maven-wrapper.properties,distributionurl,configparser,['https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.3.3/apache-maven-3.3.3-bin.zip'],0,True
-account-service/.mvn/wrapper/maven-wrapper.properties,file,configparser,['account-service/.mvn/wrapper/maven-wrapper.properties'],0,True
-account-service/Dockerfile,ADD.dest,docker,['/app/'],0,False
-account-service/Dockerfile,ADD.src,docker,['target/account-service.jar'],0,False
-account-service/Dockerfile,CMD.exec_command,docker,"['java -Xmx200m -jar /app/account-service.jar', 'java -jar /app/account-service.jar']",1,False
-account-service/Dockerfile,CMD.param0,docker,['java'],0,False
-account-service/Dockerfile,CMD.param1,docker,"['-Xmx200m', '-jar']",1,False
-account-service/Dockerfile,CMD.param2,docker,"['-jar', 'app/account-service.jar']",1,False
-account-service/Dockerfile,CMD.param3,docker,['app/account-service.jar'],0,False
+account-service/Dockerfile,ADD,docker,['./target/account-service.jar /app/'],0,False
+account-service/Dockerfile,CMD,docker,"['java -Xmx200m -jar /app/account-service.jar', 'java -jar /app/account-service.jar']",1,False
 account-service/Dockerfile,EXPOSE,docker,"['6000', '7000', '8080']",2,False
 account-service/Dockerfile,FROM,docker,['java:8-jre'],0,False
-account-service/Dockerfile,file,docker,['account-service/Dockerfile'],0,False
 account-service/pom.xml,ExecutableName,maven,['target/account-service-1.0-SNAPSHOT.jar'],0,False
 account-service/pom.xml,ExecutableNameNoVersion,maven,['target/account-service.jar'],0,False
-account-service/pom.xml,file,maven,['account-service/pom.xml'],0,False
 account-service/pom.xml,project.artifactId,maven,['account-service'],0,False
 account-service/pom.xml,project.build.plugins.plugin.org.jacoco:jacoco-maven-plugin.artifactId,maven,['jacoco-maven-plugin'],0,True
 account-service/pom.xml,project.build.plugins.plugin.org.jacoco:jacoco-maven-plugin.groupId,maven,['org.jacoco'],0,True
@@ -149,7 +139,6 @@ account-service/pom.xml,project.repositories.repository.name,maven,['Spring Mile
 account-service/pom.xml,project.repositories.repository.snapshots.enabled,maven,['false'],0,True
 account-service/pom.xml,project.repositories.repository.url,maven,['https://repo.spring.io/milestone'],0,True
 account-service/pom.xml,project.version,maven,['1.0-SNAPSHOT'],0,False
-account-service/src/main/resources/application.yml,file,spring,['account-service/src/main/resources/application.yml'],0,True
 account-service/src/main/resources/application.yml,hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds,spring,['10000'],0,True
 account-service/src/main/resources/application.yml,logging.level.org.springframework.security,spring,"['DEBUG', 'INFO']",1,True
 account-service/src/main/resources/application.yml,security.oauth2.client.accessTokenUri,spring,"['http://auth-service:5000/uaa/oauth/token', 'http://localhost:8888/uaa/oauth/token']",1,True
@@ -167,32 +156,21 @@ account-service/src/main/resources/application.yml,spring.data.mongodb.port,spri
 account-service/src/main/resources/application.yml,spring.data.mongodb.username,spring,"['service', 'user']",1,True
 account-service/src/main/resources/bootstrap.yml,eureka.client.serviceUrl.defaultZone,yaml,"['http://127.0.0.1:8761/eureka/', 'http://registry:8761/eureka/']",1,True
 account-service/src/main/resources/bootstrap.yml,eureka.instance.prefer-ip-address,yaml,['true'],0,True
-account-service/src/main/resources/bootstrap.yml,file,yaml,['account-service/src/main/resources/bootstrap.yml'],0,False
 account-service/src/main/resources/bootstrap.yml,spring.application.name,yaml,['account-service'],0,False
 account-service/src/main/resources/bootstrap.yml,spring.cloud.config.fail-fast,yaml,['true'],0,False
 account-service/src/main/resources/bootstrap.yml,spring.cloud.config.password,yaml,['${CONFIG_SERVICE_PASSWORD}'],0,False
 account-service/src/main/resources/bootstrap.yml,spring.cloud.config.uri,yaml,['http://config:8888'],0,False
 account-service/src/main/resources/bootstrap.yml,spring.cloud.config.username,yaml,['user'],0,False
-account-service/src/test/resources/application.yml,file,spring,['account-service/src/test/resources/application.yml'],0,False
 account-service/src/test/resources/application.yml,spring.data.mongodb.database,spring,['piggymetrics'],0,False
 account-service/src/test/resources/application.yml,spring.data.mongodb.port,spring,['0'],0,False
 account-service/src/test/resources/bootstrap.yml,eureka.client.enabled,yaml,['false'],0,False
-account-service/src/test/resources/bootstrap.yml,file,yaml,['account-service/src/test/resources/bootstrap.yml'],0,False
 auth-service/.mvn/wrapper/maven-wrapper.properties,distributionurl,configparser,['https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.3.3/apache-maven-3.3.3-bin.zip'],0,True
-auth-service/.mvn/wrapper/maven-wrapper.properties,file,configparser,['auth-service/.mvn/wrapper/maven-wrapper.properties'],0,True
-auth-service/Dockerfile,ADD.dest,docker,['/app/'],0,False
-auth-service/Dockerfile,ADD.src,docker,['target/auth-service.jar'],0,False
-auth-service/Dockerfile,CMD.exec_command,docker,"['java -Xmx200m -jar /app/auth-service.jar', 'java -jar /app/auth-service.jar']",1,False
-auth-service/Dockerfile,CMD.param0,docker,['java'],0,False
-auth-service/Dockerfile,CMD.param1,docker,"['-Xmx200m', '-jar']",1,False
-auth-service/Dockerfile,CMD.param2,docker,"['-jar', 'app/auth-service.jar']",1,False
-auth-service/Dockerfile,CMD.param3,docker,['app/auth-service.jar'],0,False
+auth-service/Dockerfile,ADD,docker,['./target/auth-service.jar /app/'],0,False
+auth-service/Dockerfile,CMD,docker,"['java -Xmx200m -jar /app/auth-service.jar', 'java -jar /app/auth-service.jar']",1,False
 auth-service/Dockerfile,EXPOSE,docker,['5000'],0,False
 auth-service/Dockerfile,FROM,docker,['java:8-jre'],0,False
-auth-service/Dockerfile,file,docker,['auth-service/Dockerfile'],0,False
 auth-service/pom.xml,ExecutableName,maven,['target/auth-service-1.0-SNAPSHOT.jar'],0,False
 auth-service/pom.xml,ExecutableNameNoVersion,maven,['target/auth-service.jar'],0,False
-auth-service/pom.xml,file,maven,['auth-service/pom.xml'],0,False
 auth-service/pom.xml,project.artifactId,maven,['auth-service'],0,False
 auth-service/pom.xml,project.build.plugins.plugin.org.jacoco:jacoco-maven-plugin.artifactId,maven,['jacoco-maven-plugin'],0,True
 auth-service/pom.xml,project.build.plugins.plugin.org.jacoco:jacoco-maven-plugin.groupId,maven,['org.jacoco'],0,True
@@ -280,7 +258,6 @@ auth-service/pom.xml,project.repositories.repository.name,maven,['Spring Milesto
 auth-service/pom.xml,project.repositories.repository.snapshots.enabled,maven,['false'],0,True
 auth-service/pom.xml,project.repositories.repository.url,maven,['https://repo.spring.io/milestone'],0,True
 auth-service/pom.xml,project.version,maven,['1.0-SNAPSHOT'],0,False
-auth-service/src/main/resources/application.yml,file,spring,['auth-service/src/main/resources/application.yml'],0,True
 auth-service/src/main/resources/application.yml,logging.level.org.springframework.security,spring,"['DEBUG', 'INFO']",1,True
 auth-service/src/main/resources/application.yml,server.context-path,spring,['/uaa'],0,True
 auth-service/src/main/resources/application.yml,server.port,spring,"['5000', '8888']",1,True
@@ -291,30 +268,20 @@ auth-service/src/main/resources/application.yml,spring.data.mongodb.port,spring,
 auth-service/src/main/resources/application.yml,spring.data.mongodb.username,spring,['user'],0,True
 auth-service/src/main/resources/bootstrap.yml,eureka.client.serviceUrl.defaultZone,yaml,"['http://127.0.0.1:8761/eureka/', 'http://registry:8761/eureka/']",1,True
 auth-service/src/main/resources/bootstrap.yml,eureka.instance.prefer-ip-address,yaml,['true'],0,True
-auth-service/src/main/resources/bootstrap.yml,file,yaml,['auth-service/src/main/resources/bootstrap.yml'],0,False
 auth-service/src/main/resources/bootstrap.yml,spring.application.name,yaml,['auth-service'],0,False
 auth-service/src/main/resources/bootstrap.yml,spring.cloud.config.fail-fast,yaml,['true'],0,False
 auth-service/src/main/resources/bootstrap.yml,spring.cloud.config.password,yaml,['${CONFIG_SERVICE_PASSWORD}'],0,False
 auth-service/src/main/resources/bootstrap.yml,spring.cloud.config.uri,yaml,['http://config:8888'],0,False
 auth-service/src/main/resources/bootstrap.yml,spring.cloud.config.username,yaml,['user'],0,False
-auth-service/src/test/resources/application.yml,file,spring,['auth-service/src/test/resources/application.yml'],0,False
 auth-service/src/test/resources/application.yml,spring.data.mongodb.database,spring,['piggymetrics'],0,False
 auth-service/src/test/resources/application.yml,spring.data.mongodb.port,spring,['0'],0,False
 auth-service/src/test/resources/bootstrap.yml,eureka.client.enabled,yaml,['false'],0,False
-auth-service/src/test/resources/bootstrap.yml,file,yaml,['auth-service/src/test/resources/bootstrap.yml'],0,False
-config/Dockerfile,ADD.dest,docker,['/app/'],0,False
-config/Dockerfile,ADD.src,docker,['target/config.jar'],0,False
-config/Dockerfile,CMD.exec_command,docker,"['java -Xmx200m -jar /app/config.jar', 'java -jar /app/config.jar']",1,False
-config/Dockerfile,CMD.param0,docker,['java'],0,False
-config/Dockerfile,CMD.param1,docker,"['-Xmx200m', '-jar']",1,False
-config/Dockerfile,CMD.param2,docker,"['-jar', 'app/config.jar']",1,False
-config/Dockerfile,CMD.param3,docker,['app/config.jar'],0,False
+config/Dockerfile,ADD,docker,['./target/config.jar /app/'],0,False
+config/Dockerfile,CMD,docker,"['java -Xmx200m -jar /app/config.jar', 'java -jar /app/config.jar']",1,False
 config/Dockerfile,EXPOSE,docker,['8888'],0,False
 config/Dockerfile,FROM,docker,['java:8-jre'],0,False
-config/Dockerfile,file,docker,['config/Dockerfile'],0,False
 config/pom.xml,ExecutableName,maven,['target/config-1.0.0-SNAPSHOT.jar'],0,False
 config/pom.xml,ExecutableNameNoVersion,maven,['target/config.jar'],0,False
-config/pom.xml,file,maven,['config/pom.xml'],0,False
 config/pom.xml,project.artifactId,maven,['config'],0,False
 config/pom.xml,project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId,maven,['spring-boot-maven-plugin'],0,False
 config/pom.xml,project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.configuration.finalName,maven,['config'],0,False
@@ -350,14 +317,12 @@ config/pom.xml,project.properties.java.version,maven,['1.8'],0,True
 config/pom.xml,project.properties.project.build.sourceEncoding,maven,['UTF-8'],0,True
 config/pom.xml,project.properties.spring-cloud.version,maven,['Finchley.RELEASE'],0,True
 config/pom.xml,project.version,maven,['1.0.0-SNAPSHOT'],0,False
-config/src/main/resources/application.yml,file,spring,['config/src/main/resources/application.yml'],0,False
 config/src/main/resources/application.yml,security.user.password,spring,['${CONFIG_SERVICE_PASSWORD}'],0,True
 config/src/main/resources/application.yml,server.port,spring,['8888'],0,False
 config/src/main/resources/application.yml,spring.cloud.config.server.native.search-locations,spring,['classpath:/shared'],0,False
 config/src/main/resources/application.yml,spring.profiles.active,spring,['native'],0,False
 config/src/main/resources/application.yml,spring.security.user.password,spring,['${CONFIG_SERVICE_PASSWORD}'],0,False
 config/src/main/resources/shared/account-service.yml,feign.hystrix.enabled,yaml,['true'],0,False
-config/src/main/resources/shared/account-service.yml,file,yaml,['config/src/main/resources/shared/account-service.yml'],0,False
 config/src/main/resources/shared/account-service.yml,security.oauth2.client.accessTokenUri,yaml,['http://auth-service:5000/uaa/oauth/token'],0,False
 config/src/main/resources/shared/account-service.yml,security.oauth2.client.clientId,yaml,['account-service'],0,False
 config/src/main/resources/shared/account-service.yml,security.oauth2.client.clientSecret,yaml,['${ACCOUNT_SERVICE_PASSWORD}'],0,False
@@ -373,12 +338,10 @@ config/src/main/resources/shared/account-service.yml,spring.data.mongodb.port,ya
 config/src/main/resources/shared/account-service.yml,spring.data.mongodb.username,yaml,['user'],0,False
 config/src/main/resources/shared/application.yml,eureka.client.serviceUrl.defaultZone,spring,['http://registry:8761/eureka/'],0,False
 config/src/main/resources/shared/application.yml,eureka.instance.prefer-ip-address,spring,['True'],0,False
-config/src/main/resources/shared/application.yml,file,spring,['config/src/main/resources/shared/application.yml'],0,False
 config/src/main/resources/shared/application.yml,hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds,spring,['10000'],0,False
 config/src/main/resources/shared/application.yml,logging.level.org.springframework.security,spring,['INFO'],0,False
 config/src/main/resources/shared/application.yml,security.oauth2.resource.user-info-uri,spring,['http://auth-service:5000/uaa/users/current'],0,False
 config/src/main/resources/shared/application.yml,spring.rabbitmq.host,spring,['rabbitmq'],0,False
-config/src/main/resources/shared/auth-service.yml,file,yaml,['config/src/main/resources/shared/auth-service.yml'],0,False
 config/src/main/resources/shared/auth-service.yml,server.context-path,yaml,['/uaa'],0,True
 config/src/main/resources/shared/auth-service.yml,server.port,yaml,['5000'],0,False
 config/src/main/resources/shared/auth-service.yml,server.servlet.context-path,yaml,['/uaa'],0,False
@@ -387,7 +350,6 @@ config/src/main/resources/shared/auth-service.yml,spring.data.mongodb.host,yaml,
 config/src/main/resources/shared/auth-service.yml,spring.data.mongodb.password,yaml,['${MONGODB_PASSWORD}'],0,False
 config/src/main/resources/shared/auth-service.yml,spring.data.mongodb.port,yaml,['27017'],0,False
 config/src/main/resources/shared/auth-service.yml,spring.data.mongodb.username,yaml,['user'],0,False
-config/src/main/resources/shared/gateway.yml,file,yaml,['config/src/main/resources/shared/gateway.yml'],0,False
 config/src/main/resources/shared/gateway.yml,hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds,yaml,['20000'],0,False
 config/src/main/resources/shared/gateway.yml,ribbon.ConnectTimeout,yaml,['20000'],0,False
 config/src/main/resources/shared/gateway.yml,ribbon.ReadTimeout,yaml,['20000'],0,False
@@ -407,14 +369,12 @@ config/src/main/resources/shared/gateway.yml,zuul.routes.notification-service.st
 config/src/main/resources/shared/gateway.yml,zuul.routes.statistics-service.path,yaml,['/statistics/**'],0,False
 config/src/main/resources/shared/gateway.yml,zuul.routes.statistics-service.serviceId,yaml,['statistics-service'],0,False
 config/src/main/resources/shared/gateway.yml,zuul.routes.statistics-service.stripPrefix,yaml,['false'],0,False
-config/src/main/resources/shared/monitoring.yml,file,yaml,['config/src/main/resources/shared/monitoring.yml'],0,False
 config/src/main/resources/shared/monitoring.yml,server.port,yaml,['9000'],0,True
 config/src/main/resources/shared/notification-service.yml,backup.cron,yaml,['0 0 12 * * *'],0,False
 config/src/main/resources/shared/notification-service.yml,backup.email.attachment,yaml,['backup.json'],0,False
 config/src/main/resources/shared/notification-service.yml,backup.email.subject,yaml,['PiggyMetrics account backup'],0,False
 config/src/main/resources/shared/notification-service.yml,backup.email.text,yaml,"['Howdy, {0}. Your account backup is ready.\r\n\r\nCheers,\r\nPiggyMetrics team']",0,False
 config/src/main/resources/shared/notification-service.yml,delay.value,yaml,['5000'],0,True
-config/src/main/resources/shared/notification-service.yml,file,yaml,['config/src/main/resources/shared/notification-service.yml'],0,False
 config/src/main/resources/shared/notification-service.yml,remind.cron,yaml,['0 0 0 * * *'],0,False
 config/src/main/resources/shared/notification-service.yml,remind.email.subject,yaml,['PiggyMetrics reminder'],0,False
 config/src/main/resources/shared/notification-service.yml,remind.email.text,yaml,"[""Hey, {0}! We''ve missed you here on PiggyMetrics. It''s time to check your budget statistics.\r\n\r\nCheers,\r\nPiggyMetrics team""]",0,False
@@ -440,9 +400,7 @@ config/src/main/resources/shared/notification-service.yml,spring.mail.properties
 config/src/main/resources/shared/notification-service.yml,spring.mail.properties.mail.smtp.socketFactory.port,yaml,['465'],0,False
 config/src/main/resources/shared/notification-service.yml,spring.mail.properties.mail.smtp.ssl.enable,yaml,['true'],0,False
 config/src/main/resources/shared/notification-service.yml,spring.mail.username,yaml,['dev-user'],0,False
-config/src/main/resources/shared/registry.yml,file,yaml,['config/src/main/resources/shared/registry.yml'],0,False
 config/src/main/resources/shared/registry.yml,server.port,yaml,['8761'],0,False
-config/src/main/resources/shared/statistics-service.yml,file,yaml,['config/src/main/resources/shared/statistics-service.yml'],0,False
 config/src/main/resources/shared/statistics-service.yml,rates.url,yaml,"['http://api.fixer.io', 'https://api.exchangeratesapi.io', 'https://exchangeratesapi.io/api']",2,False
 config/src/main/resources/shared/statistics-service.yml,security.oauth2.client.accessTokenUri,yaml,['http://auth-service:5000/uaa/oauth/token'],0,False
 config/src/main/resources/shared/statistics-service.yml,security.oauth2.client.clientId,yaml,['statistics-service'],0,False
@@ -457,8 +415,6 @@ config/src/main/resources/shared/statistics-service.yml,spring.data.mongodb.host
 config/src/main/resources/shared/statistics-service.yml,spring.data.mongodb.password,yaml,['${MONGODB_PASSWORD}'],0,False
 config/src/main/resources/shared/statistics-service.yml,spring.data.mongodb.port,yaml,['27017'],0,False
 config/src/main/resources/shared/statistics-service.yml,spring.data.mongodb.username,yaml,['user'],0,False
-config/src/main/resources/shared/turbine-stream-service.yml,file,yaml,['config/src/main/resources/shared/turbine-stream-service.yml'],0,False
-docker-compose.dev.yml,file,docker-compose,['docker-compose.dev.yml'],0,False
 docker-compose.dev.yml,services.account-mongodb.build,docker-compose,['mongodb'],0,False
 docker-compose.dev.yml,services.account-mongodb.env_file,docker-compose,['dev.env'],0,True
 docker-compose.dev.yml,services.account-mongodb.environment.MONGODB_PASSWORD,docker-compose,['dev-password'],0,True
@@ -528,7 +484,6 @@ docker-compose.yml,account-service.env_file,docker-compose,['dev.env'],0,True
 docker-compose.yml,account-service.ports.container,docker-compose,['8080'],0,True
 docker-compose.yml,account-service.ports.host,docker-compose,['9000'],0,True
 docker-compose.yml,account-service.restart,docker-compose,['always'],0,True
-docker-compose.yml,file,docker-compose,['docker-compose.yml'],0,False
 docker-compose.yml,gateway.build,docker-compose,['gateway'],0,True
 docker-compose.yml,gateway.ports,docker-compose,['80:8080'],0,True
 docker-compose.yml,gateway.restart,docker-compose,['always'],0,True
@@ -639,20 +594,12 @@ docker-compose.yml,services.turbine-stream-service.ports.host,docker-compose,['8
 docker-compose.yml,services.turbine-stream-service.restart,docker-compose,['always'],0,False
 docker-compose.yml,version,docker-compose,"['2', '2.1']",1,False
 gateway/.mvn/wrapper/maven-wrapper.properties,distributionurl,configparser,['https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.3.3/apache-maven-3.3.3-bin.zip'],0,True
-gateway/.mvn/wrapper/maven-wrapper.properties,file,configparser,['gateway/.mvn/wrapper/maven-wrapper.properties'],0,True
-gateway/Dockerfile,ADD.dest,docker,['/app/'],0,False
-gateway/Dockerfile,ADD.src,docker,['target/gateway.jar'],0,False
-gateway/Dockerfile,CMD.exec_command,docker,"['java -Xmx200m -jar /app/gateway.jar', 'java -jar /app/gateway.jar']",1,False
-gateway/Dockerfile,CMD.param0,docker,['java'],0,False
-gateway/Dockerfile,CMD.param1,docker,"['-Xmx200m', '-jar']",1,False
-gateway/Dockerfile,CMD.param2,docker,"['-jar', 'app/gateway.jar']",1,False
-gateway/Dockerfile,CMD.param3,docker,['app/gateway.jar'],0,False
+gateway/Dockerfile,ADD,docker,['./target/gateway.jar /app/'],0,False
+gateway/Dockerfile,CMD,docker,"['java -Xmx200m -jar /app/gateway.jar', 'java -jar /app/gateway.jar']",1,False
 gateway/Dockerfile,EXPOSE,docker,"['4000', '8080']",1,False
 gateway/Dockerfile,FROM,docker,['java:8-jre'],0,False
-gateway/Dockerfile,file,docker,['gateway/Dockerfile'],0,False
 gateway/pom.xml,ExecutableName,maven,['target/gateway-1.0-SNAPSHOT.jar'],0,False
 gateway/pom.xml,ExecutableNameNoVersion,maven,['target/gateway.jar'],0,False
-gateway/pom.xml,file,maven,['gateway/pom.xml'],0,False
 gateway/pom.xml,project.artifactId,maven,['gateway'],0,False
 gateway/pom.xml,project.build.plugins.plugin.org.jacoco:jacoco-maven-plugin.artifactId,maven,['jacoco-maven-plugin'],0,True
 gateway/pom.xml,project.build.plugins.plugin.org.jacoco:jacoco-maven-plugin.groupId,maven,['org.jacoco'],0,True
@@ -711,7 +658,6 @@ gateway/pom.xml,project.repositories.repository.name,maven,['Spring Milestones']
 gateway/pom.xml,project.repositories.repository.snapshots.enabled,maven,['false'],0,True
 gateway/pom.xml,project.repositories.repository.url,maven,['https://repo.spring.io/milestone'],0,True
 gateway/pom.xml,project.version,maven,['1.0-SNAPSHOT'],0,False
-gateway/src/main/resources/application.yml,file,spring,['gateway/src/main/resources/application.yml'],0,True
 gateway/src/main/resources/application.yml,hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds,spring,"['10000', '20000']",1,True
 gateway/src/main/resources/application.yml,logging.level.,spring,['INFO'],0,True
 gateway/src/main/resources/application.yml,ribbon.ConnectTimeout,spring,['20000'],0,True
@@ -736,31 +682,21 @@ gateway/src/main/resources/application.yml,zuul.routes.statistics-service.stripP
 gateway/src/main/resources/application.yml,zuul.routes.statistics-service.url,spring,['http://localhost:11111'],0,True
 gateway/src/main/resources/bootstrap.yml,eureka.client.serviceUrl.defaultZone,yaml,"['http://127.0.0.1:8761/eureka/', 'http://registry:8761/eureka/']",1,True
 gateway/src/main/resources/bootstrap.yml,eureka.instance.prefer-ip-address,yaml,['true'],0,True
-gateway/src/main/resources/bootstrap.yml,file,yaml,['gateway/src/main/resources/bootstrap.yml'],0,False
 gateway/src/main/resources/bootstrap.yml,spring.application.name,yaml,['gateway'],0,False
 gateway/src/main/resources/bootstrap.yml,spring.cloud.config.fail-fast,yaml,['true'],0,False
 gateway/src/main/resources/bootstrap.yml,spring.cloud.config.password,yaml,['${CONFIG_SERVICE_PASSWORD}'],0,False
 gateway/src/main/resources/bootstrap.yml,spring.cloud.config.uri,yaml,['http://config:8888'],0,False
 gateway/src/main/resources/bootstrap.yml,spring.cloud.config.username,yaml,['user'],0,False
 gateway/src/test/resources/bootstrap.yml,eureka.client.enabled,yaml,['false'],0,False
-gateway/src/test/resources/bootstrap.yml,file,yaml,['gateway/src/test/resources/bootstrap.yml'],0,False
-mongodb/Dockerfile,ENTRYPOINT.exec_command,docker,"['/init.sh', '/initx.sh']",1,False
-mongodb/Dockerfile,ENTRYPOINT.param0,docker,"['init.sh', 'initx.sh']",1,False
+mongodb/Dockerfile,ENTRYPOINT,docker,"['/init.sh', '/initx.sh']",1,False
 mongodb/Dockerfile,FROM,docker,['mongo:3'],0,False
-mongodb/Dockerfile,file,docker,['mongodb/Dockerfile'],0,False
-monitoring/Dockerfile,ADD.dest,docker,['/app/'],0,False
-monitoring/Dockerfile,ADD.src,docker,['target/monitoring.jar'],0,False
-monitoring/Dockerfile,CMD.exec_command,docker,"['java -Xmx200m -jar /app/monitoring.jar', 'java -jar /app/monitoring.jar']",1,False
-monitoring/Dockerfile,CMD.param0,docker,['java'],0,False
-monitoring/Dockerfile,CMD.param1,docker,"['-Xmx200m', '-jar']",1,False
-monitoring/Dockerfile,CMD.param2,docker,"['-jar', 'app/monitoring.jar']",1,False
-monitoring/Dockerfile,CMD.param3,docker,['app/monitoring.jar'],0,False
+mongodb/Dockerfile,RUN,docker,"['chmod +x /init.sh &&  apt-get update && apt-get dist-upgrade -y &&  apt-get install psmisc -y -q &&  apt-get autoremove -y && apt-get clean &&  rm -rf /var/cache/* && rm -rf /var/lib/apt/lists/*', 'chmod +x /init.sh &&  apt-get update && apt-get dist-upgrade -y --force-yes &&  apt-get install psmisc -y -q &&  apt-get autoremove -y && apt-get clean &&  rm -rf /var/cache/* && rm -rf /var/lib/apt/lists/*', 'chmod +x /init.sh &&  apt-get update && apt-get dist-upgrade -y --force-yes && apt-get install dos2unix &&  apt-get install psmisc -y -q &&  apt-get autoremove -y && apt-get clean &&  rm -rf /var/cache/* && rm -rf /var/lib/apt/lists/* &&  dos2unix -n /init.sh /initx.sh && chmod +x /initx.sh']",2,False
+monitoring/Dockerfile,ADD,docker,['./target/monitoring.jar /app/'],0,False
+monitoring/Dockerfile,CMD,docker,"['java -Xmx200m -jar /app/monitoring.jar', 'java -jar /app/monitoring.jar']",1,False
 monitoring/Dockerfile,EXPOSE,docker,['8080'],0,False
 monitoring/Dockerfile,FROM,docker,['java:8-jre'],0,False
-monitoring/Dockerfile,file,docker,['monitoring/Dockerfile'],0,False
 monitoring/pom.xml,ExecutableName,maven,['target/monitoring-0.0.1-SNAPSHOT.jar'],0,False
 monitoring/pom.xml,ExecutableNameNoVersion,maven,['target/monitoring.jar'],0,False
-monitoring/pom.xml,file,maven,['monitoring/pom.xml'],0,False
 monitoring/pom.xml,project.artifactId,maven,['monitoring'],0,False
 monitoring/pom.xml,project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId,maven,['spring-boot-maven-plugin'],0,False
 monitoring/pom.xml,project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.configuration.finalName,maven,['${project.name}'],0,False
@@ -810,7 +746,6 @@ monitoring/pom.xml,project.repositories.repository.name,maven,['Spring Milestone
 monitoring/pom.xml,project.repositories.repository.snapshots.enabled,maven,['false'],0,True
 monitoring/pom.xml,project.repositories.repository.url,maven,['https://repo.spring.io/milestone'],0,True
 monitoring/pom.xml,project.version,maven,['0.0.1-SNAPSHOT'],0,False
-monitoring/src/main/resources/bootstrap.yml,file,yaml,['monitoring/src/main/resources/bootstrap.yml'],0,False
 monitoring/src/main/resources/bootstrap.yml,spring.application.name,yaml,['monitoring'],0,False
 monitoring/src/main/resources/bootstrap.yml,spring.cloud.config.fail-fast,yaml,['true'],0,False
 monitoring/src/main/resources/bootstrap.yml,spring.cloud.config.password,yaml,['${CONFIG_SERVICE_PASSWORD}'],0,False
@@ -818,20 +753,13 @@ monitoring/src/main/resources/bootstrap.yml,spring.cloud.config.uri,yaml,['http:
 monitoring/src/main/resources/bootstrap.yml,spring.cloud.config.username,yaml,['user'],0,False
 monitoring/src/main/resources/bootstrap.yml,spring.rabbitmq.host,yaml,['rabbitmq'],0,True
 monitoring/src/test/resources/bootstrap.yml,eureka.client.enabled,yaml,['false'],0,False
-monitoring/src/test/resources/bootstrap.yml,file,yaml,['monitoring/src/test/resources/bootstrap.yml'],0,False
-notification-service/Dockerfile,ADD.dest,docker,['/app/'],0,False
-notification-service/Dockerfile,ADD.src,docker,['target/notification-service.jar'],0,False
-notification-service/Dockerfile,CMD.exec_command,docker,"['java -Xmx200m -jar /app/notification-service.jar', 'java -jar /app/notification-service.jar']",1,False
-notification-service/Dockerfile,CMD.param0,docker,['java'],0,False
-notification-service/Dockerfile,CMD.param1,docker,"['-Xmx200m', '-jar']",1,False
-notification-service/Dockerfile,CMD.param2,docker,"['-jar', 'app/notification-service.jar']",1,False
-notification-service/Dockerfile,CMD.param3,docker,['app/notification-service.jar'],0,False
+notification-service/Dockerfile,ADD,docker,['./target/notification-service.jar /app/'],0,False
+notification-service/Dockerfile,CMD,docker,"['java -Xmx200m -jar /app/notification-service.jar', 'java -jar /app/notification-service.jar']",1,False
 notification-service/Dockerfile,EXPOSE,docker,"['8000', '8888']",1,False
 notification-service/Dockerfile,FROM,docker,['java:8-jre'],0,False
-notification-service/Dockerfile,file,docker,['notification-service/Dockerfile'],0,False
+notification-service/Dockerfile,RUN,docker,['java -jar /app/notification-service.jar'],0,True
 notification-service/pom.xml,ExecutableName,maven,['target/notification-service-1.0.0-SNAPSHOT.jar'],0,False
 notification-service/pom.xml,ExecutableNameNoVersion,maven,['target/notification-service.jar'],0,False
-notification-service/pom.xml,file,maven,['notification-service/pom.xml'],0,False
 notification-service/pom.xml,project.artifactId,maven,['notification-service'],0,False
 notification-service/pom.xml,project.build.plugins.plugin.org.jacoco:jacoco-maven-plugin:0.7.5.201505241946.artifactId,maven,['jacoco-maven-plugin'],0,True
 notification-service/pom.xml,project.build.plugins.plugin.org.jacoco:jacoco-maven-plugin:0.7.5.201505241946.executions.execution.id,maven,['report'],0,True
@@ -935,7 +863,6 @@ notification-service/pom.xml,project.repositories.repository.name,maven,['Spring
 notification-service/pom.xml,project.repositories.repository.snapshots.enabled,maven,['false'],0,True
 notification-service/pom.xml,project.repositories.repository.url,maven,['https://repo.spring.io/milestone'],0,True
 notification-service/pom.xml,project.version,maven,['1.0.0-SNAPSHOT'],0,False
-notification-service/src/main/resources/bootstrap.yml,file,yaml,['notification-service/src/main/resources/bootstrap.yml'],0,False
 notification-service/src/main/resources/bootstrap.yml,spring.application.name,yaml,['notification-service'],0,False
 notification-service/src/main/resources/bootstrap.yml,spring.cloud.config.fail-fast,yaml,['true'],0,False
 notification-service/src/main/resources/bootstrap.yml,spring.cloud.config.password,yaml,['${CONFIG_SERVICE_PASSWORD}'],0,False
@@ -946,7 +873,6 @@ notification-service/src/test/resources/application.yml,backup.email.attachment,
 notification-service/src/test/resources/application.yml,backup.email.subject,spring,['PiggyMetrics account backup'],0,False
 notification-service/src/test/resources/application.yml,backup.email.text,spring,"['Howdy, {0}. Your account backup is ready.\r\n\r\nCheers,\r\nPiggyMetrics team']",0,False
 notification-service/src/test/resources/application.yml,delay.value,spring,['5000'],0,True
-notification-service/src/test/resources/application.yml,file,spring,['notification-service/src/test/resources/application.yml'],0,False
 notification-service/src/test/resources/application.yml,remind.cron,spring,['0 0 0 * * *'],0,False
 notification-service/src/test/resources/application.yml,remind.email.subject,spring,['PiggyMetrics reminder'],0,False
 notification-service/src/test/resources/application.yml,remind.email.text,spring,"[""Hey, {0}! We''ve missed you here on PiggyMetrics. It''s time to check your budget statistics.\r\n\r\nCheers,\r\nPiggyMetrics team""]",0,False
@@ -962,10 +888,8 @@ notification-service/src/test/resources/application.yml,spring.mail.properties.m
 notification-service/src/test/resources/application.yml,spring.mail.properties.mail.smtp.ssl.enable,spring,['True'],0,False
 notification-service/src/test/resources/application.yml,spring.mail.username,spring,['test'],0,False
 notification-service/src/test/resources/bootstrap.yml,eureka.client.enabled,yaml,['false'],0,False
-notification-service/src/test/resources/bootstrap.yml,file,yaml,['notification-service/src/test/resources/bootstrap.yml'],0,False
 pom.xml,ExecutableName,maven,"['target/piggymetrics-1.0-SNAPSHOT.pom', 'target/piggymetrics-1.0-SNAPSHOT.war']",1,False
 pom.xml,ExecutableNameNoVersion,maven,"['target/piggymetrics.pom', 'target/piggymetrics.war']",1,False
-pom.xml,file,maven,['pom.xml'],0,False
 pom.xml,project.artifactId,maven,['piggymetrics'],0,False
 pom.xml,project.build.finalName,maven,"['ROOT', 'spring_mvc_test']",1,True
 pom.xml,project.build.pluginManagement.plugins.plugin.org.jacoco:jacoco-maven-plugin:0.7.5.201505241946.artifactId,maven,['jacoco-maven-plugin'],0,True
@@ -1088,20 +1012,12 @@ pom.xml,project.properties.spring.version,maven,['4.1.1.RELEASE'],0,True
 pom.xml,project.properties.validation.api.version,maven,['1.0.0.GA'],0,True
 pom.xml,project.version,maven,['1.0-SNAPSHOT'],0,False
 registry/.mvn/wrapper/maven-wrapper.properties,distributionurl,configparser,['https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.3.3/apache-maven-3.3.3-bin.zip'],0,True
-registry/.mvn/wrapper/maven-wrapper.properties,file,configparser,['registry/.mvn/wrapper/maven-wrapper.properties'],0,True
-registry/Dockerfile,ADD.dest,docker,['/app/'],0,False
-registry/Dockerfile,ADD.src,docker,['target/registry.jar'],0,False
-registry/Dockerfile,CMD.exec_command,docker,"['java -Xmx200m -jar /app/registry.jar', 'java -jar /app/registry.jar']",1,False
-registry/Dockerfile,CMD.param0,docker,['java'],0,False
-registry/Dockerfile,CMD.param1,docker,"['-Xmx200m', '-jar']",1,False
-registry/Dockerfile,CMD.param2,docker,"['-jar', 'app/registry.jar']",1,False
-registry/Dockerfile,CMD.param3,docker,['app/registry.jar'],0,False
+registry/Dockerfile,ADD,docker,['./target/registry.jar /app/'],0,False
+registry/Dockerfile,CMD,docker,"['java -Xmx200m -jar /app/registry.jar', 'java -jar /app/registry.jar']",1,False
 registry/Dockerfile,EXPOSE,docker,['8761'],0,False
 registry/Dockerfile,FROM,docker,['java:8-jre'],0,False
-registry/Dockerfile,file,docker,['registry/Dockerfile'],0,False
 registry/pom.xml,ExecutableName,maven,['target/registry-0.0.1-SNAPSHOT.jar'],0,False
 registry/pom.xml,ExecutableNameNoVersion,maven,['target/registry.jar'],0,False
-registry/pom.xml,file,maven,['registry/pom.xml'],0,False
 registry/pom.xml,project.artifactId,maven,['registry'],0,False
 registry/pom.xml,project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId,maven,['spring-boot-maven-plugin'],0,False
 registry/pom.xml,project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.configuration.finalName,maven,['${project.name}'],0,False
@@ -1149,20 +1065,17 @@ registry/pom.xml,project.version,maven,['0.0.1-SNAPSHOT'],0,False
 registry/src/main/resources/application.yml,eureka.client.fetchRegistry,spring,['False'],0,True
 registry/src/main/resources/application.yml,eureka.client.registerWithEureka,spring,['False'],0,True
 registry/src/main/resources/application.yml,eureka.client.server.waitTimeInMsWhenSyncEmpty,spring,['0'],0,True
-registry/src/main/resources/application.yml,file,spring,['registry/src/main/resources/application.yml'],0,True
 registry/src/main/resources/application.yml,server.port,spring,['8761'],0,True
 registry/src/main/resources/bootstrap.yml,eureka.client.fetchRegistry,yaml,['false'],0,False
 registry/src/main/resources/bootstrap.yml,eureka.client.registerWithEureka,yaml,['false'],0,False
 registry/src/main/resources/bootstrap.yml,eureka.client.server.waitTimeInMsWhenSyncEmpty,yaml,['0'],0,False
 registry/src/main/resources/bootstrap.yml,eureka.instance.prefer-ip-address,yaml,['true'],0,False
-registry/src/main/resources/bootstrap.yml,file,yaml,['registry/src/main/resources/bootstrap.yml'],0,False
 registry/src/main/resources/bootstrap.yml,spring.application.name,yaml,['registry'],0,False
 registry/src/main/resources/bootstrap.yml,spring.cloud.config.fail-fast,yaml,['true'],0,False
 registry/src/main/resources/bootstrap.yml,spring.cloud.config.password,yaml,['${CONFIG_SERVICE_PASSWORD}'],0,False
 registry/src/main/resources/bootstrap.yml,spring.cloud.config.uri,yaml,['http://config:8888'],0,False
 registry/src/main/resources/bootstrap.yml,spring.cloud.config.username,yaml,['user'],0,False
 src/main/resources/config/dev.properties,backup.schedule,configparser,['0 0 20 ? * MON'],0,True
-src/main/resources/config/dev.properties,file,configparser,['src/main/resources/config/dev.properties'],0,True
 src/main/resources/config/dev.properties,jdbc.driver,configparser,['com.mysql.jdbc.Driver'],0,True
 src/main/resources/config/dev.properties,jdbc.login,configparser,['root'],0,True
 src/main/resources/config/dev.properties,jdbc.password,configparser,['${PIGGY_DB_ENV_MYSQL_ROOT_PASSWORD}'],0,True
@@ -1173,7 +1086,6 @@ src/main/resources/config/dev.properties,mail.username,configparser,['login@mail
 src/main/resources/config/dev.properties,quotes.link,configparser,['http://www.cbr.ru/scripts/XML_daily.asp'],0,True
 src/main/resources/config/dev.properties,quotes.schedule,configparser,['0 0 15 * * ?'],0,True
 src/main/resources/config/dev.properties,url,configparser,['http://localhost:8080'],0,True
-src/main/resources/config/prod.properties,file,configparser,['src/main/resources/config/prod.properties'],0,True
 src/main/resources/config/prod.properties,url,configparser,['http://piggymetrics.com'],0,True
 src/main/resources/i18n/i18n.properties,/day,configparser,['/ Day'],0,True
 src/main/resources/i18n/i18n.properties,/hour,configparser,['/ Hour'],0,True
@@ -1232,7 +1144,6 @@ src/main/resources/i18n/i18n.properties,error_u_p,configparser,['Username and pa
 src/main/resources/i18n/i18n.properties,error_username,configparser,['Username is invalid'],0,True
 src/main/resources/i18n/i18n.properties,euro,configparser,['euro'],0,True
 src/main/resources/i18n/i18n.properties,exit,configparser,['Log out'],0,True
-src/main/resources/i18n/i18n.properties,file,configparser,['src/main/resources/i18n/i18n.properties'],0,True
 src/main/resources/i18n/i18n.properties,forward,configparser,['forth'],0,True
 src/main/resources/i18n/i18n.properties,getin,configparser,['Get in'],0,True
 src/main/resources/i18n/i18n.properties,inc-exp,configparser,['Incomes &mdash; expenses'],0,True
@@ -1372,7 +1283,6 @@ src/main/resources/i18n/i18n_ru.properties,error_u_p,configparser,['Логин �
 src/main/resources/i18n/i18n_ru.properties,error_username,configparser,['Ошибка. Неверный логин'],0,True
 src/main/resources/i18n/i18n_ru.properties,euro,configparser,['евро'],0,True
 src/main/resources/i18n/i18n_ru.properties,exit,configparser,['Выйти'],0,True
-src/main/resources/i18n/i18n_ru.properties,file,configparser,['src/main/resources/i18n/i18n_ru.properties'],0,True
 src/main/resources/i18n/i18n_ru.properties,forward,configparser,['туда'],0,True
 src/main/resources/i18n/i18n_ru.properties,getin,configparser,['Приступить'],0,True
 src/main/resources/i18n/i18n_ru.properties,inc-exp,configparser,['Доходы &mdash; расходы'],0,True
@@ -1456,20 +1366,12 @@ src/main/resources/i18n/i18n_ru.properties,usernameexists,configparser,"[""['И�
 src/main/resources/i18n/i18n_ru.properties,userpic,configparser,['default.jpg'],0,True
 src/main/resources/i18n/i18n_ru.properties,value,configparser,['rub'],0,True
 statistics-service/.mvn/wrapper/maven-wrapper.properties,distributionurl,configparser,['https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.3.3/apache-maven-3.3.3-bin.zip'],0,True
-statistics-service/.mvn/wrapper/maven-wrapper.properties,file,configparser,['statistics-service/.mvn/wrapper/maven-wrapper.properties'],0,True
-statistics-service/Dockerfile,ADD.dest,docker,['/app/'],0,False
-statistics-service/Dockerfile,ADD.src,docker,['target/statistics-service.jar'],0,False
-statistics-service/Dockerfile,CMD.exec_command,docker,"['java -Xmx200m -jar /app/statistics-service.jar', 'java -jar /app/statistics-service.jar']",1,False
-statistics-service/Dockerfile,CMD.param0,docker,['java'],0,False
-statistics-service/Dockerfile,CMD.param1,docker,"['-Xmx200m', '-jar']",1,False
-statistics-service/Dockerfile,CMD.param2,docker,"['-jar', 'app/statistics-service.jar']",1,False
-statistics-service/Dockerfile,CMD.param3,docker,['app/statistics-service.jar'],0,False
+statistics-service/Dockerfile,ADD,docker,['./target/statistics-service.jar /app/'],0,False
+statistics-service/Dockerfile,CMD,docker,"['java -Xmx200m -jar /app/statistics-service.jar', 'java -jar /app/statistics-service.jar']",1,False
 statistics-service/Dockerfile,EXPOSE,docker,['7000'],0,False
 statistics-service/Dockerfile,FROM,docker,['java:8-jre'],0,False
-statistics-service/Dockerfile,file,docker,['statistics-service/Dockerfile'],0,False
 statistics-service/pom.xml,ExecutableName,maven,['target/statistics-service-1.0-SNAPSHOT.jar'],0,False
 statistics-service/pom.xml,ExecutableNameNoVersion,maven,['target/statistics-service.jar'],0,False
-statistics-service/pom.xml,file,maven,['statistics-service/pom.xml'],0,False
 statistics-service/pom.xml,project.artifactId,maven,['statistics-service'],0,False
 statistics-service/pom.xml,project.build.plugins.plugin.org.jacoco:jacoco-maven-plugin.artifactId,maven,['jacoco-maven-plugin'],0,True
 statistics-service/pom.xml,project.build.plugins.plugin.org.jacoco:jacoco-maven-plugin.groupId,maven,['org.jacoco'],0,True
@@ -1572,7 +1474,6 @@ statistics-service/pom.xml,project.repositories.repository.name,maven,['Spring M
 statistics-service/pom.xml,project.repositories.repository.snapshots.enabled,maven,['false'],0,True
 statistics-service/pom.xml,project.repositories.repository.url,maven,['https://repo.spring.io/milestone'],0,True
 statistics-service/pom.xml,project.version,maven,['1.0-SNAPSHOT'],0,False
-statistics-service/src/main/resources/application.yml,file,spring,['statistics-service/src/main/resources/application.yml'],0,True
 statistics-service/src/main/resources/application.yml,hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds,spring,['10000'],0,True
 statistics-service/src/main/resources/application.yml,logging.level.org.springframework.security,spring,"['DEBUG', 'INFO']",1,True
 statistics-service/src/main/resources/application.yml,rates.url,spring,['http://api.fixer.io'],0,True
@@ -1591,32 +1492,22 @@ statistics-service/src/main/resources/application.yml,spring.data.mongodb.port,s
 statistics-service/src/main/resources/application.yml,spring.data.mongodb.username,spring,"['service', 'user']",1,True
 statistics-service/src/main/resources/bootstrap.yml,eureka.client.serviceUrl.defaultZone,yaml,"['http://127.0.0.1:8761/eureka/', 'http://registry:8761/eureka/']",1,True
 statistics-service/src/main/resources/bootstrap.yml,eureka.instance.prefer-ip-address,yaml,['true'],0,True
-statistics-service/src/main/resources/bootstrap.yml,file,yaml,['statistics-service/src/main/resources/bootstrap.yml'],0,False
 statistics-service/src/main/resources/bootstrap.yml,spring.application.name,yaml,['statistics-service'],0,False
 statistics-service/src/main/resources/bootstrap.yml,spring.cloud.config.fail-fast,yaml,['true'],0,False
 statistics-service/src/main/resources/bootstrap.yml,spring.cloud.config.password,yaml,['${CONFIG_SERVICE_PASSWORD}'],0,False
 statistics-service/src/main/resources/bootstrap.yml,spring.cloud.config.uri,yaml,['http://config:8888'],0,False
 statistics-service/src/main/resources/bootstrap.yml,spring.cloud.config.username,yaml,['user'],0,False
-statistics-service/src/test/resources/application.yml,file,spring,['statistics-service/src/test/resources/application.yml'],0,False
 statistics-service/src/test/resources/application.yml,hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds,spring,"['10000', '20000']",1,False
 statistics-service/src/test/resources/application.yml,rates.url,spring,"['http://api.fixer.io', 'https://api.exchangeratesapi.io', 'https://exchangeratesapi.io/api']",2,False
 statistics-service/src/test/resources/application.yml,spring.data.mongodb.database,spring,['piggymetrics'],0,False
 statistics-service/src/test/resources/application.yml,spring.data.mongodb.port,spring,['0'],0,False
 statistics-service/src/test/resources/bootstrap.yml,eureka.client.enabled,yaml,['false'],0,False
-statistics-service/src/test/resources/bootstrap.yml,file,yaml,['statistics-service/src/test/resources/bootstrap.yml'],0,False
-turbine-stream-service/Dockerfile,ADD.dest,docker,['/app/'],0,False
-turbine-stream-service/Dockerfile,ADD.src,docker,['target/turbine-stream-service.jar'],0,False
-turbine-stream-service/Dockerfile,CMD.exec_command,docker,['java -Xmx200m -jar /app/turbine-stream-service.jar'],0,False
-turbine-stream-service/Dockerfile,CMD.param0,docker,['java'],0,False
-turbine-stream-service/Dockerfile,CMD.param1,docker,['-Xmx200m'],0,False
-turbine-stream-service/Dockerfile,CMD.param2,docker,['-jar'],0,False
-turbine-stream-service/Dockerfile,CMD.param3,docker,['app/turbine-stream-service.jar'],0,False
+turbine-stream-service/Dockerfile,ADD,docker,['./target/turbine-stream-service.jar /app/'],0,False
+turbine-stream-service/Dockerfile,CMD,docker,['java -Xmx200m -jar /app/turbine-stream-service.jar'],0,False
 turbine-stream-service/Dockerfile,EXPOSE,docker,['8989'],0,False
 turbine-stream-service/Dockerfile,FROM,docker,['java:8-jre'],0,False
-turbine-stream-service/Dockerfile,file,docker,['turbine-stream-service/Dockerfile'],0,False
 turbine-stream-service/pom.xml,ExecutableName,maven,"['target/piggymetrics-0.0.1-SNAPSHOT.jar', 'target/turbine-stream-service-0.0.1-SNAPSHOT.jar']",1,False
 turbine-stream-service/pom.xml,ExecutableNameNoVersion,maven,"['target/piggymetrics.jar', 'target/turbine-stream-service.jar']",1,False
-turbine-stream-service/pom.xml,file,maven,['turbine-stream-service/pom.xml'],0,False
 turbine-stream-service/pom.xml,project.artifactId,maven,"['piggymetrics', 'turbine-stream-service']",1,False
 turbine-stream-service/pom.xml,project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId,maven,['spring-boot-maven-plugin'],0,False
 turbine-stream-service/pom.xml,project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.configuration.finalName,maven,['${project.name}'],0,False
@@ -1640,11 +1531,9 @@ turbine-stream-service/pom.xml,project.parent.artifactId,maven,['piggymetrics'],
 turbine-stream-service/pom.xml,project.parent.groupId,maven,['com.piggymetrics'],0,False
 turbine-stream-service/pom.xml,project.parent.version,maven,['1.0-SNAPSHOT'],0,False
 turbine-stream-service/pom.xml,project.version,maven,['0.0.1-SNAPSHOT'],0,False
-turbine-stream-service/src/main/resources/bootstrap.yml,file,yaml,['turbine-stream-service/src/main/resources/bootstrap.yml'],0,False
 turbine-stream-service/src/main/resources/bootstrap.yml,spring.application.name,yaml,['turbine-stream-service'],0,False
 turbine-stream-service/src/main/resources/bootstrap.yml,spring.cloud.config.fail-fast,yaml,['true'],0,False
 turbine-stream-service/src/main/resources/bootstrap.yml,spring.cloud.config.password,yaml,['${CONFIG_SERVICE_PASSWORD}'],0,False
 turbine-stream-service/src/main/resources/bootstrap.yml,spring.cloud.config.uri,yaml,['http://config:8888'],0,False
 turbine-stream-service/src/main/resources/bootstrap.yml,spring.cloud.config.username,yaml,['user'],0,False
 turbine-stream-service/src/test/resources/bootstrap.yml,eureka.client.enabled,yaml,['false'],0,False
-turbine-stream-service/src/test/resources/bootstrap.yml,file,yaml,['turbine-stream-service/src/test/resources/bootstrap.yml'],0,False

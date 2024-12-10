@@ -1,10 +1,8 @@
 File Path,Option,Concept,Values,Changed internally,Removed
 mentorship-backend/.mvn/wrapper/maven-wrapper.properties,distributionurl,configparser,['https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.6.3/apache-maven-3.6.3-bin.zip'],0,False
-mentorship-backend/.mvn/wrapper/maven-wrapper.properties,file,configparser,['mentorship-backend/.mvn/wrapper/maven-wrapper.properties'],0,False
 mentorship-backend/.mvn/wrapper/maven-wrapper.properties,wrapperurl,configparser,['https://repo.maven.apache.org/maven2/io/takari/maven-wrapper/0.5.6/maven-wrapper-0.5.6.jar'],0,False
 mentorship-backend/pom.xml,ExecutableName,maven,['target/mentorship-0.0.1-SNAPSHOT.jar'],0,False
 mentorship-backend/pom.xml,ExecutableNameNoVersion,maven,['target/mentorship.jar'],0,False
-mentorship-backend/pom.xml,file,maven,['mentorship-backend/pom.xml'],0,False
 mentorship-backend/pom.xml,project.artifactId,maven,['mentorship'],0,False
 mentorship-backend/pom.xml,project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId,maven,['spring-boot-maven-plugin'],0,False
 mentorship-backend/pom.xml,project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId,maven,['org.springframework.boot'],0,False
@@ -70,7 +68,6 @@ mentorship-backend/pom.xml,project.version,maven,['0.0.1-SNAPSHOT'],0,False
 mentorship-backend/src/main/resources/application.properties,app.auth.jwtexpirationinms,spring,"['1440', '604800000']",1,False
 mentorship-backend/src/main/resources/application.properties,app.auth.tokensecret,spring,['jwtMentorShipSecretKey'],0,False
 mentorship-backend/src/main/resources/application.properties,app.oauth2.authorizedredirecturis,spring,['http://localhost:3000/api/oauth2/redirect'],0,False
-mentorship-backend/src/main/resources/application.properties,file,spring,['mentorship-backend/src/main/resources/application.properties'],0,False
 mentorship-backend/src/main/resources/application.properties,logging.level.org.springframework.web.filter.commonsrequestloggingfilter,spring,['DEBUG'],0,False
 mentorship-backend/src/main/resources/application.properties,server.port,spring,['8080'],0,False
 mentorship-backend/src/main/resources/application.properties,spring.datasource.initialization-mode,spring,['always'],0,False
@@ -105,7 +102,6 @@ mentorship-client/package.json,dependencies.react-scripts,nodejs,['3.4.1'],0,Fal
 mentorship-client/package.json,dependencies.redux,nodejs,['^4.0.5'],0,False
 mentorship-client/package.json,dependencies.redux-thunk,nodejs,['^2.3.0'],0,False
 mentorship-client/package.json,eslintConfig.extends,nodejs,['react-app'],0,False
-mentorship-client/package.json,file,nodejs,['mentorship-client/package.json'],0,False
 mentorship-client/package.json,name,nodejs,['mentorship-client'],0,False
 mentorship-client/package.json,private,nodejs,['True'],0,False
 mentorship-client/package.json,proxy,nodejs,['http://localhost:8080'],0,False
@@ -116,7 +112,6 @@ mentorship-client/package.json,scripts.test,nodejs,['react-scripts test'],0,Fals
 mentorship-client/package.json,version,nodejs,['0.1.0'],0,False
 mentorship-client/public/manifest.json,background_color,json,['#ffffff'],0,False
 mentorship-client/public/manifest.json,display,json,['standalone'],0,False
-mentorship-client/public/manifest.json,file,json,['mentorship-client/public/manifest.json'],0,False
 mentorship-client/public/manifest.json,name,json,['Create React App Sample'],0,False
 mentorship-client/public/manifest.json,short_name,json,['React App'],0,False
 mentorship-client/public/manifest.json,start_url,json,['.'],0,False

@@ -1,6 +1,6 @@
 {
   "project_name": "Ward",
-  "analysis_time": 5.683991432189941,
+  "analysis_time": 6.055670738220215,
   "len_commits": 87,
   "config_commit_data": [
     {
@@ -112,38 +112,39 @@
             "options": 7,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 5,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "org.example",
+                "line": 7,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "untitled",
+                "line": 8,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "1.0-SNAPSHOT",
+                "line": 9,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/untitled-1.0-SNAPSHOT.jar",
+                "line": "8 and 9",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/untitled.jar",
+                "line": "8 and 9",
                 "type": "PATH"
               }
             ],
@@ -187,38 +188,39 @@
             "options": 7,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 5,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "org.example",
+                "line": 7,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "untitled",
+                "line": 8,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "1.0-SNAPSHOT",
+                "line": 9,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/untitled-1.0-SNAPSHOT.jar",
+                "line": "8 and 9",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/untitled.jar",
+                "line": "8 and 9",
                 "type": "PATH"
               }
             ]
@@ -247,38 +249,39 @@
             "options": 7,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 5,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "org.example",
+                "line": 7,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "untitled",
+                "line": 8,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "1.0-SNAPSHOT",
+                "line": 9,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/untitled-1.0-SNAPSHOT.jar",
+                "line": "8 and 9",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/untitled.jar",
+                "line": "8 and 9",
                 "type": "PATH"
               }
             ]
@@ -307,38 +310,39 @@
             "options": 7,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 5,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "org.example",
+                "line": 7,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "untitled",
+                "line": 8,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "1.0-SNAPSHOT",
+                "line": 9,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/untitled-1.0-SNAPSHOT.jar",
+                "line": "8 and 9",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/untitled.jar",
+                "line": "8 and 9",
                 "type": "PATH"
               }
             ]
@@ -390,103 +394,117 @@
             "options": 20,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.name",
                 "value": "Ward",
+                "line": 3,
                 "type": "NAME"
               },
               {
                 "option": "project.description",
                 "value": "Server dashboard",
+                "line": 4,
                 "type": "COMMAND"
               },
               {
                 "option": "project.parent.groupId",
                 "value": "org.springframework.boot",
+                "line": 6,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.artifactId",
                 "value": "spring-boot-starter-parent",
+                "line": 7,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.version",
                 "value": "2.2.7.RELEASE",
+                "line": 8,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 10,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "org.b-software",
+                "line": 11,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "ward",
+                "line": 12,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "1.0.0",
+                "line": 13,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.packaging",
                 "value": "war",
+                "line": 14,
                 "type": "TYPE"
               },
               {
                 "option": "project.properties.java.version",
                 "value": "1.8",
+                "line": 16,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
                 "value": "org.springframework.boot",
+                "line": 20,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
                 "value": "spring-boot-starter-web",
+                "line": 21,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
                 "value": "org.springframework.boot",
+                "line": 24,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
                 "value": "spring-boot-starter-thymeleaf",
+                "line": 25,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
                 "value": "org.springframework.boot",
+                "line": 31,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
+                "line": 32,
                 "type": "NAME"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/ward-1.0.0.war",
+                "line": "12, 13, and 14",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/ward.war",
+                "line": "12, 13, and 14",
                 "type": "PATH"
               }
             ],
@@ -501,13 +519,9 @@
             "options": 2,
             "pairs": [
               {
-                "option": "file",
-                "value": "src/main/resources/application.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "server.port",
                 "value": "9000",
+                "line": "2",
                 "type": "PORT"
               }
             ],
@@ -541,153 +555,177 @@
             "options": 30,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.name",
                 "value": "Ward",
+                "line": 3,
                 "type": "NAME"
               },
               {
                 "option": "project.description",
                 "value": "Server Dashboard",
+                "line": 4,
                 "type": "COMMAND"
               },
               {
                 "option": "project.parent.groupId",
                 "value": "org.springframework.boot",
+                "line": 6,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.artifactId",
                 "value": "spring-boot-starter-parent",
+                "line": 7,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.version",
                 "value": "2.2.7.RELEASE",
+                "line": 8,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 10,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "org.b-software",
+                "line": 11,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "ward",
+                "line": 12,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "1.0.0",
+                "line": 13,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.packaging",
                 "value": "war",
+                "line": 14,
                 "type": "TYPE"
               },
               {
                 "option": "project.properties.oshiVersion",
                 "value": "5.0.1",
+                "line": 16,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.jnaVersion",
                 "value": "5.5.0",
+                "line": 17,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
                 "value": "org.springframework.boot",
+                "line": 21,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
                 "value": "spring-boot-starter-web",
+                "line": 22,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
                 "value": "org.springframework.boot",
+                "line": 25,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
                 "value": "spring-boot-starter-thymeleaf",
+                "line": 26,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.groupId",
                 "value": "com.github.oshi",
+                "line": 29,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.artifactId",
                 "value": "oshi-core",
+                "line": 30,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.version",
                 "value": "${oshiVersion}",
+                "line": 31,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 34,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.artifactId",
                 "value": "jna",
+                "line": 35,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 36,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 39,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.artifactId",
                 "value": "jna-platform",
+                "line": 40,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 41,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
                 "value": "org.springframework.boot",
+                "line": 47,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
+                "line": 48,
                 "type": "NAME"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/ward-1.0.0.war",
+                "line": "12, 13, and 14",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/ward.war",
+                "line": "12, 13, and 14",
                 "type": "PATH"
               }
             ],
@@ -700,13 +738,7 @@
             "file_path": "src/main/resources/application.properties",
             "concept": "spring",
             "options": 1,
-            "pairs": [
-              {
-                "option": "file",
-                "value": "src/main/resources/application.properties",
-                "type": "PATH"
-              }
-            ],
+            "pairs": [],
             "insertions": 0,
             "deletions": 2,
             "total_changes": 2,
@@ -803,163 +835,189 @@
             "options": 32,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.parent.groupId",
                 "value": "org.springframework.boot",
+                "line": 4,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.artifactId",
                 "value": "spring-boot-starter-parent",
+                "line": 5,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.version",
                 "value": "2.2.7.RELEASE",
+                "line": 6,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 8,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "org.b-software",
+                "line": 9,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "ward",
+                "line": 10,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "1.0.0",
+                "line": 11,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.packaging",
                 "value": "war",
+                "line": 12,
                 "type": "TYPE"
               },
               {
                 "option": "project.properties.oshiVersion",
                 "value": "5.0.1",
+                "line": 14,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.jnaVersion",
                 "value": "5.5.0",
+                "line": 15,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.gsonVersion",
                 "value": "2.8.6",
+                "line": 16,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
                 "value": "org.springframework.boot",
+                "line": 20,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
                 "value": "spring-boot-starter-web",
+                "line": 21,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
                 "value": "org.springframework.boot",
+                "line": 24,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
                 "value": "spring-boot-starter-thymeleaf",
+                "line": 25,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.groupId",
                 "value": "com.github.oshi",
+                "line": 28,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.artifactId",
                 "value": "oshi-core",
+                "line": 29,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.version",
                 "value": "${oshiVersion}",
+                "line": 30,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 33,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.artifactId",
                 "value": "jna",
+                "line": 34,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 35,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 38,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.artifactId",
                 "value": "jna-platform",
+                "line": 39,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 40,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.groupId",
                 "value": "com.google.code.gson",
+                "line": 43,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.artifactId",
                 "value": "gson",
+                "line": 44,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.version",
                 "value": "${gsonVersion}",
+                "line": 45,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
                 "value": "org.springframework.boot",
+                "line": 51,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
+                "line": 52,
                 "type": "NAME"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/ward-1.0.0.war",
+                "line": "10, 11, and 12",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/ward.war",
+                "line": "10, 11, and 12",
                 "type": "PATH"
               }
             ],
@@ -974,13 +1032,9 @@
             "options": 2,
             "pairs": [
               {
-                "option": "file",
-                "value": "src/main/resources/application.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "server.port",
                 "value": "80",
+                "line": "1",
                 "type": "PORT"
               }
             ],
@@ -1058,163 +1112,189 @@
             "options": 32,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.parent.groupId",
                 "value": "org.springframework.boot",
+                "line": 4,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.artifactId",
                 "value": "spring-boot-starter-parent",
+                "line": 5,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.version",
                 "value": "2.2.7.RELEASE",
+                "line": 6,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 8,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "org.b-software",
+                "line": 9,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "ward",
+                "line": 10,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "1.0.0",
+                "line": 11,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.packaging",
                 "value": "war",
+                "line": 12,
                 "type": "TYPE"
               },
               {
                 "option": "project.properties.oshiVersion",
                 "value": "5.0.1",
+                "line": 14,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.jnaVersion",
                 "value": "5.5.0",
+                "line": 15,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.gsonVersion",
                 "value": "2.8.6",
+                "line": 16,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
                 "value": "org.springframework.boot",
+                "line": 20,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
                 "value": "spring-boot-starter-web",
+                "line": 21,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
                 "value": "org.springframework.boot",
+                "line": 24,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
                 "value": "spring-boot-starter-thymeleaf",
+                "line": 25,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.groupId",
                 "value": "com.github.oshi",
+                "line": 28,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.artifactId",
                 "value": "oshi-core",
+                "line": 29,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.version",
                 "value": "${oshiVersion}",
+                "line": 30,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 33,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.artifactId",
                 "value": "jna",
+                "line": 34,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 35,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 38,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.artifactId",
                 "value": "jna-platform",
+                "line": 39,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 40,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.groupId",
                 "value": "com.google.code.gson",
+                "line": 43,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.artifactId",
                 "value": "gson",
+                "line": 44,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.version",
                 "value": "${gsonVersion}",
+                "line": 45,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
                 "value": "org.springframework.boot",
+                "line": 51,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
+                "line": 52,
                 "type": "NAME"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/ward-1.0.0.war",
+                "line": "10, 11, and 12",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/ward.war",
+                "line": "10, 11, and 12",
                 "type": "PATH"
               }
             ],
@@ -1229,13 +1309,9 @@
             "options": 2,
             "pairs": [
               {
-                "option": "file",
-                "value": "src/main/resources/application.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "server.port",
                 "value": "80",
+                "line": "1",
                 "type": "PORT"
               }
             ],
@@ -1456,163 +1532,189 @@
             "options": 32,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.parent.groupId",
                 "value": "org.springframework.boot",
+                "line": 4,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.artifactId",
                 "value": "spring-boot-starter-parent",
+                "line": 5,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.version",
                 "value": "2.2.7.RELEASE",
+                "line": 6,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 8,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "org.b-software",
+                "line": 9,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "ward",
+                "line": 10,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "1.0.0",
+                "line": 11,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.packaging",
                 "value": "jar",
+                "line": 12,
                 "type": "TYPE"
               },
               {
                 "option": "project.properties.oshiVersion",
                 "value": "5.0.1",
+                "line": 14,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.jnaVersion",
                 "value": "5.5.0",
+                "line": 15,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.gsonVersion",
                 "value": "2.8.6",
+                "line": 16,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
                 "value": "org.springframework.boot",
+                "line": 20,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
                 "value": "spring-boot-starter-web",
+                "line": 21,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
                 "value": "org.springframework.boot",
+                "line": 24,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
                 "value": "spring-boot-starter-thymeleaf",
+                "line": 25,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.groupId",
                 "value": "com.github.oshi",
+                "line": 28,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.artifactId",
                 "value": "oshi-core",
+                "line": 29,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.version",
                 "value": "${oshiVersion}",
+                "line": 30,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 33,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.artifactId",
                 "value": "jna",
+                "line": 34,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 35,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 38,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.artifactId",
                 "value": "jna-platform",
+                "line": 39,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 40,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.groupId",
                 "value": "com.google.code.gson",
+                "line": 43,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.artifactId",
                 "value": "gson",
+                "line": 44,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.version",
                 "value": "${gsonVersion}",
+                "line": 45,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
                 "value": "org.springframework.boot",
+                "line": 51,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
+                "line": 52,
                 "type": "NAME"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/ward-1.0.0.jar",
+                "line": "10, 11, and 12",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/ward.jar",
+                "line": "10, 11, and 12",
                 "type": "PATH"
               }
             ],
@@ -1627,13 +1729,9 @@
             "options": 2,
             "pairs": [
               {
-                "option": "file",
-                "value": "src/main/resources/application.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "server.port",
                 "value": "8080",
+                "line": "2",
                 "type": "PORT"
               }
             ],
@@ -1678,163 +1776,189 @@
             "options": 32,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.parent.groupId",
                 "value": "org.springframework.boot",
+                "line": 4,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.artifactId",
                 "value": "spring-boot-starter-parent",
+                "line": 5,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.version",
                 "value": "2.2.7.RELEASE",
+                "line": 6,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 8,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "org.b-software",
+                "line": 9,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "ward",
+                "line": 10,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "1.0.0",
+                "line": 11,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.packaging",
                 "value": "jar",
+                "line": 12,
                 "type": "TYPE"
               },
               {
                 "option": "project.properties.oshiVersion",
                 "value": "5.0.1",
+                "line": 14,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.jnaVersion",
                 "value": "5.5.0",
+                "line": 15,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.gsonVersion",
                 "value": "2.8.6",
+                "line": 16,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
                 "value": "org.springframework.boot",
+                "line": 20,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
                 "value": "spring-boot-starter-web",
+                "line": 21,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
                 "value": "org.springframework.boot",
+                "line": 24,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
                 "value": "spring-boot-starter-thymeleaf",
+                "line": 25,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.groupId",
                 "value": "com.github.oshi",
+                "line": 28,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.artifactId",
                 "value": "oshi-core",
+                "line": 29,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.version",
                 "value": "${oshiVersion}",
+                "line": 30,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 33,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.artifactId",
                 "value": "jna",
+                "line": 34,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 35,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 38,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.artifactId",
                 "value": "jna-platform",
+                "line": 39,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 40,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.groupId",
                 "value": "com.google.code.gson",
+                "line": 43,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.artifactId",
                 "value": "gson",
+                "line": 44,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.version",
                 "value": "${gsonVersion}",
+                "line": 45,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
                 "value": "org.springframework.boot",
+                "line": 51,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
+                "line": 52,
                 "type": "NAME"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/ward-1.0.0.jar",
+                "line": "10, 11, and 12",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/ward.jar",
+                "line": "10, 11, and 12",
                 "type": "PATH"
               }
             ],
@@ -1849,13 +1973,9 @@
             "options": 2,
             "pairs": [
               {
-                "option": "file",
-                "value": "src/main/resources/application.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "server.port",
                 "value": "8080",
+                "line": "2",
                 "type": "PORT"
               }
             ],
@@ -1889,163 +2009,189 @@
             "options": 32,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.parent.groupId",
                 "value": "org.springframework.boot",
+                "line": 4,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.artifactId",
                 "value": "spring-boot-starter-parent",
+                "line": 5,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.version",
                 "value": "2.2.7.RELEASE",
+                "line": 6,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 8,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "org.b-software",
+                "line": 9,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "ward",
+                "line": 10,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "1.0.0",
+                "line": 11,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.packaging",
                 "value": "jar",
+                "line": 12,
                 "type": "TYPE"
               },
               {
                 "option": "project.properties.oshiVersion",
                 "value": "5.0.1",
+                "line": 14,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.jnaVersion",
                 "value": "5.5.0",
+                "line": 15,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.gsonVersion",
                 "value": "2.8.6",
+                "line": 16,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
                 "value": "org.springframework.boot",
+                "line": 20,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
                 "value": "spring-boot-starter-web",
+                "line": 21,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
                 "value": "org.springframework.boot",
+                "line": 24,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
                 "value": "spring-boot-starter-thymeleaf",
+                "line": 25,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.groupId",
                 "value": "com.github.oshi",
+                "line": 28,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.artifactId",
                 "value": "oshi-core",
+                "line": 29,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.version",
                 "value": "${oshiVersion}",
+                "line": 30,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 33,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.artifactId",
                 "value": "jna",
+                "line": 34,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 35,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 38,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.artifactId",
                 "value": "jna-platform",
+                "line": 39,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 40,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.groupId",
                 "value": "com.google.code.gson",
+                "line": 43,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.artifactId",
                 "value": "gson",
+                "line": 44,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.version",
                 "value": "${gsonVersion}",
+                "line": 45,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
                 "value": "org.springframework.boot",
+                "line": 51,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
+                "line": 52,
                 "type": "NAME"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/ward-1.0.0.jar",
+                "line": "10, 11, and 12",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/ward.jar",
+                "line": "10, 11, and 12",
                 "type": "PATH"
               }
             ]
@@ -2056,13 +2202,9 @@
             "options": 2,
             "pairs": [
               {
-                "option": "file",
-                "value": "src/main/resources/application.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "server.port",
                 "value": "80",
+                "line": "2",
                 "type": "PORT"
               }
             ],
@@ -2118,163 +2260,189 @@
             "options": 32,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.parent.groupId",
                 "value": "org.springframework.boot",
+                "line": 4,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.artifactId",
                 "value": "spring-boot-starter-parent",
+                "line": 5,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.version",
                 "value": "2.2.7.RELEASE",
+                "line": 6,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 8,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "org.b-software",
+                "line": 9,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "ward",
+                "line": 10,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "1.0.0",
+                "line": 11,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.packaging",
                 "value": "jar",
+                "line": 12,
                 "type": "TYPE"
               },
               {
                 "option": "project.properties.oshiVersion",
                 "value": "5.0.1",
+                "line": 14,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.jnaVersion",
                 "value": "5.5.0",
+                "line": 15,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.gsonVersion",
                 "value": "2.8.6",
+                "line": 16,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
                 "value": "org.springframework.boot",
+                "line": 20,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
                 "value": "spring-boot-starter-web",
+                "line": 21,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
                 "value": "org.springframework.boot",
+                "line": 24,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
                 "value": "spring-boot-starter-thymeleaf",
+                "line": 25,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.groupId",
                 "value": "com.github.oshi",
+                "line": 28,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.artifactId",
                 "value": "oshi-core",
+                "line": 29,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.github.oshi:oshi-core:${oshiVersion}.version",
                 "value": "${oshiVersion}",
+                "line": 30,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 33,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.artifactId",
                 "value": "jna",
+                "line": 34,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 35,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.groupId",
                 "value": "net.java.dev.jna",
+                "line": 38,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.artifactId",
                 "value": "jna-platform",
+                "line": 39,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.net.java.dev.jna:jna-platform:${jnaVersion}.version",
                 "value": "${jnaVersion}",
+                "line": 40,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.groupId",
                 "value": "com.google.code.gson",
+                "line": 43,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.artifactId",
                 "value": "gson",
+                "line": 44,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.google.code.gson:gson:${gsonVersion}.version",
                 "value": "${gsonVersion}",
+                "line": 45,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
                 "value": "org.springframework.boot",
+                "line": 51,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
+                "line": 52,
                 "type": "NAME"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/ward-1.0.0.jar",
+                "line": "10, 11, and 12",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/ward.jar",
+                "line": "10, 11, and 12",
                 "type": "PATH"
               }
             ]
@@ -2285,13 +2453,9 @@
             "options": 2,
             "pairs": [
               {
-                "option": "file",
-                "value": "src/main/resources/application.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "server.port",
                 "value": "80",
+                "line": "2",
                 "type": "PORT"
               }
             ],

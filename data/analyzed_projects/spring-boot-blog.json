@@ -1,6 +1,6 @@
 {
   "project_name": "spring-boot-blog",
-  "analysis_time": 3.2452664375305176,
+  "analysis_time": 3.680300235748291,
   "len_commits": 34,
   "config_commit_data": [
     {
@@ -15,9 +15,9 @@
       "network_data": {
         "links": 39,
         "config_files": [
-          ".mvn/wrapper/maven-wrapper.properties",
           "src/main/resources/application.properties",
-          "pom.xml"
+          "pom.xml",
+          ".mvn/wrapper/maven-wrapper.properties"
         ],
         "config_files_data": [
           {
@@ -26,13 +26,9 @@
             "options": 2,
             "pairs": [
               {
-                "option": "file",
-                "value": ".mvn/wrapper/maven-wrapper.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "distributionurl",
                 "value": "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.zip",
+                "line": "Unknown",
                 "type": "URL"
               }
             ],
@@ -47,243 +43,285 @@
             "options": 48,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 4,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "com.reljicd",
+                "line": 6,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "blog-demo",
+                "line": 7,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "0.0.1-SNAPSHOT",
+                "line": 8,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.packaging",
                 "value": "jar",
+                "line": 9,
                 "type": "TYPE"
               },
               {
                 "option": "project.name",
                 "value": "blog-demo",
+                "line": 11,
                 "type": "NAME"
               },
               {
                 "option": "project.description",
                 "value": "Blog Demo project using Spring Boot",
+                "line": 12,
                 "type": "COMMAND"
               },
               {
                 "option": "project.parent.groupId",
                 "value": "org.springframework.boot",
+                "line": 15,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.artifactId",
                 "value": "spring-boot-starter-parent",
+                "line": 16,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.version",
                 "value": "1.5.3.RELEASE",
+                "line": 17,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.project.build.sourceEncoding",
                 "value": "UTF-8",
+                "line": 22,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.properties.project.reporting.outputEncoding",
                 "value": "UTF-8",
+                "line": 23,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.properties.java.version",
                 "value": "1.8",
+                "line": 24,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.groupId",
                 "value": "org.springframework.boot",
+                "line": 30,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.artifactId",
                 "value": "spring-boot-starter-data-jpa",
+                "line": 31,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.groupId",
                 "value": "org.springframework.boot",
+                "line": 36,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.artifactId",
                 "value": "spring-boot-starter-data-rest",
+                "line": 37,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.groupId",
                 "value": "org.springframework.data",
+                "line": 42,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.artifactId",
                 "value": "spring-data-rest-hal-browser",
+                "line": 43,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.groupId",
                 "value": "org.springframework.boot",
+                "line": 48,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.artifactId",
                 "value": "spring-boot-starter-security",
+                "line": 49,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
                 "value": "org.springframework.boot",
+                "line": 54,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
                 "value": "spring-boot-starter-thymeleaf",
+                "line": 55,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.groupId",
                 "value": "org.thymeleaf.extras",
+                "line": 59,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.artifactId",
                 "value": "thymeleaf-extras-springsecurity4",
+                "line": 60,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
                 "value": "org.springframework.boot",
+                "line": 65,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
                 "value": "spring-boot-starter-web",
+                "line": 66,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.groupId",
                 "value": "org.springframework.boot",
+                "line": 71,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.artifactId",
                 "value": "spring-boot-devtools",
+                "line": 72,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.scope",
                 "value": "runtime",
+                "line": 73,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.dependencies.dependency.com.h2database:h2.groupId",
                 "value": "com.h2database",
+                "line": 78,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.h2database:h2.artifactId",
                 "value": "h2",
+                "line": 79,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.mysql:mysql-connector-java.groupId",
                 "value": "mysql",
+                "line": 85,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.mysql:mysql-connector-java.artifactId",
                 "value": "mysql-connector-java",
+                "line": 86,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.groupId",
                 "value": "org.springframework.boot",
+                "line": 92,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.artifactId",
                 "value": "spring-boot-starter-test",
+                "line": 93,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.scope",
                 "value": "test",
+                "line": 94,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.groupId",
                 "value": "org.webjars",
+                "line": 99,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.artifactId",
                 "value": "bootstrap",
+                "line": 100,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.version",
                 "value": "3.3.7",
+                "line": 101,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.groupId",
                 "value": "org.webjars",
+                "line": 105,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.artifactId",
                 "value": "jquery",
+                "line": 106,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.version",
                 "value": "2.1.4",
+                "line": 107,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
                 "value": "org.springframework.boot",
+                "line": 115,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
+                "line": 116,
                 "type": "NAME"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
+                "line": "7, 8, and 9",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/blog-demo.jar",
+                "line": "7, 8, and 9",
                 "type": "PATH"
               }
             ],
@@ -298,58 +336,63 @@
             "options": 11,
             "pairs": [
               {
-                "option": "file",
-                "value": "src/main/resources/application.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "server.port",
                 "value": "8090",
+                "line": "3",
                 "type": "PORT"
               },
               {
                 "option": "spring.datasource.url",
                 "value": "jdbc:h2:mem:blog_simple_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
+                "line": "6",
                 "type": "URL"
               },
               {
                 "option": "spring.datasource.username",
                 "value": "sa",
+                "line": "7",
                 "type": "USERNAME"
               },
               {
                 "option": "spring.datasource.data",
                 "value": "classpath:/import-h2.sql",
+                "line": "11",
                 "type": "UNKNOWN"
               },
               {
                 "option": "spring.h2.console.enabled",
                 "value": "true",
+                "line": "15",
                 "type": "BOOLEAN"
               },
               {
                 "option": "spring.h2.console.path",
                 "value": "/h2-console",
+                "line": "16",
                 "type": "PATH"
               },
               {
                 "option": "spring.queries.users-query",
                 "value": "select username, password, active from user where username=?",
+                "line": "20",
                 "type": "USERNAME"
               },
               {
                 "option": "spring.queries.roles-query",
                 "value": "select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?",
+                "line": "21",
                 "type": "UNKNOWN"
               },
               {
                 "option": "spring.admin.username",
                 "value": "admin",
+                "line": "23",
                 "type": "USERNAME"
               },
               {
                 "option": "spring.admin.password",
                 "value": "admin",
+                "line": "24",
                 "type": "PASSWORD"
               }
             ],
@@ -384,9 +427,9 @@
       "network_data": {
         "links": 39,
         "config_files": [
-          ".mvn/wrapper/maven-wrapper.properties",
           "src/main/resources/application.properties",
-          "pom.xml"
+          "pom.xml",
+          ".mvn/wrapper/maven-wrapper.properties"
         ],
         "config_files_data": [
           {
@@ -395,13 +438,9 @@
             "options": 2,
             "pairs": [
               {
-                "option": "file",
-                "value": ".mvn/wrapper/maven-wrapper.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "distributionurl",
                 "value": "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.zip",
+                "line": "Unknown",
                 "type": "URL"
               }
             ]
@@ -412,243 +451,285 @@
             "options": 48,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 4,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "com.reljicd",
+                "line": 6,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "blog-demo",
+                "line": 7,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "0.0.1-SNAPSHOT",
+                "line": 8,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.packaging",
                 "value": "jar",
+                "line": 9,
                 "type": "TYPE"
               },
               {
                 "option": "project.name",
                 "value": "blog-demo",
+                "line": 11,
                 "type": "NAME"
               },
               {
                 "option": "project.description",
                 "value": "Blog Demo project using Spring Boot",
+                "line": 12,
                 "type": "COMMAND"
               },
               {
                 "option": "project.parent.groupId",
                 "value": "org.springframework.boot",
+                "line": 15,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.artifactId",
                 "value": "spring-boot-starter-parent",
+                "line": 16,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.version",
                 "value": "1.5.3.RELEASE",
+                "line": 17,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.project.build.sourceEncoding",
                 "value": "UTF-8",
+                "line": 22,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.properties.project.reporting.outputEncoding",
                 "value": "UTF-8",
+                "line": 23,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.properties.java.version",
                 "value": "1.8",
+                "line": 24,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.groupId",
                 "value": "org.springframework.boot",
+                "line": 30,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.artifactId",
                 "value": "spring-boot-starter-data-jpa",
+                "line": 31,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.groupId",
                 "value": "org.springframework.boot",
+                "line": 36,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.artifactId",
                 "value": "spring-boot-starter-data-rest",
+                "line": 37,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.groupId",
                 "value": "org.springframework.data",
+                "line": 42,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.artifactId",
                 "value": "spring-data-rest-hal-browser",
+                "line": 43,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.groupId",
                 "value": "org.springframework.boot",
+                "line": 48,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.artifactId",
                 "value": "spring-boot-starter-security",
+                "line": 49,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
                 "value": "org.springframework.boot",
+                "line": 54,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
                 "value": "spring-boot-starter-thymeleaf",
+                "line": 55,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.groupId",
                 "value": "org.thymeleaf.extras",
+                "line": 59,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.artifactId",
                 "value": "thymeleaf-extras-springsecurity4",
+                "line": 60,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
                 "value": "org.springframework.boot",
+                "line": 65,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
                 "value": "spring-boot-starter-web",
+                "line": 66,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.groupId",
                 "value": "org.springframework.boot",
+                "line": 71,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.artifactId",
                 "value": "spring-boot-devtools",
+                "line": 72,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.scope",
                 "value": "runtime",
+                "line": 73,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.dependencies.dependency.com.h2database:h2.groupId",
                 "value": "com.h2database",
+                "line": 78,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.h2database:h2.artifactId",
                 "value": "h2",
+                "line": 79,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.mysql:mysql-connector-java.groupId",
                 "value": "mysql",
+                "line": 85,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.mysql:mysql-connector-java.artifactId",
                 "value": "mysql-connector-java",
+                "line": 86,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.groupId",
                 "value": "org.springframework.boot",
+                "line": 92,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.artifactId",
                 "value": "spring-boot-starter-test",
+                "line": 93,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.scope",
                 "value": "test",
+                "line": 94,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.groupId",
                 "value": "org.webjars",
+                "line": 99,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.artifactId",
                 "value": "bootstrap",
+                "line": 100,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.version",
                 "value": "3.3.7",
+                "line": 101,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.groupId",
                 "value": "org.webjars",
+                "line": 105,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.artifactId",
                 "value": "jquery",
+                "line": 106,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.version",
                 "value": "2.1.4",
+                "line": 107,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
                 "value": "org.springframework.boot",
+                "line": 115,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
+                "line": 116,
                 "type": "NAME"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
+                "line": "7, 8, and 9",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/blog-demo.jar",
+                "line": "7, 8, and 9",
                 "type": "PATH"
               }
             ]
@@ -659,58 +740,63 @@
             "options": 11,
             "pairs": [
               {
-                "option": "file",
-                "value": "src/main/resources/application.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "server.port",
                 "value": "8090",
+                "line": "3",
                 "type": "PORT"
               },
               {
                 "option": "spring.datasource.url",
                 "value": "jdbc:h2:mem:blog_simple_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
+                "line": "6",
                 "type": "URL"
               },
               {
                 "option": "spring.datasource.username",
                 "value": "sa",
+                "line": "7",
                 "type": "USERNAME"
               },
               {
                 "option": "spring.datasource.data",
                 "value": "classpath:/sql/import-h2.sql",
+                "line": "11",
                 "type": "UNKNOWN"
               },
               {
                 "option": "spring.h2.console.enabled",
                 "value": "true",
+                "line": "15",
                 "type": "BOOLEAN"
               },
               {
                 "option": "spring.h2.console.path",
                 "value": "/h2-console",
+                "line": "16",
                 "type": "PATH"
               },
               {
                 "option": "spring.queries.users-query",
                 "value": "select username, password, active from user where username=?",
+                "line": "20",
                 "type": "USERNAME"
               },
               {
                 "option": "spring.queries.roles-query",
                 "value": "select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?",
+                "line": "21",
                 "type": "UNKNOWN"
               },
               {
                 "option": "spring.admin.username",
                 "value": "admin",
+                "line": "23",
                 "type": "USERNAME"
               },
               {
                 "option": "spring.admin.password",
                 "value": "admin",
+                "line": "24",
                 "type": "PASSWORD"
               }
             ],
@@ -765,11 +851,11 @@
       "insertions": 11,
       "deletions": 0,
       "network_data": {
-        "links": 41,
+        "links": 40,
         "config_files": [
-          ".mvn/wrapper/maven-wrapper.properties",
           "src/main/resources/application.properties",
           "pom.xml",
+          ".mvn/wrapper/maven-wrapper.properties",
           "docker/Dockerfile"
         ],
         "config_files_data": [
@@ -779,13 +865,9 @@
             "options": 2,
             "pairs": [
               {
-                "option": "file",
-                "value": ".mvn/wrapper/maven-wrapper.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "distributionurl",
                 "value": "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.zip",
+                "line": "Unknown",
                 "type": "URL"
               }
             ]
@@ -793,62 +875,37 @@
           {
             "file_path": "docker/Dockerfile",
             "concept": "docker",
-            "options": 11,
+            "options": 6,
             "pairs": [
-              {
-                "option": "file",
-                "value": "docker/Dockerfile",
-                "type": "PATH"
-              },
               {
                 "option": "FROM",
                 "value": "openjdk:8u151-jdk-alpine3.7",
+                "line": 1,
                 "type": "IMAGE"
               },
               {
                 "option": "EXPOSE",
                 "value": "8090",
+                "line": 3,
                 "type": "PORT"
               },
               {
-                "option": "COPY.src",
-                "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
-                "type": "PATH"
-              },
-              {
-                "option": "COPY.dest",
-                "value": "$APP_HOME/app.jar",
-                "type": "PATH"
+                "option": "COPY",
+                "value": "target/blog-demo-0.0.1-SNAPSHOT.jar $APP_HOME/app.jar",
+                "line": 7,
+                "type": "UNKNOWN"
               },
               {
                 "option": "WORKDIR",
                 "value": "$APP_HOME",
+                "line": 9,
                 "type": "PATH"
               },
               {
-                "option": "ENTRYPOINT.exec_command",
+                "option": "ENTRYPOINT",
                 "value": "exec java -jar app.jar",
+                "line": 11,
                 "type": "COMMAND"
-              },
-              {
-                "option": "ENTRYPOINT.param0",
-                "value": "exec",
-                "type": "UNKNOWN"
-              },
-              {
-                "option": "ENTRYPOINT.param1",
-                "value": "java",
-                "type": "UNKNOWN"
-              },
-              {
-                "option": "ENTRYPOINT.param2",
-                "value": "-jar",
-                "type": "UNKNOWN"
-              },
-              {
-                "option": "ENTRYPOINT.param3",
-                "value": "app.jar",
-                "type": "PATH"
               }
             ],
             "insertions": 11,
@@ -862,243 +919,285 @@
             "options": 48,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 4,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "com.reljicd",
+                "line": 6,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "blog-demo",
+                "line": 7,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "0.0.1-SNAPSHOT",
+                "line": 8,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.packaging",
                 "value": "jar",
+                "line": 9,
                 "type": "TYPE"
               },
               {
                 "option": "project.name",
                 "value": "blog-demo",
+                "line": 11,
                 "type": "NAME"
               },
               {
                 "option": "project.description",
                 "value": "Blog Demo project using Spring Boot",
+                "line": 12,
                 "type": "COMMAND"
               },
               {
                 "option": "project.parent.groupId",
                 "value": "org.springframework.boot",
+                "line": 15,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.artifactId",
                 "value": "spring-boot-starter-parent",
+                "line": 16,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.version",
                 "value": "1.5.3.RELEASE",
+                "line": 17,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.project.build.sourceEncoding",
                 "value": "UTF-8",
+                "line": 22,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.properties.project.reporting.outputEncoding",
                 "value": "UTF-8",
+                "line": 23,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.properties.java.version",
                 "value": "1.8",
+                "line": 24,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.groupId",
                 "value": "org.springframework.boot",
+                "line": 30,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.artifactId",
                 "value": "spring-boot-starter-data-jpa",
+                "line": 31,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.groupId",
                 "value": "org.springframework.boot",
+                "line": 36,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.artifactId",
                 "value": "spring-boot-starter-data-rest",
+                "line": 37,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.groupId",
                 "value": "org.springframework.data",
+                "line": 42,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.artifactId",
                 "value": "spring-data-rest-hal-browser",
+                "line": 43,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.groupId",
                 "value": "org.springframework.boot",
+                "line": 48,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.artifactId",
                 "value": "spring-boot-starter-security",
+                "line": 49,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
                 "value": "org.springframework.boot",
+                "line": 54,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
                 "value": "spring-boot-starter-thymeleaf",
+                "line": 55,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.groupId",
                 "value": "org.thymeleaf.extras",
+                "line": 59,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.artifactId",
                 "value": "thymeleaf-extras-springsecurity4",
+                "line": 60,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
                 "value": "org.springframework.boot",
+                "line": 65,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
                 "value": "spring-boot-starter-web",
+                "line": 66,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.groupId",
                 "value": "org.springframework.boot",
+                "line": 71,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.artifactId",
                 "value": "spring-boot-devtools",
+                "line": 72,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.scope",
                 "value": "runtime",
+                "line": 73,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.dependencies.dependency.com.h2database:h2.groupId",
                 "value": "com.h2database",
+                "line": 78,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.h2database:h2.artifactId",
                 "value": "h2",
+                "line": 79,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.mysql:mysql-connector-java.groupId",
                 "value": "mysql",
+                "line": 85,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.mysql:mysql-connector-java.artifactId",
                 "value": "mysql-connector-java",
+                "line": 86,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.groupId",
                 "value": "org.springframework.boot",
+                "line": 92,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.artifactId",
                 "value": "spring-boot-starter-test",
+                "line": 93,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.scope",
                 "value": "test",
+                "line": 94,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.groupId",
                 "value": "org.webjars",
+                "line": 99,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.artifactId",
                 "value": "bootstrap",
+                "line": 100,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.version",
                 "value": "3.3.7",
+                "line": 101,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.groupId",
                 "value": "org.webjars",
+                "line": 105,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.artifactId",
                 "value": "jquery",
+                "line": 106,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.version",
                 "value": "2.1.4",
+                "line": 107,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
                 "value": "org.springframework.boot",
+                "line": 115,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
+                "line": 116,
                 "type": "NAME"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
+                "line": "7, 8, and 9",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/blog-demo.jar",
+                "line": "7, 8, and 9",
                 "type": "PATH"
               }
             ]
@@ -1109,58 +1208,63 @@
             "options": 11,
             "pairs": [
               {
-                "option": "file",
-                "value": "src/main/resources/application.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "server.port",
                 "value": "8090",
+                "line": "3",
                 "type": "PORT"
               },
               {
                 "option": "spring.datasource.url",
                 "value": "jdbc:h2:mem:blog_simple_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
+                "line": "6",
                 "type": "URL"
               },
               {
                 "option": "spring.datasource.username",
                 "value": "sa",
+                "line": "7",
                 "type": "USERNAME"
               },
               {
                 "option": "spring.datasource.data",
                 "value": "classpath:/sql/import-h2.sql",
+                "line": "11",
                 "type": "UNKNOWN"
               },
               {
                 "option": "spring.h2.console.enabled",
                 "value": "true",
+                "line": "15",
                 "type": "BOOLEAN"
               },
               {
                 "option": "spring.h2.console.path",
                 "value": "/h2-console",
+                "line": "16",
                 "type": "PATH"
               },
               {
                 "option": "spring.queries.users-query",
                 "value": "select username, password, active from user where username=?",
+                "line": "20",
                 "type": "USERNAME"
               },
               {
                 "option": "spring.queries.roles-query",
                 "value": "select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?",
+                "line": "21",
                 "type": "UNKNOWN"
               },
               {
                 "option": "spring.admin.username",
                 "value": "admin",
+                "line": "23",
                 "type": "USERNAME"
               },
               {
                 "option": "spring.admin.password",
                 "value": "admin",
+                "line": "24",
                 "type": "PASSWORD"
               }
             ]
@@ -1200,11 +1304,11 @@
       "insertions": 71,
       "deletions": 67,
       "network_data": {
-        "links": 41,
+        "links": 40,
         "config_files": [
-          ".mvn/wrapper/maven-wrapper.properties",
           "src/main/resources/application.properties",
           "pom.xml",
+          ".mvn/wrapper/maven-wrapper.properties",
           "docker/Dockerfile"
         ],
         "config_files_data": [
@@ -1214,13 +1318,9 @@
             "options": 2,
             "pairs": [
               {
-                "option": "file",
-                "value": ".mvn/wrapper/maven-wrapper.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "distributionurl",
                 "value": "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.5.0/apache-maven-3.5.0-bin.zip",
+                "line": "Unknown",
                 "type": "URL"
               }
             ]
@@ -1228,62 +1328,37 @@
           {
             "file_path": "docker/Dockerfile",
             "concept": "docker",
-            "options": 11,
+            "options": 6,
             "pairs": [
-              {
-                "option": "file",
-                "value": "docker/Dockerfile",
-                "type": "PATH"
-              },
               {
                 "option": "FROM",
                 "value": "openjdk:8u151-jdk-alpine3.7",
+                "line": 1,
                 "type": "IMAGE"
               },
               {
                 "option": "EXPOSE",
                 "value": "8090",
+                "line": 3,
                 "type": "PORT"
               },
               {
-                "option": "COPY.src",
-                "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
-                "type": "PATH"
-              },
-              {
-                "option": "COPY.dest",
-                "value": "$APP_HOME/app.jar",
-                "type": "PATH"
+                "option": "COPY",
+                "value": "target/blog-demo-0.0.1-SNAPSHOT.jar $APP_HOME/app.jar",
+                "line": 7,
+                "type": "UNKNOWN"
               },
               {
                 "option": "WORKDIR",
                 "value": "$APP_HOME",
+                "line": 9,
                 "type": "PATH"
               },
               {
-                "option": "ENTRYPOINT.exec_command",
+                "option": "ENTRYPOINT",
                 "value": "exec java -jar app.jar",
+                "line": 11,
                 "type": "COMMAND"
-              },
-              {
-                "option": "ENTRYPOINT.param0",
-                "value": "exec",
-                "type": "UNKNOWN"
-              },
-              {
-                "option": "ENTRYPOINT.param1",
-                "value": "java",
-                "type": "UNKNOWN"
-              },
-              {
-                "option": "ENTRYPOINT.param2",
-                "value": "-jar",
-                "type": "UNKNOWN"
-              },
-              {
-                "option": "ENTRYPOINT.param3",
-                "value": "app.jar",
-                "type": "PATH"
               }
             ]
           },
@@ -1293,243 +1368,285 @@
             "options": 48,
             "pairs": [
               {
-                "option": "file",
-                "value": "pom.xml",
-                "type": "PATH"
-              },
-              {
                 "option": "project.modelVersion",
                 "value": "4.0.0",
+                "line": 4,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.groupId",
                 "value": "com.reljicd",
+                "line": 6,
                 "type": "NAME"
               },
               {
                 "option": "project.artifactId",
                 "value": "blog-demo",
+                "line": 7,
                 "type": "NAME"
               },
               {
                 "option": "project.version",
                 "value": "0.0.1-SNAPSHOT",
+                "line": 8,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.packaging",
                 "value": "jar",
+                "line": 9,
                 "type": "TYPE"
               },
               {
                 "option": "project.name",
                 "value": "blog-demo",
+                "line": 11,
                 "type": "NAME"
               },
               {
                 "option": "project.description",
                 "value": "Blog Demo project using Spring Boot",
+                "line": 12,
                 "type": "COMMAND"
               },
               {
                 "option": "project.parent.groupId",
                 "value": "org.springframework.boot",
+                "line": 15,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.artifactId",
                 "value": "spring-boot-starter-parent",
+                "line": 16,
                 "type": "NAME"
               },
               {
                 "option": "project.parent.version",
                 "value": "1.5.3.RELEASE",
+                "line": 17,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.properties.project.build.sourceEncoding",
                 "value": "UTF-8",
+                "line": 22,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.properties.project.reporting.outputEncoding",
                 "value": "UTF-8",
+                "line": 23,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.properties.java.version",
                 "value": "1.8",
+                "line": 24,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.groupId",
                 "value": "org.springframework.boot",
+                "line": 30,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-jpa.artifactId",
                 "value": "spring-boot-starter-data-jpa",
+                "line": 31,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.groupId",
                 "value": "org.springframework.boot",
+                "line": 36,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-data-rest.artifactId",
                 "value": "spring-boot-starter-data-rest",
+                "line": 37,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.groupId",
                 "value": "org.springframework.data",
+                "line": 42,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.data:spring-data-rest-hal-browser.artifactId",
                 "value": "spring-data-rest-hal-browser",
+                "line": 43,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.groupId",
                 "value": "org.springframework.boot",
+                "line": 48,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-security.artifactId",
                 "value": "spring-boot-starter-security",
+                "line": 49,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.groupId",
                 "value": "org.springframework.boot",
+                "line": 54,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-thymeleaf.artifactId",
                 "value": "spring-boot-starter-thymeleaf",
+                "line": 55,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.groupId",
                 "value": "org.thymeleaf.extras",
+                "line": 59,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.thymeleaf.extras:thymeleaf-extras-springsecurity4.artifactId",
                 "value": "thymeleaf-extras-springsecurity4",
+                "line": 60,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.groupId",
                 "value": "org.springframework.boot",
+                "line": 65,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-web.artifactId",
                 "value": "spring-boot-starter-web",
+                "line": 66,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.groupId",
                 "value": "org.springframework.boot",
+                "line": 71,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.artifactId",
                 "value": "spring-boot-devtools",
+                "line": 72,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-devtools.scope",
                 "value": "runtime",
+                "line": 73,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.dependencies.dependency.com.h2database:h2.groupId",
                 "value": "com.h2database",
+                "line": 78,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.com.h2database:h2.artifactId",
                 "value": "h2",
+                "line": 79,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.mysql:mysql-connector-java.groupId",
                 "value": "mysql",
+                "line": 85,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.mysql:mysql-connector-java.artifactId",
                 "value": "mysql-connector-java",
+                "line": 86,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.groupId",
                 "value": "org.springframework.boot",
+                "line": 92,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.artifactId",
                 "value": "spring-boot-starter-test",
+                "line": 93,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.springframework.boot:spring-boot-starter-test.scope",
                 "value": "test",
+                "line": 94,
                 "type": "UNKNOWN"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.groupId",
                 "value": "org.webjars",
+                "line": 99,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.artifactId",
                 "value": "bootstrap",
+                "line": 100,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:bootstrap:3.3.7.version",
                 "value": "3.3.7",
+                "line": 101,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.groupId",
                 "value": "org.webjars",
+                "line": 105,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.artifactId",
                 "value": "jquery",
+                "line": 106,
                 "type": "NAME"
               },
               {
                 "option": "project.dependencies.dependency.org.webjars:jquery:2.1.4.version",
                 "value": "2.1.4",
+                "line": 107,
                 "type": "VERSION_NUMBER"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.groupId",
                 "value": "org.springframework.boot",
+                "line": 115,
                 "type": "NAME"
               },
               {
                 "option": "project.build.plugins.plugin.org.springframework.boot:spring-boot-maven-plugin.artifactId",
                 "value": "spring-boot-maven-plugin",
+                "line": 116,
                 "type": "NAME"
               },
               {
                 "option": "ExecutableName",
                 "value": "target/blog-demo-0.0.1-SNAPSHOT.jar",
+                "line": "7, 8, and 9",
                 "type": "PATH"
               },
               {
                 "option": "ExecutableNameNoVersion",
                 "value": "target/blog-demo.jar",
+                "line": "7, 8, and 9",
                 "type": "PATH"
               }
             ]
@@ -1540,68 +1657,75 @@
             "options": 13,
             "pairs": [
               {
-                "option": "file",
-                "value": "src/main/resources/application.properties",
-                "type": "PATH"
-              },
-              {
                 "option": "server.port",
                 "value": "8090",
+                "line": "3",
                 "type": "PORT"
               },
               {
                 "option": "spring.datasource.url",
                 "value": "jdbc:h2:mem:blog_simple_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
+                "line": "6",
                 "type": "URL"
               },
               {
                 "option": "spring.datasource.username",
                 "value": "sa",
+                "line": "7",
                 "type": "USERNAME"
               },
               {
                 "option": "spring.datasource.data",
                 "value": "classpath:/sql/import-h2.sql",
+                "line": "11",
                 "type": "UNKNOWN"
               },
               {
                 "option": "spring.h2.console.enabled",
                 "value": "true",
+                "line": "15",
                 "type": "BOOLEAN"
               },
               {
                 "option": "spring.h2.console.path",
                 "value": "/h2-console",
+                "line": "16",
                 "type": "PATH"
               },
               {
                 "option": "spring.queries.users-query",
                 "value": "select username, password, active from user where username=?",
+                "line": "20",
                 "type": "USERNAME"
               },
               {
                 "option": "spring.queries.roles-query",
                 "value": "select u.username, r.role from user u inner join user_role ur on(u.user_id=ur.user_id) inner join role r on(ur.role_id=r.role_id) where u.username=?",
+                "line": "21",
                 "type": "UNKNOWN"
               },
               {
                 "option": "spring.admin.username",
                 "value": "admin",
+                "line": "23",
                 "type": "USERNAME"
               },
               {
                 "option": "spring.admin.password",
                 "value": "admin",
+                "line": "24",
                 "type": "PASSWORD"
               },
               {
                 "option": "spring.thymeleaf.cache",
                 "value": "false",
+                "line": "27",
                 "type": "BOOLEAN"
               },
               {
                 "option": "spring.thymeleaf.prefix",
                 "value": "classpath:/templates",
+                "line": "28",
                 "type": "UNKNOWN"
               }
             ],
