@@ -2,7 +2,7 @@ from typing import Dict
 from cfgnet.network.network_configuration import NetworkConfiguration
 from cfgnet.network.nodes import ArtifactNode
 from cfgnet.network.network import Network
-from concurrent.futures import ProcessPoolExecutor
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from pprint import pprint
 from tqdm import tqdm
 from typing import List
@@ -15,9 +15,36 @@ import logging
 import argparse
 import tempfile
 import subprocess
+import os
 
 
 CONFIG_FILE_ENDINGS = (".xml", ".yml", ".yaml", "Dockerfile", ".ini", ".properties", ".conf", ".json", ".toml", ".cfg", "settings.py", ".cnf")
+
+class ExcludeWarningsFilter(logging.Filter):
+    """Custom filter to exclude WARNING logs."""
+    def filter(self, record):
+        return record.levelno != logging.WARNING
+
+
+def configure_logging(logfile_name: str):
+    # Configure logging
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)  # Set base level to INFO
+
+    # Create file handler
+    file_handler = logging.FileHandler(f"../data/{logfile_name}.log")
+    file_handler.setLevel(logging.INFO)
+
+    # Apply the custom filter to exclude warnings
+    file_handler.addFilter(ExcludeWarningsFilter())
+
+    # Set the format for log messages
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+    file_handler.setFormatter(formatter)
+
+    # Add the handler to the logger
+    logger.addHandler(file_handler)
+
 
 def checkout_latest_commit(repo, current_branch, latest_commit):
      # Return to the latest commit
@@ -74,18 +101,14 @@ def get_file_diff(repo_path: str, commit, file_path: str):
     """Get file diff for a config file in a given commit."""
     if commit.parents:
         parent_commit = f"{commit.hexsha}^"
-            
-        try:                        
-            # Run git diff to capture line-by-line changes
-            diff_output = subprocess.check_output(
-                ['git', 'diff', parent_commit, commit.hexsha, '--', file_path],
-                cwd=repo_path,
-                text=True
-            )
-            return diff_output
-        except (subprocess.CalledProcessError, git.exc.GitCommandError) as e:
-            logging.error(f"Error running git diff for commit {commit.hexsha}: {e}")
-            return None
+              
+        # Run git diff to capture line-by-line changes
+        diff_output = subprocess.check_output(
+            ['git', 'diff', parent_commit, commit.hexsha, '--', file_path],
+            cwd=repo_path,
+            text=True
+        )
+        return diff_output
 
 
 def analyze_repository(repo_path: str, get_diff: bool = False) -> Dict:
@@ -121,11 +144,7 @@ def analyze_repository(repo_path: str, get_diff: bool = False) -> Dict:
             is_config_related = True
             
             # Run the external analysis for config-related commits
-            try: 
-                network_data = extract_config_data(repo_path=repo_path)
-            except Exception:
-                logging.error(f"Error occurred for {project_name} in commit {commit.hexsha}")
-                logging.error({traceback.print_exc()})
+            network_data = extract_config_data(repo_path=repo_path)
 
             # Get general stats per config file
             for file_path, file_stats in commit.stats.files.items():
@@ -201,7 +220,7 @@ def analyze_repository(repo_path: str, get_diff: bool = False) -> Dict:
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--data_file", type=str, required=True, help="Path to the data file containing project details")
-    parser.add_argument("--parallel", type=int, default=5, help="Number of parallel processes to use")
+    parser.add_argument("--parallel", type=int, default=10, help="Number of parallel processes to use")
     return parser.parse_args()
 
 
@@ -209,6 +228,15 @@ def process_project(project):
     """Process a single project."""
     project_url = project["html_url"]
     project_name = project["name"]
+
+    # Define the output file path
+    output_file = f"../data/analyzed_projects/{project_name}.json"
+
+    # Check if the output file already exists
+    if os.path.exists(output_file):
+        logging.info(f"Output file already exists for {project_name}. Skipping processing.")
+        return
+
     logging.info(f"Processing project: {project_name}")
         
     with tempfile.TemporaryDirectory() as temp_dir:
@@ -221,25 +249,23 @@ def process_project(project):
                 stderr=subprocess.PIPE,
             )
 
-            # Analyze repository with analyze_repository to get commit data
+            # Analyze repository to get commit config data
             logging.info(f"Analyzing repository: {project_name}")
             commit_data = analyze_repository(repo_path=temp_dir, get_diff=True)
 
-            # Store commit data into f"../data/analyzed_projects/{project_name}.json"
-            output_file = f"../data/analyzed_projects/{project_name}.json"
+            # Store commit data into the output file
             with open(output_file, "w", encoding="utf-8") as dest:
                 json.dump(commit_data, dest, indent=4)
 
             logging.info(f"Analysis for {project_name} stored at {output_file}")
 
         except Exception as error:
-            logging.error(f"Failed to process {project_name}: {error}")
+            logging.error(f"Failed to process **{project_name}**: {error}")
             traceback.print_exc()
 
 
-def run_analysis():
-    args = get_args()
-
+def run_analysis(args):
+    """Run the repository analysis."""
     # Load and validate data
     with open(args.data_file, "r", encoding="utf-8") as src:
         data = json.load(src)
@@ -254,10 +280,13 @@ def run_analysis():
 
 
 if __name__ == "__main__":
-    logging.basicConfig(
-        filename="../data/analysis.log",
-        level=logging.INFO,
-        format="%(asctime)s - %(levelname)s - %(message)s",
-    )
+    args = get_args()
+
+    logfile_name = args.data_file.split("/")[-1].split(".json")[-1]
+
+    # Configure logging
+    configure_logging(logfile_name=logfile_name)
+
+    # Start analysis
     logging.info("Starting analysis")
-    run_analysis()
+    run_analysis(args=args)

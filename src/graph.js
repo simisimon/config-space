@@ -1,16 +1,27 @@
 // Force-Directed Graph Visualization using d3.js
 
+function updateLabels(labelSelection, nodeData) {
+    labelSelection.text(d => {
+        if (d.type === "concept") {
+            return `Concept: ${d.id}`;
+        } else if (d.type === "artifact") {
+            return `Artifact: ${d.id}`;
+        } else if (d.type === "option") {
+            return `Option: ${d.id.split(":")[1]}`; // Show only the option name
+        }
+        return d.id;
+    });
+}
+
 // Set up the dimensions and margins for the SVG container
-const width = 1600;
-const height = 1200;
+let width = window.innerWidth;
+let height = window.innerHeight;
 
 // Create an SVG element and append it to the body
-d3.select("body")
+const svg = d3.select("body")
     .append("svg")
     .attr("width", width)
     .attr("height", height);
-
-const svg = d3.select("svg");
 
 // Add zoom behavior
 const zoom = d3.zoom()
@@ -26,9 +37,9 @@ svg.call(zoom);
 const container = svg.append("g");
 
 // Load the graph data from the JSON file
-d3.json("../data/test_data/graph_data.json").then((graph) => {
+d3.json("../data/test_data/updated_graph_data.json").then((graph) => {
     // Filter nodes and links to include only concepts and artifacts
-    const filteredNodes = graph.nodes.filter(d => d.type === 'concept' || d.type === 'artifact');
+    const filteredNodes = graph.nodes.filter(d => d.type === 'concept' || d.type === 'artifact' || d.type === 'option');
     const filteredLinks = graph.links.filter(d =>
         filteredNodes.some(node => node.id === d.source) &&
         filteredNodes.some(node => node.id === d.target)
@@ -37,13 +48,16 @@ d3.json("../data/test_data/graph_data.json").then((graph) => {
     console.log("Filtered Nodes:", filteredNodes);
     console.log("Filtered Links:", filteredLinks);
 
-    const linkForce = d3.forceLink(filteredLinks).id(d => d.id);
+    const linkForce = d3.forceLink(filteredLinks)
+        .id(d => d.id)
+        .distance(d => d.source.type === 'concept' && d.target.type === 'artifact' ? 100 : 50); // Increase distance for concept-artifact links
 
     // Create a simulation with forces
     const simulation = d3.forceSimulation(filteredNodes)
         .force("link", linkForce)
-        .force("charge", d3.forceManyBody().strength(-300))
-        .force("center", d3.forceCenter(width / 2, height / 2));
+        .force("charge", d3.forceManyBody().strength(-50)) // Reduce repulsion
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collision", d3.forceCollide().radius(15)); // Prevent overlapping
 
     // Add links to the container
     const link = container.append("g")
@@ -63,7 +77,8 @@ d3.json("../data/test_data/graph_data.json").then((graph) => {
         .attr("r", 8)
         .attr("fill", d => {
             if (d.type === 'concept') return "#1f77b4"; // Blue for concepts
-            return "#ff7f0e"; // Orange for artifacts
+            if (d.type === 'artifact') return "#ff7f0e"; // Orange for artifacts
+            return "#2ca02c"; // Green for options
         })
         .call(d3.drag()
             .on("start", (event, d) => {
@@ -108,6 +123,9 @@ d3.json("../data/test_data/graph_data.json").then((graph) => {
         label
             .attr("x", d => d.x)
             .attr("y", d => d.y);
+        
+        // Dynamically update labels
+        updateLabels(label, graph.nodes);
     });
 
     // Add a tooltip to display node information
@@ -131,4 +149,13 @@ resetButton.on("click", () => {
     svg.transition()
         .duration(750)
         .call(zoom.transform, d3.zoomIdentity); // Reset to initial zoom
+});
+
+
+// Update the size of the SVG on window resize
+window.addEventListener("resize", () => {
+    width = window.innerWidth;
+    height = window.innerHeight;
+
+    svg.attr("width", width).attr("height", height);
 });
