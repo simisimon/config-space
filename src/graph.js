@@ -2,14 +2,10 @@
 
 function updateLabels(labelSelection, nodeData) {
     labelSelection.text(d => {
-        if (d.type === "concept") {
-            return `Concept: ${d.id}`;
-        } else if (d.type === "artifact") {
-            return `Artifact: ${d.id}`;
-        } else if (d.type === "option") {
-            return `Option: ${d.id.split(":")[1]}`; // Show only the option name
+        if (d.type === "option") {
+            return d.id.split(":")[1]; // Only show the option name
         }
-        return d.id;
+        return d.id; // For concepts and artifacts, show the id directly
     });
 }
 
@@ -37,27 +33,40 @@ svg.call(zoom);
 const container = svg.append("g");
 
 // Load the graph data from the JSON file
-d3.json("../data/test_data/updated_graph_data.json").then((graph) => {
+d3.json("../data/test_data/test_graph_data_final.json").then((graph) => {
     // Filter nodes and links to include only concepts and artifacts
-    const filteredNodes = graph.nodes.filter(d => d.type === 'concept' || d.type === 'artifact' || d.type === 'option');
     const filteredLinks = graph.links.filter(d =>
-        filteredNodes.some(node => node.id === d.source) &&
-        filteredNodes.some(node => node.id === d.target)
+        graph.nodes.some(node => node.id === d.source) &&
+        graph.nodes.some(node => node.id === d.target)
     );
 
-    console.log("Filtered Nodes:", filteredNodes);
-    console.log("Filtered Links:", filteredLinks);
+    // Collect IDs of connected nodes
+    const connectedNodeIds = new Set();
+    filteredLinks.forEach(link => {
+        connectedNodeIds.add(link.source);
+        connectedNodeIds.add(link.target);
+    });
 
+    // Filter nodes to remove unlinked ones
+    const filteredNodes = graph.nodes.filter(node => connectedNodeIds.has(node.id));
+
+    // Debug removed nodes
+    const removedNodes = graph.nodes.filter(node => !connectedNodeIds.has(node.id));
+    console.log("Removed Nodes (Unlinked):", removedNodes);
+
+    // Create linkForce
     const linkForce = d3.forceLink(filteredLinks)
         .id(d => d.id)
-        .distance(d => d.source.type === 'concept' && d.target.type === 'artifact' ? 100 : 50); // Increase distance for concept-artifact links
+        .distance(d => { return 50; })  // Default distance for other links
+        .strength(d => { return 0.3; }); // Adjust strength of links
 
-    // Create a simulation with forces
+
+    // Use filtered nodes and links for the simulation
     const simulation = d3.forceSimulation(filteredNodes)
         .force("link", linkForce)
-        .force("charge", d3.forceManyBody().strength(-50)) // Reduce repulsion
+        .force("charge", d3.forceManyBody().strength(-20))
         .force("center", d3.forceCenter(width / 2, height / 2))
-        .force("collision", d3.forceCollide().radius(15)); // Prevent overlapping
+        .force("collision", d3.forceCollide().radius(5));
 
     // Add links to the container
     const link = container.append("g")
@@ -104,10 +113,22 @@ d3.json("../data/test_data/updated_graph_data.json").then((graph) => {
         .enter().append("text")
         .attr("dy", -10)
         .attr("text-anchor", "middle")
-        .text(d => d.id)
+        .text(d => d.id) // Or use `updateLabels` for more complex logic
         .style("font-size", "10px")
-        .style("fill", "#555");
+        .style("fill", "#555")
+        .style("visibility", "hidden"); // Initially hidden
 
+    // Show labels on mouseover
+    node.on("mouseover", (event, d) => {
+        label.filter(l => l.id === d.id)
+            .style("visibility", "visible"); // Show label
+        })
+        .on("mouseout", (event, d) => {
+            label.filter(l => l.id === d.id)
+                .style("visibility", "hidden"); // Hide label
+        });
+    
+    
     // Update the positions of nodes and links during the simulation
     simulation.on("tick", () => {
         link
@@ -159,3 +180,4 @@ window.addEventListener("resize", () => {
 
     svg.attr("width", width).attr("height", height);
 });
+

@@ -20,19 +20,32 @@ import os
 
 CONFIG_FILE_ENDINGS = (".xml", ".yml", ".yaml", "Dockerfile", ".ini", ".properties", ".conf", ".json", ".toml", ".cfg", "settings.py", ".cnf")
 
+
+MICROSERVICES = [
+    {"html_url": "https://github.com/sqshq/piggymetrics", "name": "piggymetrics"},
+    {"html_url": "https://github.com/Yin-Hongwei/music-website", "name": "music-website"},
+    {"html_url": "https://github.com/pig-mesh/pig", "name": "pig"},
+    {"html_url": "https://github.com/macrozheng/mall", "name": "mall"},
+    {"html_url": "https://github.com/macrozheng/mall-swarm", "name": "mall-swarm"},
+    {"html_url": "https://github.com/linlinjava/litemall", "name": "litemall"},
+    {"html_url": "https://github.com/wxiaoqi/Spring-Cloud-Platform", "name": "Spring-Cloud-Platform"},
+    {"html_url": "https://github.com/apolloconfig/apollo", "name": "apollo"},
+]
+
+
 class ExcludeWarningsFilter(logging.Filter):
     """Custom filter to exclude WARNING logs."""
     def filter(self, record):
         return record.levelno != logging.WARNING
 
 
-def configure_logging(logfile_name: str):
+def configure_logging():
     # Configure logging
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)  # Set base level to INFO
 
     # Create file handler
-    file_handler = logging.FileHandler(f"../data/{logfile_name}.log")
+    file_handler = logging.FileHandler("../data/analysis.log")
     file_handler.setLevel(logging.INFO)
 
     # Apply the custom filter to exclude warnings
@@ -99,22 +112,25 @@ def extract_config_data(repo_path: str):
 
 def get_file_diff(repo_path: str, commit, file_path: str):
     """Get file diff for a config file in a given commit."""
-    if commit.parents:
-        parent_commit = f"{commit.hexsha}^"
-              
-        # Run git diff to capture line-by-line changes
-        diff_output = subprocess.check_output(
-            ['git', 'diff', parent_commit, commit.hexsha, '--', file_path],
-            cwd=repo_path,
-            text=True
-        )
-        return diff_output
+    try:
+        if commit.parents:
+            parent_commit = f"{commit.hexsha}^"
+                
+            # Run git diff to capture line-by-line changes
+            diff_output = subprocess.check_output(
+                ['git', 'diff', parent_commit, commit.hexsha, '--', file_path],
+                cwd=repo_path,
+                text=True
+            )
+            return diff_output
+    except Exception:
+        logging.warning(f"Failed to get diff for commit {commit.hexsha} and file {file_path}")
+        return None
 
 
-def analyze_repository(repo_path: str, get_diff: bool = False) -> Dict:
+def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False) -> Dict:
     """Analyze Commit history of repositories and collect stats about the configuration space."""  
     start_time = time.time()
-    project_name = repo_path.split("/")[-1]
     repo = git.Repo(repo_path)
 
     # Save the current branch to return to it later
@@ -219,7 +235,7 @@ def analyze_repository(repo_path: str, get_diff: bool = False) -> Dict:
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_file", type=str, required=True, help="Path to the data file containing project details")
+    parser.add_argument("--data_file", type=str, help="Path to the data file containing project details")
     parser.add_argument("--parallel", type=int, default=10, help="Number of parallel processes to use")
     return parser.parse_args()
 
@@ -251,7 +267,7 @@ def process_project(project):
 
             # Analyze repository to get commit config data
             logging.info(f"Analyzing repository: {project_name}")
-            commit_data = analyze_repository(repo_path=temp_dir, get_diff=True)
+            commit_data = analyze_repository(repo_path=temp_dir, project_name=project_name, get_diff=True)
 
             # Store commit data into the output file
             with open(output_file, "w", encoding="utf-8") as dest:
@@ -267,14 +283,19 @@ def process_project(project):
 def run_analysis(args):
     """Run the repository analysis."""
     # Load and validate data
-    with open(args.data_file, "r", encoding="utf-8") as src:
-        data = json.load(src)
+    #with open(args.data_file, "r", encoding="utf-8") as src:
+    #    data = json.load(src)
+
+    data = MICROSERVICES
 
     logging.info(f"Loaded {len(data)} projects for analysis.")
 
-    # Run the analysis on multiple processes
-    with ProcessPoolExecutor(max_workers=args.parallel) as executor:
-        list(tqdm(executor.map(process_project, data), total=len(data), desc="Analyzing Projects"))
+    # TODO: Works not as intendet, stops analysis at a certain commit for mulitple repositories
+    #with ProcessPoolExecutor(max_workers=args.parallel) as executor:
+    #    list(tqdm(executor.map(process_project, data), total=len(data), desc="Analyzing Projects"))
+
+    for project in data:
+        process_project(project=project)
 
     logging.info("Completed analysis for all projects.")
 
@@ -282,10 +303,8 @@ def run_analysis(args):
 if __name__ == "__main__":
     args = get_args()
 
-    logfile_name = args.data_file.split("/")[-1].split(".json")[-1]
-
     # Configure logging
-    configure_logging(logfile_name=logfile_name)
+    configure_logging()
 
     # Start analysis
     logging.info("Starting analysis")
