@@ -16,19 +16,41 @@
             stroke-opacity: 0.6;
         }
 
-        .nodes circle {
-            stroke: #fff;
-            stroke-width: 1.5px;
-        }
-
         .labels text {
             pointer-events: none;
+        }
+
+        #data-file-selector {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+            padding: 5px;
+            font-size: 14px;
         }
     </style>
 </head>
 
 <body>
+    <select id="data-file-selector"></select>
     <script src="src/graph.js"></script>
+    <script>
+        // Fetch files from the server and populate the dropdown menu
+        fetch('/files')
+            .then(response => response.json())
+            .then(files => {
+                const selector = document.getElementById('data-file-selector');
+                files.forEach(file => {
+                    const option = document.createElement('option');
+                    option.value = file;
+                    option.textContent = file;
+                    selector.appendChild(option);
+                });
+                // Trigger change event to load the initial graph
+                selector.dispatchEvent(new Event('change'));
+            })
+            .catch(error => console.error('Error fetching files:', error));
+    </script>
 </body>
 
 </html>
