@@ -1,8 +1,8 @@
 from typing import Dict
 from cfgnet.network.network_configuration import NetworkConfiguration
-from cfgnet.network.nodes import ArtifactNode
+from cfgnet.network.nodes import ArtifactNode, OptionNode
+from cfgnet.conflicts.conflict_detector import ConflictDetector
 from cfgnet.network.network import Network
-from concurrent.futures import ProcessPoolExecutor, as_completed
 from pprint import pprint
 from tqdm import tqdm
 from typing import List
@@ -69,8 +69,8 @@ def checkout_latest_commit(repo, current_branch, latest_commit):
         repo.git.checkout(latest_commit)
 
 
-def extract_config_data(repo_path: str):
-    """Extract configuration data."""
+def create_network_from_path(repo_path: str) -> Network:
+    """Create network from repo path."""
     network_config = NetworkConfiguration(
         project_root_abs=repo_path,
         enable_static_blacklist=False,
@@ -79,32 +79,55 @@ def extract_config_data(repo_path: str):
         enable_file_type_plugins=True,
         system_level=False
     )
-
     network = Network.init_network(cfg=network_config)
+    return network
 
+
+def extract_config_data(network: Network, ref_network: Network) -> Dict:
+    """Extract configuration data from configuration network."""
     artifacts = network.get_nodes(node_type=ArtifactNode)
 
     config_files_data = []
     for artifact in artifacts:
-        pairs = artifact.get_pairs()
-
         # exclude file options
-        pairs = [pair for pair in pairs if pair["option"] != "file"] 
+        pairs = [pair for pair in artifact.get_pairs() if pair["option"] != "file"]
+
+        ref_pairs = []
+        if ref_network:
+            ref_artifact = ref_network.find_artifact_node(artifact)
+            if ref_artifact:
+                ref_pairs = [pair for pair in ref_artifact.get_pairs() if pair["option"] != "file"]
+        
+        added_pairs = [pair for pair in pairs if pair not in ref_pairs]
+        removed_pairs = [pair for pair in ref_pairs if pair not in pairs]
+        modified_pairs = [
+            {
+                "option": pair["option"],
+                "prev_value": next((p["value"] for p in ref_pairs if p["option"] == pair["option"]), ""),
+                "curr_value": pair["value"]
+            }
+            for pair in pairs
+            if any(p["option"] == pair["option"] and p["value"] != pair["value"] for p in ref_pairs) and pair in added_pairs
+        ]
 
         config_files_data.append({
             "file_path": artifact.rel_file_path,
             "concept": artifact.concept_name,
             "options": len(artifact.get_pairs()),
-            "pairs": pairs
+            "pairs": pairs,
+            "added_pairs": added_pairs,
+            "removed_pairs": removed_pairs,
+            "modified_pairs": modified_pairs
         })
 
-
     config_files = set(artifact.rel_file_path for artifact in artifacts)
-  	
+    concepts = set(artifact.concept_name for artifact in artifacts)
+
     network_data = {
         "links": len(network.links),
+        "concepts": list(concepts),
         "config_files": list(config_files),
-        "config_files_data": config_files_data
+        "config_files_data": config_files_data,
     }
 
     return network_data
@@ -128,6 +151,11 @@ def get_file_diff(repo_path: str, commit, file_path: str):
         return None
 
 
+def is_commit_config_related(commit) -> bool:
+    """Check if a commit is config-related."""
+    return any(file_path.endswith(CONFIG_FILE_ENDINGS) for file_path in commit.stats.files.keys())
+
+
 def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False) -> Dict:
     """Analyze Commit history of repositories and collect stats about the configuration space."""  
     start_time = time.time()
@@ -144,6 +172,7 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
     print(f"Number of commits: {len(commits)}")
 
     config_commit_data = []
+    ref_network = None
 
     for commit in tqdm(commits, desc="Processing", total=len(commits)):
 
@@ -156,11 +185,11 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
         repo.git.checkout(commit.hexsha)
 
         # check if commit is config-related
-        if any(file_path.endswith(CONFIG_FILE_ENDINGS) for file_path in commit.stats.files.keys()):
+        if is_commit_config_related(commit):
             is_config_related = True
             
-            # Run the external analysis for config-related commits
-            network_data = extract_config_data(repo_path=repo_path)
+            network = create_network_from_path(repo_path=repo_path)
+            network_data = extract_config_data(network=network, ref_network=ref_network)
 
             # Get general stats per config file
             for file_path, file_stats in commit.stats.files.items():
@@ -195,6 +224,9 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
                     "network_data": network_data
                 }
             )
+
+            # Update reference network
+            ref_network = network
         
         else:
             config_commit_data.append(
@@ -299,6 +331,24 @@ def run_analysis(args):
 
     logging.info("Completed analysis for all projects.")
 
+def test_analysis():
+    repo_path = "/home/ssimon/projects/test-config-repo"
+    commit_data = analyze_repository(repo_path=repo_path, project_name="test-config-repo", get_diff=True)
+
+    config_commit_data = commit_data["config_commit_data"]
+
+    for commit in config_commit_data:
+        print("Commit hash:", commit["commit_hash"])
+        print("Commit message:", commit["commit_mgs"])
+        network_data = commit["network_data"]
+        if network_data:
+            for x in network_data["config_files_data"]:
+                print("File path: ", x["file_path"])
+                print("Added pairs: ", x["added_pairs"])        
+                print("Removed pairs: ", x["removed_pairs"])
+                print("Modified pairs: ", x["modified_pairs"])
+        print("\n\n")
+
 
 if __name__ == "__main__":
     args = get_args()
@@ -308,4 +358,5 @@ if __name__ == "__main__":
 
     # Start analysis
     logging.info("Starting analysis")
-    run_analysis(args=args)
+    #run_analysis(args=args)
+    test_analysis()
