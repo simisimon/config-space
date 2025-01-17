@@ -83,6 +83,15 @@ def create_network_from_path(repo_path: str) -> Network:
     return network
 
 
+def pair_equals(pair1, pair2):
+    """Compare two pairs without considering the 'line' property."""
+    return (
+        pair1["option"] == pair2["option"] and
+        pair1["value"] == pair2["value"] and
+        pair1["type"] == pair2["type"]
+    )
+
+
 def extract_config_data(network: Network, ref_network: Network) -> Dict:
     """Extract configuration data from configuration network."""
     artifacts = network.get_nodes(node_type=ArtifactNode)
@@ -98,17 +107,25 @@ def extract_config_data(network: Network, ref_network: Network) -> Dict:
             if ref_artifact:
                 ref_pairs = [pair for pair in ref_artifact.get_pairs() if pair["option"] != "file"]
         
-        added_pairs = [pair for pair in pairs if pair not in ref_pairs]
+        # line confuses the comparison, so we remove it
+        added_pairs = [pair for pair in pairs if not any(pair_equals(pair, ref_pair) for ref_pair in ref_pairs)]
         removed_pairs = [pair for pair in ref_pairs if pair not in pairs]
         modified_pairs = [
-            {
-                "option": pair["option"],
-                "prev_value": next((p["value"] for p in ref_pairs if p["option"] == pair["option"]), ""),
-                "curr_value": pair["value"]
+            {   
+                "artifact": artifact.rel_file_path,
+                "option": added_pair["option"],
+                "prev_value": next((p["value"] for p in removed_pairs if p["option"] == added_pair["option"]), ""),
+                "curr_value": added_pair["value"],
+                "line": added_pair["line"],
+                "type": added_pair["type"]
             }
-            for pair in pairs
-            if any(p["option"] == pair["option"] and p["value"] != pair["value"] for p in ref_pairs) and pair in added_pairs
+            for added_pair in added_pairs
+            if any(removed_pair["option"] == added_pair["option"] and removed_pair["value"] != added_pair["value"] for removed_pair in removed_pairs)
         ]
+
+        # Remove modified pairs from added and removed lists
+        added_pairs = [pair for pair in added_pairs if pair["option"] not in [mp["option"] for mp in modified_pairs]]
+        removed_pairs = [pair for pair in removed_pairs if pair["option"] not in [mp["option"] for mp in modified_pairs]]
 
         config_files_data.append({
             "file_path": artifact.rel_file_path,
@@ -331,24 +348,6 @@ def run_analysis(args):
 
     logging.info("Completed analysis for all projects.")
 
-def test_analysis():
-    repo_path = "/home/ssimon/projects/test-config-repo"
-    commit_data = analyze_repository(repo_path=repo_path, project_name="test-config-repo", get_diff=True)
-
-    config_commit_data = commit_data["config_commit_data"]
-
-    for commit in config_commit_data:
-        print("Commit hash:", commit["commit_hash"])
-        print("Commit message:", commit["commit_mgs"])
-        network_data = commit["network_data"]
-        if network_data:
-            for x in network_data["config_files_data"]:
-                print("File path: ", x["file_path"])
-                print("Added pairs: ", x["added_pairs"])        
-                print("Removed pairs: ", x["removed_pairs"])
-                print("Modified pairs: ", x["modified_pairs"])
-        print("\n\n")
-
 
 if __name__ == "__main__":
     args = get_args()
@@ -358,5 +357,4 @@ if __name__ == "__main__":
 
     # Start analysis
     logging.info("Starting analysis")
-    #run_analysis(args=args)
-    test_analysis()
+    run_analysis(args=args)

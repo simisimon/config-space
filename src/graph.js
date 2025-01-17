@@ -10,8 +10,8 @@ function updateLabels(labelSelection, nodeData) {
 }
 
 // Set up the dimensions and margins for the SVG container
-let width = 800; //window.innerWidth;
-let height = 1200;  //window.innerHeight;
+let width = window.innerWidth;
+let height = window.innerHeight;
 
 // Create an SVG element and append it to the body
 const svg = d3.select("body")
@@ -38,7 +38,9 @@ const optionColorScale = d3.scaleSequential()
 // Create a container group for all elements
 const container = svg.append("g");
 
-// Function to load and render the graph data
+// Variable to track the state of the checkbox
+let showConceptLinks = true;
+
 // Function to load and render the graph data
 function loadGraphData(fileName) {
     const filePath = `/data/test_data/graph_data/${fileName}`;
@@ -48,10 +50,27 @@ function loadGraphData(fileName) {
 
         // Filter nodes and links to include only concepts and artifacts
         const filteredNodes = graph.nodes.filter(d => d.type === 'concept' || d.type === 'artifact' || d.type === 'option');
-        const filteredLinks = graph.links.filter(d =>
-            filteredNodes.some(node => node.id === d.source) &&
-            filteredNodes.some(node => node.id === d.target));
+        
+        
+        // const filteredLinks = graph.links.filter(d =>
+        //     (d.type !== 'concept-concept') &&
+        //     filteredNodes.some(node => node.id === d.source) &&
+        //     filteredNodes.some(node => node.id === d.target));
 
+        // Filter links excluding concept-to-concept links for simulation
+        const filteredLinks = graph.links.filter(d =>
+            (d.type !== 'concept-concept') &&
+            filteredNodes.some(node => node.id === d.source) &&
+            filteredNodes.some(node => node.id === d.target)
+        );
+
+        const conceptLinks = graph.links.filter(d => 
+            (d.type == 'concept-concept') &&
+            (d.weight > 0.5) &&
+            filteredNodes.some(node => node.id === d.source) &&
+            filteredNodes.some(node => node.id === d.target)
+        );
+        
         // Create linkForce
         const linkForce = d3.forceLink(filteredLinks)
             .id(d => d.id)
@@ -133,6 +152,41 @@ function loadGraphData(fileName) {
             .style("fill", d => d.type === 'concept' ? "#1f77b4" : "#333") // Match color for concepts
             .style("visibility", d => d.type === 'concept' ? "visible" : "hidden"); // Always visible for concepts
 
+        // Add concept-to-concept links without force
+        const conceptLinkGroup = container.append("g")
+            .attr("class", "concept-links");
+
+        const conceptLink = conceptLinkGroup.selectAll("line")
+            .data(conceptLinks)
+            .enter().append("line")
+            .attr("stroke-width", 1.5)
+            .attr("stroke", "#00f") // Blue color for concept links
+            .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
+            .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
+            .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
+            .attr("y2", d => filteredNodes.find(n => n.id === d.target).y);
+
+        // Add labels for concept-to-concept links
+        const conceptLinkLabel = conceptLinkGroup.selectAll("text")
+            .data(conceptLinks)
+            .enter().append("text")
+            .attr("text-anchor", "middle")
+            .attr("dy", -5) // Slightly above the link
+            .style("font-size", "10px")
+            .style("fill", "#00f") // Match link color
+            .text(d => { return `${d.count} (${d.weight})` })
+            .attr("x", d => {
+                const sourceNode = filteredNodes.find(n => n.id === d.source);
+                const targetNode = filteredNodes.find(n => n.id === d.target);
+                return (sourceNode.x + targetNode.x) / 2; // Midpoint x
+            })
+            .attr("y", d => {
+                const sourceNode = filteredNodes.find(n => n.id === d.source);
+                const targetNode = filteredNodes.find(n => n.id === d.target);
+                return (sourceNode.y + targetNode.y) / 2; // Midpoint y
+            });
+        
+        
         node.on("mouseover", (event, d) => {
             if (d.type === 'artifact') {
                 // Show label for the hovered node
@@ -179,9 +233,35 @@ function loadGraphData(fileName) {
             label
                 .attr("x", d => d.x)
                 .attr("y", d => d.y);
+            
+            // Update concept-to-concept links manually
+            conceptLink
+                .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
+                .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
+                .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
+                .attr("y2", d => filteredNodes.find(n => n.id === d.target).y);
+
+            conceptLinkLabel
+                .attr("x", d => {
+                    const sourceNode = filteredNodes.find(n => n.id === d.source);
+                    const targetNode = filteredNodes.find(n => n.id === d.target);
+                    return (sourceNode.x + targetNode.x) / 2; // Midpoint x
+                })
+                .attr("y", d => {
+                    const sourceNode = filteredNodes.find(n => n.id === d.source);
+                    const targetNode = filteredNodes.find(n => n.id === d.target);
+                    return (sourceNode.y + targetNode.y) / 2; // Midpoint y
+                });
 
             // Dynamically update labels
             updateLabels(label, graph.nodes);
+        });
+
+        // Toggle concept link visibility
+        document.getElementById('toggle-concept-links-checkbox').addEventListener('change', (event) => {
+            const isChecked = event.target.checked;
+            conceptLink.style("visibility", isChecked ? "visible" : "hidden");
+            conceptLinkLabel.style("visibility", isChecked ? "visible" : "hidden");
         });
 
         // node.each(function (d) {
@@ -227,7 +307,7 @@ const legendData = [
 // Add legend for discrete items
 const legend = svg.append("g")
     .attr("class", "legend")
-    .attr("transform", "translate(20, 60)");
+    .attr("transform", "translate(20, 80)");
 
 legend.selectAll("legend-item")
     .data(legendData)
@@ -256,7 +336,7 @@ legend.selectAll("legend-item")
 // Add the gradient legend
 const gradientLegend = svg.append("g")
     .attr("class", "gradient-legend")
-    .attr("transform", "translate(20, 160)");
+    .attr("transform", "translate(20, 180)");
 
 gradientLegend.append("rect")
     .attr("x", 0)
