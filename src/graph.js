@@ -39,38 +39,53 @@ const optionColorScale = d3.scaleSequential()
 const container = svg.append("g");
 
 // Variable to track the state of the checkbox
-let showConceptLinks = true;
+let showConceptLinks = false;
+let showArtifactLinks = false;
+let showOptionLinks = false;
 
 // Function to load and render the graph data
 function loadGraphData(fileName) {
     const filePath = `/data/test_data/graph_data/${fileName}`;
     d3.json(filePath).then((graph) => {
+
         // Clear previous graph
         container.selectAll("*").remove();
 
         // Filter nodes and links to include only concepts and artifacts
         const filteredNodes = graph.nodes.filter(d => d.type === 'concept' || d.type === 'artifact' || d.type === 'option');
         
-        
-        // const filteredLinks = graph.links.filter(d =>
-        //     (d.type !== 'concept-concept') &&
-        //     filteredNodes.some(node => node.id === d.source) &&
-        //     filteredNodes.some(node => node.id === d.target));
-
         // Filter links excluding concept-to-concept links for simulation
         const filteredLinks = graph.links.filter(d =>
-            (d.type !== 'concept-concept') &&
+            (d.type !== 'concept-concept' && d.type != 'artifact-artifact' && d.type != 'option-option') &&
             filteredNodes.some(node => node.id === d.source) &&
             filteredNodes.some(node => node.id === d.target)
         );
 
+        // Filter concept-to-concept links
         const conceptLinks = graph.links.filter(d => 
             (d.type == 'concept-concept') &&
             (d.weight > 0.5) &&
             filteredNodes.some(node => node.id === d.source) &&
             filteredNodes.some(node => node.id === d.target)
         );
+
+        // Filter artifact-to-artifact links
+        const artifactLinks = graph.links.filter(d =>
+            (d.type == 'artifact-artifact') &&
+            (d.weight > 0.5) &&
+            filteredNodes.some(node => node.id === d.source) &&
+            filteredNodes.some(node => node.id === d.target)
+        );
+
+        // Filter option-to-option links
+        const optionLinks = graph.links.filter(d =>
+            (d.type == 'option-option') &&
+            filteredNodes.some(node => node.id === d.source) &&
+            filteredNodes.some(node => node.id === d.target)
+        );
         
+        console.log(optionLinks)
+
         // Create linkForce
         const linkForce = d3.forceLink(filteredLinks)
             .id(d => d.id)
@@ -164,9 +179,9 @@ function loadGraphData(fileName) {
             .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
             .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
             .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
-            .attr("y2", d => filteredNodes.find(n => n.id === d.target).y);
-
-        // Add labels for concept-to-concept links
+            .attr("y2", d => filteredNodes.find(n => n.id === d.target).y)
+            .style("visibility", "hidden"); // Initially hidden
+        
         const conceptLinkLabel = conceptLinkGroup.selectAll("text")
             .data(conceptLinks)
             .enter().append("text")
@@ -184,8 +199,66 @@ function loadGraphData(fileName) {
                 const sourceNode = filteredNodes.find(n => n.id === d.source);
                 const targetNode = filteredNodes.find(n => n.id === d.target);
                 return (sourceNode.y + targetNode.y) / 2; // Midpoint y
-            });
+            })
+            .style("visibility", "hidden"); // Initially hidden
         
+        
+        // Add artifact-to-artifact links without force
+        const artifactLinkGroup = container.append("g")
+            .attr("class", "artifact-links");
+
+        const artifactLink = artifactLinkGroup.selectAll("line")
+            .data(artifactLinks)
+            .enter().append("line")
+            .attr("stroke-width", 1.5)
+            .attr("stroke", "#00f") // Blue color for artifact links
+            .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
+            .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
+            .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
+            .attr("y2", d => filteredNodes.find(n => n.id === d.target).y)
+            .style("visibility", "hidden"); // Initially hidden
+
+        const artifactLinkLabel = artifactLinkGroup.selectAll("text")
+            .data(artifactLinks)
+            .enter().append("text")
+            .attr("text-anchor", "middle")
+            .attr("dy", -5) // Slightly above the link
+            .style("font-size", "10px")
+            .style("fill", "#00f") // Match link color
+            .text(d => { return `${d.count} (${d.weight})` })
+            .attr("x", d => {
+                const sourceNode = filteredNodes.find(n => n.id === d.source);
+                const targetNode = filteredNodes.find(n => n.id === d.target);
+                return (sourceNode.x + targetNode.x) / 2; // Midpoint x
+            })
+            .attr("y", d => {
+                const sourceNode = filteredNodes.find(n => n.id === d.source);
+                const targetNode = filteredNodes.find(n => n.id === d.target);
+                return (sourceNode.y + targetNode.y) / 2; // Midpoint y
+            })
+            .style("visibility", "hidden"); // Initially hidden
+        
+        
+        // Add option-to-option links without force
+        const optionLinkGroup = container.append("g")
+            .attr("class", "option-links");
+
+        const optionLink = optionLinkGroup.selectAll("line")
+            .data(optionLinks)
+            .enter().append("line")
+            .attr("stroke-width", 1.5)
+            .attr("stroke", "#f00") // Red color for option links
+            .style("visibility", "hidden"); // Initially hidden
+
+        const optionLinkLabel = optionLinkGroup.selectAll("text")
+            .data(optionLinks)
+            .enter().append("text")
+            .attr("text-anchor", "middle")
+            .attr("dy", -5) // Slightly above the link
+            .style("font-size", "10px")
+            .style("fill", "#f00") // Match link color
+            .text(d => `Count: ${d.count}`)
+            .style("visibility", "hidden"); // Initially hidden
         
         node.on("mouseover", (event, d) => {
             if (d.type === 'artifact') {
@@ -240,7 +313,7 @@ function loadGraphData(fileName) {
                 .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
                 .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
                 .attr("y2", d => filteredNodes.find(n => n.id === d.target).y);
-
+                
             conceptLinkLabel
                 .attr("x", d => {
                     const sourceNode = filteredNodes.find(n => n.id === d.source);
@@ -252,21 +325,70 @@ function loadGraphData(fileName) {
                     const targetNode = filteredNodes.find(n => n.id === d.target);
                     return (sourceNode.y + targetNode.y) / 2; // Midpoint y
                 });
+            
+            // Update artifact-to-artifact links manually
+            artifactLink
+                .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
+                .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
+                .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
+                .attr("y2", d => filteredNodes.find(n => n.id === d.target).y);
 
+            artifactLinkLabel
+                .attr("x", d => {
+                    const sourceNode = filteredNodes.find(n => n.id === d.source);
+                    const targetNode = filteredNodes.find(n => n.id === d.target);
+                    return (sourceNode.x + targetNode.x) / 2; // Midpoint x
+                })
+                .attr("y", d => {
+                    const sourceNode = filteredNodes.find(n => n.id === d.source);
+                    const targetNode = filteredNodes.find(n => n.id === d.target);
+                    return (sourceNode.y + targetNode.y) / 2; // Midpoint y
+                });
+            
+            // Update option-to-option links manually
+            optionLink
+                .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
+                .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
+                .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
+                .attr("y2", d => filteredNodes.find(n => n.id === d.target).y);
+
+            optionLinkLabel
+                .attr("x", d => {
+                    const sourceNode = filteredNodes.find(n => n.id === d.source);
+                    const targetNode = filteredNodes.find(n => n.id === d.target);
+                    return (sourceNode.x + targetNode.x) / 2; // Midpoint x
+                })
+                .attr("y", d => {
+                    const sourceNode = filteredNodes.find(n => n.id === d.source);
+                    const targetNode = filteredNodes.find(n => n.id === d.target);
+                    return (sourceNode.y + targetNode.y) / 2; // Midpoint y
+                });
+            
             // Dynamically update labels
             updateLabels(label, graph.nodes);
         });
 
         // Toggle concept link visibility
         document.getElementById('toggle-concept-links-checkbox').addEventListener('change', (event) => {
-            const isChecked = event.target.checked;
-            conceptLink.style("visibility", isChecked ? "visible" : "hidden");
-            conceptLinkLabel.style("visibility", isChecked ? "visible" : "hidden");
+            showConceptLinks = event.target.checked;
+            conceptLink.style("visibility", showConceptLinks ? "visible" : "hidden");
+            conceptLinkLabel.style("visibility", showConceptLinks ? "visible" : "hidden");
         });
 
-        // node.each(function (d) {
-        //     console.log(d.id, this.getAttribute("stroke"), this.getAttribute("stroke-width"));
-        // });
+        // Toggle artifact link visibility
+        document.getElementById('toggle-artifact-links-checkbox').addEventListener('change', (event) => {
+            showArtifactLinks = event.target.checked;
+            artifactLink.style("visibility", showArtifactLinks ? "visible" : "hidden");
+            artifactLinkLabel.style("visibility", showArtifactLinks ? "visible" : "hidden");
+        });
+
+        // Toggle option link visibility
+        document.getElementById('toggle-option-links-checkbox').addEventListener('change', (event) => {
+            showOptionLinks = event.target.checked;
+            optionLink.style("visibility", showOptionLinks ? "visible" : "hidden");
+            optionLinkLabel.style("visibility", showOptionLinks ? "visible" : "hidden");
+        });
+
 
     }).catch(error => {
         console.error("Error loading the graph data: ", error);
@@ -307,7 +429,7 @@ const legendData = [
 // Add legend for discrete items
 const legend = svg.append("g")
     .attr("class", "legend")
-    .attr("transform", "translate(20, 80)");
+    .attr("transform", "translate(20, 130)");
 
 legend.selectAll("legend-item")
     .data(legendData)
@@ -336,7 +458,7 @@ legend.selectAll("legend-item")
 // Add the gradient legend
 const gradientLegend = svg.append("g")
     .attr("class", "gradient-legend")
-    .attr("transform", "translate(20, 180)");
+    .attr("transform", "translate(20, 230)");
 
 gradientLegend.append("rect")
     .attr("x", 0)

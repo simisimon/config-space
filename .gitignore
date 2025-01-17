@@ -3,3 +3,11 @@
 *.env
 **/node_modules
 package-lock.json
+**/data/analyzed_projects/*
+**/data/excluded_options/*
+**/data/extracted_options/*
+**/data/concept_cochanges/*
+**/data/file_cochanges/*
+**/data/option_cochanges/*
+**/data/test_data/*
+analysis.log
