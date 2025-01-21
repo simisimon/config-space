@@ -10,4 +10,5 @@ package-lock.json
 **/data/file_cochanges/*
 **/data/option_cochanges/*
 **/data/test_data/*
+**/data/graph_data/*
 analysis.log
