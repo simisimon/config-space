@@ -61,6 +61,12 @@
         #top-k-slider {
             top: 165px;
         }
+
+        #commit-window-container {
+            top: 200px;
+            display: inline-block;
+        }
+
     </style>
 </head>
 
@@ -82,6 +88,18 @@
         Top-K: <span id="top-k-value">10</span>
     </label>
     <input type="range" id="top-k-slider" class="control" min="1" max="20" value="10">
+
+    <div class="control" id="commit-window-container" style="display: flex; align-items: center;">
+        <label for="commit-window-size" id="commit-window-label" style="margin-right: 10px;">
+            Commit Window:
+        </label>
+        <select id="commit-window-size">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+        </select>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -109,6 +127,7 @@
             slider.addEventListener('input', () => {
                 output.textContent = slider.value;
             });
+
         });
     </script>
 </body>

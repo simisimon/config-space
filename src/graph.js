@@ -25,7 +25,7 @@ const state = {
     showConceptLinks: false,
     showArtifactLinks: false,
     showOptionLinks: false,
-    topKValue: 10
+    topKValue: 10,
 };
 
 function filterNodes(graph) {
@@ -42,7 +42,11 @@ function filterLinks(graph, filteredNodes) {
 
 function getLinks(graph, filteredNodes, type, topKValue) {
     return graph.links
-        .filter(d => d.type == type && filteredNodes.some(node => node.id === d.source) && filteredNodes.some(node => node.id === d.target))
+        .filter(d => d.type == type &&
+            filteredNodes.some(node => node.id === d.source) &&
+            filteredNodes.some(node => node.id === d.target) &&
+            d.commit_window == 1
+        )
         .sort((a, b) => b.weight - a.weight)
         .slice(0, topKValue);
 }
@@ -69,6 +73,67 @@ function setupTooltip() {
         .style("visibility", "hidden");
 }
 
+const tooltip = setupTooltip();
+
+function attachTooltipListeners(conceptLink, artifactLink, optionLink) {
+    conceptLink
+        .on("mouseover", (event, d) => {
+            tooltip.style("visibility", "visible")
+                .html(`
+                    <strong>Link:</strong> ${d.source} <-> ${d.target} <br>
+                    <strong>Changed Internally:</strong> ${d.internal_count}<br>
+                    <strong>Percentage Internally:</strong> ${d.internal_weight}<br>
+                    <strong>Changed Globally:</strong> ${d.global_count}<br>
+                    <strong>Percentage Globally:</strong> ${d.global_weight}
+                `);
+        })
+        .on("mousemove", (event) => {
+            tooltip.style("top", `${event.pageY + 10}px`)
+                .style("left", `${event.pageX + 10}px`);
+        })
+        .on("mouseout", () => {
+            tooltip.style("visibility", "hidden");
+        });
+
+    artifactLink
+        .on("mouseover", (event, d) => {
+            tooltip.style("visibility", "visible")
+                .html(`
+                    <strong>Link:</strong> ${d.source} <-> ${d.target} <br>
+                    <strong>Changed Internally:</strong> ${d.internal_count}<br>
+                    <strong>Percentage Internally:</strong> ${d.internal_weight}<br>
+                    <strong>Changed Globally:</strong> ${d.global_count}<br>
+                    <strong>Percentage Globally:</strong> ${d.global_weight}
+                `);
+        })
+        .on("mousemove", (event) => {
+            tooltip.style("top", `${event.pageY + 10}px`)
+                .style("left", `${event.pageX + 10}px`);
+        })
+        .on("mouseout", () => {
+            tooltip.style("visibility", "hidden");
+        });
+
+    optionLink
+        .on("mouseover", (event, d) => {
+            tooltip.style("visibility", "visible")
+                .html(`
+                    <strong>Link:</strong> ${d.source_option} <-> ${d.target_option} <br>
+                    <strong>Changed Internally:</strong> ${d.internal_count}<br>
+                    <strong>Percentage Internally:</strong> ${d.internal_weight}<br>
+                    <strong>Changed Globally:</strong> ${d.global_count}<br>
+                    <strong>Percentage Globally:</strong> ${d.global_weight}
+                `);
+        })
+        .on("mousemove", (event) => {
+            tooltip.style("top", `${event.pageY + 10}px`)
+                .style("left", `${event.pageX + 10}px`);
+        })
+        .on("mouseout", () => {
+            tooltip.style("visibility", "hidden");
+        });
+}
+
 function renderGraph(graph, state) {
     // Clear previous graph
     container.selectAll("*").remove();
@@ -82,8 +147,9 @@ function renderGraph(graph, state) {
     let artifactLinks = getLinks(graph, filteredNodes, 'artifact-artifact', state.topKValue);
     let optionLinks = getLinks(graph, filteredNodes, 'option-option', state.topKValue);
 
+    console.log("Length Concept Links: ", conceptLinks.length)
+
     const simulation = setupSimulation(filteredNodes, filteredLinks);
-    const tooltip = setupTooltip();
 
     const link = container.append("g")
         .attr("class", "links")
@@ -96,7 +162,7 @@ function renderGraph(graph, state) {
 
     const sizeScale = d3.scaleLinear()
         .domain(d3.extent(graph.nodes.filter(d => d.type === 'option'), d => d.changed_globally))
-        .range([8, 24]); 
+        .range([8, 24]);
         
     const node = container.append("g")
         .attr("class", "nodes")
@@ -113,7 +179,7 @@ function renderGraph(graph, state) {
             if (d.type === 'concept') return "#1f77b4"; // Blue for concepts
             if (d.type === 'artifact') return "#ff7f0e"; // Orange for artifacts
             if (d.type === 'option') { // Green color based on "changed_internally"
-                if (d.changed_internally == 0) return "#c7e9c0" 
+                if (d.changed_internally == 0) return "#c7e9c0"
                 if (d.changed_internally > 0 && d.changed_internally <= 3) return "#41ab5d"
                 else return "#005a32"
             }
@@ -149,69 +215,45 @@ function renderGraph(graph, state) {
         .style("visibility", d => d.type === 'concept' ? "visible" : "hidden"); // Always visible for concepts
 
     
-    function addLinks(linkGroup, links, linkColor, visibilityState) {
+    function addLinks(linkGroup, links, visibilityState) {
 
+        const maxInternalWeight = d3.max(links, d => d.internal_weight) || 1;
+        
+        const linkColorScale = d3.scaleLinear() // Fixed typo
+            .domain([0, maxInternalWeight])
+            .range(["#ffbaba", "#ff5252", "#a70000"]);
+        
+        const linkSizeScale = d3.scaleLinear()
+            .domain(d3.extent(links, d => d.global_count))
+            .range([1, 5]);
+        
         const link = linkGroup.selectAll("line")
             .data(links)
             .enter().append("line")
-            .attr("stroke-width", 1.5)
-            .attr("stroke", linkColor)
+            .attr("stroke-width", d => { return linkSizeScale(d.global_count) })
+            .attr("stroke", d => { return linkColorScale(d.internal_weight) })
             .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
             .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
             .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
             .attr("y2", d => filteredNodes.find(n => n.id === d.target).y)
             .style("visibility", visibilityState ? "visible" : "hidden"); // Initially hidden
 
-        const linkLabel = linkGroup.selectAll("text")
-            .data(links)
-            .enter().append("text")
-            .attr("text-anchor", "middle")
-            .attr("dy", -5) // Slightly above the link
-            .style("font-size", "10px")
-            .style("fill", linkColor)
-            .text(d => {
-                var sourceNode = filteredNodes.find(n => n.id === d.source);
-                var targetNode = filteredNodes.find(n => n.id === d.target);
-                if (d.type === 'option-option') {
-                    return `${sourceNode.id.split(":")[1]} - ${targetNode.id.split(":")[1]}: ${d.count}`;
-                } else {
-                    return `${sourceNode.id} - ${targetNode.id}: ${d.count} (${d.weight})`;
-                }
-            })
-            .attr("x", d => {
-                const sourceNode = filteredNodes.find(n => n.id === d.source);
-                const targetNode = filteredNodes.find(n => n.id === d.target);
-                return (sourceNode.x + targetNode.x) / 2; // Midpoint x
-            })
-            .attr("y", d => {
-                const sourceNode = filteredNodes.find(n => n.id === d.source);
-                const targetNode = filteredNodes.find(n => n.id === d.target);
-                return (sourceNode.y + targetNode.y) / 2; // Midpoint y
-            })
-            .style("visibility", visibilityState ? "visible" : "hidden"); // Initially hidden
-
-        return { link, linkLabel };
+        return link;
     }
 
-    // Add concept-to-concept links without force
     let conceptLinkGroup = container.append("g")
         .attr("class", "concept-links");
-    
-    // Add concept-to-concept links without force
-    let conceptLinksData = addLinks(conceptLinkGroup, conceptLinks, "#00f", state.showConceptLinks);
-    
-    // Add artifact-to-artifact links without force
     let artifactLinkGroup = container.append("g")
         .attr("class", "artifact-links");
-    
-    // Add artifact-to-artifact links without force
-    let artifactLinksData = addLinks(artifactLinkGroup, artifactLinks, "#00f", state.showArtifactLinks);
-    
-    // Add option-to-option links without force
     let optionLinkGroup = container.append("g")
         .attr("class", "option-links");
+    
+    // Add links without force
+    let conceptLink = addLinks(conceptLinkGroup, conceptLinks, state.showConceptLinks);
+    let artifactLink = addLinks(artifactLinkGroup, artifactLinks, state.showArtifactLinks);
+    let optionLink = addLinks(optionLinkGroup, optionLinks, state.showOptionLinks);
 
-    let optionLinksData = addLinks(optionLinkGroup, optionLinks, "#f00", state.showOptionLinks);
+    attachTooltipListeners(conceptLink, artifactLink, optionLink)
 
     node.on("mouseover", (event, d) => {
         if (d.type === 'artifact') {
@@ -244,7 +286,7 @@ function renderGraph(graph, state) {
                 tooltip.style("visibility", "hidden");
             }
         });
-
+    
     simulation.on("tick", () => {
         link
             .attr("x1", d => d.source.x)
@@ -261,61 +303,25 @@ function renderGraph(graph, state) {
             .attr("y", d => d.y);
 
         // Update concept-to-concept links manually
-        conceptLinksData.link
+        conceptLink
             .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
             .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
             .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
             .attr("y2", d => filteredNodes.find(n => n.id === d.target).y);
-
-        conceptLinksData.linkLabel
-            .attr("x", d => {
-                const sourceNode = filteredNodes.find(n => n.id === d.source);
-                const targetNode = filteredNodes.find(n => n.id === d.target);
-                return (sourceNode.x + targetNode.x) / 2; // Midpoint x
-            })
-            .attr("y", d => {
-                const sourceNode = filteredNodes.find(n => n.id === d.source);
-                const targetNode = filteredNodes.find(n => n.id === d.target);
-                return (sourceNode.y + targetNode.y) / 2; // Midpoint y
-            });
 
         // Update artifact-to-artifact links
-        artifactLinksData.link
+        artifactLink
             .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
             .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
             .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
             .attr("y2", d => filteredNodes.find(n => n.id === d.target).y);
-
-        artifactLinksData.linkLabel
-            .attr("x", d => {
-                const sourceNode = filteredNodes.find(n => n.id === d.source);
-                const targetNode = filteredNodes.find(n => n.id === d.target);
-                return (sourceNode.x + targetNode.x) / 2; // Midpoint x
-            })
-            .attr("y", d => {
-                const sourceNode = filteredNodes.find(n => n.id === d.source);
-                const targetNode = filteredNodes.find(n => n.id === d.target);
-                return (sourceNode.y + targetNode.y) / 2; // Midpoint y
-            });
 
         // Update option-to-option links
-        optionLinksData.link
+        optionLink
             .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
             .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
             .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
             .attr("y2", d => filteredNodes.find(n => n.id === d.target).y);
-
-        optionLinksData.linkLabel
-            .attr("x", d => {
-                const sourceNode = filteredNodes.find(n => n.id === d.source);
-                const targetNode = filteredNodes.find(n => n.id === d.target);
-                return (sourceNode.x + targetNode.x) / 2; // Midpoint x
-            })
-            .attr("y", d => {
-                const sourceNode = filteredNodes.find(n => n.id === d.source);
-                const targetNode = filteredNodes.find(n => n.id === d.target);
-                return (sourceNode.y + targetNode.y) / 2; // Midpoint y
-            });
 
         // Dynamically update labels
         updateLabels(label, graph.nodes);
@@ -324,27 +330,26 @@ function renderGraph(graph, state) {
     // Toggle concept link visibility
     document.getElementById('toggle-concept-links-checkbox').addEventListener('change', (event) => {
         state.showConceptLinks = event.target.checked;
-        conceptLinksData.link.style("visibility", state.showConceptLinks ? "visible" : "hidden");
-        conceptLinksData.linkLabel.style("visibility", state.showConceptLinks ? "visible" : "hidden");
+        conceptLink.style("visibility", state.showConceptLinks ? "visible" : "hidden");
     });
 
     // Toggle artifact link visibility
     document.getElementById('toggle-artifact-links-checkbox').addEventListener('change', (event) => {
         state.showArtifactLinks = event.target.checked;
-        artifactLinksData.link.style("visibility", state.showArtifactLinks ? "visible" : "hidden");
-        artifactLinksData.linkLabel.style("visibility", state.showArtifactLinks ? "visible" : "hidden");
+        artifactLink.style("visibility", state.showArtifactLinks ? "visible" : "hidden");
     });
 
     // Toggle option link visibility
     document.getElementById('toggle-option-links-checkbox').addEventListener('change', (event) => {
         state.showOptionLinks = event.target.checked;
-        optionLinksData.link.style("visibility", state.showOptionLinks ? "visible" : "hidden");
-        optionLinksData.linkLabel.style("visibility", state.showOptionLinks ? "visible" : "hidden");
+        optionLink.style("visibility", state.showOptionLinks ? "visible" : "hidden");
     });
 
-    // Update the graph based on the selected top-k value
+    // // Update the graph based on the selected top-k value
     document.getElementById('top-k-slider').addEventListener('change', (event) => {
         state.topKValue = parseInt(event.target.value);
+
+        console.log("Top-K Value: " + state.topKValue)
 
         // Clear existing concept, artifact, and option links
         conceptLinkGroup.selectAll("*").remove();
@@ -357,10 +362,12 @@ function renderGraph(graph, state) {
         optionLinks = getLinks(graph, filteredNodes, 'option-option', state.topKValue);
 
         // Append new concept, artifact, and option links
-        conceptLinksData = addLinks(conceptLinkGroup, conceptLinks, "#00f", state.showConceptLinks);
-        artifactLinksData = addLinks(artifactLinkGroup, artifactLinks, "#00f", state.showArtifactLinks);
-        optionLinksData = addLinks(optionLinkGroup, optionLinks, "#f00", state.showOptionLinks);
-    });
+        conceptLink= addLinks(conceptLinkGroup, conceptLinks, state.showConceptLinks);
+        artifactLink = addLinks(artifactLinkGroup, artifactLinks, state.showArtifactLinks);
+        optionLink = addLinks(optionLinkGroup, optionLinks, state.showOptionLinks);
+
+        attachTooltipListeners(conceptLink, artifactLink, optionLink)
+     });
 
 }
 
@@ -374,7 +381,7 @@ function createLegend() {
     // Add legend for discrete items
     const legend = svg.append("g")
         .attr("class", "legend")
-        .attr("transform", "translate(20, 200)");
+        .attr("transform", "translate(20, 240)");
 
     legend.selectAll("legend-item")
         .data(legendData)
@@ -403,7 +410,7 @@ function createLegend() {
     // Add the gradient legend
     const gradientLegend = svg.append("g")
         .attr("class", "gradient-legend")
-        .attr("transform", "translate(20, 300)");
+        .attr("transform", "translate(20, 340)");
 
     gradientLegend.append("rect")
         .attr("x", 0)
