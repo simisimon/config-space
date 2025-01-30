@@ -34,7 +34,7 @@
         }
 
         #visualize-button {
-            top: 50px;
+            top: 80px;
         }
 
         .toggle-label {
@@ -42,28 +42,28 @@
         }
 
         #toggle-concept-links {
-            top: 80px;
+            top: 110px;
         }
 
         #toggle-artifact-links {
-            top: 100px;
+            top: 130px;
         }
 
         #toggle-option-links {
-            top: 120px;
+            top: 150px;
         }
 
         #top-k-label {
-            top: 150px;
+            top: 180px;
             display: inline-block;
         }
 
         #top-k-slider {
-            top: 165px;
+            top: 195px;
         }
 
         #commit-window-container {
-            top: 200px;
+            top: 50px;
             display: inline-block;
         }
 
@@ -72,6 +72,17 @@
 
 <body>
     <select id="data-file-selector" class="control"></select>
+    <div class="control" id="commit-window-container" style="display: flex; align-items: center;">
+        <label for="commit-window-size" id="commit-window-label" style="margin-right: 10px;">
+            Commit Window:
+        </label>
+        <select id="commit-window-size">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+        </select>
+    </div>
     <button id="visualize-button" class="control">Visualize Graph</button>
 
     <label class="control toggle-label" id="toggle-concept-links">
@@ -89,17 +100,6 @@
     </label>
     <input type="range" id="top-k-slider" class="control" min="1" max="20" value="10">
 
-    <div class="control" id="commit-window-container" style="display: flex; align-items: center;">
-        <label for="commit-window-size" id="commit-window-label" style="margin-right: 10px;">
-            Commit Window:
-        </label>
-        <select id="commit-window-size">
-            <option value="1">1</option>
-            <option value="1">2</option>
-            <option value="5">5</option>
-            <option value="10">10</option>
-        </select>
-    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -128,7 +128,10 @@
                 output.textContent = slider.value;
             });
 
+
         });
+
+
     </script>
 </body>
 

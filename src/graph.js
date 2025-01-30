@@ -40,12 +40,12 @@ function filterLinks(graph, filteredNodes) {
     );
 }
 
-function getLinks(graph, filteredNodes, type, topKValue) {
+function getLinks(graph, filteredNodes, type, topKValue, commitWindow) {
     return graph.links
         .filter(d => d.type == type &&
             filteredNodes.some(node => node.id === d.source) &&
             filteredNodes.some(node => node.id === d.target) &&
-            d.commit_window == 1
+            d.commit_window == commitWindow
         )
         .sort((a, b) => b.weight - a.weight)
         .slice(0, topKValue);
@@ -81,10 +81,10 @@ function attachTooltipListeners(conceptLink, artifactLink, optionLink) {
             tooltip.style("visibility", "visible")
                 .html(`
                     <strong>Link:</strong> ${d.source} <-> ${d.target} <br>
-                    <strong>Changed Internally:</strong> ${d.internal_count}<br>
-                    <strong>Percentage Internally:</strong> ${d.internal_weight}<br>
-                    <strong>Changed Globally:</strong> ${d.global_count}<br>
-                    <strong>Percentage Globally:</strong> ${d.global_weight}
+                    <strong>Commit Window:</strong> ${d.commit_window}<br>
+                    <strong>Changed Internal:</strong> ${ d.internal_count } (${ d.internal_weight })<br>
+                    <strong>Across Projects:</strong> ${d.across_projects}<br>
+                    <strong>Changed Global:</strong> ${d.global_count} (${d.global_weight})
                 `);
         })
         .on("mousemove", (event) => {
@@ -100,10 +100,10 @@ function attachTooltipListeners(conceptLink, artifactLink, optionLink) {
             tooltip.style("visibility", "visible")
                 .html(`
                     <strong>Link:</strong> ${d.source} <-> ${d.target} <br>
-                    <strong>Changed Internally:</strong> ${d.internal_count}<br>
-                    <strong>Percentage Internally:</strong> ${d.internal_weight}<br>
-                    <strong>Changed Globally:</strong> ${d.global_count}<br>
-                    <strong>Percentage Globally:</strong> ${d.global_weight}
+                    <strong>Commit Window:</strong> ${d.commit_window}<br>
+                     <strong>Changed Internal:</strong> ${ d.internal_count} (${d.internal_weight })<br>
+                     <strong>Across Projects:</strong> ${d.across_projects}<br>
+                    <strong>Changed Global:</strong> ${d.global_count} (${d.global_weight})
                 `);
         })
         .on("mousemove", (event) => {
@@ -119,10 +119,9 @@ function attachTooltipListeners(conceptLink, artifactLink, optionLink) {
             tooltip.style("visibility", "visible")
                 .html(`
                     <strong>Link:</strong> ${d.source_option} <-> ${d.target_option} <br>
-                    <strong>Changed Internally:</strong> ${d.internal_count}<br>
-                    <strong>Percentage Internally:</strong> ${d.internal_weight}<br>
-                    <strong>Changed Globally:</strong> ${d.global_count}<br>
-                    <strong>Percentage Globally:</strong> ${d.global_weight}
+                    <strong>Changed Internal:</strong> ${ d.internal_count} (${d.internal_weight})<br>
+                    <strong>Across Projects:</strong> ${d.across_projects}<br>
+                    <strong>Changed Global:</strong> ${d.global_count} (${d.global_weight})
                 `);
         })
         .on("mousemove", (event) => {
@@ -134,7 +133,7 @@ function attachTooltipListeners(conceptLink, artifactLink, optionLink) {
         });
 }
 
-function renderGraph(graph, state) {
+function renderGraph(graph, state, commitWindow) {
     // Clear previous graph
     container.selectAll("*").remove();
 
@@ -143,11 +142,9 @@ function renderGraph(graph, state) {
     const filteredLinks = filterLinks(graph, filteredNodes);
 
     // Get links for different types
-    let conceptLinks = getLinks(graph, filteredNodes, 'concept-concept', state.topKValue);
-    let artifactLinks = getLinks(graph, filteredNodes, 'artifact-artifact', state.topKValue);
-    let optionLinks = getLinks(graph, filteredNodes, 'option-option', state.topKValue);
-
-    console.log("Length Concept Links: ", conceptLinks.length)
+    let conceptLinks = getLinks(graph, filteredNodes, 'concept-concept', state.topKValue, commitWindow);
+    let artifactLinks = getLinks(graph, filteredNodes, 'artifact-artifact', state.topKValue, commitWindow);
+    let optionLinks = getLinks(graph, filteredNodes, 'option-option', state.topKValue, commitWindow);
 
     const simulation = setupSimulation(filteredNodes, filteredLinks);
 
@@ -357,9 +354,9 @@ function renderGraph(graph, state) {
         optionLinkGroup.selectAll("*").remove();
 
         // Get new top-k concept, artifact, and option links
-        conceptLinks = getLinks(graph, filteredNodes, 'concept-concept', state.topKValue);
-        artifactLinks = getLinks(graph, filteredNodes, 'artifact-artifact', state.topKValue);
-        optionLinks = getLinks(graph, filteredNodes, 'option-option', state.topKValue);
+        conceptLinks = getLinks(graph, filteredNodes, 'concept-concept', state.topKValue, commitWindow);
+        artifactLinks = getLinks(graph, filteredNodes, 'artifact-artifact', state.topKValue, commitWindow);
+        optionLinks = getLinks(graph, filteredNodes, 'option-option', state.topKValue, commitWindow);
 
         // Append new concept, artifact, and option links
         conceptLink= addLinks(conceptLinkGroup, conceptLinks, state.showConceptLinks);
@@ -406,6 +403,8 @@ function createLegend() {
                 .style("fill", "#000")
                 .text(d.type);
         });
+    
+    
 
     // Add the gradient legend
     const gradientLegend = svg.append("g")
@@ -502,10 +501,10 @@ function createLegend() {
 
 }
 
-function loadGraphData(fileName) {
+function loadGraphData(fileName, commitWindow) {
     const filePath = `/data/test_data/graph_data/${fileName}`;
     d3.json(filePath)
-        .then(graph => renderGraph(graph, state))
+        .then(graph => renderGraph(graph, state, commitWindow))
         .catch(error => console.error("Error loading graph data:", error));
 }
 
@@ -514,6 +513,9 @@ createLegend();
 
 // Load the graph data 
 document.getElementById("visualize-button").addEventListener("click", () => {
+    const commitWindow = document.getElementById("commit-window-size").value
     const selectedFile = document.getElementById("data-file-selector").value;
-    loadGraphData(selectedFile);
+    console.log("Selected Commit Window: " + commitWindow)
+    console.log("Load graph data for: " + selectedFile)
+    loadGraphData(selectedFile, commitWindow);
 });
