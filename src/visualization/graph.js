@@ -1,4 +1,5 @@
 // Force-Directed Graph Visualization using d3.js
+import { createLegend } from "./legend.js";
 
 function updateLabels(labelSelection, nodeData) {
     labelSelection.text(d => (d.type === "option" ? d.id.split(":")[1] : d.id));
@@ -368,139 +369,6 @@ function renderGraph(graph, state, commitWindow) {
 
 }
 
-function createLegend() {
-    const legendData = [
-        { type: "Technology", color: "#1f77b4" },
-        { type: "Configuration File", color: "#ff7f0e" },
-        { type: "Configuration Option", color: "#2ca02c" }
-    ];
-
-    // Add legend for discrete items
-    const legend = svg.append("g")
-        .attr("class", "legend")
-        .attr("transform", "translate(20, 240)");
-
-    legend.selectAll("legend-item")
-        .data(legendData)
-        .enter().append("g")
-        .attr("class", "legend-item")
-        .attr("transform", (d, i) => `translate(0, ${i * 20})`)
-        .each(function (d) {
-            const item = d3.select(this);
-
-            // Add color circle
-            item.append("circle")
-                .attr("cx", 0)
-                .attr("cy", 0)
-                .attr("r", 6)
-                .attr("fill", d.color);
-
-            // Add text label
-            item.append("text")
-                .attr("x", 15)
-                .attr("y", 5)
-                .style("font-size", "14px")
-                .style("fill", "#000")
-                .text(d.type);
-        });
-    
-    
-
-    // Add the gradient legend
-    const gradientLegend = svg.append("g")
-        .attr("class", "gradient-legend")
-        .attr("transform", "translate(20, 340)");
-
-    gradientLegend.append("rect")
-        .attr("x", 0)
-        .attr("y", 0)
-        .attr("width", 200)
-        .attr("height", 10)
-        .style("fill", "url(#option-gradient)");
-
-    gradientLegend.append("text")
-        .attr("x", 0)
-        .attr("y", -5)
-        .style("font-size", "12px")
-        .style("fill", "#000")
-        .text("Not Changed");
-
-    gradientLegend.append("text")
-        .attr("x", 200)
-        .attr("y", -5)
-        .attr("text-anchor", "end")
-        .style("font-size", "12px")
-        .style("fill", "#000")
-        .text("Frequently Changed");
-
-    gradientLegend.append("text")
-        .attr("x", 0)
-        .attr("y", -20)
-        .style("font-size", "14px")
-        .style("font-weight", "bold")
-        .style("fill", "#000")
-        .text("Changed Internally");
-
-    const defs = svg.append("defs");
-
-    const linearGradient = defs.append("linearGradient")
-        .attr("id", "option-gradient")
-        .attr("x1", "0%")
-        .attr("y1", "0%")
-        .attr("x2", "100%")
-        .attr("y2", "0%");
-
-    linearGradient.append("stop")
-        .attr("offset", "0%")
-        .attr("stop-color", "#c7e9c0");
-
-    linearGradient.append("stop")
-        .attr("offset", "50%")
-        .attr("stop-color", "#41ab5d");
-
-    linearGradient.append("stop")
-        .attr("offset", "100%")
-        .attr("stop-color", "#005a32");
-
-    // Add size legend for changed_globally
-    const sizeLegend = legend.append("g")
-        .attr("class", "size-legend")
-        .attr("transform", "translate(0, 175)");
-
-    const sizeScale = d3.scaleLinear()
-        .range([8, 20]); // Corresponding circle sizes
-
-    // Generate representative values for the size legend
-    const sizeLegendValues = sizeScale.ticks(3); // Adjust number of ticks as needed
-
-    // Add a title for the size legend
-    sizeLegend.append("text")
-        .attr("x", 0)
-        .attr("y", -30)
-        .style("font-size", "14px")
-        .style("font-weight", "bold")
-        .style("fill", "#000")
-        .text("Node Size: Changed Globally");
-
-    // Add size legend circles and labels
-    sizeLegend.selectAll(".size-legend-item")
-        .data(sizeLegendValues)
-        .enter().append("g")
-        .attr("class", "size-legend-item")
-        .attr("transform", (d, i) => `translate(${i * 50}, 0)`) // Space circles horizontally
-        .each(function (d) {
-            const item = d3.select(this);
-
-            // Add a circle representing the size
-            item.append("circle")
-                .attr("cx", 10)
-                .attr("cy", 0)
-                .attr("r", sizeScale(d)) // Scale size based on value
-                .attr("fill", "#2ca02c"); // Match the color of option nodes
-        });
-
-}
-
 function loadGraphData(fileName, commitWindow) {
     const filePath = `/data/test_data/graph_data/${fileName}`;
     d3.json(filePath)
@@ -509,7 +377,7 @@ function loadGraphData(fileName, commitWindow) {
 }
 
 // Load the legend
-createLegend();
+createLegend(svg);
 
 // Load the graph data 
 document.getElementById("visualize-button").addEventListener("click", () => {
