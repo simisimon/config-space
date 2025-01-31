@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const dataDir = path.join(__dirname, 'data/test_data/graph_data');
+const dataDir = path.join(__dirname, 'data/graph_data');
 
 app.use(express.static(__dirname));
 

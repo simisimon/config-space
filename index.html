@@ -118,6 +118,8 @@
                         selector.appendChild(option);
                     });
 
+                    console.log("Files: " + files)
+
                     // Trigger change event to load the initial graph
                     selector.dispatchEvent(new Event('change'));
                 })
@@ -127,8 +129,6 @@
             slider.addEventListener('input', () => {
                 output.textContent = slider.value;
             });
-
-
         });
 
 

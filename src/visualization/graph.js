@@ -134,6 +134,27 @@ function attachTooltipListeners(conceptLink, artifactLink, optionLink) {
         });
 }
 
+// Global color scales for different node types
+let conceptColorScale, artifactColorScale, optionColorScale;
+
+// Function to initialize/update color scales
+function updateColorScales(graph) {
+    // Concept node color scale (if needed)
+    conceptColorScale = d3.scaleLinear()
+        .domain(d3.extent(graph.nodes.filter(d => d.type === 'concept'), d => d.changed_internally))
+        .range(["#d4f2ff", "#7baede", "#001880"]); // Light to deep blue
+
+    // Artifact node color scale
+    artifactColorScale = d3.scaleLinear()
+        .domain(d3.extent(graph.nodes.filter(d => d.type === 'artifact'), d => d.changed_internally))
+        .range(["#ffb38a", "#ff9248", "#ff6700"]); // Light to deep orange
+
+    // Option node color scale
+    optionColorScale = d3.scaleLinear()
+        .domain(d3.extent(graph.nodes.filter(d => d.type === 'option'), d => d.changed_internally))
+        .range(["#c7e9c0", "#41ab5d", "#005a32"]); // Light to deep green
+}
+
 function renderGraph(graph, state, commitWindow) {
     // Clear previous graph
     container.selectAll("*").remove();
@@ -148,6 +169,8 @@ function renderGraph(graph, state, commitWindow) {
     let optionLinks = getLinks(graph, filteredNodes, 'option-option', state.topKValue, commitWindow);
 
     const simulation = setupSimulation(filteredNodes, filteredLinks);
+
+    updateColorScales(graph)
 
     const link = container.append("g")
         .attr("class", "links")
@@ -174,13 +197,9 @@ function renderGraph(graph, state, commitWindow) {
             return 8; // Default size for other node types
         })
         .attr("fill", d => {
-            if (d.type === 'concept') return "#1f77b4"; // Blue for concepts
-            if (d.type === 'artifact') return "#ff7f0e"; // Orange for artifacts
-            if (d.type === 'option') { // Green color based on "changed_internally"
-                if (d.changed_internally == 0) return "#c7e9c0"
-                if (d.changed_internally > 0 && d.changed_internally <= 3) return "#41ab5d"
-                else return "#005a32"
-            }
+            if (d.type === 'concept') return conceptColorScale(d.changed_internally); // Blue for concepts
+            if (d.type === 'artifact') return artifactColorScale(d.changed_internally); // Orange for artifacts
+            if (d.type === 'option') return optionColorScale(d.changed_internally);
         })
         .call(d3.drag()
             .on("start", (event, d) => {
@@ -203,7 +222,7 @@ function renderGraph(graph, state, commitWindow) {
         .selectAll("text")
         .data(filteredNodes)
         .enter().append("text")
-        .filter(d => d.type === 'concept') // Only for concepts and artifacts
+        .filter(d => d.type === 'concept' || d.type === 'artifact') // Only for concepts and artifacts
         .attr("dy", -10) // Position above the node
         .attr("text-anchor", "middle")
         .text(d => d.id)
@@ -211,6 +230,7 @@ function renderGraph(graph, state, commitWindow) {
         .style("fill", "#333")
         .style("fill", d => d.type === 'concept' ? "#1f77b4" : "#333") // Match color for concepts
         .style("visibility", d => d.type === 'concept' ? "visible" : "hidden"); // Always visible for concepts
+
 
     
     function addLinks(linkGroup, links, visibilityState) {
@@ -255,7 +275,6 @@ function renderGraph(graph, state, commitWindow) {
 
     node.on("mouseover", (event, d) => {
         if (d.type === 'artifact') {
-            // Show label for the hovered node
             label.filter(l => l.id === d.id)
                 .style("visibility", "visible");
         } else if (d.type === 'option') {
@@ -276,7 +295,6 @@ function renderGraph(graph, state, commitWindow) {
         })
         .on("mouseout", (event, d) => {
             if (d.type === 'artifact') {
-                // Hide label when mouse leaves the node
                 label.filter(l => l.id === d.id)
                     .style("visibility", "hidden");
             } else if (d.type === 'option') {
@@ -370,7 +388,8 @@ function renderGraph(graph, state, commitWindow) {
 }
 
 function loadGraphData(fileName, commitWindow) {
-    const filePath = `/data/test_data/graph_data/${fileName}`;
+    console.log("File name: " + fileName)
+    const filePath = `/data/graph_data/${fileName}`;
     d3.json(filePath)
         .then(graph => renderGraph(graph, state, commitWindow))
         .catch(error => console.error("Error loading graph data:", error));

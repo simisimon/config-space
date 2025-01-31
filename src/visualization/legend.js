@@ -2,7 +2,7 @@ export function createLegend(svg) {
 
     const legendContainer = svg.append("g")
         .attr("class", "legend-container")
-        .attr("transform", "translate(20, 250)"); // Position the whole legend
+        .attr("transform", "translate(20, 440)"); // Position the whole legend
 
     // Background rectangle for hover effect
     const legendBackground = legendContainer.append("rect")
@@ -30,19 +30,10 @@ export function createLegend(svg) {
         .append("xhtml:div") // Use XHTML namespace to allow HTML inside SVG
         .html(`
         <p style="font-size: 12px; margin: 5;">
-            <strong>Technology Nodes:</strong> represent technologies (e.g., programming languages, frameworks).
-        </p>
-        <p style="font-size: 12px; margin: 5;">
-            <strong>Config File Node:</strong> represent configuration files (e.g., pom.xml or Dockerfile).
-        </p>
-        <p style="font-size: 12px; margin: 5;">
-            <strong>Option Node:</strong> representing individual configuration options.
-        </p>
-        <p style="font-size: 12px; margin: 5;">
             <strong>(Option) Changed Interal:</strong> indicates the total number of times an options was changed within commit history of the project.
         </p>
         <p style="font-size: 12px; margin: 5;">
-            <strong>(Option)Changed Global:</strong> indicates the total number of times an options was changed across the commit history of other projects.
+            <strong>(Option) Changed Global:</strong> indicates the total number of times an options was changed across the commit history of other projects.
         </p>
         <p style="font-size: 12px; margin: 5;">
             <strong>(Link) Changed Interal:</strong> indicates the total number of times the co-changed concepts/files/options changed within the commit history of the project.
@@ -119,11 +110,176 @@ export function createLegend(svg) {
                 .style("fill", "#000")
                 .text(d.type);
         });
+    
+        // Add a bordered group for the artifact node legend
+    const conceptLegendContainer = svg.append("g")
+        .attr("class", "concept-legend-container")
+        .attr("transform", "translate(20, 390)");
+
+    // Add a title label for the container
+    conceptLegendContainer.append("text")
+        .attr("x", 0)
+        .attr("y", -30) // Adjust for spacing above the box
+        .style("font-size", "16px")
+        .style("font-weight", "bold")
+        .style("fill", "#000")
+        .text("Concept Encodings");
+
+    // Background border for the artifact legend
+    conceptLegendContainer.append("rect")
+        .attr("x", -10)
+        .attr("y", -20)
+        .attr("width", 220)
+        .attr("height", 70) // Adjust height if needed
+        .attr("stroke", "#000")
+        .attr("fill", "none")
+        .attr("stroke-width", 1.5)
+        .attr("rx", 5) // Rounded corners
+        .attr("ry", 5);
+
+    // Add the gradient legend
+    const conceptGradientLegend = conceptLegendContainer.append("g")
+        .attr("class", "concept-gradient-legend")
+        .attr("transform", "translate(0, 30)");
+
+    conceptGradientLegend.append("rect")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("width", 200)
+        .attr("height", 10)
+        .style("fill", "url(#concept-gradient)");
+
+    conceptGradientLegend.append("text")
+        .attr("x", 0)
+        .attr("y", -5)
+        .style("font-size", "12px")
+        .style("fill", "#000")
+        .text("Not Changed");
+
+    conceptGradientLegend.append("text")
+        .attr("x", 200)
+        .attr("y", -5)
+        .attr("text-anchor", "end")
+        .style("font-size", "12px")
+        .style("fill", "#000")
+        .text("Frequently Changed");
+
+    conceptGradientLegend.append("text")
+        .attr("x", 0)
+        .attr("y", -25)
+        .style("font-size", "14px")
+        .style("font-weight", "bold")
+        .style("fill", "#000")
+        .text("Color: Changed Internal");
+
+    const conceptDefs = svg.append("defs");
+
+    const conceptLinearGradient = conceptDefs.append("linearGradient")
+        .attr("id", "concept-gradient")
+        .attr("x1", "0%")
+        .attr("y1", "0%")
+        .attr("x2", "100%")
+        .attr("y2", "0%");
+
+    conceptLinearGradient.append("stop")
+        .attr("offset", "0%")
+        .attr("stop-color", "#d4f2ff");
+
+    conceptLinearGradient.append("stop")
+        .attr("offset", "50%")
+        .attr("stop-color", "#7baede");
+
+    conceptLinearGradient.append("stop")
+        .attr("offset", "100%")
+        .attr("stop-color", "#001880");
+
+    // Add a bordered group for the artifact node legend
+    const artifactLegendContainer = svg.append("g")
+        .attr("class", "artifact-legend-container")
+        .attr("transform", "translate(20, 500)");
+
+    // Add a title label for the container
+    artifactLegendContainer.append("text")
+        .attr("x", 0)
+        .attr("y", -30) // Adjust for spacing above the box
+        .style("font-size", "16px")
+        .style("font-weight", "bold")
+        .style("fill", "#000")
+        .text("Artifact Encodings");
+
+    // Background border for the artifact legend
+    artifactLegendContainer.append("rect")
+        .attr("x", -10)
+        .attr("y", -20)
+        .attr("width", 220)
+        .attr("height", 70) // Adjust height if needed
+        .attr("stroke", "#000")
+        .attr("fill", "none")
+        .attr("stroke-width", 1.5)
+        .attr("rx", 5) // Rounded corners
+        .attr("ry", 5);
+
+    // Add the gradient legend
+    const artifactGradientLegend = artifactLegendContainer.append("g")
+        .attr("class", "artifact-gradient-legend")
+        .attr("transform", "translate(0, 30)");
+
+    artifactGradientLegend.append("rect")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("width", 200)
+        .attr("height", 10)
+        .style("fill", "url(#artifact-gradient)");
+
+    artifactGradientLegend.append("text")
+        .attr("x", 0)
+        .attr("y", -5)
+        .style("font-size", "12px")
+        .style("fill", "#000")
+        .text("Not Changed");
+
+    artifactGradientLegend.append("text")
+        .attr("x", 200)
+        .attr("y", -5)
+        .attr("text-anchor", "end")
+        .style("font-size", "12px")
+        .style("fill", "#000")
+        .text("Frequently Changed");
+
+    artifactGradientLegend.append("text")
+        .attr("x", 0)
+        .attr("y", -25)
+        .style("font-size", "14px")
+        .style("font-weight", "bold")
+        .style("fill", "#000")
+        .text("Color: Changed Internal");
+
+    const artifactDefs = svg.append("defs");
+
+    const artifactLinearGradient = artifactDefs.append("linearGradient")
+        .attr("id", "artifact-gradient")
+        .attr("x1", "0%")
+        .attr("y1", "0%")
+        .attr("x2", "100%")
+        .attr("y2", "0%");
+
+    artifactLinearGradient.append("stop")
+        .attr("offset", "0%")
+        .attr("stop-color", "#ffb38a");
+
+    artifactLinearGradient.append("stop")
+        .attr("offset", "50%")
+        .attr("stop-color", "#ff9248");
+
+    artifactLinearGradient.append("stop")
+        .attr("offset", "100%")
+        .attr("stop-color", "#ff6700");
+    
 
     // Add a bordered group for the option node legend
     const optionLegendContainer = svg.append("g")
         .attr("class", "option-legend-container")
-        .attr("transform", "translate(20, 390)");
+        .attr("transform", "translate(20, 610)");
 
     // Add a title label for the container
     optionLegendContainer.append("text")
@@ -243,7 +399,7 @@ export function createLegend(svg) {
     // Add a bordered group for the option node legend
     const linkLegendContainer = svg.append("g")
         .attr("class", "link-legend-container")
-        .attr("transform", "translate(20, 590)");
+        .attr("transform", "translate(20, 800)");
 
     // Add a title label for the container
     linkLegendContainer.append("text")
