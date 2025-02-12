@@ -9,6 +9,7 @@ package-lock.json
 **/data/concept_cochanges/*
 **/data/file_cochanges/*
 **/data/extracted_config_data/*
+**/data/figures/*
 **/data/option_cochanges/*
 **/data/test_data/*
 **/data/graph_data/*
