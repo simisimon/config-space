@@ -33,6 +33,11 @@
             padding: 5px;
         }
 
+        #commit-window-container {
+            top: 50px;
+            display: inline-block;
+        }
+
         #visualize-button {
             top: 80px;
         }
@@ -40,32 +45,33 @@
         .toggle-label {
             display: block;
         }
-
-        #toggle-concept-links {
+        
+        #toggle-option-nodes {
             top: 110px;
         }
 
-        #toggle-artifact-links {
+        #toggle-concept-links {
             top: 130px;
         }
 
-        #toggle-option-links {
+        #toggle-artifact-links {
             top: 150px;
         }
 
+        #toggle-option-links {
+            top: 170px;
+        }
+
         #top-k-label {
-            top: 180px;
+            top: 200px;
             display: inline-block;
         }
 
         #top-k-slider {
-            top: 195px;
+            top: 215px;
         }
 
-        #commit-window-container {
-            top: 50px;
-            display: inline-block;
-        }
+
 
     </style>
 </head>
@@ -84,7 +90,9 @@
         </select>
     </div>
     <button id="visualize-button" class="control">Visualize Graph</button>
-
+    <label class="control toggle-label" id="toggle-option-nodes">
+        <input type="checkbox" id="toggle-option-nodes-checkbox"> Show Option Nodes
+    </label>
     <label class="control toggle-label" id="toggle-concept-links">
         <input type="checkbox" id="toggle-concept-links-checkbox"> Show Co-Changed Technologies
     </label>

@@ -2,7 +2,7 @@ export function createLegend(svg) {
 
     const legendContainer = svg.append("g")
         .attr("class", "legend-container")
-        .attr("transform", "translate(20, 440)"); // Position the whole legend
+        .attr("transform", "translate(20, 460)"); // Position the whole legend
 
     // Background rectangle for hover effect
     const legendBackground = legendContainer.append("rect")
@@ -59,7 +59,7 @@ export function createLegend(svg) {
     // Add legend for graph nodes
     const nodeLegendContainer = svg.append("g")
         .attr("class", "node-legend-container")
-        .attr("transform", "translate(20, 270)");
+        .attr("transform", "translate(20, 280)");
 
     // Add a title label for the container
     nodeLegendContainer.append("text")
@@ -265,7 +265,7 @@ export function createLegend(svg) {
 
     artifactLinearGradient.append("stop")
         .attr("offset", "0%")
-        .attr("stop-color", "#ffb38a");
+        .attr("stop-color", "#ffe7ce");
 
     artifactLinearGradient.append("stop")
         .attr("offset", "50%")

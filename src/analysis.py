@@ -45,7 +45,7 @@ def configure_logging():
     logger.setLevel(logging.INFO)  # Set base level to INFO
 
     # Create file handler
-    file_handler = logging.FileHandler("../data/analysis.log")
+    file_handler = logging.FileHandler("./analysis.log")
     file_handler.setLevel(logging.INFO)
 
     # Apply the custom filter to exclude warnings
@@ -284,23 +284,21 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_file", type=str, help="Path to the data file containing project details")
-    parser.add_argument("--parallel", type=int, default=10, help="Number of parallel processes to use")
+    parser.add_argument("--url", type=str, help="Url of the project to analyze")
+    parser.add_argument("--name", type=int, default=10, help="Number of of the repo to analyze")
     return parser.parse_args()
 
 
-def process_project(project):
+def process_project(project_url: str, project_name: str):
     """Process a single project."""
-    project_url = project["html_url"]
-    project_name = project["name"]
 
     # Define the output file path
-    output_file = f"../data/analyzed_projects/{project_name}.json"
+    output_file = f"/tmp/ssimon/results/{project_name}.json"
 
     # Check if the output file already exists
-    if os.path.exists(output_file):
-        logging.info(f"Output file already exists for {project_name}. Skipping processing.")
-        return
+    #if os.path.exists(output_file):
+    #    logging.info(f"Output file already exists for {project_name}. Skipping processing.")
+    #    return
 
     logging.info(f"Processing project: {project_name}")
         
@@ -331,20 +329,23 @@ def process_project(project):
 
 def run_analysis(args):
     """Run the repository analysis."""
-    # Load and validate data
-    #with open(args.data_file, "r", encoding="utf-8") as src:
-    #    data = json.load(src)
+    # # Load and validate data    
+    # with open(args.data_file, "r", encoding="utf-8") as src:
+    #     data = json.load(src)
 
-    data = MICROSERVICES
+    # #data = MICROSERVICES
 
-    logging.info(f"Loaded {len(data)} projects for analysis.")
+    # logging.info(f"Loaded {len(data)} projects for analysis.")
 
     # TODO: Works not as intendet, stops analysis at a certain commit for mulitple repositories
     #with ProcessPoolExecutor(max_workers=args.parallel) as executor:
     #    list(tqdm(executor.map(process_project, data), total=len(data), desc="Analyzing Projects"))
 
-    for project in data:
-        process_project(project=project)
+    
+    process_project(
+        project_url=args.url,
+        project_name=args.name
+    )
 
     logging.info("Completed analysis for all projects.")
 

@@ -53,11 +53,27 @@ function getLinks(graph, filteredNodes, type, topKValue, commitWindow) {
 }
 
 function setupSimulation(filteredNodes, filteredLinks) {
+    const linkForce = d3.forceLink(filteredLinks)
+        .id(d => d.id)
+        .distance(d => {
+            if (d.type === 'artifact-option') {
+                return 100; // Increase distance for artifact-option links
+            }
+            return 50; // Default distance for other links
+        })
+        .strength(0.3);
+
     return d3.forceSimulation(filteredNodes)
-        .force("link", d3.forceLink(filteredLinks).id(d => d.id).distance(50).strength(0.3))
-        .force("charge", d3.forceManyBody().strength(-20))
+        .force("link", linkForce)
+        .force("charge", d3.forceManyBody().strength(-10))
         .force("center", d3.forceCenter(dimensions.width / 2, dimensions.height / 2))
-        .force("collision", d3.forceCollide().radius(5));
+        .force("collision", d3.forceCollide().radius(8))
+        .force("x", d3.forceX(dimensions.width / 2)
+            .strength(0.05) // Weak pull toward center to prevent extreme separation
+        )
+        .force("y", d3.forceY(dimensions.height / 2)
+            .strength(0.05) // Weak pull toward center
+        );
 }
 
 function setupTooltip() {
@@ -147,7 +163,7 @@ function updateColorScales(graph) {
     // Artifact node color scale
     artifactColorScale = d3.scaleLinear()
         .domain(d3.extent(graph.nodes.filter(d => d.type === 'artifact'), d => d.changed_internally))
-        .range(["#ffb38a", "#ff9248", "#ff6700"]); // Light to deep orange
+        .range(["#ffe7ce", "#ff9248", "#ff6700"]); // Light to deep orange
 
     // Option node color scale
     optionColorScale = d3.scaleLinear()
@@ -179,7 +195,8 @@ function renderGraph(graph, state, commitWindow) {
         .enter()
         .append("line")
         .attr("stroke-width", 1.5)
-        .attr("stroke", "#aaa");
+        .attr("stroke", "#aaa")
+        .style("visibility", d => (d.source.type === 'target' || d.target.type === 'option') ? "hidden" : "visible"); // Hide option-related links initially
 
     const sizeScale = d3.scaleLinear()
         .domain(d3.extent(graph.nodes.filter(d => d.type === 'option'), d => d.changed_globally))
@@ -201,6 +218,7 @@ function renderGraph(graph, state, commitWindow) {
             if (d.type === 'artifact') return artifactColorScale(d.changed_internally); // Orange for artifacts
             if (d.type === 'option') return optionColorScale(d.changed_internally);
         })
+        .style("visibility", d => d.type === 'option' ? "hidden" : "visible") // Hide options by default
         .call(d3.drag()
             .on("start", (event, d) => {
                 if (!event.active) simulation.alphaTarget(0.3).restart();
@@ -341,6 +359,17 @@ function renderGraph(graph, state, commitWindow) {
 
         // Dynamically update labels
         updateLabels(label, graph.nodes);
+    });
+
+    document.getElementById('toggle-option-nodes-checkbox').addEventListener('change', (event) => {
+        const visibility = event.target.checked ? "visible" : "hidden";
+
+        // Toggle visibility of option nodes
+        node.filter(d => d.type === 'option').style("visibility", visibility);
+
+        // Toggle visibility of links that are connected to option nodes
+        link.filter(d => d.source.type === 'option' || d.target.type === 'option')
+            .style("visibility", visibility);
     });
 
     // Toggle concept link visibility
