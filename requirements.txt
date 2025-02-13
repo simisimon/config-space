@@ -44,7 +44,7 @@ parso==0.8.4
 pexpect==4.9.0
 pillow==11.0.0
 platformdirs==4.3.6
-ply==3.11
+ply==3.11git 
 prompt_toolkit==3.0.48
 psutil==6.1.0
 ptyprocess==0.7.0
