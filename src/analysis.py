@@ -11,7 +11,6 @@ import json
 import subprocess
 import traceback
 import time
-import logging
 import argparse
 import tempfile
 import subprocess
@@ -31,32 +30,6 @@ MICROSERVICES = [
     {"html_url": "https://github.com/wxiaoqi/Spring-Cloud-Platform", "name": "Spring-Cloud-Platform"},
     {"html_url": "https://github.com/apolloconfig/apollo", "name": "apollo"},
 ]
-
-
-class ExcludeWarningsFilter(logging.Filter):
-    """Custom filter to exclude WARNING logs."""
-    def filter(self, record):
-        return record.levelno != logging.WARNING
-
-
-def configure_logging():
-    # Configure logging
-    logger = logging.getLogger()
-    logger.setLevel(logging.INFO)  # Set base level to INFO
-
-    # Create file handler
-    file_handler = logging.FileHandler("./analysis.log")
-    file_handler.setLevel(logging.INFO)
-
-    # Apply the custom filter to exclude warnings
-    file_handler.addFilter(ExcludeWarningsFilter())
-
-    # Set the format for log messages
-    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-    file_handler.setFormatter(formatter)
-
-    # Add the handler to the logger
-    logger.addHandler(file_handler)
 
 
 def checkout_latest_commit(repo, current_branch, latest_commit):
@@ -164,7 +137,7 @@ def get_file_diff(repo_path: str, commit, file_path: str):
             )
             return diff_output
     except Exception:
-        logging.warning(f"Failed to get diff for commit {commit.hexsha} and file {file_path}")
+        print(f"Failed to get diff for commit {commit.hexsha} and file {file_path}")
         return None
 
 
@@ -197,6 +170,10 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
 
         # Get commit stats
         stats = commit.stats.total
+
+        # Stash changes before checkout
+        if repo.is_dirty(untracked_files=True):
+            repo.git.stash('push')
 
         # Checkout the commit
         repo.git.checkout(commit.hexsha)
@@ -231,7 +208,7 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
             config_commit_data.append(
                 {   
                     "commit_hash": str(commit.hexsha),
-                    "parent_commit": (parent_commit),
+                    "parent_commit": str(parent_commit),
                     "is_config_related": is_config_related,
                     "author": f"{commit.author.name} <{commit.author.email}>",
                     "commit_mgs": str(commit.message),
@@ -249,7 +226,7 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
             config_commit_data.append(
                 {   
                     "commit_hash": str(commit.hexsha),
-                    "parent_commit": (parent_commit),
+                    "parent_commit": str(parent_commit),
                     "is_config_related": is_config_related,
                     "author": f"{commit.author.name} <{commit.author.email}>",
                     "commit_mgs": str(commit.message),
@@ -285,7 +262,7 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--url", type=str, help="Url of the project to analyze")
-    parser.add_argument("--name", type=int, default=10, help="Number of of the repo to analyze")
+    parser.add_argument("--name", type=str, help="Number of of the repo to analyze")
     return parser.parse_args()
 
 
@@ -293,18 +270,18 @@ def process_project(project_url: str, project_name: str):
     """Process a single project."""
 
     # Define the output file path
-    output_file = f"/tmp/ssimon/results/{project_name}.json"
+    output_file = f"/tmp/ssimon/config-space/experiments/{project_name}.json"
 
     # Check if the output file already exists
     #if os.path.exists(output_file):
-    #    logging.info(f"Output file already exists for {project_name}. Skipping processing.")
+    #    print(f"Output file already exists for {project_name}. Skipping processing.")
     #    return
 
-    logging.info(f"Processing project: {project_name}")
+    print(f"Processing project: {project_name}")
         
     with tempfile.TemporaryDirectory() as temp_dir:
         try:
-            logging.info(f"Cloning {project_name} into {temp_dir}")
+            print(f"Cloning {project_name} into {temp_dir}")
             subprocess.run(
                 ["git", "clone", project_url, temp_dir],
                 check=True,
@@ -313,49 +290,33 @@ def process_project(project_url: str, project_name: str):
             )
 
             # Analyze repository to get commit config data
-            logging.info(f"Analyzing repository: {project_name}")
+            print(f"Analyzing repository: {project_name}")
             commit_data = analyze_repository(repo_path=temp_dir, project_name=project_name, get_diff=True)
 
             # Store commit data into the output file
             with open(output_file, "w", encoding="utf-8") as dest:
                 json.dump(commit_data, dest, indent=4)
 
-            logging.info(f"Analysis for {project_name} stored at {output_file}")
+            print(f"Analysis for {project_name} stored at {output_file}")
 
         except Exception as error:
-            logging.error(f"Failed to process **{project_name}**: {error}")
+            print(f"Failed to process **{project_name}**: {error}")
             traceback.print_exc()
 
 
 def run_analysis(args):
-    """Run the repository analysis."""
-    # # Load and validate data    
-    # with open(args.data_file, "r", encoding="utf-8") as src:
-    #     data = json.load(src)
-
-    # #data = MICROSERVICES
-
-    # logging.info(f"Loaded {len(data)} projects for analysis.")
-
-    # TODO: Works not as intendet, stops analysis at a certain commit for mulitple repositories
-    #with ProcessPoolExecutor(max_workers=args.parallel) as executor:
-    #    list(tqdm(executor.map(process_project, data), total=len(data), desc="Analyzing Projects"))
-
-    
+    """Run the repository analysis."""    
     process_project(
         project_url=args.url,
         project_name=args.name
     )
 
-    logging.info("Completed analysis for all projects.")
+    print("Completed analysis for all projects.")
 
 
 if __name__ == "__main__":
     args = get_args()
 
-    # Configure logging
-    configure_logging()
-
     # Start analysis
-    logging.info("Starting analysis")
+    print("Starting analysis")
     run_analysis(args=args)

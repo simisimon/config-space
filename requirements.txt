@@ -1,9 +1,8 @@
-alabaster==0.7.16
+alabaster>=0.7.10
 apacheconfig==0.3.2
 asttokens==3.0.0
 babel==2.16.0
 certifi==2024.8.30
-CfgNet @ git+https://github.com/AI-4-SE/CfgNet.git@710c02502059e43969aeea0ce791be824f8cad02
 charset-normalizer==3.4.0
 click==8.1.7
 comm==0.2.2

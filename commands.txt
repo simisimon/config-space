@@ -1,4 +1,0 @@
-python3 analyze.py --url=https://github.com/simisimon/test-config-repo --name=test-config-repo
-python3 analyze.py --url=https://github.com/simisimon/test-config-repo --name=test-config-repo
-python3 analyze.py --url=https://github.com/simisimon/test-config-repo --name=test-config-repo
-python3 analyze.py --url=https://github.com/simisimon/test-config-repo --name=test-config-repo

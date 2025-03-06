@@ -14,3 +14,5 @@ package-lock.json
 **/data/test_data/*
 **/data/graph_data/*
 analysis.log
+**/data/results/*
+**/results/*
