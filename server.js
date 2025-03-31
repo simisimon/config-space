@@ -4,6 +4,7 @@ const path = require('path');
 
 const app = express();
 const dataDir = path.join(__dirname, 'data/graph_data');
+console.log(dataDir);
 
 app.use(express.static(__dirname));
 

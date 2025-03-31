@@ -13,6 +13,7 @@ package-lock.json
 **/data/option_cochanges/*
 **/data/test_data/*
 **/data/graph_data/*
+**/data/contributors/**
 analysis.log
 **/data/results/*
 **/results/*
