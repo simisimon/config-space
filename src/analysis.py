@@ -20,17 +20,6 @@ import os
 CONFIG_FILE_ENDINGS = (".xml", ".yml", ".yaml", "Dockerfile", ".ini", ".properties", ".conf", ".json", ".toml", ".cfg", "settings.py", ".cnf")
 
 
-MICROSERVICES = [
-    {"html_url": "https://github.com/sqshq/piggymetrics", "name": "piggymetrics"},
-    {"html_url": "https://github.com/Yin-Hongwei/music-website", "name": "music-website"},
-    {"html_url": "https://github.com/pig-mesh/pig", "name": "pig"},
-    {"html_url": "https://github.com/macrozheng/mall", "name": "mall"},
-    {"html_url": "https://github.com/macrozheng/mall-swarm", "name": "mall-swarm"},
-    {"html_url": "https://github.com/linlinjava/litemall", "name": "litemall"},
-    {"html_url": "https://github.com/wxiaoqi/Spring-Cloud-Platform", "name": "Spring-Cloud-Platform"},
-    {"html_url": "https://github.com/apolloconfig/apollo", "name": "apollo"},
-]
-
 
 def checkout_latest_commit(repo, current_branch, latest_commit):
      # Return to the latest commit
@@ -56,7 +45,7 @@ def create_network_from_path(repo_path: str) -> Network:
     return network
 
 
-def pair_equals(pair1, pair2):
+def is_equal_pair(pair1, pair2):
     """Compare two pairs without considering the 'line' property."""
     return (
         pair1["option"] == pair2["option"] and
@@ -65,9 +54,9 @@ def pair_equals(pair1, pair2):
     )
 
 
-def extract_config_data(network: Network, ref_network: Network) -> Dict:
+def extract_config_data(new_network: Network, ref_network: Network) -> Dict:
     """Extract configuration data from configuration network."""
-    artifacts = network.get_nodes(node_type=ArtifactNode)
+    artifacts = new_network.get_nodes(node_type=ArtifactNode)
 
     config_files_data = []
     for artifact in artifacts:
@@ -80,8 +69,7 @@ def extract_config_data(network: Network, ref_network: Network) -> Dict:
             if ref_artifact:
                 ref_pairs = [pair for pair in ref_artifact.get_pairs() if pair["option"] != "file"]
         
-        # line confuses the comparison, so we remove it
-        added_pairs = [pair for pair in pairs if not any(pair_equals(pair, ref_pair) for ref_pair in ref_pairs)]
+        added_pairs = [pair for pair in pairs if not any(is_equal_pair(pair, ref_pair) for ref_pair in ref_pairs)]
         removed_pairs = [pair for pair in ref_pairs if pair not in pairs]
         modified_pairs = [
             {   
@@ -107,14 +95,15 @@ def extract_config_data(network: Network, ref_network: Network) -> Dict:
             "pairs": pairs,
             "added_pairs": added_pairs,
             "removed_pairs": removed_pairs,
-            "modified_pairs": modified_pairs
+            "modified_pairs": modified_pairs,
+            "is_changed": bool(added_pairs or removed_pairs or modified_pairs),
         })
 
     config_files = set(artifact.rel_file_path for artifact in artifacts)
     concepts = set(artifact.concept_name for artifact in artifacts)
 
     network_data = {
-        "links": len(network.links),
+        "links": len(new_network.links),
         "concepts": list(concepts),
         "config_files": list(config_files),
         "config_files_data": config_files_data,
@@ -182,8 +171,8 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
         if is_commit_config_related(commit):
             is_config_related = True
             
-            network = create_network_from_path(repo_path=repo_path)
-            network_data = extract_config_data(network=network, ref_network=ref_network)
+            new_network = create_network_from_path(repo_path=repo_path)
+            network_data = extract_config_data(new_network=new_network, ref_network=ref_network)
 
             # Get general stats per config file
             for file_path, file_stats in commit.stats.files.items():
@@ -220,7 +209,7 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
             )
 
             # Update reference network
-            ref_network = network
+            ref_network = new_network
         
         else:
             config_commit_data.append(
@@ -261,8 +250,8 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--url", type=str, help="Url of the project to analyze")
-    parser.add_argument("--name", type=str, help="Number of of the repo to analyze")
+    parser.add_argument("--url", type=str, help="Url of the repository to analyze")
+    parser.add_argument("--name", type=str, help="Name of the repository to analyze")
     return parser.parse_args()
 
 

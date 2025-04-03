@@ -1,0 +1,6 @@
+Concept,Option
+mysql,mysqld.character-set-server
+mysql,mysqld.collation-server
+mysql,mysqld.default-time_zone
+mysql,mysqld.max_allowed_packet
+mysql,mysqld.wait_timeout
