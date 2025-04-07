@@ -153,78 +153,95 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
     config_commit_data = []
     ref_network = None
 
+   
     for commit in tqdm(commits, desc="Processing", total=len(commits)):
+        try:
+            is_config_related = False
 
-        is_config_related = False
+            # Get commit stats
+            stats = commit.stats.total
 
-        # Get commit stats
-        stats = commit.stats.total
+            # Stash changes before checkout
+            if repo.is_dirty(untracked_files=True):
+                repo.git.stash('push')
 
-        # Stash changes before checkout
-        if repo.is_dirty(untracked_files=True):
-            repo.git.stash('push')
+            # Checkout the commit
+            repo.git.checkout(commit.hexsha)
 
-        # Checkout the commit
-        repo.git.checkout(commit.hexsha)
-
-        # check if commit is config-related
-        if is_commit_config_related(commit):
-            is_config_related = True
-            
-            new_network = create_network_from_path(repo_path=repo_path)
-            network_data = extract_config_data(new_network=new_network, ref_network=ref_network)
-
-            # Get general stats per config file
-            for file_path, file_stats in commit.stats.files.items():
+            # check if commit is config-related
+            if is_commit_config_related(commit):
+                is_config_related = True
                 
-                # Get config file data
-                if file_path in network_data["config_files"]:
-                    file_data = next(filter(lambda x: x["file_path"] == file_path, network_data["config_files_data"]))
-                    file_data["insertions"] = file_stats['insertions']
-                    file_data["deletions"] = file_stats['deletions']
-                    file_data["total_changes"] = file_stats['insertions'] + file_stats['deletions']
+                new_network = create_network_from_path(repo_path=repo_path)
+                network_data = extract_config_data(new_network=new_network, ref_network=ref_network)
 
-                    # Get config file diff
-                    if get_diff:
-                        diff_output = get_file_diff(
-                            repo_path=repo_path,
-                            commit=commit,
-                            file_path=file_path
-                        )
+                # Get general stats per config file
+                for file_path, file_stats in commit.stats.files.items():
+                    
+                    # Get config file data
+                    if file_path in network_data["config_files"]:
+                        file_data = next(filter(lambda x: x["file_path"] == file_path, network_data["config_files_data"]))
+                        file_data["insertions"] = file_stats['insertions']
+                        file_data["deletions"] = file_stats['deletions']
+                        file_data["total_changes"] = file_stats['insertions'] + file_stats['deletions']
 
-                        file_data["diff"] = diff_output
+                        # Get config file diff
+                        if get_diff:
+                            diff_output = get_file_diff(
+                                repo_path=repo_path,
+                                commit=commit,
+                                file_path=file_path
+                            )
 
+                            file_data["diff"] = diff_output
+
+                config_commit_data.append(
+                    {   
+                        "commit_hash": str(commit.hexsha),
+                        "parent_commit": str(parent_commit),
+                        "is_config_related": is_config_related,
+                        "author": f"{commit.author.name} <{commit.author.email}>",
+                        "commit_mgs": str(commit.message),
+                        "files_changed": stats['files'],
+                        "insertions": stats['insertions'],
+                        "deletions": stats['deletions'],
+                        "network_data": network_data
+                    }
+                )
+
+                # Update reference network
+                ref_network = new_network
+            
+            else:
+                config_commit_data.append(
+                    {   
+                        "commit_hash": str(commit.hexsha),
+                        "parent_commit": str(parent_commit),
+                        "is_config_related": is_config_related,
+                        "author": f"{commit.author.name} <{commit.author.email}>",
+                        "commit_mgs": str(commit.message),
+                        "files_changed": stats['files'],
+                        "insertions": stats['insertions'],
+                        "deletions": stats['deletions'],
+                        "network_data": None
+                    }
+                )
+        except Exception as error:
+            print(f"Failed to process commit {commit.hexsha}: {error}")
+            traceback.print_exc()
             config_commit_data.append(
-                {   
-                    "commit_hash": str(commit.hexsha),
-                    "parent_commit": str(parent_commit),
-                    "is_config_related": is_config_related,
-                    "author": f"{commit.author.name} <{commit.author.email}>",
-                    "commit_mgs": str(commit.message),
-                    "files_changed": stats['files'],
-                    "insertions": stats['insertions'],
-                    "deletions": stats['deletions'],
-                    "network_data": network_data
-                }
-            )
-
-            # Update reference network
-            ref_network = new_network
-        
-        else:
-            config_commit_data.append(
-                {   
-                    "commit_hash": str(commit.hexsha),
-                    "parent_commit": str(parent_commit),
-                    "is_config_related": is_config_related,
-                    "author": f"{commit.author.name} <{commit.author.email}>",
-                    "commit_mgs": str(commit.message),
-                    "files_changed": stats['files'],
-                    "insertions": stats['insertions'],
-                    "deletions": stats['deletions'],
-                    "network_data": None
-                }
-            )
+                    {   
+                        "commit_hash": str(commit.hexsha),
+                        "parent_commit": str(parent_commit),
+                        "is_config_related": is_config_related,
+                        "author": f"{commit.author.name} <{commit.author.email}>",
+                        "commit_mgs": str(commit.message),
+                        "files_changed": stats['files'],
+                        "insertions": stats['insertions'],
+                        "deletions": stats['deletions'],
+                        "network_data": "Failed to analyze network data"
+                    }
+                )
 
 
     # Return to latest commit
@@ -248,23 +265,11 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
     }
 
 
-def get_args():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--url", type=str, help="Url of the repository to analyze")
-    parser.add_argument("--name", type=str, help="Name of the repository to analyze")
-    return parser.parse_args()
-
-
 def process_project(project_url: str, project_name: str):
     """Process a single project."""
 
     # Define the output file path
     output_file = f"/tmp/ssimon/config-space/experiments/{project_name}.json"
-
-    # Check if the output file already exists
-    #if os.path.exists(output_file):
-    #    print(f"Output file already exists for {project_name}. Skipping processing.")
-    #    return
 
     print(f"Processing project: {project_name}")
         
@@ -293,14 +298,11 @@ def process_project(project_url: str, project_name: str):
             traceback.print_exc()
 
 
-def run_analysis(args):
-    """Run the repository analysis."""    
-    process_project(
-        project_url=args.url,
-        project_name=args.name
-    )
-
-    print("Completed analysis for all projects.")
+def get_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--url", type=str, help="Url of the repository to analyze")
+    parser.add_argument("--name", type=str, help="Name of the repository to analyze")
+    return parser.parse_args()
 
 
 if __name__ == "__main__":
@@ -308,4 +310,9 @@ if __name__ == "__main__":
 
     # Start analysis
     print("Starting analysis")
-    run_analysis(args=args)
+    process_project(
+        project_url=args.url,
+        project_name=args.name
+    )
+
+    print("Completed analysis for all projects.")
