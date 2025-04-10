@@ -23,8 +23,6 @@ const svg = d3.select("body")
 const container = svg.append("g");
 
 const state = {
-    showConceptLinks: false,
-    showArtifactLinks: false,
     showOptionLinks: false,
     topKValue: 10,
 };
@@ -35,7 +33,7 @@ function filterNodes(graph) {
 
 function filterLinks(graph, filteredNodes) {
     return graph.links.filter(d =>
-        !["concept-concept", "artifact-artifact", "option-option"].includes(d.type) &&
+        !["option-option"].includes(d.type) &&
         filteredNodes.some(node => node.id === d.source) &&
         filteredNodes.some(node => node.id === d.target)
     );
@@ -65,7 +63,7 @@ function setupSimulation(filteredNodes, filteredLinks) {
 
     return d3.forceSimulation(filteredNodes)
         .force("link", linkForce)
-        .force("charge", d3.forceManyBody().strength(-10))
+        .force("charge", d3.forceManyBody().strength(-15))
         .force("center", d3.forceCenter(dimensions.width / 2, dimensions.height / 2))
         .force("collision", d3.forceCollide().radius(8))
         .force("x", d3.forceX(dimensions.width / 2)
@@ -92,45 +90,7 @@ function setupTooltip() {
 
 const tooltip = setupTooltip();
 
-function attachTooltipListeners(conceptLink, artifactLink, optionLink) {
-    conceptLink
-        .on("mouseover", (event, d) => {
-            tooltip.style("visibility", "visible")
-                .html(`
-                    <strong>Link:</strong> ${d.source} <-> ${d.target} <br>
-                    <strong>Commit Window:</strong> ${d.commit_window}<br>
-                    <strong>Changed Internal:</strong> ${ d.internal_count } (${ d.internal_weight })<br>
-                    <strong>Across Projects:</strong> ${d.across_projects}<br>
-                    <strong>Changed Global:</strong> ${d.global_count} (${d.global_weight})
-                `);
-        })
-        .on("mousemove", (event) => {
-            tooltip.style("top", `${event.pageY + 10}px`)
-                .style("left", `${event.pageX + 10}px`);
-        })
-        .on("mouseout", () => {
-            tooltip.style("visibility", "hidden");
-        });
-
-    artifactLink
-        .on("mouseover", (event, d) => {
-            tooltip.style("visibility", "visible")
-                .html(`
-                    <strong>Link:</strong> ${d.source} <-> ${d.target} <br>
-                    <strong>Commit Window:</strong> ${d.commit_window}<br>
-                     <strong>Changed Internal:</strong> ${ d.internal_count} (${d.internal_weight })<br>
-                     <strong>Across Projects:</strong> ${d.across_projects}<br>
-                    <strong>Changed Global:</strong> ${d.global_count} (${d.global_weight})
-                `);
-        })
-        .on("mousemove", (event) => {
-            tooltip.style("top", `${event.pageY + 10}px`)
-                .style("left", `${event.pageX + 10}px`);
-        })
-        .on("mouseout", () => {
-            tooltip.style("visibility", "hidden");
-        });
-
+function attachTooltipListeners(optionLink) {
     optionLink
         .on("mouseover", (event, d) => {
             tooltip.style("visibility", "visible")
@@ -138,7 +98,6 @@ function attachTooltipListeners(conceptLink, artifactLink, optionLink) {
                     <strong>Link:</strong> ${d.source_option} <-> ${d.target_option} <br>
                     <strong>Changed Internal:</strong> ${ d.internal_count} (${d.internal_weight})<br>
                     <strong>Across Projects:</strong> ${d.across_projects}<br>
-                    <strong>Changed Global:</strong> ${d.global_count} (${d.global_weight})
                 `);
         })
         .on("mousemove", (event) => {
@@ -151,21 +110,10 @@ function attachTooltipListeners(conceptLink, artifactLink, optionLink) {
 }
 
 // Global color scales for different node types
-let conceptColorScale, artifactColorScale, optionColorScale;
+let optionColorScale;
 
 // Function to initialize/update color scales
 function updateColorScales(graph) {
-    // Concept node color scale (if needed)
-    conceptColorScale = d3.scaleLinear()
-        .domain(d3.extent(graph.nodes.filter(d => d.type === 'concept'), d => d.changed_internally))
-        .range(["#d4f2ff", "#7baede", "#001880"]); // Light to deep blue
-
-    // Artifact node color scale
-    artifactColorScale = d3.scaleLinear()
-        .domain(d3.extent(graph.nodes.filter(d => d.type === 'artifact'), d => d.changed_internally))
-        .range(["#ffe7ce", "#ff9248", "#ff6700"]); // Light to deep orange
-
-    // Option node color scale
     optionColorScale = d3.scaleLinear()
         .domain(d3.extent(graph.nodes.filter(d => d.type === 'option'), d => d.changed_internally))
         .range(["#c7e9c0", "#41ab5d", "#005a32"]); // Light to deep green
@@ -179,9 +127,7 @@ function renderGraph(graph, state, commitWindow) {
     const filteredNodes = filterNodes(graph);
     const filteredLinks = filterLinks(graph, filteredNodes);
 
-    // Get links for different types
-    let conceptLinks = getLinks(graph, filteredNodes, 'concept-concept', state.topKValue, commitWindow);
-    let artifactLinks = getLinks(graph, filteredNodes, 'artifact-artifact', state.topKValue, commitWindow);
+    // Get links for co-changed options
     let optionLinks = getLinks(graph, filteredNodes, 'option-option', state.topKValue, commitWindow);
 
     const simulation = setupSimulation(filteredNodes, filteredLinks);
@@ -195,30 +141,20 @@ function renderGraph(graph, state, commitWindow) {
         .enter()
         .append("line")
         .attr("stroke-width", 1.5)
-        .attr("stroke", "#aaa")
-        .style("visibility", d => (d.source.type === 'target' || d.target.type === 'option') ? "hidden" : "visible"); // Hide option-related links initially
+        .attr("stroke", "#aaa");
 
-    const sizeScale = d3.scaleLinear()
-        .domain(d3.extent(graph.nodes.filter(d => d.type === 'option'), d => d.changed_globally))
-        .range([8, 24]);
         
     const node = container.append("g")
         .attr("class", "nodes")
         .selectAll("circle")
         .data(filteredNodes)
         .enter().append("circle")
-        .attr("r", d => {
-            if (d.type === 'option') {
-                return sizeScale(d.changed_globally); // Scale size based on "changed_globally"
-            }
-            return 8; // Default size for other node types
-        })
+        .attr("r", d => { return 8 })
         .attr("fill", d => {
-            if (d.type === 'concept') return conceptColorScale(d.changed_internally); // Blue for concepts
-            if (d.type === 'artifact') return artifactColorScale(d.changed_internally); // Orange for artifacts
+            if (d.type === 'concept') return "#7baede"; // Blue for concepts
+            if (d.type === 'artifact') return "#ff9248"; // Orange for artifacts
             if (d.type === 'option') return optionColorScale(d.changed_internally);
         })
-        .style("visibility", d => d.type === 'option' ? "hidden" : "visible") // Hide options by default
         .call(d3.drag()
             .on("start", (event, d) => {
                 if (!event.active) simulation.alphaTarget(0.3).restart();
@@ -249,8 +185,6 @@ function renderGraph(graph, state, commitWindow) {
         .style("fill", d => d.type === 'concept' ? "#1f77b4" : "#333") // Match color for concepts
         .style("visibility", d => d.type === 'concept' ? "visible" : "hidden"); // Always visible for concepts
 
-
-    
     function addLinks(linkGroup, links, visibilityState) {
 
         const maxInternalWeight = d3.max(links, d => d.internal_weight) || 1;
@@ -258,15 +192,11 @@ function renderGraph(graph, state, commitWindow) {
         const linkColorScale = d3.scaleLinear() // Fixed typo
             .domain([0, maxInternalWeight])
             .range(["#ffbaba", "#ff5252", "#a70000"]);
-        
-        const linkSizeScale = d3.scaleLinear()
-            .domain(d3.extent(links, d => d.global_count))
-            .range([1, 5]);
-        
+                
         const link = linkGroup.selectAll("line")
             .data(links)
             .enter().append("line")
-            .attr("stroke-width", d => { return linkSizeScale(d.global_count) })
+            .attr("stroke-width", d => { return 5 })
             .attr("stroke", d => { return linkColorScale(d.internal_weight) })
             .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
             .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
@@ -277,19 +207,13 @@ function renderGraph(graph, state, commitWindow) {
         return link;
     }
 
-    let conceptLinkGroup = container.append("g")
-        .attr("class", "concept-links");
-    let artifactLinkGroup = container.append("g")
-        .attr("class", "artifact-links");
     let optionLinkGroup = container.append("g")
         .attr("class", "option-links");
     
-    // Add links without force
-    let conceptLink = addLinks(conceptLinkGroup, conceptLinks, state.showConceptLinks);
-    let artifactLink = addLinks(artifactLinkGroup, artifactLinks, state.showArtifactLinks);
+    // Add option links without force
     let optionLink = addLinks(optionLinkGroup, optionLinks, state.showOptionLinks);
 
-    attachTooltipListeners(conceptLink, artifactLink, optionLink)
+    attachTooltipListeners(optionLink)
 
     node.on("mouseover", (event, d) => {
         if (d.type === 'artifact') {
@@ -302,7 +226,6 @@ function renderGraph(graph, state, commitWindow) {
                         <strong>Name:</strong> ${d.id.split(":")[1]}<br>
                         <strong>Values:</strong> ${d.values}<br>
                         <strong>Changed Internally:</strong> ${d.changed_internally}<br>
-                        <strong>Changed Globally:</strong> ${d.changed_globally}
                     `);
         }
     })
@@ -336,20 +259,6 @@ function renderGraph(graph, state, commitWindow) {
             .attr("x", d => d.x)
             .attr("y", d => d.y);
 
-        // Update concept-to-concept links manually
-        conceptLink
-            .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
-            .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
-            .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
-            .attr("y2", d => filteredNodes.find(n => n.id === d.target).y);
-
-        // Update artifact-to-artifact links
-        artifactLink
-            .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
-            .attr("y1", d => filteredNodes.find(n => n.id === d.source).y)
-            .attr("x2", d => filteredNodes.find(n => n.id === d.target).x)
-            .attr("y2", d => filteredNodes.find(n => n.id === d.target).y);
-
         // Update option-to-option links
         optionLink
             .attr("x1", d => filteredNodes.find(n => n.id === d.source).x)
@@ -359,29 +268,6 @@ function renderGraph(graph, state, commitWindow) {
 
         // Dynamically update labels
         updateLabels(label, graph.nodes);
-    });
-
-    document.getElementById('toggle-option-nodes-checkbox').addEventListener('change', (event) => {
-        const visibility = event.target.checked ? "visible" : "hidden";
-
-        // Toggle visibility of option nodes
-        node.filter(d => d.type === 'option').style("visibility", visibility);
-
-        // Toggle visibility of links that are connected to option nodes
-        link.filter(d => d.source.type === 'option' || d.target.type === 'option')
-            .style("visibility", visibility);
-    });
-
-    // Toggle concept link visibility
-    document.getElementById('toggle-concept-links-checkbox').addEventListener('change', (event) => {
-        state.showConceptLinks = event.target.checked;
-        conceptLink.style("visibility", state.showConceptLinks ? "visible" : "hidden");
-    });
-
-    // Toggle artifact link visibility
-    document.getElementById('toggle-artifact-links-checkbox').addEventListener('change', (event) => {
-        state.showArtifactLinks = event.target.checked;
-        artifactLink.style("visibility", state.showArtifactLinks ? "visible" : "hidden");
     });
 
     // Toggle option link visibility
@@ -396,22 +282,16 @@ function renderGraph(graph, state, commitWindow) {
 
         console.log("Top-K Value: " + state.topKValue)
 
-        // Clear existing concept, artifact, and option links
-        conceptLinkGroup.selectAll("*").remove();
-        artifactLinkGroup.selectAll("*").remove();
+        // Clear existing option links
         optionLinkGroup.selectAll("*").remove();
 
-        // Get new top-k concept, artifact, and option links
-        conceptLinks = getLinks(graph, filteredNodes, 'concept-concept', state.topKValue, commitWindow);
-        artifactLinks = getLinks(graph, filteredNodes, 'artifact-artifact', state.topKValue, commitWindow);
+        // Get new top-k option links
         optionLinks = getLinks(graph, filteredNodes, 'option-option', state.topKValue, commitWindow);
 
-        // Append new concept, artifact, and option links
-        conceptLink= addLinks(conceptLinkGroup, conceptLinks, state.showConceptLinks);
-        artifactLink = addLinks(artifactLinkGroup, artifactLinks, state.showArtifactLinks);
+        // Append new option links
         optionLink = addLinks(optionLinkGroup, optionLinks, state.showOptionLinks);
 
-        attachTooltipListeners(conceptLink, artifactLink, optionLink)
+        attachTooltipListeners(optionLink)
      });
 
 }

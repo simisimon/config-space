@@ -45,34 +45,19 @@
         .toggle-label {
             display: block;
         }
-        
-        #toggle-option-nodes {
+
+        #toggle-option-links {
             top: 110px;
         }
 
-        #toggle-concept-links {
-            top: 130px;
-        }
-
-        #toggle-artifact-links {
-            top: 150px;
-        }
-
-        #toggle-option-links {
-            top: 170px;
-        }
-
         #top-k-label {
-            top: 200px;
+            top: 140px;
             display: inline-block;
         }
 
         #top-k-slider {
-            top: 215px;
+            top: 165px;
         }
-
-
-
     </style>
 </head>
 
@@ -90,19 +75,9 @@
         </select>
     </div>
     <button id="visualize-button" class="control">Visualize Graph</button>
-    <label class="control toggle-label" id="toggle-option-nodes">
-        <input type="checkbox" id="toggle-option-nodes-checkbox"> Show Option Nodes
-    </label>
-    <label class="control toggle-label" id="toggle-concept-links">
-        <input type="checkbox" id="toggle-concept-links-checkbox"> Show Co-Changed Technologies
-    </label>
-    <label class="control toggle-label" id="toggle-artifact-links">
-        <input type="checkbox" id="toggle-artifact-links-checkbox"> Show Co-Changed Files
-    </label>
     <label class="control toggle-label" id="toggle-option-links">
         <input type="checkbox" id="toggle-option-links-checkbox"> Show Co-Changed Options
     </label>
-
     <label for="top-k-slider" class="control" id="top-k-label">
         Top-K: <span id="top-k-value">10</span>
     </label>

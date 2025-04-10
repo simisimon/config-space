@@ -54,6 +54,57 @@ def is_equal_pair(pair1, pair2):
     )
 
 
+def get_file_diff(repo_path: str, commit, file_path: str):
+    """Get file diff for a config file in a given commit."""
+    try:
+        # Run git show to capture the changes introduced by the commit for the specified file
+        diff_output = subprocess.check_output(
+            ['git', 'show', commit.hexsha, '--', file_path],
+            cwd=repo_path,
+            text=True
+        ).split("diff --git")[-1]
+
+        return "diff --git" + diff_output
+
+    except subprocess.CalledProcessError as e:
+        print(f"Git command failed for commit {commit.hexsha} and file {file_path}: {e}")
+        return None
+    except Exception:
+        print(f"Unexpected error while getting diff for commit {commit.hexsha} and file {file_path}")
+        traceback.print_exc()
+        return None
+
+
+def is_commit_config_related(commit) -> bool:
+    """Check if a commit is config-related."""
+    return any(file_path.endswith(CONFIG_FILE_ENDINGS) for file_path in commit.stats.files.keys())
+
+
+def is_config_file(file_path: str) -> bool:
+    """Check if file is a config file."""
+    if file_path.endswith(CONFIG_FILE_ENDINGS):
+        return True
+    return False
+
+def extract_conflicts(new_network: Network, ref_network: Network, commit_hash: str) -> List:
+    """Extract conflicts from configuration network."""
+    conflicts = []
+    if ref_network:
+        detected_conflicts = ConflictDetector.detect(
+            ref_network=ref_network,
+            new_network=new_network,
+            enable_all_conflicts=False,
+            commit_hash=commit_hash)
+        
+        for conflict in detected_conflicts:
+            conflicts.append({
+                "link": str(conflict.link),
+                "conflict_type": type(conflict).__name__,
+            })
+
+    return conflicts
+
+
 def extract_config_data(new_network: Network, ref_network: Network) -> Dict:
     """Extract configuration data from configuration network."""
     artifacts = new_network.get_nodes(node_type=ArtifactNode)
@@ -96,46 +147,23 @@ def extract_config_data(new_network: Network, ref_network: Network) -> Dict:
             "added_pairs": added_pairs,
             "removed_pairs": removed_pairs,
             "modified_pairs": modified_pairs,
-            "is_changed": bool(added_pairs or removed_pairs or modified_pairs),
         })
 
     config_files = set(artifact.rel_file_path for artifact in artifacts)
     concepts = set(artifact.concept_name for artifact in artifacts)
+    total_options = sum(len(artifact.get_pairs()) for artifact in artifacts)
 
     network_data = {
         "links": len(new_network.links),
         "concepts": list(concepts),
-        "config_files": list(config_files),
         "config_files_data": config_files_data,
+        "total_options": total_options,
     }
 
     return network_data
 
 
-def get_file_diff(repo_path: str, commit, file_path: str):
-    """Get file diff for a config file in a given commit."""
-    try:
-        if commit.parents:
-            parent_commit = f"{commit.hexsha}^"
-                
-            # Run git diff to capture line-by-line changes
-            diff_output = subprocess.check_output(
-                ['git', 'diff', parent_commit, commit.hexsha, '--', file_path],
-                cwd=repo_path,
-                text=True
-            )
-            return diff_output
-    except Exception:
-        print(f"Failed to get diff for commit {commit.hexsha} and file {file_path}")
-        return None
-
-
-def is_commit_config_related(commit) -> bool:
-    """Check if a commit is config-related."""
-    return any(file_path.endswith(CONFIG_FILE_ENDINGS) for file_path in commit.stats.files.keys())
-
-
-def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False) -> Dict:
+def analyze_repository(repo_path: str, project_name: str) -> Dict:
     """Analyze Commit history of repositories and collect stats about the configuration space."""  
     start_time = time.time()
     repo = git.Repo(repo_path)
@@ -143,14 +171,13 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
     # Save the current branch to return to it later
     current_branch = repo.active_branch.name if not repo.head.is_detached else None
     latest_commit = repo.head.commit.hexsha
-    parent_commit = None
 
     # Get all commits in the repository from oldest to newest
     commits = list(repo.iter_commits("HEAD"))[::-1]
 
     print(f"Number of commits: {len(commits)}")
 
-    config_commit_data = []
+    commit_data = []
     ref_network = None
 
    
@@ -158,90 +185,72 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
         try:
             is_config_related = False
 
-            # Get commit stats
-            stats = commit.stats.total
-
             # Stash changes before checkout
             if repo.is_dirty(untracked_files=True):
                 repo.git.stash('push')
 
-            # Checkout the commit
             repo.git.checkout(commit.hexsha)
 
-            # check if commit is config-related
             if is_commit_config_related(commit):
                 is_config_related = True
-                
+
                 new_network = create_network_from_path(repo_path=repo_path)
                 network_data = extract_config_data(new_network=new_network, ref_network=ref_network)
+                conflicts = extract_conflicts(new_network=new_network, ref_network=ref_network, commit_hash=str(commit.hexsha))
+                modified_files = commit.stats.files.keys()
 
-                # Get general stats per config file
-                for file_path, file_stats in commit.stats.files.items():
-                    
-                    # Get config file data
-                    if file_path in network_data["config_files"]:
-                        file_data = next(filter(lambda x: x["file_path"] == file_path, network_data["config_files_data"]))
-                        file_data["insertions"] = file_stats['insertions']
-                        file_data["deletions"] = file_stats['deletions']
-                        file_data["total_changes"] = file_stats['insertions'] + file_stats['deletions']
-
-                        # Get config file diff
-                        if get_diff:
-                            diff_output = get_file_diff(
-                                repo_path=repo_path,
-                                commit=commit,
-                                file_path=file_path
-                            )
-
-                            file_data["diff"] = diff_output
-
-                config_commit_data.append(
+                config_files = network_data["config_files_data"]
+                for config_file in config_files:
+                    if config_file["file_path"] in modified_files:
+                        config_file["is_modified"] = True
+                        
+                        # Get diff for the file
+                        diff_output = get_file_diff(
+                            repo_path=repo_path,
+                            commit=commit,
+                            file_path=config_file["file_path"]
+                        )
+                        config_file["file_diff"] = diff_output
+                    else:
+                        config_file["is_modified"] = False
+                
+                commit_data.append(
                     {   
                         "commit_hash": str(commit.hexsha),
-                        "parent_commit": str(parent_commit),
                         "is_config_related": is_config_related,
                         "author": f"{commit.author.name} <{commit.author.email}>",
                         "commit_mgs": str(commit.message),
-                        "files_changed": stats['files'],
-                        "insertions": stats['insertions'],
-                        "deletions": stats['deletions'],
-                        "network_data": network_data
+                        "network_data": network_data,
+                        "conflicts": conflicts
                     }
                 )
 
-                # Update reference network
                 ref_network = new_network
             
             else:
-                config_commit_data.append(
+                commit_data.append(
                     {   
                         "commit_hash": str(commit.hexsha),
-                        "parent_commit": str(parent_commit),
                         "is_config_related": is_config_related,
                         "author": f"{commit.author.name} <{commit.author.email}>",
                         "commit_mgs": str(commit.message),
-                        "files_changed": stats['files'],
-                        "insertions": stats['insertions'],
-                        "deletions": stats['deletions'],
-                        "network_data": None
+                        "network_data": {},
+                        "conflicts": []
                     }
                 )
         except Exception as error:
             print(f"Failed to process commit {commit.hexsha}: {error}")
             traceback.print_exc()
-            config_commit_data.append(
-                    {   
-                        "commit_hash": str(commit.hexsha),
-                        "parent_commit": str(parent_commit),
-                        "is_config_related": is_config_related,
-                        "author": f"{commit.author.name} <{commit.author.email}>",
-                        "commit_mgs": str(commit.message),
-                        "files_changed": stats['files'],
-                        "insertions": stats['insertions'],
-                        "deletions": stats['deletions'],
-                        "network_data": "Failed to analyze network data"
-                    }
-                )
+            commit_data.append(
+                {   
+                    "commit_hash": str(commit.hexsha),
+                    "is_config_related": is_config_related,
+                    "author": f"{commit.author.name} <{commit.author.email}>",
+                    "commit_mgs": str(commit.message),
+                    "network_data": {},
+                    "conflicts": []
+                }
+            )
 
 
     # Return to latest commit
@@ -251,7 +260,7 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
         latest_commit=latest_commit
     )
 
-    print(f"Len commit data: {len(config_commit_data)}, {round(len(config_commit_data)/len(commits), 2)}")
+    print(f"Len commit data: {len(commit_data)}, {round(len(commit_data)/len(commits), 2)}")
 
     end_time = time.time()
     elapsed_time = end_time - start_time
@@ -261,7 +270,7 @@ def analyze_repository(repo_path: str, project_name: str, get_diff: bool = False
         "project_name": project_name,
         "analysis_time": elapsed_time,
         "len_commits": len(commits),
-        "config_commit_data": config_commit_data
+        "commit_data": commit_data
     }
 
 
@@ -269,7 +278,8 @@ def process_project(project_url: str, project_name: str):
     """Process a single project."""
 
     # Define the output file path
-    output_file = f"/tmp/ssimon/config-space/experiments/{project_name}.json"
+    #output_file = f"/tmp/ssimon/config-space/experiments/{project_name}.json"
+    output_file = f"../data/microservice_projects/{project_name}.json"
 
     print(f"Processing project: {project_name}")
         
@@ -285,7 +295,7 @@ def process_project(project_url: str, project_name: str):
 
             # Analyze repository to get commit config data
             print(f"Analyzing repository: {project_name}")
-            commit_data = analyze_repository(repo_path=temp_dir, project_name=project_name, get_diff=True)
+            commit_data = analyze_repository(repo_path=temp_dir, project_name=project_name)
 
             # Store commit data into the output file
             with open(output_file, "w", encoding="utf-8") as dest:
@@ -300,8 +310,8 @@ def process_project(project_url: str, project_name: str):
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--url", type=str, help="Url of the repository to analyze")
-    parser.add_argument("--name", type=str, help="Name of the repository to analyze")
+    parser.add_argument("--url", type=str, default="https://github.com/simisimon/test-config-repo", help="Url of the repository to analyze")
+    parser.add_argument("--name", type=str, default="test-config-repo", help="Name of the repository to analyze")
     return parser.parse_args()
 
 
@@ -309,10 +319,11 @@ if __name__ == "__main__":
     args = get_args()
 
     # Start analysis
-    print("Starting analysis")
+    print(f"Starting analysis for project: {args.name}")
+    
     process_project(
         project_url=args.url,
         project_name=args.name
     )
 
-    print("Completed analysis for all projects.")
+    print(f"Completed analysis for project: {args.name}.")
