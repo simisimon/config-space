@@ -7,7 +7,6 @@ package-lock.json
 **/data/graph_data/*
 **/data/microservice_projects/*
 **/data/options/*
-**/data/technology/*
 **/data/figures/*
 **/data/contributors/**
 **/slurm/microservices/*
