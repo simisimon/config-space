@@ -109,7 +109,7 @@ def extract_config_data(new_network: Network, ref_network: Network) -> Dict:
     """Extract configuration data from configuration network."""
     artifacts = new_network.get_nodes(node_type=ArtifactNode)
 
-    config_files_data = []
+    config_file_data = []
     for artifact in artifacts:
         # exclude file options
         pairs = [pair for pair in artifact.get_pairs() if pair["option"] != "file"]
@@ -139,7 +139,7 @@ def extract_config_data(new_network: Network, ref_network: Network) -> Dict:
         added_pairs = [pair for pair in added_pairs if pair["option"] not in [mp["option"] for mp in modified_pairs]]
         removed_pairs = [pair for pair in removed_pairs if pair["option"] not in [mp["option"] for mp in modified_pairs]]
 
-        config_files_data.append({
+        config_file_data.append({
             "file_path": artifact.rel_file_path,
             "concept": artifact.concept_name,
             "options": len(artifact.get_pairs()),
@@ -149,14 +149,13 @@ def extract_config_data(new_network: Network, ref_network: Network) -> Dict:
             "modified_pairs": modified_pairs,
         })
 
-    config_files = set(artifact.rel_file_path for artifact in artifacts)
     concepts = set(artifact.concept_name for artifact in artifacts)
     total_options = sum(len(artifact.get_pairs()) for artifact in artifacts)
 
     network_data = {
         "links": len(new_network.links),
         "concepts": list(concepts),
-        "config_files_data": config_files_data,
+        "config_file_data": config_file_data,
         "total_options": total_options,
     }
 
@@ -189,21 +188,28 @@ def analyze_repository(repo_path: str, project_name: str) -> Dict:
             if repo.is_dirty(untracked_files=True):
                 repo.git.stash('push')
 
+            # Check if this is the latest commit
+            is_latest_commit = (commit.hexsha == latest_commit)
+
             repo.git.checkout(commit.hexsha)
 
-            if is_commit_config_related(commit):
+            if is_commit_config_related(commit) or is_latest_commit:
                 is_config_related = True
 
                 new_network = create_network_from_path(repo_path=repo_path)
                 network_data = extract_config_data(new_network=new_network, ref_network=ref_network)
                 conflicts = extract_conflicts(new_network=new_network, ref_network=ref_network, commit_hash=str(commit.hexsha))
-                modified_files = commit.stats.files.keys()
+                modified_files = commit.stats.files.keys() 
 
-                config_files = network_data["config_files_data"]
+                config_files = network_data["config_file_data"]
                 for config_file in config_files:
                     if config_file["file_path"] in modified_files:
+                        stats = commit.stats.files[config_file["file_path"]]
                         config_file["is_modified"] = True
-                        
+                        config_file["insertions"] = stats["insertions"]
+                        config_file["deletions"] = stats["deletions"]
+                        config_file["lines"] = stats["lines"]
+
                         # Get diff for the file
                         diff_output = get_file_diff(
                             repo_path=repo_path,
@@ -213,10 +219,14 @@ def analyze_repository(repo_path: str, project_name: str) -> Dict:
                         config_file["file_diff"] = diff_output
                     else:
                         config_file["is_modified"] = False
+                        config_file["insertions"] = None
+                        config_file["deletions"] = None
+                        config_file["lines"] = None
                 
                 commit_data.append(
                     {   
                         "commit_hash": str(commit.hexsha),
+                        "is_latest_commit": is_latest_commit,
                         "is_config_related": is_config_related,
                         "author": f"{commit.author.name} <{commit.author.email}>",
                         "commit_mgs": str(commit.message),
@@ -226,11 +236,12 @@ def analyze_repository(repo_path: str, project_name: str) -> Dict:
                 )
 
                 ref_network = new_network
-            
+
             else:
                 commit_data.append(
                     {   
                         "commit_hash": str(commit.hexsha),
+                        "is_latest_commit": is_latest_commit,
                         "is_config_related": is_config_related,
                         "author": f"{commit.author.name} <{commit.author.email}>",
                         "commit_mgs": str(commit.message),
@@ -244,6 +255,7 @@ def analyze_repository(repo_path: str, project_name: str) -> Dict:
             commit_data.append(
                 {   
                     "commit_hash": str(commit.hexsha),
+                    "is_latest_commit": is_latest_commit,
                     "is_config_related": is_config_related,
                     "author": f"{commit.author.name} <{commit.author.email}>",
                     "commit_mgs": str(commit.message),
