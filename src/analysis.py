@@ -121,7 +121,7 @@ def extract_config_data(new_network: Network, ref_network: Network) -> Dict:
                 ref_pairs = [pair for pair in ref_artifact.get_pairs() if pair["option"] != "file"]
         
         added_pairs = [pair for pair in pairs if not any(is_equal_pair(pair, ref_pair) for ref_pair in ref_pairs)]
-        removed_pairs = [pair for pair in ref_pairs if pair not in pairs]
+        removed_pairs = [ref_pair for ref_pair in ref_pairs if not any (is_equal_pair(ref_pair, pair) for pair in pairs)]
         modified_pairs = [
             {   
                 "artifact": artifact.rel_file_path,
@@ -132,7 +132,11 @@ def extract_config_data(new_network: Network, ref_network: Network) -> Dict:
                 "type": added_pair["type"]
             }
             for added_pair in added_pairs
-            if any(removed_pair["option"] == added_pair["option"] and removed_pair["value"] != added_pair["value"] for removed_pair in removed_pairs)
+            if any(
+                removed_pair["artifact"] == added_pair["artifact"]
+                and removed_pair["option"] == added_pair["option"] 
+                and removed_pair["value"] != added_pair["value"] for removed_pair in removed_pairs
+            )
         ]
 
         # Remove modified pairs from added and removed lists
@@ -322,8 +326,10 @@ def process_project(project_url: str, project_name: str):
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--url", type=str, default="https://github.com/simisimon/test-config-repo", help="Url of the repository to analyze")
-    parser.add_argument("--name", type=str, default="test-config-repo", help="Name of the repository to analyze")
+    #parser.add_argument("--url", type=str, default="https://github.com/simisimon/test-config-repo", help="Url of the repository to analyze")
+    #parser.add_argument("--name", type=str, default="test-config-repo", help="Name of the repository to analyze")
+    parser.add_argument("--url", type=str, default="https://github.com/sqshq/piggymetrics", help="Url of the repository to analyze")
+    parser.add_argument("--name", type=str, default="piggymetrics", help="Name of the repository to analyze")
     return parser.parse_args()
 
 
