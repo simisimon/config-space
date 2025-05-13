@@ -17,28 +17,40 @@ def get_projects():
 
 
 def load_commit_data(project: str):
+    """Load entire commit data for a given project."""
     with open(f"data/microservice_projects/{project}.json", "r") as src:
         return json.load(src)
 
+
 def load_option_data_latest(project: str):
+    """Load options data from latest commit for a given project."""
     return pd.read_csv(f"data/options/{project}_options_latest.csv")
 
+
 def load_option_data_internal(project: str):
+    """Load options data with internal statistics for a given project."""
     return pd.read_csv(f"data/options/{project}_options_internal.csv")
 
 
 def show_software_evolution(project: str):
     data = load_commit_data(project=project)
 
-    st.subheader("Evolution of Configuration Options")
+    st.markdown(
+    "**Software Evolution** is the process of developing software and maintaining it over time. "
+    "It involves the continuous improvement and adaptation of software systems to meet changing requirements, fix bugs, and enhance performance. "
+    "Software evolution is a critical aspect of software engineering, as it ensures that software remains relevant and effective in a dynamic environment. "
+    "With the rapid pace of technological advancements and changing user needs, the configuration space continuesly increases in terms of technologies and their configuration options. "
+    )
+
+    st.subheader("Evolution of the Total Number of Configuration Options")
     fig1 = plot_option_evolution(data)
     st.pyplot(fig1)
 
-    st.subheader("Evolution of Technologies")
+    st.subheader("Evolution of Technologies and their Configuration Options")
     fig2 = plot_technology_evolution(data)
     st.pyplot(fig2)
 
-    st.subheader("Evolution of Configuration Files")
+    st.subheader("Evolution of Configuration Files and their Configuration Options")
     fig3 = plot_artifact_evolution(data)
     st.pyplot(fig3)
 
@@ -52,13 +64,14 @@ def show_configurability_of_technologies(project: str):
 
     st.subheader(f"Relative VS Total Options Set")
     df1 = get_options_per_project(technology_files=property_files, df_option=df_option)
-    st.dataframe(df1)
+    st.dataframe(df1, use_container_width=True)
 
 def show_change_frequency(project: str):
-    df_option = load_option_data_internal(project=project)
-    st.subheader("Change Frequency of Options")
-    fig5 = show_change_frequency_options(df_options=df_option)
-    st.pyplot(fig5)
+    #df_option = load_option_data_internal(project=project)
+    #st.subheader("Change Frequency of Options")
+    #fig5 = show_change_frequency_options(df_options=df_option)
+    #st.pyplot(fig5)
+    pass
 
 def show_configuration_responsibility(project: str):
     project_data = load_commit_data(project=project)
@@ -66,9 +79,9 @@ def show_configuration_responsibility(project: str):
 
     st.subheader("Contributors")
     st.dataframe(df_contriburtors)
-    st.subheader("Contributors and Changed Files")
-    fig6 = plot_contributors_and_files(df_changed_files=df_changed_files)
-    st.pyplot(fig6)
+    #st.subheader("Contributors and Changed Files")
+    #fig6 = plot_contributors_and_files(df_changed_files=df_changed_files)
+    #st.pyplot(fig6)
 
 st.set_page_config(layout="wide", page_title="Exploring the Configuration Complexity in Open-Source Software Projects")
 
@@ -89,17 +102,17 @@ with st.expander("📈 Software Evolution", expanded=False):
 with st.expander("⚙️ Configurability of Technologies", expanded=False):
     show_configurability_of_technologies(project=project)
 
-with st.expander("🔢 Default Values", expanded=False):
-    pass
+#with st.expander("🔢 Default Values", expanded=False):
+#    pass
 
-with st.expander("📊 Change Frequency of Options", expanded=False):
-    show_change_frequency(project=project)
+#with st.expander("📊 Change Frequency of Options", expanded=False):
+#    show_change_frequency(project=project)
 
-with st.expander("🔁 Co-Evolutionary Changes", expanded=False):
-    pass
+#with st.expander("🔁 Co-Evolutionary Changes", expanded=False):
+#    pass
 
-with st.expander("🚨 Introduction of Misconfiguration", expanded=False):
-    pass
+#with st.expander("🚨 Introduction of Misconfiguration", expanded=False):
+#    pass
 
-with st.expander("🧑‍💻 Configuration Responsibilities", expanded=False):
-    show_configuration_responsibility(project=project)
+#with st.expander("🧑‍💻 Configuration Responsibilities", expanded=False):
+#    show_configuration_responsibility(project=project)

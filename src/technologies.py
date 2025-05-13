@@ -5,7 +5,7 @@ import os
 import javaproperties
 import pandas as pd
 import re
-from typing import List, Set
+from typing import List, Set, Dict
 
 def parse_properties_file(file_path: str) -> set:
     with open(file_path, "r", encoding="utf-8") as f:
@@ -58,12 +58,23 @@ def parse_properties_file(file_path: str) -> set:
         props = javaproperties.load(f)
     return set(k.strip() for k in props.keys())
 
-def get_wildcard_matches(project_options: Set[str], ref_options: Set[str]) -> Set[str]:
-    regexes = [
-        re.compile('^' + re.escape(option).replace(r'\*', r'[^.]+') + '$')
-        for option in ref_options
-    ]
-    return {opt for opt in project_options if any(rx.search(opt) for rx in regexes)}
+
+
+
+def get_matches(project_options: Set[str], ref_options: Set[str]) -> Dict[str, List[str]]:
+    matched_ref_to_project = {}
+
+    for ref_opt in ref_options:
+        pattern = '^' + re.escape(ref_opt).replace(r'\*', r'.+') + '$'
+        regex = re.compile(pattern)
+        
+        matches = [opt for opt in project_options if regex.fullmatch(opt)]
+        if matches:
+            matched_ref_to_project[ref_opt] = matches
+
+    return matched_ref_to_project
+
+
 
 def get_options_per_project(technology_files: List, df_option: pd.DataFrame):
     project_options = df_option.copy()
@@ -75,22 +86,25 @@ def get_options_per_project(technology_files: List, df_option: pd.DataFrame):
     # Iterate over all reference files
     for technology_file in technology_files:
         technology = technology_file.split("/")[-1].split(".properties")[0]
-        #print(technology)
         ref_options = parse_properties_file(technology_file)
 
         project_subset = set(project_options[project_options["concept"].str.lower() == technology.lower()]["option"])
-        matched = get_wildcard_matches(project_subset, ref_options)
-        unmatched = project_subset - matched
+        ref_to_proj = get_matches(project_subset, ref_options)
+        matched_refs = set(ref_to_proj.keys())
+        matched_project_options = sorted({opt for opts in ref_to_proj.values() for opt in opts})
+        unmatched = [opt for opt in project_subset if opt not in matched_project_options]
 
-        #print("Unmatched", unmatched)
+        print("technology:", technology)
+        print("Unmatched Options:", unmatched)
 
         results.append({
             "Technology": technology,
             "Total Options": len(ref_options),
-            "Matched Options": len(matched),
+            "Options Set": len(project_subset),
+            "Matched Options": len(matched_refs),
             "Unmatched Options": len(unmatched),
-            "Percentage Used": round(len(matched) / len(ref_options) * 100, 2) if ref_options else 0.0,
-            "Matched (Preview)": list(matched)[:5]
+            "Percentage Used": round(len(matched_refs) / len(ref_options) * 100, 2) if ref_options else 0.0,
+            "Matched": list(matched_project_options)
         })
 
 

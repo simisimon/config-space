@@ -56,8 +56,6 @@ def get_contributors_stats(project_data: List) -> pd.DataFrame:
     df_changed_files = pd.DataFrame(changed_files_rows)
     df_commits_stats = df_commits_stats.sort_values(by="Config Commits", ascending=False)
 
-    print("DF: ", df_changed_files)
-
     return df_commits_stats, df_changed_files
 
 

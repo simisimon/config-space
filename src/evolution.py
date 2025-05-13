@@ -7,6 +7,7 @@ from typing import List
 import matplotlib.pyplot as plt
 
 def plot_option_evolution(data: List):
+    project_name = data["project_name"]
     last_count = 0
     commit_hashes = []
     option_counts = []
@@ -33,10 +34,12 @@ def plot_option_evolution(data: List):
     ax.tick_params(axis='y', labelsize=8)
 
     fig.tight_layout(pad=1.0)
+    fig.savefig(f"data/figures/option_evolution_{project_name}.png")
     return fig
 
 
 def plot_technology_evolution(data: List):
+    project_name = data["project_name"]
     concepts = set()
     all_commits = data["commit_data"]
     x_ticks = [commit["commit_hash"] for commit in all_commits]
@@ -44,9 +47,9 @@ def plot_technology_evolution(data: List):
     concept_lines = defaultdict(lambda: [None] * len(x_ticks))
 
     for i, commit in enumerate(all_commits):
-        if commit.get("is_config_related") and "network_data" in commit and "config_files_data" in commit["network_data"]:
+        if commit.get("is_config_related") and "network_data" in commit and "config_file_data" in commit["network_data"]:
             concept_counts = defaultdict(int)
-            for config_file in commit["network_data"]["config_files_data"]:
+            for config_file in commit["network_data"]["config_file_data"]:
                 concept = config_file.get("concept")
                 options = config_file.get("options", 0)
                 if concept:
@@ -80,57 +83,20 @@ def plot_technology_evolution(data: List):
 
     ax.legend(title="Technologies", loc="center left", bbox_to_anchor=(1, 0.5), fontsize=8, title_fontsize=9)
     fig.tight_layout(pad=1.0)
-
+    fig.savefig(f"data/figures/technology_evolution_{project_name}.png")
     return fig
 
-def plot_artifact_evolution(data: List):
-    file_paths = set()
-    file_lines = defaultdict(lambda: [None] * len(data["commit_data"]))
-    x_ticks = [commit["commit_hash"] for commit in data["commit_data"]]
-
-    # Step 1: Fill data per file for config-related commits
-    for i, commit in enumerate(data["commit_data"]):
-        if commit.get("is_config_related") and "network_data" in commit and "config_files_data" in commit["network_data"]:
-            for config_file in commit["network_data"]["config_files_data"]:
-                file_path = config_file.get("file_path")
-                options = config_file.get("options", 0)
-                if file_path:
-                    file_paths.add(file_path)
-                    file_lines[file_path][i] = options
-
-    # Step 2: Forward-fill values for non-config commits or missing file entries
-    for file_path in file_paths:
-        last_value = None
-        for i in range(len(x_ticks)):
-            if file_lines[file_path][i] is None:
-                file_lines[file_path][i] = last_value
-            else:
-                last_value = file_lines[file_path][i]
-
-    # Step 3: Shorten commit hashes
-    shortened_x_ticks = [commit[:7] for commit in x_ticks]
-
-    # Step 4: Plot with larger size
-    plt.figure(figsize=(20, 10))
-    for file_path in sorted(file_paths):
-        plt.plot(shortened_x_ticks, file_lines[file_path], marker="o", label=file_path)
-
-    plt.xlabel("Commits")
-    plt.ylabel("Number of Options")
-    plt.xticks(ticks=range(0, len(shortened_x_ticks), 10), labels=shortened_x_ticks[::10], rotation=90, ha="right")
-    plt.legend(title="Config Files", loc="center left", bbox_to_anchor=(1, 0.5))
-    plt.tight_layout()
-
 
 def plot_artifact_evolution(data: List):
+    project_name = data["project_name"]
     file_paths = set()
     file_lines = defaultdict(lambda: [None] * len(data["commit_data"]))
     x_ticks = [commit["commit_hash"] for commit in data["commit_data"]]
 
     # Fill values for config-related commits
     for i, commit in enumerate(data["commit_data"]):
-        if commit.get("is_config_related") and "network_data" in commit and "config_files_data" in commit["network_data"]:
-            for config_file in commit["network_data"]["config_files_data"]:
+        if commit.get("is_config_related") and "network_data" in commit and "config_file_data" in commit["network_data"]:
+            for config_file in commit["network_data"]["config_file_data"]:
                 file_path = config_file.get("file_path")
                 options = config_file.get("options", 0)
                 if file_path:
@@ -164,5 +130,5 @@ def plot_artifact_evolution(data: List):
 
     ax.legend(title="Config Files", loc="center left", bbox_to_anchor=(1, 0.5), fontsize=8, title_fontsize=9)
     fig.tight_layout(pad=1.0)
-
+    fig.savefig(f"data/figures/artifact_evolution_{project_name}")
     return fig
