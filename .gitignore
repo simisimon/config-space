@@ -16,3 +16,6 @@ package-lock.json
 analysis.log
 **/data/results/*
 **/results/*
+
+**/data/microservices/*
+**/data/projects/*
