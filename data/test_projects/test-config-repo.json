@@ -1,6 +1,6 @@
 {
     "project_name": "test-config-repo",
-    "analysis_time": 0.3946540355682373,
+    "analysis_time": 0.35968589782714844,
     "len_commits": 7,
     "commit_data": [
         {
@@ -12,8 +12,8 @@
             "network_data": {
                 "links": 13,
                 "concepts": [
-                    "docker",
-                    "maven"
+                    "maven",
+                    "docker"
                 ],
                 "config_file_data": [
                     {
@@ -581,8 +581,8 @@
                 "links": 16,
                 "concepts": [
                     "docker-compose",
-                    "docker",
-                    "maven"
+                    "maven",
+                    "docker"
                 ],
                 "config_file_data": [
                     {
@@ -1001,8 +1001,8 @@
                 "links": 9,
                 "concepts": [
                     "docker-compose",
-                    "docker",
-                    "maven"
+                    "maven",
+                    "docker"
                 ],
                 "config_file_data": [
                     {
@@ -1372,9 +1372,9 @@
                 "links": 12,
                 "concepts": [
                     "docker-compose",
-                    "docker",
+                    "maven",
                     "yaml",
-                    "maven"
+                    "docker"
                 ],
                 "config_file_data": [
                     {
@@ -2163,10 +2163,10 @@
             "network_data": {
                 "links": 16,
                 "concepts": [
-                    "yaml",
-                    "maven",
-                    "spring",
                     "docker-compose",
+                    "maven",
+                    "yaml",
+                    "spring",
                     "docker"
                 ],
                 "config_file_data": [
@@ -2809,10 +2809,10 @@
             "network_data": {
                 "links": 10,
                 "concepts": [
-                    "yaml",
-                    "maven",
-                    "spring",
                     "docker-compose",
+                    "maven",
+                    "yaml",
+                    "spring",
                     "docker"
                 ],
                 "config_file_data": [
@@ -3429,12 +3429,30 @@
             },
             "conflicts": [
                 {
-                    "link": "tmpw6baaavb::::src/application.properties::::server.port::::8080 <-> tmpw6baaavb::::src/docker-compose.yml::::services::::app::::ports::::container::::8080",
-                    "conflict_type": "ModifiedOptionConflict"
+                    "link": "tmp7mq61_63::::src/application.properties::::server.port::::8080 <-> tmp7mq61_63::::src/docker-compose.yml::::services::::app::::ports::::host::::8080",
+                    "conflict_type": "ModifiedOptionConflict",
+                    "occurred_at": "5007a406533ba5604cb53559bc192f6bd5fb16f7",
+                    "self.fixed": false,
+                    "artifact": "src/application.properties",
+                    "option": "server.port",
+                    "value": "8000",
+                    "old_value": "8080",
+                    "dependent_artifact": "src/docker-compose.yml",
+                    "dependent_option": "host",
+                    "dependent_value": "8080"
                 },
                 {
-                    "link": "tmpw6baaavb::::src/Dockerfile::::EXPOSE::::8080 <-> tmpw6baaavb::::src/docker-compose.yml::::services::::app::::ports::::host::::8080",
-                    "conflict_type": "ModifiedOptionConflict"
+                    "link": "tmp7mq61_63::::src/Dockerfile::::EXPOSE::::8080 <-> tmp7mq61_63::::src/docker-compose.yml::::services::::app::::ports::::host::::8080",
+                    "conflict_type": "ModifiedOptionConflict",
+                    "occurred_at": "5007a406533ba5604cb53559bc192f6bd5fb16f7",
+                    "self.fixed": false,
+                    "artifact": "src/Dockerfile",
+                    "option": "EXPOSE",
+                    "value": "8000",
+                    "old_value": "8080",
+                    "dependent_artifact": "src/docker-compose.yml",
+                    "dependent_option": "host",
+                    "dependent_value": "8080"
                 }
             ]
         },
@@ -3447,10 +3465,10 @@
             "network_data": {
                 "links": 9,
                 "concepts": [
-                    "yaml",
-                    "maven",
-                    "spring",
                     "docker-compose",
+                    "maven",
+                    "yaml",
+                    "spring",
                     "docker"
                 ],
                 "config_file_data": [
@@ -4057,8 +4075,17 @@
             },
             "conflicts": [
                 {
-                    "link": "tmpw6baaavb::::src/Dockerfile::::EXPOSE::::8000 <-> tmpw6baaavb::::src/application.properties::::server.port::::8000",
-                    "conflict_type": "ModifiedOptionConflict"
+                    "link": "tmp7mq61_63::::src/Dockerfile::::EXPOSE::::8000 <-> tmp7mq61_63::::src/application.properties::::server.port::::8000",
+                    "conflict_type": "ModifiedOptionConflict",
+                    "occurred_at": "a38c5bbdb2e9d3927dd3aad7832f056b5fc29ef1",
+                    "self.fixed": false,
+                    "artifact": "src/Dockerfile",
+                    "option": "EXPOSE",
+                    "value": "10000123330",
+                    "old_value": "8000",
+                    "dependent_artifact": "src/application.properties",
+                    "dependent_option": "server.port",
+                    "dependent_value": "8000"
                 }
             ]
         }

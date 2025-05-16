@@ -3,6 +3,7 @@ from cfgnet.network.network_configuration import NetworkConfiguration
 from cfgnet.network.nodes import ArtifactNode, OptionNode
 from cfgnet.conflicts.conflict_detector import ConflictDetector
 from cfgnet.network.network import Network
+from cfgnet.conflicts.conflict import ModifiedOptionConflict, MissingOptionConflict, MissingArtifactConflict
 from pprint import pprint
 from tqdm import tqdm
 from typing import List
@@ -97,10 +98,31 @@ def extract_conflicts(new_network: Network, ref_network: Network, commit_hash: s
             commit_hash=commit_hash)
         
         for conflict in detected_conflicts:
-            conflicts.append({
+            conflict_data = {
                 "link": str(conflict.link),
                 "conflict_type": type(conflict).__name__,
-            })
+                "occurred_at": conflict.occurred_at,
+                "fixed": conflict.fixed,
+            }
+
+            if isinstance(conflict, ModifiedOptionConflict):          
+                conflict_data["config_type"] = f"{conflict.link.node_a.config_type} <-> {conflict.link.node_b.config_type}"     
+                conflict_data["artifact"] = conflict.artifact.rel_file_path
+                conflict_data["option"] = conflict.option.name
+                conflict_data["value"] = conflict.value.name
+                conflict_data["old_value"] = conflict.old_value.name
+                conflict_data["dependent_artifact"] = conflict.dependent_artifact.rel_file_path
+                conflict_data["dependent_option"] = conflict.dependent_option.name
+                conflict_data["dependent_value"] = conflict.dependent_value.name
+
+            elif isinstance(conflict, MissingOptionConflict):
+                conflict_data["artifact"] = conflict.missing_artifact.rel_file_path
+                
+            elif isinstance(conflict, MissingArtifactConflict):
+                conflict_data["artifact"] = conflict.artifact.rel_file_path
+                conflict_data["option"] = conflict.missing_option.option.name
+
+            conflicts.append(conflict_data)
 
     return conflicts
 
@@ -326,10 +348,10 @@ def process_project(project_url: str, project_name: str):
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--url", type=str, default="https://github.com/simisimon/test-config-repo", help="Url of the repository to analyze")
-    parser.add_argument("--name", type=str, default="test-config-repo", help="Name of the repository to analyze")
-    #parser.add_argument("--url", type=str, default="https://github.com/sqshq/piggymetrics", help="Url of the repository to analyze")
-    #parser.add_argument("--name", type=str, default="piggymetrics", help="Name of the repository to analyze")
+    #parser.add_argument("--url", type=str, default="https://github.com/simisimon/test-config-repo", help="Url of the repository to analyze")
+    #parser.add_argument("--name", type=str, default="test-config-repo", help="Name of the repository to analyze")
+    parser.add_argument("--url", type=str, default="https://github.com/sqshq/piggymetrics", help="Url of the repository to analyze")
+    parser.add_argument("--name", type=str, default="piggymetrics", help="Name of the repository to analyze")
     return parser.parse_args()
 
 
