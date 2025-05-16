@@ -26,3 +26,7 @@ GitHub Action: https://docs.github.com/en/actions/writing-workflows/workflow-syn
 Gradle: https://docs.gradle.org/current/userguide/build_environment.html
 TSconfig: https://www.typescriptlang.org/tsconfig/#references
 MongoDB: https://www.mongodb.com/docs/manual/reference/configuration-options/
+
+
+Optional:
+Spring-Cloud-Netflix: https://cloud.spring.io/spring-cloud-netflix/reference/html/appendix.html

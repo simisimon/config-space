@@ -5,8 +5,12 @@
 package-lock.json
 **/data/cochanges/*
 **/data/graph_data/*
-**/data/microservice_projects/*
-**/data/options/*
+analysis.log
+**/data/results/*
+**/results/*
+
 **/data/figures/*
-**/data/contributors/**
-**/slurm/microservices/*
+**/data/options/*
+**/data/microservice_projects/*
+**/data/top_github_projects/*
+**/data/projects/*

@@ -295,7 +295,7 @@ def process_project(project_url: str, project_name: str):
 
     # Define the output file path
     #output_file = f"/tmp/ssimon/config-space/experiments/{project_name}.json"
-    output_file = f"../data/microservice_projects/{project_name}.json"
+    output_file = f"../data/test_projects/{project_name}.json"
 
     print(f"Processing project: {project_name}")
         
@@ -326,10 +326,10 @@ def process_project(project_url: str, project_name: str):
 
 def get_args():
     parser = argparse.ArgumentParser()
-    #parser.add_argument("--url", type=str, default="https://github.com/simisimon/test-config-repo", help="Url of the repository to analyze")
-    #parser.add_argument("--name", type=str, default="test-config-repo", help="Name of the repository to analyze")
-    parser.add_argument("--url", type=str, default="https://github.com/sqshq/piggymetrics", help="Url of the repository to analyze")
-    parser.add_argument("--name", type=str, default="piggymetrics", help="Name of the repository to analyze")
+    parser.add_argument("--url", type=str, default="https://github.com/simisimon/test-config-repo", help="Url of the repository to analyze")
+    parser.add_argument("--name", type=str, default="test-config-repo", help="Name of the repository to analyze")
+    #parser.add_argument("--url", type=str, default="https://github.com/sqshq/piggymetrics", help="Url of the repository to analyze")
+    #parser.add_argument("--name", type=str, default="piggymetrics", help="Name of the repository to analyze")
     return parser.parse_args()
 
 
