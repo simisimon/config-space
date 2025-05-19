@@ -1,0 +1,211 @@
+stars,name,full_name,html_url,description,relevant
+5000,R3nzSkin,R3nzTheCodeGOD/R3nzSkin,https://github.com/R3nzTheCodeGOD/R3nzSkin,Skin changer for League of Legends (LOL),y
+5000,XUI,xuexiangjys/XUI,https://github.com/xuexiangjys/XUI,"💍A simple and elegant Android native UI framework, free your hands! (一个简洁而优雅的Android原生UI框架，解放你的双手！)",y
+4999,gt-nlp-class,jacobeisenstein/gt-nlp-class,https://github.com/jacobeisenstein/gt-nlp-class,"Course materials for Georgia Tech CS 4650 and 7650, ""Natural Language""",n
+4999,cloudscraper,VeNoMouS/cloudscraper,https://github.com/VeNoMouS/cloudscraper,A Python module to bypass Cloudflare's anti-bot page.,y
+4998,qtile,qtile/qtile,https://github.com/qtile/qtile,":cookie: A full-featured, hackable tiling window manager written and configured in Python (X11 + Wayland)",y
+4998,jless,PaulJuliusMartinez/jless,https://github.com/PaulJuliusMartinez/jless,"jless is a command-line JSON viewer designed for reading, exploring, and searching through JSON data.",y
+4998,credo,rrrene/credo,https://github.com/rrrene/credo,A static code analysis tool for the Elixir language with a focus on code consistency and teaching.,y
+4998,NSLogger,fpillet/NSLogger,https://github.com/fpillet/NSLogger,"A modern, flexible logging tool",y
+4998,instagrapi,subzeroid/instagrapi,https://github.com/subzeroid/instagrapi,🔥 The fastest and powerful Python library for Instagram Private API 2025 with HikerAPI SaaS,y
+4998,PRNet,yfeng95/PRNet,https://github.com/yfeng95/PRNet,Joint 3D Face Reconstruction and Dense Alignment with Position Map Regression Network (ECCV 2018),y
+4997,pbrt-v3,mmp/pbrt-v3,https://github.com/mmp/pbrt-v3,"Source code for pbrt, the renderer described in the third edition of ""Physically Based Rendering: From Theory To Implementation"", by Matt Pharr, Wenzel Jakob, and Greg Humphreys.",y
+4997,nerdcommenter,preservim/nerdcommenter,https://github.com/preservim/nerdcommenter,Vim plugin for intensely nerdy commenting powers,y
+4997,yournextstore,yournextstore/yournextstore,https://github.com/yournextstore/yournextstore,Your Next Store: Modern Commerce with Next.js and Stripe as the backend.,y
+4996,UltraViewPager,alibaba/UltraViewPager,https://github.com/alibaba/UltraViewPager,UltraViewPager is an extension for ViewPager to provide multiple features in a single ViewPager.,y
+4996,Chicago95,grassmunk/Chicago95,https://github.com/grassmunk/Chicago95,A rendition of everyone's favorite 1995 Microsoft operating system for Linux.,n
+4996,ThreatMapper,deepfence/ThreatMapper,https://github.com/deepfence/ThreatMapper,Open Source Cloud Native Application Protection Platform (CNAPP),y
+4996,harp,sintaxi/harp,https://github.com/sintaxi/harp,Static Web Server/Generator/Bundler,y
+4996,ControlNet-v1-1-nightly,lllyasviel/ControlNet-v1-1-nightly,https://github.com/lllyasviel/ControlNet-v1-1-nightly,Nightly release of ControlNet 1.1,y
+4996,social-auto-upload,dreammis/social-auto-upload,https://github.com/dreammis/social-auto-upload,自动化上传视频到社交媒体：抖音、小红书、视频号、tiktok、youtube、bilibili,y
+4996,tbox,tboox/tbox,https://github.com/tboox/tbox,🎁 A glib-like multi-platform c library,y
+4995,vue-loader,vuejs/vue-loader,https://github.com/vuejs/vue-loader,📦 Webpack loader for Vue.js components,y
+4995,rust-libp2p,libp2p/rust-libp2p,https://github.com/libp2p/rust-libp2p,The Rust Implementation of the libp2p networking stack.,y
+4995,snacks.nvim,folke/snacks.nvim,https://github.com/folke/snacks.nvim,🍿 A collection of QoL plugins for Neovim,n
+4995,fleet,fleetdm/fleet,https://github.com/fleetdm/fleet,"Open-source platform for IT, security, and infrastructure teams. (Linux, macOS, Chrome, Windows, cloud, data center)",y
+4994,corpora,dariusk/corpora,https://github.com/dariusk/corpora,A collection of small corpuses of interesting data for the creation of bots and similar stuff.,n
+4994,fvm,leoafarias/fvm,https://github.com/leoafarias/fvm,Flutter Version Management: A simple CLI to manage Flutter SDK versions.,y
+4993,gopay,go-pay/gopay,https://github.com/go-pay/gopay,微信、支付宝、通联支付、拉卡拉、PayPal、Apple 的Go版本SDK。【极简、易用的聚合支付SDK】,y
+4993,WebKit-http,WebKit/WebKit-http,https://github.com/WebKit/WebKit-http,Deprecated unofficial http mirror of the WebKit SVN repository,a
+4993,AwesomeMenu,levey/AwesomeMenu,https://github.com/levey/AwesomeMenu,Path 2.0 menu using CoreAnimation :),u
+4993,spring-authorization-server,spring-projects/spring-authorization-server,https://github.com/spring-projects/spring-authorization-server,Spring Authorization Server,y
+4993,tribler,Tribler/tribler,https://github.com/Tribler/tribler,Privacy enhanced BitTorrent client with P2P content discovery,y
+4993,MeshCentral,Ylianst/MeshCentral,https://github.com/Ylianst/MeshCentral,A complete web-based remote monitoring and management web site. Once setup you can install agents and perform remote desktop session to devices on the local network or over the Internet.,y
+4991,rack,rack/rack,https://github.com/rack/rack,A modular Ruby web server interface.,y
+4991,bootstrap-modal,jschr/bootstrap-modal,https://github.com/jschr/bootstrap-modal,"Extends the default Bootstrap Modal class. Responsive, stackable, ajax and more.",y
+4990,wechat,silenceper/wechat,https://github.com/silenceper/wechat,WeChat SDK for Go （微信SDK：简单、易用）,y
+4990,CS-Books-Store,Jackpopc/CS-Books-Store,https://github.com/Jackpopc/CS-Books-Store,你想要的计算机经典书籍，这里都有！,n
+4990,dialogplus,orhanobut/dialogplus,https://github.com/orhanobut/dialogplus,Advanced dialog solution for android,y
+4989,hyperscan,intel/hyperscan,https://github.com/intel/hyperscan,High-performance regular expression matching library,y
+4989,python_koans,gregmalcolm/python_koans,https://github.com/gregmalcolm/python_koans,Python Koans - Learn Python through TDD,y
+4989,pytorch-OpCounter,Lyken17/pytorch-OpCounter,https://github.com/Lyken17/pytorch-OpCounter,Count the MACs / FLOPs of your PyTorch model.,y
+4988,accounting.js,openexchangerates/accounting.js,https://github.com/openexchangerates/accounting.js,"A lightweight JavaScript library for number, money and currency formatting - fully localisable, zero dependencies.",y
+4988,viddy,sachaos/viddy,https://github.com/sachaos/viddy,👀 A modern watch command. Time machine and pager etc.,y
+4988,LayoutManagerGroup,DingMouRen/LayoutManagerGroup,https://github.com/DingMouRen/LayoutManagerGroup,:point_right: Customize the LayoutManager of RecyclerView(自定义LayoutManager),y
+4987,Cloud-Free-Tier-Comparison,cloudcommunity/Cloud-Free-Tier-Comparison,https://github.com/cloudcommunity/Cloud-Free-Tier-Comparison,"Comparing the free tier offers of the major cloud providers like AWS, Azure, GCP, Oracle etc.",n
+4987,alex,get-alex/alex,https://github.com/get-alex/alex,"Catch insensitive, inconsiderate writing",y
+4987,InvenTree,inventree/InvenTree,https://github.com/inventree/InvenTree,Open Source Inventory Management System,y
+4987,precedent,steven-tey/precedent,https://github.com/steven-tey/precedent,"An opinionated collection of components, hooks, and utilities for your Next.js project.",n
+4987,acts-as-taggable-on,mbleigh/acts-as-taggable-on,https://github.com/mbleigh/acts-as-taggable-on,A tagging plugin for Rails applications that allows for custom tagging along dynamic contexts.,y
+4986,chatgpt-vscode,mpociot/chatgpt-vscode,https://github.com/mpociot/chatgpt-vscode,A VSCode extension that allows you to use ChatGPT,y
+4986,pgroll,xataio/pgroll,https://github.com/xataio/pgroll,PostgreSQL zero-downtime migrations made easy,y
+4985,ShareJS,josephg/ShareJS,https://github.com/josephg/ShareJS,Collaborative editing in any app,y
+4985,runelite,runelite/runelite,https://github.com/runelite/runelite,Open source Old School RuneScape client,y
+4984,DragGAN,OpenGVLab/DragGAN,https://github.com/OpenGVLab/DragGAN,"Unofficial Implementation of DragGAN - ""Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold"" （DragGAN 全功能实现，在线Demo，本地部署试用，代码、模型已全部开源，支持Windows, macOS, Linux）",y
+4984,shortest,antiwork/shortest,https://github.com/antiwork/shortest,QA via natural language AI tests,y
+4984,996ICU,995icu/996ICU,https://github.com/995icu/996ICU,996ICU 995ICU 工作996 生病ICU 加班不规范 亲人两行泪,n
+4984,squirrel,rime/squirrel,https://github.com/rime/squirrel,【鼠鬚管】Rime for macOS,y
+4983,clashN,2dust/clashN,https://github.com/2dust/clashN,"A clash client for Windows, support Mihomo",y
+4983,spring-mvc-showcase,spring-attic/spring-mvc-showcase,https://github.com/spring-attic/spring-mvc-showcase,Demonstrates the features of the Spring MVC web framework,a
+4983,FPSSample,Unity-Technologies/FPSSample,https://github.com/Unity-Technologies/FPSSample,A first person multiplayer shooter example project in Unity,y
+4983,git-absorb,tummychow/git-absorb,https://github.com/tummychow/git-absorb,"git commit --fixup, but automatic",y
+4983,libwebsockets,warmcat/libwebsockets,https://github.com/warmcat/libwebsockets,canonical libwebsockets.org networking library,y
+4983,clib,clibs/clib,https://github.com/clibs/clib,Package manager for the C programming language.,y
+4983,booster,didi/booster,https://github.com/didi/booster,🚀Optimizer for mobile applications,y
+4982,python3-in-one-pic,rainyear/python3-in-one-pic,https://github.com/rainyear/python3-in-one-pic,Learn python3 in one picture.,n
+4982,asciidoctor,asciidoctor/asciidoctor,https://github.com/asciidoctor/asciidoctor,":gem: A fast, open source text processor and publishing toolchain, written in Ruby, for converting AsciiDoc content to HTML 5, DocBook 5, and other formats.",y
+4981,Modlishka,drk1wi/Modlishka,https://github.com/drk1wi/Modlishka,Modlishka. Reverse Proxy.,y
+4981,joda-time,JodaOrg/joda-time,https://github.com/JodaOrg/joda-time,Joda-Time is the widely used replacement for the Java date and time classes prior to Java SE 8.,y
+4981,QAuxiliary,cinit/QAuxiliary,https://github.com/cinit/QAuxiliary,QNotified phoenix - To make OICQ great again,y
+4980,awless,wallix/awless,https://github.com/wallix/awless,A Mighty CLI for AWS,y
+4979,awesome-bugbounty-tools,vavkamil/awesome-bugbounty-tools,https://github.com/vavkamil/awesome-bugbounty-tools,A curated list of various bug bounty tools,n
+4979,jocko,travisjeffery/jocko,https://github.com/travisjeffery/jocko,"Kafka implemented in Golang with built-in coordination (No ZK dep, single binary install, Cloud Native)",y
+4978,EZAudio,syedhali/EZAudio,https://github.com/syedhali/EZAudio,"An iOS and macOS audio visualization framework built upon Core Audio useful for anyone doing real-time, low-latency audio processing and visualizations.",y
+4978,postgres-language-server,supabase-community/postgres-language-server,https://github.com/supabase-community/postgres-language-server,A Language Server for Postgres,y
+4978,chardin.js,pablof7z/chardin.js,https://github.com/pablof7z/chardin.js,Simple overlay instructions for your apps.,y
+4977,InstaMaterial,frogermcs/InstaMaterial,https://github.com/frogermcs/InstaMaterial,Implementation of Instagram with Material Design (originally based on Emmanuel Pacamalan's concept),y
+4977,CloudReader,youlookwhat/CloudReader,https://github.com/youlookwhat/CloudReader,🗡️  云阅：一款基于网易云音乐UI，使用玩Android Api，Retrofit2 + RxJava2 + Room + MVVM-databinding架构开发的Android客户端,y
+4977,YuE,multimodal-art-projection/YuE,https://github.com/multimodal-art-projection/YuE,"YuE: Open Full-song Music Generation Foundation Model, something similar to Suno.ai but open",u
+4977,mapdb,jankotek/mapdb,https://github.com/jankotek/mapdb,"MapDB provides concurrent Maps, Sets and Queues backed by disk storage or off-heap-memory. It is a fast and easy to use embedded Java database engine.",y
+4977,blocksuite,toeverything/blocksuite,https://github.com/toeverything/blocksuite,🧩 Content editing tech stack for the web - BlockSuite is a toolkit for building editors and collaborative applications.,y
+4977,phc-winner-argon2,P-H-C/phc-winner-argon2,https://github.com/P-H-C/phc-winner-argon2,"The password hash Argon2, winner of PHC ",y
+4975,moco,facebookresearch/moco,https://github.com/facebookresearch/moco,PyTorch implementation of MoCo: https://arxiv.org/abs/1911.05722,y
+4975,KubeOperator,KubeOperator/KubeOperator,https://github.com/KubeOperator/KubeOperator,KubeOperator 是一个开源的轻量级 Kubernetes 发行版，专注于帮助企业规划、部署和运营生产级别的 K8s 集群。,a
+4974,terraform-cdk,hashicorp/terraform-cdk,https://github.com/hashicorp/terraform-cdk,Define infrastructure resources using programming constructs and provision them using HashiCorp Terraform,y
+4973,dootask,kuaifan/dootask,https://github.com/kuaifan/dootask,DooTask是一款开源在线项目任务管理工具，提供各类文档协作工具、在线思维导图、在线流程图、项目管理、任务分发、即时IM，文件管理等工具；同时消息功能使用非对称加密技术让你的沟通更安全。,y
+4973,kanata,jtroo/kanata,https://github.com/jtroo/kanata,Improve keyboard comfort and usability with advanced customization,y
+4973,wgcloud,tianshiyeben/wgcloud,https://github.com/tianshiyeben/wgcloud,Host management and monitoring tools,y
+4972,next-terminal,dushixiang/next-terminal,https://github.com/dushixiang/next-terminal,"Next Terminal is a simple, secure, and user-friendly interactive auditing system that supports multiple remote access protocols including RDP, SSH, VNC, Telnet, and HTTP",y
+4970,deployd,deployd/deployd,https://github.com/deployd/deployd,a toolkit for building realtime APIs,y
+4970,gpmall,2227324689/gpmall,https://github.com/2227324689/gpmall,【咕泡学院实战项目】-基于SpringBoot+Dubbo构建的电商平台-微服务架构、商城、电商、微服务、高并发、kafka、Elasticsearch,y
+4970,ProxyManager,Ocramius/ProxyManager,https://github.com/Ocramius/ProxyManager,🎩✨🌈 OOP Proxy wrappers/utilities - generates and manages proxies of your objects,y
+4969,NanoKVM,sipeed/NanoKVM,https://github.com/sipeed/NanoKVM,"Affordable, Multifunctional, Nano RISC-V IP-KVM",y
+4969,magnum,mosra/magnum,https://github.com/mosra/magnum,Lightweight and modular C++11 graphics middleware for games and data visualization,y
+4969,github-corners,tholman/github-corners,https://github.com/tholman/github-corners,"A fresher ""Fork me on GitHub"" callout.",n
+4968,firebase-js-sdk,firebase/firebase-js-sdk,https://github.com/firebase/firebase-js-sdk,Firebase Javascript SDK,y
+4968,wretch,elbywan/wretch,https://github.com/elbywan/wretch,A tiny wrapper built around fetch with an intuitive syntax. :candy:,y
+4967,angularjs-style-guide,mgechev/angularjs-style-guide,https://github.com/mgechev/angularjs-style-guide,📚 Community-driven set of best practices for AngularJS application development,y
+4967,readyset,readysettech/readyset,https://github.com/readysettech/readyset,"Readyset is a MySQL and Postgres wire-compatible caching layer that sits in front of existing databases to speed up queries and horizontally scale read throughput. Under the hood, ReadySet caches the results of cached select statements and incrementally updates these results over time as the underlying data changes.",y
+4967,xpay,Exrick/xpay,https://github.com/Exrick/xpay,XPay个人免签收款支付系统 完全免费 资金直接到达本人账号 支持 支付宝 微信 QQ 云闪付 无需备案 无需签约 无需挂机监控APP 无需插件 无需第三方支付SDK 无需营业执照身份证 只需收款码 搞定支付流程 现已支持移动端支付,y
+4966,keras-js,transcranial/keras-js,https://github.com/transcranial/keras-js,"Run Keras models in the browser, with GPU support using WebGL",y
+4966,wx-charts,xiaolin3303/wx-charts,https://github.com/xiaolin3303/wx-charts,微信小程序图表库，Charts for WeChat Mini Program,y
+4965,recursos-gratuitos,iuricode/recursos-gratuitos,https://github.com/iuricode/recursos-gratuitos,Coleção com links para desenvolvimento,n
+4965,editly,mifi/editly,https://github.com/mifi/editly,"Slick, declarative command line video editing & API",y
+4965,roc,roc-lang/roc,https://github.com/roc-lang/roc,"A fast, friendly, functional language.",y
+4964,elasticsearch-HQ,ElasticHQ/elasticsearch-HQ,https://github.com/ElasticHQ/elasticsearch-HQ,Monitoring and Management Web Application for ElasticSearch instances and clusters.,y
+4964,retoolkit,mentebinaria/retoolkit,https://github.com/mentebinaria/retoolkit,Reverse Engineer's Toolkit,y
+4963,phpunit-mock-objects,sebastianbergmann/phpunit-mock-objects,https://github.com/sebastianbergmann/phpunit-mock-objects,Mock Object library for PHPUnit,y
+4963,epoch,epochjs/epoch,https://github.com/epochjs/epoch,"A general purpose, real-time visualization library.",y
+4962,thrust,NVIDIA/thrust,https://github.com/NVIDIA/thrust,[ARCHIVED] The C++ parallel algorithms library. See https://github.com/NVIDIA/cccl,y
+4962,katoolin,LionSec/katoolin,https://github.com/LionSec/katoolin,Automatically install all Kali linux tools,y
+4962,davinci,edp963/davinci,https://github.com/edp963/davinci,Davinci is a DVsaaS (Data Visualization as a Service) Platform,y
+4961,why-did-you-update,garbles/why-did-you-update,https://github.com/garbles/why-did-you-update,:boom: Puts your console on blast when React is making unnecessary updates.,a
+4961,what-happens-when-k8s,jamiehannaford/what-happens-when-k8s,https://github.com/jamiehannaford/what-happens-when-k8s,🤔  What happens when I type kubectl run?,n
+4960,oshi,oshi/oshi,https://github.com/oshi/oshi,Native Operating System and Hardware Information,y
+4960,DisableWinTracking,10se1ucgo/DisableWinTracking,https://github.com/10se1ucgo/DisableWinTracking,Uses some known methods that attempt to minimize tracking in Windows 10,n
+4959,awesome-elasticsearch,dzharii/awesome-elasticsearch,https://github.com/dzharii/awesome-elasticsearch,"A curated list of the most important and useful resources about elasticsearch: articles, videos, blogs, tips and tricks, use cases. All about Elasticsearch!",a
+4959,commonmark-spec,commonmark/commonmark-spec,https://github.com/commonmark/commonmark-spec,"CommonMark spec, with reference implementations in C and JavaScript",y
+4959,actions-gh-pages,peaceiris/actions-gh-pages,https://github.com/peaceiris/actions-gh-pages,GitHub Actions for GitHub Pages 🚀 Deploy static files and publish your site easily. Static-Site-Generators-friendly.,y
+4959,racket,racket/racket,https://github.com/racket/racket,The Racket repository,y
+4959,Shell,moudey/Shell,https://github.com/moudey/Shell,Powerful context menu manager for Windows File Explorer,y
+4957,node-jscs,jscs-dev/node-jscs,https://github.com/jscs-dev/node-jscs,:arrow_heading_up: JavaScript Code Style checker (unmaintained),a
+4957,pdf2htmlEX,pdf2htmlEX/pdf2htmlEX,https://github.com/pdf2htmlEX/pdf2htmlEX,Convert PDF to HTML without losing text or format.,y
+4957,Fakeflix,Th3Wall/Fakeflix,https://github.com/Th3Wall/Fakeflix,Not the usual clone that you can find on the web.,y
+4956,cpplinks,MattPD/cpplinks,https://github.com/MattPD/cpplinks,A categorized list of C++ resources.,n
+4956,Agent-S,simular-ai/Agent-S,https://github.com/simular-ai/Agent-S,Agent S: an open agentic framework that uses computers like a human,y
+4954,glslViewer,patriciogonzalezvivo/glslViewer,https://github.com/patriciogonzalezvivo/glslViewer,Console-based GLSL Sandbox for 2D/3D shaders,y
+4954,Android-IMSI-Catcher-Detector,CellularPrivacy/Android-IMSI-Catcher-Detector,https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector,"AIMSICD • Fight IMSI-Catcher, StingRay and silent SMS!",y
+4954,VLM-R1,om-ai-lab/VLM-R1,https://github.com/om-ai-lab/VLM-R1,Solve Visual Understanding with Reinforced VLMs,y
+4953,LyricsX,ddddxxx/LyricsX,https://github.com/ddddxxx/LyricsX,🎶 Ultimate lyrics app for macOS.,y
+4953,PoWFaucet,pk910/PoWFaucet,https://github.com/pk910/PoWFaucet,"Modularized faucet for EVM chains with different protection methods (Captcha, Mining, IP, Mainnet Balance, Gitcoin Passport and more)",y
+4953,interpretable-ml-book,christophM/interpretable-ml-book,https://github.com/christophM/interpretable-ml-book,Book about interpretable machine learning,n
+4953,prompt-optimizer,linshenkx/prompt-optimizer,https://github.com/linshenkx/prompt-optimizer,一款提示词优化器，助力于编写高质量的提示词,y
+4953,pvetools,ivanhao/pvetools,https://github.com/ivanhao/pvetools,"proxmox ve tools script(debian9+ can use it).Including email, samba, NFS set zfs max ram, nested virtualization ,docker , pci passthrough etc. for english user,please look the end of readme.",n
+4952,dunst,dunst-project/dunst,https://github.com/dunst-project/dunst,Lightweight and customizable notification daemon,y
+4952,uncaptcha2,ecthros/uncaptcha2,https://github.com/ecthros/uncaptcha2,defeating the latest version of ReCaptcha with 91% accuracy,n
+4952,extism,extism/extism,https://github.com/extism/extism,"The framework for building with WebAssembly (wasm). Easily & securely load wasm modules, move data, call functions, and build extensible apps.",y
+4952,vscode-rainbow-fart,SaekiRaku/vscode-rainbow-fart,https://github.com/SaekiRaku/vscode-rainbow-fart,"一个在你编程时疯狂称赞你的 VSCode 扩展插件 | An VSCode extension that keeps giving you compliment while you are coding, it will checks the keywords of code to play suitable sounds.",y
+4952,react-sortable-tree,frontend-collective/react-sortable-tree,https://github.com/frontend-collective/react-sortable-tree,Drag-and-drop sortable component for nested data and hierarchies,y
+4951,esp_wifi_repeater,martin-ger/esp_wifi_repeater,https://github.com/martin-ger/esp_wifi_repeater,A full functional WiFi Repeater (correctly: a WiFi NAT Router),y
+4951,blendid,vigetlabs/blendid,https://github.com/vigetlabs/blendid,A delicious blend of gulp tasks combined into a configurable asset pipeline and static site builder,a
+4951,RxJava2-Android-Samples,amitshekhariitbhu/RxJava2-Android-Samples,https://github.com/amitshekhariitbhu/RxJava2-Android-Samples,RxJava 2 Android Examples - How to use RxJava 2 in Android,y
+4950,client,Droid-ify/client,https://github.com/Droid-ify/client,F-Droid client with Material UI.,y
+4949,NavigationTabBar,Devlight/NavigationTabBar,https://github.com/Devlight/NavigationTabBar,Navigation tab bar with colorful interactions.,y
+4949,guardrails,guardrails-ai/guardrails,https://github.com/guardrails-ai/guardrails,Adding guardrails to large language models.,y
+4947,SimpleNES,amhndu/SimpleNES,https://github.com/amhndu/SimpleNES,An NES emulator in C++,y
+4947,troposphere,cloudtools/troposphere,https://github.com/cloudtools/troposphere,troposphere - Python library to create AWS CloudFormation descriptions,y
+4946,mcp-go,mark3labs/mcp-go,https://github.com/mark3labs/mcp-go,"A Go implementation of the Model Context Protocol (MCP), enabling seamless integration between LLM applications and external data sources and tools.",y
+4946,CsvHelper,JoshClose/CsvHelper,https://github.com/JoshClose/CsvHelper,Library to help reading and writing CSV files,y
+4946,gaianet-node,GaiaNet-AI/gaianet-node,https://github.com/GaiaNet-AI/gaianet-node,Install and run your own AI agent service,y
+4945,katran,facebookincubator/katran,https://github.com/facebookincubator/katran,A high performance layer 4 load balancer,y
+4945,vugu,vugu/vugu,https://github.com/vugu/vugu,Vugu: A modern UI library for Go+WebAssembly (experimental),y
+4944,one_click_script,jinwyp/one_click_script,https://github.com/jinwyp/one_click_script,install latest or LTS linux kernel and enable BBR or BBR plus,n
+4944,node-xml2js,Leonidas-from-XIV/node-xml2js,https://github.com/Leonidas-from-XIV/node-xml2js,XML to JavaScript object converter.,y
+4944,joint,clientIO/joint,https://github.com/clientIO/joint,A proven SVG-based JavaScript diagramming library powering exceptional UIs,y
+4943,AniPortrait,Zejun-Yang/AniPortrait,https://github.com/Zejun-Yang/AniPortrait,AniPortrait: Audio-Driven Synthesis of Photorealistic Portrait Animation,y
+4942,DesignPattern,youlookwhat/DesignPattern,https://github.com/youlookwhat/DesignPattern,📚 Java 23种设计模式全归纳,n
+4942,voice-over-translation,ilyhalight/voice-over-translation,https://github.com/ilyhalight/voice-over-translation,"Небольшое расширение, которое добавляет закадровый перевод видео из YaBrowser в другие браузеры",y
+4942,PyPortfolioOpt,robertmartin8/PyPortfolioOpt,https://github.com/robertmartin8/PyPortfolioOpt,"Financial portfolio optimisation in python, including classical efficient frontier, Black-Litterman, Hierarchical Risk Parity",y
+4941,clasp,google/clasp,https://github.com/google/clasp,🔗 Command Line Apps Script Projects,y
+4941,LibreCAD,LibreCAD/LibreCAD,https://github.com/LibreCAD/LibreCAD,"LibreCAD is a cross-platform 2D CAD program written in C++17. It can read DXF/DWG files and can write DXF/PDF/SVG files. It supports point/line/circle/ellipse/parabola/spline primitives. The user interface is highly customizable, and has dozens of translations.",y
+4939,kraken,openkraken/kraken,https://github.com/openkraken/kraken,"A web standards-compliant, high-performance rendering engine based on Flutter.",y
+4939,dlwpt-code,deep-learning-with-pytorch/dlwpt-code,https://github.com/deep-learning-with-pytorch/dlwpt-code,"Code for the book Deep Learning with PyTorch by Eli Stevens, Luca Antiga, and Thomas Viehmann.",n
+4939,freegeoip,fiorix/freegeoip,https://github.com/fiorix/freegeoip,IP geolocation web server,y
+4938,webmin,webmin/webmin,https://github.com/webmin/webmin,Powerful and flexible web-based server management control panel,y
+4938,textgenrnn,minimaxir/textgenrnn,https://github.com/minimaxir/textgenrnn,Easily train your own text-generating neural network of any size and complexity on any text dataset with a few lines of code.,u
+4938,ui,shoutem/ui,https://github.com/shoutem/ui,Customizable set of components for React Native applications,y
+4937,mox,mjl-/mox,https://github.com/mjl-/mox,modern full-featured open source secure mail server for low-maintenance self-hosted email,y
+4937,cubism,square/cubism,https://github.com/square/cubism,Cubism.js: A JavaScript library for time series visualization.,y
+4936,seL4,seL4/seL4,https://github.com/seL4/seL4,The seL4 microkernel,y
+4936,tvbox,qist/tvbox,https://github.com/qist/tvbox,OK影视、tvbox配置文件，如果喜欢，请Fork自用。使用前请仔细阅读仓库说明，一旦使用将被视为你已了解。,u
+4936,mercure,dunglas/mercure,https://github.com/dunglas/mercure,"🪽 An open, easy, fast, reliable and battery-efficient solution for real-time communications",y
+4935,Applite,milanvarady/Applite,https://github.com/milanvarady/Applite,User-friendly GUI macOS application for Homebrew Casks,y
+4935,FXBlurView,nicklockwood/FXBlurView,https://github.com/nicklockwood/FXBlurView,[DEPRECATED],a
+4935,react-native-styling-cheat-sheet,vhpoet/react-native-styling-cheat-sheet,https://github.com/vhpoet/react-native-styling-cheat-sheet,Most of the React Native styling material in one page,n
+4935,pest,pest-parser/pest,https://github.com/pest-parser/pest,The Elegant Parser,y
+4934,PHP-FFMpeg,PHP-FFMpeg/PHP-FFMpeg,https://github.com/PHP-FFMpeg/PHP-FFMpeg,An object oriented PHP driver for FFMpeg binary,y
+4934,Cakebrew,brunophilipe/Cakebrew,https://github.com/brunophilipe/Cakebrew,Manage your Homebrew formulas with style using Cakebrew.,y
+4933,promise-fun,sindresorhus/promise-fun,https://github.com/sindresorhus/promise-fun,"Promise packages, patterns, chat, and tutorials",n
+4932,Publish,JohnSundell/Publish,https://github.com/JohnSundell/Publish,A static site generator for Swift developers,y
+4931,armeria,line/armeria,https://github.com/line/armeria,"Your go-to microservice framework for any situation, from the creator of Netty et al. You can build any type of microservice leveraging your favorite technologies,  including gRPC, Thrift, Kotlin, Retrofit, Reactive Streams, Spring Boot and Dropwizard.",y
+4931,proposal-optional-chaining,tc39/proposal-optional-chaining,https://github.com/tc39/proposal-optional-chaining,,a
+4931,kraken-js,krakenjs/kraken-js,https://github.com/krakenjs/kraken-js,An express-based Node.js web application bootstrapping module.,y
+4930,Home-AssistantConfig,CCOSTAN/Home-AssistantConfig,https://github.com/CCOSTAN/Home-AssistantConfig,":house: Home Assistant configuration & Documentation for my Smart House.  Write-ups, videos, part lists, and links throughout. Be sure to :star: it. Updated FREQUENTLY!",n
+4929,pytorch-template,victoresque/pytorch-template,https://github.com/victoresque/pytorch-template,PyTorch deep learning projects made easy.,y
+4929,LeetCode-Swift,soapyigu/LeetCode-Swift,https://github.com/soapyigu/LeetCode-Swift,Solutions to LeetCode by Swift,n
+4929,terrascan,tenable/terrascan,https://github.com/tenable/terrascan,Detect compliance and security violations across Infrastructure as Code to mitigate risk before provisioning cloud native infrastructure.,y
+4929,dawarich,Freika/dawarich,https://github.com/Freika/dawarich,Self-hostable alternative to Google Location History (Google Maps Timeline),y
+4929,wireproxy,whyvl/wireproxy,https://github.com/whyvl/wireproxy,Wireguard client that exposes itself as a socks5 proxy,y
+4929,fluvio,infinyon/fluvio,https://github.com/infinyon/fluvio,🦀 event stream processing for developers to collect and transform data in motion to power responsive data intensive applications.,y
+4929,FinanceDatabase,JerBouma/FinanceDatabase,https://github.com/JerBouma/FinanceDatabase,"This is a database of 300.000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets.",y
+4929,bitcore,bitpay/bitcore,https://github.com/bitpay/bitcore,A full stack for bitcoin and blockchain-based applications,y
+4929,lsp-mode,emacs-lsp/lsp-mode,https://github.com/emacs-lsp/lsp-mode,Emacs client/library for the Language Server Protocol,y
+4928,ignite,apache/ignite,https://github.com/apache/ignite,Apache Ignite,y
+4928,dynamic-datasource,baomidou/dynamic-datasource,https://github.com/baomidou/dynamic-datasource,dynamic datasource for springboot 多数据源 动态数据源 主从分离 读写分离 分布式事务,y
+4928,wp-cli,wp-cli/wp-cli,https://github.com/wp-cli/wp-cli,⚙️ WP-CLI framework,y
+4928,shadcn-table,sadmann7/shadcn-table,https://github.com/sadmann7/shadcn-table,"Shadcn table with server-side sorting, filtering, and pagination.",y
+4927,vmaf,Netflix/vmaf,https://github.com/Netflix/vmaf,Perceptual video quality assessment based on multi-method fusion.,y
+4927,Qwen2.5-Coder,QwenLM/Qwen2.5-Coder,https://github.com/QwenLM/Qwen2.5-Coder,"Qwen2.5-Coder is the code version of Qwen2.5, the large language model series developed by Qwen team, Alibaba Cloud.",u
+4926,cosign,sigstore/cosign,https://github.com/sigstore/cosign,Code signing and transparency for containers and binaries,y
+4926,react-native-linear-gradient,react-native-linear-gradient/react-native-linear-gradient,https://github.com/react-native-linear-gradient/react-native-linear-gradient,A <LinearGradient /> component for react-native,y
+4926,lightfm,lyst/lightfm,https://github.com/lyst/lightfm,"A Python implementation of LightFM, a hybrid recommendation algorithm.",y
+4925,autotrack,googleanalytics/autotrack,https://github.com/googleanalytics/autotrack,Automatic and enhanced Google Analytics tracking for common user interactions on the web.,y
+4925,wmr,preactjs/wmr,https://github.com/preactjs/wmr,👩‍🚀 The tiny all-in-one development tool for modern web apps.,y
+4924,GCPSketchnote,priyankavergadia/GCPSketchnote,https://github.com/priyankavergadia/GCPSketchnote,"If you are looking to become a Google Cloud Engineer , then you are at the right place. GCPSketchnote is series where I share Google Cloud concepts in quick and easy to learn format.",n
+4924,Fantasy-Map-Generator,Azgaar/Fantasy-Map-Generator,https://github.com/Azgaar/Fantasy-Map-Generator,Web application generating interactive and highly customizable maps,y
+4923,gitify,gitify-app/gitify,https://github.com/gitify-app/gitify,"GitHub notifications on your menu bar. Available on macOS, Windows & Linux.",y
+4922,amqp,streadway/amqp,https://github.com/streadway/amqp,Go client for AMQP 0.9.1,y
+4921,trpl-zh-cn,KaiserY/trpl-zh-cn,https://github.com/KaiserY/trpl-zh-cn,Rust 程序设计语言（2024 edition 施工中）,n
+4921,ToolGood.Words,toolgood/ToolGood.Words,https://github.com/toolgood/ToolGood.Words,一款高性能敏感词(非法词/脏字)检测过滤组件，附带繁体简体互换，支持全角半角互换，汉字转拼音，模糊搜索等功能。,y
+4921,danfojs,javascriptdata/danfojs,https://github.com/javascriptdata/danfojs,"Danfo.js is an open source, JavaScript library providing high performance, intuitive, and easy to use data structures for manipulating and processing structured data.",y
+4921,awesome-bug-bounty,djadmin/awesome-bug-bounty,https://github.com/djadmin/awesome-bug-bounty,A comprehensive curated list of available Bug Bounty & Disclosure Programs and Write-ups.,n
