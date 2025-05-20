@@ -3,19 +3,15 @@
 *.env
 **/node_modules
 package-lock.json
-**/data/analyzed_projects/*
-**/data/excluded_options/*
-**/data/extracted_options/*
-**/data/concept_cochanges/*
-**/data/file_cochanges/*
-**/data/extracted_config_data/*
-**/data/figures/*
-**/data/option_cochanges/*
-**/data/test_data/*
+**/data/cochanges/*
 **/data/graph_data/*
 analysis.log
 **/data/results/*
 **/results/*
 
+**/data/figures/*
+**/data/options/*
+**/data/microservice_projects/*
+**/data/top_github_projects/*
 **/data/microservices/*
 **/data/projects/*

@@ -13,7 +13,7 @@ COMMAND=$(sed "${TASK_ID}q;d" $COMMANDS_FILE)
 PROJECT_NAME=$(echo "$COMMAND" | grep -oP '(?<=--url=)[^ ]+' | sed 's|.*/||')
 
 # Define output directory and expected result file
-OUT_FOLDER="/home/ssimon/GitHub/config-space/slurm/results/${PROJECT_NAME}"
+OUT_FOLDER="/home/ssimon/GitHub/config-space/slurm/microservices/${PROJECT_NAME}"
 RESULT_FILE="${OUT_FOLDER}/${PROJECT_NAME}.json"
 
 # Check if output folder and result file exist
