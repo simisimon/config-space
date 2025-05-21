@@ -255,7 +255,7 @@ def analyze_repository(repo_path: str, project_name: str) -> Dict:
                         "is_latest_commit": is_latest_commit,
                         "is_config_related": is_config_related,
                         "author": f"{commit.author.name} <{commit.author.email}>",
-                        "commit_mgs": str(commit.message),
+                        "commit_msg": str(commit.message),
                         "network_data": network_data,
                         "conflicts": conflicts
                     }
@@ -270,7 +270,7 @@ def analyze_repository(repo_path: str, project_name: str) -> Dict:
                         "is_latest_commit": is_latest_commit,
                         "is_config_related": is_config_related,
                         "author": f"{commit.author.name} <{commit.author.email}>",
-                        "commit_mgs": str(commit.message),
+                        "commit_msg": str(commit.message),
                         "network_data": {},
                         "conflicts": []
                     }
@@ -284,7 +284,7 @@ def analyze_repository(repo_path: str, project_name: str) -> Dict:
                     "is_latest_commit": is_latest_commit,
                     "is_config_related": is_config_related,
                     "author": f"{commit.author.name} <{commit.author.email}>",
-                    "commit_mgs": str(commit.message),
+                    "commit_msg": str(commit.message),
                     "network_data": {},
                     "conflicts": []
                 }
