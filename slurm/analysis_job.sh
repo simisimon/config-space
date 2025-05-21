@@ -46,8 +46,12 @@ if [ -d "$DIR_EXP" ]; then
     source $DIR_EXP/env/bin/activate
 
     python3 --version
-    python3 -m pip install git+https://github.com/AI-4-SE/CfgNet.git@config-space
     python3 -m pip install tqdm
+    python3 -m pip install cleo
+    python3 -m pip install shellingham
+    python3 -m pip install requests
+    python3 -m pip install git+https://github.com/AI-4-SE/CfgNet.git@config-space
+    
   fi
 else
   echo "Directory $DIR_EXP not found."
