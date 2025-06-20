@@ -3,7 +3,7 @@
 PARTITION='edison5a'
 JOB_NAME='ssimon-config-space'
 
-COMMANDS_FILE='./microservice_projects.txt'
+COMMANDS_FILE='./projects_final.txt'
 
 NTASKS=$(cat $COMMANDS_FILE | wc -l)
 echo "$(date) Submitting job $JOB_NAME to $PARTITION monitoring $NTASKS configurations."
