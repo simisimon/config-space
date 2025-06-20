@@ -1,7 +1,6 @@
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/facebook/react --name=react
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/torvalds/linux --name=linux
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/tensorflow/tensorflow --name=tensorflow
-python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/ossu/computer-science --name=computer-science
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/ohmyzsh/ohmyzsh --name=ohmyzsh
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/Significant-Gravitas/AutoGPT --name=AutoGPT
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/microsoft/vscode --name=vscode
@@ -15,7 +14,6 @@ python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.co
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/Genymobile/scrcpy --name=scrcpy
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/facebook/react-native --name=react-native
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/microsoft/PowerToys --name=PowerToys
-python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/521xueweihan/HelloGitHub --name=HelloGitHub
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/electron/electron --name=electron
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/kubernetes/kubernetes --name=kubernetes
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/yt-dlp/yt-dlp --name=yt-dlp
