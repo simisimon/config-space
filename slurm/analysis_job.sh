@@ -13,16 +13,8 @@ COMMAND=$(sed "${TASK_ID}q;d" $COMMANDS_FILE)
 PROJECT_NAME=$(echo "$COMMAND" | grep -oP '(?<=--url=)[^ ]+' | sed 's|.*/||')
 
 # Define output directory and expected result file
-OUT_FOLDER="/home/ssimon/GitHub/config-space/slurm/microservices/${PROJECT_NAME}"
+OUT_FOLDER="/home/ssimon/GitHub/config-space/slurm/projects/${PROJECT_NAME}"
 RESULT_FILE="${OUT_FOLDER}/${PROJECT_NAME}.json"
-
-# Check if output folder and result file exist
-if [ -f "$RESULT_FILE" ]; then
-  echo "Result file already exists: $RESULT_FILE"
-  echo "Skipping job execution."
-  exit 0
-fi
-
 
 # prepare filesystem
 rm -rf /tmp/ssimon/config-space

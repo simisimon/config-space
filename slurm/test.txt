@@ -1,2 +1,2 @@
-python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/kamranahmedse/developer-roadmap --name=developer-roadmap
-python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/kamranahmedse/developer-roadmap --name=developer-roadmap
+python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/sqshq/piggymetrics --name=piggymetrics
+python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/sqshq/piggymetrics --name=piggymetrics
