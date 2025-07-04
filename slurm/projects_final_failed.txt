@@ -1,0 +1,2 @@
+python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/lucide-icons/lucide --name=lucide
+python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/plotly/plotly.js --name=plotly.js

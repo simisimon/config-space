@@ -316,8 +316,8 @@ def process_project(project_url: str, project_name: str):
     """Process a single project."""
 
     # Define the output file path
-    #output_file = f"/tmp/ssimon/config-space/experiments/{project_name}.json"
-    output_file = f"../data/test_projects/{project_name}.json"
+    output_file = f"/tmp/ssimon/config-space/experiments/{project_name}.json"
+    #output_file = f"../data/test_projects/{project_name}.json"
 
     print(f"Processing project: {project_name}")
         
