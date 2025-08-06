@@ -1,0 +1,614 @@
+[
+    {
+        "name": "linux",
+        "url": "https://github.com/torvalds/linux"
+    },
+    {
+        "name": "AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT"
+    },
+    {
+        "name": "flutter",
+        "url": "https://github.com/flutter/flutter"
+    },
+    {
+        "name": "ollama",
+        "url": "https://github.com/ollama/ollama"
+    },
+    {
+        "name": "electron",
+        "url": "https://github.com/electron/electron"
+    },
+    {
+        "name": "kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes"
+    },
+    {
+        "name": "TypeScript",
+        "url": "https://github.com/microsoft/TypeScript"
+    },
+    {
+        "name": "rust",
+        "url": "https://github.com/rust-lang/rust"
+    },
+    {
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui"
+    },
+    {
+        "name": "angular",
+        "url": "https://github.com/angular/angular"
+    },
+    {
+        "name": "material-ui",
+        "url": "https://github.com/mui/material-ui"
+    },
+    {
+        "name": "pytorch",
+        "url": "https://github.com/pytorch/pytorch"
+    },
+    {
+        "name": "storybook",
+        "url": "https://github.com/storybookjs/storybook"
+    },
+    {
+        "name": "supabase",
+        "url": "https://github.com/supabase/supabase"
+    },
+    {
+        "name": "bun",
+        "url": "https://github.com/oven-sh/bun"
+    },
+    {
+        "name": "spring-boot",
+        "url": "https://github.com/spring-projects/spring-boot"
+    },
+    {
+        "name": "langflow",
+        "url": "https://github.com/langflow-ai/langflow"
+    },
+    {
+        "name": "elasticsearch",
+        "url": "https://github.com/elastic/elasticsearch"
+    },
+    {
+        "name": "moby",
+        "url": "https://github.com/moby/moby"
+    },
+    {
+        "name": "grafana",
+        "url": "https://github.com/grafana/grafana"
+    },
+    {
+        "name": "immich",
+        "url": "https://github.com/immich-app/immich"
+    },
+    {
+        "name": "union",
+        "url": "https://github.com/unionlabs/union"
+    },
+    {
+        "name": "strapi",
+        "url": "https://github.com/strapi/strapi"
+    },
+    {
+        "name": "superset",
+        "url": "https://github.com/apache/superset"
+    },
+    {
+        "name": "ansible",
+        "url": "https://github.com/ansible/ansible"
+    },
+    {
+        "name": "obs-studio",
+        "url": "https://github.com/obsproject/obs-studio"
+    },
+    {
+        "name": "AppFlowy",
+        "url": "https://github.com/AppFlowy-IO/AppFlowy"
+    },
+    {
+        "name": "echarts",
+        "url": "https://github.com/apache/echarts"
+    },
+    {
+        "name": "zed",
+        "url": "https://github.com/zed-industries/zed"
+    },
+    {
+        "name": "redux",
+        "url": "https://github.com/reduxjs/redux"
+    },
+    {
+        "name": "ghidra",
+        "url": "https://github.com/NationalSecurityAgency/ghidra"
+    },
+    {
+        "name": "ragflow",
+        "url": "https://github.com/infiniflow/ragflow"
+    },
+    {
+        "name": "gatsby",
+        "url": "https://github.com/gatsbyjs/gatsby"
+    },
+    {
+        "name": "uBlock",
+        "url": "https://github.com/gorhill/uBlock"
+    },
+    {
+        "name": "AFFiNE",
+        "url": "https://github.com/toeverything/AFFiNE"
+    },
+    {
+        "name": "ionic-framework",
+        "url": "https://github.com/ionic-team/ionic-framework"
+    },
+    {
+        "name": "astro",
+        "url": "https://github.com/withastro/astro"
+    },
+    {
+        "name": "appwrite",
+        "url": "https://github.com/appwrite/appwrite"
+    },
+    {
+        "name": "rclone",
+        "url": "https://github.com/rclone/rclone"
+    },
+    {
+        "name": "DefinitelyTyped",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped"
+    },
+    {
+        "name": "bulma",
+        "url": "https://github.com/jgthms/bulma"
+    },
+    {
+        "name": "joplin",
+        "url": "https://github.com/laurent22/joplin"
+    },
+    {
+        "name": "Ghost",
+        "url": "https://github.com/TryGhost/Ghost"
+    },
+    {
+        "name": "gitea",
+        "url": "https://github.com/go-gitea/gitea"
+    },
+    {
+        "name": "cypress",
+        "url": "https://github.com/cypress-io/cypress"
+    },
+    {
+        "name": "discourse",
+        "url": "https://github.com/discourse/discourse"
+    },
+    {
+        "name": "EasySpider",
+        "url": "https://github.com/NaiboWang/EasySpider"
+    },
+    {
+        "name": "tidb",
+        "url": "https://github.com/pingcap/tidb"
+    },
+    {
+        "name": "photoprism",
+        "url": "https://github.com/photoprism/photoprism"
+    },
+    {
+        "name": "ray",
+        "url": "https://github.com/ray-project/ray"
+    },
+    {
+        "name": "appsmith",
+        "url": "https://github.com/appsmithorg/appsmith"
+    },
+    {
+        "name": "ccxt",
+        "url": "https://github.com/ccxt/ccxt"
+    },
+    {
+        "name": "aspnetcore",
+        "url": "https://github.com/dotnet/aspnetcore"
+    },
+    {
+        "name": "cal.com",
+        "url": "https://github.com/calcom/cal.com"
+    },
+    {
+        "name": "taro",
+        "url": "https://github.com/NervJS/taro"
+    },
+    {
+        "name": "insomnia",
+        "url": "https://github.com/Kong/insomnia"
+    },
+    {
+        "name": "lapce",
+        "url": "https://github.com/lapce/lapce"
+    },
+    {
+        "name": "ToolJet",
+        "url": "https://github.com/ToolJet/ToolJet"
+    },
+    {
+        "name": "metasploit-framework",
+        "url": "https://github.com/rapid7/metasploit-framework"
+    },
+    {
+        "name": "payload",
+        "url": "https://github.com/payloadcms/payload"
+    },
+    {
+        "name": "chatbox",
+        "url": "https://github.com/chatboxai/chatbox"
+    },
+    {
+        "name": "llvm-project",
+        "url": "https://github.com/llvm/llvm-project"
+    },
+    {
+        "name": "mattermost",
+        "url": "https://github.com/mattermost/mattermost"
+    },
+    {
+        "name": "selenium",
+        "url": "https://github.com/SeleniumHQ/selenium"
+    },
+    {
+        "name": "swc",
+        "url": "https://github.com/swc-project/swc"
+    },
+    {
+        "name": "refine",
+        "url": "https://github.com/refinedev/refine"
+    },
+    {
+        "name": "cockroach",
+        "url": "https://github.com/cockroachdb/cockroach"
+    },
+    {
+        "name": "directus",
+        "url": "https://github.com/directus/directus"
+    },
+    {
+        "name": "servo",
+        "url": "https://github.com/servo/servo"
+    },
+    {
+        "name": "backstage",
+        "url": "https://github.com/backstage/backstage"
+    },
+    {
+        "name": "minikube",
+        "url": "https://github.com/kubernetes/minikube"
+    },
+    {
+        "name": "symfony",
+        "url": "https://github.com/symfony/symfony"
+    },
+    {
+        "name": "medusa",
+        "url": "https://github.com/medusajs/medusa"
+    },
+    {
+        "name": "lighthouse",
+        "url": "https://github.com/GoogleChrome/lighthouse"
+    },
+    {
+        "name": "trilium",
+        "url": "https://github.com/TriliumNext/trilium"
+    },
+    {
+        "name": "turborepo",
+        "url": "https://github.com/vercel/turborepo"
+    },
+    {
+        "name": "keycloak",
+        "url": "https://github.com/keycloak/keycloak"
+    },
+    {
+        "name": "redash",
+        "url": "https://github.com/getredash/redash"
+    },
+    {
+        "name": "posthog",
+        "url": "https://github.com/PostHog/posthog"
+    },
+    {
+        "name": "Signal-Android",
+        "url": "https://github.com/signalapp/Signal-Android"
+    },
+    {
+        "name": "continue",
+        "url": "https://github.com/continuedev/continue"
+    },
+    {
+        "name": "umami",
+        "url": "https://github.com/umami-software/umami"
+    },
+    {
+        "name": "quasar",
+        "url": "https://github.com/quasarframework/quasar"
+    },
+    {
+        "name": "Telegram",
+        "url": "https://github.com/DrKLO/Telegram"
+    },
+    {
+        "name": "erpnext",
+        "url": "https://github.com/frappe/erpnext"
+    },
+    {
+        "name": "jitsi-meet",
+        "url": "https://github.com/jitsi/jitsi-meet"
+    },
+    {
+        "name": "InvokeAI",
+        "url": "https://github.com/invoke-ai/InvokeAI"
+    },
+    {
+        "name": "PhotoSwipe",
+        "url": "https://github.com/dimsemenov/PhotoSwipe"
+    },
+    {
+        "name": "hono",
+        "url": "https://github.com/honojs/hono"
+    },
+    {
+        "name": "QtScrcpy",
+        "url": "https://github.com/barry-ran/QtScrcpy"
+    },
+    {
+        "name": "zellij",
+        "url": "https://github.com/zellij-org/zellij"
+    },
+    {
+        "name": "RxSwift",
+        "url": "https://github.com/ReactiveX/RxSwift"
+    },
+    {
+        "name": "storm",
+        "url": "https://github.com/stanford-oval/storm"
+    },
+    {
+        "name": "heroui",
+        "url": "https://github.com/heroui-inc/heroui"
+    },
+    {
+        "name": "masscan",
+        "url": "https://github.com/robertdavidgraham/masscan"
+    },
+    {
+        "name": "changedetection.io",
+        "url": "https://github.com/dgtlmoon/changedetection.io"
+    },
+    {
+        "name": "BaseRecyclerViewAdapterHelper",
+        "url": "https://github.com/CymChad/BaseRecyclerViewAdapterHelper"
+    },
+    {
+        "name": "atuin",
+        "url": "https://github.com/atuinsh/atuin"
+    },
+    {
+        "name": "sniffnet",
+        "url": "https://github.com/GyulyVGC/sniffnet"
+    },
+    {
+        "name": "kratos",
+        "url": "https://github.com/go-kratos/kratos"
+    },
+    {
+        "name": "homepage",
+        "url": "https://github.com/gethomepage/homepage"
+    },
+    {
+        "name": "Babylon.js",
+        "url": "https://github.com/BabylonJS/Babylon.js"
+    },
+    {
+        "name": "qdrant",
+        "url": "https://github.com/qdrant/qdrant"
+    },
+    {
+        "name": "litellm",
+        "url": "https://github.com/BerriAI/litellm"
+    },
+    {
+        "name": "Mindustry",
+        "url": "https://github.com/Anuken/Mindustry"
+    },
+    {
+        "name": "jenkins",
+        "url": "https://github.com/jenkinsci/jenkins"
+    },
+    {
+        "name": "chatwoot",
+        "url": "https://github.com/chatwoot/chatwoot"
+    },
+    {
+        "name": "openapi-generator",
+        "url": "https://github.com/OpenAPITools/openapi-generator"
+    },
+    {
+        "name": "gitlabhq",
+        "url": "https://github.com/gitlabhq/gitlabhq"
+    },
+    {
+        "name": "winston",
+        "url": "https://github.com/winstonjs/winston"
+    },
+    {
+        "name": "zulip",
+        "url": "https://github.com/zulip/zulip"
+    },
+    {
+        "name": "dash",
+        "url": "https://github.com/plotly/dash"
+    },
+    {
+        "name": "label-studio",
+        "url": "https://github.com/HumanSignal/label-studio"
+    },
+    {
+        "name": "remotion",
+        "url": "https://github.com/remotion-dev/remotion"
+    },
+    {
+        "name": "rxdb",
+        "url": "https://github.com/pubkey/rxdb"
+    },
+    {
+        "name": "difftastic",
+        "url": "https://github.com/Wilfred/difftastic"
+    },
+    {
+        "name": "generator-jhipster",
+        "url": "https://github.com/jhipster/generator-jhipster"
+    },
+    {
+        "name": "cilium",
+        "url": "https://github.com/cilium/cilium"
+    },
+    {
+        "name": "platform",
+        "url": "https://github.com/hcengineering/platform"
+    },
+    {
+        "name": "CopilotKit",
+        "url": "https://github.com/CopilotKit/CopilotKit"
+    },
+    {
+        "name": "jdk",
+        "url": "https://github.com/openjdk/jdk"
+    },
+    {
+        "name": "hyperswitch",
+        "url": "https://github.com/juspay/hyperswitch"
+    },
+    {
+        "name": "dashy",
+        "url": "https://github.com/Lissy93/dashy"
+    },
+    {
+        "name": "handsontable",
+        "url": "https://github.com/handsontable/handsontable"
+    },
+    {
+        "name": "dokploy",
+        "url": "https://github.com/Dokploy/dokploy"
+    },
+    {
+        "name": "wekan",
+        "url": "https://github.com/wekan/wekan"
+    },
+    {
+        "name": "dataease",
+        "url": "https://github.com/dataease/dataease"
+    },
+    {
+        "name": "shardingsphere",
+        "url": "https://github.com/apache/shardingsphere"
+    },
+    {
+        "name": "argo-cd",
+        "url": "https://github.com/argoproj/argo-cd"
+    },
+    {
+        "name": "lit",
+        "url": "https://github.com/lit/lit"
+    },
+    {
+        "name": "searxng",
+        "url": "https://github.com/searxng/searxng"
+    },
+    {
+        "name": "ente",
+        "url": "https://github.com/ente-io/ente"
+    },
+    {
+        "name": "roslyn",
+        "url": "https://github.com/dotnet/roslyn"
+    },
+    {
+        "name": "prefect",
+        "url": "https://github.com/PrefectHQ/prefect"
+    },
+    {
+        "name": "fluentui",
+        "url": "https://github.com/microsoft/fluentui"
+    },
+    {
+        "name": "qmk_firmware",
+        "url": "https://github.com/qmk/qmk_firmware"
+    },
+    {
+        "name": "renovate",
+        "url": "https://github.com/renovatebot/renovate"
+    },
+    {
+        "name": "thingsboard",
+        "url": "https://github.com/thingsboard/thingsboard"
+    },
+    {
+        "name": "fonts",
+        "url": "https://github.com/google/fonts"
+    },
+    {
+        "name": "subql",
+        "url": "https://github.com/subquery/subql"
+    },
+    {
+        "name": "teleport",
+        "url": "https://github.com/gravitational/teleport"
+    },
+    {
+        "name": "airbyte",
+        "url": "https://github.com/airbytehq/airbyte"
+    },
+    {
+        "name": "hhvm",
+        "url": "https://github.com/facebook/hhvm"
+    },
+    {
+        "name": "decap-cms",
+        "url": "https://github.com/decaporg/decap-cms"
+    },
+    {
+        "name": "amis",
+        "url": "https://github.com/baidu/amis"
+    },
+    {
+        "name": "bit",
+        "url": "https://github.com/teambit/bit"
+    },
+    {
+        "name": "intellij-community",
+        "url": "https://github.com/JetBrains/intellij-community"
+    },
+    {
+        "name": "FreeTube",
+        "url": "https://github.com/FreeTubeApp/FreeTube"
+    },
+    {
+        "name": "infisical",
+        "url": "https://github.com/Infisical/infisical"
+    },
+    {
+        "name": "crawlee",
+        "url": "https://github.com/apify/crawlee"
+    },
+    {
+        "name": "plotly.js",
+        "url": "https://github.com/plotly/plotly.js"
+    },
+    {
+        "name": "compiler-explorer",
+        "url": "https://github.com/compiler-explorer/compiler-explorer"
+    },
+    {
+        "name": "lucide",
+        "url": "https://github.com/lucide-icons/lucide"
+    }
+]
