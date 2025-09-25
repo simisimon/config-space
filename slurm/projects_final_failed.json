@@ -8,12 +8,20 @@
         "url": "https://github.com/Significant-Gravitas/AutoGPT"
     },
     {
+        "name": "vscode",
+        "url": "https://github.com/microsoft/vscode"
+    },
+    {
         "name": "flutter",
         "url": "https://github.com/flutter/flutter"
     },
     {
         "name": "ollama",
         "url": "https://github.com/ollama/ollama"
+    },
+    {
+        "name": "next.js",
+        "url": "https://github.com/vercel/next.js"
     },
     {
         "name": "electron",
@@ -24,12 +32,28 @@
         "url": "https://github.com/kubernetes/kubernetes"
     },
     {
+        "name": "node",
+        "url": "https://github.com/nodejs/node"
+    },
+    {
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n"
+    },
+    {
+        "name": "three.js",
+        "url": "https://github.com/mrdoob/three.js"
+    },
+    {
         "name": "TypeScript",
         "url": "https://github.com/microsoft/TypeScript"
     },
     {
         "name": "rust",
         "url": "https://github.com/rust-lang/rust"
+    },
+    {
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify"
     },
     {
         "name": "open-webui",
@@ -56,6 +80,10 @@
         "url": "https://github.com/supabase/supabase"
     },
     {
+        "name": "core",
+        "url": "https://github.com/home-assistant/core"
+    },
+    {
         "name": "bun",
         "url": "https://github.com/oven-sh/bun"
     },
@@ -68,12 +96,24 @@
         "url": "https://github.com/langflow-ai/langflow"
     },
     {
+        "name": "netdata",
+        "url": "https://github.com/netdata/netdata"
+    },
+    {
         "name": "elasticsearch",
         "url": "https://github.com/elastic/elasticsearch"
     },
     {
+        "name": "nest",
+        "url": "https://github.com/nestjs/nest"
+    },
+    {
         "name": "moby",
         "url": "https://github.com/moby/moby"
+    },
+    {
+        "name": "swift",
+        "url": "https://github.com/swiftlang/swift"
     },
     {
         "name": "grafana",
@@ -82,6 +122,10 @@
     {
         "name": "immich",
         "url": "https://github.com/immich-app/immich"
+    },
+    {
+        "name": "node",
+        "url": "https://github.com/base/node"
     },
     {
         "name": "union",
@@ -112,12 +156,20 @@
         "url": "https://github.com/apache/echarts"
     },
     {
+        "name": "lobe-chat",
+        "url": "https://github.com/lobehub/lobe-chat"
+    },
+    {
         "name": "zed",
         "url": "https://github.com/zed-industries/zed"
     },
     {
         "name": "redux",
         "url": "https://github.com/reduxjs/redux"
+    },
+    {
+        "name": "jquery",
+        "url": "https://github.com/jquery/jquery"
     },
     {
         "name": "ghidra",
@@ -130,6 +182,10 @@
     {
         "name": "gatsby",
         "url": "https://github.com/gatsbyjs/gatsby"
+    },
+    {
+        "name": "nocodb",
+        "url": "https://github.com/nocodb/nocodb"
     },
     {
         "name": "uBlock",
@@ -180,8 +236,60 @@
         "url": "https://github.com/cypress-io/cypress"
     },
     {
+        "name": "mastodon",
+        "url": "https://github.com/mastodon/mastodon"
+    },
+    {
+        "name": "meteor",
+        "url": "https://github.com/meteor/meteor"
+    },
+    {
         "name": "discourse",
         "url": "https://github.com/discourse/discourse"
+    },
+    {
+        "name": "dbeaver",
+        "url": "https://github.com/dbeaver/dbeaver"
+    },
+    {
+        "name": "odoo",
+        "url": "https://github.com/odoo/odoo"
+    },
+    {
+        "name": "grpc",
+        "url": "https://github.com/grpc/grpc"
+    },
+    {
+        "name": "JeecgBoot",
+        "url": "https://github.com/jeecgboot/JeecgBoot"
+    },
+    {
+        "name": "Rocket.Chat",
+        "url": "https://github.com/RocketChat/Rocket.Chat"
+    },
+    {
+        "name": "OpenBB",
+        "url": "https://github.com/OpenBB-finance/OpenBB"
+    },
+    {
+        "name": "spark",
+        "url": "https://github.com/apache/spark"
+    },
+    {
+        "name": "sentry",
+        "url": "https://github.com/getsentry/sentry"
+    },
+    {
+        "name": "expo",
+        "url": "https://github.com/expo/expo"
+    },
+    {
+        "name": "airflow",
+        "url": "https://github.com/apache/airflow"
+    },
+    {
+        "name": "fastlane",
+        "url": "https://github.com/fastlane/fastlane"
     },
     {
         "name": "EasySpider",
@@ -190,6 +298,10 @@
     {
         "name": "tidb",
         "url": "https://github.com/pingcap/tidb"
+    },
+    {
+        "name": "phaser",
+        "url": "https://github.com/phaserjs/phaser"
     },
     {
         "name": "photoprism",
@@ -202,6 +314,10 @@
     {
         "name": "appsmith",
         "url": "https://github.com/appsmithorg/appsmith"
+    },
+    {
+        "name": "novu",
+        "url": "https://github.com/novuhq/novu"
     },
     {
         "name": "ccxt",
@@ -232,6 +348,10 @@
         "url": "https://github.com/ToolJet/ToolJet"
     },
     {
+        "name": "google-research",
+        "url": "https://github.com/google-research/google-research"
+    },
+    {
         "name": "metasploit-framework",
         "url": "https://github.com/rapid7/metasploit-framework"
     },
@@ -260,6 +380,14 @@
         "url": "https://github.com/swc-project/swc"
     },
     {
+        "name": "lossless-cut",
+        "url": "https://github.com/mifi/lossless-cut"
+    },
+    {
+        "name": "graphql-engine",
+        "url": "https://github.com/hasura/graphql-engine"
+    },
+    {
         "name": "refine",
         "url": "https://github.com/refinedev/refine"
     },
@@ -284,8 +412,16 @@
         "url": "https://github.com/kubernetes/minikube"
     },
     {
+        "name": "netron",
+        "url": "https://github.com/lutzroeder/netron"
+    },
+    {
         "name": "symfony",
         "url": "https://github.com/symfony/symfony"
+    },
+    {
+        "name": "server",
+        "url": "https://github.com/nextcloud/server"
     },
     {
         "name": "medusa",
@@ -308,10 +444,6 @@
         "url": "https://github.com/keycloak/keycloak"
     },
     {
-        "name": "redash",
-        "url": "https://github.com/getredash/redash"
-    },
-    {
         "name": "posthog",
         "url": "https://github.com/PostHog/posthog"
     },
@@ -332,8 +464,16 @@
         "url": "https://github.com/quasarframework/quasar"
     },
     {
+        "name": "lottie-ios",
+        "url": "https://github.com/airbnb/lottie-ios"
+    },
+    {
         "name": "Telegram",
         "url": "https://github.com/DrKLO/Telegram"
+    },
+    {
+        "name": "nx",
+        "url": "https://github.com/nrwl/nx"
     },
     {
         "name": "erpnext",
@@ -344,8 +484,28 @@
         "url": "https://github.com/jitsi/jitsi-meet"
     },
     {
+        "name": "loki",
+        "url": "https://github.com/grafana/loki"
+    },
+    {
         "name": "InvokeAI",
         "url": "https://github.com/invoke-ai/InvokeAI"
+    },
+    {
+        "name": "vcpkg",
+        "url": "https://github.com/microsoft/vcpkg"
+    },
+    {
+        "name": "shields",
+        "url": "https://github.com/badges/shields"
+    },
+    {
+        "name": "NativeScript",
+        "url": "https://github.com/NativeScript/NativeScript"
+    },
+    {
+        "name": "budibase",
+        "url": "https://github.com/Budibase/budibase"
     },
     {
         "name": "PhotoSwipe",
@@ -472,6 +632,10 @@
         "url": "https://github.com/cilium/cilium"
     },
     {
+        "name": "chinese-independent-blogs",
+        "url": "https://github.com/timqian/chinese-independent-blogs"
+    },
+    {
         "name": "platform",
         "url": "https://github.com/hcengineering/platform"
     },
@@ -488,16 +652,28 @@
         "url": "https://github.com/juspay/hyperswitch"
     },
     {
-        "name": "dashy",
-        "url": "https://github.com/Lissy93/dashy"
-    },
-    {
         "name": "handsontable",
         "url": "https://github.com/handsontable/handsontable"
     },
     {
+        "name": "tree-sitter",
+        "url": "https://github.com/tree-sitter/tree-sitter"
+    },
+    {
+        "name": "chromium",
+        "url": "https://github.com/chromium/chromium"
+    },
+    {
         "name": "dokploy",
         "url": "https://github.com/Dokploy/dokploy"
+    },
+    {
+        "name": "matomo",
+        "url": "https://github.com/matomo-org/matomo"
+    },
+    {
+        "name": "kibana",
+        "url": "https://github.com/elastic/kibana"
     },
     {
         "name": "wekan",
@@ -524,6 +700,10 @@
         "url": "https://github.com/searxng/searxng"
     },
     {
+        "name": "vector",
+        "url": "https://github.com/vectordotdev/vector"
+    },
+    {
         "name": "ente",
         "url": "https://github.com/ente-io/ente"
     },
@@ -532,16 +712,16 @@
         "url": "https://github.com/dotnet/roslyn"
     },
     {
+        "name": "apollo-client",
+        "url": "https://github.com/apollographql/apollo-client"
+    },
+    {
         "name": "prefect",
         "url": "https://github.com/PrefectHQ/prefect"
     },
     {
         "name": "fluentui",
         "url": "https://github.com/microsoft/fluentui"
-    },
-    {
-        "name": "qmk_firmware",
-        "url": "https://github.com/qmk/qmk_firmware"
     },
     {
         "name": "renovate",

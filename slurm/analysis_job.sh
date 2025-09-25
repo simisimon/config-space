@@ -10,10 +10,13 @@ hostname
 
 # Extract command from the file
 COMMAND=$(sed "${TASK_ID}q;d" $COMMANDS_FILE)
-PROJECT_NAME=$(echo "$COMMAND" | grep -oP '(?<=--url=)[^ ]+' | sed 's|.*/||')
+PROJECT_URL=$(echo "$COMMAND" | grep -oP '(?<=--url=)[^ ]+')
+PROJECT_NAME=$(echo "$PROJECT_URL" | sed 's|.*/||')
+# Erzeuge einen eindeutigen Ordnernamen aus der URL, z.B. nlohmann_json
+PROJECT_FOLDER=$(echo "$PROJECT_URL" | sed 's|https://||; s|http://||; s|/$||; s|\.git$||; s|^github.com/||; s|/|_|g')
 
 # Define output directory and expected result file
-OUT_FOLDER="/home/ssimon/GitHub/config-space/slurm/projects/${PROJECT_NAME}"
+OUT_FOLDER="/home/ssimon/GitHub/config-space/slurm/projects/${PROJECT_FOLDER}"
 RESULT_FILE="${OUT_FOLDER}/${PROJECT_NAME}.json"
 
 # prepare filesystem
