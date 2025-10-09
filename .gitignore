@@ -15,5 +15,6 @@ analysis.log
 **/data/top_github_projects/*
 **/data/microservices/*
 **/data/projects/*
+**/data/projects_last_commit/*
 **/data/test_projects/*
 **/slurm/projects/*

@@ -13,7 +13,8 @@ from scipy.sparse import hstack
 import matplotlib.pyplot as plt
 import seaborn as sns
 from collections import Counter, defaultdict
-from typing import Dict, List, Tuple, Any
+from typing import Dict, List, Tuple
+import itertools
 import glob
 import argparse
 import logging
@@ -22,7 +23,20 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-OUT_DIR = "../data/results/technological_composition"
+
+FILE_TYPES = {
+    "yaml": ["ansible", "ansible playbook", "kubernetes", "docker compose", "github action", "circleci", "elasticsearch", "flutter", "heroku", "spring", "travis", "yaml"],
+    "properties": ["alluxio", "spring", "kafka", "gradle", "gradle wrapper", "maven wrapper", "properties"],
+    "json": ["angular", "tsconfig", "nodejs", "cypress", "json"],
+    "xml": ["maven", "android", "hadoop common", "hadoop hbase", "hadoop hdfs", "mapreduce", "yarn", "xml"],
+    "toml": ["cargo", "netlify", "poetry", "toml"],
+    "conf": ["mongodb", "nginx", "postgresql", "rabbitmq", "redis", "apache", "conf"],
+    "ini": ["mysql", "php", "ini"],
+    "cfg": ["zookeeper"],
+    "other": ["docker", "django"]
+}
+
+OUT_DIR = "../data/results"
 
 class ConfigurationSpaceClusterer:
     def __init__(self):
@@ -35,16 +49,12 @@ class ConfigurationSpaceClusterer:
             with open(file_path, 'r') as f:
                 project_data = json.load(f)
                 # Extract latest commit data
-                latest_commit = self._get_latest_commit(project_data)
+                latest_commit = project_data.get('latest_commit_data', {})
                 if latest_commit:
                     self.projects_data.append({
                         'project_name': project_data['project_name'],
                         'latest_commit': latest_commit
                     })
-    
-    def _get_latest_commit(self, project_data: Dict) -> Dict:
-        """Extract the latest commit from project data"""
-        return next(filter(lambda commit: commit["is_latest_commit"], project_data['commit_data']))
     
     def extract_features(self) -> pd.DataFrame:
         """Extract features from configuration spaces for clustering"""
@@ -641,19 +651,19 @@ def run_all_clustering_approaches(project_files: List[str], n_clusters: int = 3)
     logger.info("Running Technology Stack Clustering...")
     tech_stack_results = cluster_technology_stacks(project_files, n_clusters)
     
-    logger.info("\nRunning Option-Value Clustering...")
-    option_results = cluster_option_values(project_files, n_clusters)
+    #logger.info("\nRunning Option-Value Clustering...")
+    #option_results = cluster_option_values(project_files, n_clusters)
 
-    logger.info("\nRunning Combined Clustering...")
-    combined_results = cluster_combined_features(project_files, n_clusters)
+    #logger.info("\nRunning Combined Clustering...")
+    #combined_results = cluster_combined_features(project_files, n_clusters)
 
     #logger.info("\nRunning Technology Ecosystem Clustering...")
     #tech_ecosystem_results = cluster_technology_ecosystem(project_files, "docker", n_clusters)
     
     return {
         'techn_stack': tech_stack_results,
-        'option_value': option_results,
-        'combined': combined_results,
+    #    'option_value': option_results,
+    #    'combined': combined_results,
         #'tech_ecosystem': tech_ecosystem_results
     }
 
@@ -662,7 +672,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=5, help="Limit number of projects to process")
     args = parser.parse_args()
-    project_files = glob.glob("../data/projects/*.json")
+    project_files = glob.glob("../data/projects_last_commit/*.json")
 
     if args.limit:
         project_files = project_files[:args.limit]
@@ -673,11 +683,11 @@ if __name__ == "__main__":
     print("Technology Stack Clustering:")
     print(results['techn_stack']['report'])
 
-    print("\nOption-Value Clustering:")
-    print(results['option_value']['report']) 
+    #print("\nOption-Value Clustering:")
+    #print(results['option_value']['report']) 
 
-    print("\nCombined Clustering:")
-    print(results['combined']['report'])
+    #print("\nCombined Clustering:")
+    #print(results['combined']['report'])
 
-    print("\nTechnology Ecosystem Clustering:")
-    print(results['tech_ecosystem']['report'])
+    #print("\nTechnology Ecosystem Clustering:")
+    #print(results['tech_ecosystem']['report'])
