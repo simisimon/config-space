@@ -16,5 +16,6 @@ analysis.log
 **/data/microservices/*
 **/data/projects/*
 **/data/projects_last_commit/*
+**/data/project_contributors/*
 **/data/test_projects/*
 **/slurm/projects/*
