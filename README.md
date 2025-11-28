@@ -30,3 +30,11 @@ MongoDB: https://www.mongodb.com/docs/manual/reference/configuration-options/
 
 Optional:
 Spring-Cloud-Netflix: https://cloud.spring.io/spring-cloud-netflix/reference/html/appendix.html
+
+
+Structure:
+
+- ``data/projects``: contains the extracted configuration data for projects without batch processing
+- ``data/projects_with_batches``: contains the extracted configuration data for projects with batch processing 
+- ``data/technologies``: contains the configuration options for each technology
+- ``data/projects_last_commit``: contains the configuration data of the last commit hash for each project at the time of extraction

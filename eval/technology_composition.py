@@ -72,7 +72,7 @@ def extract_technologies(project_files: List[str], output_file: str) -> pd.DataF
             project_technologies.append(
                 {
                     "project": project_name.split("_last_commit")[0],
-                    "technologies": technologies
+                    "technologies": sorted(set(technologies))
                 }
             )
         except Exception as e:
@@ -85,14 +85,24 @@ def extract_technologies(project_files: List[str], output_file: str) -> pd.DataF
     return df
 
 
+def norm(s: str) -> str:
+    # Lowercase, replace -, _, multiple spaces → single space; trim
+    return " ".join(str(s).lower().replace("-", " ").replace("_", " ").split())
+
+
+def build_concept_to_filetype(FILE_TYPES) -> dict[str, str]:
+    m = {}
+    for ext, concepts in FILE_TYPES.items():
+        for c in concepts:
+            m[norm(c)] = ext
+    return m
+
+
 def get_technology_landscape(df: pd.DataFrame):
     """
     Creates a treemap visualization of the technology landscape.
     """
-    concept_to_filetype = {}
-    for ext, concepts in FILE_TYPES.items():
-        for concept in concepts:
-            concept_to_filetype[concept.lower()] = ext
+    concept_to_filetype = build_concept_to_filetype(FILE_TYPES)
 
     tech_counts = {}
     for _, row in df.iterrows():
@@ -122,9 +132,9 @@ def get_technology_landscape(df: pd.DataFrame):
     fig = px.treemap(
         df_counts,
         path=["File Type", "Label"],
-        values="Scaled Count",
-        color="File Type",
-        color_discrete_sequence=COLORS,
+        values="Count",
+        color="Count",
+        color_discrete_sequence="Viridis",
         title=f"Technology Landscape Across {len(df)} Projects"
     )
 
