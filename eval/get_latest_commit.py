@@ -10,6 +10,8 @@ def get_batch_number(path):
 
 
 def get_latest_commit_data(project_dirs):
+    failed_projects = []
+
     for dir in project_dirs:
         print(f"Processing directory: {dir}")
         project_files = sorted(glob.glob(f"../data/projects/{dir}/*.json"))
@@ -48,8 +50,14 @@ def get_latest_commit_data(project_dirs):
                 json.dump(data, f, indent=4)
                 
         except Exception as e:
+            failed_projects.append(project_name)
             print(f"Error processing {project_file}: {e}")
             continue
+
+    if failed_projects:
+        print("Failed projects:")
+        for project in failed_projects:
+            print(project)
 
 if __name__ == "__main__":
     project_dirs = os.listdir("../data/projects/")
