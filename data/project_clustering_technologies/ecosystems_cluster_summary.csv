@@ -1,0 +1,3 @@
+cluster_id,num_projects,top_technologies
+0,1042,github-action:975; github:842; nodejs:582; docker:457; tsconfig:407; dependabot:383; vscode:259; npm:253; poetry:212; docker-compose:186
+1,1,travis:1; codeclimate:1; swiftlint:1

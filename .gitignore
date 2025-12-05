@@ -21,3 +21,4 @@ analysis.log
 **/data/projects_options/*
 **/data/test_projects/*
 **/slurm/projects/*
+**/__pycache__/**

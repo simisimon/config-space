@@ -8,11 +8,13 @@ import numpy as np
 from typing import List
 import sys
 import os
+import ast
 import itertools
 import matplotlib.pyplot as plt
 from collections import Counter
 from typing import Dict, Tuple
 from upsetplot import UpSet, from_memberships
+from mapping import get_technology
 
 
 import kaleido
@@ -23,16 +25,26 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 
+EXCLUDED_DIRS = ("docs/", "data/", "lib/", "benchmark/", "annotations/", "examples/")
+
 FILE_TYPES = {
-    "yaml": ["ansible", "ansible playbook", "kubernetes", "docker compose", "github action", "circleci", "elasticsearch", "flutter", "heroku", "spring", "travis", "yaml"],
-    "properties": ["alluxio", "spring", "kafka", "gradle", "gradle wrapper", "maven wrapper", "properties"],
-    "json": ["angular", "tsconfig", "nodejs", "cypress", "json"],
-    "xml": ["maven", "android", "hadoop common", "hadoop hbase", "hadoop hdfs", "mapreduce", "yarn", "xml"],
-    "toml": ["cargo", "netlify", "poetry", "toml"],
+    "yaml": ["dependabot", "codecov", "buildkite", "ansible", "ansible playbook", "kubernetes", "docker compose", 
+             "github-action", "goreleaser", "mkdocs", "swiftlint", "sourcery", "circleci", "elasticsearch", 
+             "flutter", "mockery", "codeclimate", "heroku", "spring", "travis", "bandit", "amplify", "drone", 
+             "yaml", "buf", "github", "gitpod", "appveyor", "pnpm", "rubocop", "gitbook", "jitpack", "pre-commit", 
+             "snapscraft", "eslint", "markdownlint", "stylelint", "postcss", "mocha", "yarn", "golangci-lint", "jekyll"],
+    "properties": ["alluxio", "spring", "kafka", "gradle", "cirrus", "gradle wrapper", "maven wrapper", "properties", "log4j"],
+    "json": ["angular", "eslint", "prettier", "lerna", "firebase", "renovate", "stripe", "tsconfig", "nodejs", 
+             "vercel", "npm", "cypress", "devcontainer", "deno", "cmake", "bower", "json", "babel", "turborepo", 
+             "vscode", "apify", "gocrazy", "jest", "markdownlint", "stylelint", "postcss", "mocha", "golangci-lint", "wrangler"],
+    "xml": ["maven", "android", "hadoop common", "hadoop hbase", "hadoop hdfs", "mapreduce", "xml", "yarn", "log4j"],
+    "toml": ["cargo", "netlify", "poetry", "toml", "rustfmt", "flyio", "taplo", "cross", "cargo make", "stylua", 
+             "trunk", "rust", "clippy", "ruff", "typos", "golangci-lint", "jekyll", "wrangler"],
     "conf": ["mongodb", "nginx", "postgresql", "rabbitmq", "redis", "apache", "conf"],
-    "ini": ["mysql", "php", "ini"],
+    "ini": ["mysql", "php", "ini", "mypy", "tox"],
     "cfg": ["zookeeper"],
-    "other": ["docker", "django"]
+    "python": ["django"],
+    "other": ["docker"],
 }
 
 COLORS = [
@@ -42,7 +54,11 @@ COLORS = [
 ]
 
 
-def load_project_files(limit: int | None = None):
+def load_project_files(limit: int | None = None, refresh: bool = False):
+    if not refresh:
+        logger.info("Skipping project file loading")
+        return
+    
     project_files = glob.glob("../data/projects_last_commit/*.json")
     logger.info(f"Found {len(project_files)} project files")
     if limit:
@@ -51,10 +67,14 @@ def load_project_files(limit: int | None = None):
     return project_files
 
 
-def extract_technologies(project_files: List[str], output_file: str) -> pd.DataFrame:
+def extract_technologies(project_files: List[str], output_file: str, refresh: bool = False) -> pd.DataFrame:
     """
     Extracts technologies from project configuration files and saves to CSV.
     """
+    if os.path.exists(output_file) and not refresh:
+        logger.info(f"Loading existing technology data from {output_file}")
+        return pd.read_csv(output_file)
+
     project_technologies = []
     for project_file in project_files:
         project_name = project_file.split("/")[-1].replace(".json", "")
@@ -66,8 +86,18 @@ def extract_technologies(project_files: List[str], output_file: str) -> pd.DataF
                 config_data = latest_commit["network_data"]["config_file_data"]
 
                 for config_file in config_data:
-                    # TODO: Check if file is actually a config file or just contains data
-                    technologies.append(config_file["concept"])
+                    # Skip files in exlcuded directories
+                    if config_file["file_path"].startswith(EXCLUDED_DIRS):
+                        continue
+
+                    if config_file["concept"] in ["json", "xml", "yaml", "toml", "configparser"]:
+                        concept = get_technology(config_file["file_path"])
+                        if concept:
+                            technologies.append(concept)
+                        else:
+                            technologies.append(config_file["concept"])
+                    else:
+                        technologies.append(config_file["concept"])
 
             project_technologies.append(
                 {
@@ -98,15 +128,23 @@ def build_concept_to_filetype(FILE_TYPES) -> dict[str, str]:
     return m
 
 
-def get_technology_landscape(df: pd.DataFrame):
+def get_technology_landscape(data_file: str, output_file: str, refresh: bool = False):
     """
     Creates a treemap visualization of the technology landscape.
     """
+    if not refresh:
+        logger.info("Skipping technology landscape generation")
+        return
+
+    df = pd.read_csv(data_file)
     concept_to_filetype = build_concept_to_filetype(FILE_TYPES)
 
     tech_counts = {}
     for _, row in df.iterrows():
         project_technologies = row["technologies"]
+        # Parse string representation of list to actual list
+        if isinstance(project_technologies, str):
+            project_technologies = ast.literal_eval(project_technologies)
         for raw_concept in project_technologies:
             normalized_concept = " ".join(raw_concept.lower().split("-")).strip()
             file_type = concept_to_filetype.get(normalized_concept, "other")
@@ -133,18 +171,22 @@ def get_technology_landscape(df: pd.DataFrame):
         df_counts,
         path=["File Type", "Label"],
         values="Count",
-        color="Count",
-        color_discrete_sequence="Viridis",
+        color="File Type",
+        color_discrete_sequence=px.colors.qualitative.Bold,
         title=f"Technology Landscape Across {len(df)} Projects"
     )
 
-    fig.update_traces(root_color="lightgrey", textfont=dict(family="Arial Bold, Arial, sans-serif", size=14, color="black"))
+    fig.update_traces(
+        root_color="lightgrey",
+        textfont=dict(family="Arial Black, Arial Bold, sans-serif", size=16, color="black"),
+        marker=dict(line=dict(width=2, color="white"))
+    )
     fig.update_layout(
         width=1200,
         height=800,
         margin=dict(t=50, l=25, r=25, b=25)
     )
-    fig.write_image("../data/results/technology_landscape.png", scale=2)
+    fig.write_image(output_file, scale=2)
 
 
 def extract_technology_combinations(df: pd.DataFrame) -> Dict[Tuple[str, ...], int]:
@@ -157,6 +199,9 @@ def extract_technology_combinations(df: pd.DataFrame) -> Dict[Tuple[str, ...], i
 
     for _, row in df.iterrows():
         technologies = row.get("technologies", [])
+        # Parse string representation of list to actual list
+        if isinstance(technologies, str):
+            technologies = ast.literal_eval(technologies)
         if not isinstance(technologies, (list, tuple)) or len(technologies) < 2:
             continue
 
@@ -180,12 +225,15 @@ def extract_technology_combinations(df: pd.DataFrame) -> Dict[Tuple[str, ...], i
     return combo_counts
 
 
-def create_technology_combination_plot(df: pd.DataFrame, num_combos: int = 30):
+def create_technology_combination_plot(data_file: str, num_combos: int, refresh: bool = False):
     """
     Creates an UpSet plot for the most common technology combinations.
     """
-    print("Hallo")
+    if not refresh:
+        logger.info("Skipping technology combination plot generation")
+        return
 
+    df = pd.read_csv(data_file)
     combinations = extract_technology_combinations(df=df)
     combinations_counter = Counter(combinations)
 
@@ -200,17 +248,19 @@ def create_technology_combination_plot(df: pd.DataFrame, num_combos: int = 30):
 
     data = from_memberships(memberships, data=counts)
 
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(30, 18))
     plot = UpSet(data, show_counts=True, element_size=None, totals_plot_elements=0).plot()
     plot["intersections"].set_ylabel("# Projects")
     plt.suptitle(f"Technology Combinations Across {num_projects} Projects")
-    plt.savefig("../data/results/technology_combinations.png")
+    plt.savefig("../data/technology_composition/technology_combinations.png", dpi=300, bbox_inches='tight')
 
 
-def get_technology_statistics(project_files: List[str]):
+def get_technology_statistics():
     """
     Computes and saves technology statistics to CSV.
     """
+    project_files = load_project_files(refresh=True)
+
     aggregated_data = []
     for file_name in project_files:
         logger.info(f"Analyzing {file_name}")
@@ -256,21 +306,77 @@ def get_technology_statistics(project_files: List[str]):
 
     df_grouped["Avg_Options_Per_File"] = df_grouped["Avg_Options_Per_File"].round(2)
     df_grouped = df_grouped.merge(avg_files_per_tech_per_proj, on="Technology")
-    df_grouped.to_csv("../data/results/technology_statistics.csv", index=False)
+    df_grouped.to_csv("../data/technology_composition/technology_statistics.csv", index=False)
 
+def filter_technologies(technologies_str):
+    if isinstance(technologies_str, str):
+        technologies = ast.literal_eval(technologies_str)
+    else:
+        technologies = technologies_str
+
+    # Remove file types
+    filtered = [tech for tech in technologies if tech.lower() not in ["yaml", "json", "toml", "xml", "configparser", "properties"]]
+    return filtered
+
+def filter_projects(data_file: str, output_file: str, refresh: bool = False):
+    """
+    Filters projects with less than two technologies after removing file types.
+    """
+    if not refresh:
+        logger.info("Skipping filtering as refresh is False.")
+        return
+
+    df = pd.read_csv(data_file)
+    df["technologies"] = df["technologies"].apply(filter_technologies)
+    df["tech_count"] = df["technologies"].apply(len)
+    df_filtered = df[df["tech_count"] >= 2].drop(columns=["tech_count"])
+    df_filtered.to_csv(output_file, index=False)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, help="Limit number of projects to process")
+    parser.add_argument("--refresh", action="store_true", help="Refresh technology extraction even if CSV exists")  
     args = parser.parse_args()
-    project_files = load_project_files(args.limit)
-    df_technologies = extract_technologies(project_files, "../data/results/project_technologies.csv")
+    
+    # Load project files
+    project_files = load_project_files(
+        args.limit, 
+        refresh=args.refresh
+    )
+
+    # Extract technologies
+    df_technologies = extract_technologies(
+        project_files=project_files, 
+        output_file="../data/technology_composition/project_technologies.csv", 
+        refresh=args.refresh
+    )
 
     # Get technology landscape
-    get_technology_landscape(df=df_technologies)
+    get_technology_landscape(
+        data_file="../data/technology_composition/project_technologies.csv", 
+        output_file="../data/technology_composition/technology_landscape.png",
+        refresh=args.refresh
+    )
+
+    filter_projects(
+        data_file="../data/technology_composition/project_technologies.csv", 
+        output_file="../data/technology_composition/project_technologies_filtered.csv",
+        refresh=args.refresh
+    )
+
+    # Create new landscape with filtered data
+    get_technology_landscape(
+        data_file="../data/technology_composition/project_technologies_filtered.csv", 
+        output_file="../data/technology_composition/technology_landscape_filtered.png",
+        refresh=args.refresh
+    )
 
     # Get technology combinations
-    create_technology_combination_plot(df=df_technologies)
+    create_technology_combination_plot(
+        data_file="../data/technology_composition/project_technologies_filtered.csv", 
+        num_combos=50,
+        refresh=args.refresh
+    )
 
     # Get technology statistics
-    get_technology_statistics(project_files)
+    #get_technology_statistics(project_files)
