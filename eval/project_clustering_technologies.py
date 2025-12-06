@@ -137,6 +137,7 @@ def summarize_clusters(df: pd.DataFrame, labels, top_n: int = 10):
 def plot_embedding(X: np.ndarray,
                    labels: np.ndarray,
                    output_path: str,
+                   cluster_summary=None,
                    random_state: int = 42):
     """
     2D PCA embedding of projects colored by ecosystem.
@@ -151,23 +152,33 @@ def plot_embedding(X: np.ndarray,
 
     unique_clusters = np.unique(labels)
 
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(10, 8))
     for cluster_id in unique_clusters:
         mask = labels == cluster_id
+
+        # Build legend label with technologies in brackets
+        legend_label = f"ecosystem {cluster_id}"
+        if cluster_summary is not None:
+            cluster_info = next((c for c in cluster_summary if c["cluster_id"] == cluster_id), None)
+            if cluster_info:
+                top_techs = cluster_info["top_technologies"][:3]  # Top 3 technologies
+                tech_label = ", ".join([tech for tech, count in top_techs])
+                legend_label = f"ecosystem {cluster_id} ({tech_label})"
+
         plt.scatter(
             X_2d[mask, 0],
             X_2d[mask, 1],
-            label=f"ecosystem {cluster_id}",
+            label=legend_label,
             alpha=0.7,
             s=20,
         )
 
     plt.xlabel("PCA component 1")
     plt.ylabel("PCA component 2")
-    plt.title("Configuration ecosystems (PCA embedding)")
-    plt.legend(loc="best", fontsize="small", frameon=True)
+    plt.title("Technology Ecosystems")
+    plt.legend(loc="upper center", bbox_to_anchor=(0.5, -0.08), ncol=2, fontsize="small", frameon=True)
     plt.tight_layout()
-    plt.savefig(output_path, dpi=300)
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
     plt.close()
     print(f"Wrote PCA embedding plot to: {output_path}")
 
@@ -193,7 +204,7 @@ def main():
     parser.add_argument(
         "--k-min",
         type=int,
-        default=2,
+        default=3,
         help="Minimum number of clusters to consider (default: 4).",
     )
     parser.add_argument(
@@ -254,6 +265,12 @@ def main():
         f"Technology matrix: {X.shape[0]} projects × {X.shape[1]} technologies "
         f"(min frequency ≥ {args.min_tech_frequency})."
     )
+
+    # Save project × technology matrix for later analyses
+    tech_mat_out = f"../data/project_clustering_technologies/ecosystems_tech_matrix.csv"
+    tech_df = pd.DataFrame(X, columns=tech_names)
+    tech_df.insert(0, "project", df["project"].values)
+    tech_df.to_csv(tech_mat_out, index=False)
 
     dist_matrix = compute_jaccard_distance(X)
     print("Computed Jaccard distance matrix.")
@@ -348,7 +365,7 @@ def main():
 
     # Plot data
     embedding_out = "../data/project_clustering_technologies/ecosystems_embedding.png"
-    plot_embedding(X, best_labels, embedding_out, random_state=args.random_state)
+    plot_embedding(X, best_labels, embedding_out, cluster_summary=cluster_summary, random_state=args.random_state)
 
 
 if __name__ == "__main__":

@@ -1,3 +1,21 @@
 cluster_id,num_projects,top_technologies
-0,1042,github-action:975; github:842; nodejs:582; docker:457; tsconfig:407; dependabot:383; vscode:259; npm:253; poetry:212; docker-compose:186
-1,1,travis:1; codeclimate:1; swiftlint:1
+0,335,github-action:332; github:281; dependabot:148; docker:137; poetry:103; pre-commit:75; codecov:50; golangci-lint:40; devcontainer:39; docker-compose:38
+1,5,github-action:5; circleci:2; docker-compose:1; gradle-wrapper:1; nginx:1; maven:1; codecov:1
+2,466,nodejs:463; github-action:441; github:390; tsconfig:345; docker:203; npm:202; vscode:180; dependabot:162; pnpm:124; eslint:103
+3,13,github-action:13; docker:12; poetry:4; maven:4; dependabot:2; codecov:2; rust:2; docker-compose:2; maven-wrapper:2; nodejs:2
+4,4,maven:4; github:4; travis:2; maven-wrapper:2; github-action:2; renovate:1; ansible-playbook:1; circleci:1
+5,83,gradle-wrapper:81; gradle:81; github-action:73; github:69; android:65; nodejs:36; docker:33; dependabot:30; tsconfig:26; vscode:23
+6,23,maven:23; spring:21; docker:17; github-action:16; github:15; nodejs:12; maven-wrapper:12; docker-compose:9; npm:8; log4j:7
+7,4,docker:4; github:4; github-action:4; django:3; jekyll:3; nodejs:3; mypy:3; vscode:3; poetry:3; devcontainer:3
+8,3,django:3; github:2; github-action:2; gitpod:1; vscode:1; jekyll:1
+9,2,github:2; docker:2; docker-compose:1; goreleaser:1; vscode:1
+10,1,poetry:1; flyio:1; docker:1
+11,1,golangci-lint:1; ansible-playbook:1; jekyll:1
+12,12,nodejs:12; npm:9; github:7; bower:4; travis:1; circleci:1; vercel:1; vscode:1; cypress:1; mkdocs:1
+13,2,tox:2; github-action:2; poetry:2; appveyor:1; snapscraft:1; nodejs:1; cargo:1
+14,71,cargo:71; github-action:70; rustfmt:61; github:56; clippy:37; docker:36; nodejs:33; rust:32; dependabot:29; tsconfig:26
+15,1,codeclimate:1; travis:1; swiftlint:1
+16,3,dependabot:3; github-action:3; mkdocs:2; android:2; maven:1
+17,2,circleci:2; babel:2; rust:2; yarn:2; cargo:2; eslint:2; tsconfig:2; npm:2; nodejs:2; netlify:2
+18,11,docker:11; travis:11; codecov:11; appveyor:10; github:10; golangci-lint:10; github-action:10; renovate:8; goreleaser:8; markdownlint:7
+19,1,nodejs:1; mocha:1; cargo:1; maven:1; tsconfig:1
