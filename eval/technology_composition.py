@@ -255,59 +255,6 @@ def create_technology_combination_plot(data_file: str, num_combos: int, refresh:
     plt.savefig("../data/technology_composition/technology_combinations.png", dpi=300, bbox_inches='tight')
 
 
-def get_technology_statistics():
-    """
-    Computes and saves technology statistics to CSV.
-    """
-    project_files = load_project_files(refresh=True)
-
-    aggregated_data = []
-    for file_name in project_files:
-        logger.info(f"Analyzing {file_name}")
-
-        with open(file_name, 'r') as f:
-            data = json.load(f)
-        
-        latest_commit = data["latest_commit_data"]
-
-        #concepts = latest_commit["network_data"].get("concepts", [])
-        config_files = latest_commit["network_data"].get("config_file_data", [])
-        concepts = [file["concept"] for file in config_files]
-
-        file_options = [f.get("options", 0) for f in config_files]
-        avg_options = round(sum(file_options) / len(file_options), 2) if file_options else 0
-
-        result = []
-        for concept in set(concepts):
-            files_for_concept = [f for f in config_files if f["concept"] == concept]
-            file_count = len(files_for_concept)
-            total_options = sum(f.get("options", 0) for f in files_for_concept)
-            avg_options = round(total_options / file_count, 2) if file_count else 0
-
-            result.append({
-                "Project": data.get("project_name", os.path.basename(file_name)),
-                "Technology": concept,
-                "File Count": file_count,
-                "Average Options per File": avg_options
-            })
-        aggregated_data.extend(result)
-
-    df = pd.DataFrame(aggregated_data)
-    tech_proj_file_counts = df.groupby(["Technology", "Project"])["File Count"].sum().reset_index()
-    avg_files_per_tech_per_proj = tech_proj_file_counts.groupby("Technology")["File Count"].mean().round(2)
-    avg_files_per_tech_per_proj.name = "Avg_Files_Per_Project"
-
-    df_grouped = df.groupby("Technology").agg(
-        Usage_Count=("Technology", "count"),
-        Total_Projects=("Project", "nunique"),
-        Total_Files=("File Count", "sum"),
-        Avg_Options_Per_File=("Average Options per File", "mean")
-    ).reset_index()
-
-    df_grouped["Avg_Options_Per_File"] = df_grouped["Avg_Options_Per_File"].round(2)
-    df_grouped = df_grouped.merge(avg_files_per_tech_per_proj, on="Technology")
-    df_grouped.to_csv("../data/technology_composition/technology_statistics.csv", index=False)
-
 def filter_technologies(technologies_str):
     if isinstance(technologies_str, str):
         technologies = ast.literal_eval(technologies_str)
