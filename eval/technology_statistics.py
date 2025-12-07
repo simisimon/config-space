@@ -24,6 +24,8 @@ def get_technology_statistics(project_files):
 
     # Dictionary to store project -> technology -> set of option names
     project_tech_options = {}
+    # Dictionary to store project -> technology -> count of config files
+    project_tech_file_counts = {}
     all_technologies = set()
 
     for project_file in project_files:
@@ -40,6 +42,7 @@ def get_technology_statistics(project_files):
 
             if project_name not in project_tech_options:
                 project_tech_options[project_name] = {}
+                project_tech_file_counts[project_name] = {}
 
             # Process each config file
             for config_file in config_file_data:
@@ -51,6 +54,10 @@ def get_technology_statistics(project_files):
 
                 if technology not in project_tech_options[project_name]:
                     project_tech_options[project_name][technology] = set()
+                    project_tech_file_counts[project_name][technology] = 0
+
+                # Count config files for this technology
+                project_tech_file_counts[project_name][technology] += 1
 
                 # Add unique option names (not values)
                 pairs = config_file.get('pairs', [])
@@ -71,43 +78,59 @@ def get_technology_statistics(project_files):
     # Sort technologies for consistent column order
     sorted_technologies = sorted(all_technologies)
 
-    # Build the matrix
-    matrix_data = []
+    # Build the option count matrix
+    option_matrix_data = []
     for project_name, tech_options in project_tech_options.items():
         row = {'project': project_name}
         for tech in sorted_technologies:
             # Count unique option names for this technology in this project
             row[tech] = len(tech_options.get(tech, set()))
-        matrix_data.append(row)
+        option_matrix_data.append(row)
 
-    df = pd.DataFrame(matrix_data)
+    option_df = pd.DataFrame(option_matrix_data)
+
+    # Build the file count matrix
+    file_matrix_data = []
+    for project_name, tech_file_counts in project_tech_file_counts.items():
+        row = {'project': project_name}
+        for tech in sorted_technologies:
+            # Count config files for this technology in this project
+            row[tech] = tech_file_counts.get(tech, 0)
+        file_matrix_data.append(row)
+
+    file_df = pd.DataFrame(file_matrix_data)
 
     # Calculate statistics per technology across all projects
     tech_stats = {}
     for tech in sorted_technologies:
         all_options = set()
         project_option_counts = []
+        project_file_counts = []
 
         for project_name, tech_options in project_tech_options.items():
             if tech in tech_options:
                 all_options.update(tech_options[tech])
                 project_option_counts.append(len(tech_options[tech]))
+                project_file_counts.append(project_tech_file_counts[project_name].get(tech, 0))
 
         avg_options = sum(project_option_counts) / len(project_option_counts) if project_option_counts else 0
+        avg_files = sum(project_file_counts) / len(project_file_counts) if project_file_counts else 0
 
         tech_stats[tech] = {
             'unique_options': len(all_options),
             'avg_options_per_project': avg_options,
+            'avg_files_per_project': avg_files,
             'num_projects': len(project_option_counts)
         }
 
     logger.info("Technology statistics:")
     for tech, stats in sorted(tech_stats.items(), key=lambda x: x[1]['unique_options'], reverse=True):
         logger.info(f"  {tech}: {stats['unique_options']} unique options, "
-                   f"avg {stats['avg_options_per_project']:.1f} per project "
+                   f"avg {stats['avg_options_per_project']:.1f} per project, "
+                   f"avg {stats['avg_files_per_project']:.1f} config files "
                    f"({stats['num_projects']} projects)")
 
-    return df, tech_stats
+    return option_df, file_df, tech_stats
 
 
 def main():
@@ -124,12 +147,17 @@ def main():
         logger.info(f"Limited to {len(project_files)} project files")
 
     # Calculate statistics
-    df, tech_stats = get_technology_statistics(project_files)
+    option_df, file_df, tech_stats = get_technology_statistics(project_files)
 
-    # Save matrix to CSV
-    matrix_output = "../data/technology_composition/technology_option_matrix.csv"
-    df.to_csv(matrix_output, index=False)
-    logger.info(f"Saved project-technology matrix to {matrix_output}")
+    # Save option matrix to CSV
+    option_matrix_output = "../data/technology_composition/technology_option_matrix.csv"
+    option_df.to_csv(option_matrix_output, index=False)
+    logger.info(f"Saved project-technology option matrix to {option_matrix_output}")
+
+    # Save file count matrix to CSV
+    file_matrix_output = "../data/technology_composition/technology_file_matrix.csv"
+    file_df.to_csv(file_matrix_output, index=False)
+    logger.info(f"Saved project-technology file matrix to {file_matrix_output}")
 
     # Save technology statistics
     stats_data = []
@@ -138,6 +166,7 @@ def main():
             'technology': tech,
             'unique_options': stats['unique_options'],
             'avg_options_per_project': round(stats['avg_options_per_project'], 2),
+            'avg_files_per_project': round(stats['avg_files_per_project'], 2),
             'num_projects': stats['num_projects']
         })
 
