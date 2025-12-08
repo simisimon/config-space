@@ -32,16 +32,23 @@ FILE_TYPES = {
              "github-action", "goreleaser", "mkdocs", "swiftlint", "sourcery", "circleci", "elasticsearch", 
              "flutter", "mockery", "codeclimate", "heroku", "spring", "travis", "bandit", "amplify", "drone", 
              "yaml", "buf", "github", "gitpod", "appveyor", "pnpm", "rubocop", "gitbook", "jitpack", "pre-commit", 
-             "snapscraft", "eslint", "markdownlint", "stylelint", "postcss", "mocha", "yarn", "golangci-lint", "jekyll"],
+             "snapscraft", "eslint", "markdownlint", "stylelint", "postcss", "mocha", "yarn", "golangci-lint", "jekyll"
+             "codebeaver", "crowdin", "readthedocs", "graphql", "swagger", "chart testing", "codebuild", "lefthook",
+             "hugoreleaser", "triagebot", "jazzy", "clomonitor", "prometheus", "helm", "cspell", "azure pipelines", "logstash"
+             "verdaccio", "github", "github issues", "github funding", "github config", "github codespaces"],
     "properties": ["alluxio", "spring", "kafka", "gradle", "cirrus", "gradle wrapper", "maven wrapper", "properties", "log4j"],
     "json": ["angular", "eslint", "prettier", "lerna", "firebase", "renovate", "stripe", "tsconfig", "nodejs", 
              "vercel", "npm", "cypress", "devcontainer", "deno", "cmake", "bower", "json", "babel", "turborepo", 
-             "vscode", "apify", "gocrazy", "jest", "markdownlint", "stylelint", "postcss", "mocha", "golangci-lint", "wrangler"],
+             "vscode", "apify", "gocrazy", "jest", "markdownlint", "stylelint", "postcss", "mocha", "golangci-lint", "wrangler",
+             "vcpkg", "changesets", "fuel", "knip", "tsdoc", "nodemon", "graphql", "swagger", "nixpacks", "lefthook",
+             "bundlemon", "cspell"],
     "xml": ["maven", "android", "hadoop common", "hadoop hbase", "hadoop hdfs", "mapreduce", "xml", "yarn", "log4j"],
     "toml": ["cargo", "netlify", "poetry", "toml", "rustfmt", "flyio", "taplo", "cross", "cargo make", "stylua", 
-             "trunk", "rust", "clippy", "ruff", "typos", "golangci-lint", "jekyll", "wrangler"],
+             "trunk", "rust", "clippy", "ruff", "typos", "golangci-lint", "jekyll", "wrangler", "graphql",
+             "nixpacks", "lefthook", "deepsource", "git cliff", "reuse", "kodiak", "streamlit", "mdbook", "lychee",
+             "cdbindgen", "triagebot", "taoskeeper", "cspell"],
     "conf": ["mongodb", "nginx", "postgresql", "rabbitmq", "redis", "apache", "conf"],
-    "ini": ["mysql", "php", "ini", "mypy", "tox"],
+    "ini": ["mysql", "php", "ini", "mypy", "tox", "grafana"],
     "cfg": ["zookeeper"],
     "python": ["django"],
     "other": ["docker"],
@@ -95,9 +102,15 @@ def extract_technologies(project_files: List[str], output_file: str, refresh: bo
                         if concept:
                             technologies.append(concept)
                         else:
-                            technologies.append(config_file["concept"])
+                            if config_file["concept"].lower() == "nodejs":
+                                technologies.append("npm")
+                            else:
+                                technologies.append(config_file["concept"])
                     else:
-                        technologies.append(config_file["concept"])
+                        if config_file["concept"].lower() == "nodejs":
+                            technologies.append("npm")
+                        else:
+                            technologies.append(config_file["concept"])
 
             project_technologies.append(
                 {
@@ -189,7 +202,7 @@ def get_technology_landscape(data_file: str, output_file: str, refresh: bool = F
     fig.write_image(output_file, scale=2)
 
 
-def extract_technology_combinations(df: pd.DataFrame) -> Dict[Tuple[str, ...], int]:
+def extract_technology_combinations(df: pd.DataFrame, max_combos: int = 10) -> Dict[Tuple[str, ...], int]:
     """
     Extracts all combinations of concepts (length ≥ 2) from the per-project 'technologies' column.
     Returns a dictionary mapping each combination (as a sorted tuple) to its frequency across projects.
@@ -214,8 +227,9 @@ def extract_technology_combinations(df: pd.DataFrame) -> Dict[Tuple[str, ...], i
         concepts = sorted(set(concepts))
         if len(concepts) < 2:
             continue
+        
 
-        for r in range(2, len(concepts) + 1):
+        for r in range(2, max_combos):
             for combo in itertools.combinations(concepts, r):
                 # Skip combinations that contain any file type key (e.g., 'yaml', 'json', ...)
                 if any(item in file_type_keys for item in combo):
@@ -248,11 +262,33 @@ def create_technology_combination_plot(data_file: str, num_combos: int, refresh:
 
     data = from_memberships(memberships, data=counts)
 
-    plt.figure(figsize=(30, 18))
-    plot = UpSet(data, show_counts=True, element_size=None, totals_plot_elements=0).plot()
-    plot["intersections"].set_ylabel("# Projects")
-    plt.suptitle(f"Technology Combinations Across {num_projects} Projects")
-    plt.savefig("../data/technology_composition/technology_combinations.png", dpi=300, bbox_inches='tight')
+    # Create figure with better proportions
+    plt.figure(figsize=(20, 14))
+
+    # Create UpSet plot with visible labels
+    plot = UpSet(
+        data,
+        show_counts=True,
+        element_size=50,  # Circle size
+        totals_plot_elements=0,
+        min_subset_size=0,
+        sort_by='cardinality',
+        sort_categories_by=None
+    ).plot()
+
+    # Adjust label sizes and spacing
+    plot["intersections"].set_ylabel("# Projects", fontsize=16, fontweight='bold')
+    plot["intersections"].tick_params(axis='y', labelsize=12)
+    plot["intersections"].tick_params(axis='x', labelsize=10)
+
+    # Set the matrix y-axis labels (technology names)
+    if "matrix" in plot and plot["matrix"] is not None:
+        plot["matrix"].tick_params(axis='y', labelsize=14)
+        labels = plot["matrix"].get_yticklabels()
+        plot["matrix"].set_yticklabels(labels, fontweight='bold')
+
+    plt.suptitle(f"Technology Combinations Across {num_projects} Projects", fontsize=20, fontweight='bold', y=0.995)
+    plt.savefig("../data/technology_composition/technology_combinations.png", dpi=300, bbox_inches='tight', pad_inches=0.3)
 
 
 def filter_technologies(technologies_str):
@@ -286,37 +322,37 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     # Load project files
-    project_files = load_project_files(
-        args.limit, 
-        refresh=args.refresh
-    )
+    #project_files = load_project_files(
+    #    args.limit, 
+    #    refresh=args.refresh
+    #)
 
     # Extract technologies
-    df_technologies = extract_technologies(
-        project_files=project_files, 
-        output_file="../data/technology_composition/project_technologies.csv", 
-        refresh=args.refresh
-    )
+    #df_technologies = extract_technologies(
+    #    project_files=project_files, 
+    #    output_file="../data/technology_composition/project_technologies.csv", 
+    #    refresh=args.refresh
+    #)
 
     # Get technology landscape
-    get_technology_landscape(
-        data_file="../data/technology_composition/project_technologies.csv", 
-        output_file="../data/technology_composition/technology_landscape.png",
-        refresh=args.refresh
-    )
+    #get_technology_landscape(
+    #    data_file="../data/technology_composition/project_technologies.csv", 
+    #    output_file="../data/technology_composition/technology_landscape.png",
+    #    refresh=args.refresh
+    #)
 
-    filter_projects(
-        data_file="../data/technology_composition/project_technologies.csv", 
-        output_file="../data/technology_composition/project_technologies_filtered.csv",
-        refresh=args.refresh
-    )
+    #filter_projects(
+    #    data_file="../data/technology_composition/project_technologies.csv", 
+    #    output_file="../data/technology_composition/project_technologies_filtered.csv",
+    #    refresh=args.refresh
+    #)
 
     # Create new landscape with filtered data
-    get_technology_landscape(
-        data_file="../data/technology_composition/project_technologies_filtered.csv", 
-        output_file="../data/technology_composition/technology_landscape_filtered.png",
-        refresh=args.refresh
-    )
+    #get_technology_landscape(
+    #    data_file="../data/technology_composition/project_technologies_filtered.csv", 
+    #    output_file="../data/technology_composition/technology_landscape_filtered.png",
+    #    refresh=args.refresh
+    #)
 
     # Get technology combinations
     create_technology_combination_plot(
@@ -324,6 +360,3 @@ if __name__ == "__main__":
         num_combos=50,
         refresh=args.refresh
     )
-
-    # Get technology statistics
-    #get_technology_statistics(project_files)

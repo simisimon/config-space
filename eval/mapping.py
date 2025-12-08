@@ -95,7 +95,7 @@ MAPPING = {
     "hugoreleaser": ["hugoreleaser.yaml"],
     "deepsource": [".deepsource.toml"],
     "git cliff": ["git-cliff/cliff.toml"],
-    "reuse software": ["REUSE.toml"],
+    "reuse": ["REUSE.toml"],
     "kodiak": [".kodiak.toml"],
     "streamlit": [".streamlit/config.toml", ".streamlit/secrets.toml"],
     "mdbook": ["mdbook.toml"],
