@@ -10,6 +10,18 @@ from sklearn.metrics import adjusted_rand_score
 from sklearn.metrics import pairwise_distances
 from sklearn.decomposition import PCA
 
+try:
+    import hdbscan
+    HDBSCAN_AVAILABLE = True
+except ImportError:
+    HDBSCAN_AVAILABLE = False
+
+try:
+    import igraph as ig
+    IGRAPH_AVAILABLE = True
+except ImportError:
+    IGRAPH_AVAILABLE = False
+
 
 def load_projects(csv_path: str) -> pd.DataFrame:
     df = pd.read_csv(csv_path)
@@ -75,6 +87,68 @@ def cluster_with_k(dist_matrix: np.ndarray, n_clusters: int) -> np.ndarray:
     return labels
 
 
+def cluster_with_hdbscan(dist_matrix: np.ndarray, min_cluster_size: int = 5, min_samples: int = 3) -> np.ndarray:
+    """
+    Run HDBSCAN clustering with a precomputed distance matrix.
+
+    min_cluster_size: minimum number of samples in a cluster
+    min_samples: minimum number of samples in a neighborhood for a point to be considered core
+
+    Returns labels where -1 indicates noise/outliers.
+    """
+    if not HDBSCAN_AVAILABLE:
+        raise ImportError("hdbscan is not installed. Install with: pip install hdbscan")
+
+    clusterer = hdbscan.HDBSCAN(
+        min_cluster_size=min_cluster_size,
+        min_samples=min_samples,
+        metric='precomputed',
+        cluster_selection_method='eom'  # Excess of Mass
+    )
+    labels = clusterer.fit_predict(dist_matrix)
+    return labels
+
+
+def cluster_with_louvain(dist_matrix: np.ndarray, resolution: float = 1.0) -> np.ndarray:
+    """
+    Run Louvain community detection by converting distance matrix to similarity graph.
+
+    resolution: higher values lead to more communities
+
+    Returns cluster labels.
+    """
+    if not IGRAPH_AVAILABLE:
+        raise ImportError("igraph is not installed. Install with: pip install igraph")
+
+    # Convert distance to similarity (1 - distance)
+    # Use a threshold to create edges only for similar projects
+    similarity = 1 - dist_matrix
+
+    # Create weighted graph from similarity matrix
+    # Keep only edges above a threshold to avoid fully connected graph
+    threshold = np.percentile(similarity[np.triu_indices_from(similarity, k=1)], 50)
+
+    edges = []
+    weights = []
+    n = similarity.shape[0]
+
+    for i in range(n):
+        for j in range(i + 1, n):
+            if similarity[i, j] > threshold:
+                edges.append((i, j))
+                weights.append(similarity[i, j])
+
+    # Create graph
+    g = ig.Graph(n=n, edges=edges, directed=False)
+    g.es['weight'] = weights
+
+    # Run Louvain community detection
+    communities = g.community_multilevel(weights='weight', return_levels=False, resolution=resolution)
+
+    labels = np.array(communities.membership)
+    return labels
+
+
 def stability_for_k(dist_matrix: np.ndarray,
                     labels_full: np.ndarray,
                     k: int,
@@ -137,6 +211,7 @@ def summarize_clusters(df: pd.DataFrame, labels, top_n: int = 10):
 def plot_embedding(X: np.ndarray,
                    labels: np.ndarray,
                    output_path: str,
+                   method: str = "",
                    cluster_summary=None,
                    random_state: int = 42):
     """
@@ -175,7 +250,7 @@ def plot_embedding(X: np.ndarray,
 
     plt.xlabel("PCA component 1")
     plt.ylabel("PCA component 2")
-    plt.title("Technology Ecosystems")
+    plt.title(f"Technology Ecosystems (Method: {method})")
     plt.legend(loc="upper center", bbox_to_anchor=(0.5, -0.08), ncol=2, fontsize="small", frameon=True)
     plt.tight_layout()
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
@@ -238,6 +313,30 @@ def main():
         default=42,
         help="Random seed for reproducibility (default: 42).",
     )
+    parser.add_argument(
+        "--method",
+        choices=["agglomerative", "hdbscan", "louvain"],
+        default="agglomerative",
+        help="Clustering method to use (default: agglomerative).",
+    )
+    parser.add_argument(
+        "--min-cluster-size",
+        type=int,
+        default=5,
+        help="For HDBSCAN: minimum samples in a cluster (default: 5).",
+    )
+    parser.add_argument(
+        "--min-samples",
+        type=int,
+        default=3,
+        help="For HDBSCAN: minimum samples in neighborhood (default: 3).",
+    )
+    parser.add_argument(
+        "--resolution",
+        type=float,
+        default=1.0,
+        help="For Louvain: resolution parameter, higher = more communities (default: 1.0).",
+    )
 
     parser.add_argument(
         "--assignments",
@@ -275,68 +374,83 @@ def main():
     dist_matrix = compute_jaccard_distance(X)
     print("Computed Jaccard distance matrix.")
 
-    k_candidates = list(range(args.k_min, min(args.k_max, dist_matrix.shape[0]) + 1))
-    print(f"Evaluating stability for k in {k_candidates} ...")
+    # Select clustering method
+    if args.method == "hdbscan":
+        print(f"\nRunning HDBSCAN clustering (min_cluster_size={args.min_cluster_size}, min_samples={args.min_samples})...")
+        best_labels = cluster_with_hdbscan(dist_matrix, min_cluster_size=args.min_cluster_size, min_samples=args.min_samples)
+        n_clusters = len(set(best_labels)) - (1 if -1 in best_labels else 0)
+        n_noise = list(best_labels).count(-1)
+        print(f"Found {n_clusters} clusters and {n_noise} noise points")
 
-    stability_rows = []
+    elif args.method == "louvain":
+        print(f"\nRunning Louvain community detection (resolution={args.resolution})...")
+        best_labels = cluster_with_louvain(dist_matrix, resolution=args.resolution)
+        n_clusters = len(set(best_labels))
+        print(f"Found {n_clusters} communities")
 
-    for k in k_candidates:
-        print(f"\nClustering full data for k={k} ...")
-        labels_full = cluster_with_k(dist_matrix, k)
+    else:  # agglomerative
+        k_candidates = list(range(args.k_min, min(args.k_max, dist_matrix.shape[0]) + 1))
+        print(f"Evaluating stability for k in {k_candidates} ...")
 
-        aris = stability_for_k(
-            dist_matrix,
-            labels_full,
-            k=k,
-            subsample_fraction=args.subsample_fraction,
-            n_repeats=args.n_repeats,
-            random_state=args.random_state,
-        )
+        stability_rows = []
 
-        if len(aris) == 0:
-            print(f"  Skipped k={k} (not enough samples for subset size).")
-            continue
+        for k in k_candidates:
+            print(f"\nClustering full data for k={k} ...")
+            labels_full = cluster_with_k(dist_matrix, k)
 
-        mean_ari = float(aris.mean())
-        median_ari = float(np.median(aris))
-        std_ari = float(aris.std())
+            aris = stability_for_k(
+                dist_matrix,
+                labels_full,
+                k=k,
+                subsample_fraction=args.subsample_fraction,
+                n_repeats=args.n_repeats,
+                random_state=args.random_state,
+            )
 
-        stability_rows.append(
-            {
-                "k": k,
-                "mean_ari": mean_ari,
-                "median_ari": median_ari,
-                "std_ari": std_ari,
-                "n_repeats_effective": len(aris),
-            }
-        )
+            if len(aris) == 0:
+                print(f"  Skipped k={k} (not enough samples for subset size).")
+                continue
 
+            mean_ari = float(aris.mean())
+            median_ari = float(np.median(aris))
+            std_ari = float(aris.std())
+
+            stability_rows.append(
+                {
+                    "k": k,
+                    "mean_ari": mean_ari,
+                    "median_ari": median_ari,
+                    "std_ari": std_ari,
+                    "n_repeats_effective": len(aris),
+                }
+            )
+
+            print(
+                f"  Stability for k={k}: mean ARI={mean_ari:.4f}, "
+                f"median ARI={median_ari:.4f}, std={std_ari:.4f} "
+                f"(over {len(aris)} runs)."
+            )
+
+        if not stability_rows:
+            raise RuntimeError("No stability results computed; check your parameters.")
+
+        stability_df = pd.DataFrame(stability_rows).sort_values("k")
+        stability_out = "../data/project_clustering_technologies/ecosystems_stability.csv"
+        stability_df.to_csv(stability_out, index=False)
+        print(f"\nWrote stability summary to: {stability_out}")
+
+        # Choose k with highest median ARI (tie-breaker: mean ARI)
+        best_row = stability_df.sort_values(
+            ["median_ari", "mean_ari"], ascending=[False, False]
+        ).iloc[0]
+        best_k = int(best_row["k"])
         print(
-            f"  Stability for k={k}: mean ARI={mean_ari:.4f}, "
-            f"median ARI={median_ari:.4f}, std={std_ari:.4f} "
-            f"(over {len(aris)} runs)."
+            f"\nSelected best k={best_k} based on highest median ARI "
+            f"(median={best_row['median_ari']:.4f}, mean={best_row['mean_ari']:.4f})."
         )
 
-    if not stability_rows:
-        raise RuntimeError("No stability results computed; check your parameters.")
-
-    stability_df = pd.DataFrame(stability_rows).sort_values("k")
-    stability_out = "../data/project_clustering_technologies/ecosystems_stability.csv"
-    stability_df.to_csv(stability_out, index=False)
-    print(f"\nWrote stability summary to: {stability_out}")
-
-    # Choose k with highest median ARI (tie-breaker: mean ARI)
-    best_row = stability_df.sort_values(
-        ["median_ari", "mean_ari"], ascending=[False, False]
-    ).iloc[0]
-    best_k = int(best_row["k"])
-    print(
-        f"\nSelected best k={best_k} based on highest median ARI "
-        f"(median={best_row['median_ari']:.4f}, mean={best_row['mean_ari']:.4f})."
-    )
-
-    print(f"\nClustering full data with best k={best_k} ...")
-    best_labels = cluster_with_k(dist_matrix, best_k)
+        print(f"\nClustering full data with best k={best_k} ...")
+        best_labels = cluster_with_k(dist_matrix, best_k)
     df_with_clusters, cluster_summary = summarize_clusters(df, best_labels)
 
     proj_out =  "../data/project_clustering_technologies/ecosystems_project_assignments.csv"
@@ -365,7 +479,14 @@ def main():
 
     # Plot data
     embedding_out = "../data/project_clustering_technologies/ecosystems_embedding.png"
-    plot_embedding(X, best_labels, embedding_out, cluster_summary=cluster_summary, random_state=args.random_state)
+    plot_embedding(
+        X, 
+        best_labels, 
+        embedding_out, 
+        method=args.method, 
+        cluster_summary=cluster_summary, 
+        random_state=args.random_state
+    )
 
 
 if __name__ == "__main__":
