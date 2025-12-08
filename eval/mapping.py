@@ -112,6 +112,48 @@ MAPPING = {
     "logstash": ["logstash.yml"],
     "verdaccio": ["*/.verdaccio/config.yml"],
     "github": [".github/*.yml", ".github/*.yaml"]
+    # CfgNet Mapping
+    # "alluxio": ["alluxio-site.properties"],
+    # "android": ["AndroidManifest.xml"],
+    # "angular": ["angular.json"],
+    # "ansible playbook": ["site.yml", "playbook.yml", "site.yaml", "playbook.yaml", "playbooks/*.yml", "playbooks/*.yaml"],
+    # "ansible": ["ansible.cfg"],
+    # "apache webserver": ["httpd.conf"],
+    # "cargo": ["Cargo.toml"],
+    # "circleci": [".circleci/config.yml"],
+    # "docker": ["Dockerfile"],
+    # "cypress": ["cypress.json"],
+    # "django": ["settings.py"],
+    # "docker compose": ["docker-compose.yml", "docker-compose.yaml"],
+    # "elasticsearch": ["elasticsearch.yml"],
+    # "flutter": ["pubspec.yaml"],
+    # "github action": [".*?\.github\/workflows\/[^\/]*\.yml$"] 
+    # "gralde": ["gradle.properties"],
+    # "gradle wrapper": ["gradle-wrapper.properties"],
+    # "hadoop common": ["core-site.xml"],´
+    # "hadoop hbase": ["hbase-site.xml", "hbase-default.xml"],
+    # "hadoop hadfs": ["hdfs-site.xml", "hdfs-default.xml"],
+    # "heroku": ["Procfile"],
+    # "kafka": ["server.properties"],
+    # "kubernetes": ["log4j.properties", "log4j2.xml"],
+    # "maven": ["pom.xml"],
+    # "maven wrapper": ["maven-wrapper.properties"],
+    # "mapreducs": ["mapred-site.xml", "mapred-default.xml"],
+    # "mongodb": ["mongod.conf"],
+    # "mysql": ["my.cnf", "my.ini"],
+    # "netlify": ["netlify.toml"],
+    # "nginx": ["nginx.conf"],
+    # "nodejs": ["package.json"],
+    # "php": ["php.ini"],
+    # "postgresql": ["postgresql.conf"],
+    # "poetry": ["pyproject.toml"],
+    # "rabbitmq": ["rabbitmq.conf"],
+    # "redis": ["redis.conf"],
+    # "spring": ["application.properties", "application.yml", "application.yaml"],
+    # "travis": [".travis.yml"],
+    # "tsconfig": ["tsconfig.json"],    
+    # "yarn": ["yarn-site.xml"],
+    # "zookeeper": ["zoo.cfg"]
 }
 
 def _match_pattern(pattern: str, filename: str) -> bool:
