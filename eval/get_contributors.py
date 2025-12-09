@@ -192,15 +192,13 @@ def get_project_file(project_dir: str):
     project_name = project_dir.split("/")[-1]
     json_files = glob.glob(f"../data/projects/{project_dir}/*.json")
 
-    if "batch" in project_dir:
-        logger.info(f"Found batch files for project: {project_dir}")
+    if any("batch" in f for f in json_files):
         json_files = [f for f in json_files if re.search(r"batch_\d+\.json$", f)]
         # Sort batch files in ascending order by batch number
         json_files = sorted(json_files, key=lambda x: int(re.search(r"batch_(\d+)\.json$", x).group(1)))
         return json_files
 
     if os.path.join(f"../data/projects/{project_dir}/{project_name}.json") in json_files:
-        logger.info(f"Found main project file for {project_dir}")
         return os.path.join(f"../data/projects/{project_dir}/{project_name}.json")
 
     return None
@@ -269,13 +267,13 @@ def get_contributors(project_dirs: List):
     
     for project_dir in project_dirs:
         try:
-            logger.info(f"Processing project directory: {project_dir}")
             project_files = get_project_file(project_dir)
 
             # Skip if contributors file already exists
             if os.path.exists(f"../data/projects_contributors/{project_dir}_contributors.csv"):
-                logger.info(f"Contributors file for {project_dir} already exists. Skipping.")
                 continue
+
+            logger.info(f"Processing project directory: {project_dir}")
 
             # Process single project file
             if isinstance(project_files, str):
@@ -358,7 +356,6 @@ def aggregate_contributors(contributors_dir: str = "../data/projects_contributor
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, help="Limit number of projects to process")
     parser.add_argument("--aggregate", action="store_true",
                        help="Aggregate existing contributor files to merge identities and filter bots")
     args = parser.parse_args()
@@ -369,5 +366,5 @@ if __name__ == "__main__":
     else:
         # Extract contributors from project files
         project_dirs = os.listdir("../data/projects/")
-        get_contributors(project_dirs[:args.limit] if args.limit else project_dirs)
+        get_contributors(project_dirs)
 

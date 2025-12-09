@@ -1,0 +1,14 @@
+{
+  "total_technologies": 11,
+  "high_risk_technologies": 2,
+  "medium_risk_technologies": 1,
+  "low_risk_technologies": 8,
+  "orphaned_technologies": 1,
+  "avg_gini_coefficient": 0.8502727272727273,
+  "avg_effective_contributors": 3.2454545454545456,
+  "total_contributors": 81,
+  "siloed_contributors": 0,
+  "siloed_contributor_percentage": 0.0,
+  "avg_technologies_per_contributor": 6.345679012345679,
+  "avg_isolation_index": 0.37934567901234567
+}
