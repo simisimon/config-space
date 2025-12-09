@@ -1,10 +1,10 @@
-# Project Clustering by Technology Composition
+# Project Clustering by Technology Stack
 
-This document describes the clustering approaches available for grouping projects into technology ecosystems based on their technology composition.
+This document describes the clustering approaches available for grouping projects into technology ecosystems based on their technology stack composition.
 
 ## Overview
 
-The `project_clustering_technologies.py` script clusters projects based on their technology usage patterns. Projects are represented as binary vectors (presence/absence of technologies), and Jaccard distance measures the dissimilarity between projects.
+The `project_clustering_technology_stack.py` script clusters projects based on their technology usage patterns. Projects are represented as binary vectors (presence/absence of technologies), and Jaccard distance measures the dissimilarity between projects. The script supports multiple clustering methods, automatic parameter selection, and generates comprehensive visualizations for analysis.
 
 ## Available Clustering Methods
 
