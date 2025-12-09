@@ -1,5 +1,0 @@
-cluster_id,num_projects,top_technologies
-0,438,nodejs:438; github-action:409; tsconfig:393; github:365; docker:219; vscode:212; npm:170; dependabot:151; pnpm:148; docker-compose:114
-1,275,github-action:262; github:219; docker:207; poetry:135; dependabot:114; pre-commit:105; docker-compose:59; codecov:56; devcontainer:50; nodejs:41
-2,246,github-action:233; github:201; dependabot:98; gradle-wrapper:41; android:40; gradle:40; cargo:25; codecov:24; nodejs:19; maven:18
-3,84,nodejs:84; github-action:71; npm:63; github:57; dependabot:20; docker:18; eslint:8; bower:8; docker-compose:7; cargo:5
