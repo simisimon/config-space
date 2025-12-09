@@ -5,6 +5,7 @@ import pandas as pd
 import sys
 import os
 import argparse
+from mapping import get_technology
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', force=True, stream=sys.stdout)
@@ -47,7 +48,11 @@ def get_technology_statistics(project_files):
             # Process each config file
             for config_file in config_file_data:
                 technology = config_file.get('concept', '')
-                if not technology or technology in excluded_formats:
+
+                if technology in excluded_formats:
+                    technology = get_technology(config_file["file_path"])
+
+                if not technology:
                     continue
 
                 all_technologies.add(technology)
