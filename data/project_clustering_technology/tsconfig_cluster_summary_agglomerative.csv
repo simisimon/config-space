@@ -1,0 +1,13 @@
+cluster_id,num_projects,top_options
+0,304,compilerOptions.strict=True:238; compilerOptions.esModuleInterop=True:226; compilerOptions.skipLibCheck=True:217; compilerOptions.resolveJsonModule=True:193; compilerOptions.noEmit=True:176; compilerOptions.allowJs=True:173; exclude.exclude/node_modules=node_modules:172; compilerOptions.lib.lib/dom=dom:169; compilerOptions.moduleResolution=node:166; compilerOptions.forceConsistentCasingInFileNames=True:165
+1,8,extends=astro/tsconfigs/strict:6; include.include/**/*=**/*:4; exclude.exclude/dist=dist:3; include.include/.astro/types.d.ts=.astro/types.d.ts:3; compilerOptions.strictNullChecks=True:2; compilerOptions.strict=True:2; include.include/./*.ts=./*.ts:1; compilerOptions.baseUrl=.:1; references.path=../server:1; compilerOptions.types.types/chai=chai:1
+2,1,include.include/.=.:1; compilerOptions.skipLibCheck=False:1; compilerOptions.exactOptionalPropertyTypes=True:1
+3,3,
+4,2,extends=../tsconfig.json:2; compilerOptions.paths.~/*.~/*/./src/*=./src/*:1; compilerOptions.sourceMap=False:1; compilerOptions.inlineSourceMap=True:1; include.include/src=src:1; include.include/tsup.config.ts=tsup.config.ts:1; compilerOptions.checkJs=True:1; compilerOptions.baseUrl=./:1
+5,1,extends=../.nuxt/tsconfig.server.json:1
+6,1,compilerOptions.emitDeclarationOnly=True:1; compilerOptions.emitDecoratorMetadata=False:1; compilerOptions.rootDir=./:1; include.include/./src/**/*=./src/**/*:1; compilerOptions.experimentalDecorators=False:1; include.include/./rollup.config.ts=./rollup.config.ts:1; compilerOptions.strictFunctionTypes=False:1; compilerOptions.composite=True:1
+7,1,extends=@docusaurus/tsconfig:1; include.include/src/=src/:1
+8,1,compilerOptions.rootDir=src:1; include.include/src/**/*.ts=src/**/*.ts:1; compilerOptions.strictFunctionTypes=True:1
+9,1,extends=../../tsconfig.json:1
+10,11,references.path=./tsconfig.node.json:11; references.path=./tsconfig.app.json:8; compilerOptions.baseUrl=.:1; exclude.exclude/**/node_modules/*=**/node_modules/*:1; extends=./tsconfig.base.json:1; references.path=./tsconfig.dev.json:1; references.path=./tsconfig.lib.json:1; compilerOptions.noEmit=True:1; exclude.exclude/node_modules=node_modules:1; references.path=./tsconfig.web.json:1
+11,1,references.path=../core:1; compilerOptions.rootDir=.:1; extends=../../tsconfig:1; references.path=../native:1

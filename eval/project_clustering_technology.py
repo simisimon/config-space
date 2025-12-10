@@ -20,6 +20,7 @@ from sklearn.metrics import pairwise_distances, silhouette_score
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 import seaborn as sns
+from mapping import get_technology
 
 try:
     import hdbscan
@@ -61,7 +62,21 @@ def load_project_configs(data_dir: str, technology: str) -> pd.DataFrame:
             network_data = latest_commit.get("network_data", {})
             concepts = network_data.get("concepts", [])
 
-            if technology not in concepts:
+            # Check if technology is directly listed in concepts
+            technology_found = technology in concepts
+
+            # If not directly listed, check config files with generic concepts using mapping
+            if not technology_found:
+                config_files = network_data.get("config_file_data", [])
+                for config_file in config_files:
+                    if config_file.get("concept") in ["yaml", "json", "xml", "toml", "configparser"]:
+                        mapped_technology = get_technology(config_file["file_path"])
+                        if mapped_technology == technology:
+                            technology_found = True
+                            break
+
+            # Skip if technology not found
+            if not technology_found:
                 continue
 
             # Extract configuration options for this technology
@@ -71,7 +86,19 @@ def load_project_configs(data_dir: str, technology: str) -> pd.DataFrame:
             num_files = 0
 
             for config_file in config_files:
-                if config_file.get("concept") == technology:
+                # Check if this config file is for our technology
+                # Either directly matches or maps to it via mapping.py
+                is_target_tech = False
+                concept = config_file.get("concept")
+
+                if concept == technology:
+                    is_target_tech = True
+                elif concept in ["yaml", "json", "xml", "toml", "configparser"]:
+                    mapped_technology = get_technology(config_file["file_path"])
+                    if mapped_technology == technology:
+                        is_target_tech = True
+
+                if is_target_tech:
                     num_files += 1
                     pairs = config_file.get("pairs", [])
 

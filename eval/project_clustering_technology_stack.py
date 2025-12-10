@@ -524,7 +524,7 @@ def plot_embedding(X: np.ndarray,
 
     plt.xlabel(f"PCA component 1 ({explained_var[0]*100:.1f}% var)")
     plt.ylabel(f"PCA component 2 ({explained_var[1]*100:.1f}% var)")
-    plt.title(f"Technology Ecosystems (Method: {method})\n2D projection explains {total_var:.1f}% of variance")
+    plt.title(f"Technology Ecosystems (Method: {method}, Projects: {X.shape[0]})")
     plt.legend(loc="upper center", bbox_to_anchor=(0.5, -0.08), ncol=2, fontsize="small", frameon=True)
     plt.tight_layout()
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
