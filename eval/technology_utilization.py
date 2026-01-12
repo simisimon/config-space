@@ -12,6 +12,7 @@ from typing import List, Set, Dict
 import matplotlib.pyplot as plt
 from pathlib import Path
 from collections import Counter
+from mapping import get_technology
 
 
 # Set up logging
@@ -111,12 +112,16 @@ def get_options_per_project(technology_files: List, df_options: pd.DataFrame) ->
         matched_project_options = sorted({opt for opts in ref_to_proj.values() for opt in opts})
         unmatched = [opt for opt in project_subset if opt not in matched_project_options]
 
+        # Count unique files for this technology
+        num_files = tech_options_df["file_path"].nunique()
+
         #print("technology:", technology)
         #print("Unmatched Options:", unmatched)
 
         results.append({
             "Technology": technology,
             "Total Options": len(ref_options),
+            "Number of Files": num_files,
             "Options Set (Total)": len(all_options_list),
             "Options Set (Unique)": len(project_subset),
             "Matched Options": len(matched_refs),
@@ -142,8 +147,12 @@ def extract_latest_options(project_file: str) -> pd.DataFrame:
     # TODO: Remove duplicate of options
     for config_file in latest_commit["network_data"]["config_file_data"]:
         for pair in config_file["pairs"]:
+            concept = config_file["concept"]
+            if concept in {"json", "yaml", "configparser", "xml", "toml"}:
+                concept = get_technology(config_file["file_path"])
+
             config_data.append({
-                "concept": config_file["concept"],
+                "concept": concept,
                 "file_path": config_file["file_path"],
                 "option": pair["option"],
                 "value": pair["value"],
@@ -212,6 +221,7 @@ def aggregate_option_per_technology(option_files: List[str]) -> pd.DataFrame:
     out["technology"] = out["__tech_norm__"].map(label_map)
 
     rename_map = {
+        "Number of Files": "Avg Number of Files",
         "Options Set": "Avg Option Set",
         "Matched Options": "Avg Matched Options",
         "Unmatched Options": "Avg Unmatched Options",
@@ -232,41 +242,45 @@ def aggregate_option_per_technology(option_files: List[str]) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    #parser = argparse.ArgumentParser()
-    #parser.add_argument("--limit", type=int, help="Limit number of projects to process")
-    #args = parser.parse_args()
-    #project_files = load_project_files(args.limit)
-    #property_files = glob.glob("../data/technology/*.properties")
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument("--limit", type=int, help="Limit number of projects to process")
+    # args = parser.parse_args()
+    # project_files = load_project_files(args.limit)
+    # property_files = glob.glob("../data/technologies/*.properties")
 
-    # Get options per technology
-    #df_technology_options = get_options_per_technology(property_files)  
+    # # Get options per technology
+    # df_technology_options = get_options_per_technology(property_files)
 
-    #for project_file in tqdm(project_files, desc="Processing Project Files"):
-    #    project_name = project_file.split("/")[-1].replace("_last_commit.json", "")
-    #    output_file = f"../data/projects_options/{project_name}_options.csv"
+    # for project_file in tqdm(project_files, desc="Processing Project Files"):
+    #     project_name = project_file.split("/")[-1].replace("_last_commit.json", "")
+    #     output_file = f"../data/projects_technology_utilization/{project_name}_technology_utilization.csv"
 
-    #    if os.path.exists(output_file):
-    #        logger.info(f"Options file already exists for {project_name}, skipping.")
-    #        continue
-        
-    #    try:
-    #        02-12-2025
-    #        df_project_options = get_options_per_project(property_files, df_latest_project_options)
-    #        df_project_options.to_csv(output_file, index=False)
-    #    except Exception as e:
-    #        logger.error(f"Error processing project {project_name}: {e}")
-    #        continue
+    #     if os.path.exists(output_file):
+    #         logger.info(f"Options file already exists for {project_name}, skipping.")
+    #         continue
 
-    # Combine all project options into a single DataFrame
-    #all_project_option_files = glob.glob("../data/projects_options/*.csv")
+    #     try:
+    #         # Extract options from the project file
+    #         df_latest_project_options = extract_latest_options(project_file)
 
-    #df_aggregated = aggregate_option_per_technology(all_project_option_files)
+    #         # Calculate technology utilization
+    #         df_project_options = get_options_per_project(property_files, df_latest_project_options)
+    #         df_project_options.to_csv(output_file, index=False)
+    #     except Exception as e:
+    #         logger.error(f"Error processing project {project_name}: {e}")
+    #         continue
 
-    #df_aggregated.to_csv("../data/results/options_per_technology_aggregated.csv", index=False)
+    # # Combine all project options into a single DataFrame
+    # all_project_option_files = glob.glob("../data/projects_technology_utilization/*.csv")
+
+    # df_aggregated = aggregate_option_per_technology(all_project_option_files)
+
+    # df_aggregated.to_csv("../data/results/options_per_technology_aggregated.csv", index=False)
 
     test_projects = [
         "../data/test_projects/piggymetrics_last_commit.json",
-        "../data/test_projects/test-config-repo_last_commit.json"
+        "../data/test_projects/test-config-repo_last_commit.json",
+        "../data/test_projects/Avalonia_last_commit.json"
     ]
 
     property_files = glob.glob("../data/technologies/*.properties")
@@ -278,9 +292,9 @@ if __name__ == "__main__":
         project_name = project_file.split("/")[-1].replace("_last_commit.json", "")
         output_file = f"../data/test_projects/{project_name}_technology_utilization.csv"
 
-        if os.path.exists(output_file):
-            logger.info(f"Options file already exists for {project_name}, skipping.")
-            continue
+        #if os.path.exists(output_file):
+        #    logger.info(f"Options file already exists for {project_name}, skipping.")
+        #    continue
 
         try:
             logger.info(f"Processing project: {project_name}")
