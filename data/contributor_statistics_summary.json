@@ -1,0 +1,291 @@
+{
+  "aggregate_statistics": {
+    "total_projects": 1080,
+    "total_contributors_across_all_projects": 601287,
+    "total_config_contributors_across_all_projects": 126940,
+    "total_commits_across_all_projects": 12572482,
+    "total_config_commits_across_all_projects": 1905070,
+    "avg_contributors_per_project": 556.7472222222223,
+    "median_contributors_per_project": 293.5,
+    "avg_config_contributors_per_project": 117.53703703703704,
+    "median_config_contributors_per_project": 58.0,
+    "avg_config_contributor_percentage": 26.68201241093662,
+    "median_config_contributor_percentage": 23.02732437550726,
+    "avg_unique_config_files_per_project": 315.7027777777778,
+    "median_unique_config_files_per_project": 75.0,
+    "min_contributors": 1,
+    "max_contributors": 12342,
+    "min_config_contributors": 1,
+    "max_config_contributors": 1804,
+    "stdev_contributors_per_project": 900.4799338166086,
+    "stdev_config_contributors_per_project": 181.84910211302338
+  },
+  "top_10_by_total_contributors": [
+    {
+      "rank": 1,
+      "project_name": "homebrew-cask",
+      "total_contributors": 12342,
+      "config_contributors": 114,
+      "config_contributors_percentage": 0.92
+    },
+    {
+      "rank": 2,
+      "project_name": "rust-lang_rust",
+      "total_contributors": 8718,
+      "config_contributors": 1454,
+      "config_contributors_percentage": 16.68
+    },
+    {
+      "rank": 3,
+      "project_name": "llvm_llvm-project",
+      "total_contributors": 8339,
+      "config_contributors": 1163,
+      "config_contributors_percentage": 13.95
+    },
+    {
+      "rank": 4,
+      "project_name": "ansible_ansible",
+      "total_contributors": 7062,
+      "config_contributors": 1569,
+      "config_contributors_percentage": 22.22
+    },
+    {
+      "rank": 5,
+      "project_name": "rails",
+      "total_contributors": 6946,
+      "config_contributors": 427,
+      "config_contributors_percentage": 6.15
+    },
+    {
+      "rank": 6,
+      "project_name": "pytorch_pytorch",
+      "total_contributors": 6199,
+      "config_contributors": 945,
+      "config_contributors_percentage": 15.24
+    },
+    {
+      "rank": 7,
+      "project_name": "kubernetes_kubernetes",
+      "total_contributors": 5697,
+      "config_contributors": 1592,
+      "config_contributors_percentage": 27.94
+    },
+    {
+      "rank": 8,
+      "project_name": "tensorflow",
+      "total_contributors": 4982,
+      "config_contributors": 691,
+      "config_contributors_percentage": 13.87
+    },
+    {
+      "rank": 9,
+      "project_name": "nodejs_node",
+      "total_contributors": 4737,
+      "config_contributors": 262,
+      "config_contributors_percentage": 5.53
+    },
+    {
+      "rank": 10,
+      "project_name": "framework",
+      "total_contributors": 4712,
+      "config_contributors": 229,
+      "config_contributors_percentage": 4.86
+    }
+  ],
+  "top_10_by_config_contributors": [
+    {
+      "rank": 1,
+      "project_name": "gatsbyjs_gatsby",
+      "config_contributors": 1804,
+      "total_contributors": 4429,
+      "config_contributors_percentage": 40.73
+    },
+    {
+      "rank": 2,
+      "project_name": "kubernetes_kubernetes",
+      "config_contributors": 1592,
+      "total_contributors": 5697,
+      "config_contributors_percentage": 27.94
+    },
+    {
+      "rank": 3,
+      "project_name": "ansible_ansible",
+      "config_contributors": 1569,
+      "total_contributors": 7062,
+      "config_contributors_percentage": 22.22
+    },
+    {
+      "rank": 4,
+      "project_name": "rust-lang_rust",
+      "config_contributors": 1454,
+      "total_contributors": 8718,
+      "config_contributors_percentage": 16.68
+    },
+    {
+      "rank": 5,
+      "project_name": "godot",
+      "config_contributors": 1432,
+      "total_contributors": 3713,
+      "config_contributors_percentage": 38.57
+    },
+    {
+      "rank": 6,
+      "project_name": "vercel_next.js",
+      "config_contributors": 1256,
+      "total_contributors": 4039,
+      "config_contributors_percentage": 31.1
+    },
+    {
+      "rank": 7,
+      "project_name": "OpenAPITools_openapi-generator",
+      "config_contributors": 1180,
+      "total_contributors": 3685,
+      "config_contributors_percentage": 32.02
+    },
+    {
+      "rank": 8,
+      "project_name": "llvm_llvm-project",
+      "config_contributors": 1163,
+      "total_contributors": 8339,
+      "config_contributors_percentage": 13.95
+    },
+    {
+      "rank": 9,
+      "project_name": "jellyfin",
+      "config_contributors": 1064,
+      "total_contributors": 1640,
+      "config_contributors_percentage": 64.88
+    },
+    {
+      "rank": 10,
+      "project_name": "backstage_backstage",
+      "config_contributors": 1039,
+      "total_contributors": 2607,
+      "config_contributors_percentage": 39.85
+    }
+  ],
+  "top_10_by_config_contributor_percentage": [
+    {
+      "rank": 1,
+      "project_name": "remix",
+      "config_contributors_percentage": 96.65,
+      "config_contributors": 749,
+      "total_contributors": 775
+    },
+    {
+      "rank": 2,
+      "project_name": "dockge",
+      "config_contributors_percentage": 92.31,
+      "config_contributors": 96,
+      "total_contributors": 104
+    },
+    {
+      "rank": 3,
+      "project_name": "SmartTube",
+      "config_contributors_percentage": 90.91,
+      "config_contributors": 140,
+      "total_contributors": 154
+    },
+    {
+      "rank": 4,
+      "project_name": "FreeTubeApp_FreeTube",
+      "config_contributors_percentage": 89.76,
+      "config_contributors": 675,
+      "total_contributors": 752
+    },
+    {
+      "rank": 5,
+      "project_name": "Ehviewer_CN_SXJ",
+      "config_contributors_percentage": 84.21,
+      "config_contributors": 16,
+      "total_contributors": 19
+    },
+    {
+      "rank": 6,
+      "project_name": "deskreen",
+      "config_contributors_percentage": 82.76,
+      "config_contributors": 24,
+      "total_contributors": 29
+    },
+    {
+      "rank": 7,
+      "project_name": "NewPipe",
+      "config_contributors_percentage": 82.65,
+      "config_contributors": 910,
+      "total_contributors": 1101
+    },
+    {
+      "rank": 8,
+      "project_name": "Anuken_Mindustry",
+      "config_contributors_percentage": 82.61,
+      "config_contributors": 898,
+      "total_contributors": 1087
+    },
+    {
+      "rank": 9,
+      "project_name": "simple-icons",
+      "config_contributors_percentage": 82.39,
+      "config_contributors": 711,
+      "total_contributors": 863
+    },
+    {
+      "rank": 10,
+      "project_name": "youtube-music",
+      "config_contributors_percentage": 80.35,
+      "config_contributors": 368,
+      "total_contributors": 458
+    }
+  ],
+  "top_10_by_unique_config_files": [
+    {
+      "rank": 1,
+      "project_name": "jenkinsci_jenkins",
+      "unique_config_files_count": 11407
+    },
+    {
+      "rank": 2,
+      "project_name": "apache_shardingsphere",
+      "unique_config_files_count": 9065
+    },
+    {
+      "rank": 3,
+      "project_name": "elastic_elasticsearch",
+      "unique_config_files_count": 7342
+    },
+    {
+      "rank": 4,
+      "project_name": "vuetify",
+      "unique_config_files_count": 6556
+    },
+    {
+      "rank": 5,
+      "project_name": "openjdk_jdk",
+      "unique_config_files_count": 5465
+    },
+    {
+      "rank": 6,
+      "project_name": "OpenAPITools_openapi-generator",
+      "unique_config_files_count": 4772
+    },
+    {
+      "rank": 7,
+      "project_name": "matomo-org_matomo",
+      "unique_config_files_count": 4612
+    },
+    {
+      "rank": 8,
+      "project_name": "iTerm2-Color-Schemes",
+      "unique_config_files_count": 4589
+    },
+    {
+      "rank": 9,
+      "project_name": "ansible_ansible",
+      "unique_config_files_count": 4272
+    },
+    {
+      "rank": 10,
+      "project_name": "jhipster_generator-jhipster",
+      "unique_config_files_count": 4075
+    }
+  ]
+}
