@@ -26,10 +26,18 @@ except ImportError:
     IGRAPH_AVAILABLE = False
 
 
-def load_projects(csv_path: str) -> pd.DataFrame:
+def load_projects(csv_path: str, filter_projects: str = None) -> pd.DataFrame:
     df = pd.read_csv(csv_path)
     if "technologies" not in df.columns or "project" not in df.columns:
         raise ValueError("CSV must contain 'project' and 'technologies' columns.")
+
+    # Filter by project list if provided
+    if filter_projects:
+        with open(filter_projects, 'r') as f:
+            projects_to_keep = set(line.strip() for line in f if line.strip())
+        df = df[df['project'].isin(projects_to_keep)].copy()
+        print(f"Filtered to {len(df)} projects from {filter_projects}")
+
     # Parse stringified lists into Python lists
     df["tech_list"] = df["technologies"].apply(
         lambda x: ast.literal_eval(x) if isinstance(x, str) and x.strip() else []
@@ -544,6 +552,12 @@ def main():
              "(must have 'project' and 'technologies' columns).",
     )
     parser.add_argument(
+        "--filter-projects",
+        default=None,
+        help="Path to text file containing project names to include (one per line). "
+             "Useful for sub-clustering a specific cluster.",
+    )
+    parser.add_argument(
         "--min-tech-frequency",
         type=int,
         default=2,
@@ -653,7 +667,7 @@ def main():
 
     args = parser.parse_args()
 
-    df = load_projects(args.csv_path)
+    df = load_projects(args.csv_path, filter_projects=args.filter_projects)
     print(f"Loaded {len(df)} projects from {args.csv_path}")
 
     X, tech_names = build_technology_matrix(df, min_frequency=args.min_tech_frequency, exclude_github=args.exclude_github)

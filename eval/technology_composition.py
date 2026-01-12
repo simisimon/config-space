@@ -357,6 +357,6 @@ if __name__ == "__main__":
     # Get technology combinations
     create_technology_combination_plot(
         data_file="../data/technology_composition/project_technologies_filtered.csv", 
-        num_combos=50,
+        num_combos=20,
         refresh=args.refresh
     )

@@ -1,0 +1,6 @@
+cluster_id,num_projects,top_technologies
+0,121,docker:65; golangci-lint:62; codecov:57; goreleaser:34; travis:26; appveyor:23; devcontainer:19; renovate:18; markdownlint:15; helm:14
+1,183,poetry:167; pre-commit:107; docker:98; npm:59; django:51; readthedocs:47; docker-compose:43; tsconfig:42; codecov:39; devcontainer:38
+2,70,cargo:57; rustfmt:42; docker:31; clippy:25; rust:20; typos:13; npm:13; cross:11; poetry:10; vscode:10
+3,119,docker:94; docker-compose:43; npm:40; maven:24; devcontainer:19; snapscraft:18; spring:10; vscode:10; kubernetes:9; renovate:7
+4,1,jazzy:1
