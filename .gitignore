@@ -18,7 +18,10 @@ analysis.log
 **/data/projects_with_batches/*
 **/data/projects_last_commit/*
 **/data/projects_contributors/*
-**/data/projects_contributors_aggregated/*
+**/data/projects_contributors_merged/*
+**/data/projects_contributors_gambit/*
+**/data/projects_contributors_metrics/*
+**/data/projects_technology_utilization/*
 **/data/projects_options/*
 **/data/test_projects/*
 **/slurm/projects/*
