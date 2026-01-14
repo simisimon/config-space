@@ -365,6 +365,6 @@ if __name__ == "__main__":
         aggregate_contributors()
     else:
         # Extract contributors from project files
-        project_dirs = os.listdir("../data/projects/")
+        project_dirs = os.listdir("../../data/projects/")
         get_contributors(project_dirs)
 

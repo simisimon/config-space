@@ -109,14 +109,18 @@ def auto_detect_columns(df: pd.DataFrame) -> Dict[str, Optional[str]]:
     return detected
 
 
-def parse_file_list(value, delimiter_regex: str = r'[;,|]') -> List[str]:
+def parse_file_list(value, delimiter_regex: str = r'[;,|]') -> List[Tuple[str, int]]:
     """
-    Parse a config files column value into a list of file paths.
+    Parse a config files column value into a list of (file_path, count) tuples.
 
     Handles:
-    - Python list strings: "['file1.yml', 'file2.json']"
-    - Delimited strings: "file1.yml;file2.json"
+    - Python list of tuples: "[('file1.yml', 2), ('file2.json', 3)]"
+    - Python list strings: "['file1.yml', 'file2.json']" (count defaults to 1)
+    - Delimited strings: "file1.yml;file2.json" (count defaults to 1)
     - Empty values: [] or ""
+
+    Returns:
+        List of (file_path, count) tuples
     """
     if pd.isna(value) or value == '' or value == '[]':
         return []
@@ -126,14 +130,25 @@ def parse_file_list(value, delimiter_regex: str = r'[;,|]') -> List[str]:
         try:
             parsed = ast.literal_eval(value)
             if isinstance(parsed, list):
-                return [str(item) for item in parsed if item]
+                result = []
+                for item in parsed:
+                    if not item:
+                        continue
+                    # Check if item is a tuple (file_path, count)
+                    if isinstance(item, tuple) and len(item) == 2:
+                        file_path, count = item
+                        result.append((str(file_path), int(count)))
+                    # Otherwise treat as just a file path with count=1
+                    else:
+                        result.append((str(item), 1))
+                return result
         except (ValueError, SyntaxError):
             pass
 
-    # Try delimiter-based splitting
+    # Try delimiter-based splitting (count defaults to 1)
     if isinstance(value, str):
         files = re.split(delimiter_regex, value.strip())
-        return [f.strip().strip("'\"") for f in files if f.strip()]
+        return [(f.strip().strip("'\""), 1) for f in files if f.strip()]
 
     return []
 
@@ -143,8 +158,8 @@ def extract_technologies(df: pd.DataFrame, config_files_col: str,
     """
     Extract technologies from config files and create per-contributor-technology data.
 
-    Assumption: If only file paths exist (not per-tech commit counts), we assume
-    each contributor's config commits are split evenly across technologies they touched.
+    Now uses actual file touch counts from the data to allocate commits to technologies.
+    Files without recognized technology mapping are excluded from analysis.
 
     Returns:
         DataFrame with columns: contributor, technology, tech_commits
@@ -158,29 +173,65 @@ def extract_technologies(df: pd.DataFrame, config_files_col: str,
         if config_commits <= 0:
             continue
 
-        files = parse_file_list(row[config_files_col], delimiter_regex)
-        if not files:
+        file_tuples = parse_file_list(row[config_files_col], delimiter_regex)
+        if not file_tuples:
             continue
 
-        # Map files to technologies (only include files with recognized technologies)
-        technologies = set()
-        for file_path in files:
+        # Map files to technologies with their counts
+        tech_counts = {}
+        total_file_touches = 0
+
+        for file_path, count in file_tuples:
             tech = get_technology(file_path)
             if tech:
-                technologies.add(tech)
+                tech_counts[tech] = tech_counts.get(tech, 0) + count
+                total_file_touches += count
             # Skip files without recognized technology mapping
 
-        if not technologies:
+        if not tech_counts or total_file_touches == 0:
             continue
 
-        # Equal-split assumption: divide config commits evenly across technologies
-        commits_per_tech = config_commits / len(technologies)
-
-        for tech in technologies:
+        # Distribute config commits proportionally based on file touch counts
+        for tech, touch_count in tech_counts.items():
+            tech_commits = config_commits * (touch_count / total_file_touches)
             records.append({
                 'contributor': contributor,
                 'technology': tech,
-                'tech_commits': commits_per_tech
+                'tech_commits': tech_commits
+            })
+
+    return pd.DataFrame(records)
+
+
+def extract_file_level_data(df: pd.DataFrame, config_files_col: str,
+                            delimiter_regex: str) -> pd.DataFrame:
+    """
+    Extract file-level touch data for each contributor.
+
+    Returns:
+        DataFrame with columns: contributor, file_path, technology, touch_count
+    """
+    records = []
+
+    for idx, row in df.iterrows():
+        contributor = row.name  # Assume index is contributor ID
+        config_commits = row['config_commits']
+
+        if config_commits <= 0:
+            continue
+
+        file_tuples = parse_file_list(row[config_files_col], delimiter_regex)
+        if not file_tuples:
+            continue
+
+        for file_path, count in file_tuples:
+            tech = get_technology(file_path)
+            # Include all files, even those without recognized technology
+            records.append({
+                'contributor': contributor,
+                'file_path': file_path,
+                'technology': tech if tech else 'unknown',
+                'touch_count': count
             })
 
     return pd.DataFrame(records)
@@ -353,6 +404,49 @@ def compute_contributor_metrics(tech_contrib_df: pd.DataFrame,
     return pd.DataFrame(metrics)
 
 
+def compute_file_level_metrics(file_level_df: pd.DataFrame,
+                                contributor_col: str) -> pd.DataFrame:
+    """
+    Compute file-level expertise/depth metrics for each contributor.
+
+    Metrics:
+    - total_config_files: Number of unique files touched
+    - total_file_touches: Sum of all touch counts
+    - avg_touches_per_file: Average engagement depth
+    - max_file_touches: Highest touch count on any single file
+    - touch_concentration: Gini coefficient on file touches (inequality measure)
+
+    Args:
+        file_level_df: DataFrame with columns [contributor, file_path, technology, touch_count]
+        contributor_col: Name of the contributor identifier column
+
+    Returns:
+        DataFrame with file-level metrics per contributor
+    """
+    metrics = []
+
+    for contributor, group in file_level_df.groupby('contributor'):
+        total_files = len(group)
+        total_touches = group['touch_count'].sum()
+        avg_touches = total_touches / total_files if total_files > 0 else 0.0
+        max_touches = group['touch_count'].max()
+
+        # Compute touch concentration (Gini on file touches)
+        touch_counts = group['touch_count'].values
+        touch_gini = compute_gini_coefficient(touch_counts)
+
+        metrics.append({
+            contributor_col: contributor,
+            'total_config_files': total_files,
+            'total_file_touches': int(total_touches),
+            'avg_touches_per_file': round(avg_touches, 2),
+            'max_file_touches': int(max_touches),
+            'touch_concentration': round(touch_gini, 4)
+        })
+
+    return pd.DataFrame(metrics)
+
+
 def compute_kdp(tech_contrib_df: pd.DataFrame,
                contributor_tii: pd.DataFrame) -> pd.Series:
     """
@@ -496,6 +590,15 @@ def process_single_file(input_file: Path, out_dir: Path, min_commits_k: int,
                 delimiter_regex
             )
 
+            # Extract file-level data for expertise metrics
+            if verbose:
+                print("Extracting file-level touch data...")
+            file_level_df = extract_file_level_data(
+                df_clean,
+                detected['config_files'],
+                delimiter_regex
+            )
+
             if len(tech_contrib_df) > 0:
                 num_technologies = tech_contrib_df['technology'].nunique()
                 if verbose:
@@ -508,6 +611,11 @@ def process_single_file(input_file: Path, out_dir: Path, min_commits_k: int,
                 if verbose:
                     print("\nComputing contributor-centric metrics...")
                 contributor_metrics_df = compute_contributor_metrics(tech_contrib_df, 'contributor_id')
+
+                # Compute file-level expertise metrics
+                if verbose:
+                    print("Computing file-level expertise metrics...")
+                file_level_metrics_df = compute_file_level_metrics(file_level_df, 'contributor_id')
 
                 # Add KDP to technology metrics
                 if verbose:
@@ -527,12 +635,26 @@ def process_single_file(input_file: Path, out_dir: Path, min_commits_k: int,
                     how='left'
                 )
 
+                # Merge file-level expertise metrics
+                contributor_metrics_full = contributor_metrics_full.merge(
+                    file_level_metrics_df[['contributor_id', 'total_config_files', 'total_file_touches',
+                                           'avg_touches_per_file', 'max_file_touches', 'touch_concentration']],
+                    on='contributor_id',
+                    how='left'
+                )
+
                 # Fill NaN for contributors with no config files data
                 contributor_metrics_full['tii'] = contributor_metrics_full['tii'].fillna(0.0).round(4)
                 contributor_metrics_full['num_technologies'] = contributor_metrics_full['num_technologies'].fillna(0).astype(int)
                 contributor_metrics_full['technologies'] = contributor_metrics_full['technologies'].apply(
                     lambda x: x if isinstance(x, list) else []
                 )
+                # Fill file-level metrics with 0 for inactive contributors
+                contributor_metrics_full['total_config_files'] = contributor_metrics_full['total_config_files'].fillna(0).astype(int)
+                contributor_metrics_full['total_file_touches'] = contributor_metrics_full['total_file_touches'].fillna(0).astype(int)
+                contributor_metrics_full['avg_touches_per_file'] = contributor_metrics_full['avg_touches_per_file'].fillna(0.0).round(2)
+                contributor_metrics_full['max_file_touches'] = contributor_metrics_full['max_file_touches'].fillna(0).astype(int)
+                contributor_metrics_full['touch_concentration'] = contributor_metrics_full['touch_concentration'].fillna(0.0).round(4)
                 contributor_metrics_full['config_commits'] = contributor_metrics_full['config_commits'].round(2)
                 if 'non_config_commits' in contributor_metrics_full.columns:
                     contributor_metrics_full['non_config_commits'] = contributor_metrics_full['non_config_commits'].round(2)
@@ -598,6 +720,12 @@ def process_single_file(input_file: Path, out_dir: Path, min_commits_k: int,
             basic_metrics['tii'] = 0.0
             basic_metrics['num_technologies'] = 0
             basic_metrics['technologies'] = [[] for _ in range(len(basic_metrics))]
+            # Add placeholder file-level metrics
+            basic_metrics['total_config_files'] = 0
+            basic_metrics['total_file_touches'] = 0
+            basic_metrics['avg_touches_per_file'] = 0.0
+            basic_metrics['max_file_touches'] = 0
+            basic_metrics['touch_concentration'] = 0.0
 
             contrib_out = out_dir / f'{project_name}_contributors_metrics.csv'
             basic_metrics.to_csv(contrib_out, index=False)
@@ -618,7 +746,7 @@ def process_single_file(input_file: Path, out_dir: Path, min_commits_k: int,
             'input_file': str(input_file),
             'detected_columns': detected,
             'assumptions': [
-                "Config commits are split evenly across technologies when per-tech counts unavailable",
+                "Config commits are distributed across technologies proportionally based on file touch counts",
                 "Technologies are derived from file paths using mapping.py::get_technology()",
                 "Files without recognized technology mapping are excluded from analysis",
                 "TII = 0 for contributors with no config commits or no technologies",

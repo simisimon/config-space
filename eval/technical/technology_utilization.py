@@ -89,16 +89,24 @@ def get_options_per_project(technology_files: List, df_options: pd.DataFrame) ->
     project_options = df_options.copy()
     project_options["option"] = project_options["option"].str.strip()
 
+    # Create a mapping from technology name to property file
+    tech_to_file = {}
+    for technology_file in technology_files:
+        technology = technology_file.split("/")[-1].split(".properties")[0]
+        tech_to_file[technology.lower()] = technology_file
+
+    # Get all unique technologies in the project
+    all_project_technologies = project_options["concept"].dropna().unique()
+
     # Prepare result table
     results = []
 
-    # Iterate over all reference files
-    for technology_file in technology_files:
-        technology = technology_file.split("/")[-1].split(".properties")[0]
-        ref_options = parse_properties_file(technology_file)
+    # Process all technologies found in the project
+    for technology in all_project_technologies:
+        technology_lower = technology.lower()
 
         # Get all options for this technology (including duplicates)
-        tech_options_df = project_options[project_options["concept"].str.lower() == technology.lower()]
+        tech_options_df = project_options[project_options["concept"].str.lower() == technology_lower]
         all_options_list = tech_options_df["option"].tolist()
 
         # Get unique options
@@ -107,29 +115,42 @@ def get_options_per_project(technology_files: List, df_options: pd.DataFrame) ->
         if not project_subset:
             continue
 
-        ref_to_proj = get_matches(project_subset, ref_options)
-        matched_refs = set(ref_to_proj.keys())
-        matched_project_options = sorted({opt for opts in ref_to_proj.values() for opt in opts})
-        unmatched = [opt for opt in project_subset if opt not in matched_project_options]
-
         # Count unique files for this technology
         num_files = tech_options_df["file_path"].nunique()
 
-        #print("technology:", technology)
-        #print("Unmatched Options:", unmatched)
+        # Check if this technology has a property file
+        if technology_lower in tech_to_file:
+            # Technology has a property file - compute full metrics
+            ref_options = parse_properties_file(tech_to_file[technology_lower])
+            ref_to_proj = get_matches(project_subset, ref_options)
+            matched_refs = set(ref_to_proj.keys())
+            matched_project_options = sorted({opt for opts in ref_to_proj.values() for opt in opts})
+            unmatched = [opt for opt in project_subset if opt not in matched_project_options]
 
-        results.append({
-            "Technology": technology,
-            "Total Options": len(ref_options),
-            "Number of Files": num_files,
-            "Options Set (Total)": len(all_options_list),
-            "Options Set (Unique)": len(project_subset),
-            "Matched Options": len(matched_refs),
-            "Unmatched Options": len(unmatched),
-            "Percentage Used": round(len(matched_refs) / len(ref_options) * 100, 2) if ref_options else 0.0,
-            "Matched": list(matched_project_options)
-        })
-
+            results.append({
+                "Technology": technology,
+                "Total Options": len(ref_options),
+                "Number of Files": num_files,
+                "Options Set (Total)": len(all_options_list),
+                "Options Set (Unique)": len(project_subset),
+                "Matched Options": len(matched_refs),
+                "Unmatched Options": len(unmatched),
+                "Percentage Used": round(len(matched_refs) / len(ref_options) * 100, 2) if ref_options else 0.0,
+                "Matched": list(matched_project_options)
+            })
+        else:
+            # Technology doesn't have a property file - only compute basic metrics
+            results.append({
+                "Technology": technology,
+                "Total Options": None,
+                "Number of Files": num_files,
+                "Options Set (Total)": len(all_options_list),
+                "Options Set (Unique)": len(project_subset),
+                "Matched Options": None,
+                "Unmatched Options": None,
+                "Percentage Used": None,
+                "Matched": []
+            })
 
     return pd.DataFrame(results)
 
@@ -184,7 +205,7 @@ def aggregate_option_per_technology(option_files: List[str]) -> pd.DataFrame:
     for f in option_files:
         try:
             df = pd.read_csv(f)
-            df["__project__"] = Path(f).stem.replace("_options", "")
+            df["__project__"] = Path(f).stem.replace("_technology_utilization", "")
             # normalize the technology key for grouping (handles whitespace/case)
             df["__tech_norm__"] = df["Technology"].astype(str).str.strip().str.lower()
             dfs.append(df)
@@ -200,116 +221,106 @@ def aggregate_option_per_technology(option_files: List[str]) -> pd.DataFrame:
             .to_dict()
     )
 
-    # numeric columns to average; exclude original Project_Used (we recompute)
-    exclude = {"Technology", "Project_Used", "__project__", "__tech_norm__"}
-    numeric_cols = [c for c in full.columns if c not in exclude and pd.api.types.is_numeric_dtype(full[c])]
-
-    agg_mean = (
-        full.groupby("__tech_norm__", dropna=False)[numeric_cols]
-            .mean()
+    # Aggregate statistics for each technology
+    agg_stats = (
+        full.groupby("__tech_norm__", dropna=False)
+            .agg({
+                "__project__": "nunique",  # number of projects
+                "Number of Files": "mean",  # avg number of config files
+                "Options Set (Total)": ["mean", "min", "max"]  # avg, min, max options set
+            })
             .reset_index()
     )
 
-    projects_used = (
-        full.groupby("__tech_norm__", dropna=False)["__project__"]
-            .nunique()
-            .reset_index()
-            .rename(columns={"__project__": "projects_used"})
-    )
-
-    out = agg_mean.merge(projects_used, on="__tech_norm__", how="left")
-    out["technology"] = out["__tech_norm__"].map(label_map)
-
-    rename_map = {
-        "Number of Files": "Avg Number of Files",
-        "Options Set": "Avg Option Set",
-        "Matched Options": "Avg Matched Options",
-        "Unmatched Options": "Avg Unmatched Options",
-        "Percentage Used": "Average Percentage Used",
-    }
-    out = out.rename(columns=rename_map)
-
-    # round numeric columns
-    for col in out.select_dtypes(include="number").columns:
-        out[col] = out[col].round(2)
-
-    # column order
-    ordered = ["technology", "projects_used"] + [
-        c for c in out.columns if c not in {"technology", "projects_used", "__tech_norm__"}
+    # Flatten column names
+    agg_stats.columns = [
+        "__tech_norm__",
+        "projects_used",
+        "avg_num_files",
+        "avg_options_set",
+        "min_options_set",
+        "max_options_set"
     ]
-    out = out[ordered].sort_values("technology").reset_index(drop=True)
+
+    # Add technology display name
+    agg_stats["technology"] = agg_stats["__tech_norm__"].map(label_map)
+
+    # Round numeric columns
+    for col in ["avg_num_files", "avg_options_set", "min_options_set", "max_options_set"]:
+        agg_stats[col] = agg_stats[col].round(2)
+
+    # Select and order columns
+    out = agg_stats[["technology", "projects_used", "avg_num_files", "avg_options_set", "min_options_set", "max_options_set"]]
+    out = out.sort_values("technology").reset_index(drop=True)
+
     return out
 
 
 if __name__ == "__main__":
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument("--limit", type=int, help="Limit number of projects to process")
-    # args = parser.parse_args()
-    # project_files = load_project_files(args.limit)
-    # property_files = glob.glob("../data/technologies/*.properties")
-
-    # # Get options per technology
-    # df_technology_options = get_options_per_technology(property_files)
-
-    # for project_file in tqdm(project_files, desc="Processing Project Files"):
-    #     project_name = project_file.split("/")[-1].replace("_last_commit.json", "")
-    #     output_file = f"../data/projects_technology_utilization/{project_name}_technology_utilization.csv"
-
-    #     if os.path.exists(output_file):
-    #         logger.info(f"Options file already exists for {project_name}, skipping.")
-    #         continue
-
-    #     try:
-    #         # Extract options from the project file
-    #         df_latest_project_options = extract_latest_options(project_file)
-
-    #         # Calculate technology utilization
-    #         df_project_options = get_options_per_project(property_files, df_latest_project_options)
-    #         df_project_options.to_csv(output_file, index=False)
-    #     except Exception as e:
-    #         logger.error(f"Error processing project {project_name}: {e}")
-    #         continue
-
-    # # Combine all project options into a single DataFrame
-    # all_project_option_files = glob.glob("../data/projects_technology_utilization/*.csv")
-
-    # df_aggregated = aggregate_option_per_technology(all_project_option_files)
-
-    # df_aggregated.to_csv("../data/results/options_per_technology_aggregated.csv", index=False)
-
-    test_projects = [
-        "../data/test_projects/piggymetrics_last_commit.json",
-        "../data/test_projects/test-config-repo_last_commit.json",
-        "../data/test_projects/Avalonia_last_commit.json"
-    ]
-
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--limit", type=int, help="Limit number of projects to process")
+    args = parser.parse_args()
+    project_files = load_project_files(args.limit)
     property_files = glob.glob("../data/technologies/*.properties")
 
-    # Get options per technology (only needs to be done once)
+    # Get options per technology
     df_technology_options = get_options_per_technology(property_files)
 
-    for project_file in test_projects:
+    for project_file in tqdm(project_files, desc="Processing Project Files"):
         project_name = project_file.split("/")[-1].replace("_last_commit.json", "")
-        output_file = f"../data/test_projects/{project_name}_technology_utilization.csv"
-
-        #if os.path.exists(output_file):
-        #    logger.info(f"Options file already exists for {project_name}, skipping.")
-        #    continue
-
+        output_file = f"../data/projects_technology_utilization/{project_name}_technology_utilization.csv"
+        
         try:
-            logger.info(f"Processing project: {project_name}")
-
             # Extract options from the project file
             df_latest_project_options = extract_latest_options(project_file)
 
             # Calculate technology utilization
             df_project_options = get_options_per_project(property_files, df_latest_project_options)
-
-            # Save results
             df_project_options.to_csv(output_file, index=False)
-            logger.info(f"Saved technology utilization to {output_file}")
-
         except Exception as e:
             logger.error(f"Error processing project {project_name}: {e}")
             continue
+
+    # Combine all project options into a single DataFrame
+    all_project_option_files = glob.glob("../data/projects_technology_utilization/*.csv")
+
+    df_aggregated = aggregate_option_per_technology(all_project_option_files)
+
+    df_aggregated.to_csv("../data/results/options_per_technology_aggregated.csv", index=False)
+
+    # test_projects = [
+    #     "../data/test_projects/piggymetrics_last_commit.json",
+    #     "../data/test_projects/test-config-repo_last_commit.json",
+    #     "../data/test_projects/Avalonia_last_commit.json"
+    # ]
+
+    # property_files = glob.glob("../data/technologies/*.properties")
+
+    # # Get options per technology (only needs to be done once)
+    # df_technology_options = get_options_per_technology(property_files)
+
+    # for project_file in test_projects:
+    #     project_name = project_file.split("/")[-1].replace("_last_commit.json", "")
+    #     output_file = f"../data/test_projects/{project_name}_technology_utilization.csv"
+
+    #     #if os.path.exists(output_file):
+    #     #    logger.info(f"Options file already exists for {project_name}, skipping.")
+    #     #    continue
+
+    #     try:
+    #         logger.info(f"Processing project: {project_name}")
+
+    #         # Extract options from the project file
+    #         df_latest_project_options = extract_latest_options(project_file)
+
+    #         # Calculate technology utilization
+    #         df_project_options = get_options_per_project(property_files, df_latest_project_options)
+
+    #         # Save results
+    #         df_project_options.to_csv(output_file, index=False)
+    #         logger.info(f"Saved technology utilization to {output_file}")
+
+    #     except Exception as e:
+    #         logger.error(f"Error processing project {project_name}: {e}")
+    #         continue
 

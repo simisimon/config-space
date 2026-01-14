@@ -1,4 +1,5 @@
 Technology,Total Options,With Defaults
+spring_boot,1840,973
 spring,1779,948
 alluxio,803,688
 nginx,785,0
@@ -24,6 +25,7 @@ zookeeper,186,0
 mongodb,152,94
 tsconfig,129,40
 cargo,113,61
+cargo-make,89,2
 github_action,83,0
 angular,80,43
 redis,72,0
@@ -31,10 +33,14 @@ cypress,49,45
 rabbitmq,49,0
 poetry,42,0
 nodejs,42,2
+turborepo,33,20
+sourcery,27,0
+stripe,24,0
 gradle,24,18
 pyproject,20,0
 docker,18,0
 heroku,15,0
+apify,13,0
 flutter,12,0
 maven-wrapper,11,0
 gradle-wrapper,5,0
