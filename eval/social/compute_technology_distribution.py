@@ -198,22 +198,6 @@ def plot_technology_distribution(distribution: Dict[int, int], project_name: str
         ax.text(x + max(num_contributors) * 0.01, y, str(x),
                 ha='left', va='center', fontsize=9)
 
-    # Add summary statistics as text
-    total_in_chart = sum(num_contributors)
-    avg_techs = sum(k * v for k, v in distribution.items()) / total_in_chart if total_in_chart > 0 else 0
-
-    summary_text = (
-        f"Config contributors: {config_contributors}\n"
-        f"Avg techs/contributor: {avg_techs:.2f}"
-    )
-
-    ax.text(0.98, 0.97, summary_text,
-            transform=ax.transAxes,
-            fontsize=10,
-            verticalalignment='top',
-            horizontalalignment='right',
-            bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
-
     plt.tight_layout()
     output_path.parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
@@ -256,22 +240,6 @@ def plot_technology_popularity(technology_contributors: Dict[str, int], project_
     for i, (tech, count) in enumerate(zip(technologies, num_contributors)):
         ax.text(count + max(num_contributors) * 0.01, i, str(count),
                 ha='left', va='center', fontsize=9)
-
-    # Add summary statistics
-    total_techs = len(technologies)
-    avg_contributors = sum(num_contributors) / total_techs if total_techs > 0 else 0
-
-    summary_text = (
-        f"Total technologies: {total_techs}\n"
-        f"Avg contributors/tech: {avg_contributors:.2f}"
-    )
-
-    ax.text(0.98, 0.02, summary_text,
-            transform=ax.transAxes,
-            fontsize=10,
-            verticalalignment='bottom',
-            horizontalalignment='right',
-            bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
 
     plt.tight_layout()
     output_path.parent.mkdir(parents=True, exist_ok=True)

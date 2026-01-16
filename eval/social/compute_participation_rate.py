@@ -7,10 +7,10 @@ Calculates the configuration participation rate for projects:
 
 Usage:
     # Single file
-    python compute_config_participation_rate.py --input contributors.csv
+    python compute_participation_rate.py --input contributors.csv
 
     # Batch processing
-    python compute_config_participation_rate.py --all --input ../../data/projects_contributors_merged
+    python compute_participation_rate.py --all --input ../../data/projects_contributors_merged
 """
 
 import argparse
@@ -266,8 +266,8 @@ def main():
     parser.add_argument(
         '--threshold',
         type=int,
-        default=1,
-        help='Minimum commits to be considered active (default: 1)'
+        default=0,
+        help='Minimum commits to be considered active (default: 0, i.e., >= 1 commit)'
     )
     parser.add_argument(
         '--all',

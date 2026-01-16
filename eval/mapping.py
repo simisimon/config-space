@@ -112,6 +112,7 @@ MAPPING = {
     "logstash": ["logstash.yml"],
     "verdaccio": ["*/.verdaccio/config.yml"],
     "github": [".github/*.yml", ".github/*.yaml"],
+    "sonar-qube": ["sonar-project.properties"],
     # CfgNet Mapping
     "alluxio": ["alluxio-site.properties"],
     "android": ["AndroidManifest.xml"],
@@ -168,7 +169,8 @@ def _match_pattern(pattern: str, filename: str) -> bool:
     filename = filename.replace("\\", "/")
 
     if "*" not in pattern:
-        return pattern == filename or filename.endswith(pattern)
+        # Match exact filename or as a path component (after /)
+        return pattern == filename or filename.endswith("/" + pattern)
 
     # escape everything, then turn '\*' into '[^/]*'
     regex = re.escape(pattern).replace(r"\*", r"[^/]*")
