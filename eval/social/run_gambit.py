@@ -24,6 +24,44 @@ def parse_author_string(author_str):
     return name, email
 
 
+def is_bot(author_str):
+    """Check if an author is a bot based on common patterns."""
+    name, email = parse_author_string(author_str)
+    name_lower = name.lower()
+    email_lower = email.lower()
+
+    # Common bot name patterns
+    bot_name_patterns = [
+        '[bot]',           # GitHub App bots like dependabot[bot]
+        'dependabot',
+        'renovate',
+        'greenkeeper',
+        'snyk-bot',
+        'codecov',
+        'github-actions',
+        'semantic-release',
+        'mergify',
+        'allcontributors',
+    ]
+
+    for pattern in bot_name_patterns:
+        if pattern in name_lower:
+            return True
+
+    # Bot-specific email patterns
+    bot_email_patterns = [
+        'bot@renovateapp.com',
+        'bot@dependabot.com',
+        'noreply@github.com',  # Used by GitHub Actions, not human noreply
+    ]
+
+    for pattern in bot_email_patterns:
+        if pattern in email_lower:
+            return True
+
+    return False
+
+
 def load_authors_from_file(filename):
     """Load authors from CSV file.
 
@@ -194,14 +232,13 @@ def main():
         default=None,
         help='Limit number of files to process (only applies with --all)'
     )
-
     args = parser.parse_args()
 
     # Determine the base directory (support running from root or eval/)
-    if os.path.exists("data/projects_contributors"):
-        base_dir = "data"
-    elif os.path.exists("../data/projects_contributors"):
+    if os.path.exists("../data/projects_contributors"):
         base_dir = "../data"
+    elif os.path.exists("../../data/projects_contributors"):
+        base_dir = "../../data"
     else:
         print("Error: Could not find data/projects_contributors directory", file=sys.stderr)
         sys.exit(1)
@@ -241,6 +278,13 @@ def main():
         except Exception as e:
             print(f"Error loading file: {e}", file=sys.stderr)
             sys.exit(1)
+
+        # Filter bots
+        original_count = len(authors_list)
+        authors_list = [a for a in authors_list if not is_bot(a['author'])]
+        filtered_count = original_count - len(authors_list)
+        if filtered_count > 0:
+            print(f"  Filtered {filtered_count} bots, {len(authors_list)} authors remaining", file=sys.stderr)
 
         # Run gambit
         results, error = run_gambit(authors_list)
