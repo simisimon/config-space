@@ -242,7 +242,7 @@ def process_single_project(input_file: Path, config_files_col: str = 'Config Fil
 
 
 def process_all_projects(input_dir: Path, config_files_col: str = 'Config Files',
-                         dominance_threshold: float = 0.80) -> pd.DataFrame:
+                         dominance_threshold: float = 0.80) -> Tuple[pd.DataFrame, pd.DataFrame]:
     """
     Process all *_contributors_merged.csv files in a directory.
 
@@ -252,7 +252,9 @@ def process_all_projects(input_dir: Path, config_files_col: str = 'Config Files'
         dominance_threshold: Threshold for endangered classification
 
     Returns:
-        DataFrame with summary results for all projects
+        Tuple of:
+        - DataFrame with summary results for all projects
+        - DataFrame with per-technology risk summary across all projects
     """
     csv_files = sorted(input_dir.glob('*_contributors_merged.csv'))
 
@@ -262,6 +264,9 @@ def process_all_projects(input_dir: Path, config_files_col: str = 'Config Files'
 
     print(f"Processing {len(csv_files)} projects...")
     results = []
+
+    # Track technology-level statistics across all projects
+    tech_stats: Dict[str, Dict[str, int]] = {}  # tech -> {orphaned, endangered, total_projects}
 
     for idx, csv_file in enumerate(csv_files, 1):
         result = process_single_project(csv_file, config_files_col, dominance_threshold)
@@ -275,6 +280,32 @@ def process_all_projects(input_dir: Path, config_files_col: str = 'Config Files'
                 'endangered_rate': round(result.get('endangered_rate', 0), 4),
                 'at_risk_rate': round(result.get('at_risk_rate', 0), 4)
             })
+
+            # Collect orphaned technologies
+            for tech_info in result['orphaned_technologies']:
+                tech = tech_info['technology']
+                if tech not in tech_stats:
+                    tech_stats[tech] = {'orphaned': 0, 'endangered': 0, 'total_projects': 0}
+                tech_stats[tech]['orphaned'] += 1
+
+            # Collect endangered technologies
+            for tech_info in result['endangered_technologies']:
+                tech = tech_info['technology']
+                if tech not in tech_stats:
+                    tech_stats[tech] = {'orphaned': 0, 'endangered': 0, 'total_projects': 0}
+                tech_stats[tech]['endangered'] += 1
+
+            # Count total projects per technology (need to re-extract)
+            try:
+                df = pd.read_csv(csv_file)
+                tech_contributors = extract_technology_contributors(df, config_files_col)
+                for tech in tech_contributors.keys():
+                    if tech not in tech_stats:
+                        tech_stats[tech] = {'orphaned': 0, 'endangered': 0, 'total_projects': 0}
+                    tech_stats[tech]['total_projects'] += 1
+            except Exception:
+                pass
+
             print(f"  [{idx}/{len(csv_files)}] {result['project_name']}: "
                   f"{result['orphaned_count']} orphaned, "
                   f"{result['endangered_count']} endangered "
@@ -282,7 +313,26 @@ def process_all_projects(input_dir: Path, config_files_col: str = 'Config Files'
         else:
             print(f"  [{idx}/{len(csv_files)}] {csv_file.stem}: Failed")
 
-    return pd.DataFrame(results)
+    # Build technology summary DataFrame
+    tech_summary_data = []
+    for tech, stats in tech_stats.items():
+        total = stats['total_projects']
+        tech_summary_data.append({
+            'technology': tech,
+            'total_projects': total,
+            'orphaned_count': stats['orphaned'],
+            'endangered_count': stats['endangered'],
+            'at_risk_count': stats['orphaned'] + stats['endangered'],
+            'orphaned_rate': round(stats['orphaned'] / total, 4) if total > 0 else 0,
+            'endangered_rate': round(stats['endangered'] / total, 4) if total > 0 else 0,
+            'at_risk_rate': round((stats['orphaned'] + stats['endangered']) / total, 4) if total > 0 else 0
+        })
+
+    tech_summary_df = pd.DataFrame(tech_summary_data)
+    if not tech_summary_df.empty:
+        tech_summary_df = tech_summary_df.sort_values('at_risk_count', ascending=False)
+
+    return pd.DataFrame(results), tech_summary_df
 
 
 def plot_technology_risk(results_df: pd.DataFrame, output_dir: Path):
@@ -472,7 +522,7 @@ Examples:
             sys.exit(1)
 
         # Process all projects
-        results_df = process_all_projects(input_path, args.config_files_column, args.dominance_threshold)
+        results_df, tech_summary_df = process_all_projects(input_path, args.config_files_column, args.dominance_threshold)
 
         if len(results_df) == 0:
             print("Error: No projects successfully processed", file=sys.stderr)
@@ -483,6 +533,11 @@ Examples:
         output_csv.parent.mkdir(parents=True, exist_ok=True)
         results_df.to_csv(output_csv, index=False)
         print(f"\nResults saved to: {output_csv}")
+
+        # Save technology summary to CSV
+        tech_summary_csv = output_csv.parent / 'technology_risk_summary.csv'
+        tech_summary_df.to_csv(tech_summary_csv, index=False)
+        print(f"Technology summary saved to: {tech_summary_csv}")
 
         # Print summary statistics
         print("\n" + "=" * 70)

@@ -232,6 +232,11 @@ def main():
         default=None,
         help='Limit number of files to process (only applies with --all)'
     )
+    parser.add_argument(
+        '--no-filter-bots',
+        action='store_true',
+        help='Disable bot filtering (by default, bots are filtered out)'
+    )
     args = parser.parse_args()
 
     # Determine the base directory (support running from root or eval/)
@@ -279,12 +284,13 @@ def main():
             print(f"Error loading file: {e}", file=sys.stderr)
             sys.exit(1)
 
-        # Filter bots
-        original_count = len(authors_list)
-        authors_list = [a for a in authors_list if not is_bot(a['author'])]
-        filtered_count = original_count - len(authors_list)
-        if filtered_count > 0:
-            print(f"  Filtered {filtered_count} bots, {len(authors_list)} authors remaining", file=sys.stderr)
+        # Filter bots (unless disabled)
+        if not args.no_filter_bots:
+            original_count = len(authors_list)
+            authors_list = [a for a in authors_list if not is_bot(a['author'])]
+            filtered_count = original_count - len(authors_list)
+            if filtered_count > 0:
+                print(f"  Filtered {filtered_count} bots, {len(authors_list)} authors remaining", file=sys.stderr)
 
         # Run gambit
         results, error = run_gambit(authors_list)
