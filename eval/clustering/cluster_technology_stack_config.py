@@ -339,6 +339,11 @@ def main():
         help="Directory containing all project JSON files (default: ../../data/projects_last_commit)",
     )
     parser.add_argument(
+        "--prefix",
+        default="cluster",
+        help="Prefix for output files (default: cluster)",
+    )
+    parser.add_argument(
         "--n-clusters",
         type=int,
         default=None,
@@ -421,7 +426,7 @@ def main():
     print(f"  Features: {len(features)} (min frequency ≥ {args.min_feature_frequency})")
 
     # Save matrix
-    matrix_out = f"../../data/clustering/technology_stack_config/{args.ecosystem}_config_matrix.csv"
+    matrix_out = f"../../data/clustering/technology_stack_config/{args.prefix}_{args.ecosystem}_config_matrix.csv"
     df_matrix = pd.DataFrame(X, columns=features)
     df_matrix.insert(0, "project", projects)
     df_matrix.to_csv(matrix_out, index=False)
@@ -482,7 +487,7 @@ def main():
             raise RuntimeError("No stability results computed; check your parameters.")
 
         stability_df = pd.DataFrame(stability_rows).sort_values("k")
-        stability_out = f"../../data/clustering/technology_stack_config/{args.ecosystem}_config_stability.csv"
+        stability_out = f"../../data/clustering/technology_stack_config/{args.prefix}_{args.ecosystem}_config_stability.csv"
         stability_df.to_csv(stability_out, index=False)
         print(f"\nWrote stability summary to: {stability_out}")
 
@@ -501,15 +506,15 @@ def main():
 
     proj_clusters, cluster_summary = summarize_clusters(projects, features, X, labels)
 
-    proj_out = f"../../data/clustering/technology_stack_config/{args.ecosystem}_config_project_clusters.csv"
+    proj_out = f"../../data/clustering/technology_stack_config/{args.prefix}_{args.ecosystem}_config_project_clusters.csv"
     proj_clusters.to_csv(proj_out, index=False)
     print(f"Wrote project → configuration-cluster assignments to: {proj_out}")
 
-    summary_out = f"../../data/clustering/technology_stack_config/{args.ecosystem}_config_cluster_summary.csv"
+    summary_out = f"../../data/clustering/technology_stack_config/{args.prefix}_{args.ecosystem}_config_cluster_summary.csv"
     cluster_summary.to_csv(summary_out, index=False)
     print(f"Wrote configuration-cluster summary to: {summary_out}")
 
-    embedding_out = f"../../data/clustering/technology_stack_config/{args.ecosystem}_config_embedding.png"
+    embedding_out = f"../../data/clustering/technology_stack_config/{args.prefix}_{args.ecosystem}_config_embedding.png"
     plot_pca_embedding(X, labels, projects, embedding_out, random_state=args.random_state)
 
     print("Done.")

@@ -2,7 +2,7 @@
 
 ## Overview
 
-`cluster_configs.py` clusters projects within a technology ecosystem based on their configuration option-value pairs. This enables discovery of configuration profile patterns among projects that share the same technology stack.
+`cluster_technology_stack_config.py` clusters projects within a technology ecosystem based on their configuration option-value pairs. This enables discovery of configuration profile patterns among projects that share the same technology stack.
 
 ## Approach
 
