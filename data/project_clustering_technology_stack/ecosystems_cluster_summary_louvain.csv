@@ -1,5 +1,0 @@
-cluster_id,num_projects,top_technologies
-0,453,npm:445; tsconfig:352; vscode:196; docker:154; pnpm:139; eslint:103; docker-compose:78; prettier:72; devcontainer:69; yarn:54
-1,494,docker:288; poetry:184; pre-commit:133; npm:124; codecov:105; docker-compose:104; devcontainer:85; cargo:65; golangci-lint:62; django:56
-2,59,gradle-wrapper:54; gradle:53; android:49; docker:15; npm:14; flutter:11; vscode:10; maven:9; cargo:7; tsconfig:6
-3,37,

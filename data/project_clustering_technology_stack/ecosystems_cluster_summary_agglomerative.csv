@@ -1,4 +1,0 @@
-cluster_id,num_projects,top_technologies
-0,1003,npm:583; docker:457; tsconfig:407; vscode:259; poetry:212; docker-compose:186; codecov:158; devcontainer:158; pnpm:149; pre-commit:144
-1,37,
-2,3,stylua:3

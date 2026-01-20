@@ -25,11 +25,10 @@ def get_ecosystem_projects(ecosystem_assignments_csv, ecosystem_id, projects_dir
         List of paths to JSON files for projects in this ecosystem
     """
     ecosystem_projects = []
-    with open(ecosystem_assignments_csv, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            if int(row["ecosystem"]) == ecosystem_id:
-                ecosystem_projects.append(row["project"])
+    df = pd.read_csv(ecosystem_assignments_csv)
+
+    df_projects = df[df["ecosystem"] == ecosystem_id]["project"].tolist()
+    ecosystem_projects.extend(df_projects)
 
     json_files = []
     missing_files = []
@@ -258,9 +257,17 @@ def summarize_clusters(projects, features, X, labels, top_n=15):
     return df[["project", "config_cluster"]], summary_df
 
 
-def plot_pca_embedding(X, labels, output_path, random_state=42):
+def plot_pca_embedding(X, labels, projects, output_path, random_state=42, max_example_projects=3):
     """
     2D PCA embedding of the project configuration profiles.
+
+    Args:
+        X: Feature matrix
+        labels: Cluster labels for each project
+        projects: List of project names
+        output_path: Path to save the plot
+        random_state: Random seed for PCA
+        max_example_projects: Maximum number of example projects to show per cluster in legend
     """
     if X.shape[1] < 2:
         print("Skipping PCA embedding: fewer than 2 features.")
@@ -270,22 +277,42 @@ def plot_pca_embedding(X, labels, output_path, random_state=42):
     X_2d = pca.fit_transform(X)
 
     unique_clusters = np.unique(labels)
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(12, 8))
+
     for cid in unique_clusters:
         mask = labels == cid
+        cluster_projects = [p for p, m in zip(projects, mask) if m]
+        n_projects = len(cluster_projects)
+
+        # Select example projects to show in legend
+        example_projects = cluster_projects[:max_example_projects]
+        examples_str = ", ".join(example_projects)
+        if n_projects > max_example_projects:
+            examples_str += ", ..."
+
+        label_text = f"Cluster {cid} (n={n_projects})\n  {examples_str}"
+
         plt.scatter(
             X_2d[mask, 0],
             X_2d[mask, 1],
-            label=f"cluster {cid}",
+            label=label_text,
             alpha=0.7,
             s=20,
         )
+
     plt.xlabel("PCA component 1")
     plt.ylabel("PCA component 2")
-    plt.title("Configuration-profile clusters within ecosystem")
-    plt.legend(loc="best", fontsize="small", frameon=True)
+    plt.title("Configuration-profile clusters within tecchnology ecosystems")
+    plt.legend(
+        loc="upper center",
+        bbox_to_anchor=(0.5, -0.12),
+        fontsize="small",
+        frameon=True,
+        ncol=min(3, len(unique_clusters)),
+    )
     plt.tight_layout()
-    plt.savefig(output_path, dpi=300)
+    plt.subplots_adjust(bottom=0.25)
+    plt.savefig(output_path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"Wrote PCA embedding plot to: {output_path}")
 
@@ -303,13 +330,13 @@ def main():
     )
     parser.add_argument(
         "--ecosystem-assignments",
-        default="../data/project_clustering_technologies/ecosystems_project_assignments.csv",
+        default="../../data/clustering/technology_stack/ecosystems_project_assignments_louvain.csv",
         help="Path to ecosystem assignments CSV (default: ecosystems_project_assignments.csv)",
     )
     parser.add_argument(
         "--projects-dir",
-        default="../data/projects_last_commit",
-        help="Directory containing all project JSON files (default: ../data/projects_last_commit)",
+        default="../../data/projects_last_commit",
+        help="Directory containing all project JSON files (default: ../../data/projects_last_commit)",
     )
     parser.add_argument(
         "--n-clusters",
@@ -394,7 +421,7 @@ def main():
     print(f"  Features: {len(features)} (min frequency ≥ {args.min_feature_frequency})")
 
     # Save matrix
-    matrix_out = f"../data/ecosystem_clustering_options/ecosystem{args.ecosystem}_config_matrix.csv"
+    matrix_out = f"../../data/clustering/technology_stack_config/{args.ecosystem}_config_matrix.csv"
     df_matrix = pd.DataFrame(X, columns=features)
     df_matrix.insert(0, "project", projects)
     df_matrix.to_csv(matrix_out, index=False)
@@ -455,7 +482,7 @@ def main():
             raise RuntimeError("No stability results computed; check your parameters.")
 
         stability_df = pd.DataFrame(stability_rows).sort_values("k")
-        stability_out = f"../data/ecosystem_clustering_options/ecosystem{args.ecosystem}_config_stability.csv"
+        stability_out = f"../../data/clustering/technology_stack_config/{args.ecosystem}_config_stability.csv"
         stability_df.to_csv(stability_out, index=False)
         print(f"\nWrote stability summary to: {stability_out}")
 
@@ -474,16 +501,16 @@ def main():
 
     proj_clusters, cluster_summary = summarize_clusters(projects, features, X, labels)
 
-    proj_out = f"../data/ecosystem_clustering_options/ecosystem{args.ecosystem}_config_project_clusters.csv"
+    proj_out = f"../../data/clustering/technology_stack_config/{args.ecosystem}_config_project_clusters.csv"
     proj_clusters.to_csv(proj_out, index=False)
     print(f"Wrote project → configuration-cluster assignments to: {proj_out}")
 
-    summary_out = f"../data/ecosystem_clustering_options/ecosystem{args.ecosystem}_config_cluster_summary.csv"
+    summary_out = f"../../data/clustering/technology_stack_config/{args.ecosystem}_config_cluster_summary.csv"
     cluster_summary.to_csv(summary_out, index=False)
     print(f"Wrote configuration-cluster summary to: {summary_out}")
 
-    embedding_out = f"../data/ecosystem_clustering_options/ecosystem{args.ecosystem}_config_embedding.png"
-    plot_pca_embedding(X, labels, embedding_out, random_state=args.random_state)
+    embedding_out = f"../../data/clustering/technology_stack_config/{args.ecosystem}_config_embedding.png"
+    plot_pca_embedding(X, labels, projects, embedding_out, random_state=args.random_state)
 
     print("Done.")
 

@@ -1,3 +1,0 @@
-cluster_id,num_projects,top_options
-0,932,on.push.branches=main:378; permissions.contents=read:373; on.push.branches=master:315; jobs.build.runs-on=ubuntu-latest:278; concurrency.cancel-in-progress=true:248; jobs.build.steps.uses=actions/checkout@v4:244; permissions.pull-requests=write:202; on=pull_request:193; on.pull_request.types=opened:192; on.pull_request.branches=main:192
-1,1,jobs.migrate.steps.uses=actions/checkout@v4:1; jobs.migrate.steps.name=Install dependencies:1
