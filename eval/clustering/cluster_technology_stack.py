@@ -9,7 +9,7 @@ from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics import adjusted_rand_score, silhouette_score
 from sklearn.metrics import pairwise_distances
 from sklearn.decomposition import PCA
-from sklearn.manifold import TSNE
+from sklearn.manifold import TSNE, MDS
 import networkx.algorithms.community as nx_community
 import seaborn as sns
 
@@ -540,6 +540,62 @@ def plot_embedding(X: np.ndarray,
     print(f"Wrote PCA embedding plot to: {output_path}")
 
 
+def plot_mds_embedding(dist_matrix: np.ndarray,
+                       labels: np.ndarray,
+                       output_path: str,
+                       method: str = "",
+                       cluster_summary=None,
+                       random_state: int = 42):
+    """
+    2D MDS embedding of projects colored by ecosystem.
+    MDS preserves pairwise distances, making it ideal for visualizing
+    clusters based on precomputed distance matrices (e.g., Jaccard distance).
+    """
+    print("Computing MDS embedding...")
+    mds = MDS(n_components=2, dissimilarity='precomputed', random_state=random_state, normalized_stress='auto')
+    X_2d = mds.fit_transform(dist_matrix)
+
+    # Report stress (lower is better, indicates how well distances are preserved)
+    print(f"  MDS stress: {mds.stress_:.4f}")
+
+    unique_clusters = np.unique(labels)
+
+    plt.figure(figsize=(10, 8))
+    for cluster_id in unique_clusters:
+        mask = labels == cluster_id
+        n_points = mask.sum()
+
+        # Build legend label with technologies in brackets
+        legend_label = f"ecosystem {cluster_id} (n={n_points})"
+        if cluster_summary is not None:
+            cluster_info = next((c for c in cluster_summary if c["cluster_id"] == cluster_id), None)
+            if cluster_info:
+                top_techs = cluster_info["top_technologies"][:3]
+                if top_techs:
+                    tech_label = ", ".join([tech for tech, count in top_techs])
+                    legend_label = f"ecosystem {cluster_id} (n={n_points}, {tech_label})"
+
+        X_cluster = X_2d[mask]
+        plt.scatter(
+            X_cluster[:, 0],
+            X_cluster[:, 1],
+            label=legend_label,
+            alpha=0.6,
+            s=30,
+            edgecolors='white',
+            linewidth=0.5,
+        )
+
+    plt.xlabel("MDS dimension 1")
+    plt.ylabel("MDS dimension 2")
+    plt.title(f"Technology Ecosystems - MDS (Method: {method})")
+    plt.legend(loc="upper center", bbox_to_anchor=(0.5, -0.08), ncol=2, fontsize="small", frameon=True)
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.close()
+    print(f"Wrote MDS embedding plot to: {output_path}")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Cluster projects into configuration ecosystems "
@@ -547,7 +603,7 @@ def main():
     )
     parser.add_argument(
         "--csv_path",
-        default="../data/technology_composition/project_technologies_filtered.csv",
+        default="../../data/technological/composition/project_technologies_filtered.csv",
         help="Path to project_technologies_filtered.csv "
              "(must have 'project' and 'technologies' columns).",
     )
@@ -703,7 +759,7 @@ def main():
         print(f"{'='*80}")
 
         # Save project × technology matrix for this method
-        tech_mat_out = f"../data/project_clustering_technology_stack/ecosystems_tech_matrix_{current_method}.csv"
+        tech_mat_out = f"../../data/clustering/technology_stack/ecosystems_tech_matrix_{current_method}.csv"
         tech_df = pd.DataFrame(X, columns=tech_names)
         tech_df.insert(0, "project", df["project"].values)
         tech_df.to_csv(tech_mat_out, index=False)
@@ -730,7 +786,7 @@ def main():
                 )
 
                 # Save sweep results
-                sweep_out = f"../data/project_clustering_technology_stack/ecosystems_resolution_sweep_{current_method}.csv"
+                sweep_out = f"../../data/clustering/technology_stack/ecosystems_resolution_sweep_{current_method}.csv"
                 sweep_results.to_csv(sweep_out, index=False)
                 print(f"\nWrote resolution sweep results to: {sweep_out}")
 
@@ -834,7 +890,7 @@ def main():
                 raise RuntimeError("No stability results computed; check your parameters.")
 
             stability_df = pd.DataFrame(stability_rows).sort_values("k")
-            stability_out = f"../data/project_clustering_technology_stack/ecosystems_stability_{current_method}.csv"
+            stability_out = f"../../data/clustering/technology_stack/ecosystems_stability_{current_method}.csv"
             stability_df.to_csv(stability_out, index=False)
             print(f"\nWrote stability summary to: {stability_out}")
 
@@ -854,7 +910,7 @@ def main():
         # Process results for this method
         df_with_clusters, cluster_summary = summarize_clusters(df, best_labels, exclude_github=args.exclude_github)
 
-        proj_out = f"../data/project_clustering_technology_stack/ecosystems_project_assignments_{current_method}.csv"
+        proj_out = f"../../data/clustering/technology_stack/ecosystems_project_assignments_{current_method}.csv"
         df_with_clusters[["project", "ecosystem"]].to_csv(proj_out, index=False)
         print(f"Wrote project-level ecosystem assignments to: {proj_out}")
 
@@ -880,7 +936,7 @@ def main():
             )
 
         summary_df = pd.DataFrame(summary_rows).sort_values("cluster_id")
-        summary_out = f"../data/project_clustering_technology_stack/ecosystems_cluster_summary_{current_method}.csv"
+        summary_out = f"../../data/clustering/technology_stack/ecosystems_cluster_summary_{current_method}.csv"
         summary_df.to_csv(summary_out, index=False)
         print(f"Wrote cluster summary to: {summary_out}")
 
@@ -888,7 +944,7 @@ def main():
         print("\nGenerating visualizations...")
 
         # 1. PCA embedding
-        embedding_out = f"../data/project_clustering_technology_stack/ecosystems_embedding_{current_method}.png"
+        embedding_out = f"../../data/clustering/technology_stack/ecosystems_embedding_{current_method}.png"
         plot_embedding(
             X,
             best_labels,
@@ -898,8 +954,19 @@ def main():
             random_state=args.random_state
         )
 
-        # 2. t-SNE embedding (better for local structure)
-        tsne_out = f"../data/project_clustering_technology_stack/ecosystems_tsne_{current_method}.png"
+        # 2. MDS embedding (preserves Jaccard distances used in clustering)
+        mds_out = f"../../data/clustering/technology_stack/ecosystems_mds_{current_method}.png"
+        plot_mds_embedding(
+            dist_matrix,
+            best_labels,
+            mds_out,
+            method=current_method,
+            cluster_summary=cluster_summary,
+            random_state=args.random_state
+        )
+
+        # 3. t-SNE embedding (better for local structure)
+        tsne_out = f"../../data/clustering/technology_stack/ecosystems_tsne_{current_method}.png"
         plot_tsne_embedding(
             X,
             best_labels,
@@ -909,8 +976,8 @@ def main():
             random_state=args.random_state
         )
 
-        # 3. Technology usage heatmap
-        heatmap_out = f"../data/project_clustering_technology_stack/ecosystems_heatmap_{current_method}.png"
+        # 4. Technology usage heatmap
+        heatmap_out = f"../../data/clustering/technology_stack/ecosystems_heatmap_{current_method}.png"
         plot_heatmap(
             X,
             best_labels,
@@ -919,8 +986,8 @@ def main():
             method=current_method
         )
 
-        # 4. Cluster size distribution
-        size_out = f"../data/project_clustering_technology_stack/ecosystems_sizes_{current_method}.png"
+        # 5. Cluster size distribution
+        size_out = f"../../data/clustering/technology_stack/ecosystems_sizes_{current_method}.png"
         plot_cluster_size_distribution(
             best_labels,
             size_out,

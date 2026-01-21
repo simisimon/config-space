@@ -16,7 +16,7 @@ analysis.log
 **/data/clustering/*
 **/data/contributors/*
 **/data/projects_last_commit/*
-++/data/technological/*
+**/data/technological/*
 **/data/test_projects/*
 **/slurm/projects/*
 **/__pycache__/**

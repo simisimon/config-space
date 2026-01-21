@@ -25,9 +25,15 @@ def main():
     )
     parser.add_argument(
         "--data-dir",
-        default="../data/project_clustering_technology_stack",
-        help="Directory containing clustering results (default: ../data/project_clustering_technologies).",
+        default="../../data/clustering/technology_stack",
+        help="Directory containing clustering results (default: ../../data/clustering/technology_stack).",
     )
+    parser.add_argument(
+        "--sub-cluster",
+        default=False,
+        help="Optional sub-cluster identifier to filter ecosystems (default: None).",
+    )
+
 
     args = parser.parse_args()
 
@@ -63,6 +69,12 @@ def main():
             assign_path = data_dir / f"ecosystems_project_assignments_{method}.csv"
             tech_path = data_dir / f"ecosystems_tech_matrix_{method}.csv"
             output_path = data_dir / f"ecosystems_entropy_{method}.csv"
+
+        if args.sub_cluster:
+            assign_path = data_dir / f"cluster1_subclusters_project_assignments_{method}.csv"
+            tech_path = data_dir / f"cluster1_subclusters_tech_matrix_{method}.csv"
+            output_path = data_dir / f"cluster1_subclusters_entropy_{method}_.csv"
+
 
         # Check if files exist
         if not assign_path.exists():
