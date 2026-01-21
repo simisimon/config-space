@@ -2,22 +2,17 @@ import re
 
 MAPPING = {
     "vscode": [".vscode/launch.json", ".vscode/settings.json", ".vscode/tasks.json", ".vscode/extensions.json"],
-    "github-action": [".github/workflows/*.yaml", ".github/workflows/*/*.yaml", ".github/workflows/*.yml", ".github/workflows/*/*.yml",  ".github/actions/*.yaml",  ".github/actions/*/*.yaml", ".github/actions/*.yml", ".github/actions/*/*.yml"],
     "apify": ["actor.json", "actor/*.json"],
-    "buildkite": [".buildkite/pipeline.yml"],
+    "buildkite": [".buildkite/pipeline.yml", ".buildkite/bootstrap.yml"],
     "eslint": [".eslintrc.json", ".eslintrc.yaml", ".eslintrc.yml", "*.eslint.json"],
     "codecov": ["codecov.yml", ".codecov.yaml", "codecov.yaml", ".codecov.yml"],
     "dependabot": [".github/dependabot.yml", ".github/dependabot.yaml"],
     "markdownlint": [".markdownlint.json", ".markdownlint.yaml", ".markdownlint.yml"],
     "sourcery": [".sourcery.yaml"],
     "swiftlint": [".swiftlint.yml"],
-    "yarn": [".yarnrc.yml"],
     "log4j": ["log4j2.properties", "log4j2.xml", "log4j.properties", "log4j.xml"],
     "firebase": ["firebase.json"],
     "lerna": ["lerna.json", "nx.json"],
-    "cargo": [".cargo/config.toml"],
-    "tsconfig": ["**/tsconfig.node.json", "**/tsconfig.decl.json", "**/tsconfig.base.json", "**/tsconfig.*.json"],
-    "poetry": ["poetry.toml"],
     "mypy": ["mypy.ini"],
     "tox": ["tox.ini"],
     "rustfmt": ["rustfmt.toml", ".rustfmt.toml"],
@@ -25,16 +20,14 @@ MAPPING = {
     "goreleaser": [".goreleaser.yml", ".goreleaser.yaml", ".goreleaser.*.yaml"],
     "codeclimate": [".codeclimate.yml", ".codeclimate.yaml"],
     "renovate": ["renovate.json", ".renovaterc.json"],
-    "npm": ["package-lock.json"],
     "flyio": ["fly.toml"],
     "kubernetes": ["*/k8s/*.yaml", "k8s/*.yaml", "*/kubernetes/*/*.yaml", "*/kubernetes/*.yaml"],
     "taplo": ["taplo.toml", ".taplo.toml"],
     "bandit": ["bandit.yml", "bandit.yaml"],
     "prettier": [".prettierrc.json", ".prettierrc.yaml", ".prettierrc.yml"],
     "amplify": ["amplify.yml"],
-    "docker compose": ["*docker-compose.*.yml", "*docker_compose_*.yaml", "docker-compose.yaml"],
     "vercel": ["vercel.json"],
-    "cirrus": [".cirrus.yml", ".cirrus.yaml"],
+    "cirrus": [".cirrus.yml", ".cirrus.yaml", ".cirrus.*.yml", ".cirrus.*.yaml"],
     "stripe": ["stripe-app.json"],
     "pnpm": ["pnpm-lock.yaml", "pnpm-workspace.yaml"],
     "turborepo": ["turbo.json"],
@@ -45,7 +38,8 @@ MAPPING = {
     "github issues": [".github/ISSUE_TEMPLATE/*.yml", ".github/ISSUE_TEMPLATE/*.yaml"],
     "github codespaces": [".github/codespaces/*.yml", ".github/codespaces/*.yaml"],
     "github config": [".github/config.yml", ".github/config.yaml"],
-    "ansible": ["ansible.cfg", "ansible/*.cfg"],
+    "github copilot": [".github/copilot-settings.json"],
+    "github": [".github/*/*.yml", ".github/*/*.yaml", ".github/*/*.json", ".github/*.yml", ".github/*.yaml", ".github/*/*/*.yaml", ".github/*/*/*.yml"],
     "rust": ["rust-toolchain.toml"],
     "cross": ["Cross.toml"],
     "cargo-make": ["Makefile.toml"],
@@ -68,13 +62,12 @@ MAPPING = {
     "jitpack": ["jitpack.yml"],
     "gocrazy": ["gokrazy/*/config.json"],
     "jest": ["jest.config.json"],
-    "jekyll": ["_config.yml", "_config.toml"],
+    "jekyll": ["/_config.yml", "/_config.toml"],
     "mocha": [".mocharc.yaml", ".mocharc.yml", ".mocharc.json"],
     "typos": ["typos.toml", ".typos.toml", "_typos.toml"],
     "wrangler": ["wrangler.toml", "wrangler.json"],
     "pre-commit": [".pre-commit-config.yaml", ".pre-commit-config.yml", ".pre-commit-hooks.yaml", ".pre-commit-hooks.yml"],
     "snapscraft": ["snapcraft.yaml"],
-    "spring": ["application-*.properties", "application-*.yml", "application-*.yaml"],
     "codebeaver": ["codebeaver.yml"],
     "vcpkg": ["vcpkg.json", "vcpkg-*.json"],
     "crowdin": ["crowdin.yml", "crowdin.yaml"],
@@ -108,27 +101,39 @@ MAPPING = {
     "prometheus": ["prometheus.yml", "prometheus.yaml"],
     "helm"  : ["Chart.yml", "Chart.yaml", "values.yaml", "values.yml", "charts/*.yaml", "charts/*.yml", "helm/*/values.yaml", "helm/*/values.yml", "helm/*/Chart.yaml", "helm/*/Chart.yaml"],
     "cspell": [".cspell.json", "cspell.json", "cspell.config.json", "cspell.config.yaml", "cspell.config.yml", "cspell.config.toml", "cspell.yaml", "cspell.yml"],
-    "azure pipelines": ["azure-pipelines.yml", "azure-pipelines.yaml"],
+    "azure pipelines": ["azure-pipelines.yml", "azure-pipelines.yaml", ".azure/pipelines/*.yml", ".azure/pipelines/*.yaml", ".azure/pipelines/*/*.yml", ".azure/pipelines/*/*.yaml"],
     "logstash": ["logstash.yml"],
-    "verdaccio": ["*/.verdaccio/config.yml"],
-    "github": [".github/*.yml", ".github/*.yaml"],
+    "verdaccio": ["*/.verdaccio/config.yml", "verdaccio.yaml"],
     "sonar-qube": ["sonar-project.properties"],
+    "biomejs": ["biome.json"],
+    "oxc": [".oxcrc.json", ".oxlintrc.json", "oxlint.json"],
+    "ultralytics yolo": ["ultralytics/cfg/default.yaml", "ultralytics/cfg/*/*.yaml"],
+    "bun": ["bunfig.toml"],
+    "claude code": [".claude/settings.json", ".claude/*.json"],
+    "cursor": [".cursor/cli-config.json"],
+    "zed": ["zed/settings.json", "zed/*.json"],
+    "tslint": ["tslint.json", "tslint.yaml"],
+    "jsdoc": ["jsdoc.json"],
+    "pyright": ["pyrightconfig.json"],
+    "clusterfuzz": ["*/gce/clusters.yaml"],
+    "jinja": ["/*.jina.yml", "/*.jaml"],
+    "conda": ["conda.yaml", "conda.yml", "conda/*.yaml", "conda/*.yml"],
     # CfgNet Mapping
     "alluxio": ["alluxio-site.properties"],
     "android": ["AndroidManifest.xml"],
     "angular": ["angular.json"],
     "ansible playbook": ["site.yml", "playbook.yml", "site.yaml", "playbook.yaml", "playbooks/*.yml", "playbooks/*.yaml"],
-    "ansible": ["ansible.cfg"],
+    "ansible": ["ansible.cfg", "ansible/*.cfg"],
     "apache webserver": ["httpd.conf"],
-    "cargo": ["Cargo.toml"],
+    "cargo": ["Cargo.toml", ".cargo/config.toml"],
     "circleci": [".circleci/config.yml"],
     "docker": ["Dockerfile"],
-    "cypress": ["cypress.json"],
+    "cypress": ["cypress.json", "cypress/*/*json"],
     "django": ["settings.py"],
-    "docker compose": ["docker-compose.yml", "docker-compose.yaml"],
+    "docker compose": ["docker-compose.yml", "docker-compose.yaml", "*docker-compose.*.yml", "*docker_compose_*.yaml", "docker-compose.yaml"],
     "elasticsearch": ["elasticsearch.yml"],
     "flutter": ["pubspec.yaml"],
-    "github action": [".*?\.github\/workflows\/[^\/]*\.yml$"], 
+    "github action": [".*?\.github\/workflows\/[^\/]*\.yml$", ".github/workflows/*.yaml", ".github/workflows/*/*.yaml", ".github/workflows/*.yml", ".github/workflows/*/*.yml",  ".github/actions/*.yaml",  ".github/actions/*/*.yaml", ".github/actions/*.yml", ".github/actions/*/*.yml"], 
     "gradle": ["gradle.properties"],
     "gradle wrapper": ["gradle-wrapper.properties"],
     "hadoop common": ["core-site.xml"],
@@ -136,25 +141,24 @@ MAPPING = {
     "hadoop hdfs": ["hdfs-site.xml", "hdfs-default.xml"],
     "heroku": ["Procfile"],
     "kafka": ["server.properties"],
-    "kubernetes": ["log4j.properties", "log4j2.xml"],
     "maven": ["pom.xml"],
     "maven wrapper": ["maven-wrapper.properties"],
-    "mapreducs": ["mapred-site.xml", "mapred-default.xml"],
+    "mapreduce": ["mapred-site.xml", "mapred-default.xml"],
     "mongodb": ["mongod.conf"],
     "mysql": ["my.cnf", "my.ini"],
     "netlify": ["netlify.toml"],
     "nginx": ["nginx.conf"],
-    "nodejs": ["package.json"],
+    "nodejs": ["package.json", "package-lock.json", "npm-shrinkwrap.json"],
     "php": ["php.ini"],
     "postgresql": ["postgresql.conf"],
-    "poetry": ["pyproject.toml"],
+    "poetry": ["pyproject.toml", "poetry.toml"],
     "rabbitmq": ["rabbitmq.conf"],
     "redis": ["redis.conf"],
-    "spring": ["application.properties", "application.yml", "application.yaml"],
-    "travis": [".travis.yml"],
-    "tsconfig": ["tsconfig.json"],    
-    "yarn": ["yarn-site.xml"],
-    "zookeeper": ["zoo.cfg"]
+    "spring": ["application.properties", "application.yml", "application.yaml", "application-*.properties", "application-*.yml", "application-*.yaml"],
+    "travis": [".travis.yml"],  
+    "yarn": ["yarn-site.xml", ".yarnrc.yml"],
+    "zookeeper": ["zoo.cfg"],
+    "tsconfig": ["**tsconfig.node.json", "**tsconfig.decl.json", "**tsconfig.base.json", "**tsconfig.*.json", "tsconfig.json"],
 }
 
 def _match_pattern(pattern: str, filename: str) -> bool:
@@ -165,12 +169,13 @@ def _match_pattern(pattern: str, filename: str) -> bool:
           *  -> any chars except '/'
       - pattern may match as a substring anywhere in the path
     """
+
     # normalize to forward slashes in case of Windows-style paths
     filename = filename.replace("\\", "/")
 
     if "*" not in pattern:
         # Match exact filename or as a path component (after /)
-        return pattern == filename or filename.endswith("/" + pattern)
+        return pattern == filename or filename.endswith(pattern)
 
     # escape everything, then turn '\*' into '[^/]*'
     regex = re.escape(pattern).replace(r"\*", r"[^/]*")
@@ -185,7 +190,6 @@ def get_technology(filename: str) -> str | None:
         for pattern in patterns:
             if _match_pattern(pattern, filename):
                 is_matched = True
-            
             if is_matched:
                 return tech
     return None

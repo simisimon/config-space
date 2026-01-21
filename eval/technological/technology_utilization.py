@@ -1,3 +1,25 @@
+#!/usr/bin/env python3
+"""
+Technology Utilization Calculator
+
+Computes statistics about configuration space utilization per technology.
+Output is saved to ../../data/technological/utilization/ by default.
+
+Usage:
+    # Single file - process one project
+    python technology_utilization.py --input ../../data/test_projects/piggymetrics_last_commit.json
+
+    # Batch processing - process all projects in a directory
+    python technology_utilization.py --input ../../data/projects_last_commit --all
+
+    # Batch processing with limit
+    python technology_utilization.py --input ../../data/projects_last_commit --all --limit 100
+
+    # Custom output directory
+    python technology_utilization.py --input ../../data/projects_last_commit --all \\
+        --output-dir ../../data/results/per_project
+"""
+
 import pandas as pd
 import json
 import javaproperties
@@ -12,6 +34,9 @@ from typing import List, Set, Dict
 import matplotlib.pyplot as plt
 from pathlib import Path
 from collections import Counter
+
+# Import the technology mapping function
+sys.path.insert(0, str(Path(__file__).parent.parent))
 from mapping import get_technology
 
 
@@ -79,8 +104,8 @@ def get_options_per_technology(technology_files: List):
 
     fig.tight_layout(pad=1.0)
     
-    fig.savefig("../data/technology_utilization/options_per_technology.png", dpi=300)
-    df.to_csv("../data/technology_utilization/options_per_technology.csv", index=False)
+    fig.savefig("../../data/technological/options_per_technology_summary.png", dpi=300)
+    df.to_csv("../../data/technological/options_per_technology_summary.csv", index=False)
 
     return df.drop(columns=["With Defaults"])
 
@@ -124,8 +149,6 @@ def get_options_per_project(technology_files: List, df_options: pd.DataFrame) ->
             ref_options = parse_properties_file(tech_to_file[technology_lower])
             ref_to_proj = get_matches(project_subset, ref_options)
             matched_refs = set(ref_to_proj.keys())
-            matched_project_options = sorted({opt for opts in ref_to_proj.values() for opt in opts})
-            unmatched = [opt for opt in project_subset if opt not in matched_project_options]
 
             results.append({
                 "Technology": technology,
@@ -134,9 +157,7 @@ def get_options_per_project(technology_files: List, df_options: pd.DataFrame) ->
                 "Options Set (Total)": len(all_options_list),
                 "Options Set (Unique)": len(project_subset),
                 "Matched Options": len(matched_refs),
-                "Unmatched Options": len(unmatched),
-                "Percentage Used": round(len(matched_refs) / len(ref_options) * 100, 2) if ref_options else 0.0,
-                "Matched": list(matched_project_options)
+                "Percentage Used": round(len(matched_refs) / len(ref_options) * 100, 2) if ref_options else 0.0
             })
         else:
             # Technology doesn't have a property file - only compute basic metrics
@@ -147,9 +168,7 @@ def get_options_per_project(technology_files: List, df_options: pd.DataFrame) ->
                 "Options Set (Total)": len(all_options_list),
                 "Options Set (Unique)": len(project_subset),
                 "Matched Options": None,
-                "Unmatched Options": None,
-                "Percentage Used": None,
-                "Matched": []
+                "Percentage Used": None
             })
 
     return pd.DataFrame(results)
@@ -186,7 +205,7 @@ def extract_latest_options(project_file: str) -> pd.DataFrame:
 
 
 def load_project_files(limit: int | None = None):
-    project_files = glob.glob("../data/projects_last_commit/*.json")
+    project_files = glob.glob("../../data/projects_last_commit/*.json")
     logger.info(f"Found {len(project_files)} project files")
     if limit:
         project_files = project_files[:limit]
@@ -256,71 +275,254 @@ def aggregate_option_per_technology(option_files: List[str]) -> pd.DataFrame:
     return out
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, help="Limit number of projects to process")
+def process_single_project(project_file: Path, property_files: List[str], output_dir: Path = None) -> pd.DataFrame | None:
+    """
+    Process a single project file and compute technology utilization.
+
+    Args:
+        project_file: Path to project JSON file
+        property_files: List of property file paths for ground truth
+        output_dir: Optional output directory for per-project CSV
+
+    Returns:
+        DataFrame with technology utilization results, or None on error
+    """
+    try:
+        project_name = project_file.stem.replace("_last_commit", "")
+
+        # Extract options from the project file
+        df_options = extract_latest_options(str(project_file))
+
+        # Calculate technology utilization
+        df_result = get_options_per_project(property_files, df_options)
+        df_result["project"] = project_name
+
+        # Save per-project CSV if output directory is provided
+        if output_dir:
+            output_file = output_dir / f"{project_name}_technology_utilization.csv"
+            df_result.drop(columns=["project"]).to_csv(output_file, index=False)
+            logger.info(f"Saved: {output_file}")
+
+        return df_result
+
+    except Exception as e:
+        logger.error(f"Error processing {project_file.name}: {e}")
+        return None
+
+
+def process_all_projects(input_dir: Path, property_files: List[str], output_dir: Path = None, limit: int = None) -> pd.DataFrame:
+    """
+    Process all *_last_commit.json files in a directory.
+
+    Args:
+        input_dir: Directory containing project JSON files
+        property_files: List of property file paths for ground truth
+        output_dir: Optional output directory for per-project CSVs
+        limit: Optional limit on number of projects to process
+
+    Returns:
+        DataFrame with combined results from all projects
+    """
+    project_files = sorted(input_dir.glob("*_last_commit.json"))
+
+    if not project_files:
+        logger.error(f"No *_last_commit.json files found in {input_dir}")
+        sys.exit(1)
+
+    if limit:
+        project_files = project_files[:limit]
+
+    logger.info(f"Processing {len(project_files)} projects...")
+
+    all_results = []
+    for idx, project_file in enumerate(tqdm(project_files, desc="Processing projects"), 1):
+        result = process_single_project(project_file, property_files, output_dir)
+        if result is not None:
+            all_results.append(result)
+
+    if not all_results:
+        logger.error("No projects successfully processed")
+        sys.exit(1)
+
+    return pd.concat(all_results, ignore_index=True)
+
+
+def aggregate_results(df: pd.DataFrame, property_files: List[str]) -> pd.DataFrame:
+    """
+    Aggregate results across all projects.
+
+    Args:
+        df: Combined DataFrame from all projects
+        property_files: List of property file paths for ground truth
+
+    Returns:
+        Aggregated DataFrame with statistics per technology
+    """
+    # Build ground truth lookup
+    ground_truth = {}
+    for pf in property_files:
+        tech = Path(pf).stem.lower()
+        with open(pf, "r", encoding="utf-8") as f:
+            props = javaproperties.load(f)
+            ground_truth[tech] = len(props)
+
+    # Normalize technology names for grouping
+    df["__tech_norm__"] = df["Technology"].astype(str).str.strip().str.lower()
+
+    # Get canonical display name for each technology
+    label_map = (
+        df.groupby("__tech_norm__")["Technology"]
+          .agg(lambda s: Counter(s).most_common(1)[0][0])
+          .to_dict()
+    )
+
+    # Aggregate statistics
+    agg = df.groupby("__tech_norm__", dropna=False).agg({
+        "project": "nunique",
+        "Number of Files": "mean",
+        "Options Set (Total)": "mean",
+        "Options Set (Unique)": "mean"
+    }).reset_index()
+
+    agg.columns = [
+        "__tech_norm__",
+        "num_projects",
+        "avg_files_per_project",
+        "avg_options_set_total",
+        "avg_options_set_unique"
+    ]
+
+    # Add technology display name and ground truth
+    agg["technology"] = agg["__tech_norm__"].map(label_map)
+    agg["ground_truth"] = agg["__tech_norm__"].map(ground_truth)
+
+    # Round numeric columns
+    for col in ["avg_files_per_project", "avg_options_set_total", "avg_options_set_unique"]:
+        agg[col] = agg[col].round(2)
+
+    # Select and order columns
+    result = agg[[
+        "technology",
+        "ground_truth",
+        "num_projects",
+        "avg_files_per_project",
+        "avg_options_set_total",
+        "avg_options_set_unique"
+    ]]
+
+    return result.sort_values("technology").reset_index(drop=True)
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Compute technology utilization statistics for configuration options",
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument(
+        "--input",
+        type=str,
+        required=True,
+        help="Path to project JSON file or directory containing project files"
+    )
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Process all *_last_commit.json files in the input directory"
+    )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Limit number of projects to process (only applies with --all)"
+    )
+    parser.add_argument(
+        "--output",
+        type=str,
+        default="../../data/technological/aggregated_technology_utilization.csv",
+        help="Output CSV file for aggregated results (default: ../../data/technological/utilization/aggregated_technology_utilization.csv)"
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=str,
+        default="../../data/technological/utilization",
+        help="Output directory for per-project CSV files (default: ../../data/technological/utilization)"
+    )
+    parser.add_argument(
+        "--technologies",
+        type=str,
+        default="../../data/technologies",
+        help="Directory containing technology property files (default: ../../data/technologies)"
+    )
+
     args = parser.parse_args()
-    project_files = load_project_files(args.limit)
-    property_files = glob.glob("../data/technologies/*.properties")
 
-    # Get options per technology
-    df_technology_options = get_options_per_technology(property_files)
+    input_path = Path(args.input)
+    tech_dir = Path(args.technologies)
+    property_files = glob.glob(str(tech_dir / "*.properties"))
 
-    for project_file in tqdm(project_files, desc="Processing Project Files"):
-        project_name = project_file.split("/")[-1].replace("_last_commit.json", "")
-        output_file = f"../data/projects_technology_utilization/{project_name}_technology_utilization.csv"
-        
-        try:
-            # Extract options from the project file
-            df_latest_project_options = extract_latest_options(project_file)
+    if not property_files:
+        logger.error(f"No property files found in {tech_dir}")
+        sys.exit(1)
 
-            # Calculate technology utilization
-            df_project_options = get_options_per_project(property_files, df_latest_project_options)
-            df_project_options.to_csv(output_file, index=False)
-        except Exception as e:
-            logger.error(f"Error processing project {project_name}: {e}")
-            continue
+    logger.info(f"Loaded {len(property_files)} technology property files")
 
-    # Combine all project options into a single DataFrame
-    all_project_option_files = glob.glob("../data/projects_technology_utilization/*.csv")
+    # Batch processing mode
+    if args.all:
+        if not input_path.is_dir():
+            logger.error(f"--all requires input to be a directory, got: {input_path}")
+            sys.exit(1)
 
-    df_aggregated = aggregate_option_per_technology(all_project_option_files)
+        output_dir = Path(args.output_dir)
+        output_dir.mkdir(parents=True, exist_ok=True)
 
-    df_aggregated.to_csv("../data/results/options_per_technology_aggregated.csv", index=False)
+        # Process all projects
+        df_all = process_all_projects(input_path, property_files, output_dir, args.limit)
 
-    # test_projects = [
-    #     "../data/test_projects/piggymetrics_last_commit.json",
-    #     "../data/test_projects/test-config-repo_last_commit.json",
-    #     "../data/test_projects/Avalonia_last_commit.json"
-    # ]
+        # Aggregate results
+        df_aggregated = aggregate_results(df_all, property_files)
 
-    # property_files = glob.glob("../data/technologies/*.properties")
+        # Save aggregated results
+        output_csv = Path(args.output)
+        output_csv.parent.mkdir(parents=True, exist_ok=True)
+        df_aggregated.to_csv(output_csv, index=False)
+        logger.info(f"Saved aggregated results to: {output_csv}")
 
-    # # Get options per technology (only needs to be done once)
-    # df_technology_options = get_options_per_technology(property_files)
+        # Print summary
+        print("\n" + "=" * 60)
+        print("AGGREGATED TECHNOLOGY UTILIZATION")
+        print("=" * 60)
+        print(f"Projects processed: {df_all['project'].nunique()}")
+        print(f"Technologies found: {len(df_aggregated)}")
+        print("\nTop 10 most used technologies:")
+        top10 = df_aggregated.nlargest(10, "num_projects")
+        for _, row in top10.iterrows():
+            gt = f"(GT: {int(row['ground_truth'])})" if pd.notna(row['ground_truth']) else "(no GT)"
+            print(f"  {row['technology']}: {row['num_projects']} projects, "
+                  f"avg {row['avg_options_set_unique']:.1f} unique options {gt}")
+        print("=" * 60)
 
-    # for project_file in test_projects:
-    #     project_name = project_file.split("/")[-1].replace("_last_commit.json", "")
-    #     output_file = f"../data/test_projects/{project_name}_technology_utilization.csv"
+        sys.exit(0)
 
-    #     #if os.path.exists(output_file):
-    #     #    logger.info(f"Options file already exists for {project_name}, skipping.")
-    #     #    continue
+    # Single file mode
+    if not input_path.exists():
+        logger.error(f"Input file not found: {input_path}")
+        sys.exit(1)
 
-    #     try:
-    #         logger.info(f"Processing project: {project_name}")
+    output_dir = Path(args.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    result = process_single_project(input_path, property_files, output_dir)
 
-    #         # Extract options from the project file
-    #         df_latest_project_options = extract_latest_options(project_file)
+    if result is None:
+        sys.exit(1)
 
-    #         # Calculate technology utilization
-    #         df_project_options = get_options_per_project(property_files, df_latest_project_options)
+    # Print results
+    print("\n" + "=" * 60)
+    print(f"TECHNOLOGY UTILIZATION: {input_path.stem}")
+    print("=" * 60)
+    print(result.drop(columns=["project"]).to_string(index=False))
+    print("=" * 60)
 
-    #         # Save results
-    #         df_project_options.to_csv(output_file, index=False)
-    #         logger.info(f"Saved technology utilization to {output_file}")
 
-    #     except Exception as e:
-    #         logger.error(f"Error processing project {project_name}: {e}")
-    #         continue
+if __name__ == "__main__":
+    main()
 

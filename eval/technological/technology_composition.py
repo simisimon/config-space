@@ -14,6 +14,10 @@ import matplotlib.pyplot as plt
 from collections import Counter
 from typing import Dict, Tuple
 from upsetplot import UpSet, from_memberships
+from pathlib import Path
+
+# Import the technology mapping function
+sys.path.insert(0, str(Path(__file__).parent.parent))
 from mapping import get_technology
 
 
@@ -35,18 +39,19 @@ FILE_TYPES = {
              "snapscraft", "eslint", "markdownlint", "stylelint", "postcss", "mocha", "yarn", "golangci-lint", "jekyll"
              "codebeaver", "crowdin", "readthedocs", "graphql", "swagger", "chart testing", "codebuild", "lefthook",
              "hugoreleaser", "triagebot", "jazzy", "clomonitor", "prometheus", "helm", "cspell", "azure pipelines", "logstash"
-             "verdaccio", "github", "github issues", "github funding", "github config", "github codespaces"],
+             "verdaccio", "github", "github issues", "github funding", "github config", "github codespaces", "ultralytics yolo",
+             "tslint", "clusterfuzz", "jinja", "conda"],
     "properties": ["alluxio", "spring", "kafka", "gradle", "cirrus", "gradle wrapper", "maven wrapper", "properties", "log4j"],
     "json": ["angular", "eslint", "prettier", "lerna", "firebase", "renovate", "stripe", "tsconfig", "nodejs", 
              "vercel", "npm", "cypress", "devcontainer", "deno", "cmake", "bower", "json", "babel", "turborepo", 
              "vscode", "apify", "gocrazy", "jest", "markdownlint", "stylelint", "postcss", "mocha", "golangci-lint", "wrangler",
              "vcpkg", "changesets", "fuel", "knip", "tsdoc", "nodemon", "graphql", "swagger", "nixpacks", "lefthook",
-             "bundlemon", "cspell"],
+             "bundlemon", "cspell", "biomejs", "oxc", "claude code", "cursor", "zed", "tslint", "jsdoc", "pyright"],
     "xml": ["maven", "android", "hadoop common", "hadoop hbase", "hadoop hdfs", "mapreduce", "xml", "yarn", "log4j"],
     "toml": ["cargo", "netlify", "poetry", "toml", "rustfmt", "flyio", "taplo", "cross", "cargo make", "stylua", 
              "trunk", "rust", "clippy", "ruff", "typos", "golangci-lint", "jekyll", "wrangler", "graphql",
              "nixpacks", "lefthook", "deepsource", "git cliff", "reuse", "kodiak", "streamlit", "mdbook", "lychee",
-             "cdbindgen", "triagebot", "taoskeeper", "cspell"],
+             "cdbindgen", "triagebot", "taoskeeper", "cspell", "bun"],
     "conf": ["mongodb", "nginx", "postgresql", "rabbitmq", "redis", "apache", "conf"],
     "ini": ["mysql", "php", "ini", "mypy", "tox", "grafana"],
     "cfg": ["zookeeper"],
@@ -66,7 +71,7 @@ def load_project_files(limit: int | None = None, refresh: bool = False):
         logger.info("Skipping project file loading")
         return
     
-    project_files = glob.glob("../data/projects_last_commit/*.json")
+    project_files = glob.glob("../../data/projects_last_commit/*.json")
     logger.info(f"Found {len(project_files)} project files")
     if limit:
         project_files = project_files[:limit]
@@ -288,7 +293,7 @@ def create_technology_combination_plot(data_file: str, num_combos: int, refresh:
         plot["matrix"].set_yticklabels(labels, fontweight='bold')
 
     plt.suptitle(f"Technology Combinations Across {num_projects} Projects", fontsize=20, fontweight='bold', y=0.995)
-    plt.savefig("../data/technology_composition/technology_combinations.png", dpi=300, bbox_inches='tight', pad_inches=0.3)
+    plt.savefig("../../data/technological/composition/technology_combinations.png", dpi=300, bbox_inches='tight', pad_inches=0.3)
 
 
 def filter_technologies(technologies_str):
@@ -322,41 +327,41 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     # Load project files
-    #project_files = load_project_files(
-    #    args.limit, 
-    #    refresh=args.refresh
-    #)
+    project_files = load_project_files(
+        args.limit, 
+        refresh=args.refresh
+    )
 
     # Extract technologies
     #df_technologies = extract_technologies(
     #    project_files=project_files, 
-    #    output_file="../data/technology_composition/project_technologies.csv", 
+    #    output_file="../../data/technological/composition/project_technologies.csv", 
     #    refresh=args.refresh
     #)
 
     # Get technology landscape
     #get_technology_landscape(
-    #    data_file="../data/technology_composition/project_technologies.csv", 
-    #    output_file="../data/technology_composition/technology_landscape.png",
+    #    data_file="../../data/technological/composition/project_technologies.csv", 
+    #    output_file="../../data/technological/composition/technology_landscape.png",
     #    refresh=args.refresh
     #)
 
-    #filter_projects(
-    #    data_file="../data/technology_composition/project_technologies.csv", 
-    #    output_file="../data/technology_composition/project_technologies_filtered.csv",
-    #    refresh=args.refresh
-    #)
-
-    # Create new landscape with filtered data
-    #get_technology_landscape(
-    #    data_file="../data/technology_composition/project_technologies_filtered.csv", 
-    #    output_file="../data/technology_composition/technology_landscape_filtered.png",
-    #    refresh=args.refresh
-    #)
-
-    # Get technology combinations
-    create_technology_combination_plot(
-        data_file="../data/technology_composition/project_technologies_filtered.csv", 
-        num_combos=20,
+    filter_projects(
+        data_file="../../data/technological/composition/project_technologies.csv", 
+        output_file="../../data/technological/composition/project_technologies_filtered.csv",
         refresh=args.refresh
     )
+
+    # Create new landscape with filtered data
+    get_technology_landscape(
+        data_file="../../data/technological/composition/project_technologies_filtered.csv", 
+        output_file="../../data/technological/composition/technology_landscape_filtered.png",
+        refresh=args.refresh
+    )
+
+    # Get technology combinations
+    #create_technology_combination_plot(
+    #    data_file="../../data/technological/composition/project_technologies_filtered.csv", 
+    #    num_combos=20,
+    #    refresh=args.refresh
+    #)
