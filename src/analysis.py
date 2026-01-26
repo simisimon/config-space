@@ -188,8 +188,15 @@ def extract_config_data(new_network: Network, ref_network: Network) -> Dict:
     return network_data
 
 
-def analyze_repository(repo_path: str, project_name: str) -> Dict:
-    """Analyze Commit history of repositories and collect stats about the configuration space."""  
+def analyze_repository(repo_path: str, project_name: str, target_commit: str = None) -> Dict:
+    """Analyze Commit history of repositories and collect stats about the configuration space.
+
+    Args:
+        repo_path: Path to the repository
+        project_name: Name of the project
+        target_commit: Optional commit SHA to stop analysis at (inclusive).
+                      If not specified, processes all commits.
+    """
     start_time = time.time()
     repo = git.Repo(repo_path)
 
@@ -200,13 +207,34 @@ def analyze_repository(repo_path: str, project_name: str) -> Dict:
     # Get all commits in the repository from oldest to newest
     commits = list(repo.iter_commits("HEAD"))[::-1]
 
-    print(f"Number of commits: {len(commits)}")
+    print(f"Total commits in repository: {len(commits)}")
+
+    # Find target commit index if specified
+    target_idx = len(commits)  # default: all commits
+    if target_commit:
+        found = False
+        for idx, c in enumerate(commits):
+            if c.hexsha == target_commit or c.hexsha.startswith(target_commit):
+                target_idx = idx + 1  # include this commit
+                found = True
+                print(f"Target commit found at index {idx}: {c.hexsha}")
+                break
+        if not found:
+            print(f"Warning: Target commit {target_commit} not found, processing all commits")
+        else:
+            print(f"Processing {target_idx} commits (up to and including target commit)")
+            # Update latest_commit to be the target commit for is_latest_commit logic
+            latest_commit = commits[target_idx - 1].hexsha
+
+    # Only process commits up to target
+    commits_to_process = commits[:target_idx]
+    print(f"Number of commits to process: {len(commits_to_process)}")
 
     commit_data = []
     ref_network = None
 
    
-    for commit in tqdm(commits, desc="Processing", total=len(commits)):
+    for commit in tqdm(commits_to_process, desc="Processing", total=len(commits_to_process)):
         try:
             is_config_related = False
 
@@ -298,29 +326,38 @@ def analyze_repository(repo_path: str, project_name: str) -> Dict:
         latest_commit=latest_commit
     )
 
-    print(f"Len commit data: {len(commit_data)}, {round(len(commit_data)/len(commits), 2)}")
+    print(f"Len commit data: {len(commit_data)}, {round(len(commit_data)/len(commits_to_process), 2)}")
 
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"Elapsed time: {elapsed_time:.6f} seconds")
-    
+
     return {
         "project_name": project_name,
         "analysis_time": elapsed_time,
-        "len_commits": len(commits),
+        "len_commits": len(commits_to_process),
+        "target_commit": target_commit,
         "commit_data": commit_data
     }
 
 
-def process_project(project_url: str, project_name: str):
-    """Process a single project."""
+def process_project(project_url: str, project_name: str, target_commit: str = None):
+    """Process a single project.
+
+    Args:
+        project_url: URL of the repository to clone
+        project_name: Name of the project
+        target_commit: Optional commit SHA to stop analysis at (inclusive)
+    """
 
     # Define the output file path
     output_file = f"/tmp/ssimon/config-space/experiments/{project_name}.json"
     #output_file = f"../data/test_projects/{project_name}.json"
 
     print(f"Processing project: {project_name}")
-        
+    if target_commit:
+        print(f"Target commit: {target_commit}")
+
     with tempfile.TemporaryDirectory() as temp_dir:
         try:
             print(f"Cloning {project_name} into {temp_dir}")
@@ -333,7 +370,7 @@ def process_project(project_url: str, project_name: str):
 
             # Analyze repository to get commit config data
             print(f"Analyzing repository: {project_name}")
-            commit_data = analyze_repository(repo_path=temp_dir, project_name=project_name)
+            commit_data = analyze_repository(repo_path=temp_dir, project_name=project_name, target_commit=target_commit)
 
             # Store commit data into the output file
             with open(output_file, "w", encoding="utf-8") as dest:
@@ -352,6 +389,7 @@ def get_args():
     #parser.add_argument("--name", type=str, default="test-config-repo", help="Name of the repository to analyze")
     parser.add_argument("--url", type=str, default="https://github.com/sqshq/piggymetrics", help="Url of the repository to analyze")
     parser.add_argument("--name", type=str, default="piggymetrics", help="Name of the repository to analyze")
+    parser.add_argument("--commit", type=str, default=None, help="Latest commit SHA to analyze up to (stops at this commit)")
     return parser.parse_args()
 
 
@@ -360,10 +398,13 @@ if __name__ == "__main__":
 
     # Start analysis
     print(f"Starting analysis for project: {args.name}")
-    
+    if args.commit:
+        print(f"Will stop at commit: {args.commit}")
+
     process_project(
         project_url=args.url,
-        project_name=args.name
+        project_name=args.name,
+        target_commit=args.commit
     )
 
     print(f"Completed analysis for project: {args.name}.")
