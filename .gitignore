@@ -21,10 +21,10 @@ analysis.log
 **/slurm/projects/*
 **/__pycache__/**
 
-**/data/netflix/*
-**/data/uber/*
-**/data/disney/*
-**/data/facebook/*
-**/data/google/*
-**/data/spotify/*
-**/data/airbnb/*
+**/data/netflix/latest_commit/*
+**/data/uber/latest_commit/*
+**/data/disney/latest_commit/*
+**/data/facebook/latest_commit/*
+**/data/google/latest_commit/*
+**/data/spotify/latest_commit/*
+**/data/airbnb/latest_commit/*
