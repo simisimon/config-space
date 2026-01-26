@@ -118,6 +118,7 @@ MAPPING = {
     "clusterfuzz": ["*/gce/clusters.yaml"],
     "jinja": ["/*.jina.yml", "/*.jaml"],
     "conda": ["conda.yaml", "conda.yml", "conda/*.yaml", "conda/*.yml"],
+    "rubocop": [".rubocop.yml"],
     # CfgNet Mapping
     "alluxio": ["alluxio-site.properties"],
     "android": ["AndroidManifest.xml"],

@@ -1,0 +1,2255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Cards for Card Sorting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 10mm;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+        }
+
+        .page {
+            width: 190mm;
+            height: 277mm;
+            padding: 5mm;
+            page-break-after: always;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 5mm;
+        }
+
+        .page:last-child {
+            page-break-after: auto;
+        }
+
+        .card {
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 8mm;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        .card-header {
+            border-bottom: 2px solid #333;
+            padding-bottom: 4mm;
+            margin-bottom: 4mm;
+        }
+
+        .tech-name {
+            font-size: 16pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #1a1a1a;
+        }
+
+        .card-body {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .files-label {
+            font-size: 9pt;
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 2mm;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .file-list {
+            list-style: none;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 9pt;
+        }
+
+        .file-list li {
+            padding: 1mm 0;
+            border-bottom: 1px dotted #ddd;
+            word-break: break-all;
+        }
+
+        .file-list li:last-child {
+            border-bottom: none;
+        }
+
+        .card-footer {
+            margin-top: auto;
+            padding-top: 3mm;
+            border-top: 1px solid #eee;
+            font-size: 8pt;
+            color: #999;
+            text-align: right;
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .page {
+                margin: 0;
+                padding: 5mm;
+            }
+        }
+
+        /* Screen preview styles */
+        @media screen {
+            body {
+                background: #f0f0f0;
+                padding: 20px;
+            }
+
+            .page {
+                background: white;
+                margin: 0 auto 20px auto;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">vscode</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.vscode/launch.json</li>
+                    <li>.vscode/settings.json</li>
+                    <li>.vscode/tasks.json</li>
+                    <li>.vscode/extensions.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">apify</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>actor.json</li>
+                    <li>actor/*.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">buildkite</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.buildkite/pipeline.yml</li>
+                    <li>.buildkite/bootstrap.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">eslint</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.eslintrc.json</li>
+                    <li>.eslintrc.yaml</li>
+                    <li>.eslintrc.yml</li>
+                    <li>*.eslint.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">codecov</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>codecov.yml</li>
+                    <li>.codecov.yaml</li>
+                    <li>codecov.yaml</li>
+                    <li>.codecov.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">dependabot</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.github/dependabot.yml</li>
+                    <li>.github/dependabot.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">markdownlint</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.markdownlint.json</li>
+                    <li>.markdownlint.yaml</li>
+                    <li>.markdownlint.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">sourcery</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.sourcery.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">swiftlint</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.swiftlint.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">log4j</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>log4j2.properties</li>
+                    <li>log4j2.xml</li>
+                    <li>log4j.properties</li>
+                    <li>log4j.xml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">firebase</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>firebase.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">lerna</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>lerna.json</li>
+                    <li>nx.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">mypy</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>mypy.ini</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">tox</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>tox.ini</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">rustfmt</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>rustfmt.toml</li>
+                    <li>.rustfmt.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">mkdocs</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>mkdocs.yml</li>
+                    <li>mkdocs.yaml</li>
+                    <li>mkdocs.*.yml</li>
+                    <li>mkdocs.*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">goreleaser</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.goreleaser.yml</li>
+                    <li>.goreleaser.yaml</li>
+                    <li>.goreleaser.*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">codeclimate</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.codeclimate.yml</li>
+                    <li>.codeclimate.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">renovate</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>renovate.json</li>
+                    <li>.renovaterc.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">flyio</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>fly.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">kubernetes</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>*/k8s/*.yaml</li>
+                    <li>k8s/*.yaml</li>
+                    <li>*/kubernetes/*/*.yaml</li>
+                    <li>*/kubernetes/*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">taplo</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>taplo.toml</li>
+                    <li>.taplo.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">bandit</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>bandit.yml</li>
+                    <li>bandit.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">prettier</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.prettierrc.json</li>
+                    <li>.prettierrc.yaml</li>
+                    <li>.prettierrc.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">amplify</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>amplify.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">vercel</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>vercel.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">cirrus</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.cirrus.yml</li>
+                    <li>.cirrus.yaml</li>
+                    <li>.cirrus.*.yml</li>
+                    <li>.cirrus.*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">stripe</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>stripe-app.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">pnpm</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>pnpm-lock.yaml</li>
+                    <li>pnpm-workspace.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">turborepo</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>turbo.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">stylua</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>stylua.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">cmake</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>CMakeSettings.json</li>
+                    <li>CMakePresets.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">drone</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.drone.yml</li>
+                    <li>.drone.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">github funding</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.github/FUNDING.yml</li>
+                    <li>.github/FUNDING.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">github issues</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.github/ISSUE_TEMPLATE/*.yml</li>
+                    <li>.github/ISSUE_TEMPLATE/*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">github codespaces</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.github/codespaces/*.yml</li>
+                    <li>.github/codespaces/*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">github config</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.github/config.yml</li>
+                    <li>.github/config.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">github copilot</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.github/copilot-settings.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">github</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.github/*/*.yml</li>
+                    <li>.github/*/*.yaml</li>
+                    <li>.github/*/*.json</li>
+                    <li>.github/*.yml</li>
+                    <li>.github/*.yaml</li>
+                    <li>.github/*/*/*.yaml</li>
+                    <li>.github/*/*/*.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">rust</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>rust-toolchain.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">cross</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>Cross.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">cargo-make</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>Makefile.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">trunk</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>Trunk.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">golangci-lint</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.golangci.yml</li>
+                    <li>.golangci.yaml</li>
+                    <li>.golangci.toml</li>
+                    <li>.golangci.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">mockery</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.mockery.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">buf</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>buf.yaml</li>
+                    <li>buf.work.yaml</li>
+                    <li>buf.*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">gitpod</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.gitpod.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">appveyor</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>appveyor.yml</li>
+                    <li>appveyor.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">clippy</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>clippy.toml</li>
+                    <li>.clippy.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">devcontainer</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>devcontainer.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">deno</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>deno.json</li>
+                    <li>deno.lock.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">bower</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>bower.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">babel</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>babel.config.json</li>
+                    <li>.babelrc.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">rubocop</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.rubocop.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">gitbook</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.gitbook.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">stylelint</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.stylelintrc.json</li>
+                    <li>.stylelintrc.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">postcss</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.postcssrc.json</li>
+                    <li>.postcssrc.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">ruff</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>ruff.toml</li>
+                    <li>.ruff.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">jitpack</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>jitpack.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">gocrazy</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>gokrazy/*/config.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">jest</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>jest.config.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">jekyll</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>/_config.yml</li>
+                    <li>/_config.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">mocha</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.mocharc.yaml</li>
+                    <li>.mocharc.yml</li>
+                    <li>.mocharc.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">typos</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>typos.toml</li>
+                    <li>.typos.toml</li>
+                    <li>_typos.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">wrangler</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>wrangler.toml</li>
+                    <li>wrangler.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">pre-commit</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.pre-commit-config.yaml</li>
+                    <li>.pre-commit-config.yml</li>
+                    <li>.pre-commit-hooks.yaml</li>
+                    <li>.pre-commit-hooks.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">snapscraft</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>snapcraft.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">codebeaver</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>codebeaver.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">vcpkg</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>vcpkg.json</li>
+                    <li>vcpkg-*.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">crowdin</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>crowdin.yml</li>
+                    <li>crowdin.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">readthedocs</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>readthedocs.yml</li>
+                    <li>.readthedocs.yml</li>
+                    <li>.readthedocs.yaml</li>
+                    <li>readthedocs.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">changesets</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.changeset/config.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">fuel</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>*/chainConfig.json</li>
+                    <li>*/metadata.json</li>
+                    <li>*/stateConfig.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">knip</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>knip.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">tsdoc</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>tsdoc.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">nodemon</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>nodemon.json</li>
+                    <li>nodemon.*.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">graphql</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.graphqlrc.yml</li>
+                    <li>.graphqlrc.yaml</li>
+                    <li>graphqlrc.json</li>
+                    <li>graphql.config.json</li>
+                    <li>graphql.config.toml</li>
+                    <li>.graphqlrc.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">swagger</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>swagger.yaml</li>
+                    <li>swagger.yml</li>
+                    <li>swagger.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">grafana</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>grafana.ini</li>
+                    <li>grafana/*.ini</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">chart testing</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>chart_schema.yaml</li>
+                    <li>ct.yaml</li>
+                    <li>lintconf.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">nixpacks</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>nixpacks.json</li>
+                    <li>nixpacks.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">codebuild</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>buildspec.yml</li>
+                    <li>buildspec.yaml</li>
+                    <li>buildspec_*.yml</li>
+                    <li>buildspec_*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">lefthook</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>lefthook.yml</li>
+                    <li>.lefthook.yml</li>
+                    <li>.config/lefthook.yml</li>
+                    <li>lefthook.yaml</li>
+                    <li>lefthook.json</li>
+                    <li>lefthook.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">bundlemon</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.bundlemonrc.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">hugoreleaser</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>hugoreleaser.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">deepsource</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.deepsource.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">git cliff</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>git-cliff/cliff.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">reuse</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>REUSE.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">kodiak</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.kodiak.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">streamlit</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.streamlit/config.toml</li>
+                    <li>.streamlit/secrets.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">mdbook</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>mdbook.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">lychee</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>lychee.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">cdbindgen</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>cdbindgen.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">triagebot</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>triagebot.toml</li>
+                    <li>triage/config.yml</li>
+                    <li>triage/config.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">taoskeeper</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>taoskeeper.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">jazzy</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.jazzy.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">clomonitor</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.config/clomonitor/*.yaml</li>
+                    <li>.config/clomonitor/*.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">prometheus</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>prometheus.yml</li>
+                    <li>prometheus.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">helm</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>Chart.yml</li>
+                    <li>Chart.yaml</li>
+                    <li>values.yaml</li>
+                    <li>values.yml</li>
+                    <li>charts/*.yaml</li>
+                    <li>helm/*/values.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">cspell</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.cspell.json</li>
+                    <li>cspell.json</li>
+                    <li>cspell.config.json</li>
+                    <li>cspell.config.yaml</li>
+                    <li>cspell.yaml</li>
+                    <li>cspell.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">azure pipelines</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>azure-pipelines.yml</li>
+                    <li>azure-pipelines.yaml</li>
+                    <li>.azure/pipelines/*.yml</li>
+                    <li>.azure/pipelines/*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">logstash</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>logstash.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">verdaccio</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>*/.verdaccio/config.yml</li>
+                    <li>verdaccio.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">sonar-qube</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>sonar-project.properties</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">biomejs</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>biome.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">oxc</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.oxcrc.json</li>
+                    <li>.oxlintrc.json</li>
+                    <li>oxlint.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">ultralytics yolo</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>ultralytics/cfg/default.yaml</li>
+                    <li>ultralytics/cfg/*/*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">bun</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>bunfig.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">claude code</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.claude/settings.json</li>
+                    <li>.claude/*.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">cursor</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.cursor/cli-config.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">zed</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>zed/settings.json</li>
+                    <li>zed/*.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">tslint</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>tslint.json</li>
+                    <li>tslint.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">jsdoc</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>jsdoc.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">pyright</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>pyrightconfig.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">clusterfuzz</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>*/gce/clusters.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">jinja</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>/*.jina.yml</li>
+                    <li>/*.jaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">conda</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>conda.yaml</li>
+                    <li>conda.yml</li>
+                    <li>conda/*.yaml</li>
+                    <li>conda/*.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">alluxio</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>alluxio-site.properties</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">android</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>AndroidManifest.xml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">angular</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>angular.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">ansible playbook</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>site.yml</li>
+                    <li>playbook.yml</li>
+                    <li>site.yaml</li>
+                    <li>playbook.yaml</li>
+                    <li>playbooks/*.yml</li>
+                    <li>playbooks/*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">ansible</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>ansible.cfg</li>
+                    <li>ansible/*.cfg</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">apache webserver</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>httpd.conf</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">cargo</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>Cargo.toml</li>
+                    <li>.cargo/config.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">circleci</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.circleci/config.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">docker</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>Dockerfile</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">cypress</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>cypress.json</li>
+                    <li>cypress/*/*json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">django</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>settings.py</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">docker compose</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>docker-compose.yml</li>
+                    <li>docker-compose.yaml</li>
+                    <li>*docker-compose.*.yml</li>
+                    <li>*docker_compose_*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">elasticsearch</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>elasticsearch.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">flutter</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>pubspec.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">github action</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.github/workflows/*.yml</li>
+                    <li>.github/workflows/*.yaml</li>
+                    <li>.github/actions/*.yaml</li>
+                    <li>.github/actions/*.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">gradle</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>gradle.properties</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">gradle wrapper</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>gradle-wrapper.properties</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">hadoop common</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>core-site.xml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">hadoop hbase</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>hbase-site.xml</li>
+                    <li>hbase-default.xml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">hadoop hdfs</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>hdfs-site.xml</li>
+                    <li>hdfs-default.xml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">heroku</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>Procfile</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">kafka</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>server.properties</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">maven</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>pom.xml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">maven wrapper</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>maven-wrapper.properties</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">mapreduce</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>mapred-site.xml</li>
+                    <li>mapred-default.xml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">mongodb</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>mongod.conf</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">mysql</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>my.cnf</li>
+                    <li>my.ini</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">netlify</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>netlify.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">nginx</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>nginx.conf</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">nodejs</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>package.json</li>
+                    <li>package-lock.json</li>
+                    <li>npm-shrinkwrap.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">php</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>php.ini</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">postgresql</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>postgresql.conf</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">poetry</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>pyproject.toml</li>
+                    <li>poetry.toml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">rabbitmq</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>rabbitmq.conf</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">redis</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>redis.conf</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">spring</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>application.properties</li>
+                    <li>application.yml</li>
+                    <li>application.yaml</li>
+                    <li>application-*.properties</li>
+                    <li>application-*.yml</li>
+                    <li>application-*.yaml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">travis</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>.travis.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">yarn</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>yarn-site.xml</li>
+                    <li>.yarnrc.yml</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">zookeeper</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>zoo.cfg</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="tech-name">tsconfig</div>
+            </div>
+            <div class="card-body">
+                <div class="files-label">Config Files</div>
+                <ul class="file-list">
+                    <li>**tsconfig.node.json</li>
+                    <li>**tsconfig.decl.json</li>
+                    <li>**tsconfig.base.json</li>
+                    <li>**tsconfig.*.json</li>
+                    <li>tsconfig.json</li>
+                </ul>
+            </div>
+            <div class="card-footer">Technology Card</div>
+        </div>
+        <div class="card" style="visibility: hidden;"></div>
+        <div class="card" style="visibility: hidden;"></div>
+        <div class="card" style="visibility: hidden;"></div>
+    </div>
+</body>
+</html>

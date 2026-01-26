@@ -42,8 +42,8 @@ def main():
     )
     parser.add_argument(
         "--data-dir",
-        default="../data/project_clustering_technology",
-        help="Directory containing clustering results (default: ../data/project_clustering_technology).",
+        default="../../data/clustering/technologies",
+        help="Directory containing clustering results (default: ../../data/clustering/technologies).",
     )
 
     args = parser.parse_args()
