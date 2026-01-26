@@ -1,6 +1,7 @@
 #!/bin/bash
 
-COMMANDS_FILE=$1
+COMPANY=$1
+COMMANDS_FILE=$2
 TASK_ID=$SLURM_ARRAY_TASK_ID
 JOB_ID=$SLURM_ARRAY_JOB_ID
 SB_JOB_NAME=$SBATCH_JOB_NAME
@@ -16,7 +17,7 @@ PROJECT_NAME=$(echo "$PROJECT_URL" | sed 's|.*/||')
 PROJECT_FOLDER=$(echo "$PROJECT_URL" | sed 's|https://||; s|http://||; s|/$||; s|\.git$||; s|^github.com/||; s|/|_|g')
 
 # Define output directory and expected result file
-OUT_FOLDER="/home/ssimon/GitHub/config-space/slurm/projects/${PROJECT_FOLDER}"
+OUT_FOLDER="/home/ssimon/GitHub/config-space/slurm/${COMPANY}/${PROJECT_FOLDER}"
 
 # prepare filesystem
 rm -rf /tmp/ssimon/config-space
