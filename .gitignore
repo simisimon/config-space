@@ -28,3 +28,11 @@ analysis.log
 **/data/google/latest_commit/*
 **/data/spotify/latest_commit/*
 **/data/airbnb/latest_commit/*
+
+**/slurm/netflix/*
+**/slurm/uber/*
+**/slurm/disney/*
+**/slurm/facebook/*
+**/slurm/google/*
+**/slurm/spotify/*
+**/slurm/airbnb/*
