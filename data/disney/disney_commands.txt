@@ -1,1 +1,4 @@
+python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/disney/disney-kinesis-client-rust --name=disney-kinesis-client-rust --commit=386058ff59dd4dd4cfe7985e2227163d73254f1e
 python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/disney/fiscal-calendar --name=fiscal-calendar --commit=6b994354a1741585a98f7c7792c5c53c309814be
+python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/disney/meteor-base --name=meteor-base --commit=57c4d78d9123766ec61a379ca04854b2cac1dddb
+python3 /tmp/ssimon/config-space/experiments/analysis.py --url=https://github.com/disney/terraform-aws-kinesis-firehose-splunk --name=terraform-aws-kinesis-firehose-splunk --commit=f3fe2fcddf3923fb6931dae8059acd3bf458b882
