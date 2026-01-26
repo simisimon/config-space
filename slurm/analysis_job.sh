@@ -17,7 +17,6 @@ PROJECT_FOLDER=$(echo "$PROJECT_URL" | sed 's|https://||; s|http://||; s|/$||; s
 
 # Define output directory and expected result file
 OUT_FOLDER="/home/ssimon/GitHub/config-space/slurm/projects/${PROJECT_FOLDER}"
-RESULT_FILE="${OUT_FOLDER}/${PROJECT_NAME}.json"
 
 # prepare filesystem
 rm -rf /tmp/ssimon/config-space
@@ -67,6 +66,10 @@ fi
 echo "Project: $PROJECT_NAME"
 echo "Current directory: $(pwd)"
 
+git config --global core.symlinks false
+git config --global core.longpaths true
+echo "Git configuration applied: symlinks disabled, longpaths enabled"
+
 START=$(date +%s%3N)
 $COMMAND
 END=$(date +%s%3N)
@@ -75,9 +78,14 @@ echo "time spent on task: $(($END - $START))"
 # copy results from tmp directory to home
 echo 'copy results'
 mkdir -p $OUT_FOLDER
-cp -rv "/tmp/ssimon/config-space/experiments/${PROJECT_NAME}.json" $OUT_FOLDER
+
+# Copy all JSON files (batch files and summary)
+cp -rv "/tmp/ssimon/config-space/experiments/${PROJECT_FOLDER}"*.json $OUT_FOLDER
+
+# Copy log files
 cp -rv "/home/ssimon/logs/${SLURM_JOB_NAME}_${SLURM_ARRAY_JOB_ID}_${SLURM_ARRAY_TASK_ID}.err" $OUT_FOLDER
 cp -rv "/home/ssimon/logs/${SLURM_JOB_NAME}_${SLURM_ARRAY_JOB_ID}_${SLURM_ARRAY_TASK_ID}.out" $OUT_FOLDER
+echo "Job successfully finished."
 
 # deactivate virtualenv
 deactivate

@@ -1,12 +1,20 @@
 #!/bin/bash
 
-PARTITION='edison5a'
+PARTITION='edison5b'
 JOB_NAME='ssimon-config-space'
 
-COMMANDS_FILE='./projects_final_edison5a.txt'
+COMMANDS_FILE='./projects_final_edison5b.txt'
 
 NTASKS=$(cat $COMMANDS_FILE | wc -l)
 echo "$(date) Submitting job $JOB_NAME to $PARTITION monitoring $NTASKS tasks."
 mkdir -p /home/ssimon/logs
 
-sbatch --error="/home/ssimon/logs/%x_%A_%a.err" --output="/home/ssimon/logs/%x_%A_%a.out" --exclusive --array=1-$NTASKS --partition=$PARTITION --job-name=$JOB_NAME ./analysis_job.sh $COMMANDS_FILE
+sbatch \
+  --error="/home/ssimon/logs/%x_%A_%a.err" \
+  --output="/home/ssimon/logs/%x_%A_%a.out" \
+  --exclusive \
+  --array=1-$NTASKS \
+  --partition=$PARTITION \
+  --job-name=$JOB_NAME \
+  --time=31-00:00:00 \
+  ./analysis_job.sh $COMMANDS_FILE
