@@ -29,6 +29,14 @@ analysis.log
 **/data/spotify/latest_commit/*
 **/data/airbnb/latest_commit/*
 
+**/data/netflix/projects/*
+**/data/uber/projects/*
+**/data/disney/projects/*
+**/data/facebook/projects/*
+**/data/google/projects/*
+**/data/spotify/projects/*
+**/data/airbnb/projects/*
+
 **/slurm/netflix/*
 **/slurm/uber/*
 **/slurm/disney/*

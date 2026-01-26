@@ -1,3 +1,4 @@
+import argparse
 import os
 import posixpath
 import paramiko
@@ -5,14 +6,10 @@ import paramiko
 from dotenv import load_dotenv
 load_dotenv()
 
-
-PROJECTS_DIR = "projects"
-
 HOST = os.getenv("VM_HOST")
 USER = os.getenv("VM_USER")
 PWD  = os.getenv("VM_PASSWORD")
 PORT = int(os.getenv("VM_PORT", "22"))
-REMOTE_ROOT = "/home/ssimon/github/config-space/data/projects"
 
 if not all([HOST, USER, PWD]):
     raise RuntimeError("Missing VM_HOST / VM_USER / VM_PASSWORD environment variables")
@@ -117,63 +114,40 @@ def sftp_put_dir(sftp, local_dir: str, remote_parent: str):
             print(f"Copied: {lf} -> {rf}")
 
 def main():
-    not_finished_projects = []
+    parser = argparse.ArgumentParser(description="Copy project files to remote machine")
+    parser.add_argument("company", help="Company name (e.g., disney)")
+    args = parser.parse_args()
+
+    company = args.company
+    projects_dir = company
+    remote_root = f"/home/ssimon/github/config-space/data/{company}/projects"
 
     ssh = ssh_client()
     sftp = ssh.open_sftp()
     try:
         # Ensure base target exists
-        sftp_mkdir_p(sftp, REMOTE_ROOT)
+        sftp_mkdir_p(sftp, remote_root)
 
-        for folder in os.listdir(PROJECTS_DIR):
-            folder_path = os.path.join(PROJECTS_DIR, folder)
+        for folder in os.listdir(projects_dir):
+            folder_path = os.path.join(projects_dir, folder)
             if not os.path.isdir(folder_path):
                 continue
 
-            files = os.listdir(folder_path)
-
-            err_file = [f for f in files if f.endswith(".err")][0]
-
-            with open(os.path.join(folder_path, err_file), "r") as f:
-                content = f.read()
-                if "Processing: 100%" not in content:
-                    print(f"Skipping folder {folder_path} as job not finished.")
-                    not_finished_projects.append(folder_path)
-                    continue
-
-            # Condition from your code:
-            # If NO summary.json exists AND there IS any 'batch' file -> upload whole folder
-            has_summary = any(f.endswith("summary.json") for f in files)
-            has_batch   = any("batch" in f for f in files)
-            has_last_commit = any(f.endswith("last_commit.json") for f in files)
-
-            if (not has_summary) and has_batch:
-                print(f"Copy entire folder {folder_path} to {REMOTE_ROOT}")
-                sftp_put_dir(sftp, folder_path, REMOTE_ROOT)
+            # Skip if remote folder already exists
+            remote_folder = posixpath.join(remote_root, folder)
+            if remote_exists_dir(sftp, remote_folder):
+                print(f"Skip: {remote_folder} (already exists)")
                 continue
 
-            #if has_last_commit:
-            #    project_name = folder
-            #    last_commit_file = os.path.join(folder_path, f"{project_name}_last_commit.json")
-            #    remote_dir = posixpath.join("/home/ssimon/github/config-space/data/projects_last_commit")
-            #    print(f"Kopiere Datei {last_commit_file} nach {remote_dir}")
-            #    sftp_put_file(sftp, last_commit_file, remote_dir)
-            #    continue
+            sftp_mkdir_p(sftp, remote_folder)
 
-            # Else: upload individual .json files except those with batch/summary in the name
-            for f in files:
-                try: 
-                    if ("batch" in f) or ("summary" in f) or ("latest_commit" in f) or (not f.endswith(".json")):
-                        continue
-                    
-                    project_name = os.path.basename(f).removesuffix(".json")
-                    file_path = os.path.join(folder_path, f)
-
-                    remote_dir = posixpath.join(REMOTE_ROOT, project_name)
-                    sftp_put_file(sftp, file_path, remote_dir)
-                except Exception as e:
-                    print(f"Error copying files: {file_path}")
+            # Copy all JSON files from this folder
+            for f in os.listdir(folder_path):
+                if not f.endswith(".json"):
                     continue
+
+                local_file = os.path.join(folder_path, f)
+                sftp_put_file(sftp, local_file, remote_folder)
 
     finally:
         try:
@@ -181,10 +155,6 @@ def main():
         except Exception:
             pass
         ssh.close()
-
-        print("Not finished projects:")
-        for project in not_finished_projects:
-            print(project)
 
 if __name__ == "__main__":
     main()

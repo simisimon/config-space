@@ -19,6 +19,14 @@ PROJECT_FOLDER=$(echo "$PROJECT_URL" | sed 's|https://||; s|http://||; s|/$||; s
 # Define output directory and expected result file
 OUT_FOLDER="/home/ssimon/GitHub/config-space/slurm/${COMPANY}/${PROJECT_FOLDER}"
 
+# Check if project was already processed (output folder exists with JSON files)
+if [ -d "$OUT_FOLDER" ] && [ -n "$(find "$OUT_FOLDER" -maxdepth 1 -name '*.json' -print -quit)" ]; then
+    echo "Project $PROJECT_NAME already processed. Skipping."
+    echo "canceling ${JOB_ID}_${TASK_ID}"
+    scancel "${JOB_ID}_${TASK_ID}"
+    exit 0
+fi
+
 # prepare filesystem
 rm -rf /tmp/ssimon/config-space
 mkdir -p /tmp/ssimon/config-space

@@ -30,7 +30,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-DEFAULT_MIN_DATE = "2025-11-01"
+DEFAULT_MIN_DATE = "2025-06-01"
 
 
 def parse_date(date_str: str) -> datetime | None:
