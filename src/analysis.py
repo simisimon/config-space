@@ -16,10 +16,11 @@ import argparse
 import tempfile
 import subprocess
 import os
+import glob
 
 
 CONFIG_FILE_ENDINGS = (".xml", ".yml", ".yaml", "Dockerfile", ".ini", ".properties", ".conf", ".json", ".toml", ".cfg", "settings.py", ".cnf")
-
+BATCH_SIZE = 100  # Number of commits to process before saving intermediate results
 
 
 def checkout_latest_commit(repo, current_branch, latest_commit):
@@ -188,7 +189,7 @@ def extract_config_data(new_network: Network, ref_network: Network) -> Dict:
     return network_data
 
 
-def analyze_repository(repo_path: str, project_name: str, target_commit: str = None) -> Dict:
+def analyze_repository(repo_path: str, project_name: str, output_file: str, target_commit: str = None) -> Dict:
     """Analyze Commit history of repositories and collect stats about the configuration space.
 
     Args:
@@ -240,8 +241,16 @@ def analyze_repository(repo_path: str, project_name: str, target_commit: str = N
 
             # Stash changes before checkout
             if repo.is_dirty(untracked_files=True):
-                repo.git.stash('push')
-
+                try:
+                    repo.git.stash('push')
+                except git.exc.GitCommandError as e:
+                    print(f"Warning: Could not stash changes for commit {commit.hexsha}: {e}")
+                    # Option: Hard reset instead
+                    try:
+                        repo.git.reset('--hard')
+                    except Exception as reset_error:
+                        print(f"Warning: Could not reset repository: {reset_error}")
+                        
             # Check if this is the latest commit
             is_latest_commit = (commit.hexsha == latest_commit)
 
@@ -252,7 +261,6 @@ def analyze_repository(repo_path: str, project_name: str, target_commit: str = N
 
                 new_network = create_network_from_path(repo_path=repo_path)
                 network_data = extract_config_data(new_network=new_network, ref_network=ref_network)
-                conflicts = extract_conflicts(new_network=new_network, ref_network=ref_network, commit_hash=str(commit.hexsha))
                 modified_files = commit.stats.files.keys() 
 
                 config_files = network_data["config_file_data"]
@@ -285,7 +293,6 @@ def analyze_repository(repo_path: str, project_name: str, target_commit: str = N
                         "author": f"{commit.author.name} <{commit.author.email}>",
                         "commit_msg": str(commit.message),
                         "network_data": network_data,
-                        "conflicts": conflicts
                     }
                 )
 
@@ -300,7 +307,6 @@ def analyze_repository(repo_path: str, project_name: str, target_commit: str = N
                         "author": f"{commit.author.name} <{commit.author.email}>",
                         "commit_msg": str(commit.message),
                         "network_data": {},
-                        "conflicts": []
                     }
                 )
         except Exception as error:
@@ -314,9 +320,29 @@ def analyze_repository(repo_path: str, project_name: str, target_commit: str = N
                     "author": f"{commit.author.name} <{commit.author.email}>",
                     "commit_msg": str(commit.message),
                     "network_data": {},
-                    "conflicts": []
                 }
             )
+
+        # Save intermediate results every 1000 commits
+        if idx % BATCH_SIZE == 0 or idx == len(commits):
+            batch_counter += 1
+            intermediate_file = output_file.replace(".json", f"_batch_{batch_counter}.json")
+            
+            intermediate_data = {
+                "project_name": project_name,
+                "batch_number": batch_counter,
+                "commits_processed": idx,
+                "total_commits": len(commits),
+                "commit_data": commit_data
+            }
+            
+            with open(intermediate_file, "w", encoding="utf-8") as f:
+                json.dump(intermediate_data, f, indent=4)
+            
+            print(f"\nSaved batch {batch_counter} ({len(commit_data)} commits) to {intermediate_file}")
+            
+            # Clear commit_data to free memory
+            commit_data = []
 
 
     # Return to latest commit
@@ -351,7 +377,8 @@ def process_project(project_url: str, project_name: str, target_commit: str = No
     """
 
     # Define the output file path
-    output_file = f"/tmp/ssimon/config-space/experiments/{project_name}.json"
+    project_account = project_url.split("/")[-2]
+    output_file = f"/tmp/ssimon/config-space/experiments/{project_account}_{project_name}.json"
     #output_file = f"../data/test_projects/{project_name}.json"
 
     print(f"Processing project: {project_name}")
@@ -370,13 +397,18 @@ def process_project(project_url: str, project_name: str, target_commit: str = No
 
             # Analyze repository to get commit config data
             print(f"Analyzing repository: {project_name}")
-            commit_data = analyze_repository(repo_path=temp_dir, project_name=project_name, target_commit=target_commit)
+            commit_data = analyze_repository(
+                repo_path=temp_dir, 
+                project_name=project_name, 
+                output_file=output_file, 
+                target_commit=target_commit)
 
             # Store commit data into the output file
-            with open(output_file, "w", encoding="utf-8") as dest:
+            summary_file = output_file.replace(".json", "_summary.json")
+            with open(summary_file, "w", encoding="utf-8") as dest:
                 json.dump(commit_data, dest, indent=4)
 
-            print(f"Analysis for {project_name} stored at {output_file}")
+            print(f"Analysis summary for {project_name} stored at {summary_file}")
 
         except Exception as error:
             print(f"Failed to process **{project_name}**: {error}")
@@ -385,8 +417,6 @@ def process_project(project_url: str, project_name: str, target_commit: str = No
 
 def get_args():
     parser = argparse.ArgumentParser()
-    #parser.add_argument("--url", type=str, default="https://github.com/simisimon/test-config-repo", help="Url of the repository to analyze")
-    #parser.add_argument("--name", type=str, default="test-config-repo", help="Name of the repository to analyze")
     parser.add_argument("--url", type=str, default="https://github.com/sqshq/piggymetrics", help="Url of the repository to analyze")
     parser.add_argument("--name", type=str, default="piggymetrics", help="Name of the repository to analyze")
     parser.add_argument("--commit", type=str, default=None, help="Latest commit SHA to analyze up to (stops at this commit)")
