@@ -20,3 +20,11 @@ analysis.log
 **/data/test_projects/*
 **/slurm/projects/*
 **/__pycache__/**
+
+**/data/netflix/*
+**/data/uber/*
+**/data/disney/*
+**/data/facebook/*
+**/data/google/*
+**/data/spotify/*
+**/data/airbnb/*
