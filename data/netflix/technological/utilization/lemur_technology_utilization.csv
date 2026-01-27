@@ -1,0 +1,12 @@
+Technology,Total Options,Number of Files,Options Set (Total),Options Set (Unique),Matched Options,Percentage Used
+dependabot,,1,15,9,,
+github-action,,4,127,80,,
+pre-commit,,1,22,10,,
+readthedocs,,1,11,10,,
+docker,18.0,2,30,8,8.0,44.44
+bower,,1,46,46,,
+docker-compose,237.0,2,31,24,14.0,5.91
+mypy,,1,2,2,,
+nodejs,42.0,1,57,57,2.0,4.76
+poetry,42.0,1,58,58,5.0,11.9
+tox,,1,1,1,,

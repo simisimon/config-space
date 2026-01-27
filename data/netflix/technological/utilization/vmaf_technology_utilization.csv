@@ -1,0 +1,6 @@
+Technology,Total Options,Number of Files,Options Set (Total),Options Set (Unique),Matched Options,Percentage Used
+dependabot,,1,4,4,,
+github-action,,4,148,70,,
+docker,18.0,1,11,7,7.0,38.89
+poetry,42.0,1,1,1,0.0,0.0
+tox,,1,21,21,,

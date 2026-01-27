@@ -1,0 +1,5 @@
+Technology,Total Options,Number of Files,Options Set (Total),Options Set (Unique),Matched Options,Percentage Used
+github-action,,2,41,27,,
+docker,18.0,1,35,8,8.0,44.44
+docker-compose,237.0,2,121,97,19.0,8.02
+tox,,1,8,8,,

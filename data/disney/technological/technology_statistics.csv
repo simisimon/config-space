@@ -1,0 +1,7 @@
+technology,unique_options,avg_options_per_project,avg_files_per_project,num_projects
+nodejs,4593,1533.67,2.33,3
+github-action,41,21.0,2.5,2
+cargo,33,33.0,1.0,1
+docker,5,5.0,2.0,1
+pre-commit,4,4.0,1.0,1
+github,2,2.0,2.0,1

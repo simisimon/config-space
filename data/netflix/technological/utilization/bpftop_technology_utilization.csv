@@ -1,0 +1,5 @@
+Technology,Total Options,Number of Files,Options Set (Total),Options Set (Unique),Matched Options,Percentage Used
+dependabot,,1,16,8,,
+github-action,,1,52,37,,
+cargo,113.0,1,22,22,6.0,5.31
+cross,,1,4,4,,

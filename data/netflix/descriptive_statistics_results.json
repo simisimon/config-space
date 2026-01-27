@@ -1,0 +1,492 @@
+{
+    "Netflix_archaius": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 2497,
+        "created_at": "2012-05-11T00:07:05Z",
+        "size_in_kb": 4018
+    },
+    "Netflix_atlas": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 3529,
+        "created_at": "2014-08-05T05:23:04Z",
+        "size_in_kb": 137383
+    },
+    "Netflix_atlas-docs": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 2,
+        "num_stars": 50,
+        "created_at": "2018-03-20T18:03:51Z",
+        "size_in_kb": 226711
+    },
+    "Netflix_awsobjectmapper": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 46,
+        "created_at": "2014-08-14T22:34:34Z",
+        "size_in_kb": 230
+    },
+    "Netflix_bettertls": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 2,
+        "num_stars": 175,
+        "created_at": "2017-01-03T19:18:04Z",
+        "size_in_kb": 372
+    },
+    "Netflix_bpftop": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 2604,
+        "created_at": "2024-02-10T22:20:51Z",
+        "size_in_kb": 2670
+    },
+    "Netflix_concurrency-limits": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 3521,
+        "created_at": "2017-12-11T19:32:41Z",
+        "size_in_kb": 847
+    },
+    "Netflix_dgs": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 2,
+        "num_stars": 25,
+        "created_at": "2020-12-08T18:00:44Z",
+        "size_in_kb": 5377
+    },
+    "Netflix_dgs-codegen": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 204,
+        "created_at": "2020-12-01T00:18:44Z",
+        "size_in_kb": 3566
+    },
+    "Netflix_dgs-examples-kotlin": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 101,
+        "created_at": "2021-01-06T01:42:19Z",
+        "size_in_kb": 248
+    },
+    "Netflix_dgs-framework": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 6,
+        "num_stars": 3291,
+        "created_at": "2020-11-30T23:54:32Z",
+        "size_in_kb": 8630
+    },
+    "Netflix_dgs-intellij-plugin": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 5,
+        "num_stars": 27,
+        "created_at": "2021-10-18T17:20:14Z",
+        "size_in_kb": 2034
+    },
+    "Netflix_dyno-queues": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 275,
+        "created_at": "2016-08-11T20:08:59Z",
+        "size_in_kb": 590
+    },
+    "Netflix_dynomite-manager": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 94,
+        "created_at": "2016-06-01T19:14:37Z",
+        "size_in_kb": 1798
+    },
+    "Netflix_eureka": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 12689,
+        "created_at": "2012-07-26T22:23:07Z",
+        "size_in_kb": 12629
+    },
+    "Netflix_EVCache": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 5,
+        "num_stars": 2162,
+        "created_at": "2013-02-08T22:52:57Z",
+        "size_in_kb": 3162
+    },
+    "Netflix_frigga": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 42,
+        "created_at": "2012-10-12T23:12:05Z",
+        "size_in_kb": 518
+    },
+    "Netflix_governator": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 827,
+        "created_at": "2012-07-07T22:28:42Z",
+        "size_in_kb": 4566
+    },
+    "Netflix_hollow": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 1331,
+        "created_at": "2016-12-02T18:56:43Z",
+        "size_in_kb": 26823
+    },
+    "Netflix_Hystrix": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 24458,
+        "created_at": "2012-11-19T20:14:46Z",
+        "size_in_kb": 9828
+    },
+    "Netflix_iep": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 95,
+        "created_at": "2014-12-05T20:50:15Z",
+        "size_in_kb": 5206
+    },
+    "Netflix_lemur": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 8,
+        "num_stars": 1763,
+        "created_at": "2015-06-16T16:36:07Z",
+        "size_in_kb": 12065
+    },
+    "Netflix_maestro": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 5,
+        "num_stars": 3709,
+        "created_at": "2024-04-17T01:15:56Z",
+        "size_in_kb": 2114
+    },
+    "Netflix_mantis": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 8,
+        "num_stars": 1454,
+        "created_at": "2019-06-06T23:44:48Z",
+        "size_in_kb": 28844
+    },
+    "Netflix_mantis-gradle-plugin": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 7,
+        "created_at": "2019-06-06T18:00:06Z",
+        "size_in_kb": 147
+    },
+    "Netflix_mantis-mql": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 2,
+        "num_stars": 19,
+        "created_at": "2019-04-25T23:18:15Z",
+        "size_in_kb": 9772
+    },
+    "Netflix_metacat": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 6,
+        "num_stars": 1686,
+        "created_at": "2016-03-19T20:06:34Z",
+        "size_in_kb": 7834
+    },
+    "Netflix_metaflow": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 7,
+        "num_stars": 9727,
+        "created_at": "2019-09-17T17:48:25Z",
+        "size_in_kb": 46665
+    },
+    "Netflix_metaflow-docs": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 5,
+        "num_stars": 39,
+        "created_at": "2020-03-12T21:43:52Z",
+        "size_in_kb": 114427
+    },
+    "Netflix_metaflow-nflx-extensions": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 2,
+        "num_stars": 32,
+        "created_at": "2022-12-04T07:43:02Z",
+        "size_in_kb": 621
+    },
+    "Netflix_metaflow-service": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 5,
+        "num_stars": 218,
+        "created_at": "2019-11-29T21:25:51Z",
+        "size_in_kb": 1539
+    },
+    "Netflix_metaflow-ui": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 5,
+        "num_stars": 351,
+        "created_at": "2021-10-26T05:34:12Z",
+        "size_in_kb": 6424
+    },
+    "Netflix_msl": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 728,
+        "created_at": "2014-06-06T22:41:18Z",
+        "size_in_kb": 17238
+    },
+    "Netflix_netflix-commons": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 2,
+        "num_stars": 169,
+        "created_at": "2012-07-12T23:54:25Z",
+        "size_in_kb": 451
+    },
+    "Netflix_nflx-geofeed": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 1,
+        "num_stars": 26,
+        "created_at": "2022-08-10T07:07:59Z",
+        "size_in_kb": 102
+    },
+    "Netflix_photon": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 248,
+        "created_at": "2015-12-09T19:09:07Z",
+        "size_in_kb": 246631
+    },
+    "Netflix_Priam": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 1037,
+        "created_at": "2011-07-20T17:51:25Z",
+        "size_in_kb": 14092
+    },
+    "Netflix_q": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 72,
+        "created_at": "2016-06-13T23:41:43Z",
+        "size_in_kb": 342
+    },
+    "Netflix_Raigad": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 348,
+        "created_at": "2014-08-18T22:43:27Z",
+        "size_in_kb": 100635
+    },
+    "Netflix_ribbon": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 4623,
+        "created_at": "2013-01-15T01:08:04Z",
+        "size_in_kb": 3504
+    },
+    "Netflix_servo": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 1425,
+        "created_at": "2011-12-16T21:09:27Z",
+        "size_in_kb": 5403
+    },
+    "Netflix_spectator": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 765,
+        "created_at": "2014-07-18T20:22:53Z",
+        "size_in_kb": 17413
+    },
+    "Netflix_spectator-cpp": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 1,
+        "num_stars": 30,
+        "created_at": "2018-11-20T22:12:36Z",
+        "size_in_kb": 2374
+    },
+    "Netflix_sureal": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 3,
+        "num_stars": 134,
+        "created_at": "2018-01-18T23:35:29Z",
+        "size_in_kb": 2696
+    },
+    "Netflix_ttal-dapt-conv": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 2,
+        "num_stars": 0,
+        "created_at": "2025-10-24T00:59:08Z",
+        "size_in_kb": 56
+    },
+    "Netflix_vmaf": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 6,
+        "num_stars": 5242,
+        "created_at": "2016-02-08T18:41:38Z",
+        "size_in_kb": 101925
+    },
+    "Netflix_x-element": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 42,
+        "created_at": "2018-04-25T23:36:13Z",
+        "size_in_kb": 1459
+    },
+    "Netflix_x-test": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 4,
+        "num_stars": 14,
+        "created_at": "2019-06-27T02:29:10Z",
+        "size_in_kb": 342
+    },
+    "Netflix_zuul": {
+        "total_commits": null,
+        "total_config_commits": null,
+        "total_contributors": null,
+        "total_config_contributors": null,
+        "total_technologies": 6,
+        "num_stars": 13977,
+        "created_at": "2013-03-13T18:53:57Z",
+        "size_in_kb": 6361
+    }
+}

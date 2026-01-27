@@ -1,0 +1,26 @@
+technology,unique_options,avg_options_per_project,avg_files_per_project,num_projects
+nodejs,5013,936.25,1.75,8
+mkdocs,427,95.4,1.0,5
+github-action,420,31.78,2.87,45
+cypress,197,98.5,2.0,2
+docker-compose,126,43.67,1.67,3
+spring,122,17.86,1.57,7
+gradle,58,4.69,1.19,16
+poetry,58,29.5,1.0,2
+bower,46,46.0,1.0,1
+github,33,8.83,2.17,6
+tox,32,11.6,1.0,5
+log4j,26,7.71,3.14,7
+cargo,22,22.0,1.0,1
+tsconfig,20,5.25,1.5,4
+pre-commit,18,8.0,1.0,3
+deno,14,14.0,1.0,1
+dependabot,13,4.82,1.0,11
+docker,11,6.14,1.14,7
+readthedocs,10,10.0,1.0,1
+gradle-wrapper,8,5.8,1.0,30
+travis,5,5.0,1.0,1
+cross,4,4.0,1.0,1
+kafka,2,2.0,2.0,1
+mypy,2,2.0,1.0,1
+github issues,1,1.0,1.0,1

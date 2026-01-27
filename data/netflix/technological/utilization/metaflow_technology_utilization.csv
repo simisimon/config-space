@@ -1,0 +1,7 @@
+Technology,Total Options,Number of Files,Options Set (Total),Options Set (Unique),Matched Options,Percentage Used
+github-action,,2,50,27,,
+pre-commit,,1,33,8,,
+cypress,49.0,2,8,8,4.0,8.16
+nodejs,42.0,2,3920,3882,4.0,9.52
+tsconfig,129.0,2,17,16,1.0,0.78
+tox,,1,3,3,,

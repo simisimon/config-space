@@ -40,7 +40,7 @@ FILE_TYPES = {
              "codebeaver", "crowdin", "readthedocs", "graphql", "swagger", "chart testing", "codebuild", "lefthook",
              "hugoreleaser", "triagebot", "jazzy", "clomonitor", "prometheus", "helm", "cspell", "azure pipelines", "logstash"
              "verdaccio", "github", "github issues", "github funding", "github config", "github codespaces", "ultralytics yolo",
-             "tslint", "clusterfuzz", "jinja", "conda"],
+             "tslint", "clusterfuzz", "jinja", "conda", "rubocop"],
     "properties": ["alluxio", "spring", "kafka", "gradle", "cirrus", "gradle wrapper", "maven wrapper", "properties", "log4j"],
     "json": ["angular", "eslint", "prettier", "lerna", "firebase", "renovate", "stripe", "tsconfig", "nodejs", 
              "vercel", "npm", "cypress", "devcontainer", "deno", "cmake", "bower", "json", "babel", "turborepo", 
@@ -66,12 +66,12 @@ COLORS = [
 ]
 
 
-def load_project_files(limit: int | None = None, refresh: bool = False):
+def load_project_files(name: str, limit: int | None = None, refresh: bool = False):
     if not refresh:
         logger.info("Skipping project file loading")
         return
-    
-    project_files = glob.glob("../../data/projects_last_commit/*.json")
+
+    project_files = glob.glob(f"../../data/{name}/latest_commit/*.json")
     logger.info(f"Found {len(project_files)} project files")
     if limit:
         project_files = project_files[:limit]
@@ -94,8 +94,12 @@ def extract_technologies(project_files: List[str], output_file: str, refresh: bo
         try:
             with open(project_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                latest_commit = data["latest_commit_data"]
-                config_data = latest_commit["network_data"]["config_file_data"]
+                # Support both old and new formats
+                if "config_data" in data:
+                    config_data = data["config_data"]["config_file_data"]
+                else:
+                    latest_commit = data["latest_commit_data"]
+                    config_data = latest_commit["network_data"]["config_file_data"]
 
                 for config_file in config_data:
                     # Skip files in exlcuded directories
@@ -119,7 +123,7 @@ def extract_technologies(project_files: List[str], output_file: str, refresh: bo
 
             project_technologies.append(
                 {
-                    "project": project_name.split("_last_commit")[0],
+                    "project": project_name.replace("_commit", ""),
                     "technologies": sorted(set(technologies))
                 }
             )
@@ -128,6 +132,7 @@ def extract_technologies(project_files: List[str], output_file: str, refresh: bo
             continue
 
     df = pd.DataFrame(project_technologies)
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
     df.to_csv(output_file, index=False)
 
     return df
@@ -244,7 +249,7 @@ def extract_technology_combinations(df: pd.DataFrame, max_combos: int = 10) -> D
     return combo_counts
 
 
-def create_technology_combination_plot(data_file: str, num_combos: int, refresh: bool = False):
+def create_technology_combination_plot(name: str, data_file: str, num_combos: int, refresh: bool = False):
     """
     Creates an UpSet plot for the most common technology combinations.
     """
@@ -293,7 +298,8 @@ def create_technology_combination_plot(data_file: str, num_combos: int, refresh:
         plot["matrix"].set_yticklabels(labels, fontweight='bold')
 
     plt.suptitle(f"Technology Combinations Across {num_projects} Projects", fontsize=20, fontweight='bold', y=0.995)
-    plt.savefig("../../data/technological/composition/technology_combinations.png", dpi=300, bbox_inches='tight', pad_inches=0.3)
+    output_path = f"../../data/{name}/technological/technology_combinations.png"
+    plt.savefig(output_path, dpi=300, bbox_inches='tight', pad_inches=0.3)
 
 
 def filter_technologies(technologies_str):
@@ -322,46 +328,49 @@ def filter_projects(data_file: str, output_file: str, refresh: bool = False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--input", required=True, help="Name of the directory of a company")
     parser.add_argument("--limit", type=int, help="Limit number of projects to process")
     parser.add_argument("--refresh", action="store_true", help="Refresh technology extraction even if CSV exists")  
     args = parser.parse_args()
     
     # Load project files
     project_files = load_project_files(
+        args.input,
         args.limit, 
         refresh=args.refresh
     )
 
     # Extract technologies
-    #df_technologies = extract_technologies(
-    #    project_files=project_files, 
-    #    output_file="../../data/technological/composition/project_technologies.csv", 
-    #    refresh=args.refresh
-    #)
+    df_technologies = extract_technologies(
+        project_files=project_files, 
+        output_file=f"../../data/{args.input}/technological/technologies.csv", 
+        refresh=args.refresh
+    )
 
     # Get technology landscape
-    #get_technology_landscape(
-    #    data_file="../../data/technological/composition/project_technologies.csv", 
-    #    output_file="../../data/technological/composition/technology_landscape.png",
-    #    refresh=args.refresh
-    #)
+    get_technology_landscape(
+        data_file=f"../../data/{args.input}/technological/technologies.csv", 
+        output_file=f"../../data/{args.input}/technological/technology_landscape.png",
+        refresh=args.refresh
+    )
 
     filter_projects(
-        data_file="../../data/technological/composition/project_technologies.csv", 
-        output_file="../../data/technological/composition/project_technologies_filtered.csv",
+        data_file=f"../../data/{args.input}/technological/technologies.csv", 
+        output_file=f"../../data/{args.input}/technological/technologies_filtered.csv",
         refresh=args.refresh
     )
 
     # Create new landscape with filtered data
     get_technology_landscape(
-        data_file="../../data/technological/composition/project_technologies_filtered.csv", 
-        output_file="../../data/technological/composition/technology_landscape_filtered.png",
+        data_file=f"../../data/{args.input}/technological/technologies_filtered.csv", 
+        output_file=f"../../data/{args.input}/technological/technology_landscape_filtered.png",
         refresh=args.refresh
     )
 
     # Get technology combinations
-    #create_technology_combination_plot(
-    #    data_file="../../data/technological/composition/project_technologies_filtered.csv", 
-    #    num_combos=20,
-    #    refresh=args.refresh
-    #)
+    create_technology_combination_plot(
+        name=args.input,
+        data_file=f"../../data/{args.input}/technological/technologies_filtered.csv", 
+        num_combos=20,
+        refresh=args.refresh
+    )

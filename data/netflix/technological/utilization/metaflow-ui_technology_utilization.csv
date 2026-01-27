@@ -1,0 +1,6 @@
+Technology,Total Options,Number of Files,Options Set (Total),Options Set (Unique),Matched Options,Percentage Used
+github-action,,3,78,47,,
+docker,18.0,1,18,6,6.0,33.33
+cypress,49.0,2,207,189,0.0,0.0
+tsconfig,129.0,1,5,5,0.0,0.0
+nodejs,42.0,2,92,86,5.0,11.9

@@ -1,0 +1,6 @@
+Technology,Total Options,Number of Files,Options Set (Total),Options Set (Unique),Matched Options,Percentage Used
+github-action,,3,89,31,,
+log4j,,3,14,5,,
+kafka,403.0,1,2,2,0.0,0.0
+gradle,24.0,1,4,4,3.0,12.5
+gradle-wrapper,5.0,1,5,5,0.0,0.0

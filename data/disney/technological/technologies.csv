@@ -1,0 +1,5 @@
+project,technologies
+disney-kinesis-client-rust,['cargo']
+terraform-aws-kinesis-firehose-splunk,"['github', 'github-action', 'npm', 'pre-commit', 'yaml']"
+fiscal-calendar,"['nodejs', 'npm']"
+meteor-base,"['docker', 'github-action', 'nodejs', 'npm', 'yaml']"

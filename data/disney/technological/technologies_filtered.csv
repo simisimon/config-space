@@ -1,0 +1,4 @@
+project,technologies
+terraform-aws-kinesis-firehose-splunk,"['github', 'github-action', 'npm', 'pre-commit']"
+fiscal-calendar,"['nodejs', 'npm']"
+meteor-base,"['docker', 'github-action', 'nodejs', 'npm']"

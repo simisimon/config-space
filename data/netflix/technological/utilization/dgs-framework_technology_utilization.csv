@@ -1,0 +1,7 @@
+Technology,Total Options,Number of Files,Options Set (Total),Options Set (Unique),Matched Options,Percentage Used
+github issues,,1,1,1,,
+github,,1,1,1,,
+github-action,,5,117,45,,
+gradle,24.0,1,6,6,2.0,8.33
+gradle-wrapper,5.0,1,8,8,0.0,0.0
+spring,1779.0,2,12,8,6.0,0.34

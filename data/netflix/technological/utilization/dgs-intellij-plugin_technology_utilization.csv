@@ -1,0 +1,5 @@
+Technology,Total Options,Number of Files,Options Set (Total),Options Set (Unique),Matched Options,Percentage Used
+dependabot,,1,9,5,,
+github-action,,2,91,54,,
+gradle,24.0,1,13,13,0.0,0.0
+gradle-wrapper,5.0,1,7,7,0.0,0.0

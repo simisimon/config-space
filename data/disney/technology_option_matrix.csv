@@ -1,0 +1,5 @@
+project,cargo,docker,github,github-action,nodejs,pre-commit
+disney-kinesis-client-rust,33,0,0,0,0,0
+terraform-aws-kinesis-firehose-splunk,0,0,2,29,1,4
+fiscal-calendar,0,0,0,0,2076,0
+meteor-base,0,5,0,13,2524,0
