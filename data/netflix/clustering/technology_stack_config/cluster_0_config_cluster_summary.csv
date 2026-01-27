@@ -1,0 +1,4 @@
+cluster_id,num_projects,top_features
+0,2,configparser::testenv.commands (2); configparser::testenv.deps (2); configparser::testenv.passenv (2); configparser::tox.envlist (2); docker::ARG (2); docker::COPY (2); docker::FROM (2); docker::RUN (2); github-action::jobs.build.runs-on (2)
+1,1,configparser::testenv.commands (1); configparser::testenv.deps (1); configparser::testenv.passenv (1); configparser::tox.envlist (1); docker::ARG (0); docker::COPY (0); docker::FROM (0); docker::RUN (0); github-action::jobs.build.runs-on (0)
+2,1,docker::ARG (1); docker::RUN (1); configparser::tox.envlist (1); docker::FROM (1); docker::COPY (1); github-action::jobs.build.runs-on (1); configparser::testenv.commands (0); configparser::testenv.deps (0); configparser::testenv.passenv (0)

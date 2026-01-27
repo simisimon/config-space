@@ -1,0 +1,4 @@
+cluster_id,num_projects,top_technologies
+0,4,tox:4; github-action:3; docker:3; docker-compose:2; dependabot:2; poetry:2; travis:1; pre-commit:1; bower:1; readthedocs:1
+1,6,npm:6; tsconfig:4; nodejs:4; github-action:3; github:3; cypress:2; tox:1; pre-commit:1; docker:1; deno:1
+2,36,github-action:36; gradle-wrapper:30; gradle:16; dependabot:9; log4j:7; spring:7; mkdocs:4; github:3; docker:3; npm:1

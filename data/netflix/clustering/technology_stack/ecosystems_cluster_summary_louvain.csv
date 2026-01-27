@@ -1,0 +1,6 @@
+cluster_id,num_projects,top_technologies
+0,13,github-action:13; gradle-wrapper:10; mkdocs:3; spring:2; log4j:2; pre-commit:1; docker-compose:1; docker:1
+1,16,github-action:16; gradle-wrapper:16; gradle:16; log4j:5; spring:4; dependabot:3; github:2; mkdocs:1; kafka:1; github issues:1
+2,9,github-action:9; dependabot:8; docker:4; gradle-wrapper:3; tox:3; docker-compose:2; poetry:2; github:1; mypy:1; npm:1
+3,1,tox:1; travis:1
+4,7,npm:7; nodejs:4; github-action:4; tsconfig:4; github:3; cypress:2; pre-commit:1; tox:1; gradle-wrapper:1; docker:1

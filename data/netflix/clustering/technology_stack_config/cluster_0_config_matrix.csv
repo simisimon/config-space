@@ -1,0 +1,5 @@
+project,configparser::testenv.commands,configparser::testenv.deps,configparser::testenv.passenv,configparser::tox.envlist,docker::ARG,docker::COPY,docker::FROM,docker::RUN,github-action::jobs.build.runs-on
+lemur,0,0,0,1,1,1,1,1,1
+metaflow-service,1,1,1,1,1,1,1,1,1
+sureal,1,1,1,1,0,0,0,0,0
+vmaf,1,1,1,1,1,1,1,1,1
