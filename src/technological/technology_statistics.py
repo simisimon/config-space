@@ -5,6 +5,9 @@ import pandas as pd
 import sys
 import os
 import argparse
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
 from mapping import get_technology
 
 # Set up logging
@@ -34,12 +37,17 @@ def get_technology_statistics(project_files):
             with open(project_file, 'r') as f:
                 data = json.load(f)
 
-            project_name = data.get('project_name', os.path.basename(project_file).replace('_last_commit.json', ''))
+            project_name = data.get('project_name', os.path.basename(project_file).replace('_commit.json', ''))
 
-            # Get concepts and config data from latest commit
-            latest_commit = data.get('latest_commit_data', {})
-            network_data = latest_commit.get('network_data', {})
-            config_file_data = network_data.get('config_file_data', [])
+            # Get concepts and config data - support both old and new formats
+            # New format: config_data directly at top level
+            # Old format: latest_commit_data.network_data
+            if 'config_data' in data:
+                config_data = data.get('config_data', {})
+            else:
+                latest_commit = data.get('latest_commit_data', {})
+                config_data = latest_commit.get('network_data', {})
+            config_file_data = config_data.get('config_file_data', [])
 
             if project_name not in project_tech_options:
                 project_tech_options[project_name] = {}
@@ -140,11 +148,12 @@ def get_technology_statistics(project_files):
 
 def main():
     parser = argparse.ArgumentParser(description="Technology Statistics")
+    parser.add_argument("--input", required=True, help="Name of the directory of a company")
     parser.add_argument("--limit", type=int, help="Limit the number of project files to process")
     args = parser.parse_args()
 
     # Load project files
-    project_files = glob.glob("../data/projects_last_commit/*.json")
+    project_files = glob.glob(f"../../data/{args.input}/latest_commit/*.json")
     logger.info(f"Found {len(project_files)} project files")
 
     if args.limit:
@@ -155,12 +164,12 @@ def main():
     option_df, file_df, tech_stats = get_technology_statistics(project_files)
 
     # Save option matrix to CSV
-    option_matrix_output = "../data/technology_composition/technology_option_matrix.csv"
+    option_matrix_output = f"../../data/{args.input}/technological/technology_option_matrix.csv"
     option_df.to_csv(option_matrix_output, index=False)
     logger.info(f"Saved project-technology option matrix to {option_matrix_output}")
 
     # Save file count matrix to CSV
-    file_matrix_output = "../data/technology_composition/technology_file_matrix.csv"
+    file_matrix_output = f"../../data/{args.input}/technological/technology_file_matrix.csv"
     file_df.to_csv(file_matrix_output, index=False)
     logger.info(f"Saved project-technology file matrix to {file_matrix_output}")
 
@@ -176,8 +185,9 @@ def main():
         })
 
     stats_df = pd.DataFrame(stats_data)
-    stats_df = stats_df.sort_values('unique_options', ascending=False)
-    stats_output ="../data/technology_composition/technology_statistics.csv"
+    if not stats_df.empty:
+        stats_df = stats_df.sort_values('unique_options', ascending=False)
+    stats_output = f"../../data/{args.input}/technological/technology_statistics.csv"
     stats_df.to_csv(stats_output, index=False)
     logger.info(f"Saved technology statistics to {stats_output}")
 
