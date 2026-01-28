@@ -1,0 +1,31 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Brent Pitman <bpitman@netflix.com>,9,8,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+OpsEng Jenkins Builds User <builds@netflix.com>,38,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Brian Harrington <brharrington@gmail.com>,10,8,2.6,"['.travis.yml', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'gradle.properties']"
+brharrington <brharrington@gmail.com>,22,58,3.23,"['.travis.yml', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'gradle.properties']"
+Andrew Spyker <aspyker@netflix.com>,0,1,0.0,[]
+Rob Spieldenner <rob.spieldenner@gmail.com>,1,0,3.0,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Jon Schneider <jkschneider@gmail.com>,1,0,3.0,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Cameron Fieber <cameron@fieber.ca>,1,5,3.0,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Cameron Fieber <cfieber@netflix.com>,0,3,0.0,[]
+Chris Berry <chrisb@netflix.com>,0,1,0.0,[]
+Matthew Johnson <matthewj@netflix.com>,0,2,0.0,[]
+Adam Jordens <ajordens@netflix.com>,0,1,0.0,[]
+Adam Jordens <adam@jordens.org>,0,3,0.0,[]
+Matthew Johnson <mjjohnson33@gmail.com>,0,1,0.0,[]
+Vinay Chella <vinaykumarcse@gmail.com>,0,1,0.0,[]
+Mahmoud Ben Hassine <mahmoud.benhassine@icloud.com>,0,1,0.0,[]
+Rob Fletcher <robfletcher@users.noreply.github.com>,0,1,0.0,[]
+Emily Burns <emjeburns@gmail.com>,0,1,0.0,[]
+Emily Burns <emburns@netflix.com>,0,1,0.0,[]
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,6,3,4.67,"['.travis.yml', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'gradle.properties']"
+sullis <github@seansullivan.com>,0,1,0.0,[]
+allisaurus <34254888+allisaurus@users.noreply.github.com>,0,1,0.0,[]
+Piradeep Kandasamy <44981951+pkandasamy91@users.noreply.github.com>,0,1,0.0,[]
+Johannes Grumböck <johannes.grumboeck@redbull.com>,0,1,0.0,[]
+Prathibha Datta Kumar <kprathib@amazon.com>,0,1,0.0,[]
+David Byron <82477955+dbyron-sf@users.noreply.github.com>,0,3,0.0,[]
+Jonathan Schnéider <jkschneider@gmail.com>,0,1,0.0,[]
+Dylan Bijnagte <dylanbijnagte@gmail.com>,0,1,0.0,[]
+cs-simental <105667033+cs-simental@users.noreply.github.com>,0,1,0.0,[]
+OdysseusLives <achipman@netflix.com>,0,1,0.0,[]

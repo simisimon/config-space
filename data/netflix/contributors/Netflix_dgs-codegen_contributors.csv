@@ -1,0 +1,115 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Kavitha Srinivasan <ksrinivasan@netflix.com>,8,63,4.12,"['graphql-dgs-codegen-core/Dockerfile', '.github/workflows/ci.yml', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.netflix/rocket.yml']"
+srinivasankavitha <41588701+srinivasankavitha@users.noreply.github.com>,2,5,4.5,"['.github/workflows/ci.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/publish.yml']"
+Martin Chalupa <mchalupa@netflix.com>,2,1,8.0,"['.github/workflows/ci.yml', 'graphql-dgs-codegen-core/Dockerfile', '.github/workflows/nebula-publish.yml', '.github/dependabot.yml', '.github/workflows/releasedraft.yml', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/publish.yml', '.github/workflows/nebula-snapshot.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Paul Bakker <paul.bakker.nl@gmail.com>,9,18,6.0,"['.github/workflows/ci.yml', 'graphql-dgs-codegen-core/Dockerfile', '.github/workflows/nebula-publish.yml', '.github/dependabot.yml', '.github/workflows/releasedraft.yml', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/publish.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Patrick Strawderman <patrick@kilink.net>,6,13,5.33,"['.github/workflows/ci.yml', 'graphql-dgs-codegen-core/Dockerfile', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/publish.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Paul Bakker <pbakker@netflix.com>,7,60,8.29,"['.github/workflows/ci.yml', 'graphql-dgs-codegen-core/Dockerfile', '.github/workflows/nebula-publish.yml', '.github/dependabot.yml', '.github/workflows/releasedraft.yml', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/publish.yml', 'scripts/config.yml', '.github/workflows/nebula-snapshot.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Marcel Overdijk <marceloverdijk@gmail.com>,1,8,6.0,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Kavitha Srinivasan <41588701+srinivasankavitha@users.noreply.github.com>,4,111,11.0,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/nebula-snapshot.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Marcel Overdijk <marcel.overdijk.ext@eurocontrol.int>,0,24,0.0,[]
+Patrick Strawderman <pstrawderman@netflix.com>,25,43,10.56,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', 'graphql-dgs-codegen-core/Dockerfile', '.github/dependabot.yml', '.github/workflows/releasedraft.yml', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/publish.yml', '.github/workflows/nebula-snapshot.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Bjoern Hiller <bjoern.hiller@gmail.com>,0,3,0.0,[]
+zappolowski <zappolowski@users.noreply.github.com>,0,1,0.0,[]
+Bernardo Gomez Palacio <bernardog@netflix.com>,0,1,0.0,[]
+shunsuke-maeda <duck8823@gmail.com>,0,6,0.0,[]
+Bernardo Gomez Palacio <bernardo.gomezpalacio@gmail.com>,41,126,10.1,"['.github/release-drafter.yml', '.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', 'graphql-dgs-codegen-core/Dockerfile', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', 'graphql-dgs-codegen-gradle/src/main/resources/META-INF/gradle-plugins/com.netflix.dgs.codegen.properties', 'scripts/config.yml', '.github/workflows/ci-beta.yml', '.github/workflows/update-gradle-wrapper.yml']"
+gradle-update-robot <gradle-update-robot@regolo.cc>,14,0,10.36,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', 'graphql-dgs-codegen-core/Dockerfile', '.github/dependabot.yml', '.github/workflows/releasedraft.yml', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', 'scripts/config.yml', '.github/workflows/nebula-snapshot.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,2,2,11.0,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/nebula-snapshot.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Alexander Gee <bostwickenator@gmail.com>,0,1,0.0,[]
+Iuliia Sobolevska <sobolevska@indeed.com>,0,1,0.0,[]
+Lucas Torri <ltorri@wayfair.com>,0,8,0.0,[]
+Richard J Cresswell <richard.j.cresswell@systolic.com>,0,1,0.0,[]
+nick <nick@svdev.org>,0,3,0.0,[]
+Richard J Cresswell <richardcresswell@users.noreply.github.com>,0,1,0.0,[]
+Richie Cresswell <82471951+richardcresswell@users.noreply.github.com>,0,1,0.0,[]
+Andrew Greene <agreene@netflix.com>,0,1,0.0,[]
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,34,43,10.79,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', 'scripts/config.yml', '.github/workflows/nebula-snapshot.yml', '.github/release-drafter.yml', '.github/workflows/ci-beta.yml', '.github/workflows/update-gradle-wrapper.yml']"
+adones.cunha <adones.cunha@glassdoor.com>,0,3,0.0,[]
+Jens Schulze <jenschude@gmail.com>,0,1,0.0,[]
+Breland 🌈💃 Miley <bmiley@netflix.com>,0,1,0.0,[]
+Jonathan Lagneaux <lagneaux.j@gmail.com>,0,1,0.0,[]
+zanonena <82958429+zanonena@users.noreply.github.com>,0,1,0.0,[]
+ksrinivasan <ksrinivasan@netflix.com>,7,44,11.0,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/nebula-snapshot.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Nicolás Zanone <nzanone@wabidev.com>,0,2,0.0,[]
+Nick <nick@svdev.org>,0,1,0.0,[]
+Nick Papirniy <nikolaspapirniywork@gmail.com>,0,9,0.0,[]
+Oskar Kjellin <oskar.kjellin@gmail.com>,0,1,0.0,[]
+Lars Grefer <github@larsgrefer.de>,0,1,0.0,[]
+Matthew L Daniel <md@stoi.cc>,0,3,0.0,[]
+Will Emmanuel <wemmanuel@netflix.com>,0,2,0.0,[]
+sullis <github@seansullivan.com>,1,0,10.0,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Matt Bossenbroek <mbossenbroek@netflix.com>,1,26,11.0,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/nebula-snapshot.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+lakshmisunid <87725994+lakshmisunid@users.noreply.github.com>,2,5,10.5,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', 'scripts/config.yml', '.github/workflows/nebula-snapshot.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+kuanghc1 <kuanghc1@lenovo.com>,0,6,0.0,[]
+zhaotao1 <zhaotao1@lenovo.com>,0,4,0.0,[]
+Daniel Hoffmann <hoffmann.daniel.1993@gmail.com>,0,1,0.0,[]
+Danny Thomas <dannyt@netflix.com>,1,0,11.0,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/nebula-snapshot.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Yonatan Graber <yonatan.graber@gmail.com>,0,10,0.0,[]
+manymotes <motesmass@gmail.com>,0,13,0.0,[]
+Eduard Wagner <eduard.bissendorf@gmail.com>,0,1,0.0,[]
+Fredrik Tõnisson-Bystam <fredrik.bystam@hedvig.com>,0,2,0.0,[]
+Lakshmi Vijayachandran <lakshmi_vijayachandran@intuit.com>,1,10,11.0,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/nebula-snapshot.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Fredrik Tõnisson-Bystam <fredrik.bystam@gmail.com>,0,1,0.0,[]
+Anshul Sharma <anshulsharma1208@gmail.com>,0,3,0.0,[]
+shapandashore <shapan_dashore@intuit.com>,0,1,0.0,[]
+shapan dashore <shapandashore@gmail.com>,0,2,0.0,[]
+shapan dashore <shapan1@users.noreply.github.com>,0,3,0.0,[]
+James Baxley <james@carbonhealth.com>,0,3,0.0,[]
+Lillian <104868839+lillianlouie@users.noreply.github.com>,0,2,0.0,[]
+Irene Díaz Valenzuela <irene.diazvalenzuela@manomano.com>,0,3,0.0,[]
+Lillian <lillian_louie@outlook.com>,0,1,0.0,[]
+Andrew Kerr <andrew.kerr@eblock.ca>,0,1,0.0,[]
+Donnie McMahan <mcmahanjd@pella.com>,0,3,0.0,[]
+jdmcmahan <jmcmaha1@gmail.com>,0,1,0.0,[]
+Patrick Grosslicht <patrick@grosslicht.com>,0,1,0.0,[]
+Grace Ding <gding@Graces-MacBook-Pro.local>,0,4,0.0,[]
+Grace Ding <graceding9@gmail.com>,0,5,0.0,[]
+Carl-Philipp Harmant <cp.harmant@gmail.com>,0,1,0.0,[]
+Cole Turner <cole@netflix.com>,0,11,0.0,[]
+Cole Turner <turner.cole@gmail.com>,0,1,0.0,[]
+beep-boop-boop <ivanbar3330@gmail.com>,0,4,0.0,[]
+Ivan Barinskiy <ivan.barinskiy@genomicsplc.com>,0,3,0.0,[]
+Shalima Sidhik <shalima_sidhik@intuit.com>,0,1,0.0,[]
+lvijayachan <lakshmi_vijayachandran@intuit.com>,0,10,0.0,[]
+Clayton Walker <cwalker@sofi.org>,0,1,0.0,[]
+larsatzinger <latzinger@immomio.de>,0,1,0.0,[]
+Josef Cech <josef.cech@productboard.com>,0,2,0.0,[]
+Clayton Walker <clayton.m.walker@gmail.com>,0,1,0.0,[]
+Igor Domagała <259741@student.pwr.edu.pl>,0,1,0.0,[]
+spellew <spellew1298@gmail.com>,0,1,0.0,[]
+Alexander Hofmann <alexhofmann@gmail.com>,0,1,0.0,[]
+Eduard Wagner <eduard.wagner@senacor.com>,0,1,0.0,[]
+Alexander Hofmann <alexander.hofmann@zuehlke.com>,0,1,0.0,[]
+Alexander Münch <theHacker@users.noreply.github.com>,0,1,0.0,[]
+Fabian Fritzsche <salzian.dev@gmail.com>,0,1,0.0,[]
+Damian Wilkolek <dwilkolek@protonmail.com>,0,5,0.0,[]
+krutikavk <45143544+krutikavk@users.noreply.github.com>,0,1,0.0,[]
+Damian Wilkołek <dwilkolek@users.noreply.github.com>,0,2,0.0,[]
+Ricardo Veguilla <rveguilla@netflix.com>,1,5,11.0,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/nebula-snapshot.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Emily Dobervich <240689+Emily@users.noreply.github.com>,0,1,0.0,[]
+pbakker <pbakker@netflix.com>,0,9,0.0,[]
+Christopher Gustafson <christopher.k.gustafson@gmail.com>,0,1,0.0,[]
+Samuel Gagarin <66745577+Lavmee@users.noreply.github.com>,0,1,0.0,[]
+$(git --no-pager log --format=format:'%an' -n 1) <$(git --no-pager log --format=format:'%ae' -n 1)>,0,1,0.0,[]
+Iuliia Sobolevska <juliasobolevska@gmail.com>,18,37,11.0,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/nebula-snapshot.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Iuliia Sobolevska <isobolevska@netflix.com>,2,20,11.0,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/nebula-snapshot.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Kevin Wang <zwang@netflix.com>,0,2,0.0,[]
+Joshua Gleitze <joshua.gleitze@goto.com>,0,4,0.0,[]
+iparadiso <111398937+iparadiso@users.noreply.github.com>,0,2,0.0,[]
+Asi Bross <11426802+asibross@users.noreply.github.com>,0,3,0.0,[]
+Jessie Jacobs <jjaco@netflix.com>,0,4,0.0,[]
+jjacobs44 <89410776+jjacobs44@users.noreply.github.com>,0,4,0.0,[]
+Kevin Wang <2177991+kzwang@users.noreply.github.com>,0,1,0.0,[]
+Jens Künemund <jens.kuenemund@senacor.com>,0,2,0.0,[]
+Karthik Muthupalaniappan <karthik.swaminathan@gmail.com>,0,1,0.0,[]
+Aubrey Chipman <achipman@netflix.com>,0,1,0.0,[]
+OdysseusLives <achipman@netflix.com>,0,1,0.0,[]
+Steve Riesenberg <sriesenberg@netflix.com>,0,5,0.0,[]
+Steve Riesenberg <5248162+sjohnr@users.noreply.github.com>,0,5,0.0,[]
+Chase Naples <Cnaples79@gmail.com>,0,2,0.0,[]
+Jiho Lee <jiho.lee17@gmail.com>,0,14,0.0,[]
+Jiho Lee <52715532+jiholee17@users.noreply.github.com>,1,7,11.0,"['.github/workflows/ci.yml', '.github/workflows/nebula-publish.yml', '.github/workflows/releasedraft.yml', '.github/dependabot.yml', 'graphql-dgs-codegen-core/Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'graphql-dgs-codegen-core/.newt.yml', '.github/workflows/nebula-snapshot.yml', 'scripts/config.yml', '.github/release-drafter.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Sasha Joseph <sjoseph@netflix.com>,0,1,0.0,[]
+Vitalii Tiutiunnyk <vitaliy.tyutyunnik@gmail.com>,0,1,0.0,[]
+Rahul Somasunderam <rahul.som@gmail.com>,0,1,0.0,[]

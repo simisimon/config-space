@@ -1,0 +1,16 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Ian Haken <ihaken@netflix.com>,25,24,13.08,"['html/results/firefox_50_windows.json', 'html/bower.json', 'html/results/chrome_63_osx10.13.3.json', 'html/results/chromium_60_linux.json', 'html/results/lua_5.2_linux.json', 'html/results/curl_7.50.1_linux.json', 'html/results/python_3.5.2_linux.json', 'html/results/chromium_55_linux.json', 'html/results/chrome_61_osx10.json', 'html/results/go_1.10.3_linux.json', 'html/results/firefox_50_linux.json', 'html/results/safari_604_osx10.json', 'html/results/chrome_55_windows.json', 'nameconstraints/config.json', 'html/results/safari_602_osx10.json', 'html/results/node_6.9.4_linux.json', 'html/results/edge_14_windows.json', 'html/results/openssl_1.1.0f_linux.json', 'html/results/java_1.9.0_149_linux.json', 'html/config.json', 'html/results/safari_604_osx10.13.3.json', 'html/results/python_2.7.13_linux.json', 'html/results/chrome_55_osx10.json', 'html/results/python_3.5.3_linux.json', '.github/workflows/go.yml', 'html/manifest.json', 'html/results/firefox_50_osx10.json', 'config.json', 'html/results/java_1.8.0_111_linux.json', 'html/results/ruby_2.4.1_linux.json', 'html/results/node_4.4.4_linux.json', 'html/results/chrome_61_windows.json']"
+Adam Langley <agl@google.com>,0,1,0.0,[]
+Ian Haken <jackofmosttrades0@gmail.com>,0,3,0.0,[]
+Jay Satiro <raysatiro@yahoo.com>,0,1,0.0,[]
+daurnimator <quae@daurnimator.com>,0,1,0.0,[]
+Alex Cohn <alex@alexcohn.com>,0,1,0.0,[]
+babusri <babu@srinivasan.biz>,0,1,0.0,[]
+Amit Stein <amitstein@gmail.com>,0,1,0.0,[]
+Jeremy Rand <jeremyrand@danwin1210.de>,0,5,0.0,[]
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,0,8,0.0,[]
+Daniel McCarney <daniel@binaryparadox.net>,0,2,0.0,[]
+William Woodruff <william@trailofbits.com>,0,2,0.0,[]
+Jack Lloyd <jack@randombit.net>,0,1,0.0,[]
+Ilya Shatov <>,1,0,1.0,['.github/workflows/go.yml']
+İsmail Taşdelen <ismailtasdelen@protonmail.com>,1,0,1.0,['.github/workflows/go.yml']

@@ -1,0 +1,68 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Justin Ryan <jryan@netflix.com>,7,35,1.43,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Jordan Zimmerman <jordan@jordanzimmerman.com>,0,1,0.0,[]
+Justin Ryan <justin@halfempty.org>,0,1,0.0,[]
+allenxwang <awang@netflix.com>,11,74,2.55,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Allen Wang <awang@netflix.com>,47,323,2.57,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Sudhir Tonse <stonse@gmail.com>,0,4,0.0,[]
+Bob T Builder <builds@netflix.com>,55,0,2.45,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Greg Orzell <gorzell@sumologic.com>,1,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+jdamick <jeffreydamick@gmail.com>,0,1,0.0,[]
+adriancole <adrian.f.cole@gmail.com>,2,3,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Adrian Cole <adrian.f.cole@gmail.com>,1,3,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Christophe Furmaniak <christophe.furmaniak@gmail.com>,0,1,0.0,[]
+Jay Zarfoss <jzarfoss@netflix.com>,0,23,0.0,[]
+Brian Harrington <brharrington@gmail.com>,0,2,0.0,[]
+Tim McCormack <tmccormack@brightcove.com>,0,1,0.0,[]
+mikeycohen <mikeycohen@gmail.com>,0,1,0.0,[]
+Tomasz Bak <tbak@netflix.com>,9,41,3.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+tbak <tbak@netflix.com>,2,4,3.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+elandau <elandau@yahoo.com>,19,47,3.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+William Blackie <wblackie@grubhub.com>,0,1,0.0,[]
+aspyker <awspyker@gmail.com>,0,3,0.0,[]
+unknown <hawkenda@OKE-HAWKENDA-L7.vertafore.com>,0,1,0.0,[]
+Andreas Stührk <andy@hammerhartes.de>,0,1,0.0,[]
+Daniel Muino <dmuino@netflix.com>,0,1,0.0,[]
+capt-planet <capt-planet@users.noreply.github.com>,0,1,0.0,[]
+OpsEng Jenkins Builds User <builds@netflix.com>,3,0,3.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Mark Gaylard <mark.gaylard@majitek.com>,0,1,0.0,[]
+zain-qubit <zain@qubitdigital.com>,0,1,0.0,[]
+Diptanu Choudhury <diptanuc@gmail.com>,0,4,0.0,[]
+Andrew Spyker <awspyker@gmail.com>,0,1,0.0,[]
+Rob Spieldenner <rob.spieldenner@gmail.com>,4,1,3.25,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Leo Gomes <leonardo.f.gomes@gmail.com>,0,2,0.0,[]
+Cristian <me@cristian.io>,0,3,0.0,[]
+lasse.voss <lasse.voss@motor-talk-gmbh.de>,0,3,0.0,[]
+Matt Nelson <matt.a.nelson@gmail.com>,0,2,0.0,[]
+Andrew Spyker <aspyker@netflix.com>,0,1,0.0,[]
+Nikos Michalakis <nikos@netflix.com>,1,7,3.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Nikos Michalakis <drtechniko@users.noreply.github.com>,1,4,3.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Dmitry Cherkas <cherkas.da@gmail.com>,0,2,0.0,[]
+Andrew Brampton <bramp@google.com>,0,1,0.0,[]
+Susheel Aroskar <susheel.aroskar@gmail.com>,0,1,0.0,[]
+elandau <elandau@netflix.com>,6,53,4.0,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+David Liu <dliu@netflix.com>,5,17,3.4,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Taylor Wicksell <taylor.wicksell@gmail.com>,1,1,4.0,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Matt Nelson <matt.nelson@cerner.com>,0,4,0.0,[]
+Steve Hill <sghill.dev@gmail.com>,1,0,4.0,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Fabrizio Cucci <fabrizio.cucci@gmail.com>,0,1,0.0,[]
+Eran Landau <elandau@netflix.com>,0,6,0.0,[]
+lowzj <zj3142063@gmail.com>,0,2,0.0,[]
+yipk <yipk@fenqi.im>,0,2,0.0,[]
+Thomas A Cellucci <tcellucci@netflix.com>,0,2,0.0,[]
+Tom Cellucci <tcellucci@users.noreply.github.com>,0,1,0.0,[]
+Ryan Aviles <ryan.aviles@ticketmaster.com>,0,1,0.0,[]
+guoxu1231 <guoxu1231@gmail.com>,0,2,0.0,[]
+Vladimir Kotov <vladimir.kotov@citadele.lv>,0,1,0.0,[]
+Anastasiia Smirnova <asmirnova@playtika.com>,0,1,0.0,[]
+Mike Smith <michaels@netflix.com>,2,5,4.0,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+JP Leibundguth <jleibundguth@netflix.com>,1,0,4.0,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+J.P. Leibundguth <jleibund@gmail.com>,1,0,4.0,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Carl Mastrangelo <cmastrangelo@netflix.com>,0,1,0.0,[]
+Carl Mastrangelo <carl-mastrangelo@users.noreply.github.com>,1,1,5.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/gradle-wrapper-validation.yml', 'gradle.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Sean C. Sullivan <github@seansullivan.com>,1,1,5.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/gradle-wrapper-validation.yml', 'gradle.properties', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,12,2,6.17,"['.travis.yml', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/gradle-wrapper-validation.yml', '.github/workflows/nebula-snapshot.yml', 'gradle.properties', '.github/workflows/nebula-ci.yml', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Benjamin Fedorka <bfedorka@netflix.com>,0,1,0.0,[]
+sullis <github@seansullivan.com>,1,0,7.0,"['.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/gradle-wrapper-validation.yml', '.github/workflows/nebula-snapshot.yml', 'gradle.properties', '.github/workflows/nebula-ci.yml', 'ribbon-examples/src/main/resources/sample-client.properties']"
+Aubrey Chipman <achipman@netflix.com>,2,1,7.0,"['.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/gradle-wrapper-validation.yml', '.github/workflows/nebula-snapshot.yml', 'gradle.properties', '.github/workflows/nebula-ci.yml', 'ribbon-examples/src/main/resources/sample-client.properties']"
+OdysseusLives <achipman@netflix.com>,1,0,7.0,"['.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/gradle-wrapper-validation.yml', '.github/workflows/nebula-snapshot.yml', 'gradle.properties', '.github/workflows/nebula-ci.yml', 'ribbon-examples/src/main/resources/sample-client.properties']"

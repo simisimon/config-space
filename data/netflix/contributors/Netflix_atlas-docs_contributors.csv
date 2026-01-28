@@ -1,0 +1,23 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Brian Harrington <brharrington@gmail.com>,1,4,1.0,['project/build.properties']
+Matthew Johnson <matthewj@netflix.com>,1,39,3.0,"['.github/workflows/pr.yml', '.github/workflows/release.yml', 'mkdocs.yml']"
+brharrington <brharrington@gmail.com>,32,67,2.34,"['.travis.yml', 'mkdocs.yml', '.github/workflows/release.yml', 'project/build.properties', '.github/workflows/pr.yml']"
+Jimmy Casey <casey.jimmy@gmail.com>,0,1,0.0,[]
+Matthew Johnson <mjjohnson33@gmail.com>,36,39,2.89,"['.github/workflows/release.yaml', '.travis.yml', 'mkdocs.yml', '.github/workflows/release.yml', '.github/workflows/pr.yml', '.github/workflows/pr.yaml']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,1,29,3.0,"['.github/workflows/pr.yml', '.github/workflows/release.yml', 'mkdocs.yml']"
+Chris Larsen <clarsen@euphoriaaudio.com>,2,1,3.5,"['.github/workflows/release.yaml', '.travis.yml', 'mkdocs.yml', '.github/workflows/release.yml', '.github/workflows/pr.yml', '.github/workflows/pr.yaml']"
+Kostas Christidis <kostas@christidis.io>,0,1,0.0,[]
+Chris Larsen <clarsen@netflix.com>,2,7,3.0,"['.github/workflows/pr.yml', '.github/workflows/release.yml', 'mkdocs.yml']"
+Joey Harrington <dev@jharring.com>,0,1,0.0,[]
+Lorin Hochstein <lorinh@gmail.com>,0,1,0.0,[]
+Drew Stephens <drew@dinomite.net>,0,1,0.0,[]
+Mingliang Liu <liuml07@apache.org>,0,1,0.0,[]
+Trent Willis <trentmwillis@gmail.com>,0,1,0.0,[]
+Trent Willis <twillis@netflix.com>,1,1,3.0,"['.github/workflows/pr.yml', '.github/workflows/release.yml', 'mkdocs.yml']"
+Chris Beaudoin <109051003+cee8@users.noreply.github.com>,0,1,0.0,[]
+ayangster <annie.s.yang16@gmail.com>,0,1,0.0,[]
+Roman A <121314722+GameRoMan@users.noreply.github.com>,0,1,0.0,[]
+Everett Badeaux <everettc1810@gmail.com>,1,0,3.0,"['.github/workflows/pr.yml', '.github/workflows/release.yml', 'mkdocs.yml']"
+Peter Chng <pchng@users.noreply.github.com>,0,1,0.0,[]
+Shehab <127568346+dizzydroid@users.noreply.github.com>,0,1,0.0,[]
+Mason Albert <77916767+mason-albert@users.noreply.github.com>,0,1,0.0,[]

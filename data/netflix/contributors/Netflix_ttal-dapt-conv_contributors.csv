@@ -1,0 +1,2 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Florian Schleich <fschleich@netflix.com>,2,0,2.0,"['package.json', 'package-lock.json']"

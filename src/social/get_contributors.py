@@ -187,10 +187,15 @@ def merge_identities(df: pd.DataFrame, similarity_threshold: float = 0.80) -> pd
     df_merged = pd.DataFrame(merged_rows)
     return df_merged
 
-def get_project_file(project_dir: str):
-    """Load project JSON files from the specified directory."""
+def get_project_file(project_dir: str, base_data_dir: str):
+    """Load project JSON files from the specified directory.
+
+    Args:
+        project_dir: Name of the project subdirectory
+        base_data_dir: Base data directory (e.g., '../../data/mydir/projects')
+    """
     project_name = project_dir.split("/")[-1]
-    json_files = glob.glob(f"../data/projects/{project_dir}/*.json")
+    json_files = glob.glob(f"{base_data_dir}/{project_dir}/*.json")
 
     if any("batch" in f for f in json_files):
         json_files = [f for f in json_files if re.search(r"batch_\d+\.json$", f)]
@@ -198,8 +203,15 @@ def get_project_file(project_dir: str):
         json_files = sorted(json_files, key=lambda x: int(re.search(r"batch_(\d+)\.json$", x).group(1)))
         return json_files
 
-    if os.path.join(f"../data/projects/{project_dir}/{project_name}.json") in json_files:
-        return os.path.join(f"../data/projects/{project_dir}/{project_name}.json")
+    # Look for summary.json file
+    expected_file = os.path.join(f"{base_data_dir}/{project_dir}/{project_name}_summary.json")
+    if expected_file in json_files:
+        return expected_file
+
+    # Fallback: look for any *_summary.json file
+    summary_files = [f for f in json_files if f.endswith("_summary.json")]
+    if summary_files:
+        return summary_files[0]
 
     return None
 
@@ -261,16 +273,27 @@ def _get_contributors(project_file: str) -> pd.DataFrame:
         return df_contributors
 
 
-def get_contributors(project_dirs: List):
-    """Process project files to extract and aggregate contributor statistics."""
+def get_contributors(project_dirs: List, base_data_dir: str, output_dir: str):
+    """Process project files to extract and aggregate contributor statistics.
+
+    Args:
+        project_dirs: List of project directory names to process
+        base_data_dir: Base data directory containing projects (e.g., '../../data/mydir/projects')
+        output_dir: Output directory for contributor CSV files
+    """
     failed_projects = []
-    
+
+    # Ensure output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+
     for project_dir in project_dirs:
         try:
-            project_files = get_project_file(project_dir)
+            project_files = get_project_file(project_dir, base_data_dir)
 
             # Skip if contributors file already exists
-            if os.path.exists(f"../data/projects_contributors/{project_dir}_contributors.csv"):
+            output_file = os.path.join(output_dir, f"{project_dir}_contributors.csv")
+            if os.path.exists(output_file):
+                logger.info(f"Skipping {project_dir} - contributors file already exists")
                 continue
 
             logger.info(f"Processing project directory: {project_dir}")
@@ -279,10 +302,10 @@ def get_contributors(project_dirs: List):
             if isinstance(project_files, str):
                 project_file = project_files
                 df_contributors = _get_contributors(project_file)
-                df_contributors.to_csv(f"../data/projects_contributors/{project_dir}_contributors.csv", index=False)
+                df_contributors.to_csv(output_file, index=False)
 
             # Process batch of project files
-            if isinstance(project_files, list):
+            elif isinstance(project_files, list):
                 logger.info(f"Processing {len(project_files)} batch files for {project_dir}")
                 all_contributors = []
 
@@ -302,13 +325,18 @@ def get_contributors(project_dirs: List):
                     "Config Files": lambda x: list(set(sum(x.tolist(), [])))  # Flatten and deduplicate
                 }).reset_index()
 
-                df_aggregated.to_csv(f"../data/projects_contributors/{project_dir}_contributors.csv", index=False)
+                df_aggregated.to_csv(output_file, index=False)
+            else:
+                logger.warning(f"No project files found for {project_dir}")
         except Exception as e:
             logger.error(f"Failed to process project {project_dir}: {e}")
             failed_projects.append(project_dir)
 
+    if failed_projects:
+        logger.warning(f"Failed to process {len(failed_projects)} projects: {failed_projects}")
 
-def aggregate_contributors(contributors_dir: str = "../data/projects_contributors/"):
+
+def aggregate_contributors(contributors_dir: str, output_dir: str):
     """
     Aggregate contributor identities across all contributor CSV files.
 
@@ -320,11 +348,15 @@ def aggregate_contributors(contributors_dir: str = "../data/projects_contributor
 
     Args:
         contributors_dir: Directory containing contributor CSV files
+        output_dir: Output directory for aggregated CSV files
     """
     logger.info(f"Starting contributor aggregation in {contributors_dir}")
 
+    # Ensure output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+
     # Find all contributor CSV files (excluding already aggregated ones)
-    csv_files = [f for f in os.listdir(contributors_dir)]
+    csv_files = [f for f in os.listdir(contributors_dir) if f.endswith('.csv')]
 
     logger.info(f"Found {len(csv_files)} contributor files to process")
 
@@ -343,7 +375,7 @@ def aggregate_contributors(contributors_dir: str = "../data/projects_contributor
             df_aggregated = merge_identities(df)
 
             # Save aggregated results
-            output_file = f"../data/projects_contributors_aggregated/aggregated_{csv_file}"
+            output_file = os.path.join(output_dir, f"aggregated_{csv_file}")
             df_aggregated.to_csv(output_file, index=False)
             logger.info(f"Saved aggregated results to {output_file}")
 
@@ -355,16 +387,30 @@ def aggregate_contributors(contributors_dir: str = "../data/projects_contributor
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        description="Extract and aggregate contributor statistics from project data"
+    )
+    parser.add_argument("--dir", type=str, required=True,
+                       help="Directory name to process (looks for data in ../../data/{dir}/projects)")
     parser.add_argument("--aggregate", action="store_true",
                        help="Aggregate existing contributor files to merge identities and filter bots")
     args = parser.parse_args()
 
+    # Set up paths based on input directory
+    base_data_dir = f"../../data/{args.dir}/projects"
+    contributors_output_dir = f"../../data/{args.dir}/contributors"
+    aggregated_output_dir = f"../../data/{args.dir}/contributors_aggregated"
+
     if args.aggregate:
         # Run identity aggregation on existing contributor files
-        aggregate_contributors()
+        aggregate_contributors(contributors_output_dir, aggregated_output_dir)
     else:
         # Extract contributors from project files
-        project_dirs = os.listdir("../../data/projects/")
-        get_contributors(project_dirs)
+        if not os.path.exists(base_data_dir):
+            logger.error(f"Data directory not found: {base_data_dir}")
+            exit(1)
+
+        project_dirs = os.listdir(base_data_dir)
+        logger.info(f"Found {len(project_dirs)} projects in {base_data_dir}")
+        get_contributors(project_dirs, base_data_dir, contributors_output_dir)
 

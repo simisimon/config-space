@@ -1,0 +1,135 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+savin <savin@netflix.com>,1,11,2.0,"['.github/workflows/publish.yml', 'tox.ini']"
+Michael <michael.kocher@me.com>,0,2,0.0,[]
+Uwe L. Korn <uwe.korn@quantco.com>,1,0,2.0,"['.github/workflows/publish.yml', 'tox.ini']"
+Savin <savingoyal@gmail.com>,30,316,6.6,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/cypress.json', 'metaflow/plugins/cards/ui/public/card-example.json']"
+Lawrence Wu <lawwu@users.noreply.github.com>,0,1,0.0,[]
+Ville Laitila <ville.laitila@softagram.com>,0,2,0.0,[]
+Ricky Shelton <Ricky.Shelton@dyson.com>,0,1,0.0,[]
+seeravikiran <42477611+seeravikiran@users.noreply.github.com>,0,6,0.0,[]
+Romain <romain-intel@users.noreply.github.com>,11,214,9.73,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/cypress.json', 'metaflow/plugins/cards/ui/public/card-example.json']"
+Khairul <kyu.helf@gmail.com>,0,1,0.0,[]
+Chris Addy <chris.william.addy@gmail.com>,0,1,0.0,[]
+Christian Clauss <cclauss@me.com>,2,7,6.5,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/cypress.json']"
+Bryan <kenshin2004528@gmail.com>,0,1,0.0,[]
+Matt Land <matt-land@users.noreply.github.com>,0,1,0.0,[]
+Karthikeyan Singaravelan <tir.karthi@gmail.com>,0,1,0.0,[]
+Romain Cledat <rcledat@netflix.com>,4,62,6.5,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/cypress.json']"
+Ivan Fokeev <ifokeev@users.noreply.github.com>,0,1,0.0,[]
+Oliver Holworthy <oliver@holworthy.com>,0,1,0.0,[]
+Jason Ge <jiange@alumni.princeton.edu>,0,1,0.0,[]
+Jason Ge <jge@netflix.com>,5,16,2.0,"['.github/workflows/publish.yml', 'tox.ini']"
+Philippe Ombredanne <pombredanne@gmail.com>,0,1,0.0,[]
+Virgile Landeiro <vlandeiro@users.noreply.github.com>,0,1,0.0,[]
+Murray David Neuzerling <murray@neuzerling.com>,0,5,0.0,[]
+Patrick Sodré <psodre@gmail.com>,0,1,0.0,[]
+nspies-celsiustx <50211122+nspies-celsiustx@users.noreply.github.com>,0,1,0.0,[]
+David Neuzerling <mdneuzerling@users.noreply.github.com>,0,5,0.0,[]
+Ville Tuulos <tuulos@gmail.com>,2,10,3.0,"['.github/workflows/publish.yml', '.pre-commit-config.yaml', 'tox.ini']"
+Jorge Vallecillo <jorgevallecilloc@gmail.com>,0,1,0.0,[]
+Bryan Galvin <bcgalvin@gmail.com>,1,0,2.0,"['.github/workflows/publish.yml', 'tox.ini']"
+David Poznik <dpoznik@users.noreply.github.com>,0,5,0.0,[]
+Ryan Chui <ryan.w.chui@gmail.com>,0,1,0.0,[]
+ferras <ferras37@gmail.com>,0,3,0.0,[]
+Adam Wentz <adam@adamwentz.com>,0,1,0.0,[]
+Ryan Chui <ryanc@23andme.com>,0,1,0.0,[]
+Ryan Williams <nobigdealstyle@gmail.com>,0,1,0.0,[]
+Oleg Avdeev <oleg.v.avdeev@gmail.com>,5,60,4.2,"['tox.ini', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/cypress.json', 'metaflow/plugins/cards/ui/public/card-example.json']"
+Preetam Joshi <preetamjoshi93@gmail.com>,0,6,0.0,[]
+Balagopal Kanattil <8623654+kanatti@users.noreply.github.com>,0,1,0.0,[]
+David Poznik <dpoznik@23andme.com>,0,2,0.0,[]
+Peter Wilton <72413339+peterwilton-ttam@users.noreply.github.com>,0,1,0.0,[]
+Kyle Smith <smith.kyle.r93@gmail.com>,0,1,0.0,[]
+Jeff Raubitschek <jeff@wandb.com>,0,1,0.0,[]
+bishax <alex.bishop@nesta.org.uk>,0,3,0.0,[]
+Valay Dave <valaygaurang@gmail.com>,5,81,8.4,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/cypress.json', 'metaflow/plugins/cards/ui/public/card-example.json']"
+Aapo Kyrola <akyrola@cs.cmu.edu>,5,28,3.0,"['.github/workflows/publish.yml', '.pre-commit-config.yaml', 'tox.ini']"
+Sakari Ikonen <64256562+saikonen@users.noreply.github.com>,10,247,10.6,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', 'metaflow/plugins/cards/ui/cypress.json', 'metaflow/plugins/cards/ui/public/card-example.json']"
+Matias Savela <matias.savela@codemate.com>,0,1,0.0,[]
+Alaa Ben Fatma <9027148+alaabenfatma@users.noreply.github.com>,0,2,0.0,[]
+Rushi Chaudhari <rushic24@gmail.com>,0,1,0.0,[]
+Brendan Gibson <93726128+obgibson@users.noreply.github.com>,0,4,0.0,[]
+Ryan Williams <ryan@runsascoded.com>,0,1,0.0,[]
+Nathan Tsai <natesigh@gmail.com>,0,1,0.0,[]
+Gejun Zhu <gejun.anderson@gmail.com>,0,1,0.0,[]
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,18,10,10.72,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/cypress.json', 'metaflow/plugins/cards/ui/public/card-example.json']"
+Kevin Gullikson <kgullikson88@users.noreply.github.com>,0,1,0.0,[]
+Yun Wu <wuyun1618@gmail.com>,1,0,8.0,"['tox.ini', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/cypress.json', 'metaflow/plugins/cards/ui/public/card-example.json']"
+sam-watts <35522542+sam-watts@users.noreply.github.com>,0,2,0.0,[]
+Kevin Smith <kevsmith@users.noreply.github.com>,0,1,0.0,[]
+jackie-ob <104396218+jackie-ob@users.noreply.github.com>,2,13,8.0,"['tox.ini', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/cypress.json', 'metaflow/plugins/cards/ui/public/card-example.json']"
+mrfalconer <thebricoleursmontage@gmail.com>,0,1,0.0,[]
+Shashank Srikanth <108034001+hunsdiecker@users.noreply.github.com>,0,1,0.0,[]
+Tommy Brecher <Tommy.Brecher@vonage.com>,0,1,0.0,[]
+Maciej (Mike) Balajewicz <102193656+mbalajew@users.noreply.github.com>,0,1,0.0,[]
+John Parker <japarker@uchicago.edu>,0,1,0.0,[]
+Shri Javadekar <shrinandj@users.noreply.github.com>,1,6,11.0,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', 'metaflow/plugins/cards/ui/cypress.json']"
+Adam Merberg <amerberg@gmail.com>,0,7,0.0,[]
+James Budarz <me@jamesbudarz.com>,1,0,8.0,"['tox.ini', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/cypress.json', 'metaflow/plugins/cards/ui/public/card-example.json']"
+ashrielbrian <ashrielbrian@users.noreply.github.com>,0,1,0.0,[]
+Riccardo Bini <odracci@gmail.com>,0,1,0.0,[]
+Daniel Corvesor <dancorvesor@gmail.com>,0,1,0.0,[]
+Tyler <49161327+tylerpotts@users.noreply.github.com>,0,3,0.0,[]
+emattia <40632488+emattia@users.noreply.github.com>,0,1,0.0,[]
+James Budarz <james.budarz@tala.co>,0,1,0.0,[]
+Tom Furmston <tfurmston@googlemail.com>,0,6,0.0,[]
+Chaoying Wang <chaoyinw@andrew.cmu.edu>,0,2,0.0,[]
+Sri Datta Budaraju <b.sridatta@gmail.com>,0,3,0.0,[]
+David Pollack <david@sologourmand.com>,0,1,0.0,[]
+Felipe Garcia Diaz <41710468+felipeGarciaDiaz@users.noreply.github.com>,0,1,0.0,[]
+Eddie Mattia <40632488+emattia@users.noreply.github.com>,0,3,0.0,[]
+David Pollack <david.pollack@deliveryhero.com>,0,2,0.0,[]
+zendesk-klross <110521227+zendesk-klross@users.noreply.github.com>,0,1,0.0,[]
+Max Zheng <maxzheng.os@gmail.com>,0,1,0.0,[]
+rohanrebello <1291433+rohanrebello@users.noreply.github.com>,0,2,0.0,[]
+Jason Matthew Garcia <41328847+jaypond@users.noreply.github.com>,0,1,0.0,[]
+Russell Brooks <russellbrooks867@gmail.com>,0,2,0.0,[]
+madhur-ob <155637867+madhur-ob@users.noreply.github.com>,10,58,11.0,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', 'metaflow/plugins/cards/ui/cypress.json']"
+Enrico Marchesin <enricomarchesin@users.noreply.github.com>,0,1,0.0,[]
+Darin <darinyu27@gmail.com>,1,13,11.0,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', 'metaflow/plugins/cards/ui/cypress.json']"
+leogargu <6627684+leogargu@users.noreply.github.com>,0,1,0.0,[]
+Ray Bell <rayjohnbell0@gmail.com>,0,1,0.0,[]
+Stephen Knox <stephenknox73@gmail.com>,0,1,0.0,[]
+Chaoying Wang <chaoyingw@netflix.com>,2,7,11.0,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', 'metaflow/plugins/cards/ui/cypress.json']"
+Tyler Rhodes <767526+trhodeos@users.noreply.github.com>,0,2,0.0,[]
+Nidhin Nair R U <39849454+nidhinnru@users.noreply.github.com>,0,1,0.0,[]
+Martin Delisle <146012583+martinhausio@users.noreply.github.com>,0,1,0.0,[]
+Narayan Acharya <narayan.acharya6@gmail.com>,0,1,0.0,[]
+Madison Ebersole <madison.a.ebersole@gmail.com>,0,1,0.0,[]
+Saurabh Garg <144727284+iamsgarg-ob@users.noreply.github.com>,0,13,0.0,[]
+Gabriel Richard Pereira <71646976+gabriel-rp@users.noreply.github.com>,0,1,0.0,[]
+Shashank Srikanth <s.shashank2401@gmail.com>,1,15,11.0,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', 'metaflow/plugins/cards/ui/cypress.json']"
+Mut Ze <mutongsoft@gmail.com>,0,1,0.0,[]
+Utkarsh Kashyap <107147005+ob-uk@users.noreply.github.com>,0,1,0.0,[]
+Shashank Srikanth <ssrikanth@netflix.com>,0,8,0.0,[]
+nathan9sanders <33492980+nathan9sanders@users.noreply.github.com>,0,1,0.0,[]
+Kyle Oraa <kyleoraa@gmail.com>,0,1,0.0,[]
+Tyler Houssian <tylerhoussian@gmail.com>,0,1,0.0,[]
+KaylaSeeley <42901681+KaylaSeeley@users.noreply.github.com>,0,1,0.0,[]
+Filip Čacký <cacky.filip@gmail.com>,0,1,0.0,[]
+Santiago Castro <santiagoc@netflix.com>,0,1,0.0,[]
+Satyam Kumar <isatyamks@gmail.com>,0,1,0.0,[]
+Ji Xu <xujiboy@gmail.com>,0,1,0.0,[]
+Felippe da Motta Raposo <raposo.felippe@gmail.com>,0,1,0.0,[]
+Nissan Pow <npow@users.noreply.github.com>,2,13,11.0,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', 'metaflow/plugins/cards/ui/cypress.json']"
+Yoni Rabinovitch <yonirab@users.noreply.github.com>,0,1,0.0,[]
+Gergely Daróczi <daroczig@rapporter.net>,0,1,0.0,[]
+Emmanuel Ferdman <emmanuelferdman@gmail.com>,0,1,0.0,[]
+Roman A <121314722+GameRoMan@users.noreply.github.com>,1,0,11.0,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', 'metaflow/plugins/cards/ui/cypress.json']"
+Alex Ge <122325158+yg7445@users.noreply.github.com>,0,1,0.0,[]
+tlee14-upstart <89800926+tlee14-upstart@users.noreply.github.com>,0,2,0.0,[]
+Qian Huang <35581089+Qianh1225@users.noreply.github.com>,0,1,0.0,[]
+Nick Schmeller <nicholasschmeller@gmail.com>,0,1,0.0,[]
+Camilla Montonen <camillamon@gmail.com>,0,1,0.0,[]
+mt-ob <155637867+mt-ob@users.noreply.github.com>,2,12,11.0,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', 'metaflow/plugins/cards/ui/cypress.json']"
+Santeri Rönkkö <11741291+rsanteri@users.noreply.github.com>,0,2,0.0,[]
+Nick Stein <nicholaslwstein@gmail.com>,0,1,0.0,[]
+Adam Myatt <adammyatt@hotmail.com>,0,1,0.0,[]
+Shreehari <shreehari9481@gmail.com>,0,3,0.0,[]
+Maria Alder <39073505+malder08@users.noreply.github.com>,0,2,0.0,[]
+lpoug <98750391+lpoug@users.noreply.github.com>,0,1,0.0,[]
+Dhanush <131784418+Dhanush010@users.noreply.github.com>,0,1,0.0,[]
+aquarin <aquarin@users.noreply.github.com>,0,1,0.0,[]
+Nick Stein <nstein1@carisls.com>,0,1,0.0,[]
+Vivek Khimani <vivek@semgrep.com>,0,1,0.0,[]
+Salman Chishti <salmanmkc@GitHub.com>,1,0,11.0,"['tox.ini', 'metaflow/plugins/cards/ui/tsconfig.node.json', '.pre-commit-config.yaml', 'metaflow/plugins/cards/ui/demo/card-example.json', 'metaflow/plugins/cards/ui/package.json', 'metaflow/plugins/cards/ui/cypress/fixtures/example.json', 'metaflow/plugins/cards/ui/tsconfig.json', '.github/workflows/publish.yml', 'metaflow/plugins/cards/ui/package-lock.json', '.github/workflows/codeql.yml', 'metaflow/plugins/cards/ui/cypress.json']"

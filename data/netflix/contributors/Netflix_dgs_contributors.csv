@@ -1,0 +1,81 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Paul Bakker <pbakker@netflix.com>,23,62,1.96,"['.github/workflows/publish.yml', '.mkdocs.yml', 'mkdocs.yml', '.github/publish.yml']"
+Kavitha Srinivasan <ksrinivasan@netflix.com>,8,18,2.12,"['.github/workflows/publish.yml', 'mkdocs.yml', 'site/search/search_index.json']"
+srinivasankavitha <41588701+srinivasankavitha@users.noreply.github.com>,2,0,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Paul Bakker <paul.bakker.nl@gmail.com>,1,25,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+0xflotus <0xflotus@gmail.com>,0,4,0.0,[]
+David Simmer <dsimmer@netflix.com>,25,92,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+David Simmer <david@simmer.ooo>,1,0,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Bernardo Gomez Palacio <bernardog@netflix.com>,1,3,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Martin Bonnin <martin@mbonnin.net>,0,2,0.0,[]
+Marcel Overdijk <marceloverdijk@gmail.com>,0,1,0.0,[]
+Kavitha Srinivasan <41588701+srinivasankavitha@users.noreply.github.com>,12,56,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+rmcteggart-r7 <rmcteggart@rapid7.com>,0,2,0.0,[]
+Bernardo Gomez Palacio <bernardo.gomezpalacio@gmail.com>,11,51,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Patrick Strawderman <patrick@kilink.net>,0,1,0.0,[]
+Johan ROUVE <johan.rouve@happn.fr>,0,1,0.0,[]
+timpamungkas <timotius.pamungkas@tokopedia.com>,0,1,0.0,[]
+Mark <mjfaga@users.noreply.github.com>,0,1,0.0,[]
+Argana Phangquestian <arganaphangquestian@gmail.com>,0,1,0.0,[]
+WonChul Heo <heowc1992@gmail.com>,0,1,0.0,[]
+Luke Thomas <luk3thomas@gmail.com>,0,1,0.0,[]
+Muhammad Musa <47291629+MoosaSaadat@users.noreply.github.com>,0,9,0.0,[]
+Stanislav Deviatykh <stanislav@qminderapp.com>,0,1,0.0,[]
+Jinhyeok Park <jinhyeok.park@sleek.kr>,0,1,0.0,[]
+Adam Setch <adam.setch@outlook.com>,0,8,0.0,[]
+ksrinivasan <ksrinivasan@netflix.com>,12,39,2.08,"['.github/workflows/publish.yml', 'mkdocs.yml', 'site/search/search_index.json']"
+josh rotenberg <joshrotenberg@users.noreply.github.com>,0,1,0.0,[]
+Jordie <xd@jrdie.nl>,2,4,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Fabian Kahlert <30560211+kahlertf@users.noreply.github.com>,0,1,0.0,[]
+Kevin Duong <kevin@kevinduong.net>,0,1,0.0,[]
+aisensiy <aisensiy@163.com>,0,1,0.0,[]
+Aaron Paterson <apaterson@protonmail.com>,0,3,0.0,[]
+kuanghc1 <kuanghc1@lenovo.com>,0,5,0.0,[]
+Andrei Ivantsov <aivantsov@outlook.com>,0,1,0.0,[]
+티맵모빌리티 부문식 <munsik.bu@sk.com>,0,1,0.0,[]
+Claudenir Freitas <cfreitas@poppulo.com>,0,1,0.0,[]
+Takayuki Matsubara <takayuki.1229@gmail.com>,0,1,0.0,[]
+Jon Christiansen <467023+theJC@users.noreply.github.com>,1,0,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Lakshmi Vijayachandran <lakshmi_vijayachandran@intuit.com>,0,8,0.0,[]
+Claudenir Freitas <claudenir.machado@sensedia.com>,0,1,0.0,[]
+Steven Ireland <steven.ireland@protonmail.com>,0,8,0.0,[]
+lakshmisunid <87725994+lakshmisunid@users.noreply.github.com>,1,1,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Lillian <104868839+lillianlouie@users.noreply.github.com>,0,1,0.0,[]
+Anthony Oleinik <48811365+antholeole@users.noreply.github.com>,0,2,0.0,[]
+jerry.hj <jerry.hj@kakaostyle.com>,0,1,0.0,[]
+James Hau <james.hau@volvocars.com>,0,1,0.0,[]
+Grace <gding@netflix.com>,2,11,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Cole Turner <turner.cole@gmail.com>,0,3,0.0,[]
+Cole Turner <cole@netflix.com>,0,1,0.0,[]
+Grace Ding <graceding9@gmail.com>,3,7,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Juliana Congote <jcongote@netflix.com>,0,2,0.0,[]
+ArvindEnvoy <arvind@envoy.com>,0,1,0.0,[]
+Juliana Congote <42778259+congotej@users.noreply.github.com>,0,1,0.0,[]
+Matt Bossenbroek <mbossenbroek@netflix.com>,2,1,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Will Baldoumas <william.baldoumas@gmail.com>,1,0,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+mendezm <mariselam@netflix.com>,0,1,0.0,[]
+kailyak <141789731+kailyak@users.noreply.github.com>,0,2,0.0,[]
+Dean Soc <81260153+SocDean@users.noreply.github.com>,0,1,0.0,[]
+jelly.haribo <jelly.haribo@kakaostyle.com>,0,1,0.0,[]
+Emily Dobervich <emilydobervich@netflix.com>,1,1,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Emily Dobervich <240689+Emily@users.noreply.github.com>,1,2,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Kota Esaki <kota.esaki@dr-ubie.com>,0,1,0.0,[]
+Patrick Strawderman <pstrawderman@netflix.com>,0,2,0.0,[]
+pbakker <pbakker@netflix.com>,5,23,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"
+Etienne Hardy <etienne.hardy@appdirect.com>,0,1,0.0,[]
+Christopher Beaudoin <chris@Christophers-MacBook-Pro.local>,0,2,0.0,[]
+Thomas Zub <thomas.zub@outlook.de>,0,1,0.0,[]
+David A. Ventimiglia <davidaventimiglia@hasura.io>,0,4,0.0,[]
+Loren 🤓 <lorensr@gmail.com>,0,1,0.0,[]
+Chris Thomson <cthomson@wealthsimple.com>,0,1,0.0,[]
+Adam Hunter <adamhunter@me.com>,0,1,0.0,[]
+iparadiso <111398937+iparadiso@users.noreply.github.com>,0,4,0.0,[]
+Iuliia Sobolevska <isobolevska@netflix.com>,0,1,0.0,[]
+Iuliia Sobolevska <juliasobolevska@gmail.com>,0,1,0.0,[]
+Tejas Bal <tejas.allhad.bal@gmail.com>,0,4,0.0,[]
+Jiho Lee <jiho.lee17@gmail.com>,0,4,0.0,[]
+Steve Riesenberg <sriesenberg@netflix.com>,0,1,0.0,[]
+Steve Riesenberg <5248162+sjohnr@users.noreply.github.com>,0,1,0.0,[]
+Jiho Lee <52715532+jiholee17@users.noreply.github.com>,0,3,0.0,[]
+Jessie Jacobs <jjaco@netflix.com>,0,2,0.0,[]
+jjacobs44 <89410776+jjacobs44@users.noreply.github.com>,1,0,2.0,"['.github/workflows/publish.yml', 'mkdocs.yml']"

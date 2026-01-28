@@ -1,0 +1,14 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Zhi Li <zli@netflix.com>,5,226,2.4,"['tox.ini', '.travis.yml', 'resource/dataset/VQEGHD3_dataset_raw.json', 'resource/dataset/NFLX_dataset_public_raw.json', 'resource/dataset/NFLX_dataset_public_raw_last4outliers.json', 'resource/dataset/lukas_pc_dataset.json']"
+Andrew Spyker <awspyker@gmail.com>,0,1,0.0,[]
+Werner Robitza <werner.robitza@gmail.com>,1,11,6.0,"['tox.ini', '.travis.yml', 'resource/dataset/VQEGHD3_dataset_raw.json', 'resource/dataset/NFLX_dataset_public_raw.json', 'resource/dataset/NFLX_dataset_public_raw_last4outliers.json', 'resource/dataset/lukas_pc_dataset.json']"
+Christos Bampis <christosb@netflix.com>,0,4,0.0,[]
+Christos Bampis <cbampis@gmail.com>,0,2,0.0,[]
+Silvio Borer <silvio.borer@rohde-schwarz.com>,0,5,0.0,[]
+Zoran Simic <zsimic@netflix.com>,7,3,2.0,"['.travis.yml', 'tox.ini']"
+krasuluk <48132096+krasuluk@users.noreply.github.com>,0,6,0.0,[]
+Steve Hill <sghill.dev@gmail.com>,0,2,0.0,[]
+Lukas Krasula <lkrasula@netflix.com>,0,18,0.0,[]
+perrin-af <67781621+perrin-af@users.noreply.github.com>,0,1,0.0,[]
+Apoorva Srivastava <55649629+pi-rate14@users.noreply.github.com>,0,1,0.0,[]
+Jakub Nawała <jakub.tadeusz.nawala@gmail.com>,0,1,0.0,[]

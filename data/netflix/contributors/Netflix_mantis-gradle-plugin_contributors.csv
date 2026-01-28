@@ -1,0 +1,10 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Nick Mahilani <nmahilani@netflix.com>,1,0,3.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/META-INF/gradle-plugins/mantis.properties']"
+Rob Spieldenner <rob.spieldenner@gmail.com>,1,0,3.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/META-INF/gradle-plugins/mantis.properties']"
+Jeff Chao <jchao@netflix.com>,3,5,4.33,"['.travis.yml', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', 'src/main/resources/META-INF/gradle-plugins/mantis.properties']"
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,4,1,5.0,"['.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', 'src/main/resources/META-INF/gradle-plugins/mantis.properties']"
+Sundaram Ananthanarayanan <sananthanarayanan@netflix.com>,1,7,5.0,"['.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', 'src/main/resources/META-INF/gradle-plugins/mantis.properties']"
+sundargates <me@sundaram.io>,1,2,5.0,"['.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', 'src/main/resources/META-INF/gradle-plugins/mantis.properties']"
+Andy Zhang <87735571+Andyz26@users.noreply.github.com>,0,11,0.0,[]
+Aubrey Chipman <achipman@netflix.com>,5,1,5.0,"['.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', 'src/main/resources/META-INF/gradle-plugins/mantis.properties']"
+OdysseusLives <achipman@netflix.com>,1,0,5.0,"['.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', 'src/main/resources/META-INF/gradle-plugins/mantis.properties']"

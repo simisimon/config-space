@@ -1,0 +1,19 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Jose Fernandez <josef@netflix.com>,67,74,6.0,"['.devcontainer/Dockerfile', '.github/workflows/rust.yml', '.github/dependabot.yml', 'Cargo.toml', '.devcontainer/devcontainer.json', 'Cross.toml']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,70,1,5.91,"['.devcontainer/Dockerfile', '.github/workflows/rust.yml', '.github/dependabot.yml', 'Cargo.toml', '.devcontainer/devcontainer.json', 'Cross.toml']"
+Arnar <arnarp.arnarsson@upwind.io>,0,1,0.0,[]
+mtb0x1 <39337159+mtb0x1@users.noreply.github.com>,0,1,0.0,[]
+Patrick McGleenon <pmcgleenon@users.noreply.github.com>,1,1,6.0,"['.devcontainer/Dockerfile', '.github/workflows/rust.yml', '.github/dependabot.yml', 'Cargo.toml', '.devcontainer/devcontainer.json', 'Cross.toml']"
+Feng Zhou <zhoufeng.zf@bytedance.com>,1,0,6.0,"['.devcontainer/Dockerfile', '.github/workflows/rust.yml', '.github/dependabot.yml', 'Cargo.toml', '.devcontainer/devcontainer.json', 'Cross.toml']"
+tyrone-wu <wudevelops@gmail.com>,1,1,6.0,"['.devcontainer/Dockerfile', '.github/workflows/rust.yml', '.github/dependabot.yml', 'Cargo.toml', '.devcontainer/devcontainer.json', 'Cross.toml']"
+Orhun Parmaksız <orhunparmaksiz@gmail.com>,0,1,0.0,[]
+Dan Bond <danbond@protonmail.com>,0,1,0.0,[]
+Dominic Evans <dominic.evans@uk.ibm.com>,1,0,6.0,"['.devcontainer/Dockerfile', '.github/workflows/rust.yml', '.github/dependabot.yml', 'Cargo.toml', '.devcontainer/devcontainer.json', 'Cross.toml']"
+lewis <lu5a@proton.me>,0,1,0.0,[]
+Benjamin A. Beasley <code@musicinmybrain.net>,2,0,5.0,"['.devcontainer/Dockerfile', '.github/workflows/rust.yml', '.github/dependabot.yml', 'Cargo.toml', '.devcontainer/devcontainer.json', 'Cross.toml']"
+Michael Willett <51060085+m12t@users.noreply.github.com>,0,1,0.0,[]
+Tanel Poder <tanel@tanelpoder.com>,0,1,0.0,[]
+Jose Fernandez <me@jrfernandez.com>,2,0,5.0,"['.devcontainer/Dockerfile', '.github/workflows/rust.yml', '.github/dependabot.yml', 'Cargo.toml', '.devcontainer/devcontainer.json', 'Cross.toml']"
+Copilot <198982749+Copilot@users.noreply.github.com>,0,2,0.0,[]
+josef@netflix.com <josef@netflix.com>,1,0,6.0,"['.devcontainer/Dockerfile', '.github/workflows/rust.yml', '.github/dependabot.yml', 'Cargo.toml', '.devcontainer/devcontainer.json', 'Cross.toml']"
+Artem Tkachuk <artemtkachuk@yahoo.com>,0,3,0.0,[]

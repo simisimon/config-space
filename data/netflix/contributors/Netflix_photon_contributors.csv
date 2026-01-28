@@ -1,0 +1,41 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Sreeram Chakrovorthy <schakrovorthy@netflix.com>,18,243,2.83,"['.travis.yml', 'src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+schakrovorthy <schakrovorthy@users.noreply.github.com>,10,51,2.9,"['.travis.yml', 'src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+rpuri-netflix <rpuri@netflix.com>,8,58,2.88,"['.travis.yml', 'src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Andrew Spyker <aspyker@netflix.com>,0,2,0.0,[]
+Rob Spieldenner <rspieldenner@netflix.com>,1,1,2.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties']"
+Rob Spieldenner <rob.spieldenner@gmail.com>,3,3,2.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties']"
+Rohit Puri <rpuri@netflix.com>,2,20,3.0,"['.travis.yml', 'src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Brendan Kirby <bjk7706@rit.edu>,0,1,0.0,[]
+Marc-Antoine Arnaud <arnaud@ebu.ch>,1,3,4.0,"['.travis.yml', 'Dockerfile', 'src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Marc-Antoine Arnaud <arnaud.marcantoine@gmail.com>,1,2,4.0,"['.travis.yml', 'Dockerfile', 'src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Jon Schneider <jkschneider@gmail.com>,1,0,3.0,"['.travis.yml', 'src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Charles Zhao <chunyun.zhao@gmail.com>,0,1,0.0,[]
+Subbu Venkatrav <svenkatrav@netflix.com>,14,55,3.07,"['.travis.yml', 'Dockerfile', 'src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+svenkatrav <svenkatrav@netflix.com>,30,80,3.73,"['codecov.yml', '.travis.yml', 'Dockerfile', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/log4j.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Terry Case <tcase@netflix.com>,2,16,4.0,"['.travis.yml', 'Dockerfile', 'src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Rajesh Ramachandran <rajesh@qubecinema.com>,0,1,0.0,[]
+subrahmanya venkatrav <svenkatrav@users.noreply.github.com>,14,17,5.29,"['codecov.yml', '.travis.yml', 'Dockerfile', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/log4j.properties', '.github/workflows/main.yml', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', '.github/workflows/update-gradle-wrapper.yml']"
+wruppelx <imftool@t-online.de>,1,4,4.0,"['.travis.yml', 'Dockerfile', 'src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+David Thompson <45833563+davidt-netflix@users.noreply.github.com>,4,6,5.0,"['codecov.yml', '.travis.yml', 'Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/log4j.properties']"
+Cyril Concolato <cconcolato@netflix.com>,30,48,4.73,"['codecov.yml', '.travis.yml', 'Dockerfile', '.github/workflows/nebula-publish.yml', 'src/main/resources/log4j2.properties', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/log4j.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Wolfgang Ruppel <imftool@t-online.de>,10,13,4.3,"['codecov.yml', '.travis.yml', 'Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/log4j.properties']"
+David Thompson <davidt-netflix@users.noreply.github.com>,6,9,5.0,"['codecov.yml', '.travis.yml', 'Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/log4j.properties']"
+AllMethodGrind <aschuler@bright.net>,4,0,5.0,"['codecov.yml', '.travis.yml', 'Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/log4j.properties']"
+imftool <imftool@t-online.de>,1,0,5.0,"['codecov.yml', '.travis.yml', 'Dockerfile', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/log4j.properties']"
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,11,0,5.27,"['codecov.yml', '.travis.yml', 'Dockerfile', '.github/workflows/nebula-publish.yml', 'src/main/resources/log4j2.properties', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/log4j.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', '.github/workflows/update-gradle-wrapper.yml']"
+hlsuther <hsutherland@netflix.com>,1,2,4.0,"['.travis.yml', 'Dockerfile', 'src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Harold Sutherland <hsutherland@netflix.com>,1,0,4.0,"['.travis.yml', 'Dockerfile', 'src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+gradle-update-robot <gradle-update-robot@regolo.cc>,3,0,7.0,"['Dockerfile', '.github/workflows/nebula-publish.yml', 'src/main/resources/log4j2.properties', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/log4j.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Florian Schleich <fschleich@netflix.com>,11,9,6.36,"['Dockerfile', '.github/workflows/nebula-publish.yml', 'src/main/resources/log4j2.properties', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Pierre-Anthony Lemieux <pal@palemieux.com>,4,12,6.75,"['Dockerfile', '.github/workflows/nebula-publish.yml', 'src/main/resources/log4j2.properties', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Daniel Hernandez <danielhernandez@Daniels-MacBook-Pro.local>,0,2,0.0,[]
+danielhdz13-netflix <117850928+danielhdz13-netflix@users.noreply.github.com>,2,8,6.0,"['Dockerfile', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Paul Hieromnimon <phieromnimon@netflix.com>,0,3,0.0,[]
+Paul Hieromnimon <paul.hieromnimon@gmail.com>,0,3,0.0,[]
+Arsen Kostenko <akostenko@netflix.com>,1,1,6.0,"['Dockerfile', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Arsen Kostenko <kosty@users.noreply.github.com>,1,1,6.0,"['Dockerfile', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Anatoli Babenia <anatoli@rainforce.org>,0,1,0.0,[]
+wruppelx <wolfgang.ruppel@hs-rm.de>,1,0,6.0,"['Dockerfile', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml', '.github/workflows/update-gradle-wrapper.yml']"
+Adam Pongracz <adamp@colorfront.com>,0,1,0.0,[]
+Thomas Heritage <thomas.heritage@bbc.co.uk>,0,1,0.0,[]

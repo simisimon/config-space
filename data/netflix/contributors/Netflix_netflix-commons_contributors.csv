@@ -1,0 +1,24 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Justin Ryan <jryan@netflix.com>,6,23,1.17,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Allen Wang <awang@netflix.com>,2,3,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Jordan Zimmerman <jordan@jordanzimmerman.com>,0,1,0.0,[]
+Justin Ryan <justin@halfempty.org>,1,1,1.0,['gradle/wrapper/gradle-wrapper.properties']
+Sudhir Tonse <stonse@gmail.com>,1,7,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+allenxwang <awang@netflix.com>,1,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+elandau <elandau@yahoo.com>,5,39,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Bob T Builder <builds@netflix.com>,6,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Steven Zhen Wu <stevenz3wu@gmail.com>,0,1,0.0,[]
+Amit Joshi <ajoshi@netflix.com>,0,2,0.0,[]
+Jon Schneider <jkschneider@gmail.com>,0,1,0.0,[]
+tbak <tbak@netflix.com>,0,1,0.0,[]
+Michael Smith <michaels@netflix.com>,0,4,0.0,[]
+Peter D. Stout <pds@netflix.com>,0,3,0.0,[]
+Peter Stout <pds@netflix.com>,0,1,0.0,[]
+Andrew Spyker <aspyker@netflix.com>,0,1,0.0,[]
+Pavel Jareš <pavel.jares@broadcom.com>,1,0,1.0,['gradle/wrapper/gradle-wrapper.properties']
+joshgord <joshgord@gmail.com>,1,0,1.0,['gradle/wrapper/gradle-wrapper.properties']
+Iuliia Sobolevska <isobolevska@netflix.com>,1,2,1.0,['gradle/wrapper/gradle-wrapper.properties']
+Iuliia Sobolevska <juliasobolevska@gmail.com>,1,2,1.0,['gradle/wrapper/gradle-wrapper.properties']
+Aubrey Chipman <achipman@netflix.com>,1,1,1.0,['gradle/wrapper/gradle-wrapper.properties']
+OdysseusLives <achipman@netflix.com>,1,0,1.0,['gradle/wrapper/gradle-wrapper.properties']
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,2,0,4.0,"['.github/workflows/nebula-publish.yml', '.github/workflows/nebula-ci.yml', '.github/workflows/nebula-snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties']"

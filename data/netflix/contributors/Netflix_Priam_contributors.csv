@@ -1,0 +1,88 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Vijay Parthasarathy <vijay2win@yahoo.com>,6,9,2.33,"['src/main/resources/conf/awscredentials.properties', 'pom.xml', 'src/main/resources/conf/Priam.properties']"
+Praveen Sadhu <psadhu@gmail.com>,29,51,3.03,"['conf/priam.properties', 'pom.xml', 'src/main/resources/conf/Priam.properties', 'src/main/resources/log4j.properties', 'src/main/resources/conf/awscredentials.properties']"
+Aditya Jami <adityajami@gmail.com>,6,4,3.0,"['src/main/resources/conf/awscredentials.properties', 'pom.xml', 'src/main/resources/conf/Priam.properties']"
+Vijay Parthasarathy <vijay2win@gmail.com>,12,33,3.75,"['src/main/resources/conf/awscredential.properties', 'pom.xml', 'src/main/resources/log4j.properties', 'src/main/resources/conf/awscredentials.properties', 'src/main/resources/cassandra.yaml']"
+Adrian Cockcroft <adrian.cockcroft@gmail.com>,0,1,0.0,[]
+Praveen Sadhu <prsadhu@gmail.com>,3,3,3.0,"['src/main/resources/log4j.properties', 'src/main/resources/conf/awscredentials.properties', 'pom.xml', 'src/main/resources/conf/Priam.properties']"
+jason brown <jasedbrown@gmail.com>,9,38,5.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'priam/src/main/resources/cassandra.yaml']"
+Greg Orzell <gorzell@gmail.com>,0,1,0.0,[]
+Justin Ryan <jryan@netflix.com>,12,40,2.83,"['priam/src/main/resources/log4j.properties', 'src/main/resources/conf/awscredential.properties', 'pom.xml', 'priam-core/src/main/resources/cassandra.yaml', 'priam-core/src/main/resources/conf/awscredential.properties', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/log4j.properties', 'priam-core/src/main/resources/log4j.properties', 'gradle.properties', 'priam/src/main/resources/cassandra.yaml', 'src/main/resources/cassandra.yaml']"
+gopaczewski <gopaczewski@gmail.com>,2,3,3.0,"['src/main/resources/log4j.properties', 'src/main/resources/conf/awscredentials.properties', 'pom.xml']"
+Cody A. Ray <sites@codyaray.com>,0,3,0.0,[]
+Arya Goudarzi <goudarzi@gmail.com>,2,4,4.0,"['src/main/resources/conf/awscredential.properties', 'pom.xml', 'src/main/resources/log4j.properties', 'src/main/resources/conf/awscredentials.properties', 'src/main/resources/cassandra.yaml']"
+jasobrown <jasedbrown@gmail.com>,4,8,4.0,"['priam/src/main/resources/log4j.properties', 'src/main/resources/conf/awscredential.properties', 'pom.xml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'src/main/resources/log4j.properties', 'priam/src/main/resources/cassandra.yaml', 'src/main/resources/cassandra.yaml']"
+Joe Sondow <joe@sondow.com>,0,1,0.0,[]
+Jordan Zimmerman <jordan@jordanzimmerman.com>,0,25,0.0,[]
+Justin Ryan <justin@halfempty.org>,0,1,0.0,[]
+Jason Brown <jasedbrown@gmail.com>,55,130,5.38,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties', 'priam/src/main/resources/cassandra.yaml']"
+zznate <zznate.m@gmail.com>,0,1,0.0,[]
+Aleksandr Priymak <aleksandr.priymak@gmail.com>,0,11,0.0,[]
+SagarL <sagarit2@gmail.com>,37,44,5.27,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties', 'priam/src/main/resources/cassandra.yaml']"
+Alexis Midon <alexis.midon@c3-e.com>,0,4,0.0,[]
+Sagar Loke <sagarit2@gmail.com>,12,19,5.25,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties', 'priam/src/main/resources/cassandra.yaml']"
+Michael Hale <mike@hales.ws>,0,2,0.0,[]
+builds <builds@dynaslave-b14ef0e8.(none)>,1,0,5.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'priam/src/main/resources/cassandra.yaml']"
+builds <builds@dynaslave-d3c2398a.(none)>,4,0,5.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'priam/src/main/resources/cassandra.yaml']"
+builds <builds@dynaslave-b9c239e0.(none)>,4,0,5.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'priam/src/main/resources/cassandra.yaml']"
+builds <builds@dynaslave-f42f40ad.(none)>,2,0,5.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'priam/src/main/resources/cassandra.yaml']"
+Bill de hOra <bill@dehora.net>,0,1,0.0,[]
+builds <builds@dynaslave-7230122b.(none)>,1,0,5.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties']"
+builds <builds@dynaslave-20311379.(none)>,1,0,5.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties']"
+Bob T Builder <builds@netflix.com>,68,0,5.96,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+Jason <jason@lgux-jasbrown4.(none)>,0,1,0.0,[]
+Greg Orzell <gorzell@sumologic.com>,1,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Minh Do <mdo@netflix>,14,24,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+Spencer Gibb <gibbsb@ldschurch.org>,0,1,0.0,[]
+Minh Do <minh.n.do@gmail.com>,6,30,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+dcapwell <d.capwell@sisa.samsung.com>,7,10,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+Nils Pommerien <nils@blackpearlsystems.com>,0,1,0.0,[]
+Minh Do <mdo@netflix.com>,1,1,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+Minh Do <mdo@lgml-mdo1.corp.netflix.com>,1,0,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+timiblossom <minh.n.do@gmail.com>,15,33,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+Daniel Chia <danchia@coursera.org>,0,5,0.0,[]
+Neville Kadwa <neville@kadwa.com>,0,1,0.0,[]
+Trevor Baker <tbaker@circle.com>,0,1,0.0,[]
+Eugen Dinca <decostin@gmail.com>,0,1,0.0,[]
+Nir Alfasi <alfasi@netflix.com>,1,2,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+OpsEng Jenkins Builds User <builds@netflix.com>,7,0,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+vinhn <vinhn@netflix.com>,4,68,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+Vinh Nguyen <tulumvinh@gmail.com>,4,46,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+vchella <vchella@netflix.com>,2,15,6.5,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+scottmcmaster <smcmaster@google.com>,0,1,0.0,[]
+Scott McMaster <smcmaster@google.com>,0,1,0.0,[]
+Jason Cacciatore <jcacciatore@netflix.com>,1,1,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', 'gradle.properties']"
+Vinay Chella <vinaykumarcse@gmail.com>,2,17,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties']"
+Jon Schneider <jkschneider@gmail.com>,2,2,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties']"
+Naadir Jeewa <naadir@randomvariable.co.uk>,0,1,0.0,[]
+Matthieu Simon <matthieu.simon@gmail.com>,0,2,0.0,[]
+ipapapa <iduckhd@hotmail.com>,0,1,0.0,[]
+Andor Molnár <andor.molnar@logmein.com>,0,1,0.0,[]
+Ryan Bourgeois <bluedragonx@gmail.com>,0,1,0.0,[]
+Peter Mate <peter.mate@logmein.com>,0,2,0.0,[]
+Arun Agrawal <aagrawal@netflix.com>,8,111,6.12,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', '.codecov.yml']"
+Arun Agrawal <arunagrawal.84@gmail.com>,13,80,6.23,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', '.codecov.yml']"
+Nadav Cohen <ncohen@netflix.com>,1,0,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties']"
+Ioannis Papapanagiotou <iduckhd@hotmail.com>,1,0,6.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties']"
+Daniel Trebbien <dtrebbien@gmail.com>,0,4,0.0,[]
+Joseph Lynch <josephl@netflix.com>,0,15,0.0,[]
+Joseph Lynch <jolynch@users.noreply.github.com>,0,8,0.0,[]
+zmarois <zmarois@cimpress.com>,0,6,0.0,[]
+Zachary Marois <zmarois@cimpress.com>,0,1,0.0,[]
+Sumanth Pasupuleti <sumanth.pasupuleti.is@gmail.com>,0,10,0.0,[]
+Josh Snyder <joshs@netflix.com>,0,6,0.0,[]
+ARUN AGRAWAL <arunagrawal.84@gmail.com>,0,4,0.0,[]
+Chandrasekhar Thumuluru <chandra.thumuluru@gmail.com>,0,2,0.0,[]
+Chandrasekhar Thumuluru <7935907+cthumuluru@users.noreply.github.com>,0,2,0.0,[]
+Chandrasekhar Thumuluru <chandra.thumuluru+github@gmail.com>,0,4,0.0,[]
+Lorenz Nickel <mail@lorenznickel.de>,1,1,7.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', '.codecov.yml']"
+aagrawal <arunagrawal.84@gmail.com>,1,9,7.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', '.codecov.yml']"
+Sreeram Chakrovorthy <schakrovorthy@netflix.com>,0,44,0.0,[]
+schakrovorthy <12820070+schakrovorthy@users.noreply.github.com>,0,33,0.0,[]
+Matt Lehman <mattl@netflix.com>,1,29,7.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', '.codecov.yml']"
+mattl-netflix <63665634+mattl-netflix@users.noreply.github.com>,1,45,7.0,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', 'priam/src/main/resources/Priam.properties', '.codecov.yml']"
+Steve Hill <sghill.dev@gmail.com>,0,1,0.0,[]
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,9,2,7.33,"['priam/src/main/resources/log4j.properties', 'priam/src/main/resources/incr-restore-cassandra.yaml', '.travis.yml', '.github/workflows/nebula-publish.yml', 'priam/src/main/resources/conf/awscredential.properties', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', 'priam/src/main/resources/Priam.properties', '.codecov.yml', '.github/workflows/nebula-ci.yml']"
+ayushisingh29 <ayushi.a29s@gmail.com>,0,3,0.0,[]
+Cheng Wang <chengw@netflix.com>,0,1,0.0,[]
+Cheng Wang <107727158+chengw-netflix@users.noreply.github.com>,0,5,0.0,[]

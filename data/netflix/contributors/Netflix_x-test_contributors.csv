@@ -1,0 +1,8 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Andrew Seier <andseier@gmail.com>,45,21,4.33,"['.github/workflows/publish.yaml', '.travis.yml', 'package.json', '.github/workflows/release.yml', '.github/workflows/check-branch.yaml', '.github/workflows/publish-to-jsr.yaml', 'client/jsr.json', 'tsconfig.json', 'client/package.json', '.github/workflows/publish-to-npm.yaml', '.github/workflows/push.yml', 'jsr.json', 'deno.json', 'package-lock.json']"
+Aubrey Chipman <achipman@netflix.com>,11,1,2.0,"['.travis.yml', 'package.json']"
+Martin Chalupa <mchalupa@netflix.com>,4,0,2.0,"['.travis.yml', 'package.json']"
+Mary Marchini <mmarchini@netflix.com>,1,0,2.0,"['.travis.yml', 'package.json']"
+Casey <klebba@gmail.com>,2,0,7.0,"['.github/workflows/publish.yaml', 'package.json', '.github/workflows/publish-to-jsr.yaml', '.github/workflows/check-branch.yaml', '.github/workflows/publish-to-npm.yaml', 'deno.json', 'package-lock.json']"
+Casey Klebba <cklebba@netflix.com>,1,0,7.0,"['.github/workflows/publish.yaml', 'package.json', '.github/workflows/publish-to-jsr.yaml', '.github/workflows/check-branch.yaml', '.github/workflows/publish-to-npm.yaml', 'deno.json', 'package-lock.json']"
+Casey Klebba <casey@klebba.net>,1,0,8.0,"['.github/workflows/publish.yaml', 'package.json', '.github/workflows/publish-to-jsr.yaml', '.github/workflows/check-branch.yaml', 'tsconfig.json', '.github/workflows/publish-to-npm.yaml', 'jsr.json', 'package-lock.json']"

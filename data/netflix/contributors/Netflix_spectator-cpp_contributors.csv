@@ -1,0 +1,15 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Daniel Muino <dmuino@netflix.com>,4,3,2.0,"['.travis.yml', 'codecov.yml']"
+Daniel Muino <dmuino@users.noreply.github.com>,2,72,2.0,"['.travis.yml', 'codecov.yml']"
+troshko111 <931973+troshko111@users.noreply.github.com>,0,6,0.0,[]
+brharrington <brharrington@gmail.com>,1,0,2.0,"['.travis.yml', 'codecov.yml']"
+Jason Cooke <Jason-Cooke@users.noreply.github.com>,0,1,0.0,[]
+Matt Zimmer <zimmermatt@netflix.com>,0,1,0.0,[]
+James Mulcahy <jmulcahy@netflix.com>,0,3,0.0,[]
+David Vroom Duke <dduke@netflix.com>,0,2,0.0,[]
+Matthew Johnson <mjjohnson33@gmail.com>,7,14,1.0,['.github/workflows/build.yml']
+Can Cecen <cecen.ycan@gmail.com>,0,1,0.0,[]
+Matthew Johnson <matthewj@netflix.com>,0,1,0.0,[]
+Everett Badeaux <everettc1810@gmail.com>,2,11,1.0,['.github/workflows/build.yml']
+Ben Plotnick <ben.plotnick@gmail.com>,0,1,0.0,[]
+Anthony Vardaro <me@anthonyvardaro.com>,0,1,0.0,[]

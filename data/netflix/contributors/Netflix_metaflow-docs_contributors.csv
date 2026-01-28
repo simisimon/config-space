@@ -1,0 +1,38 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+gitbook-bot <ghost@gitbook.com>,0,1,0.0,[]
+Romain Cledat <rcledat@netflix.com>,0,12,0.0,[]
+ferras37 <ferras37@gmail.com>,0,1,0.0,[]
+Ville Tuulos <vtuulos@netflix.com>,0,12,0.0,[]
+Savin <savingoyal@gmail.com>,0,56,0.0,[]
+Jason Ge <jge@netflix.com>,0,6,0.0,[]
+seeravikiran <42477611+seeravikiran@users.noreply.github.com>,0,2,0.0,[]
+Yosef Berman <yosef.berman@nytimes.com>,0,3,0.0,[]
+Romain <romain-intel@users.noreply.github.com>,1,1,6.0,"['.github/workflows/deploy.yml', 'package.json', 'settings.ini', '.github/workflows/search.yaml', '_nbdoc_index.json', '.github/workflows/lint.yml']"
+ryantd <xiaoyu.zhai@hotmail.com>,0,1,0.0,[]
+Savin Goyal <savingoyal@gmail.com>,0,13,0.0,[]
+Hamel Husain <hamelsmu@github.com>,0,3,0.0,[]
+Ville Tuulos <tuulos@gmail.com>,2,109,5.5,"['.github/workflows/deploy.yml', 'package.json', 'settings.ini', '.github/workflows/search.yaml', '_nbdoc_index.json', '.github/workflows/lint.yml']"
+Brendan Gibson <brendan@outerbounds.co>,8,59,2.88,"['.github/workflows/deploy.yml', 'package.json', 'settings.ini', '.github/workflows/search.yaml', '_nbdoc_index.json']"
+Brendan Gibson <93726128+obgibson@users.noreply.github.com>,5,25,3.6,"['.github/workflows/deploy.yml', 'package.json', 'settings.ini', '.github/workflows/search.yaml', '_nbdoc_index.json']"
+Hamel Husain <hamel.husain@gmail.com>,6,3,1.0,['.github/workflows/search.yaml']
+hamelsmu <hamel.husain@gmail.com>,4,20,3.25,"['package.json', '.github/workflows/deploy.yml', '_nbdoc_index.json', 'settings.ini']"
+Valay Dave <valaygaurang@gmail.com>,0,1,0.0,[]
+Oleg Avdeev <oleg.v.avdeev@gmail.com>,0,9,0.0,[]
+Yan Pan <yanp@users.noreply.github.com>,0,1,0.0,[]
+Eddie Mattia <eddie@outerbounds.com>,0,2,0.0,[]
+D. Sturgeon <darrick.sturge@gmail.com>,0,1,0.0,[]
+James Budarz <me@jamesbudarz.com>,1,0,5.0,"['.github/workflows/deploy.yml', 'package.json', 'settings.ini', '.github/workflows/search.yaml', '_nbdoc_index.json']"
+Mikkolehtimaki <Mikkolehtimaki@users.noreply.github.com>,0,1,0.0,[]
+Boris Feld <lothiraldan@gmail.com>,0,1,0.0,[]
+emattia <40632488+emattia@users.noreply.github.com>,0,2,0.0,[]
+Ben Brandt <bbrandt@users.noreply.github.com>,0,1,0.0,[]
+Saurabh Garg <144727284+iamsgarg-ob@users.noreply.github.com>,0,4,0.0,[]
+rohanrebello <1291433+rohanrebello@users.noreply.github.com>,0,4,0.0,[]
+madhur-ob <155637867+madhur-ob@users.noreply.github.com>,0,7,0.0,[]
+Yogesh Garg <yogeshg91@gmail.com>,0,1,0.0,[]
+nbertagnolli <nmbertagnolli@gmail.com>,0,1,0.0,[]
+Anton Gilgur <4970083+agilgur5@users.noreply.github.com>,0,1,0.0,[]
+Shashank Srikanth <s.shashank2401@gmail.com>,0,1,0.0,[]
+Gee <17325189+GeeCastro@users.noreply.github.com>,0,1,0.0,[]
+Eddie Mattia <40632488+emattia@users.noreply.github.com>,0,2,0.0,[]
+Sakari Ikonen <64256562+saikonen@users.noreply.github.com>,0,2,0.0,[]

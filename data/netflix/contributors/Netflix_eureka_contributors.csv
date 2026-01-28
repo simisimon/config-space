@@ -1,0 +1,175 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Karthik Ranganathan <kranganathan@netflix.com>,81,87,11.1,"['eureka-server/main/conf/eureka-server-prod.properties', 'eureka-server/main/conf/eureka-server.properties', 'eureka-server/conf/sample-eureka-client.properties', 'eureka-server/conf/sampleservice/sample-eureka-service.properties', 'eureka-server/main/conf/eureka-client.properties', 'eureka-server/main/conf/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/main/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties', 'eureka-server/conf/sample-eureka-service.properties']"
+root <root@lgux-krangagathan.netflix.com>,3,0,14.67,"['eureka-server/eureka/main/web/WEB-INF/classes/discovery.properties', 'eureka-server/eureka/main/web/WEB-INF/classes/log4j.properties', 'server/main/conf/discovery-prod.properties', 'eureka-server/eureka/main/conf/discovery-dev.properties', 'eureka-server/eureka/main/web/WEB-INF/classes/discovery-dev.properties', 'eureka-server/main/web/WEB-INF/classes/log4j.properties', 'server/main/conf/log4j.properties', 'eureka-server/main/conf/discovery-dev.properties', 'server/main/web/WEB-INF/classes/discovery-prod.properties', 'eureka-server/main/web/WEB-INF/classes/discovery-dev.properties', 'server/main/web/WEB-INF/classes/log4j.properties', 'eureka-server/main/conf/discovery-prod.properties', 'eureka-server/eureka/main/build.properties', 'eureka-server/eureka/main/web/WEB-INF/classes/discovery-prod.properties', 'eureka-server/eureka/main/conf/discovery.properties', 'eureka-server/eureka/main/conf/log4j.properties', 'eureka-client/main/bin/eureka-client.properties', 'server/main/build.properties', 'eureka-server/main/web/WEB-INF/classes/discovery-prod.properties', 'client/main/bin/eureka-client.properties', 'eureka-server/eureka/main/conf/discovery-prod.properties', 'gradle/wrapper/gradle-wrapper.properties', 'server/main/web/WEB-INF/classes/discovery.properties', 'client/main/conf/eureka-client.properties', 'server/main/conf/discovery.properties', 'eureka-server/main/build.properties', 'eureka-client/main/conf/eureka-client.properties', 'server/main/conf/discovery-dev.properties', 'eureka-server/main/web/WEB-INF/classes/discovery.properties', 'server/main/web/WEB-INF/classes/discovery-dev.properties', 'eureka-server/main/conf/log4j.properties', 'eureka-server/main/conf/discovery.properties']"
+Karthik Ranganathan <kranganathan@lgmac-kranganathan2.netflix.com>,2,0,4.0,"['eureka-server/main/build.properties', 'eureka-server/main/conf/discovery-prod.properties', 'eureka-client/main/conf/eureka-client.properties', 'eureka-server/main/conf/discovery.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/main/conf/discovery-dev.properties', 'eureka-server/main/conf/log4j.properties', 'eureka-client/main/bin/eureka-client.properties']"
+Karthik Ranganathan <kranganathan@lgmac-kranganathan2.corp.netflix.com>,1,0,6.0,"['gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties']"
+Justin Ryan <jryan@netflix.com>,26,68,6.27,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+builds <builds@dynaslave-bbc239e2.(none)>,4,0,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+builds <builds@dynaslave-55c2390c.(none)>,6,0,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+Jordan Zimmerman <jordan@jordanzimmerman.com>,0,2,0.0,[]
+Justin Ryan <justin@halfempty.org>,1,3,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Joe Sondow <joe@sondow.com>,1,0,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+Joe Sondow <jsondow@netflix.com>,0,1,0.0,[]
+builds <builds@dynaslave-0097e659.(none)>,14,0,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+Eric Dowd <edowd@dowdandassociates.com>,6,6,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+karthik-vn <kranganathan@netflix.com>,1,7,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+Blake Gentry <blakesgentry@gmail.com>,0,1,0.0,[]
+builds <builds@dynaslave-a43b7cfd.(none)>,1,0,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+builds <builds@dynaslave-a23416fb.(none)>,3,0,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+builds <builds@dynaslave-6a361433.(none)>,1,0,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+Bob T Builder <builds@netflix.com>,109,0,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+Eric Dowd <edowd@internetbrands.com>,0,1,0.0,[]
+Craig Forster <craig.forster@sailpoint.com>,0,1,0.0,[]
+Nitesh Kant <nitesh1706@gmail.com>,11,95,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+Greg Orzell <gorzell@sumologic.com>,2,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Karthik Ranganathan <karthik-vn>,9,8,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+Scott Emmons <semmons@netflix.com>,0,2,0.0,[]
+Melvin Cardozo <melvin@cloudzilla.com>,0,1,0.0,[]
+nkant <nitesh1706@gmail.com>,0,2,0.0,[]
+karthik-vn <karthik_cbe@yahoo.com>,0,6,0.0,[]
+Nitesh Kant <nkant@netflix.com>,3,29,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+Veniamin V <knok16@gmail.com>,0,1,0.0,[]
+elandau <elandau@yahoo.com>,1,38,11.0,"['eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties']"
+Jay Zarfoss <jzarfoss@netflix.com>,0,2,0.0,[]
+Ryan Thomas <rthomas@atlassian.com>,0,1,0.0,[]
+Dong Yiquan <yqdong@Ctrip.com>,0,1,0.0,[]
+CH3CHO <kentstl@163.com>,0,1,0.0,[]
+Benjamin Pollack <benjamin@bitquabit.com>,0,1,0.0,[]
+Joe Hohertz <jhohertz@gmail.com>,0,1,0.0,[]
+Benjamin Pollack <bp@knewton.com>,0,27,0.0,[]
+Peter Kelley <peter@knewton.com>,0,6,0.0,[]
+tommack <tom@tom-mack.com>,0,1,0.0,[]
+David Liu <dliu@netflix.com>,21,436,10.57,"['eureka-server-karyon3/src/main/resources/eureka-client.properties', 'eureka-server/src/main/resources/eureka-server.properties', 'eureka-server-governator/src/main/resources/eureka-client.properties', 'gradle.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-server.properties', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server-governator/src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server-karyon3/src/main/resources/log4j.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/log4j.properties', 'eureka-server/src/main/resources/log4j.properties', 'eureka-server/conf/sampleservice/sample-eureka-service.properties', '.travis.yml', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/sampleservice/log4j.properties', 'eureka-server-karyon3/src/main/resources/eureka-server.properties']"
+aspyker <awspyker@gmail.com>,0,1,0.0,[]
+qiangdavidliu <dliu@netflix.com>,4,27,8.75,"['eureka-server/src/main/resources/eureka-server.properties', 'eureka-server/conf/sampleservice/sample-eureka-service.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties', 'eureka-server/src/main/resources/log4j.properties']"
+Jeff Williams <jeffw@wherethebitsroam.com>,0,1,0.0,[]
+"Christopher Torpelund-Bruin, Dennis Leon and Dean McNiven <just-dev+ctorpe+dleon+dmcniven@tyro.com>",0,1,0.0,[]
+Tomasz Bak <tbak@netflix.com>,13,127,9.38,"['eureka-server-karyon3/src/main/resources/eureka-client.properties', 'eureka-server/src/main/resources/eureka-server.properties', 'gradle.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server-prod.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server-karyon3/src/main/resources/log4j.properties', 'eureka-server/src/main/resources/eureka-server-prod.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/log4j.properties', 'eureka-server/src/main/resources/log4j.properties', 'eureka-server/conf/sampleservice/sample-eureka-service.properties', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/src/main/resources/eureka-client-prod.properties', 'eureka-server/conf/sampleservice/log4j.properties', 'eureka-server-karyon3/src/main/resources/eureka-server.properties']"
+tbak <tbak@netflix.com>,10,63,10.1,"['eureka-server-karyon3/src/main/resources/eureka-client.properties', 'eureka-server/src/main/resources/eureka-server.properties', 'gradle.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/conf/eureka-server-prod.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server-karyon3/src/main/resources/log4j.properties', 'eureka-server/src/main/resources/eureka-server-prod.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/log4j.properties', 'eureka-server/src/main/resources/log4j.properties', 'eureka-server/conf/sampleservice/sample-eureka-service.properties', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/src/main/resources/eureka-client-prod.properties', 'eureka-server/conf/sampleservice/log4j.properties', 'eureka-server-karyon3/src/main/resources/eureka-server.properties']"
+David Currie <david_currie@uk.ibm.com>,0,1,0.0,[]
+keithbranton <keithbranton@overstock.com>,0,6,0.0,[]
+Keith Branton <kbranton@slipstonemethod.com>,0,1,0.0,[]
+Tomasz Kowalczewski <tomasz.kowalczewski@codewise.com>,0,2,0.0,[]
+Sergey Krutsko <skrutsko@odesk.com>,0,4,0.0,[]
+Rob Spieldenner <rob.spieldenner@gmail.com>,2,2,11.0,"['eureka-server/src/main/resources/eureka-server.properties', 'eureka-server/conf/sampleservice/sample-eureka-service.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server/conf/sampleclient/log4j.properties', 'eureka-server/conf/sampleclient/sample-eureka-client.properties', 'eureka-server/conf/eureka-client-prod.properties', 'eureka-server/conf/eureka-client.properties', 'eureka-server/src/main/resources/eureka-client-prod.properties', 'eureka-server/conf/eureka-server.properties', 'eureka-server/conf/eureka-server-prod.properties', 'eureka-server/conf/log4j.properties', 'gradle.properties', 'eureka-server/conf/sampleservice/log4j.properties', 'eureka-server/src/main/resources/eureka-server-prod.properties', 'eureka-server/src/main/resources/log4j.properties']"
+Shai Erera <serera@gmail.com>,0,6,0.0,[]
+Artem Barger <artem@jungo.com>,0,2,0.0,[]
+Brian Harrington <brharrington@gmail.com>,0,1,0.0,[]
+Toby Thain <toby@telegraphics.com.au>,0,1,0.0,[]
+Jeremy D. Young <jeremydyoung77@gmail.com>,0,1,0.0,[]
+Spencer Gibb <spencer@gibb.us>,0,14,0.0,[]
+Albert Manya <albert.manya@schibsted.com>,0,4,0.0,[]
+Bertrand Renuart <brenuart@gmail.com>,0,4,0.0,[]
+kukgini <kukgini@gmail.com>,0,1,0.0,[]
+Will Tran <wtran@pivotal.io>,0,3,0.0,[]
+Milan Baran <milan.baran@gmail.com>,0,1,0.0,[]
+Jaume Pinyol <jaume.pinyol@scmspain.com>,0,2,0.0,[]
+Arnaud Roger <aroger@rapid7.com>,0,1,0.0,[]
+Andrew Spyker <aspyker@netflix.com>,0,1,0.0,[]
+Jon Schneider <jkschneider@gmail.com>,1,1,12.0,"['eureka-server/src/main/resources/eureka-server.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-server.properties', '.travis.yml', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-client.properties', 'gradle.properties', 'eureka-server/src/main/resources/log4j.properties', 'eureka-server-governator/src/main/resources/log4j.properties']"
+Justin Lin <jlin@justinlin.net>,0,1,0.0,[]
+daniel-caballero <daniel.caballero@schibsted.com>,1,0,11.0,"['eureka-server-karyon3/src/main/resources/eureka-client.properties', 'eureka-server/src/main/resources/eureka-server.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server-karyon3/src/main/resources/log4j.properties', 'gradle.properties', 'eureka-server/src/main/resources/log4j.properties', 'eureka-server-karyon3/src/main/resources/eureka-server.properties']"
+hieurl <hieu@hoiio.com>,0,3,0.0,[]
+Matt Nelson <matt.nelson@cerner.com>,0,14,0.0,[]
+jc89 <joelcueto89@gmail.com>,0,3,0.0,[]
+Rob Spieldenner <rspieldenner@netflix.com>,2,0,12.0,"['eureka-server/src/main/resources/eureka-server.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-server.properties', '.travis.yml', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-client.properties', 'gradle.properties', 'eureka-server/src/main/resources/log4j.properties', 'eureka-server-governator/src/main/resources/log4j.properties']"
+Taylor Wicksell <taylor.wicksell@gmail.com>,1,1,12.0,"['eureka-server/src/main/resources/eureka-server.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-server.properties', '.travis.yml', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-client.properties', 'gradle.properties', 'eureka-server/src/main/resources/log4j.properties', 'eureka-server-governator/src/main/resources/log4j.properties']"
+vseguin <vincent.seguin.1@ulaval.ca>,0,1,0.0,[]
+Nikos Michalakis <nikos@netflix.com>,0,8,0.0,[]
+roberto <roberto@qualcomm.com>,0,2,0.0,[]
+Nikos Michalakis <drtechniko@users.noreply.github.com>,0,1,0.0,[]
+Richard Benkovsky <Benky@users.noreply.github.com>,0,1,0.0,[]
+Davor Sauer <davor@backbase.com>,0,1,0.0,[]
+Taylor Wicksell <twicksell@netflix.com>,0,2,0.0,[]
+klues <klues@live.de>,0,1,0.0,[]
+Richard Müller <trinity82@web.de>,0,1,0.0,[]
+Benjamin Klaus <klues@live.de>,0,2,0.0,[]
+Thomas A Cellucci <tcellucci@netflix.com>,0,2,0.0,[]
+Erhan Kesken <erhan.kesken@schibsted.com>,0,1,0.0,[]
+dev.bistros <dev.bistros@gmail.com>,0,1,0.0,[]
+Max Johansen <macsj200@gmail.com>,0,1,0.0,[]
+Jacques-Etienne Beaudet <jebeaudet@gmail.com>,0,1,0.0,[]
+Wes Walker <weswalker125@gmail.com>,0,1,0.0,[]
+Borja Lafuente Romero <borja.lafuente.romero@ericsson.com>,0,3,0.0,[]
+Tom Cellucci <tcellucci@users.noreply.github.com>,0,2,0.0,[]
+Bill Zhang <jingege.me@gmail.com>,0,3,0.0,[]
+Geunwoo Shin <encyphered@gmail.com>,0,4,0.0,[]
+Daniel Trebbien <dtrebbien@gmail.com>,0,17,0.0,[]
+saga <spring_holy@163.com>,0,6,0.0,[]
+cdiem4558k <chase_diem@cable.comcast.com>,0,1,0.0,[]
+Panmax <jiapan.china@gmail.com>,0,2,0.0,[]
+tojuchni <t.juchniewicz@external.t-systems.com>,0,1,0.0,[]
+XuDeyou <124641755@qq.com>,0,1,0.0,[]
+skyesx <124641755@qq.com>,0,1,0.0,[]
+Mert ÇALIŞKAN <mert@t2.com.tr>,0,2,0.0,[]
+moxnet <moxnet@gmail.com>,0,1,0.0,[]
+娄娈 <louluan@ofpay.com>,0,1,0.0,[]
+neoremind <xuzh1002@gmail.com>,0,4,0.0,[]
+Taras Danylchuk <tdanylchuk@playtika.com>,0,1,0.0,[]
+Mikhail Gromov <mikhailgromov@cloud.upwork.com>,0,9,0.0,[]
+holy12345 <spring_holy@163.com>,0,5,0.0,[]
+Taras Roshko <troshko@netflix.com>,0,2,0.0,[]
+Kerwin Bryant <ileler@qq.com>,0,1,0.0,[]
+ileler <ileler@qq.com>,0,1,0.0,[]
+Will Bengtson <william.bengtson@gmail.com>,0,1,0.0,[]
+skrutsko <skrutsko@cloud.upwork.com>,0,7,0.0,[]
+Joseph Witthuhn <joseph.witthuhn@thomsonreuters.com>,0,3,0.0,[]
+elandau <elandau@netflix.com>,0,11,0.0,[]
+phantasmicmeans <dlaak0630@naver.com>,0,1,0.0,[]
+iZDT <izdt@users.noreply.github.com>,0,2,0.0,[]
+Matt Nelson <mattnelson@users.noreply.github.com>,0,2,0.0,[]
+troshko111 <931973+troshko111@users.noreply.github.com>,0,12,0.0,[]
+Mikhail Gromov <mgtriffid@gmail.com>,0,1,0.0,[]
+Yuxin Bai <ybai@pivotal.io>,0,2,0.0,[]
+Braavos <35978114+Braavos96@users.noreply.github.com>,0,1,0.0,[]
+brharrington <brharrington@gmail.com>,0,1,0.0,[]
+Arthur Gavlyukovskiy <agavlyukovskiy@gmail.com>,0,1,0.0,[]
+Stephan Windmüller <windy@white-hawk.de>,0,1,0.0,[]
+Russell Bolles <russbollesjr@gmail.com>,0,1,0.0,[]
+Snow Pettersen <aickck@gmail.com>,1,1,12.0,"['eureka-server/src/main/resources/eureka-server.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-server.properties', '.travis.yml', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-client.properties', 'gradle.properties', 'eureka-server/src/main/resources/log4j.properties', 'eureka-server-governator/src/main/resources/log4j.properties']"
+Argha C <971473+argha-c@users.noreply.github.com>,0,1,0.0,[]
+Kaze <hejunhuiok@hotmail.com>,0,1,0.0,[]
+Bennett <bennett@yobennett.com>,0,2,0.0,[]
+RakefetEP <63316712+RakefetEP@users.noreply.github.com>,0,1,0.0,[]
+David Robert Duke <dduke@netflix.com>,0,3,0.0,[]
+dengliming <liming.d.pro@gmail.com>,1,0,12.0,"['eureka-server/src/main/resources/eureka-server.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-server.properties', '.travis.yml', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-client.properties', 'gradle.properties', 'eureka-server/src/main/resources/log4j.properties', 'eureka-server-governator/src/main/resources/log4j.properties']"
+Jaromir Hamala <jaromir.hamala@gmail.com>,0,1,0.0,[]
+虫二 <llwang.hit.cn@gmail.com>,0,1,0.0,[]
+qq1036916439 <35517930+qq1036916439@users.noreply.github.com>,0,2,0.0,[]
+larosek <kevin.larose@gmail.com>,0,1,0.0,[]
+John Bennett <bennett@netflix.com>,0,1,0.0,[]
+hujie <hujieqwert+github@gmail.com>,0,1,0.0,[]
+HeemangHan <heemanghan@gmail.com>,0,2,0.0,[]
+Christian Clauss <cclauss@me.com>,1,0,12.0,"['eureka-server/src/main/resources/eureka-server.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-server.properties', '.travis.yml', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-client.properties', 'gradle.properties', 'eureka-server/src/main/resources/log4j.properties', 'eureka-server-governator/src/main/resources/log4j.properties']"
+nescohen <nsar.cohen@gmail.com>,0,1,0.0,[]
+jmulcahy <jmulcahy@netflix.com>,0,10,0.0,[]
+James Mulcahy <james@manque.net>,0,1,0.0,[]
+Mike Smith <kerumai@users.noreply.github.com>,0,1,0.0,[]
+Ivan Porto Carrero <iportocarrero@netflix.com>,0,3,0.0,[]
+Chase Diem <abracadv8@users.noreply.github.com>,0,1,0.0,[]
+Phil Rud <prud@netflix.com>,0,1,0.0,[]
+Phil Rud <47129415+philrud@users.noreply.github.com>,0,1,0.0,[]
+Ling Yuan <lyuan@netflix.com>,0,3,0.0,[]
+Ling Yuan <lingyuan2014@gmail.com>,0,4,0.0,[]
+Steve Hill <sghill.dev@gmail.com>,0,1,0.0,[]
+James Mulcahy <jmulcahy@netflix.com>,0,1,0.0,[]
+Kebe <mail@kebe7jun.com>,0,1,0.0,[]
+Ling <lingyuan2014@gmail.com>,0,1,0.0,[]
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,8,1,13.25,"['eureka-server/src/main/resources/eureka-server.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-server.properties', '.travis.yml', '.github/workflows/nebula-publish.yml', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/src/main/resources/eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-client.properties', '.github/workflows/nebula-snapshot.yml', 'gradle.properties', '.github/workflows/nebula-ci.yml', 'eureka-server/src/main/resources/log4j.properties', 'eureka-server-governator/src/main/resources/log4j.properties']"
+张逸扬 <33390928+gdut-yy@users.noreply.github.com>,0,2,0.0,[]
+Jacques-Etienne Beaudet <jebeaudet@coveo.com>,0,1,0.0,[]
+Sergey Krutsko <krutsko@users.noreply.github.com>,0,1,0.0,[]
+Gregor Riegler <rieglerg85@gmail.com>,0,1,0.0,[]
+Aravindh Rajagopalan <r.aravindh241997@gmail.com>,0,1,0.0,[]
+Asi Bross <11426802+asibross@users.noreply.github.com>,0,1,0.0,[]
+chi-chi weng <wcc526@gmail.com>,0,1,0.0,[]
+shisheng-1 <85237617+shisheng-1@users.noreply.github.com>,1,0,14.0,"['eureka-server/src/main/resources/eureka-server.properties', 'eureka-examples/conf/sample-eureka-client.properties', 'eureka-server-governator/src/main/resources/eureka-server.properties', '.github/workflows/nebula-publish.yml', 'eureka-examples/conf/sample-eureka-service.properties', 'eureka-examples/conf/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'eureka-server/src/main/resources/eureka-client.properties', '.github/workflows/nebula-snapshot.yml', 'eureka-server-governator/src/main/resources/eureka-client.properties', 'gradle.properties', '.github/workflows/nebula-ci.yml', 'eureka-server/src/main/resources/log4j.properties', 'eureka-server-governator/src/main/resources/log4j.properties']"
+PJ Fanning <pjfanning@users.noreply.github.com>,0,1,0.0,[]
+Sean C. Sullivan <github@seansullivan.com>,0,1,0.0,[]
+alexburnos <aburnos@netflix.com>,0,1,0.0,[]
+Brian Tucker <briant@netflix.com>,0,8,0.0,[]
+Josh Gordineer <jgordineer@netflix.com>,0,3,0.0,[]
+joshgord <joshgord@gmail.com>,0,2,0.0,[]
+Olga MaciaszekSharma <omaciaszeksh@vmware.com>,0,1,0.0,[]
+progress0407 <progress0407@gmail.com>,0,1,0.0,[]
+Can Cecen <cecen.ycan@gmail.com>,0,1,0.0,[]

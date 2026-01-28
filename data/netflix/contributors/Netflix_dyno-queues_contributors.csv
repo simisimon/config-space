@@ -1,0 +1,25 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Viren Baraiya <vbaraiya@netflix.com>,4,62,2.0,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Ioannis Papapanagiotou <iduckhd@hotmail.com>,3,4,2.33,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Viren <virenx@gmail.com>,3,11,2.33,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Jon Schneider <jkschneider@gmail.com>,3,1,2.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties']"
+Rob Spieldenner <rspieldenner@netflix.com>,1,0,2.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties']"
+KowalczykBartek <bartlomie.kowalczyk@sap.com>,0,4,0.0,[]
+Viren Baraiya <virenx@gmail.com>,4,3,2.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties']"
+Vikram Singh <visingh@netflix.com>,0,1,0.0,[]
+vikramsingh2104 <vikramsingh2104@yahoo.com>,1,0,2.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties']"
+Viren Baraiya <viren@v1r3n.com>,6,2,2.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties']"
+Rob Zienert <rzienert@netflix.com>,0,3,0.0,[]
+Michel Onstein <michel@zededa.com>,0,1,0.0,[]
+ipapapa <iduckhd@hotmail.com>,1,0,2.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties']"
+KowalczykBartek <bkowalczyyk@gmail.com>,0,5,0.0,[]
+Kishore Kasi <kkasi@netflix.com>,0,1,0.0,[]
+Ricool06 <ricoolohsix@hotmail.com>,0,1,0.0,[]
+Sailesh Mukil <sailesh@apache.org>,1,3,3.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dyno-queues-redis/src/main/resources/demo.properties']"
+Sailesh Mukil <smukil@netflix.com>,2,49,3.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dyno-queues-redis/src/main/resources/demo.properties']"
+David Wadden <dwadden@gmail.com>,0,1,0.0,[]
+kishorekasi <3315960+kishorekasi@users.noreply.github.com>,0,1,0.0,[]
+saurabh garg <seerugr8@gmail.com>,0,1,0.0,[]
+Raghuram Onti Srinivasan <rsrinivasan@netflix.com>,4,8,3.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dyno-queues-redis/src/main/resources/demo.properties']"
+rsrinivasan <rsrinivasan@netflix.com>,2,2,3.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dyno-queues-redis/src/main/resources/demo.properties']"
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,10,2,4.2,"['.travis.yml', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/nebula-snapshot.yml', 'dyno-queues-redis/src/main/resources/demo.properties', '.github/workflows/nebula-ci.yml']"

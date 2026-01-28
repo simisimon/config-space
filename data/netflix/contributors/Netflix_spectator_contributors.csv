@@ -1,0 +1,61 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Ruslan Meshenberg <rusik_m@yahoo.com>,0,1,0.0,[]
+Brian Harrington <brharrington@gmail.com>,516,413,6.09,"['wiki/mkdocs.yml', 'spectator-agent/src/main/resources/simplelogger.properties', 'spectator-nflx/src/main/resources/spectator.properties', '.travis.yml', 'mkdocs.yml', '.github/workflows/release.yml', '.github/dependabot.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/gradle-wrapper-validation.yml', '.github/workflows/pr.yml', 'spectator-reg-tdigest/src/main/resources/spectator-tdigest.properties', 'spectator-nflx-plugin/src/main/resources/spectator.properties', 'dependencies.properties', 'gradle.properties']"
+Build User <builds@dynaslave-opseng-95992bcb.(none)>,4,0,3.0,"['gradle.properties', 'spectator-nflx/src/main/resources/spectator.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+brharrington <brharrington@gmail.com>,257,650,5.8,"['wiki/mkdocs.yml', 'spectator-agent/src/main/resources/simplelogger.properties', 'spectator-nflx/src/main/resources/spectator.properties', '.travis.yml', 'mkdocs.yml', '.github/workflows/release.yml', '.github/dependabot.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/gradle-wrapper-validation.yml', '.github/workflows/pr.yml', 'spectator-reg-tdigest/src/main/resources/spectator-tdigest.properties', 'spectator-nflx-plugin/src/main/resources/spectator.properties', 'dependencies.properties', 'gradle.properties']"
+Daniel Muino <daniel@muino.org>,0,6,0.0,[]
+OpsEng Jenkins Builds User <builds@netflix.com>,16,0,4.25,"['spectator-nflx/src/main/resources/spectator.properties', '.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'spectator-nflx-plugin/src/main/resources/spectator.properties', 'gradle.properties']"
+Brent Pitman <bpitman@netflix.com>,0,2,0.0,[]
+Rob Spieldenner <rob.spieldenner@gmail.com>,2,1,5.0,"['spectator-nflx/src/main/resources/spectator.properties', '.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'spectator-nflx-plugin/src/main/resources/spectator.properties', 'gradle.properties']"
+elandau <elandau@yahoo.com>,0,1,0.0,[]
+Peter D. Stout <pds@netflix.com>,3,19,5.0,"['spectator-nflx/src/main/resources/spectator.properties', '.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'spectator-nflx-plugin/src/main/resources/spectator.properties', 'gradle.properties']"
+Bharat Venkat <bvenkat@netflix.com>,2,0,5.0,"['spectator-nflx/src/main/resources/spectator.properties', '.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'spectator-nflx-plugin/src/main/resources/spectator.properties', 'gradle.properties']"
+Cameron Fieber <cfieber@netflix.com>,0,2,0.0,[]
+Daniel Muino <dmuino@netflix.com>,0,1,0.0,[]
+Andrew Spyker <aspyker@netflix.com>,0,1,0.0,[]
+Patrick Strawderman <patrick@kilink.net>,0,3,0.0,[]
+Kennedy Oliveira <kennedy.oliveira@outlook.com>,0,5,0.0,[]
+Jon Schneider <jkschneider@gmail.com>,1,0,6.0,"['spectator-nflx/src/main/resources/spectator.properties', '.travis.yml', 'mkdocs.yml', 'gradle/wrapper/gradle-wrapper.properties', 'spectator-nflx-plugin/src/main/resources/spectator.properties', 'dependencies.properties']"
+Eric Wiseblatt <ewiseblatt@google.com>,1,3,6.0,"['spectator-nflx/src/main/resources/spectator.properties', '.travis.yml', 'mkdocs.yml', 'gradle/wrapper/gradle-wrapper.properties', 'spectator-nflx-plugin/src/main/resources/spectator.properties', 'dependencies.properties']"
+Peter Stout <pds@netflix.com>,0,3,0.0,[]
+ebukoski <ebukoski@netflix.com>,4,0,7.0,"['spectator-agent/src/main/resources/simplelogger.properties', 'spectator-nflx/src/main/resources/spectator.properties', '.travis.yml', 'mkdocs.yml', 'gradle/wrapper/gradle-wrapper.properties', 'spectator-nflx-plugin/src/main/resources/spectator.properties', 'dependencies.properties']"
+Lorin Hochstein <lorinh@gmail.com>,0,1,0.0,[]
+Pablo A. Delgado <pablete@gmail.com>,2,0,7.0,"['spectator-agent/src/main/resources/simplelogger.properties', 'spectator-nflx/src/main/resources/spectator.properties', '.travis.yml', 'mkdocs.yml', 'gradle/wrapper/gradle-wrapper.properties', 'spectator-nflx-plugin/src/main/resources/spectator.properties', 'dependencies.properties']"
+Daniel Muino <dmuino@users.noreply.github.com>,1,13,7.0,"['spectator-agent/src/main/resources/simplelogger.properties', 'spectator-nflx/src/main/resources/spectator.properties', '.travis.yml', 'mkdocs.yml', 'gradle/wrapper/gradle-wrapper.properties', 'spectator-nflx-plugin/src/main/resources/spectator.properties', 'dependencies.properties']"
+Matt Zimmer <zimmer.matt@gmail.com>,0,1,0.0,[]
+Matt Zimmer <zimmermatt@gmail.com>,1,2,7.0,"['spectator-agent/src/main/resources/simplelogger.properties', 'spectator-nflx/src/main/resources/spectator.properties', '.travis.yml', 'mkdocs.yml', 'gradle/wrapper/gradle-wrapper.properties', 'spectator-nflx-plugin/src/main/resources/spectator.properties', 'dependencies.properties']"
+Tanner Ratzlaff <tratzlaff@users.noreply.github.com>,0,1,0.0,[]
+Matthew Johnson <matthewj@netflix.com>,1,2,5.0,"['spectator-agent/src/main/resources/simplelogger.properties', '.travis.yml', 'mkdocs.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dependencies.properties']"
+Martin Chalupa <chalimartines@gmail.com>,1,0,5.0,"['spectator-agent/src/main/resources/simplelogger.properties', '.travis.yml', 'mkdocs.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dependencies.properties']"
+tcataldo <tcataldo@gmail.com>,0,1,0.0,[]
+Mike Smith <kerumai@users.noreply.github.com>,1,1,5.0,"['spectator-agent/src/main/resources/simplelogger.properties', '.travis.yml', 'mkdocs.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dependencies.properties']"
+Danny Thomas <DanielThomas@users.noreply.github.com>,0,9,0.0,[]
+Robert Farr <rfarrjr@gmail.com>,0,1,0.0,[]
+Justin Ryan <justin@halfempty.org>,0,1,0.0,[]
+jsjeannotte <js@jeannotte.net>,0,1,0.0,[]
+John Zhuge <jzhuge@apache.org>,1,2,6.0,"['spectator-agent/src/main/resources/simplelogger.properties', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'dependencies.properties']"
+Xiao <xiao-chen@users.noreply.github.com>,0,1,0.0,[]
+Ammar Khaku <akhaku@users.noreply.github.com>,0,1,0.0,[]
+Rob Zienert <rob@robzienert.com>,0,1,0.0,[]
+Matthew Johnson <mjjohnson33@gmail.com>,0,3,0.0,[]
+Chris Smalley <chrissmalley@me.com>,0,1,0.0,[]
+haleyw <haley@netflix.com>,0,2,0.0,[]
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,3,7,6.33,"['spectator-agent/src/main/resources/simplelogger.properties', '.travis.yml', 'mkdocs.yml', '.github/workflows/release.yml', '.github/dependabot.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'dependencies.properties']"
+peter royal <peter.royal@pobox.com>,0,1,0.0,[]
+Snow Pettersen <aickck@gmail.com>,0,1,0.0,[]
+sullis <github@seansullivan.com>,9,5,6.11,"['spectator-agent/src/main/resources/simplelogger.properties', 'mkdocs.yml', '.travis.yml', '.github/workflows/release.yml', '.github/dependabot.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/gradle-wrapper-validation.yml', '.github/workflows/pr.yml', 'dependencies.properties']"
+Kyle Anderson <kylea@netflix.com>,1,0,6.0,"['spectator-agent/src/main/resources/simplelogger.properties', 'mkdocs.yml', '.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/gradle-wrapper-validation.yml', 'dependencies.properties']"
+David Byron <82477955+dbyron-sf@users.noreply.github.com>,0,2,0.0,[]
+Neel Gopaul <neelmedhanshgopaul@gmail.com>,1,0,7.0,"['spectator-agent/src/main/resources/simplelogger.properties', 'mkdocs.yml', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'dependencies.properties']"
+Chris Larsen <clarsen@euphoriaaudio.com>,1,0,6.0,"['spectator-agent/src/main/resources/simplelogger.properties', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'dependencies.properties']"
+Jason Koch <jkoch@netflix.com>,0,1,0.0,[]
+Patrick Strawderman <pstrawderman@netflix.com>,0,25,0.0,[]
+Chris Larsen <clarsen@netflix.com>,0,3,0.0,[]
+Benjamin Fedorka <benjamin.fedorka@gmail.com>,0,1,0.0,[]
+Yeikel <email@yeikel.com>,1,0,6.0,"['spectator-agent/src/main/resources/simplelogger.properties', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'dependencies.properties']"
+mattl-netflix <63665634+mattl-netflix@users.noreply.github.com>,1,0,6.0,"['spectator-agent/src/main/resources/simplelogger.properties', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'dependencies.properties']"
+Antoine Boyer <antoineb19@gmail.com>,0,1,0.0,[]
+Rafael Carício <rcaricio@netflix.com>,0,1,0.0,[]
+ayangster <annie.s.yang16@gmail.com>,0,1,0.0,[]
+OdysseusLives <achipman@netflix.com>,1,0,6.0,"['spectator-agent/src/main/resources/simplelogger.properties', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'dependencies.properties']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,3,0,7.0,"['spectator-agent/src/main/resources/simplelogger.properties', '.github/workflows/release.yml', '.github/dependabot.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'dependencies.properties']"

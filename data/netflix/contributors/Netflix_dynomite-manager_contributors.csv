@@ -1,0 +1,21 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+ipapapa <iduckhd@hotmail.com>,2,17,3.0,"['.travis.yml', 'conf/dynomitemanager.properties', 'gradle/wrapper/gradle-wrapper.properties', 'dynomitemanager/src/main/resources/dynomitemanager.properties']"
+Diego Pacheco <diego.pachecoit@gmail.com>,1,3,3.0,"['.travis.yml', 'conf/dynomitemanager.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Jon Schneider <jkschneider@gmail.com>,6,1,3.0,"['.travis.yml', 'conf/dynomitemanager.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Ioannis Papapanagiotou <iduckhd@hotmail.com>,25,114,3.84,"['dynomitemanager-web/src/main/resources/application.properties', '.travis.yml', 'conf/dynomitemanager.properties', 'gradle/wrapper/gradle-wrapper.properties', 'conf/redis.conf', 'dynomitemanager-web/src/main/resources/laptop.properties', 'dynomitemanager/src/main/resources/log4j.properties', 'dynomitemanager/src/main/resources/dynomitemanager.properties']"
+Rob Spieldenner <rspieldenner@netflix.com>,2,2,3.0,"['.travis.yml', 'conf/dynomitemanager.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+diegopacheco <diego.pacheco.it@gmail.com>,3,36,4.0,"['.travis.yml', 'conf/dynomitemanager.properties', 'gradle/wrapper/gradle-wrapper.properties', 'dynomitemanager/src/main/resources/log4j.properties', 'dynomitemanager/src/main/resources/dynomitemanager.properties']"
+Andrew Spyker <aspyker@nfml-aspyker0wg.corp.netflix.com>,1,0,4.0,"['.travis.yml', 'dynomitemanager/src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'dynomitemanager/src/main/resources/dynomitemanager.properties']"
+akbarahmed <akbar501@gmail.com>,42,39,4.0,"['.travis.yml', 'dynomitemanager/src/main/resources/log4j.properties', 'gradle/wrapper/gradle-wrapper.properties', 'dynomitemanager/src/main/resources/dynomitemanager.properties']"
+Aidan Church <achurch@pandora.com>,0,1,0.0,[]
+Shailesh Birari <sbirari@netflix.com>,2,10,4.0,"['.travis.yml', 'dynomitemanager-web/src/main/resources/laptop.properties', 'dynomitemanager-web/src/main/resources/application.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+ipapapanagiotou <ipapapanagiotou@lgul-ipapapanagiotou>,0,1,0.0,[]
+DenysNahurnyi <dnahurnyi@gmail.com>,0,1,0.0,[]
+Sailesh Mukil <sailesh@apache.org>,4,15,4.0,"['.travis.yml', 'dynomitemanager-web/src/main/resources/laptop.properties', 'dynomitemanager-web/src/main/resources/application.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Sailesh Mukil <smukil@netflix.com>,2,10,4.0,"['.travis.yml', 'dynomitemanager-web/src/main/resources/laptop.properties', 'dynomitemanager-web/src/main/resources/application.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Steve Hill <sghill.dev@gmail.com>,0,2,0.0,[]
+aphadke <aphadke@netflix.com>,0,2,0.0,[]
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,9,3,5.33,"['dynomitemanager-web/src/main/resources/application.properties', '.travis.yml', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dynomitemanager-web/src/main/resources/laptop.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml']"
+Anuj Phadke <aphadke@netflix.com>,0,1,0.0,[]
+Aubrey Chipman <achipman@netflix.com>,2,1,6.0,"['dynomitemanager-web/src/main/resources/application.properties', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dynomitemanager-web/src/main/resources/laptop.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml']"
+OdysseusLives <achipman@netflix.com>,1,0,6.0,"['dynomitemanager-web/src/main/resources/application.properties', '.github/workflows/nebula-publish.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dynomitemanager-web/src/main/resources/laptop.properties', '.github/workflows/nebula-snapshot.yml', '.github/workflows/nebula-ci.yml']"

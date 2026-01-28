@@ -1,0 +1,59 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Greg Orzell <gorzell@gmail.com>,15,117,2.0,"['servo-core/pom.xml', 'servo-cloudwatch/pom.xml', 'pom.xml', 'gradle/wrapper/gradle-wrapper.properties']"
+Brian Harrington <brharrington@gmail.com>,47,286,2.72,"['pom.xml', 'servo-atlas/gradle.properties', 'servo-core/pom.xml', '.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'servo-cloudwatch/pom.xml', 'dependencies.properties', 'gradle.properties']"
+brharrington <brharrington@gmail.com>,28,140,3.46,"['pom.xml', 'servo-atlas/gradle.properties', 'servo-core/pom.xml', '.travis.yml', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', 'servo-cloudwatch/pom.xml', '.github/workflows/pr.yml', 'dependencies.properties', 'gradle.properties']"
+Jordan Zimmerman <jordan@jordanzimmerman.com>,8,2,3.0,"['servo-core/pom.xml', 'servo-cloudwatch/pom.xml', 'pom.xml']"
+Justin Ryan <jryan@netflix.com>,11,44,1.45,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Greg Orzell <gorzell@puck.local>,0,2,0.0,[]
+Brian Harrington <brharrington@lgml-bharrington.netflix.com>,0,1,0.0,[]
+Justin Ryan <justin@halfempty.org>,0,2,0.0,[]
+samhendley <shendley@greenenergycorp.com>,0,8,0.0,[]
+Greg Orzell <gorzell@sumologic.com>,1,3,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Udai Gupta <mailtoud@gmail.com>,0,6,0.0,[]
+Daniel Muino <dmuino@netflix.com>,22,223,2.05,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'servo-atlas/gradle.properties']"
+builds <builds@dynaslave-5921c300.(none)>,3,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+builds <builds@dynaslave-d3c2398a.(none)>,15,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Daniel Muino <daniel@muino.org>,7,46,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+builds <builds@dynaslave-55c2390c.(none)>,2,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+builds <builds@dynaslave-a43b7cfd.(none)>,4,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Jay Zarfoss <jzarfoss@netflix.com>,0,2,0.0,[]
+Bob T Builder <builds@netflix.com>,67,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+KelleyStover <kelleystover@yahoo.com>,1,31,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+katzseth22202 <katzseth22202@gmail.com>,0,2,0.0,[]
+Chris Fregly <chris@fregly.com>,0,2,0.0,[]
+Brent Pitman <bpitman@netflix.com>,0,3,0.0,[]
+chris grzegorczyk <grze@eucalyptus.com>,0,1,0.0,[]
+Brandon Weaver <brandonrobertweaver@gmail.com>,1,2,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Vitaliy Morarian <vmorarian@gmail.com>,0,1,0.0,[]
+Ben Fagin <blouis@unquietcode.com>,0,1,0.0,[]
+root <eduardoraupp@eduardoruapp.com>,0,3,0.0,[]
+Ryan Rupp <ryan.rupp@jda.com>,0,3,0.0,[]
+Build User <builds@dynaslave-opseng-d3743e8f.(none)>,8,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+tkornai <tamas.kornai@prezi.com>,1,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Build User <builds@dynaslave-opseng-95992bcb.(none)>,2,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Daniel Muino <dmuino@gmail.com>,6,23,3.5,"['servo-atlas/gradle.properties', '.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dependencies.properties', 'gradle.properties']"
+OpsEng Jenkins Builds User <builds@netflix.com>,4,0,2.0,"['gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Matthew Johnson <matthewj@netflix.com>,0,10,0.0,[]
+Rob Spieldenner <rspieldenner@netflix.com>,1,1,3.0,"['.travis.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Adrian Cole <adrian.f.cole@gmail.com>,0,1,0.0,[]
+Premysl Kafka <kafka.premysl@gmail.com>,0,1,0.0,[]
+Stevo Slavic <sslavic@gmail.com>,0,1,0.0,[]
+Premysl Kafka <premysl.kafka@hp.com>,0,2,0.0,[]
+shendley <sam.hendley@sensus.com>,0,3,0.0,[]
+Conor Hennessy <conor.hennessy@number26.de>,0,1,0.0,[]
+Andrew Spyker <aspyker@netflix.com>,0,1,0.0,[]
+Matt Nelson <matt.nelson@cerner.com>,0,3,0.0,[]
+Robert Roeser <rroeser@netflix.com>,0,3,0.0,[]
+zhuangyongyao <andyzyy@gmail.com>,0,1,0.0,[]
+Daniel Muino <dmuino@users.noreply.github.com>,9,21,5.0,"['servo-atlas/gradle.properties', '.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dependencies.properties', 'gradle.properties']"
+Jon Schneider <jkschneider@gmail.com>,1,0,5.0,"['servo-atlas/gradle.properties', '.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'dependencies.properties', 'gradle.properties']"
+Pavel Polivka <polivka.pavel@gmail.com>,0,2,0.0,[]
+Vadim Meleshuk <vadim@netflix.com>,0,1,0.0,[]
+Christian Romming <christian@etleap.com>,0,1,0.0,[]
+evernat <evernat@free.fr>,0,1,0.0,[]
+Ravi Kancherla <ravikancherla@users.noreply.github.com>,0,1,0.0,[]
+joshgord <joshgord@gmail.com>,0,1,0.0,[]
+Jonathan Schneider <jkschneider@gmail.com>,0,1,0.0,[]
+sullis <github@seansullivan.com>,2,0,7.0,"['servo-atlas/gradle.properties', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'gradle.properties', 'dependencies.properties']"
+Yeikel <email@yeikel.com>,1,0,7.0,"['servo-atlas/gradle.properties', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'gradle.properties', 'dependencies.properties']"
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,3,0,7.0,"['servo-atlas/gradle.properties', '.github/workflows/release.yml', '.github/workflows/snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', '.github/workflows/pr.yml', 'gradle.properties', 'dependencies.properties']"
