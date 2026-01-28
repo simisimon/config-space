@@ -50,13 +50,20 @@ def create_network_from_path(repo_path: str) -> Network:
     return network
 
 
+def filtered_pairs(artifact):
+    return [
+        pair for pair in artifact.get_pairs()
+        if pair["option"] != "file"
+    ]
+
+
 def extract_config_data(network: Network) -> Dict:
     """Extract configuration data from configuration network."""
     artifacts = network.get_nodes(node_type=ArtifactNode)
 
     config_file_data = []
     for artifact in artifacts:
-        pairs = [pair for pair in artifact.get_pairs() if pair["option"] != "file"]
+        pairs = filtered_pairs(artifact)
 
         config_file_data.append({
             "file_path": artifact.rel_file_path,
@@ -66,7 +73,7 @@ def extract_config_data(network: Network) -> Dict:
         })
 
     concepts = set(artifact.concept_name for artifact in artifacts)
-    total_options = sum(len(artifact.get_pairs()) for artifact in artifacts)
+    total_options = sum(len(filtered_pairs(artifact)) for artifact in artifacts)
 
     links = network.links
     link_data = [{
@@ -82,10 +89,23 @@ def extract_config_data(network: Network) -> Dict:
         "target_concept": link.artifact_b.concept_name,
     } for link in links]
 
+    link_data.sort(
+        key=lambda x: (
+            x["source_concept"],
+            x["source_artifact"],
+            str(x["source_option"]),
+            x["target_concept"],
+            x["target_artifact"],
+            str(x["target_option"]),
+        )
+    )
+
     return {
         "links": len(network.links),
         "link_data": link_data,
         "concepts": list(concepts),
+        "concept_count": len(concepts),
+        "artifact_count": len(artifacts),
         "config_file_data": config_file_data,
         "total_options": total_options,
     }
@@ -120,7 +140,7 @@ def analyze_commit(repo_path: str, project_name: str, commit_sha: str) -> Dict:
 
 def process_project(project_url: str, project_name: str, commit_sha: str, output_dir: str) -> None:
     """Clone repo, checkout commit, and extract config data."""
-    output_file = f"{output_dir}/{project_name}_commit.json"
+    output_file = f"{output_dir}/{project_name}_latest_commit.json"
 
     if os.path.exists(output_file):
         logger.info(f"Output file {output_file} already exists. Skipping {project_name}.")
