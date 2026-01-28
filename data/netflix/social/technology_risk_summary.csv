@@ -1,0 +1,31 @@
+technology,total_projects,orphaned_count,endangered_count,at_risk_count,orphaned_rate,endangered_rate,at_risk_rate
+github,47,4,0,4,0.0851,0.0,0.0851
+bower,4,2,0,2,0.5,0.0,0.5
+dependabot,11,2,0,2,0.1818,0.0,0.1818
+nodejs,11,2,0,2,0.1818,0.0,0.1818
+redis,1,1,0,1,1.0,0.0,1.0
+docker,9,1,0,1,0.1111,0.0,0.1111
+travis,33,0,0,0,0.0,0.0,0.0
+mkdocs,5,0,0,0,0.0,0.0,0.0
+log4j,11,0,0,0,0.0,0.0,0.0
+codecov,3,0,0,0,0.0,0.0,0.0
+maven,2,0,0,0,0.0,0.0,0.0
+cargo,1,0,0,0,0.0,0.0,0.0
+gradle wrapper,31,0,0,0,0.0,0.0,0.0
+gradle,20,0,0,0,0.0,0.0,0.0
+cross,1,0,0,0,0.0,0.0,0.0
+devcontainer,1,0,0,0,0.0,0.0,0.0
+tsconfig,6,0,0,0,0.0,0.0,0.0
+spring,7,0,0,0,0.0,0.0,0.0
+github issues,1,0,0,0,0.0,0.0,0.0
+kafka,1,0,0,0,0.0,0.0,0.0
+tox,5,0,0,0,0.0,0.0,0.0
+pre-commit,3,0,0,0,0.0,0.0,0.0
+docker compose,4,0,0,0,0.0,0.0,0.0
+mypy,1,0,0,0,0.0,0.0,0.0
+readthedocs,1,0,0,0,0.0,0.0,0.0
+poetry,2,0,0,0,0.0,0.0,0.0
+eslint,1,0,0,0,0.0,0.0,0.0
+cypress,2,0,0,0,0.0,0.0,0.0
+appveyor,1,0,0,0,0.0,0.0,0.0
+deno,2,0,0,0,0.0,0.0,0.0

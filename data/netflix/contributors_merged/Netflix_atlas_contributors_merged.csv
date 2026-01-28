@@ -1,0 +1,31 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Brian Harrington <brharrington@gmail.com>,"['Brian Harrington <brharrington@gmail.com>', 'brharrington <brharrington@gmail.com>']",403,2270,0.002244668911335578,"[('.travis.yml', 2), ('.github/workflows/release.yml', 2), ('.github/dependabot.yml', 2), ('.github/workflows/snapshot.yml', 2), ('project/build.properties', 2), ('.github/workflows/pr.yml', 2)]"
+1,sbailliez <sbailliez@gmail.com>,['sbailliez <sbailliez@gmail.com>'],0,1,0.0,[]
+2,Matthew Johnson <matthewj@netflix.com>,"['Matthew Johnson <matthewj@netflix.com>', 'Matthew Johnson <mjjohnson33@gmail.com>']",7,5,0.4166666666666667,"[('.travis.yml', 2), ('project/build.properties', 2), ('.github/workflows/release.yml', 1), ('.github/workflows/snapshot.yml', 1), ('.github/workflows/pr.yml', 1)]"
+3,OpsEng Jenkins Builds User <builds@netflix.com>,['OpsEng Jenkins Builds User <builds@netflix.com>'],0,2,0.0,[]
+4,Mat Schaffer <mat@schaffer.me>,['Mat Schaffer <mat@schaffer.me>'],0,1,0.0,[]
+5,roman.kagan <roman.kagan@lge.com>,['roman.kagan <roman.kagan@lge.com>'],0,1,0.0,[]
+6,Rob Spieldenner <rob.spieldenner@gmail.com>,['Rob Spieldenner <rob.spieldenner@gmail.com>'],1,0,2.0,"[('.travis.yml', 1), ('project/build.properties', 1)]"
+7,Andrew Spyker <aspyker@netflix.com>,['Andrew Spyker <aspyker@netflix.com>'],0,1,0.0,[]
+8,Nadav <nadavc@users.noreply.github.com>,['Nadav <nadavc@users.noreply.github.com>'],0,1,0.0,[]
+9,John Tregoning <jtregoning@netflix.com>,['John Tregoning <jtregoning@netflix.com>'],0,1,0.0,[]
+10,Jon Schneider <jkschneider@gmail.com>,['Jon Schneider <jkschneider@gmail.com>'],1,0,2.0,"[('.travis.yml', 1), ('project/build.properties', 1)]"
+11,Michael Graff <explorer@flame.org>,"['Michael Graff <explorer@flame.org>', 'Michael Graff <mgraff@netflix.com>', 'Michael Graff <explorer-github@flame.org>']",1,10,0.18181818181818182,"[('.travis.yml', 1), ('project/build.properties', 1)]"
+12,Scott Vachalek <svachalek@gmail.com>,['Scott Vachalek <svachalek@gmail.com>'],0,1,0.0,[]
+13,Narayanan Arunachalam <narayanan-arunachalam@users.noreply.github.com>,['Narayanan Arunachalam <narayanan-arunachalam@users.noreply.github.com>'],0,1,0.0,[]
+14,Matt Zimmer <zimmermatt@gmail.com>,"['Matt Zimmer <zimmermatt@gmail.com>', 'Matt Zimmer <zimmermatt@netflix.com>']",18,13,0.06451612903225806,"[('.travis.yml', 2), ('project/build.properties', 2)]"
+15,ruchirj <ruchir.jha@gmail.com>,['ruchirj <ruchir.jha@gmail.com>'],0,3,0.0,[]
+16,Daniel Muino <dmuino@users.noreply.github.com>,['Daniel Muino <dmuino@users.noreply.github.com>'],2,5,0.2857142857142857,"[('.travis.yml', 1), ('project/build.properties', 1)]"
+17,davecromberge <davecromberge@gmail.com>,['davecromberge <davecromberge@gmail.com>'],0,1,0.0,[]
+18,Chris Jansen <janstenpickle@users.noreply.github.com>,['Chris Jansen <janstenpickle@users.noreply.github.com>'],0,1,0.0,[]
+19,Nathan Fisher <mail@nathfisher.com>,['Nathan Fisher <mail@nathfisher.com>'],0,1,0.0,[]
+20,david-cromberge <48553133+david-cromberge@users.noreply.github.com>,['david-cromberge <48553133+david-cromberge@users.noreply.github.com>'],0,1,0.0,[]
+21,Tim J <jttexe@gmail.com>,"['Tim J <jttexe@gmail.com>', 'Tim J <tjiang@netflix.com>', 'Tim Jiang <tjiang@netflix.com>']",17,20,0.13513513513513514,"[('.travis.yml', 1), ('.github/workflows/release.yml', 1), ('.github/workflows/snapshot.yml', 1), ('project/build.properties', 1), ('.github/workflows/pr.yml', 1)]"
+22,Chris Larsen <clarsen@euphoriaaudio.com>,"['Chris Larsen <clarsen@euphoriaaudio.com>', 'Chris Larsen <clarsen@netflix.com>']",0,14,0.0,[]
+23,lavanyachennupati <lavanya4chennupati@gmail.com>,['lavanyachennupati <lavanya4chennupati@gmail.com>'],1,0,4.0,"[('.github/workflows/pr.yml', 1), ('.github/workflows/release.yml', 1), ('.github/workflows/snapshot.yml', 1), ('project/build.properties', 1)]"
+24,sullis <github@seansullivan.com>,['sullis <github@seansullivan.com>'],10,1,0.36363636363636365,"[('.github/workflows/pr.yml', 1), ('.github/workflows/release.yml', 1), ('.github/workflows/snapshot.yml', 1), ('project/build.properties', 1)]"
+25,Yingwu Zhao <yingwuzhao@gmail.com>,['Yingwu Zhao <yingwuzhao@gmail.com>'],0,1,0.0,[]
+26,PJ Fanning <pjfanning@users.noreply.github.com>,['PJ Fanning <pjfanning@users.noreply.github.com>'],0,1,0.0,[]
+27,Giancarlo Rocha <giancarloiff@gmail.com>,['Giancarlo Rocha <giancarloiff@gmail.com>'],0,1,0.0,[]
+28,Jonas Steinberg <jonassteinberg1@gmail.com>,['Jonas Steinberg <jonassteinberg1@gmail.com>'],0,1,0.0,[]
+29,Aaron Addleman <aaronaddleman@gmail.com>,['Aaron Addleman <aaronaddleman@gmail.com>'],0,1,0.0,[]

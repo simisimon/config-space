@@ -1,0 +1,13 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Zhi Li <zli@netflix.com>,['Zhi Li <zli@netflix.com>'],5,226,0.025974025974025976,"[('tox.ini', 1), ('.travis.yml', 1), ('resource/dataset/VQEGHD3_dataset_raw.json', 1), ('resource/dataset/NFLX_dataset_public_raw.json', 1), ('resource/dataset/NFLX_dataset_public_raw_last4outliers.json', 1), ('resource/dataset/lukas_pc_dataset.json', 1)]"
+1,Andrew Spyker <awspyker@gmail.com>,['Andrew Spyker <awspyker@gmail.com>'],0,1,0.0,[]
+2,Werner Robitza <werner.robitza@gmail.com>,['Werner Robitza <werner.robitza@gmail.com>'],1,11,0.5,"[('tox.ini', 1), ('.travis.yml', 1), ('resource/dataset/VQEGHD3_dataset_raw.json', 1), ('resource/dataset/NFLX_dataset_public_raw.json', 1), ('resource/dataset/NFLX_dataset_public_raw_last4outliers.json', 1), ('resource/dataset/lukas_pc_dataset.json', 1)]"
+3,Christos Bampis <christosb@netflix.com>,"['Christos Bampis <christosb@netflix.com>', 'Christos Bampis <cbampis@gmail.com>']",0,6,0.0,[]
+4,Silvio Borer <silvio.borer@rohde-schwarz.com>,['Silvio Borer <silvio.borer@rohde-schwarz.com>'],0,5,0.0,[]
+5,Zoran Simic <zsimic@netflix.com>,['Zoran Simic <zsimic@netflix.com>'],7,3,0.2,"[('.travis.yml', 1), ('tox.ini', 1)]"
+6,krasuluk <48132096+krasuluk@users.noreply.github.com>,['krasuluk <48132096+krasuluk@users.noreply.github.com>'],0,6,0.0,[]
+7,Steve Hill <sghill.dev@gmail.com>,['Steve Hill <sghill.dev@gmail.com>'],0,2,0.0,[]
+8,Lukas Krasula <lkrasula@netflix.com>,['Lukas Krasula <lkrasula@netflix.com>'],0,18,0.0,[]
+9,perrin-af <67781621+perrin-af@users.noreply.github.com>,['perrin-af <67781621+perrin-af@users.noreply.github.com>'],0,1,0.0,[]
+10,Apoorva Srivastava <55649629+pi-rate14@users.noreply.github.com>,['Apoorva Srivastava <55649629+pi-rate14@users.noreply.github.com>'],0,1,0.0,[]
+11,Jakub Nawała <jakub.tadeusz.nawala@gmail.com>,['Jakub Nawała <jakub.tadeusz.nawala@gmail.com>'],0,1,0.0,[]

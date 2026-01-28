@@ -1,0 +1,13 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Daniel Muino <dmuino@netflix.com>,"['Daniel Muino <dmuino@netflix.com>', 'Daniel Muino <dmuino@users.noreply.github.com>']",6,75,0.024691358024691357,"[('.travis.yml', 2), ('codecov.yml', 2)]"
+1,troshko111 <931973+troshko111@users.noreply.github.com>,['troshko111 <931973+troshko111@users.noreply.github.com>'],0,6,0.0,[]
+2,brharrington <brharrington@gmail.com>,['brharrington <brharrington@gmail.com>'],1,0,2.0,"[('.travis.yml', 1), ('codecov.yml', 1)]"
+3,Jason Cooke <Jason-Cooke@users.noreply.github.com>,['Jason Cooke <Jason-Cooke@users.noreply.github.com>'],0,1,0.0,[]
+4,Matt Zimmer <zimmermatt@netflix.com>,['Matt Zimmer <zimmermatt@netflix.com>'],0,1,0.0,[]
+5,James Mulcahy <jmulcahy@netflix.com>,['James Mulcahy <jmulcahy@netflix.com>'],0,3,0.0,[]
+6,David Vroom Duke <dduke@netflix.com>,['David Vroom Duke <dduke@netflix.com>'],0,2,0.0,[]
+7,Matthew Johnson <mjjohnson33@gmail.com>,"['Matthew Johnson <mjjohnson33@gmail.com>', 'Matthew Johnson <matthewj@netflix.com>']",7,15,0.045454545454545456,"[('.github/workflows/build.yml', 1)]"
+8,Can Cecen <cecen.ycan@gmail.com>,['Can Cecen <cecen.ycan@gmail.com>'],0,1,0.0,[]
+9,Everett Badeaux <everettc1810@gmail.com>,['Everett Badeaux <everettc1810@gmail.com>'],2,11,0.07692307692307693,"[('.github/workflows/build.yml', 1)]"
+10,Ben Plotnick <ben.plotnick@gmail.com>,['Ben Plotnick <ben.plotnick@gmail.com>'],0,1,0.0,[]
+11,Anthony Vardaro <me@anthonyvardaro.com>,['Anthony Vardaro <me@anthonyvardaro.com>'],0,1,0.0,[]

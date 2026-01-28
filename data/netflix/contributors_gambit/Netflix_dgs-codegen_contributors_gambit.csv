@@ -1,0 +1,114 @@
+Original Author,Dealiased ID
+Kavitha Srinivasan <ksrinivasan@netflix.com>,0
+srinivasankavitha <41588701+srinivasankavitha@users.noreply.github.com>,0
+Martin Chalupa <mchalupa@netflix.com>,1
+Paul Bakker <paul.bakker.nl@gmail.com>,2
+Patrick Strawderman <patrick@kilink.net>,3
+Paul Bakker <pbakker@netflix.com>,2
+Marcel Overdijk <marceloverdijk@gmail.com>,4
+Kavitha Srinivasan <41588701+srinivasankavitha@users.noreply.github.com>,0
+Marcel Overdijk <marcel.overdijk.ext@eurocontrol.int>,4
+Patrick Strawderman <pstrawderman@netflix.com>,3
+Bjoern Hiller <bjoern.hiller@gmail.com>,5
+zappolowski <zappolowski@users.noreply.github.com>,6
+Bernardo Gomez Palacio <bernardog@netflix.com>,7
+shunsuke-maeda <duck8823@gmail.com>,8
+Bernardo Gomez Palacio <bernardo.gomezpalacio@gmail.com>,7
+gradle-update-robot <gradle-update-robot@regolo.cc>,9
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,10
+Alexander Gee <bostwickenator@gmail.com>,11
+Iuliia Sobolevska <sobolevska@indeed.com>,12
+Lucas Torri <ltorri@wayfair.com>,13
+Richard J Cresswell <richard.j.cresswell@systolic.com>,14
+nick <nick@svdev.org>,15
+Richard J Cresswell <richardcresswell@users.noreply.github.com>,14
+Richie Cresswell <82471951+richardcresswell@users.noreply.github.com>,14
+Andrew Greene <agreene@netflix.com>,16
+adones.cunha <adones.cunha@glassdoor.com>,17
+Jens Schulze <jenschude@gmail.com>,18
+Breland 🌈💃 Miley <bmiley@netflix.com>,19
+Jonathan Lagneaux <lagneaux.j@gmail.com>,20
+zanonena <82958429+zanonena@users.noreply.github.com>,21
+ksrinivasan <ksrinivasan@netflix.com>,0
+Nicolás Zanone <nzanone@wabidev.com>,22
+Nick <nick@svdev.org>,15
+Nick Papirniy <nikolaspapirniywork@gmail.com>,23
+Oskar Kjellin <oskar.kjellin@gmail.com>,24
+Lars Grefer <github@larsgrefer.de>,25
+Matthew L Daniel <md@stoi.cc>,26
+Will Emmanuel <wemmanuel@netflix.com>,27
+sullis <github@seansullivan.com>,28
+Matt Bossenbroek <mbossenbroek@netflix.com>,29
+lakshmisunid <87725994+lakshmisunid@users.noreply.github.com>,30
+kuanghc1 <kuanghc1@lenovo.com>,31
+zhaotao1 <zhaotao1@lenovo.com>,32
+Daniel Hoffmann <hoffmann.daniel.1993@gmail.com>,33
+Danny Thomas <dannyt@netflix.com>,34
+Yonatan Graber <yonatan.graber@gmail.com>,35
+manymotes <motesmass@gmail.com>,36
+Eduard Wagner <eduard.bissendorf@gmail.com>,37
+Fredrik Tõnisson-Bystam <fredrik.bystam@hedvig.com>,38
+Lakshmi Vijayachandran <lakshmi_vijayachandran@intuit.com>,39
+Fredrik Tõnisson-Bystam <fredrik.bystam@gmail.com>,38
+Anshul Sharma <anshulsharma1208@gmail.com>,40
+shapandashore <shapan_dashore@intuit.com>,41
+shapan dashore <shapandashore@gmail.com>,41
+shapan dashore <shapan1@users.noreply.github.com>,41
+James Baxley <james@carbonhealth.com>,42
+Lillian <104868839+lillianlouie@users.noreply.github.com>,43
+Irene Díaz Valenzuela <irene.diazvalenzuela@manomano.com>,44
+Lillian <lillian_louie@outlook.com>,43
+Andrew Kerr <andrew.kerr@eblock.ca>,45
+Donnie McMahan <mcmahanjd@pella.com>,46
+jdmcmahan <jmcmaha1@gmail.com>,47
+Patrick Grosslicht <patrick@grosslicht.com>,48
+Grace Ding <gding@Graces-MacBook-Pro.local>,49
+Grace Ding <graceding9@gmail.com>,49
+Carl-Philipp Harmant <cp.harmant@gmail.com>,50
+Cole Turner <cole@netflix.com>,51
+Cole Turner <turner.cole@gmail.com>,51
+beep-boop-boop <ivanbar3330@gmail.com>,52
+Ivan Barinskiy <ivan.barinskiy@genomicsplc.com>,53
+Shalima Sidhik <shalima_sidhik@intuit.com>,54
+lvijayachan <lakshmi_vijayachandran@intuit.com>,39
+Clayton Walker <cwalker@sofi.org>,55
+larsatzinger <latzinger@immomio.de>,56
+Josef Cech <josef.cech@productboard.com>,57
+Clayton Walker <clayton.m.walker@gmail.com>,55
+Igor Domagała <259741@student.pwr.edu.pl>,58
+spellew <spellew1298@gmail.com>,59
+Alexander Hofmann <alexhofmann@gmail.com>,60
+Eduard Wagner <eduard.wagner@senacor.com>,37
+Alexander Hofmann <alexander.hofmann@zuehlke.com>,60
+Alexander Münch <theHacker@users.noreply.github.com>,61
+Fabian Fritzsche <salzian.dev@gmail.com>,62
+Damian Wilkolek <dwilkolek@protonmail.com>,63
+krutikavk <45143544+krutikavk@users.noreply.github.com>,64
+Damian Wilkołek <dwilkolek@users.noreply.github.com>,63
+Ricardo Veguilla <rveguilla@netflix.com>,65
+Emily Dobervich <240689+Emily@users.noreply.github.com>,66
+pbakker <pbakker@netflix.com>,2
+Christopher Gustafson <christopher.k.gustafson@gmail.com>,67
+Samuel Gagarin <66745577+Lavmee@users.noreply.github.com>,68
+$(git --no-pager log --format=format:'%an' -n 1) <$(git --no-pager log --format=format:'%ae' -n 1)>,69
+Iuliia Sobolevska <juliasobolevska@gmail.com>,12
+Iuliia Sobolevska <isobolevska@netflix.com>,12
+Kevin Wang <zwang@netflix.com>,70
+Joshua Gleitze <joshua.gleitze@goto.com>,71
+iparadiso <111398937+iparadiso@users.noreply.github.com>,72
+Asi Bross <11426802+asibross@users.noreply.github.com>,73
+Jessie Jacobs <jjaco@netflix.com>,74
+jjacobs44 <89410776+jjacobs44@users.noreply.github.com>,75
+Kevin Wang <2177991+kzwang@users.noreply.github.com>,70
+Jens Künemund <jens.kuenemund@senacor.com>,76
+Karthik Muthupalaniappan <karthik.swaminathan@gmail.com>,77
+Aubrey Chipman <achipman@netflix.com>,78
+OdysseusLives <achipman@netflix.com>,78
+Steve Riesenberg <sriesenberg@netflix.com>,79
+Steve Riesenberg <5248162+sjohnr@users.noreply.github.com>,79
+Chase Naples <Cnaples79@gmail.com>,80
+Jiho Lee <jiho.lee17@gmail.com>,81
+Jiho Lee <52715532+jiholee17@users.noreply.github.com>,81
+Sasha Joseph <sjoseph@netflix.com>,82
+Vitalii Tiutiunnyk <vitaliy.tyutyunnik@gmail.com>,83
+Rahul Somasunderam <rahul.som@gmail.com>,84

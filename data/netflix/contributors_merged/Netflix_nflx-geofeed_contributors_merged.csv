@@ -1,0 +1,17 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Chandrasekar Ramachandran <110967654+chandrrn@users.noreply.github.com>,['Chandrasekar Ramachandran <110967654+chandrrn@users.noreply.github.com>'],0,22,0.0,[]
+1,Josh Sakofsky <16327028+jsakofsky@users.noreply.github.com>,"['Josh Sakofsky <16327028+jsakofsky@users.noreply.github.com>', 'Josh Sakofsky <jsakofsky@netflix.com>']",1,9,0.1,"[('.github/workflows/check-code.yml', 1)]"
+2,Joelle Maslak <jmaslak@netflix.com>,"['Joelle Maslak <jmaslak@netflix.com>', 'Joelle Maslak <jmaslak@antelope.net>']",2,36,0.02631578947368421,"[('.github/workflows/check-code.yml', 1)]"
+3,phil2906 <phillu@netflix.com>,"['phil2906 <phillu@netflix.com>', 'phil2906 <134441413+phil2906@users.noreply.github.com>', 'phillu <phillu@netflix.com>']",0,11,0.0,[]
+4,Victor Boteanu <vboteanu@netflix.com>,['Victor Boteanu <vboteanu@netflix.com>'],0,2,0.0,[]
+5,vboteanu <159548557+vboteanu@users.noreply.github.com>,['vboteanu <159548557+vboteanu@users.noreply.github.com>'],0,2,0.0,[]
+6,evennegues <160747056+evennegues@users.noreply.github.com>,['evennegues <160747056+evennegues@users.noreply.github.com>'],0,3,0.0,[]
+7,Krishna Ramabhadran <kramabhadran@netflix.com>,"['Krishna Ramabhadran <kramabhadran@netflix.com>', 'krishna-ramabhadran <krishnenduar@hotmail.com>']",0,9,0.0,[]
+8,raj <raj@netflix.com>,['raj <raj@netflix.com>'],0,1,0.0,[]
+9,Walter <wmileo@netflix.com>,['Walter <wmileo@netflix.com>'],0,1,0.0,[]
+10,wdmileo <waltermileo@gmail.com>,['wdmileo <waltermileo@gmail.com>'],0,2,0.0,[]
+11,Matthew Ritter <mritter@netflix.com>,['Matthew Ritter <mritter@netflix.com>'],0,4,0.0,[]
+12,mritter2906 <126605268+mritter2906@users.noreply.github.com>,['mritter2906 <126605268+mritter2906@users.noreply.github.com>'],0,2,0.0,[]
+13,Cblakey <courtbboyd21@yahoo.com>,['Cblakey <courtbboyd21@yahoo.com>'],0,3,0.0,[]
+14,Preethi Rajagopalan <prajagopalan@netflix.com>,"['Preethi Rajagopalan <prajagopalan@netflix.com>', 'preethinetflix <prajagopalan@netflix.com>']",0,8,0.0,[]
+15,Muddasir Khan <mechkhans@gmail.com>,"['Muddasir Khan <mechkhans@gmail.com>', 'Muddasir Khan <76821010+mechkhans@users.noreply.github.com>']",0,2,0.0,[]

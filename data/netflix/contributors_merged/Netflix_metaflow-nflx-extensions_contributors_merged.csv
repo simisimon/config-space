@@ -1,0 +1,7 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Romain Cledat <rcledat@netflix.com>,['Romain Cledat <rcledat@netflix.com>'],2,34,0.08333333333333333,"[('.github/workflows/python-publish.yml', 1), ('.pre-commit-config.yaml', 1), ('dev-env.yml', 1)]"
+1,Romain <romain-intel@users.noreply.github.com>,['Romain <romain-intel@users.noreply.github.com>'],4,32,0.08333333333333333,"[('.github/workflows/python-publish.yml', 1), ('.pre-commit-config.yaml', 1), ('dev-env.yml', 1)]"
+2,Shashank Srikanth <s.shashank2401@gmail.com>,['Shashank Srikanth <s.shashank2401@gmail.com>'],0,1,0.0,[]
+3,maja milinkovic <38793515+majamil16@users.noreply.github.com>,['maja milinkovic <38793515+majamil16@users.noreply.github.com>'],0,1,0.0,[]
+4,ilian <github@vogels.dev>,['ilian <github@vogels.dev>'],0,1,0.0,[]
+5,LamTrinh.Dev <me@lamtrinh.dev>,['LamTrinh.Dev <me@lamtrinh.dev>'],0,1,0.0,[]

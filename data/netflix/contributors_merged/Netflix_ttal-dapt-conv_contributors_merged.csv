@@ -1,0 +1,2 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Florian Schleich <fschleich@netflix.com>,['Florian Schleich <fschleich@netflix.com>'],2,0,1.0,"[('package.json', 1), ('package-lock.json', 1)]"

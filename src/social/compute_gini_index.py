@@ -251,7 +251,8 @@ def main():
         '--input',
         type=str,
         required=True,
-        help='Path to CSV file or directory containing contributor data'
+        help='Name of the input directory (e.g., "netflix") under ../../data/, '
+             'or a direct path to a CSV file or directory'
     )
     parser.add_argument(
         '--column',
@@ -266,14 +267,14 @@ def main():
     parser.add_argument(
         '--output',
         type=str,
-        default='../../data/social/gini_results.csv',
-        help='Output CSV file for batch results (default: ../../data/social/gini_results.csv)'
+        default=None,
+        help='Output CSV file for batch results (default: <input_parent>/social/gini_results.csv)'
     )
     parser.add_argument(
         '--plot-dir',
         type=str,
-        default='../../data/social',
-        help='Output directory for plots (default: ../../data/social)'
+        default=None,
+        help='Output directory for plots (default: <input_parent>/social)'
     )
     parser.add_argument(
         '--active-only',
@@ -289,6 +290,26 @@ def main():
     args = parser.parse_args()
 
     input_path = Path(args.input)
+
+    # Resolve input: if it's just a name (not an existing path), treat as directory name under ../../data/
+    data_root = Path(__file__).parent.parent.parent / 'data'
+    if not input_path.exists() and not input_path.is_absolute() and (data_root / args.input).is_dir():
+        base_dir = data_root / args.input
+        input_path = base_dir / 'contributors_merged'
+    elif input_path.is_dir():
+        base_dir = input_path.parent
+    else:
+        base_dir = input_path.parent.parent
+
+    _social_dir = base_dir / 'social'
+
+    if input_path.is_dir():
+        args.all = True
+
+    if args.output is None:
+        args.output = str(_social_dir / 'gini_results.csv')
+    if args.plot_dir is None:
+        args.plot_dir = str(_social_dir)
 
     # Batch processing mode
     if args.all:

@@ -1,0 +1,18 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Brian Harrington <brharrington@gmail.com>,"['Brian Harrington <brharrington@gmail.com>', 'brharrington <brharrington@gmail.com>']",33,71,0.04807692307692308,"[('project/build.properties', 2), ('.travis.yml', 1), ('mkdocs.yml', 1), ('.github/workflows/release.yml', 1), ('.github/workflows/pr.yml', 1)]"
+1,Matthew Johnson <matthewj@netflix.com>,"['Matthew Johnson <matthewj@netflix.com>', 'Matthew Johnson <mjjohnson33@gmail.com>']",37,78,0.05217391304347826,"[('.github/workflows/pr.yml', 2), ('.github/workflows/release.yml', 2), ('mkdocs.yml', 2), ('.github/workflows/release.yaml', 1), ('.travis.yml', 1), ('.github/workflows/pr.yaml', 1)]"
+2,Jimmy Casey <casey.jimmy@gmail.com>,['Jimmy Casey <casey.jimmy@gmail.com>'],0,1,0.0,[]
+3,Chris Larsen <clarsen@euphoriaaudio.com>,"['Chris Larsen <clarsen@euphoriaaudio.com>', 'Chris Larsen <clarsen@netflix.com>']",4,8,0.5,"[('.github/workflows/release.yaml', 1), ('.travis.yml', 1), ('mkdocs.yml', 2), ('.github/workflows/release.yml', 2), ('.github/workflows/pr.yml', 2), ('.github/workflows/pr.yaml', 1)]"
+4,Kostas Christidis <kostas@christidis.io>,['Kostas Christidis <kostas@christidis.io>'],0,1,0.0,[]
+5,Joey Harrington <dev@jharring.com>,['Joey Harrington <dev@jharring.com>'],0,1,0.0,[]
+6,Lorin Hochstein <lorinh@gmail.com>,['Lorin Hochstein <lorinh@gmail.com>'],0,1,0.0,[]
+7,Drew Stephens <drew@dinomite.net>,['Drew Stephens <drew@dinomite.net>'],0,1,0.0,[]
+8,Mingliang Liu <liuml07@apache.org>,['Mingliang Liu <liuml07@apache.org>'],0,1,0.0,[]
+9,Trent Willis <trentmwillis@gmail.com>,"['Trent Willis <trentmwillis@gmail.com>', 'Trent Willis <twillis@netflix.com>']",1,2,1.0,"[('.github/workflows/pr.yml', 1), ('.github/workflows/release.yml', 1), ('mkdocs.yml', 1)]"
+10,Chris Beaudoin <109051003+cee8@users.noreply.github.com>,['Chris Beaudoin <109051003+cee8@users.noreply.github.com>'],0,1,0.0,[]
+11,ayangster <annie.s.yang16@gmail.com>,['ayangster <annie.s.yang16@gmail.com>'],0,1,0.0,[]
+12,Roman A <121314722+GameRoMan@users.noreply.github.com>,['Roman A <121314722+GameRoMan@users.noreply.github.com>'],0,1,0.0,[]
+13,Everett Badeaux <everettc1810@gmail.com>,['Everett Badeaux <everettc1810@gmail.com>'],1,0,3.0,"[('.github/workflows/pr.yml', 1), ('.github/workflows/release.yml', 1), ('mkdocs.yml', 1)]"
+14,Peter Chng <pchng@users.noreply.github.com>,['Peter Chng <pchng@users.noreply.github.com>'],0,1,0.0,[]
+15,Shehab <127568346+dizzydroid@users.noreply.github.com>,['Shehab <127568346+dizzydroid@users.noreply.github.com>'],0,1,0.0,[]
+16,Mason Albert <77916767+mason-albert@users.noreply.github.com>,['Mason Albert <77916767+mason-albert@users.noreply.github.com>'],0,1,0.0,[]

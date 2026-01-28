@@ -1,0 +1,19 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Justin Ryan <jryan@netflix.com>,"['Justin Ryan <jryan@netflix.com>', 'Justin Ryan <justin@halfempty.org>']",7,24,0.06451612903225806,"[('gradle.properties', 1), ('gradle/wrapper/gradle-wrapper.properties', 2)]"
+1,Allen Wang <awang@netflix.com>,"['Allen Wang <awang@netflix.com>', 'allenxwang <awang@netflix.com>']",3,3,0.3333333333333333,"[('gradle.properties', 2), ('gradle/wrapper/gradle-wrapper.properties', 2)]"
+2,Jordan Zimmerman <jordan@jordanzimmerman.com>,['Jordan Zimmerman <jordan@jordanzimmerman.com>'],0,1,0.0,[]
+3,Sudhir Tonse <stonse@gmail.com>,['Sudhir Tonse <stonse@gmail.com>'],1,7,0.25,"[('gradle.properties', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+4,elandau <elandau@yahoo.com>,['elandau <elandau@yahoo.com>'],5,39,0.045454545454545456,"[('gradle.properties', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+5,Bob T Builder <builds@netflix.com>,['Bob T Builder <builds@netflix.com>'],6,0,0.3333333333333333,"[('gradle.properties', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+6,Steven Zhen Wu <stevenz3wu@gmail.com>,['Steven Zhen Wu <stevenz3wu@gmail.com>'],0,1,0.0,[]
+7,Amit Joshi <ajoshi@netflix.com>,['Amit Joshi <ajoshi@netflix.com>'],0,2,0.0,[]
+8,Jon Schneider <jkschneider@gmail.com>,['Jon Schneider <jkschneider@gmail.com>'],0,1,0.0,[]
+9,tbak <tbak@netflix.com>,['tbak <tbak@netflix.com>'],0,1,0.0,[]
+10,Michael Smith <michaels@netflix.com>,['Michael Smith <michaels@netflix.com>'],0,4,0.0,[]
+11,Peter D. Stout <pds@netflix.com>,"['Peter D. Stout <pds@netflix.com>', 'Peter Stout <pds@netflix.com>']",0,4,0.0,[]
+12,Andrew Spyker <aspyker@netflix.com>,['Andrew Spyker <aspyker@netflix.com>'],0,1,0.0,[]
+13,Pavel Jareš <pavel.jares@broadcom.com>,['Pavel Jareš <pavel.jares@broadcom.com>'],1,0,1.0,"[('gradle/wrapper/gradle-wrapper.properties', 1)]"
+14,joshgord <joshgord@gmail.com>,['joshgord <joshgord@gmail.com>'],1,0,1.0,"[('gradle/wrapper/gradle-wrapper.properties', 1)]"
+15,Iuliia Sobolevska <isobolevska@netflix.com>,"['Iuliia Sobolevska <isobolevska@netflix.com>', 'Iuliia Sobolevska <juliasobolevska@gmail.com>']",2,4,0.16666666666666666,"[('gradle/wrapper/gradle-wrapper.properties', 2)]"
+16,Aubrey Chipman <achipman@netflix.com>,"['Aubrey Chipman <achipman@netflix.com>', 'OdysseusLives <achipman@netflix.com>']",2,1,0.3333333333333333,"[('gradle/wrapper/gradle-wrapper.properties', 2)]"
+17,Roberto Perez Alcolea <rperezalcolea@netflix.com>,['Roberto Perez Alcolea <rperezalcolea@netflix.com>'],2,0,2.0,"[('.github/workflows/nebula-publish.yml', 1), ('.github/workflows/nebula-ci.yml', 1), ('.github/workflows/nebula-snapshot.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"

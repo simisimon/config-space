@@ -1,0 +1,148 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Kevin Glisson <kglisson@netflix.com>,"['Kevin Glisson <kglisson@netflix.com>', 'kevgliss <kevgliss@gmail.com>', 'kevgliss <kglisson@netflix.com>', 'Kevin Glisson <kevgliss@gmail.com>']",67,730,0.010037641154328732,"[('.travis.yml', 2), ('package.json', 2), ('bower.json', 2), ('lemur/migrations/alembic.ini', 2), ('tox.ini', 1), ('Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+2,Jeremy Heffner <jheffner@netflix.com>,['Jeremy Heffner <jheffner@netflix.com>'],0,14,0.0,[]
+3,Eric Mill <eric@konklone.com>,['Eric Mill <eric@konklone.com>'],0,6,0.0,[]
+4,pandragoq <pandragoq@gmail.com>,['pandragoq <pandragoq@gmail.com>'],0,2,0.0,[]
+5,Stacy Watts <stacy.watts@acquia.com>,['Stacy Watts <stacy.watts@acquia.com>'],0,1,0.0,[]
+6,Igor Vuk <parcijala@gmail.com>,['Igor Vuk <parcijala@gmail.com>'],0,1,0.0,[]
+7,Making GitHub Delicious. <iron@waffle.io>,['Making GitHub Delicious. <iron@waffle.io>'],0,1,0.0,[]
+8,Robert Picard <robert@robert.io>,['Robert Picard <robert@robert.io>'],0,6,0.0,[]
+9,Patrick Kelley <pkelley@netflix.com>,['Patrick Kelley <pkelley@netflix.com>'],0,3,0.0,[]
+10,belladzaster <belladzaster@gmail.com>,['belladzaster <belladzaster@gmail.com>'],0,2,0.0,[]
+11,Ryan Clough <cloughrm@gmail.com>,['Ryan Clough <cloughrm@gmail.com>'],0,1,0.0,[]
+12,Mike Grima <mikegrima@users.noreply.github.com>,"['Mike Grima <mikegrima@users.noreply.github.com>', 'Mike Grima <mgrima@netflix.com>']",1,8,0.5555555555555556,"[('tox.ini', 1), ('.travis.yml', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1)]"
+13,requires.io <support@requires.io>,['requires.io <support@requires.io>'],0,2,0.0,[]
+14,Joe Pettersson <joe@8-bit.co.uk>,['Joe Pettersson <joe@8-bit.co.uk>'],0,1,0.0,[]
+15,José Lopes de Oliveira Jr <forkd@tuta.io>,['José Lopes de Oliveira Jr <forkd@tuta.io>'],0,2,0.0,[]
+16,Andrew Spyker <aspyker@netflix.com>,['Andrew Spyker <aspyker@netflix.com>'],0,1,0.0,[]
+17,Matthias Hähnel <github.com@drhaehnel.de>,['Matthias Hähnel <github.com@drhaehnel.de>'],0,1,0.0,[]
+18,Cameron Norman <CameronNemo@users.noreply.github.com>,['Cameron Norman <CameronNemo@users.noreply.github.com>'],0,1,0.0,[]
+19,Edward Barker <ebarker@netflix.com>,['Edward Barker <ebarker@netflix.com>'],0,1,0.0,[]
+20,AlexCline <alex.cline@gmail.com>,['AlexCline <alex.cline@gmail.com>'],1,0,5.0,"[('tox.ini', 1), ('.travis.yml', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1)]"
+21,Luke Faraone <luke@faraone.cc>,['Luke Faraone <luke@faraone.cc>'],0,1,0.0,[]
+22,Harm Weites <harmw@users.noreply.github.com>,['Harm Weites <harmw@users.noreply.github.com>'],0,2,0.0,[]
+23,Roi Martin <jroi.martin@gmail.com>,['Roi Martin <jroi.martin@gmail.com>'],0,1,0.0,[]
+24,mik373 <mik373@hotmail.com>,['mik373 <mik373@hotmail.com>'],0,1,0.0,[]
+25,Evan J Johnson <ejcx@users.noreply.github.com>,['Evan J Johnson <ejcx@users.noreply.github.com>'],0,1,0.0,[]
+26,Terin Stock <terinjokes@gmail.com>,['Terin Stock <terinjokes@gmail.com>'],0,3,0.0,[]
+27,Charles Hendrie <chad.hendrie@thomsonreuters.com>,['Charles Hendrie <chad.hendrie@thomsonreuters.com>'],0,7,0.0,[]
+28,JohnTheodore <JohnTheodore42@gmail.com>,['JohnTheodore <JohnTheodore42@gmail.com>'],0,2,0.0,[]
+29,Neil Schelly <neil@neilschelly.com>,['Neil Schelly <neil@neilschelly.com>'],1,18,0.2631578947368421,"[('tox.ini', 1), ('.travis.yml', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1)]"
+30,cviecco <cviecco@gmail.com>,['cviecco <cviecco@gmail.com>'],0,1,0.0,[]
+31,Sakti Dwi Cahyono <54krpl@gmail.com>,['Sakti Dwi Cahyono <54krpl@gmail.com>'],0,1,0.0,[]
+32,Doppins <bot@doppins.com>,"['Doppins <bot@doppins.com>', 'Doppins <contact@doppins.com>']",0,115,0.0,[]
+33,Marti Raudsepp <marti@juffo.org>,['Marti Raudsepp <marti@juffo.org>'],0,53,0.0,[]
+34,Nevins <nevins-b@users.noreply.github.com>,['Nevins <nevins-b@users.noreply.github.com>'],0,2,0.0,[]
+35,Tom Lianza <github@lianza.org>,['Tom Lianza <github@lianza.org>'],0,1,0.0,[]
+36,Gus E <gesquive@users.noreply.github.com>,['Gus E <gesquive@users.noreply.github.com>'],0,1,0.0,[]
+37,putz612 <jsievert@gmail.com>,['putz612 <jsievert@gmail.com>'],1,0,6.0,"[('tox.ini', 1), ('.travis.yml', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1), ('.pre-commit-config.yaml', 1)]"
+38,Rick Breidenstein <RickB17@users.noreply.github.com>,['Rick Breidenstein <RickB17@users.noreply.github.com>'],0,9,0.0,[]
+39,Jason Spriggs <jason@jasonspriggs.com>,['Jason Spriggs <jason@jasonspriggs.com>'],0,1,0.0,[]
+40,Henry Megarry <henry.megarry@thomsonreuters.com>,['Henry Megarry <henry.megarry@thomsonreuters.com>'],1,1,3.0,"[('tox.ini', 1), ('.travis.yml', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1), ('.pre-commit-config.yaml', 1)]"
+41,Brint O'Hearn <brintly@gmail.com>,"[""Brint O'Hearn <brintly@gmail.com>""]",0,1,0.0,[]
+42,Michael Treacher <m.w.treacher@gmail.com>,['Michael Treacher <m.w.treacher@gmail.com>'],0,7,0.0,[]
+43,Travis McPeak <travis.mcpeak@gmail.com>,['Travis McPeak <travis.mcpeak@gmail.com>'],1,0,6.0,"[('tox.ini', 1), ('.travis.yml', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1), ('.pre-commit-config.yaml', 1)]"
+44,Paul Van de Vreede <pvdvreede@gmail.com>,['Paul Van de Vreede <pvdvreede@gmail.com>'],1,2,2.6666666666666665,"[('tox.ini', 1), ('.travis.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+45,Ian Stahnke <goodbloke@gmail.com>,['Ian Stahnke <goodbloke@gmail.com>'],1,4,1.6,"[('tox.ini', 1), ('.travis.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+46,csv7 <vancemeister@gmail.com>,['csv7 <vancemeister@gmail.com>'],0,1,0.0,[]
+47,marc-sensenich <marc-sensenich@users.noreply.github.com>,['marc-sensenich <marc-sensenich@users.noreply.github.com>'],0,1,0.0,[]
+48,Arthur Lutz <arthur.lutz@logilab.fr>,['Arthur Lutz <arthur.lutz@logilab.fr>'],0,1,0.0,[]
+49,Paul Borg <paulieborg@gmail.com>,['Paul Borg <paulieborg@gmail.com>'],0,2,0.0,[]
+50,Michael LoSapio <mike.losapio@gmail.com>,['Michael LoSapio <mike.losapio@gmail.com>'],0,1,0.0,[]
+51,Asbjørn Kjær <bunjiboys@bunjiboys.dk>,['Asbjørn Kjær <bunjiboys@bunjiboys.dk>'],0,2,0.0,[]
+52,Andrew Murray <radarhere@users.noreply.github.com>,['Andrew Murray <radarhere@users.noreply.github.com>'],0,1,0.0,[]
+53,Francisco Santos <fbvs@users.noreply.github.com>,['Francisco Santos <fbvs@users.noreply.github.com>'],0,2,0.0,[]
+54,Caige Nichols <caigesn@gmail.com>,['Caige Nichols <caigesn@gmail.com>'],0,1,0.0,[]
+55,Horatiu Eugen Vlad <iconoeugen@users.noreply.github.com>,['Horatiu Eugen Vlad <iconoeugen@users.noreply.github.com>'],0,1,0.0,[]
+56,Aaron Mell <aaronamell@gmail.com>,['Aaron Mell <aaronamell@gmail.com>'],0,1,0.0,[]
+57,ClontarfX <clontarf_x@iinet.net.au>,['ClontarfX <clontarf_x@iinet.net.au>'],0,1,0.0,[]
+58,Johannes Langer <jo.langer@gmail.com>,['Johannes Langer <jo.langer@gmail.com>'],0,3,0.0,[]
+59,Daniel Pramann <praymann@users.noreply.github.com>,['Daniel Pramann <praymann@users.noreply.github.com>'],0,1,0.0,[]
+60,James Chuong <chuong.james@gmail.com>,"['James Chuong <chuong.james@gmail.com>', 'James Chuong <jchuong@instartlogic.com>']",1,7,1.0,"[('tox.ini', 1), ('.travis.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+61,Josh Becigneul <josh@vsnine.org>,['Josh Becigneul <josh@vsnine.org>'],0,1,0.0,[]
+62,Eric <SecurityInsanity@users.noreply.github.com>,['Eric <SecurityInsanity@users.noreply.github.com>'],0,2,0.0,[]
+63,Zach Seils <zachseils@gmail.com>,"['Zach Seils <zachseils@gmail.com>', 'Zach Seils (seils) <seils@cisco.com>']",0,6,0.0,[]
+64,Curtis <castrapel@users.noreply.github.com>,['Curtis <castrapel@users.noreply.github.com>'],19,287,0.029411764705882353,"[('tox.ini', 1), ('.travis.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+65,pincushionman <pincushionman@users.noreply.github.com>,['pincushionman <pincushionman@users.noreply.github.com>'],0,2,0.0,[]
+66,Curtis Castrapel <ccastrapel@netflix.com>,"['Curtis Castrapel <ccastrapel@netflix.com>', 'Curtis Castrapel <ccastrapel@gmail.com>', 'Curtis Castrapel <CORP\\ccastrapel@a-3c1f4a7g6atxl.corp.netflix.com>']",21,275,0.030405405405405407,"[('tox.ini', 2), ('.travis.yml', 2), ('Dockerfile', 2), ('package.json', 2), ('lemur/migrations/alembic.ini', 2), ('bower.json', 2), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 2), ('docker-compose.yml', 2)]"
+67,cjwaian <cjwaian@rmhco.com>,['cjwaian <cjwaian@rmhco.com>'],0,4,0.0,[]
+68,iTitou <titouanc@users.noreply.github.com>,['iTitou <titouanc@users.noreply.github.com>'],0,4,0.0,[]
+69,Dmitry Zykov <i@dmizyk.com>,['Dmitry Zykov <i@dmizyk.com>'],0,4,0.0,[]
+70,Will Bengtson <william.bengtson@gmail.com>,['Will Bengtson <william.bengtson@gmail.com>'],0,2,0.0,[]
+71,Mihir Jham <mihirjham@gmail.com>,['Mihir Jham <mihirjham@gmail.com>'],0,1,0.0,[]
+72,lmitul <mitul.limbachiya@gmail.com>,['lmitul <mitul.limbachiya@gmail.com>'],0,1,0.0,[]
+73,Patrick R. Donahue <prdonahue@gmail.com>,['Patrick R. Donahue <prdonahue@gmail.com>'],0,1,0.0,[]
+74,Titouan Christophe <titouan.christophe@railnova.eu>,['Titouan Christophe <titouan.christophe@railnova.eu>'],0,2,0.0,[]
+75,Ron Cohen <RcRonco@users.noreply.github.com>,['Ron Cohen <RcRonco@users.noreply.github.com>'],0,1,0.0,[]
+76,Justin P <Jpartain89@gmail.com>,['Justin P <Jpartain89@gmail.com>'],0,4,0.0,[]
+77,root <root@nl000376.tst.kohls.com>,['root <root@nl000376.tst.kohls.com>'],0,4,0.0,[]
+78,Steven Reiling <sreiling@netflix.com>,['Steven Reiling <sreiling@netflix.com>'],0,3,0.0,[]
+79,Cyril Dangerville <cdanger@users.noreply.github.com>,['Cyril Dangerville <cdanger@users.noreply.github.com>'],0,2,0.0,[]
+80,Andrew Chen <achen.code@gmail.com>,['Andrew Chen <achen.code@gmail.com>'],0,1,0.0,[]
+81,Mike Culbertson <mculbertson@pivotal.io>,['Mike Culbertson <mculbertson@pivotal.io>'],0,7,0.0,[]
+82,Gus Esquivel <gesquive@gmail.com>,['Gus Esquivel <gesquive@gmail.com>'],0,2,0.0,[]
+83,Non Sequitur <explody@explody.io>,"['Non Sequitur <explody@explody.io>', 'Non Sequitur <explody@users.noreply.github.com>']",0,5,0.0,[]
+84,Ronald Moesbergen <ronald.moesbergen@solvinity.com>,"['Ronald Moesbergen <ronald.moesbergen@solvinity.com>', 'Ronald Moesbergen <rmoesbergen@users.noreply.github.com>']",0,12,0.0,[]
+85,Wesley Hartford <wesley@ze.com>,['Wesley Hartford <wesley@ze.com>'],0,6,0.0,[]
+86,sirferl <ferdinand.glatzl@bawagpsk.com>,"['sirferl <ferdinand.glatzl@bawagpsk.com>', 'sirferl <41906265+sirferl@users.noreply.github.com>']",8,106,0.08771929824561403,"[('tox.ini', 2), ('.travis.yml', 2), ('Dockerfile', 2), ('package.json', 2), ('lemur/migrations/alembic.ini', 2), ('docker/docker-compose.yml', 2), ('bower.json', 2), ('docker/Dockerfile', 2), ('.pre-commit-config.yaml', 2), ('docker-compose.yml', 2)]"
+87,Lukas M <lukas.mrtvy@gmail.com>,['Lukas M <lukas.mrtvy@gmail.com>'],27,22,0.1836734693877551,"[('tox.ini', 1), ('.travis.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+88,bby-bishopclark <30503374+bby-bishopclark@users.noreply.github.com>,['bby-bishopclark <30503374+bby-bishopclark@users.noreply.github.com>'],0,1,0.0,[]
+89,Hossein Shafagh <hshafagh@netflix.com>,"['Hossein Shafagh <hshafagh@netflix.com>', 'Hossein Shafagh <shafagh@inf.ethz.ch>', 'Hossein Shafagh <hoss.sha@gmail.com>', 'Hoss Shafagh <hshafagh@netflix.com>']",117,1099,0.015625,"[('package.json', 3), ('docker/docker-compose.yml', 2), ('mypy.ini', 2), ('bower.json', 3), ('.github/workflows/codeql.yml', 2), ('package-lock.json', 1), ('tox.ini', 3), ('.github/workflows/dependabot-auto-merge.yml', 2), ('.github/workflows/lemur-publish-release-pypi.yml', 2), ('lemur/migrations/alembic.ini', 3), ('docker/Dockerfile', 3), ('.pre-commit-config.yaml', 3), ('.readthedocs.yml', 2), ('Dockerfile', 3), ('.github/dependabot.yml', 2), ('.travis.yml', 2), ('.github/workflows/ci.yml', 2), ('.github/workflows/codeql-analysis.yml', 1), ('docker-compose.yml', 3)]"
+90,alwaysjolley <chris@alwaysjolley.com>,"['alwaysjolley <chris@alwaysjolley.com>', 'alwaysjolley <firereaperd@alwaysjolley.com>', 'Christopher <chris@alwaysjolley.com>']",5,47,0.3076923076923077,"[('tox.ini', 2), ('.travis.yml', 2), ('Dockerfile', 2), ('package.json', 2), ('lemur/migrations/alembic.ini', 2), ('bower.json', 2), ('docker/Dockerfile', 2), ('.pre-commit-config.yaml', 2), ('docker-compose.yml', 2), ('.github/workflows/dependabot-auto-merge.yml', 1), ('.github/workflows/lemur-publish-release-pypi.yml', 1), ('.github/workflows/ci.yml', 1), ('.github/dependabot.yml', 1), ('.readthedocs.yml', 1), ('docker/docker-compose.yml', 1), ('.github/workflows/codeql-analysis.yml', 1)]"
+91,Javier Ramos <javier.ramos@booking.com>,"['Javier Ramos <javier.ramos@booking.com>', 'Javier Ramos <javier.ramos.felix@gmail.com>']",0,10,0.0,[]
+92,Ryan DeShone <rfdeshon@gmail.com>,['Ryan DeShone <rfdeshon@gmail.com>'],0,2,0.0,[]
+93,Jose Plana <jplana@tuenti.com>,['Jose Plana <jplana@tuenti.com>'],0,11,0.0,[]
+94,Garfield Carneiro <gary.carneiro@gmail.com>,['Garfield Carneiro <gary.carneiro@gmail.com>'],2,0,4.5,"[('tox.ini', 1), ('.travis.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+95,Daniel Iancu <daniel@iancu.io>,['Daniel Iancu <daniel@iancu.io>'],0,1,0.0,[]
+96,Kush Bavishi <kush.bavishi@gmail.com>,"['Kush Bavishi <kush.bavishi@gmail.com>', 'Kush Bavishi <kbavishi@netflix.com>']",2,38,0.225,"[('tox.ini', 2), ('.travis.yml', 2), ('Dockerfile', 2), ('package.json', 2), ('lemur/migrations/alembic.ini', 2), ('bower.json', 2), ('docker/Dockerfile', 2), ('.pre-commit-config.yaml', 2), ('docker-compose.yml', 2)]"
+97,Danny Thomas <DanielThomas@users.noreply.github.com>,['Danny Thomas <DanielThomas@users.noreply.github.com>'],0,1,0.0,[]
+98,arnydo <arnydo@gmail.com>,['arnydo <arnydo@gmail.com>'],0,2,0.0,[]
+99,pmelse <pmelse@uwaterloo.ca>,"['pmelse <pmelse@uwaterloo.ca>', 'pmelse <peter_melse@gto.net>']",0,4,0.0,[]
+100,Jay Zarfoss <jzarfoss@netflix.com>,['Jay Zarfoss <jzarfoss@netflix.com>'],0,5,0.0,[]
+101,Niels Bischof <niels.bischof@aurea.com>,['Niels Bischof <niels.bischof@aurea.com>'],0,1,0.0,[]
+102,Ilya Labun <ilya.labun@booking.com>,"['Ilya Labun <ilya.labun@booking.com>', 'Ilya Labun <ilya92labun@gmail.com>']",2,4,1.6666666666666667,"[('tox.ini', 2), ('.travis.yml', 2), ('Dockerfile', 2), ('package.json', 2), ('lemur/migrations/alembic.ini', 2), ('bower.json', 2), ('docker/Dockerfile', 2), ('.pre-commit-config.yaml', 2), ('docker-compose.yml', 2), ('docker/docker-compose.yml', 1)]"
+103,jenkins-x-bot <rohan@cai.fi>,['jenkins-x-bot <rohan@cai.fi>'],0,5,0.0,[]
+104,csine-nflx <csine@netflix.com>,"['csine-nflx <csine@netflix.com>', 'csine-nflx <59457265+csine-nflx@users.noreply.github.com>', 'Chad S <59457265+csine-nflx@users.noreply.github.com>']",18,115,0.10526315789473684,"[('tox.ini', 3), ('.travis.yml', 3), ('Dockerfile', 3), ('package.json', 3), ('lemur/migrations/alembic.ini', 3), ('docker/docker-compose.yml', 3), ('bower.json', 3), ('docker/Dockerfile', 3), ('.pre-commit-config.yaml', 3), ('docker-compose.yml', 3), ('.github/workflows/dependabot-auto-merge.yml', 1), ('.github/workflows/lemur-publish-release-pypi.yml', 1), ('.readthedocs.yml', 1), ('.github/dependabot.yml', 1)]"
+105,Rohan Mehto <57990724+rohanmehto2@users.noreply.github.com>,['Rohan Mehto <57990724+rohanmehto2@users.noreply.github.com>'],0,1,0.0,[]
+106,Gutttlt <43376523+Gutttlt@users.noreply.github.com>,['Gutttlt <43376523+Gutttlt@users.noreply.github.com>'],0,1,0.0,[]
+107,rajatsharma94 <rajat.shrma94@gmail.com>,['rajatsharma94 <rajat.shrma94@gmail.com>'],0,1,0.0,[]
+108,Andrew Pennebaker <andrew.pennebaker@kohls.com>,['Andrew Pennebaker <andrew.pennebaker@kohls.com>'],4,0,2.25,"[('tox.ini', 1), ('.travis.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+109,Ilya Makarov <makarov_ia@nlmk.com>,"['Ilya Makarov <makarov_ia@nlmk.com>', 'Ilya Makarov <ilyamakarov@MacBook-Pro-Ilya.local>', 'Макаров Илья Александрович (makarov_ia) <makarov_ia@nlmk.com>']",4,15,0.7894736842105263,"[('tox.ini', 2), ('.travis.yml', 2), ('Dockerfile', 2), ('package.json', 2), ('lemur/migrations/alembic.ini', 2), ('docker/docker-compose.yml', 2), ('bower.json', 2), ('docker/Dockerfile', 2), ('.pre-commit-config.yaml', 2), ('docker-compose.yml', 2), ('.github/workflows/dependabot-auto-merge.yml', 1), ('.github/workflows/lemur-publish-release-pypi.yml', 1), ('.readthedocs.yml', 1), ('.github/dependabot.yml', 1), ('.github/workflows/codeql-analysis.yml', 1)]"
+110,e11it <im@e11it.ru>,['e11it <im@e11it.ru>'],0,8,0.0,[]
+111,David Stipp <dstipp@coolhack.net>,['David Stipp <dstipp@coolhack.net>'],0,1,0.0,[]
+112,Luka Matijevic <lmatijevic@nimium.hr>,['Luka Matijevic <lmatijevic@nimium.hr>'],0,1,0.0,[]
+113,"Vasilyev, Viacheslav <viacheslav.vasilyev@accenture.com>","['Vasilyev, Viacheslav <viacheslav.vasilyev@accenture.com>']",1,0,10.0,"[('tox.ini', 1), ('.travis.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('docker/docker-compose.yml', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+114,Raul Benencia <raul@thousandeyes.com>,['Raul Benencia <raul@thousandeyes.com>'],0,1,0.0,[]
+115,sayali <scharhate@netflix.com>,"['sayali <scharhate@netflix.com>', 'charhate <charhate@usc.edu>', 'charhate <scharhate@netflix.com>', 'sayali <charhate@usc.edu>', 'Sayali Charhate <scharhate@netflix.com>']",30,382,0.043689320388349516,"[('tox.ini', 4), ('.github/workflows/dependabot-auto-merge.yml', 4), ('.github/workflows/lemur-publish-release-pypi.yml', 4), ('.travis.yml', 2), ('Dockerfile', 4), ('package.json', 4), ('.readthedocs.yml', 4), ('.github/dependabot.yml', 4), ('lemur/migrations/alembic.ini', 4), ('docker/docker-compose.yml', 4), ('.github/workflows/codeql-analysis.yml', 2), ('bower.json', 4), ('docker/Dockerfile', 4), ('.pre-commit-config.yaml', 4), ('docker-compose.yml', 4), ('.github/workflows/ci.yml', 3), ('mypy.ini', 2), ('.github/workflows/codeql.yml', 2)]"
+117,Mathias Petermann <mathias.petermann@projektfokus.ch>,['Mathias Petermann <mathias.petermann@projektfokus.ch>'],2,71,0.136986301369863,"[('tox.ini', 1), ('.travis.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('docker/docker-compose.yml', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+118,Jasmine Schladen <jschladen@netflix.com>,"['Jasmine Schladen <jschladen@netflix.com>', 'Jasmine Schladen <jtschladen@gmail.com>']",75,429,0.03968253968253968,"[('package.json', 1), ('docker/docker-compose.yml', 1), ('mypy.ini', 1), ('lemur-spec.yml', 1), ('bower.json', 1), ('.github/workflows/codeql.yml', 1), ('tox.ini', 1), ('.github/workflows/dependabot-auto-merge.yml', 1), ('.github/workflows/lemur-publish-release-pypi.yml', 1), ('lemur/migrations/alembic.ini', 1), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('pyproject.toml', 1), ('.readthedocs.yml', 1), ('Dockerfile', 1), ('.github/dependabot.yml', 1), ('.travis.yml', 1), ('.github/workflows/ci.yml', 1), ('.github/workflows/codeql-analysis.yml', 1), ('docker-compose.yml', 1)]"
+119,Emmanuel Garette <egarette@cadoles.com>,['Emmanuel Garette <egarette@cadoles.com>'],0,5,0.0,[]
+120,Frederic Brin <frederic.brin@exane.com>,['Frederic Brin <frederic.brin@exane.com>'],0,1,0.0,[]
+121,Albert Tugushev <albert@tugushev.ru>,['Albert Tugushev <albert@tugushev.ru>'],0,1,0.0,[]
+122,Tim Gates <tim.gates@iress.com>,['Tim Gates <tim.gates@iress.com>'],0,1,0.0,[]
+123,Benjamin Greschbach <bgre@spotify.com>,['Benjamin Greschbach <bgre@spotify.com>'],0,1,0.0,[]
+124,manager <manager@gitfastdev.com>,['manager <manager@gitfastdev.com>'],1,0,10.0,"[('tox.ini', 1), ('.travis.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('docker/docker-compose.yml', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+125,sergerdn <64213648+sergerdn@users.noreply.github.com>,['sergerdn <64213648+sergerdn@users.noreply.github.com>'],4,4,1.25,"[('tox.ini', 1), ('.travis.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('lemur/migrations/alembic.ini', 1), ('docker/docker-compose.yml', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+126,Sam Havron <shavron@squarespace.com>,"['Sam Havron <shavron@squarespace.com>', 'Sam Havron <sgh65@cornell.edu>']",2,45,0.3191489361702128,"[('tox.ini', 1), ('.github/workflows/dependabot-auto-merge.yml', 1), ('.github/workflows/lemur-publish-release-pypi.yml', 1), ('.readthedocs.yml', 1), ('.travis.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('.github/dependabot.yml', 1), ('lemur/migrations/alembic.ini', 1), ('docker/docker-compose.yml', 1), ('.github/workflows/codeql-analysis.yml', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+127,Tim H <6026716+tho@users.noreply.github.com>,['Tim H <6026716+tho@users.noreply.github.com>'],0,2,0.0,[]
+128,Gosuke Miyashita <gosukenator@gmail.com>,['Gosuke Miyashita <gosukenator@gmail.com>'],0,1,0.0,[]
+129,Bob Shannon <bob.shannon@datadoghq.com>,"['Bob Shannon <bob.shannon@datadoghq.com>', 'Bob Shannon <bobmshannon@users.noreply.github.com>']",2,15,0.8823529411764706,"[('tox.ini', 1), ('.github/workflows/dependabot-auto-merge.yml', 1), ('.github/workflows/lemur-publish-release-pypi.yml', 1), ('.readthedocs.yml', 1), ('.github/workflows/ci.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('.github/dependabot.yml', 1), ('lemur/migrations/alembic.ini', 1), ('docker/docker-compose.yml', 1), ('.github/workflows/codeql-analysis.yml', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+130,Guillaume Dumont <guillaume.dumont@datadoghq.com>,"['Guillaume Dumont <guillaume.dumont@datadoghq.com>', 'Guillaume Dumont <rippalka@gmail.com>']",0,3,0.0,[]
+131,Anurag Kumar <mailanu98@gmail.com>,['Anurag Kumar <mailanu98@gmail.com>'],0,1,0.0,[]
+132,Joe McGinnis <joe.mcginnis@infor.com>,['Joe McGinnis <joe.mcginnis@infor.com>'],2,49,0.3137254901960784,"[('tox.ini', 1), ('.github/workflows/dependabot-auto-merge.yml', 1), ('.github/workflows/lemur-publish-release-pypi.yml', 1), ('.readthedocs.yml', 1), ('.github/workflows/ci.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('.github/dependabot.yml', 1), ('lemur/migrations/alembic.ini', 1), ('docker/docker-compose.yml', 1), ('mypy.ini', 1), ('.github/workflows/codeql-analysis.yml', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.pre-commit-config.yaml', 1), ('docker-compose.yml', 1)]"
+133,Doug Clark <douglasc@netflix.com>,['Doug Clark <douglasc@netflix.com>'],0,17,0.0,[]
+134,Christopher Jolley <cjolley@wayfair.com>,['Christopher Jolley <cjolley@wayfair.com>'],0,3,0.0,[]
+135,mitchcail <mitch.cail@gmail.com>,"['mitchcail <mitch.cail@gmail.com>', 'Mitch Cail <mitch.cail@gmail.com>']",0,11,0.0,[]
+136,Jared Crawford <jaredcrawford@netflix.com>,"['Jared Crawford <jaredcrawford@netflix.com>', 'jmcrawford45 <jmcrawford45@gmail.com>', 'Jared Crawford <jmcrawford45@gmail.com>']",110,332,0.042986425339366516,"[('package.json', 3), ('docker/docker-compose.yml', 3), ('mypy.ini', 2), ('lemur-spec.yml', 2), ('bower.json', 3), ('.github/workflows/codeql.yml', 2), ('tox.ini', 3), ('.github/workflows/dependabot-auto-merge.yml', 3), ('.github/workflows/lemur-publish-release-pypi.yml', 3), ('lemur/migrations/alembic.ini', 3), ('docker/Dockerfile', 3), ('.pre-commit-config.yaml', 3), ('pyproject.toml', 2), ('.readthedocs.yml', 3), ('Dockerfile', 3), ('.github/dependabot.yml', 3), ('.github/workflows/ci.yml', 3), ('.github/workflows/codeql-analysis.yml', 3), ('docker-compose.yml', 3)]"
+138,Henrique Pereira <ikkibr@gmail.com>,['Henrique Pereira <ikkibr@gmail.com>'],0,1,0.0,[]
+139,Serhii Korobkov <skorobkov78@gmail.com>,['Serhii Korobkov <skorobkov78@gmail.com>'],0,2,0.0,[]
+140,joe.infor.7685 <91212042+joeinfor7685@users.noreply.github.com>,['joe.infor.7685 <91212042+joeinfor7685@users.noreply.github.com>'],4,2,2.6666666666666665,"[('tox.ini', 1), ('.pre-commit-config.yaml', 1), ('.github/workflows/dependabot-auto-merge.yml', 1), ('.github/workflows/lemur-publish-release-pypi.yml', 1), ('.readthedocs.yml', 1), ('.github/workflows/ci.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('.github/dependabot.yml', 1), ('lemur/migrations/alembic.ini', 1), ('docker/docker-compose.yml', 1), ('mypy.ini', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.github/workflows/codeql.yml', 1), ('docker-compose.yml', 1)]"
+141,Tames McTigue <tames@northwestern.edu>,['Tames McTigue <tames@northwestern.edu>'],1,0,16.0,"[('tox.ini', 1), ('.pre-commit-config.yaml', 1), ('.github/workflows/dependabot-auto-merge.yml', 1), ('.github/workflows/lemur-publish-release-pypi.yml', 1), ('.readthedocs.yml', 1), ('.github/workflows/ci.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('.github/dependabot.yml', 1), ('lemur/migrations/alembic.ini', 1), ('docker/docker-compose.yml', 1), ('mypy.ini', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.github/workflows/codeql.yml', 1), ('docker-compose.yml', 1)]"
+142,"Ebag333 <ebagola@gmail,.com>","['Ebag333 <ebagola@gmail,.com>', 'Ebag333 <ebagola@gmail.com>']",1,20,0.7619047619047619,"[('tox.ini', 1), ('.pre-commit-config.yaml', 1), ('.github/workflows/dependabot-auto-merge.yml', 1), ('.github/workflows/lemur-publish-release-pypi.yml', 1), ('.readthedocs.yml', 1), ('.github/workflows/ci.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('.github/dependabot.yml', 1), ('lemur/migrations/alembic.ini', 1), ('docker/docker-compose.yml', 1), ('mypy.ini', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.github/workflows/codeql.yml', 1), ('docker-compose.yml', 1)]"
+143,Pinmarva <pinmarva@gmail.com>,['Pinmarva <pinmarva@gmail.com>'],0,8,0.0,[]
+144,Oleg Dopertchouk <odopertchouk@squarespace.com>,['Oleg Dopertchouk <odopertchouk@squarespace.com>'],0,13,0.0,[]
+145,odopertchouk <55001692+odopertchouk@users.noreply.github.com>,['odopertchouk <55001692+odopertchouk@users.noreply.github.com>'],0,8,0.0,[]
+146,Emmanuel Ferdman <emmanuelferdman@gmail.com>,['Emmanuel Ferdman <emmanuelferdman@gmail.com>'],0,1,0.0,[]
+147,Malaya Zemlya <dev@zemlya.ml>,['Malaya Zemlya <dev@zemlya.ml>'],0,2,0.0,[]
+148,Prachi Jain <prachij@netflix.com>,['Prachi Jain <prachij@netflix.com>'],2,0,8.5,"[('tox.ini', 1), ('.pre-commit-config.yaml', 1), ('.github/workflows/dependabot-auto-merge.yml', 1), ('.github/workflows/lemur-publish-release-pypi.yml', 1), ('.readthedocs.yml', 1), ('.github/workflows/ci.yml', 1), ('Dockerfile', 1), ('package.json', 1), ('.github/dependabot.yml', 1), ('lemur/migrations/alembic.ini', 1), ('docker/docker-compose.yml', 1), ('mypy.ini', 1), ('lemur-spec.yml', 1), ('bower.json', 1), ('docker/Dockerfile', 1), ('.github/workflows/codeql.yml', 1), ('docker-compose.yml', 1)]"
+149,Gijs Molenaar <gijsm@spotify.com>,"['Gijs Molenaar <gijsm@spotify.com>', 'Gijs Molenaar <gijsmolenaar@gmail.com>']",5,5,1.8,"[('tox.ini', 2), ('.pre-commit-config.yaml', 2), ('.github/workflows/dependabot-auto-merge.yml', 2), ('.github/workflows/lemur-publish-release-pypi.yml', 2), ('.readthedocs.yml', 2), ('.github/workflows/ci.yml', 2), ('Dockerfile', 2), ('package.json', 2), ('.github/dependabot.yml', 2), ('lemur/migrations/alembic.ini', 2), ('docker/docker-compose.yml', 2), ('mypy.ini', 2), ('lemur-spec.yml', 2), ('bower.json', 2), ('docker/Dockerfile', 2), ('.github/workflows/codeql.yml', 2), ('docker-compose.yml', 2), ('pyproject.toml', 2)]"

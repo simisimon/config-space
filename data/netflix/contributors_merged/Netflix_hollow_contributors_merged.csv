@@ -1,0 +1,72 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Drew Koszewnik <dkoszewnik@netflix.com>,"['Drew Koszewnik <dkoszewnik@netflix.com>', 'Drew Koszewnik <drew.koszewnik@gmail.com>']",5,263,0.007462686567164179,"[('.travis.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+1,Rob Spieldenner <rspieldenner@netflix.com>,['Rob Spieldenner <rspieldenner@netflix.com>'],2,2,0.5,"[('.travis.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+2,The Gitter Badger <badger@gitter.im>,['The Gitter Badger <badger@gitter.im>'],0,1,0.0,[]
+3,Mike Grima <mikegrima@users.noreply.github.com>,['Mike Grima <mikegrima@users.noreply.github.com>'],0,1,0.0,[]
+4,Tim Taylor <timt@netflix.com>,"['Tim Taylor <timt@netflix.com>', 'Tim Taylor <tim@tool-man.org>', 'Tim Taylor <tim@toolbear.io>']",4,133,0.021897810218978103,"[('.travis.yml', 1), ('mkdocs.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+5,Andre Kelpe <akelpe@snaplogic.com>,['Andre Kelpe <akelpe@snaplogic.com>'],0,1,0.0,[]
+6,Nicholas Blair <nblair@spredfast.com>,['Nicholas Blair <nblair@spredfast.com>'],0,4,0.0,[]
+7,djayaraman <djayaraman@netflix.com>,['djayaraman <djayaraman@netflix.com>'],0,1,0.0,[]
+8,dsu <dsu@netflix.com>,"['dsu <dsu@netflix.com>', 'David Su <dsu@netflix.com>']",0,6,0.0,[]
+9,Zubair Khan <zkhan@netflix.com>,['Zubair Khan <zkhan@netflix.com>'],0,1,0.0,[]
+10,Brett Wooldridge <brett.wooldridge@gmail.com>,['Brett Wooldridge <brett.wooldridge@gmail.com>'],0,7,0.0,[]
+11,Kinesh Satiya <kineshsatiya@gmail.com>,"['Kinesh Satiya <kineshsatiya@gmail.com>', 'Kinesh Satiya <kineshsatiya@users.noreply.github.com>']",1,86,0.022988505747126436,"[('.travis.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+12,davesu <dave.su@yahoo.com>,"['davesu <dave.su@yahoo.com>', 'davesu <david.su@yahoo.com>']",0,107,0.0,[]
+13,Alexandru Burghelea <me@alexburghelea.ro>,['Alexandru Burghelea <me@alexburghelea.ro>'],0,3,0.0,[]
+14,David S <davesu@users.noreply.github.com>,['David S <davesu@users.noreply.github.com>'],0,29,0.0,[]
+15,Rama Kocherlakota <Rama.Kocherlakota@dealer.com>,['Rama Kocherlakota <Rama.Kocherlakota@dealer.com>'],0,1,0.0,[]
+16,kwangin <inylove82@gmail.com>,['kwangin <inylove82@gmail.com>'],0,1,0.0,[]
+17,Lavanya Kanchanapalli <lkanchanapalli@netflix.com>,"['Lavanya Kanchanapalli <lkanchanapalli@netflix.com>', 'lkanchanapalli <lkanchanapalli@netflix.com>']",0,12,0.0,[]
+18,lkancode <lavanya65@yahoo.com>,"['lkancode <lavanya65@yahoo.com>', 'Lavanya <lavanya65@yahoo.com>']",0,25,0.0,[]
+19,Ryan Gardner <ryan.gardner@dealer.com>,['Ryan Gardner <ryan.gardner@dealer.com>'],0,3,0.0,[]
+20,Roberto Perez Alcolea <roberto.perezalcolea@target.com>,"['Roberto Perez Alcolea <roberto.perezalcolea@target.com>', 'Roberto Pérez Alcolea <roberto@perezalcolea.info>', 'Roberto Perez Alcolea <1625920+rpalcolea@users.noreply.github.com>', 'Roberto Perez Alcolea <roberto@perezalcolea.info>', 'Roberto Perez Alcolea <rperezalcolea@netflix.com>']",7,80,0.06896551724137931,"[('.travis.yml', 1), ('mkdocs.yml', 1), ('.github/workflows/nebula-publish.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1), ('.github/workflows/nebula-snapshot.yml', 1), ('.github/workflows/nebula-ci.yml', 1)]"
+21,Rohit Kaul <rkaul@netflix.com>,['Rohit Kaul <rkaul@netflix.com>'],0,17,0.0,[]
+22,Ammar Khaku <akhaku@netflix.com>,"['Ammar Khaku <akhaku@netflix.com>', 'Ammar Khaku <akhaku@users.noreply.github.com>']",4,63,0.04477611940298507,"[('.travis.yml', 2), ('mkdocs.yml', 2), ('gradle/wrapper/gradle-wrapper.properties', 2)]"
+23,duro <durowreck@yahoo.com>,['duro <durowreck@yahoo.com>'],0,1,0.0,[]
+24,Chad Durovec <duro1@users.noreply.github.com>,['Chad Durovec <duro1@users.noreply.github.com>'],0,3,0.0,[]
+25,Aidar_Makhmutov <amakhmutov.contractor@libertyglobal.com>,"['Aidar_Makhmutov <amakhmutov.contractor@libertyglobal.com>', 'Aidar Makhmutov <aidarko@users.noreply.github.com>']",0,6,0.0,[]
+26,Nazariy Kostiv <Nazariy_Kostiv@epam.com>,['Nazariy Kostiv <Nazariy_Kostiv@epam.com>'],0,2,0.0,[]
+27,Jatin Shah <jatins@netflix.com>,['Jatin Shah <jatins@netflix.com>'],0,1,0.0,[]
+28,Lukasz Zielinski <Lukasz_Zielinski@epam.com>,"['Lukasz Zielinski <Lukasz_Zielinski@epam.com>', 'Łukasz Zieliński <zielu@users.noreply.github.com>']",0,2,0.0,[]
+29,Michał Olejnik <blekit@gmail.com>,['Michał Olejnik <blekit@gmail.com>'],0,3,0.0,[]
+30,Tanner Ratzlaff <tratzlaff@users.noreply.github.com>,['Tanner Ratzlaff <tratzlaff@users.noreply.github.com>'],0,1,0.0,[]
+31,Paul Sandoz <psandoz@netflix.com>,"['Paul Sandoz <psandoz@netflix.com>', 'Paul Sandoz <paul.d.sandoz@googlemail.com>']",2,67,0.043478260869565216,"[('.travis.yml', 1), ('mkdocs.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+32,David Frigola <david.frigola@gmail.com>,['David Frigola <david.frigola@gmail.com>'],0,1,0.0,[]
+33,Danny Thomas <dannyt@netflix.com>,['Danny Thomas <dannyt@netflix.com>'],0,7,0.0,[]
+34,John Engelman <john.engelman@target.com>,['John Engelman <john.engelman@target.com>'],0,1,0.0,[]
+35,Vanja Dardić <vanjadardic5@gmail.com>,['Vanja Dardić <vanjadardic5@gmail.com>'],0,2,0.0,[]
+36,Florentin Simion <florentins@gmail.com>,['Florentin Simion <florentins@gmail.com>'],0,1,0.0,[]
+37,sunjeet <sunjeets@netflix.com>,"['sunjeet <sunjeets@netflix.com>', 'Sunjeet <sstattla@yahoo.com>', 'Sunjeet <sstattla@gmail.com>', 'Sunjeet Singh <sunjeets@netflix.com>', 'Eduardo Ramirez <edyr94@gmail.com>', 'Eduardo Ramirez <eduardor@netflix.com>', 'Eduardo Ramirez <sunjeets@netflix.com>', 'Sunjeet <sunjeets@netflix.com>', 'Sunjeet Singh <sstattla@yahoo.com>']",2,112,0.05263157894736842,"[('.travis.yml', 1), ('mkdocs.yml', 2), ('gradle/wrapper/gradle-wrapper.properties', 2), ('.github/workflows/nebula-publish.yml', 1), ('.github/workflows/nebula-snapshot.yml', 1), ('.github/workflows/nebula-ci.yml', 1)]"
+38,Krzysztof Pieprzak <k.pieprzak@ocado.com>,['Krzysztof Pieprzak <k.pieprzak@ocado.com>'],0,2,0.0,[]
+39,joshgord <joshgord@gmail.com>,['joshgord <joshgord@gmail.com>'],0,1,0.0,[]
+40,Fuyang Liu <fuyangl@spotify.com>,['Fuyang Liu <fuyangl@spotify.com>'],0,1,0.0,[]
+41,mikemuske <michael.muske@target.com>,"['mikemuske <michael.muske@target.com>', 'Mike Muske <mikemuske@users.noreply.github.com>']",0,5,0.0,[]
+42,Steve Hill <sghill.dev@gmail.com>,['Steve Hill <sghill.dev@gmail.com>'],0,1,0.0,[]
+43,Nayanika Upadhyay <70254357+nayanika-u@users.noreply.github.com>,"['Nayanika Upadhyay <70254357+nayanika-u@users.noreply.github.com>', 'Nayanika Upadhyay <nupadhyay@netflix.com>']",0,45,0.0,[]
+44,Russell Bolles <russbollesjr@gmail.com>,['Russell Bolles <russbollesjr@gmail.com>'],0,2,0.0,[]
+45,Dillon Beliveau <dillonbeliveau@gmail.com>,['Dillon Beliveau <dillonbeliveau@gmail.com>'],0,1,0.0,[]
+46,Alexander L. Mikhailov <alexlmikh@gmail.com>,['Alexander L. Mikhailov <alexlmikh@gmail.com>'],0,1,0.0,[]
+47,mbrilnetflix <78238940+mbrilnetflix@users.noreply.github.com>,['mbrilnetflix <78238940+mbrilnetflix@users.noreply.github.com>'],0,1,0.0,[]
+48,Jorel-Master-Of-Scheduling <jschek@neocat.us>,['Jorel-Master-Of-Scheduling <jschek@neocat.us>'],0,2,0.0,[]
+49,"VARKEY, SANCHU <sv620s@exo.att.com>","['VARKEY, SANCHU <sv620s@exo.att.com>']",0,1,0.0,[]
+50,Jason Koch <jkoch@netflix.com>,['Jason Koch <jkoch@netflix.com>'],0,1,0.0,[]
+51,Yonatan Graber <yonatan.graber@gmail.com>,['Yonatan Graber <yonatan.graber@gmail.com>'],0,1,0.0,[]
+52,Xiaodan <xsun@netflix.com>,"['Xiaodan <xsun@netflix.com>', 'workeatsleep <sunxd1211@gmail.com>', 'workeatsleep <xsun@netflix.com>']",2,19,0.23809523809523808,"[('mkdocs.yml', 2), ('.github/workflows/nebula-publish.yml', 2), ('gradle/wrapper/gradle-wrapper.properties', 2), ('.github/workflows/nebula-snapshot.yml', 2), ('.github/workflows/nebula-ci.yml', 2)]"
+54,Bernardo Gomez Palacio <bernardo.gomezpalacio@gmail.com>,['Bernardo Gomez Palacio <bernardo.gomezpalacio@gmail.com>'],2,2,1.25,"[('mkdocs.yml', 1), ('.github/workflows/nebula-publish.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1), ('.github/workflows/nebula-snapshot.yml', 1), ('.github/workflows/nebula-ci.yml', 1)]"
+56,Desmond Vehar <desmondvehar@gmail.com>,['Desmond Vehar <desmondvehar@gmail.com>'],0,3,0.0,[]
+57,Viktor Nyström <vnystrom@gmail.com>,['Viktor Nyström <vnystrom@gmail.com>'],1,0,5.0,"[('mkdocs.yml', 1), ('.github/workflows/nebula-publish.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1), ('.github/workflows/nebula-snapshot.yml', 1), ('.github/workflows/nebula-ci.yml', 1)]"
+58,JP Leibundguth <jleibundguth@netflix.com>,['JP Leibundguth <jleibundguth@netflix.com>'],0,1,0.0,[]
+59,Steve Ewald <steveewald2025@u.northwestern.edu>,"['Steve Ewald <steveewald2025@u.northwestern.edu>', 'stevenewald <stevenewald6@gmail.com>']",0,25,0.0,[]
+60,piotr.auguscik <piotr.auguscik@codewise.com>,['piotr.auguscik <piotr.auguscik@codewise.com>'],0,2,0.0,[]
+61,LamTrinh.Dev <me@lamtrinh.dev>,['LamTrinh.Dev <me@lamtrinh.dev>'],0,1,0.0,[]
+62,yujiaaa2019 <107969526+yujiaaa2019@users.noreply.github.com>,['yujiaaa2019 <107969526+yujiaaa2019@users.noreply.github.com>'],1,2,1.6666666666666667,"[('mkdocs.yml', 1), ('.github/workflows/nebula-publish.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1), ('.github/workflows/nebula-snapshot.yml', 1), ('.github/workflows/nebula-ci.yml', 1)]"
+63,azeng <azeng@netflix.com>,"['azeng <azeng@netflix.com>', 'azeng-netflix <azeng@netflix.com>']",1,12,0.38461538461538464,"[('mkdocs.yml', 1), ('.github/workflows/nebula-publish.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1), ('.github/workflows/nebula-snapshot.yml', 1), ('.github/workflows/nebula-ci.yml', 1)]"
+64,Tej Vepa <tvepa@netflix.com>,"['Tej Vepa <tvepa@netflix.com>', 'Tej <tvepa@netflix.com>']",0,3,0.0,[]
+65,Jegan <jponrama@netflix.com>,"['Jegan <jponrama@netflix.com>', 'Jegan <jegansp@gmail.com>']",0,7,0.0,[]
+66,Austin Wheeler <austinwheeler@netflix.com>,"['Austin Wheeler <austinwheeler@netflix.com>', 'AustinNflx <austinwheeler@netflix.com>']",0,2,0.0,[]
+67,Ram Gudivada <ramarajesh2112@users.noreply.github.com>,['Ram Gudivada <ramarajesh2112@users.noreply.github.com>'],0,1,0.0,[]
+68,Austen McClernon <amcclernon@netflix.com>,"['Austen McClernon <amcclernon@netflix.com>', 'Austen <austen.mcclernon@gmail.com>', 'Austen <amcclernon@netflix.com>']",1,21,0.22727272727272727,"[('mkdocs.yml', 1), ('.github/workflows/nebula-publish.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1), ('.github/workflows/nebula-snapshot.yml', 1), ('.github/workflows/nebula-ci.yml', 1)]"
+69,Aubrey Chipman <achipman@netflix.com>,['Aubrey Chipman <achipman@netflix.com>'],1,1,2.5,"[('mkdocs.yml', 1), ('.github/workflows/nebula-publish.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1), ('.github/workflows/nebula-snapshot.yml', 1), ('.github/workflows/nebula-ci.yml', 1)]"
+70,Dan Smillie <dsmillie@netflix.com>,['Dan Smillie <dsmillie@netflix.com>'],0,1,0.0,[]
+71,Patrick Strawderman <pstrawderman@netflix.com>,['Patrick Strawderman <pstrawderman@netflix.com>'],0,1,0.0,[]
+72,rwl-nflx <richardliang@netflix.com>,"['rwl-nflx <richardliang@netflix.com>', 'Richard Liang <richardliang@netflix.com>']",0,3,0.0,[]

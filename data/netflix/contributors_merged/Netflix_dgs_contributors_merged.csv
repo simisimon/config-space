@@ -1,0 +1,66 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Paul Bakker <pbakker@netflix.com>,"['Paul Bakker <pbakker@netflix.com>', 'Paul Bakker <paul.bakker.nl@gmail.com>', 'pbakker <pbakker@netflix.com>']",29,110,0.02877697841726619,"[('.github/workflows/publish.yml', 3), ('.mkdocs.yml', 1), ('mkdocs.yml', 3), ('.github/publish.yml', 1)]"
+1,Kavitha Srinivasan <ksrinivasan@netflix.com>,"['Kavitha Srinivasan <ksrinivasan@netflix.com>', 'srinivasankavitha <41588701+srinivasankavitha@users.noreply.github.com>', 'Kavitha Srinivasan <41588701+srinivasankavitha@users.noreply.github.com>', 'ksrinivasan <ksrinivasan@netflix.com>']",34,113,0.02040816326530612,"[('.github/workflows/publish.yml', 4), ('mkdocs.yml', 4), ('site/search/search_index.json', 2)]"
+2,0xflotus <0xflotus@gmail.com>,['0xflotus <0xflotus@gmail.com>'],0,4,0.0,[]
+3,David Simmer <dsimmer@netflix.com>,"['David Simmer <dsimmer@netflix.com>', 'David Simmer <david@simmer.ooo>']",26,92,0.01694915254237288,"[('.github/workflows/publish.yml', 2), ('mkdocs.yml', 2)]"
+4,Bernardo Gomez Palacio <bernardog@netflix.com>,"['Bernardo Gomez Palacio <bernardog@netflix.com>', 'Bernardo Gomez Palacio <bernardo.gomezpalacio@gmail.com>']",12,54,0.030303030303030304,"[('.github/workflows/publish.yml', 2), ('mkdocs.yml', 2)]"
+5,Martin Bonnin <martin@mbonnin.net>,['Martin Bonnin <martin@mbonnin.net>'],0,2,0.0,[]
+6,Marcel Overdijk <marceloverdijk@gmail.com>,['Marcel Overdijk <marceloverdijk@gmail.com>'],0,1,0.0,[]
+7,rmcteggart-r7 <rmcteggart@rapid7.com>,['rmcteggart-r7 <rmcteggart@rapid7.com>'],0,2,0.0,[]
+8,Patrick Strawderman <patrick@kilink.net>,"['Patrick Strawderman <patrick@kilink.net>', 'Patrick Strawderman <pstrawderman@netflix.com>']",0,3,0.0,[]
+9,Johan ROUVE <johan.rouve@happn.fr>,['Johan ROUVE <johan.rouve@happn.fr>'],0,1,0.0,[]
+10,timpamungkas <timotius.pamungkas@tokopedia.com>,['timpamungkas <timotius.pamungkas@tokopedia.com>'],0,1,0.0,[]
+11,Mark <mjfaga@users.noreply.github.com>,['Mark <mjfaga@users.noreply.github.com>'],0,1,0.0,[]
+12,Argana Phangquestian <arganaphangquestian@gmail.com>,['Argana Phangquestian <arganaphangquestian@gmail.com>'],0,1,0.0,[]
+13,WonChul Heo <heowc1992@gmail.com>,['WonChul Heo <heowc1992@gmail.com>'],0,1,0.0,[]
+14,Luke Thomas <luk3thomas@gmail.com>,['Luke Thomas <luk3thomas@gmail.com>'],0,1,0.0,[]
+15,Muhammad Musa <47291629+MoosaSaadat@users.noreply.github.com>,['Muhammad Musa <47291629+MoosaSaadat@users.noreply.github.com>'],0,9,0.0,[]
+16,Stanislav Deviatykh <stanislav@qminderapp.com>,['Stanislav Deviatykh <stanislav@qminderapp.com>'],0,1,0.0,[]
+17,Jinhyeok Park <jinhyeok.park@sleek.kr>,['Jinhyeok Park <jinhyeok.park@sleek.kr>'],0,1,0.0,[]
+18,Adam Setch <adam.setch@outlook.com>,['Adam Setch <adam.setch@outlook.com>'],0,8,0.0,[]
+19,josh rotenberg <joshrotenberg@users.noreply.github.com>,['josh rotenberg <joshrotenberg@users.noreply.github.com>'],0,1,0.0,[]
+20,Jordie <xd@jrdie.nl>,['Jordie <xd@jrdie.nl>'],2,4,0.3333333333333333,"[('.github/workflows/publish.yml', 1), ('mkdocs.yml', 1)]"
+21,Fabian Kahlert <30560211+kahlertf@users.noreply.github.com>,['Fabian Kahlert <30560211+kahlertf@users.noreply.github.com>'],0,1,0.0,[]
+22,Kevin Duong <kevin@kevinduong.net>,['Kevin Duong <kevin@kevinduong.net>'],0,1,0.0,[]
+23,aisensiy <aisensiy@163.com>,['aisensiy <aisensiy@163.com>'],0,1,0.0,[]
+24,Aaron Paterson <apaterson@protonmail.com>,['Aaron Paterson <apaterson@protonmail.com>'],0,3,0.0,[]
+25,kuanghc1 <kuanghc1@lenovo.com>,['kuanghc1 <kuanghc1@lenovo.com>'],0,5,0.0,[]
+26,Andrei Ivantsov <aivantsov@outlook.com>,['Andrei Ivantsov <aivantsov@outlook.com>'],0,1,0.0,[]
+27,티맵모빌리티 부문식 <munsik.bu@sk.com>,['티맵모빌리티 부문식 <munsik.bu@sk.com>'],0,1,0.0,[]
+28,Claudenir Freitas <cfreitas@poppulo.com>,"['Claudenir Freitas <cfreitas@poppulo.com>', 'Claudenir Freitas <claudenir.machado@sensedia.com>']",0,2,0.0,[]
+29,Takayuki Matsubara <takayuki.1229@gmail.com>,['Takayuki Matsubara <takayuki.1229@gmail.com>'],0,1,0.0,[]
+30,Jon Christiansen <467023+theJC@users.noreply.github.com>,['Jon Christiansen <467023+theJC@users.noreply.github.com>'],1,0,2.0,"[('.github/workflows/publish.yml', 1), ('mkdocs.yml', 1)]"
+31,Lakshmi Vijayachandran <lakshmi_vijayachandran@intuit.com>,['Lakshmi Vijayachandran <lakshmi_vijayachandran@intuit.com>'],0,8,0.0,[]
+32,Steven Ireland <steven.ireland@protonmail.com>,['Steven Ireland <steven.ireland@protonmail.com>'],0,8,0.0,[]
+33,lakshmisunid <87725994+lakshmisunid@users.noreply.github.com>,['lakshmisunid <87725994+lakshmisunid@users.noreply.github.com>'],1,1,1.0,"[('.github/workflows/publish.yml', 1), ('mkdocs.yml', 1)]"
+34,Lillian <104868839+lillianlouie@users.noreply.github.com>,['Lillian <104868839+lillianlouie@users.noreply.github.com>'],0,1,0.0,[]
+35,Anthony Oleinik <48811365+antholeole@users.noreply.github.com>,['Anthony Oleinik <48811365+antholeole@users.noreply.github.com>'],0,2,0.0,[]
+36,jerry.hj <jerry.hj@kakaostyle.com>,['jerry.hj <jerry.hj@kakaostyle.com>'],0,1,0.0,[]
+37,James Hau <james.hau@volvocars.com>,['James Hau <james.hau@volvocars.com>'],0,1,0.0,[]
+38,Grace <gding@netflix.com>,['Grace <gding@netflix.com>'],2,11,0.15384615384615385,"[('.github/workflows/publish.yml', 1), ('mkdocs.yml', 1)]"
+39,Cole Turner <turner.cole@gmail.com>,"['Cole Turner <turner.cole@gmail.com>', 'Cole Turner <cole@netflix.com>']",0,4,0.0,[]
+40,Grace Ding <graceding9@gmail.com>,['Grace Ding <graceding9@gmail.com>'],3,7,0.2,"[('.github/workflows/publish.yml', 1), ('mkdocs.yml', 1)]"
+41,Juliana Congote <jcongote@netflix.com>,"['Juliana Congote <jcongote@netflix.com>', 'Juliana Congote <42778259+congotej@users.noreply.github.com>']",0,3,0.0,[]
+42,ArvindEnvoy <arvind@envoy.com>,['ArvindEnvoy <arvind@envoy.com>'],0,1,0.0,[]
+43,Matt Bossenbroek <mbossenbroek@netflix.com>,['Matt Bossenbroek <mbossenbroek@netflix.com>'],2,1,0.6666666666666666,"[('.github/workflows/publish.yml', 1), ('mkdocs.yml', 1)]"
+44,Will Baldoumas <william.baldoumas@gmail.com>,['Will Baldoumas <william.baldoumas@gmail.com>'],1,0,2.0,"[('.github/workflows/publish.yml', 1), ('mkdocs.yml', 1)]"
+45,mendezm <mariselam@netflix.com>,['mendezm <mariselam@netflix.com>'],0,1,0.0,[]
+46,kailyak <141789731+kailyak@users.noreply.github.com>,['kailyak <141789731+kailyak@users.noreply.github.com>'],0,2,0.0,[]
+47,Dean Soc <81260153+SocDean@users.noreply.github.com>,['Dean Soc <81260153+SocDean@users.noreply.github.com>'],0,1,0.0,[]
+48,jelly.haribo <jelly.haribo@kakaostyle.com>,['jelly.haribo <jelly.haribo@kakaostyle.com>'],0,1,0.0,[]
+49,Emily Dobervich <emilydobervich@netflix.com>,"['Emily Dobervich <emilydobervich@netflix.com>', 'Emily Dobervich <240689+Emily@users.noreply.github.com>']",2,3,0.4,"[('.github/workflows/publish.yml', 2), ('mkdocs.yml', 2)]"
+50,Kota Esaki <kota.esaki@dr-ubie.com>,['Kota Esaki <kota.esaki@dr-ubie.com>'],0,1,0.0,[]
+51,Etienne Hardy <etienne.hardy@appdirect.com>,['Etienne Hardy <etienne.hardy@appdirect.com>'],0,1,0.0,[]
+52,Christopher Beaudoin <chris@Christophers-MacBook-Pro.local>,['Christopher Beaudoin <chris@Christophers-MacBook-Pro.local>'],0,2,0.0,[]
+53,Thomas Zub <thomas.zub@outlook.de>,['Thomas Zub <thomas.zub@outlook.de>'],0,1,0.0,[]
+54,David A. Ventimiglia <davidaventimiglia@hasura.io>,['David A. Ventimiglia <davidaventimiglia@hasura.io>'],0,4,0.0,[]
+55,Loren 🤓 <lorensr@gmail.com>,['Loren 🤓 <lorensr@gmail.com>'],0,1,0.0,[]
+56,Chris Thomson <cthomson@wealthsimple.com>,['Chris Thomson <cthomson@wealthsimple.com>'],0,1,0.0,[]
+57,Adam Hunter <adamhunter@me.com>,['Adam Hunter <adamhunter@me.com>'],0,1,0.0,[]
+58,iparadiso <111398937+iparadiso@users.noreply.github.com>,['iparadiso <111398937+iparadiso@users.noreply.github.com>'],0,4,0.0,[]
+59,Iuliia Sobolevska <isobolevska@netflix.com>,"['Iuliia Sobolevska <isobolevska@netflix.com>', 'Iuliia Sobolevska <juliasobolevska@gmail.com>']",0,2,0.0,[]
+60,Tejas Bal <tejas.allhad.bal@gmail.com>,['Tejas Bal <tejas.allhad.bal@gmail.com>'],0,4,0.0,[]
+61,Jiho Lee <jiho.lee17@gmail.com>,"['Jiho Lee <jiho.lee17@gmail.com>', 'Jiho Lee <52715532+jiholee17@users.noreply.github.com>']",0,7,0.0,[]
+62,Steve Riesenberg <sriesenberg@netflix.com>,"['Steve Riesenberg <sriesenberg@netflix.com>', 'Steve Riesenberg <5248162+sjohnr@users.noreply.github.com>']",0,2,0.0,[]
+63,Jessie Jacobs <jjaco@netflix.com>,['Jessie Jacobs <jjaco@netflix.com>'],0,2,0.0,[]
+64,jjacobs44 <89410776+jjacobs44@users.noreply.github.com>,['jjacobs44 <89410776+jjacobs44@users.noreply.github.com>'],1,0,2.0,"[('.github/workflows/publish.yml', 1), ('mkdocs.yml', 1)]"

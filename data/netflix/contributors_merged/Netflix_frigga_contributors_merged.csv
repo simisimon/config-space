@@ -1,0 +1,25 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Justin Ryan <jryan@netflix.com>,"['Justin Ryan <jryan@netflix.com>', 'Justin Ryan <justin@halfempty.org>']",8,28,0.05555555555555555,"[('gradle.properties', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+1,Jordan Zimmerman <jordan@jordanzimmerman.com>,['Jordan Zimmerman <jordan@jordanzimmerman.com>'],0,1,0.0,[]
+2,Jason Gritman <jasongritman@gmail.com>,"['Jason Gritman <jasongritman@gmail.com>', 'Jason Gritman <jgritman@netflix.com>', 'Jason Gritman <jgritman@users.noreply.github.com>']",7,37,0.045454545454545456,"[('gradle.properties', 2), ('gradle/wrapper/gradle-wrapper.properties', 2)]"
+3,builds <builds@dynaslave-55c2390c.(none)>,"['builds <builds@dynaslave-55c2390c.(none)>', 'builds <builds@dynaslave-bdc239e4.(none)>', 'builds <builds@dynaslave-9521c3cc.(none)>', 'builds <builds@dynaslave-236ac17a.(none)>']",8,0,0.25,"[('gradle.properties', 4), ('gradle/wrapper/gradle-wrapper.properties', 4)]"
+4,Clay McCoy <git@claymccoy.com>,"['Clay McCoy <git@claymccoy.com>', 'Clay McCoy <github@claymccoy.com>']",0,2,0.0,[]
+5,Bob T Builder <builds@netflix.com>,['Bob T Builder <builds@netflix.com>'],18,0,0.1111111111111111,"[('gradle.properties', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+6,Greg Orzell <gorzell@sumologic.com>,['Greg Orzell <gorzell@sumologic.com>'],1,0,2.0,"[('gradle.properties', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+7,Brent Pitman <bpitman@netflix.com>,['Brent Pitman <bpitman@netflix.com>'],0,1,0.0,[]
+8,Joe Sondow <jsondow@netflix.com>,"['Joe Sondow <jsondow@netflix.com>', 'Joe Sondow <joe@sondow.com>']",0,3,0.0,[]
+9,Cameron Fieber <cfieber@netflix.com>,"['Cameron Fieber <cfieber@netflix.com>', 'Cameron Fieber <cameron@fieber.ca>']",5,12,0.35294117647058826,"[('.github/workflows/nebula-publish.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 2), ('.github/workflows/nebula-snapshot.yml', 1), ('gradle.properties', 2), ('.github/workflows/nebula-ci.yml', 1), ('.travis.yml', 1)]"
+10,Rob Spieldenner <rob.spieldenner@gmail.com>,['Rob Spieldenner <rob.spieldenner@gmail.com>'],3,0,1.0,"[('.travis.yml', 1), ('gradle.properties', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+11,Nadav Cohen <nadavcoh@gmail.com>,['Nadav Cohen <nadavcoh@gmail.com>'],1,0,2.0,"[('gradle.properties', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+12,Andrew Spyker <aspyker@netflix.com>,['Andrew Spyker <aspyker@netflix.com>'],0,1,0.0,[]
+13,Brian Harrington <brharrington@gmail.com>,"['Brian Harrington <brharrington@gmail.com>', 'brharrington <brharrington@gmail.com>']",3,4,0.42857142857142855,"[('.travis.yml', 1), ('gradle.properties', 1), ('gradle/wrapper/gradle-wrapper.properties', 1)]"
+14,Ali Basiri <abasiri@netflix.com>,['Ali Basiri <abasiri@netflix.com>'],0,2,0.0,[]
+15,tomaslin <clin@netflix.com>,"['tomaslin <clin@netflix.com>', 'Tomás Lin <tomaslin@gmail.com>']",0,2,0.0,[]
+16,Eric Zimanyi <ezimanyi@google.com>,['Eric Zimanyi <ezimanyi@google.com>'],0,1,0.0,[]
+17,Maggie Neterval <mneterval@google.com>,['Maggie Neterval <mneterval@google.com>'],0,1,0.0,[]
+18,Jørgen Jervidalo <jervidalo@gmail.com>,['Jørgen Jervidalo <jervidalo@gmail.com>'],0,1,0.0,[]
+19,Emily Burns <emjeburns@gmail.com>,"['Emily Burns <emjeburns@gmail.com>', 'Emily Burns <emburns@netflix.com>']",0,2,0.0,[]
+20,Roberto Perez Alcolea <rperezalcolea@netflix.com>,['Roberto Perez Alcolea <rperezalcolea@netflix.com>'],8,1,0.6666666666666666,"[('.travis.yml', 1), ('.github/workflows/nebula-publish.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1), ('.github/workflows/nebula-snapshot.yml', 1), ('gradle.properties', 1), ('.github/workflows/nebula-ci.yml', 1)]"
+21,OdysseusLives <achipman@netflix.com>,['OdysseusLives <achipman@netflix.com>'],1,0,5.0,"[('.github/workflows/nebula-publish.yml', 1), ('gradle/wrapper/gradle-wrapper.properties', 1), ('.github/workflows/nebula-snapshot.yml', 1), ('gradle.properties', 1), ('.github/workflows/nebula-ci.yml', 1)]"
+22,Samuel Miller <samm@netflix.com>,"['Samuel Miller <samm@netflix.com>', 'Samuel Miller <samuelmiller523@gmail.com>']",0,3,0.0,[]
+23,Rob Zienert <rob@robzienert.com>,['Rob Zienert <rob@robzienert.com>'],0,1,0.0,[]

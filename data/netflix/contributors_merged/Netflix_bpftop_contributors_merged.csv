@@ -1,0 +1,16 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Jose Fernandez <josef@netflix.com>,"['Jose Fernandez <josef@netflix.com>', 'Jose Fernandez <me@jrfernandez.com>', 'josef@netflix.com <josef@netflix.com>']",70,74,0.041666666666666664,"[('.devcontainer/Dockerfile', 3), ('.github/workflows/rust.yml', 3), ('.github/dependabot.yml', 3), ('Cargo.toml', 3), ('.devcontainer/devcontainer.json', 3), ('Cross.toml', 3)]"
+1,Arnar <arnarp.arnarsson@upwind.io>,['Arnar <arnarp.arnarsson@upwind.io>'],0,1,0.0,[]
+2,mtb0x1 <39337159+mtb0x1@users.noreply.github.com>,['mtb0x1 <39337159+mtb0x1@users.noreply.github.com>'],0,1,0.0,[]
+3,Patrick McGleenon <pmcgleenon@users.noreply.github.com>,['Patrick McGleenon <pmcgleenon@users.noreply.github.com>'],1,1,3.0,"[('.devcontainer/Dockerfile', 1), ('.github/workflows/rust.yml', 1), ('.github/dependabot.yml', 1), ('Cargo.toml', 1), ('.devcontainer/devcontainer.json', 1), ('Cross.toml', 1)]"
+4,Feng Zhou <zhoufeng.zf@bytedance.com>,['Feng Zhou <zhoufeng.zf@bytedance.com>'],1,0,6.0,"[('.devcontainer/Dockerfile', 1), ('.github/workflows/rust.yml', 1), ('.github/dependabot.yml', 1), ('Cargo.toml', 1), ('.devcontainer/devcontainer.json', 1), ('Cross.toml', 1)]"
+5,tyrone-wu <wudevelops@gmail.com>,['tyrone-wu <wudevelops@gmail.com>'],1,1,3.0,"[('.devcontainer/Dockerfile', 1), ('.github/workflows/rust.yml', 1), ('.github/dependabot.yml', 1), ('Cargo.toml', 1), ('.devcontainer/devcontainer.json', 1), ('Cross.toml', 1)]"
+6,Orhun Parmaksız <orhunparmaksiz@gmail.com>,['Orhun Parmaksız <orhunparmaksiz@gmail.com>'],0,1,0.0,[]
+7,Dan Bond <danbond@protonmail.com>,['Dan Bond <danbond@protonmail.com>'],0,1,0.0,[]
+8,Dominic Evans <dominic.evans@uk.ibm.com>,['Dominic Evans <dominic.evans@uk.ibm.com>'],1,0,6.0,"[('.devcontainer/Dockerfile', 1), ('.github/workflows/rust.yml', 1), ('.github/dependabot.yml', 1), ('Cargo.toml', 1), ('.devcontainer/devcontainer.json', 1), ('Cross.toml', 1)]"
+9,lewis <lu5a@proton.me>,['lewis <lu5a@proton.me>'],0,1,0.0,[]
+10,Benjamin A. Beasley <code@musicinmybrain.net>,['Benjamin A. Beasley <code@musicinmybrain.net>'],2,0,3.0,"[('.devcontainer/Dockerfile', 1), ('.github/workflows/rust.yml', 1), ('.github/dependabot.yml', 1), ('Cargo.toml', 1), ('.devcontainer/devcontainer.json', 1), ('Cross.toml', 1)]"
+11,Michael Willett <51060085+m12t@users.noreply.github.com>,['Michael Willett <51060085+m12t@users.noreply.github.com>'],0,1,0.0,[]
+12,Tanel Poder <tanel@tanelpoder.com>,['Tanel Poder <tanel@tanelpoder.com>'],0,1,0.0,[]
+13,Copilot <198982749+Copilot@users.noreply.github.com>,['Copilot <198982749+Copilot@users.noreply.github.com>'],0,2,0.0,[]
+14,Artem Tkachuk <artemtkachuk@yahoo.com>,['Artem Tkachuk <artemtkachuk@yahoo.com>'],0,3,0.0,[]

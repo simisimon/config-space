@@ -1,0 +1,31 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,gitbook-bot <ghost@gitbook.com>,['gitbook-bot <ghost@gitbook.com>'],0,1,0.0,[]
+1,Romain Cledat <rcledat@netflix.com>,['Romain Cledat <rcledat@netflix.com>'],0,12,0.0,[]
+2,ferras37 <ferras37@gmail.com>,['ferras37 <ferras37@gmail.com>'],0,1,0.0,[]
+3,Ville Tuulos <vtuulos@netflix.com>,"['Ville Tuulos <vtuulos@netflix.com>', 'Ville Tuulos <tuulos@gmail.com>']",2,121,0.04878048780487805,"[('.github/workflows/deploy.yml', 1), ('package.json', 1), ('settings.ini', 1), ('.github/workflows/search.yaml', 1), ('_nbdoc_index.json', 1), ('.github/workflows/lint.yml', 1)]"
+4,Savin <savingoyal@gmail.com>,"['Savin <savingoyal@gmail.com>', 'Savin Goyal <savingoyal@gmail.com>']",0,69,0.0,[]
+5,Jason Ge <jge@netflix.com>,['Jason Ge <jge@netflix.com>'],0,6,0.0,[]
+6,seeravikiran <42477611+seeravikiran@users.noreply.github.com>,['seeravikiran <42477611+seeravikiran@users.noreply.github.com>'],0,2,0.0,[]
+7,Yosef Berman <yosef.berman@nytimes.com>,['Yosef Berman <yosef.berman@nytimes.com>'],0,3,0.0,[]
+8,Romain <romain-intel@users.noreply.github.com>,['Romain <romain-intel@users.noreply.github.com>'],1,1,3.0,"[('.github/workflows/deploy.yml', 1), ('package.json', 1), ('settings.ini', 1), ('.github/workflows/search.yaml', 1), ('_nbdoc_index.json', 1), ('.github/workflows/lint.yml', 1)]"
+9,ryantd <xiaoyu.zhai@hotmail.com>,['ryantd <xiaoyu.zhai@hotmail.com>'],0,1,0.0,[]
+10,Hamel Husain <hamelsmu@github.com>,"['Hamel Husain <hamelsmu@github.com>', 'Hamel Husain <hamel.husain@gmail.com>', 'hamelsmu <hamel.husain@gmail.com>']",10,26,0.1388888888888889,"[('.github/workflows/search.yaml', 1), ('package.json', 1), ('.github/workflows/deploy.yml', 1), ('_nbdoc_index.json', 1), ('settings.ini', 1)]"
+11,Brendan Gibson <brendan@outerbounds.co>,"['Brendan Gibson <brendan@outerbounds.co>', 'Brendan Gibson <93726128+obgibson@users.noreply.github.com>']",13,84,0.05154639175257732,"[('.github/workflows/deploy.yml', 2), ('package.json', 2), ('settings.ini', 2), ('.github/workflows/search.yaml', 2), ('_nbdoc_index.json', 2)]"
+12,Valay Dave <valaygaurang@gmail.com>,['Valay Dave <valaygaurang@gmail.com>'],0,1,0.0,[]
+13,Oleg Avdeev <oleg.v.avdeev@gmail.com>,['Oleg Avdeev <oleg.v.avdeev@gmail.com>'],0,9,0.0,[]
+14,Yan Pan <yanp@users.noreply.github.com>,['Yan Pan <yanp@users.noreply.github.com>'],0,1,0.0,[]
+15,Eddie Mattia <eddie@outerbounds.com>,"['Eddie Mattia <eddie@outerbounds.com>', 'emattia <40632488+emattia@users.noreply.github.com>', 'Eddie Mattia <40632488+emattia@users.noreply.github.com>']",0,6,0.0,[]
+16,D. Sturgeon <darrick.sturge@gmail.com>,['D. Sturgeon <darrick.sturge@gmail.com>'],0,1,0.0,[]
+17,James Budarz <me@jamesbudarz.com>,['James Budarz <me@jamesbudarz.com>'],1,0,5.0,"[('.github/workflows/deploy.yml', 1), ('package.json', 1), ('settings.ini', 1), ('.github/workflows/search.yaml', 1), ('_nbdoc_index.json', 1)]"
+18,Mikkolehtimaki <Mikkolehtimaki@users.noreply.github.com>,['Mikkolehtimaki <Mikkolehtimaki@users.noreply.github.com>'],0,1,0.0,[]
+19,Boris Feld <lothiraldan@gmail.com>,['Boris Feld <lothiraldan@gmail.com>'],0,1,0.0,[]
+21,Ben Brandt <bbrandt@users.noreply.github.com>,['Ben Brandt <bbrandt@users.noreply.github.com>'],0,1,0.0,[]
+22,Saurabh Garg <144727284+iamsgarg-ob@users.noreply.github.com>,['Saurabh Garg <144727284+iamsgarg-ob@users.noreply.github.com>'],0,4,0.0,[]
+23,rohanrebello <1291433+rohanrebello@users.noreply.github.com>,['rohanrebello <1291433+rohanrebello@users.noreply.github.com>'],0,4,0.0,[]
+24,madhur-ob <155637867+madhur-ob@users.noreply.github.com>,['madhur-ob <155637867+madhur-ob@users.noreply.github.com>'],0,7,0.0,[]
+25,Yogesh Garg <yogeshg91@gmail.com>,['Yogesh Garg <yogeshg91@gmail.com>'],0,1,0.0,[]
+26,nbertagnolli <nmbertagnolli@gmail.com>,['nbertagnolli <nmbertagnolli@gmail.com>'],0,1,0.0,[]
+27,Anton Gilgur <4970083+agilgur5@users.noreply.github.com>,['Anton Gilgur <4970083+agilgur5@users.noreply.github.com>'],0,1,0.0,[]
+28,Shashank Srikanth <s.shashank2401@gmail.com>,['Shashank Srikanth <s.shashank2401@gmail.com>'],0,1,0.0,[]
+29,Gee <17325189+GeeCastro@users.noreply.github.com>,['Gee <17325189+GeeCastro@users.noreply.github.com>'],0,1,0.0,[]
+30,Sakari Ikonen <64256562+saikonen@users.noreply.github.com>,['Sakari Ikonen <64256562+saikonen@users.noreply.github.com>'],0,2,0.0,[]

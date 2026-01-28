@@ -1,0 +1,14 @@
+Dealiased ID,Contributor,Aliases,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+0,Ian Haken <ihaken@netflix.com>,"['Ian Haken <ihaken@netflix.com>', 'Ian Haken <jackofmosttrades0@gmail.com>']",25,27,0.6153846153846154,"[('html/results/firefox_50_windows.json', 1), ('html/bower.json', 1), ('html/results/chrome_63_osx10.13.3.json', 1), ('html/results/chromium_60_linux.json', 1), ('html/results/lua_5.2_linux.json', 1), ('html/results/curl_7.50.1_linux.json', 1), ('html/results/python_3.5.2_linux.json', 1), ('html/results/chromium_55_linux.json', 1), ('html/results/chrome_61_osx10.json', 1), ('html/results/go_1.10.3_linux.json', 1), ('html/results/firefox_50_linux.json', 1), ('html/results/safari_604_osx10.json', 1), ('html/results/chrome_55_windows.json', 1), ('nameconstraints/config.json', 1), ('html/results/safari_602_osx10.json', 1), ('html/results/node_6.9.4_linux.json', 1), ('html/results/edge_14_windows.json', 1), ('html/results/openssl_1.1.0f_linux.json', 1), ('html/results/java_1.9.0_149_linux.json', 1), ('html/config.json', 1), ('html/results/safari_604_osx10.13.3.json', 1), ('html/results/python_2.7.13_linux.json', 1), ('html/results/chrome_55_osx10.json', 1), ('html/results/python_3.5.3_linux.json', 1), ('.github/workflows/go.yml', 1), ('html/manifest.json', 1), ('html/results/firefox_50_osx10.json', 1), ('config.json', 1), ('html/results/java_1.8.0_111_linux.json', 1), ('html/results/ruby_2.4.1_linux.json', 1), ('html/results/node_4.4.4_linux.json', 1), ('html/results/chrome_61_windows.json', 1)]"
+1,Adam Langley <agl@google.com>,['Adam Langley <agl@google.com>'],0,1,0.0,[]
+2,Jay Satiro <raysatiro@yahoo.com>,['Jay Satiro <raysatiro@yahoo.com>'],0,1,0.0,[]
+3,daurnimator <quae@daurnimator.com>,['daurnimator <quae@daurnimator.com>'],0,1,0.0,[]
+4,Alex Cohn <alex@alexcohn.com>,['Alex Cohn <alex@alexcohn.com>'],0,1,0.0,[]
+5,babusri <babu@srinivasan.biz>,['babusri <babu@srinivasan.biz>'],0,1,0.0,[]
+6,Amit Stein <amitstein@gmail.com>,['Amit Stein <amitstein@gmail.com>'],0,1,0.0,[]
+7,Jeremy Rand <jeremyrand@danwin1210.de>,['Jeremy Rand <jeremyrand@danwin1210.de>'],0,5,0.0,[]
+8,Daniel McCarney <daniel@binaryparadox.net>,['Daniel McCarney <daniel@binaryparadox.net>'],0,2,0.0,[]
+9,William Woodruff <william@trailofbits.com>,['William Woodruff <william@trailofbits.com>'],0,2,0.0,[]
+10,Jack Lloyd <jack@randombit.net>,['Jack Lloyd <jack@randombit.net>'],0,1,0.0,[]
+11,Ilya Shatov <>,['Ilya Shatov <>'],1,0,1.0,"[('.github/workflows/go.yml', 1)]"
+12,İsmail Taşdelen <ismailtasdelen@protonmail.com>,['İsmail Taşdelen <ismailtasdelen@protonmail.com>'],1,0,1.0,"[('.github/workflows/go.yml', 1)]"

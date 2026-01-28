@@ -1,0 +1,114 @@
+Original Author,Dealiased ID
+Justin Ryan <jryan@netflix.com>,0
+Jordan Zimmerman <jordan@jordanzimmerman.com>,1
+Justin Ryan <justin@halfempty.org>,0
+Greg Orzell <gorzell@sumologic.com>,2
+mikeycohen <mikeycohen@gmail.com>,3
+mhawthorne <mhawthorne@gmail.com>,4
+Bob T Builder <builds@netflix.com>,5
+vic999 <vic@jungbauer.pw>,6
+Mikey Cohen <mikeycohen@gmail.com>,3
+Jon Losch <jlosch@digitalriver.com>,7
+Michael Smith <michaels@netflix.com>,8
+Raju Uppalapati <ruppalapati@netflix.com>,9
+Neeraj Joshi <njoshi@netflix.com>,10
+Raju Uppalapati <uppalapa@yahoo.com>,9
+Colin Jones <trptcolin@gmail.com>,11
+Eric Fultz <eric.fultz@productops.com>,12
+Peter Motykowski <peter@motyka.org>,13
+Tim McCormack <tmccormack@brightcove.com>,14
+Andrew Spyker <awspyker@gmail.com>,15
+Matt Jacobs <mattrjacobs@gmail.com>,16
+Paul Snyder <paul@pataprogramming.com>,17
+Kpacha <kpacha666@gmail.com>,18
+Redmar Kerkhoff <redmar@creativecode.nl>,19
+Andriy Andriychenko <Andriy.Andriychenko@medhost.com>,20
+mcorrea <manuel.correa@careerbuilder.com>,21
+Rob Spieldenner <rob.spieldenner@gmail.com>,22
+Mike Smith <michaels@netflix.com>,8
+Mike Smith <kerumai@users.noreply.github.com>,8
+mhawthorne <mhawthorne@netflix.com>,4
+matthew hawthorne <mhawthorne@gmail.com>,4
+Nitesh Kant <nkant@netflix.com>,23
+Nitesh Kant <nitesh1706@gmail.com>,23
+chrisp <chrisp@netflix.com>,24
+polarbizzle <sabaka.dog@gmail.com>,25
+Tom Breitkopf <thomas.j.breitkopf@gmail.com>,26
+Jearvon Dharrie <j.dharrie@gmail.com>,27
+Andrew Spyker <aspyker@netflix.com>,15
+agonigberg <agonigberg@netflix.com>,28
+Gregor Zurowski <gregor@zurowski.net>,29
+Kohen Chia <kohenc@zillow.com>,30
+raksoras <susheel.aroskar@gmail.com>,31
+Sudheer Vinukonda <svinukonda@netflix.com>,32
+Susheel Aroskar <saroskar@netflix.com>,31
+Arthur Gonigberg <agonigberg@netflix.com>,28
+Steve Hill <sghill.dev@gmail.com>,33
+Jacob Johansen <jacob.johansen@virginpulse.com>,34
+张晋 <zhangjin@corp.netease.com>,35
+Gaya Varad <gvaradarajan@netflix.com>,36
+Gaya Varadarajan <gvaradarajan@netflix.com>,36
+Steffen Templin <steffen.templin@open-xchange.com>,37
+Carl Mastrangelo <carl-mastrangelo@users.noreply.github.com>,38
+Akshay Pethani <pethaniakshay@users.noreply.github.com>,39
+羲禾丶 <liangGTY@users.noreply.github.com>,40
+Gaya <gvaradarajan@netflix.com>,36
+Philip Rud <prud@netflix.com>,41
+Phil Rud <47129415+philrud@users.noreply.github.com>,42
+LWY <572039941@qq.com>,43
+Christian Clauss <cclauss@me.com>,44
+Igor Perikov <IgorPerikov@users.noreply.github.com>,45
+Carl Mastrangelo <cmastrangelo@netflix.com>,38
+Argha <>,46
+Argha C <971473+argha-c@users.noreply.github.com>,47
+Argha C <007.argha@gmail.com>,47
+Cody Rioux <crioux@netflix.com>,48
+Suyi Liu <susiesuyiliu@gmail.com>,49
+argha-c <007.argha@gmail.com>,47
+sullis <github@seansullivan.com>,50
+xingrufei <xingrufei@yl.com>,51
+kyagna <karthik.yagna@gmail.com>,52
+ldayton <43729618+ldayton@users.noreply.github.com>,53
+Karthik Yagna <karthik.yagna@gmail.com>,52
+Jose Fernandez <josef@netflix.com>,54
+Jose Fernandez <me@jrfernandez.com>,54
+Arthur Gonigberg <artgon@gmail.com>,28
+Brian Tarricone <brian@tarricone.org>,55
+Roberto Perez Alcolea <rperezalcolea@netflix.com>,56
+Sean C. Sullivan <github@seansullivan.com>,50
+Kashish Mittal <52948762+kashish9034z@users.noreply.github.com>,57
+Danny Thomas <dannyt@netflix.com>,58
+Danny Thomas <DanielThomas@users.noreply.github.com>,58
+Gavin Bunney <gbunney@netflix.com>,59
+Gavin Bunney <409207+gavinbunney@users.noreply.github.com>,59
+sullis <seansullivan@netflix.com>,50
+Alex Ellis <alexellis@netflix.com>,60
+Justin Guerra <jguerra@netflix.com>,61
+Justin Guerra <justinguerra@gmail.com>,61
+Nikhil Barik <nklmarch17@gmail.com>,62
+Yeikel <email@yeikel.com>,63
+1zg12 <52658745+1zg12@users.noreply.github.com>,64
+cui fliter <imcusg@gmail.com>,65
+Aayush Atharva <hyperx.pro@outlook.com>,66
+lindseyr <lindseyr@netflix.com>,67
+lindseyreynolds <lindsey.reynolds44@gmail.com>,67
+karim-z <karim_returns@hotmail.com>,69
+$(git --no-pager log --format=format:'%an' -n 1) <$(git --no-pager log --format=format:'%ae' -n 1)>,70
+karim-z <kzaytoun@netflix.com>,69
+Caro <c.e.brandt@tudelft.nl>,71
+lalernehl <lalernehl@gmail.com>,72
+lalernehl <alaborda@roblox.com>,72
+lindseyreynolds <lindseyr@netflix.com>,67
+Connor Worley <cworley@netflix.com>,73
+Connor Worley <connorbworley@gmail.com>,73
+alaborda <alaborda@netflix.com>,74
+sunnysingh85 <sunnys@netflix.com>,75
+VS <vspachyn@gmail.com>,76
+Sarah Pethani <spethani@netflix.com>,77
+spethani <sarahpethani@gmail.com>,77
+Roman A <121314722+GameRoMan@users.noreply.github.com>,78
+OdysseusLives <achipman@netflix.com>,79
+tappenzeller <tappenzeller@netflix.com>,80
+Emma Worley <connorbworley@gmail.com>,73
+Marcel Petrick <mail@marcelpetrick.it>,81
+Anh (Henry) Nguyen <ng.huyanh.gd@gmail.com>,82
