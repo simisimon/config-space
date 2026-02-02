@@ -1,0 +1,46 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Spike Brehm <spike@airbnb.com>,0,1,0.0,[]
+Hector Yee <hector.yee@airbnb.com>,53,151,2.47,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Hector Yee <hector.yee@gmail.com>,20,32,2.25,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Peng Ye <peng.ye@airbnb.com>,25,94,2.76,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Peng <deerzq@gmail.com>,1,1,2.0,"['gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+e3 <eerwitt@gmail.com>,0,1,0.0,[]
+Jimmy Tang <jimmy.tang@airbnb.com>,0,1,0.0,[]
+by99 <yoga>,0,2,0.0,[]
+Alven Diaz <nevlad@gmail.com>,1,0,2.0,"['gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Chas Warner <chas.warner@twc-contractor.com>,0,1,0.0,[]
+Canoe <canoefzh@gmail.com>,0,1,0.0,[]
+Jan Overgoor <jan.overgoor@airbnb.com>,0,2,0.0,[]
+Peng Ye <deerzq@users.noreply.github.com>,5,39,3.2,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+spencerde <spencer.demars@gmail.com>,2,1,2.0,"['gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Benjamin Yolken <benjamin.yolken@airbnb.com>,9,16,3.0,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Benjamin Yolken <yolken@users.noreply.github.com>,7,4,3.0,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+julian qian <julian.qian@airbnb.com>,33,234,3.06,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Julian Qian <julian@coin.vc>,2,12,3.0,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+seckcoder <seckcoder@gmail.com>,0,15,0.0,[]
+Christopher Mitcheltree <christhetree@gmail.com>,0,1,0.0,[]
+christhetree <christhetree@gmail.com>,0,41,0.0,[]
+Christopher <christhetree@gmail.com>,2,25,3.0,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+pai_liu <pai.liu@airbnb.com>,2,10,3.0,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Pai Liu <liup04@gmail.com>,3,3,3.0,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Jordan Harband <ljharb@gmail.com>,0,1,0.0,[]
+chao-yang <chao.yang@airbnb.com>,0,1,0.0,[]
+Chao <buptyc@gmail.com>,0,1,0.0,[]
+Julian Qian <julian.qian@airbnb.com>,8,74,3.25,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Forest Fang <sen.fang@airbnb.com>,11,46,3.09,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Forest Fang <saurfang@users.noreply.github.com>,5,12,3.4,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Yin Lou <yin.lou.07@gmail.com>,2,4,3.0,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Preston Parry <ClimbsBytes@gmail.com>,0,1,0.0,[]
+Jerry Luan <jerry.luan@airbnb.com>,2,6,3.0,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Junyi <xmaswillyou@gmail.com>,1,4,3.0,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Andy Baek <andy.baek@airbnb.com>,1,14,3.0,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Andy Baek <andybaek95@gmail.com>,1,0,3.0,"['.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Yitong Zhou <yitong.zhou@airbnb.com>,2,1,3.5,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Yitong Zhou <timyitong@gmail.com>,2,1,3.5,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Feram <feram@feram.co>,0,3,0.0,[]
+Degao Peng <degao.peng@airbnb.com>,0,2,0.0,[]
+Mike Lewis <mike.lewis@airbnb.com>,2,3,4.0,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Mike Lewis <mlewis.mail@gmail.com>,2,3,4.0,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+nataliedurgin <nataliedurgin@users.noreply.github.com>,1,0,4.0,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Tiberiu Popa <tiberiu.popa@airbnb.com>,1,1,4.0,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'demo/image_impressionism/src/main/resources/log4j.properties']"
+Tiberiu Popa <popa.tiberiu@gmail.com>,0,1,0.0,[]

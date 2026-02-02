@@ -1,0 +1,34 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Adam Bouhenguel <adam@bouhenguel.com>,0,3,0.0,[]
+Motiejus Jakštys <motiejus@jakstys.lt>,42,116,1.5,"['.github/workflows/ci.yaml', '.build.yml', '.bcr/presubmit.yml', '.bcr/metadata.template.json', '.buildkite/pipeline.yml', '.bcr/source.template.json']"
+Motiejus Jakštys <motiejus@uber.com>,41,335,1.07,"['.build.yml', '.buildkite/pipeline.yml']"
+Mantas Jonaitis <mjonaitis@uber.com>,0,1,0.0,[]
+Piotr Sikora <piotrsikora@google.com>,0,1,0.0,[]
+Ken Micklas <kmicklas@uber.com>,0,14,0.0,[]
+laurynasl <laurynasl@uber.com>,2,7,1.0,['.build.yml']
+Jeremy Volkman <jeremy@jvolkman.com>,0,7,0.0,[]
+Fabian Hahn <fabian@hahn.graphics>,1,6,1.0,['.build.yml']
+Luis Holanda <luiscmholanda@gmail.com>,0,3,0.0,[]
+Jeremy Volkman <jeremy@cedarai.com>,0,3,0.0,[]
+zplin <zplin@uber.com>,1,2,2.0,"['.build.yml', '.buildkite/pipeline.yml']"
+Zhongpeng Lin <zplin@uber.com>,6,25,3.67,"['.github/workflows/ci.yaml', '.build.yml', '.bcr/presubmit.yml', '.bcr/metadata.template.json', '.buildkite/pipeline.yml', '.bcr/source.template.json']"
+Jonathan Baker <jonbaker@uber.com>,0,5,0.0,[]
+Goni Zahavy <gzahavy@trigoretail.com>,0,2,0.0,[]
+Laurynas Lubys <laurynas.lubys@gmail.com>,1,0,1.0,['.buildkite/pipeline.yml']
+Donald Stufft <donald@stufft.io>,0,1,0.0,[]
+David Zbarsky <dzbarsky@gmail.com>,0,1,0.0,[]
+Motiejus Jakštys <motiejusja@wix.com>,10,32,4.0,"['.github/workflows/ci.yaml', '.bcr/presubmit.yml', '.bcr/metadata.template.json', '.buildkite/pipeline.yml', '.bcr/source.template.json']"
+motiejus-wix <145984389+motiejus-wix@users.noreply.github.com>,2,3,4.0,"['.github/workflows/ci.yaml', '.bcr/presubmit.yml', '.bcr/metadata.template.json', '.buildkite/pipeline.yml', '.bcr/source.template.json']"
+Robin Linden <dev@robinlinden.eu>,0,2,0.0,[]
+Tyler Rockwood <rockwood@redpanda.com>,0,2,0.0,[]
+Derek Perkins <derek@nozzle.io>,0,1,0.0,[]
+Ofek Lev <ofekmeister@gmail.com>,0,1,0.0,[]
+BrandonThomasJonesARM <100707302+BrandonThomasJonesARM@users.noreply.github.com>,0,1,0.0,[]
+Ezekiel Warren <zaucy@users.noreply.github.com>,0,1,0.0,[]
+Corentin Kerisit <corentin.kerisit@gmail.com>,0,2,0.0,[]
+Manuel Francisco Naranjo <naranjo.manuel@gmail.com>,0,1,0.0,[]
+Sebastian Birunt <sebastian.birunt@arm.com>,0,2,0.0,[]
+Lining Pan <lining_pan@outlook.com>,0,1,0.0,[]
+Eero Kelly <eerokelly@gmail.com>,0,2,0.0,[]
+Nicolas Mattia <nicolas@nmattia.com>,0,1,0.0,[]
+Alex Tercete <alextercete@gmail.com>,1,0,4.0,"['.bcr/presubmit.yml', '.github/workflows/ci.yaml', '.bcr/metadata.template.json', '.bcr/source.template.json']"

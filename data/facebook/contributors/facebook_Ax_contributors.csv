@@ -1,0 +1,238 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+facebook-github-bot <facebook-github-bot@users.noreply.github.com>,1,0,5.0,"['website/sidebars.json', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Eytan Bakshy <ebakshy@gmail.com>,0,1,0.0,[]
+Shaun Singh <shaundsingh@fb.com>,2,50,6.0,"['website/sidebars.json', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Kostya Kashin <kkashin@fb.com>,5,10,5.0,"['website/sidebars.json', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Eytan Bakshy <ebakshy@fb.com>,0,1,0.0,[]
+Drew Dimmery <drewd@fb.com>,0,1,0.0,[]
+Lili Dworkin <lilidworkin@fb.com>,8,194,7.12,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Lena Kashtelyan <drfreund@fb.com>,19,425,5.53,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Max Balandat <balandat@fb.com>,8,83,6.12,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Mario Wijaya <mwijaya3@hotmail.com>,0,1,0.0,[]
+Ashwin Murthy <amurthy@fb.com>,1,22,5.0,"['website/sidebars.json', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+carefree0910 <syameimaru_kurumi@pku.edu.cn>,0,2,0.0,[]
+Lena Kashtelyan <lena.kashtelyan@gmail.com>,0,4,0.0,[]
+Konstantin Kashin <kkashin@users.noreply.github.com>,4,8,5.0,"['website/sidebars.json', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Adrian Zgorzalek <adek@fb.com>,0,1,0.0,[]
+Max Kaplan <mfkaplan@fb.com>,0,1,0.0,[]
+generatedunixname89002005289445 <generatedunixname89002005289445@fb.com>,0,5,0.0,[]
+Andres Suarez <asuarez@fb.com>,0,2,0.0,[]
+Chandler Zuo <chandlerzuo@fb.com>,0,1,0.0,[]
+c-bata <contact@c-bata.link>,0,1,0.0,[]
+Joel Marcey <joelm@fb.com>,1,3,5.0,"['website/sidebars.json', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+nmasahiro <masahironomura5325@gmail.com>,0,2,0.0,[]
+xavier dutoit <github@tttp.eu>,0,1,0.0,[]
+Jake Weissman <jakeweissman@fb.com>,0,1,0.0,[]
+Alan Luong <aluong@fb.com>,0,1,0.0,[]
+Richard Liaw <rliaw@berkeley.edu>,0,1,0.0,[]
+dgiannelli <iannelli.giovanni@gmail.com>,0,1,0.0,[]
+Michal Rozenwald <michalrozenwald@fb.com>,0,12,0.0,[]
+Sam Zhou <samzhou19815@fb.com>,0,1,0.0,[]
+Weiwei Li <weiweili90@fb.com>,0,4,0.0,[]
+Sam Daulton <samdaulton@instagram.com>,0,6,0.0,[]
+Ben Letham <bletham@fb.com>,0,42,0.0,[]
+Jacob E. Jensen <jej@fb.com>,5,99,6.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Brian Karrer <briankarrer@fb.com>,0,1,0.0,[]
+Steve Mandala <scubasteve@fb.com>,3,70,5.33,"['website/sidebars.json', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Noah Lee <noahlee@fb.com>,0,1,0.0,[]
+Adam Obeng <adamobeng@fb.com>,1,5,6.0,"['website/sidebars.json', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Paul O'Shannessy <poshannessy@fb.com>,0,1,0.0,[]
+Shubhankar Ray <shub@fb.com>,0,1,0.0,[]
+Erik Brinkman <erk@fb.com>,0,1,0.0,[]
+Jake Podell <podell6@gmail.com>,1,2,5.0,"['website/sidebars.json', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Sophia Hu <sph@fb.com>,0,5,0.0,[]
+Jake Podell <podell@fb.com>,4,9,6.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+generatedunixname89002005307016 <generatedunixname89002005307016@fb.com>,0,22,0.0,[]
+Thiago Franco <thiago.franco@corp.globo.com>,0,1,0.0,[]
+Dan Ryan <drdanryan@users.noreply.github.com>,1,0,5.0,"['website/sidebars.json', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+vfdev <vfdev.5@gmail.com>,0,1,0.0,[]
+Abbas Kazerouni <kazerouni@fb.com>,0,11,0.0,[]
+Jacob Jensen <2timesjay@users.noreply.github.com>,0,1,0.0,[]
+Sarah Tan <sarahtan@fb.com>,0,1,0.0,[]
+Liang Shi <liangshi@fb.com>,0,5,0.0,[]
+Mark Richardson <echo@fb.com>,0,1,0.0,[]
+Gerard Casas Saez <casassg@users.noreply.github.com>,0,1,0.0,[]
+Xin Jin <varlog@fb.com>,0,1,0.0,[]
+Daniel Jiang <drjiang@fb.com>,2,60,7.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json']"
+Cong Xie <congxie@fb.com>,0,1,0.0,[]
+Steve Mandala <cyanohawk@gmail.com>,1,0,5.0,"['website/sidebars.json', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Sam Daulton <sdaulton@fb.com>,1,59,7.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json']"
+Steve Mandala <9901641+stevemandala@users.noreply.github.com>,1,0,5.0,"['website/sidebars.json', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Tao Wu <taow@fb.com>,0,1,0.0,[]
+Vaibhav Jayaraman <vaibhavj@fb.com>,0,1,0.0,[]
+StanislawSwierc <stanislaw.swierc@gmail.com>,0,1,0.0,[]
+Christopher Whelan <cmw@fb.com>,0,1,0.0,[]
+Jelena Markovic <jmarkovic@fb.com>,0,1,0.0,[]
+Rudresh Rajnikant Panchal <rudreshp@fb.com>,0,3,0.0,[]
+Qing Feng <qingfeng@fb.com>,0,19,0.0,[]
+Dominik Gabi <dominik@fb.com>,0,1,0.0,[]
+Daniel Haziza <dhaziza@fb.com>,0,1,0.0,[]
+Zachary Cohn <zacharycohn@fb.com>,0,13,0.0,[]
+Eric Lou <ericlou@fb.com>,0,23,0.0,[]
+Gang Zhao <zhaogang@fb.com>,0,1,0.0,[]
+Jiyuan Qian <jiyuan@fb.com>,0,1,0.0,[]
+Stanislau Hlebik <stash@fb.com>,0,2,0.0,[]
+Hồ Đức Hiếu <hoduchieu01@gmail.com>,0,1,0.0,[]
+Saravanan Selvamohan <43172875+saravananselvamohan@users.noreply.github.com>,0,1,0.0,[]
+Leo Huang (AE) <alh99@fb.com>,0,1,0.0,[]
+Hongwei Tian <hongweitian@fb.com>,0,4,0.0,[]
+Paul Parayil Varkey <paulvarkey@fb.com>,0,1,0.0,[]
+Abhishek Pillarisetti <abhiiii@fb.com>,0,1,0.0,[]
+David Eriksson <deriksson@fb.com>,1,31,7.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json']"
+Fern Lukban <fern@fb.com>,0,1,0.0,[]
+Tim Hatch <thatch@fb.com>,1,3,6.0,"['website/sidebars.json', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Leo Huang <>,0,1,0.0,[]
+Elena Kashtelyan <doctorfreund@fb.com>,1,5,6.0,"['website/sidebars.json', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.travis.yml', 'website/tutorials.json', 'website/package.json']"
+Adly Templeton <adlyt@fb.com>,0,1,0.0,[]
+Theofanis Karaletsos <theokara@fb.com>,0,1,0.0,[]
+David Eriksson <dme65@cornell.edu>,0,1,0.0,[]
+Pradeep Kumar Srinivasan <pradeepkumars@fb.com>,0,2,0.0,[]
+Karishma Mandyam <krm28@fb.com>,0,1,0.0,[]
+John Reese <jreese@fb.com>,2,4,7.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json']"
+Meng Wang <mengwa@fb.com>,0,2,0.0,[]
+Jaromir Latal <jaro@fb.com>,0,1,0.0,[]
+Vibhor Jain <vib@fb.com>,0,2,0.0,[]
+Yuchen Xie <yuchenxie@fb.com>,0,1,0.0,[]
+Bernard M Beckerman <bbeckerman@fb.com>,0,2,0.0,[]
+Jessica Zhao <jessicazhao@fb.com>,0,1,0.0,[]
+Mark <MrCull@users.noreply.github.com>,0,1,0.0,[]
+Dmitry Ponomarev <ponomarev@fb.com>,0,1,0.0,[]
+Dominic Meiser <dominic.meiser@fb.com>,0,1,0.0,[]
+Bernie Beckerman <bbeckerman@fb.com>,1,130,7.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json']"
+Sam Woodmansee <swoodmansee@fb.com>,0,3,0.0,[]
+Justin Terry <justinkterry@gmail.com>,0,1,0.0,[]
+Ben Letham <bletham@gmail.com>,0,1,0.0,[]
+Yukun Ding <yukunding@fb.com>,0,3,0.0,[]
+generatedunixname89002005287564 <generatedunixname89002005287564@fb.com>,0,2,0.0,[]
+Sunyu Duan <sunyu@fb.com>,0,1,0.0,[]
+Pyre Bot Jr <>,0,35,0.0,[]
+lena.kashtelyan@gmail.com <lena.kashtelyan@gmail.com>,0,1,0.0,[]
+Sulin Liu <lsl@fb.com>,0,4,0.0,[]
+Daniel Cohen <danielcohennyc@fb.com>,6,111,7.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json']"
+Sait Cakmak <saitcakmak@fb.com>,3,50,10.33,"['website/sidebars.json', '.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.github/ISSUE_TEMPLATE/config.yaml', '.pre-commit-config.yaml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', '.github/workflows/cron_pinned.yml', '.readthedocs.yaml', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Franco Manessi <fmanessi@fb.com>,0,1,0.0,[]
+CodemodService Bot <>,0,1,0.0,[]
+Max Balandat <balandat@gmail.com>,3,7,7.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json']"
+Jerry Lin <zylin@fb.com>,0,5,0.0,[]
+Sourabh Shekhar Kulkarni <sourabhkul@fb.com>,0,1,0.0,[]
+Taras Savchyn <30748114+trsvchn@users.noreply.github.com>,0,1,0.0,[]
+Josep Maria Salvia Hornos <josh.salvia@gmail.com>,0,1,0.0,[]
+Miles Olson <mpolson64@fb.com>,12,184,7.17,"['ax/benchmark2/problems/baseline_results/synthetic/branin.json', 'website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'ax/benchmark2/problems/baseline_results/synthetic/ackley.json', 'website/package.json']"
+Cyrus Diciccio <cyrusd@fb.com>,0,1,0.0,[]
+James Wilson <jtwilson@fb.com>,0,7,0.0,[]
+Eugen Hotaj <ehotaj@fb.com>,3,18,7.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json']"
+Eugen Hotaj <ehotaj@google.com>,0,1,0.0,[]
+Mike Kovalski <mkovalski@fb.com>,0,1,0.0,[]
+Payan Canaran <pcanaran@fb.com>,0,4,0.0,[]
+dmitryvinn <dmitryvinn@gmail.com>,0,1,0.0,[]
+Dmitry Vinnik <dmitryvinn@users.noreply.github.com>,0,1,0.0,[]
+ᵂᴵᴺᴳᴷᴼᵁ <wingkou@outlook.com>,0,1,0.0,[]
+Sterling Baird <45469701+sgbaird@users.noreply.github.com>,0,1,0.0,[]
+Kilian Hu <kilian.a@hu101.com>,0,1,0.0,[]
+Sait Cakmak <saitcakmak@outlook.com>,19,14,12.47,"['website/sidebars.json', '.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.github/ISSUE_TEMPLATE/config.yaml', '.pre-commit-config.yaml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', '.github/workflows/cron_pinned.yml', '.readthedocs.yaml', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Bas Nijholt <basnijholt@gmail.com>,0,1,0.0,[]
+Max Balandat <Balandat@users.noreply.github.com>,1,1,16.0,"['.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.pre-commit-config.yaml', '.readthedocs.yaml', 'pyproject.toml', '.github/ISSUE_TEMPLATE/config.yaml', '.github/workflows/cron_pinned.yml', 'website/tutorials.json', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Elizabeth Santorella <santorella@fb.com>,0,6,0.0,[]
+Syrine Belakaria <syrinebelakaria@fb.com>,0,4,0.0,[]
+Jon Janzen <jonjanzen@fb.com>,0,2,0.0,[]
+Facebook Community Bot <facebook-github-bot@users.noreply.github.com>,1,2,7.0,"['website/sidebars.json', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.github/cron.yml', 'website/tutorials.json', '.github/deploy.yml', 'website/package.json']"
+John Clow (Meta Employee) <jclow@fb.com>,0,1,0.0,[]
+Haonan Sun <haonans@fb.com>,0,1,0.0,[]
+Sergii Dymchenko <sdym@fb.com>,0,1,0.0,[]
+Sebastian Ament <sebastianament@fb.com>,0,1,0.0,[]
+Jiayue Wan <jiayuewan@fb.com>,0,1,0.0,[]
+Jingyu Zou (IG) <zjy@fb.com>,0,1,0.0,[]
+Jingyu Zou (IG) <zjy@meta.com>,0,1,0.0,[]
+Lena Kashtelyan <drfreund@meta.com>,0,83,0.0,[]
+Vikram Srivastava <vikramsri@fb.com>,0,1,0.0,[]
+Sait Cakmak <saitcakmak@meta.com>,6,566,14.17,"['website/sidebars.json', '.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.github/ISSUE_TEMPLATE/config.yaml', '.pre-commit-config.yaml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', '.github/workflows/cron_pinned.yml', '.readthedocs.yaml', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Elizabeth Santorella <santorella@meta.com>,5,356,10.8,"['website/sidebars.json', '.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.github/ISSUE_TEMPLATE/config.yaml', '.pre-commit-config.yaml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', '.github/workflows/cron_pinned.yml', '.readthedocs.yaml', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Daniel Jiang <drjiang@meta.com>,1,15,7.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json']"
+Bernie Beckerman <bbeckerman@meta.com>,1,139,10.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/workflows/tutorials.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', '.github/workflows/cron_pinned.yml', 'website/package.json']"
+Daniel Cohen <danielcohennyc@meta.com>,1,125,14.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.github/ISSUE_TEMPLATE/config.yaml', '.github/workflows/cron_pinned.yml', 'website/tutorials.json', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Abbas Kazerouni <kazerouni@meta.com>,0,1,0.0,[]
+Payan Canaran <pcanaran@meta.com>,0,7,0.0,[]
+Elizabeth Santorella <elizabeth.santorella@gmail.com>,0,2,0.0,[]
+Miles Olson <mpolson64@meta.com>,21,362,15.24,"['website/sidebars.json', '.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.github/ISSUE_TEMPLATE/config.yaml', '.pre-commit-config.yaml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', '.github/workflows/cron_pinned.yml', '.readthedocs.yaml', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Qitian Zeng <qitian@meta.com>,0,1,0.0,[]
+David Eriksson <deriksson@meta.com>,0,66,0.0,[]
+James Wilson <jtwilson@meta.com>,0,4,0.0,[]
+Sebastian Ament <sebastianament@meta.com>,0,69,0.0,[]
+Zachary Cohn <zacharycohn@meta.com>,0,8,0.0,[]
+Iskandar Atakhodjaev <atakhodjaev@meta.com>,0,1,0.0,[]
+Kittipat Virochsiri <kittipat@meta.com>,0,1,0.0,[]
+Ben Letham <bletham@meta.com>,0,47,0.0,[]
+Qing Feng <qingfeng@meta.com>,1,10,9.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/workflows/tutorials.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json']"
+Max Balandat <balandat@meta.com>,4,49,12.5,"['website/sidebars.json', '.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.github/ISSUE_TEMPLATE/config.yaml', '.pre-commit-config.yaml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', '.github/workflows/cron_pinned.yml', '.readthedocs.yaml', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Ax Website Deployment Script <docusaurus-bot@users.noreply.github.com>,1,2,9.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/workflows/tutorials.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json']"
+Florian Laplantif <florianl@meta.com>,0,1,0.0,[]
+Eugen Hotaj <ehotaj@meta.com>,0,1,0.0,[]
+Sterling G. Baird <45469701+sgbaird@users.noreply.github.com>,0,1,0.0,[]
+Madeline Scyphers <madelinescyphers@gmail.com>,0,1,0.0,[]
+generatedunixname89002005232357 <generatedunixname89002005232357@fb.com>,0,1,0.0,[]
+Jerry Lin <zylin@meta.com>,0,60,0.0,[]
+Romil Shah <rsshah@meta.com>,0,1,0.0,[]
+Sam Daulton <sdaulton@meta.com>,2,155,13.5,"['website/sidebars.json', '.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.github/ISSUE_TEMPLATE/config.yaml', '.pre-commit-config.yaml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', '.github/workflows/cron_pinned.yml', '.readthedocs.yaml', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Jelena Markovic-Voronov <jmarkovic@meta.com>,0,26,0.0,[]
+LiamSwayne <108629034+LiamSwayne@users.noreply.github.com>,0,1,0.0,[]
+Eric Onofrey <eonofrey@meta.com>,1,49,9.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/workflows/tutorials.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json']"
+Michael Shvartsman <mshvartsman@users.noreply.github.com>,0,1,0.0,[]
+Itamar Oren <itamaro@meta.com>,0,1,0.0,[]
+Leandro Braga <18340809+leandrobbraga@users.noreply.github.com>,0,1,0.0,[]
+Mia Garrard <mgarrard@meta.com>,1,195,14.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.github/ISSUE_TEMPLATE/config.yaml', '.github/workflows/cron_pinned.yml', 'website/tutorials.json', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Ryan-Rhys Griffiths <ryanrhys@meta.com>,0,1,0.0,[]
+Cesar Cardoso <cesarcardoso@meta.com>,1,52,16.0,"['.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.pre-commit-config.yaml', '.readthedocs.yaml', 'pyproject.toml', '.github/ISSUE_TEMPLATE/config.yaml', '.github/workflows/cron_pinned.yml', 'website/tutorials.json', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Susan Xia <susanxia@meta.com>,0,2,0.0,[]
+vuittont60 <81072379+vuittont60@users.noreply.github.com>,0,1,0.0,[]
+generatedunixname89002005232357 <generatedunixname89002005232357@meta.com>,0,4,0.0,[]
+Matthew Grange <mgrange@meta.com>,2,45,16.0,"['.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.pre-commit-config.yaml', '.readthedocs.yaml', 'pyproject.toml', '.github/ISSUE_TEMPLATE/config.yaml', '.github/workflows/cron_pinned.yml', 'website/tutorials.json', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+belakaria <syrine.belakaria@gmail.com>,0,1,0.0,[]
+RenChu Wang <patrick1031wang@gmail.com>,0,1,0.0,[]
+Sterling G. Baird <sterling.baird@utoronto.ca>,0,4,0.0,[]
+Marton Havasi <marton@devfair0408.h2.fair>,1,0,10.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/workflows/tutorials.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', '.github/workflows/cron_pinned.yml', 'website/package.json']"
+Norman Koch <norman.koch@tu-dresden.de>,0,1,0.0,[]
+Craig Sanders <craigsanders@meta.com>,0,1,0.0,[]
+Sunny Shen <sunnyshen@meta.com>,0,24,0.0,[]
+generatedunixname89002005307016 <generatedunixname89002005307016@meta.com>,0,9,0.0,[]
+Amethyst Reese <amethyst@meta.com>,1,2,14.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.github/ISSUE_TEMPLATE/config.yaml', '.github/workflows/cron_pinned.yml', 'website/tutorials.json', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+The Knights Who Say Ni <noreply+647790274085263@fb.com>,1,0,10.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/workflows/tutorials.yml', '.github/workflows/cron.yml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', '.github/workflows/cron_pinned.yml', 'website/package.json']"
+generatedunixname89002005287564 <generatedunixname89002005287564@meta.com>,0,5,0.0,[]
+Cesar Cardoso <cardosogutierrez.cesar@gmail.com>,0,1,0.0,[]
+Jon Janzen <jonjanzen@meta.com>,0,1,0.0,[]
+igeni <kublin@it8.ru>,0,1,0.0,[]
+Mehrdad Yazdani <mehrdadyazdani@meta.com>,0,1,0.0,[]
+generatedunixname89002005279527 <generatedunixname89002005279527@meta.com>,0,1,0.0,[]
+Carl Hvarfner <hvarfner@meta.com>,0,14,0.0,[]
+Paschal Igusti <paschali@meta.com>,0,34,0.0,[]
+Louis Tiao <tiao@meta.com>,0,46,0.0,[]
+Cristian Olvera Lara <cristianlara@meta.com>,0,1,0.0,[]
+Joost Houben <jhouben@meta.com>,0,1,0.0,[]
+Cristian Lara <cristianlara@meta.com>,9,31,16.56,"['.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.pre-commit-config.yaml', '.readthedocs.yaml', 'pyproject.toml', '.github/ISSUE_TEMPLATE/config.yaml', '.github/workflows/cron_pinned.yml', 'tutorials/human_in_the_loop/hitl_data.json', 'website/tutorials.json', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Thomas Polasek <thomaspolasek@meta.com>,0,1,0.0,[]
+Mehmet Yavuz <meyavuz@meta.com>,0,1,0.0,[]
+Jia Chen <grievejia@meta.com>,0,1,0.0,[]
+Andy Lin <andycyl@meta.com>,0,9,0.0,[]
+Edward Yang <ezyang@meta.com>,0,3,0.0,[]
+Maggie Moss <maggiemoss@meta.com>,0,1,0.0,[]
+Rhys Goodall <rhys.goodall@outlook.com>,1,3,16.0,"['website/sidebars.json', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.pre-commit-config.yaml', 'pyproject.toml', 'tutorials/human_in_the_loop/hitl_data.json', '.github/ISSUE_TEMPLATE/config.yaml', '.github/workflows/cron_pinned.yml', 'website/tutorials.json', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Nesh Patel <neshpatel@meta.com>,0,1,0.0,[]
+Samuel Gabriel Müller <sammuller@meta.com>,0,1,0.0,[]
+Ritvij Saxena <saxenaritvij@meta.com>,0,1,0.0,[]
+Norman <34073778+NormanTUD@users.noreply.github.com>,0,1,0.0,[]
+Danny Yang <yangdanny@meta.com>,0,1,0.0,[]
+Andrew Hilger <ahilger@meta.com>,0,1,0.0,[]
+Samuel Müller <sammuller@meta.com>,0,9,0.0,[]
+Aaron Orenstein <aorenste@meta.com>,0,1,0.0,[]
+Fanuel Dana <fanueld@meta.com>,0,20,0.0,[]
+VMLC-PV <vincent.m.le.corre@gmail.com>,0,1,0.0,[]
+Kaiwen Wu <kaiwen@meta.com>,3,13,16.0,"['.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.pre-commit-config.yaml', '.readthedocs.yaml', 'pyproject.toml', '.github/ISSUE_TEMPLATE/config.yaml', '.github/workflows/cron_pinned.yml', 'website/tutorials.json', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Shruti Patel <shrutipatel@meta.com>,0,58,0.0,[]
+Javier Garea <javigarea@gmail.com>,0,1,0.0,[]
+Andy Lin <jandylin@meta.com>,0,1,0.0,[]
+Linus Seelinger <mail@linusseelinger.de>,0,1,0.0,[]
+Jihao Andreas Lin <jandylin@meta.com>,0,6,0.0,[]
+generatedunixname89002005287564 <noreply+89002005287564@fb.com>,0,1,0.0,[]
+Rajesh Kumar <rajeshkg@meta.com>,0,1,0.0,[]
+generatedunixname537391475639613 <noreply+537391475639613@fb.com>,0,1,0.0,[]
+Salman Muin Kayser Chishti <13schishti@gmail.com>,2,0,16.0,"['.github/workflows/publish_website.yml', '.github/workflows/deploy.yml', '.github/workflows/reusable_tutorials.yml', '.github/ISSUE_TEMPLATE/1_bug_report.yaml', '.github/workflows/lint.yml', '.github/workflows/tutorials.yml', '.github/ISSUE_TEMPLATE/3_general_support.yaml', '.github/workflows/cron.yml', '.pre-commit-config.yaml', '.readthedocs.yaml', 'pyproject.toml', '.github/ISSUE_TEMPLATE/config.yaml', '.github/workflows/cron_pinned.yml', 'website/tutorials.json', 'website/package.json', '.github/ISSUE_TEMPLATE/2_feature_request.yaml']"
+Bowie Chen <bowiechen@meta.com>,0,3,0.0,[]

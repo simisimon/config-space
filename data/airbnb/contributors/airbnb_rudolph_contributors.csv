@@ -1,0 +1,10 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Derek Wang <derek.wang@airbnb.com>,2,26,1.0,['deployments/environments/example/config.auto.tfvars.json']
+Ryxias <sunsilverdragon@gmail.com>,0,1,0.0,[]
+Ryxias <derek.wang@airbnb.com>,1,4,1.0,['deployments/environments/example/config.auto.tfvars.json']
+Ryan Diers <39590744+radsec@users.noreply.github.com>,2,7,1.0,['deployments/environments/example/config.auto.tfvars.json']
+Brandon Kurtz <kurtz.brandon@gmail.com>,0,1,0.0,[]
+Dustin Davis <1dustindavis@gmail.com>,0,2,0.0,[]
+Elton Carneiro <scelton@users.noreply.github.com>,0,1,0.0,[]
+Pete Markowsky <peterm@vodun.org>,0,1,0.0,[]
+Ryan Diers <39590744+rdiers@users.noreply.github.com>,1,0,1.0,['deployments/environments/example/config.auto.tfvars.json']

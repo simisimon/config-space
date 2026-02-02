@@ -1,0 +1,54 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+jiamingliu <jiamingliu@fb.com>,8,24,1.0,['pom.xml']
+Alex Nick <facebook@gromov.ws>,0,1,0.0,[]
+xardas <xardasex@gmail.com>,0,2,0.0,[]
+Hindol Adhya <hindol.adhya@gmail.com>,1,0,1.0,['pom.xml']
+JiamingFB <jiamingliu@fb.com>,1,5,1.0,['pom.xml']
+Patrick Strawderman <patrick@kilink.net>,0,2,0.0,[]
+Neil Chen <xiaotchen@fb.com>,3,2,1.0,['pom.xml']
+daphyFB <daphy@fb.com>,0,1,0.0,[]
+Santiago Castro <santi.1410@hotmail.com>,0,1,0.0,[]
+Ian Gustafson <iangustafson@gmail.com>,0,1,0.0,[]
+Cloud Xu <xucloud@gmail.com>,0,1,0.0,[]
+Yuehui Wang <wyh@fb.com>,0,2,0.0,[]
+Neil X. Chen <neilxchen@gmail.com>,1,0,1.0,['pom.xml']
+Yonghong Shi <yongshi@fb.com>,1,0,1.0,['pom.xml']
+Moyang He <hemoyang@fb.com>,6,1,1.0,['pom.xml']
+Cody Winton <codytwinton@fb.com>,1,0,1.0,['pom.xml']
+Jing Ping <jingping@fb.com>,44,14,2.07,"['.github/workflows/ci-publish.yml', 'pom.xml', '.travis.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Joe Susnick <joesusnick@gmail.com>,1,0,2.0,"['pom.xml', '.travis.yml']"
+generatedunixname89002005295453 <generatedunixname89002005295453@fb.com>,29,0,3.07,"['.github/workflows/ci-publish.yml', 'pom.xml', '.travis.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Jameel Mohamed <jameelm@fb.com>,0,6,0.0,[]
+Ram Chokkalingam <rchokkalingam@fb.com>,0,11,0.0,[]
+Xinzhu Cai <kongxinzhu@fb.com>,1,3,2.0,"['pom.xml', '.travis.yml']"
+Maxim Goretskyy <maximg@fb.com>,1,0,3.0,"['pom.xml', '.github/stale.yml', '.travis.yml']"
+Eray Aydin <erayaydin@fb.com>,0,1,0.0,[]
+Marina Escalante <marinae@fb.com>,0,1,0.0,[]
+Mark Sliva <marksliva@fb.com>,3,11,3.33,"['.github/workflows/ci-publish.yml', 'pom.xml', '.travis.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Uwe Maurer <uwe@apptornado.com>,0,1,0.0,[]
+Jiayuan Hu <jiayuanhu@fb.com>,0,12,0.0,[]
+Donglin Wang <donglinw@fb.com>,0,4,0.0,[]
+Business SDK <>,5,0,4.0,"['pom.xml', '.github/workflows/ci-publish.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Mengxiao Lin <mxlin@fb.com>,0,1,0.0,[]
+Shuotian Cheng <shuotian@fb.com>,4,3,4.0,"['pom.xml', '.github/workflows/ci-publish.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Jude Tillekeratne <jtilleke@fb.com>,0,23,0.0,[]
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,5,0,4.0,"['pom.xml', '.github/workflows/ci-publish.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Matteo Baccan <matteo.baccan@gmail.com>,0,2,0.0,[]
+ordnaelmedeiros <ordnaelmedeiros@users.noreply.github.com>,1,0,4.0,"['pom.xml', '.github/workflows/ci-publish.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Bharath Srinivasan <bharaths@fb.com>,0,4,0.0,[]
+pmscosta <pcosta@kevel.co>,0,1,0.0,[]
+Alan Ho <alanho@fb.com>,0,1,0.0,[]
+Alan Ho <alanho@meta.com>,0,1,0.0,[]
+Jerin Tomy <jtomy@meta.com>,0,1,0.0,[]
+Shuotian Cheng <shuotian@meta.com>,9,11,4.0,"['pom.xml', '.github/workflows/ci-publish.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+generatedunixname89002005295453 <generatedunixname89002005295453@meta.com>,13,0,4.15,"['pom.xml', '.github/workflows/ci-publish.yml', '.github/workflows/ci-publish-adhoc.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Pavel Anisimov <An1s9n@yandex.ru>,0,1,0.0,[]
+Rafael Batista <rafaelbatista@meta.com>,0,1,0.0,[]
+Henry Wang <shuaiwa@meta.com>,0,3,0.0,[]
+Victor Jaramillo Moreno <victorajm@meta.com>,0,1,0.0,[]
+Li Li (AXP) <lil@meta.com>,2,1,4.0,"['pom.xml', '.github/workflows/ci-publish.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Samuel Raphael <samuel.raphael@nlpatent.com>,0,1,0.0,[]
+Satwika Reddy Maddi <satwika@meta.com>,16,2,4.12,"['pom.xml', '.github/workflows/ci-publish.yml', '.github/workflows/ci-publish-adhoc.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Andrey <andrey1010102008@gmail.com>,1,1,4.0,"['pom.xml', '.github/workflows/ci-publish.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+satwikareddy3 <satwika@meta.com>,1,0,5.0,"['pom.xml', '.github/workflows/ci-publish.yml', '.github/workflows/ci-publish-adhoc.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Ji Li <jili929@meta.com>,0,2,0.0,[]

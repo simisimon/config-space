@@ -1,0 +1,76 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Manu Sridharan <msridhar@uber.com>,61,8,4.95,"['jar-infer/jar-infer-cli/gradle.properties', '.travis.yml', 'jar-infer/jar-infer-lib/gradle.properties', 'sample-app/src/main/AndroidManifest.xml', 'gradle.properties', 'nullaway/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Zac Sweers <pandanomic@gmail.com>,3,4,6.67,"['jar-infer/jar-infer-cli/gradle.properties', '.travis.yml', 'jar-infer/jar-infer-lib/gradle.properties', 'sample-app/src/main/AndroidManifest.xml', 'gradle.properties', 'nullaway/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Lazaro Clapp <lazaro@uber.com>,110,2,9.58,"['jar-infer/jar-infer-cli/gradle.properties', 'jar-infer/android-jarinfer-models-sdk31/gradle.properties', '.travis.yml', 'jar-infer/jar-infer-lib/gradle.properties', 'sample-app/src/main/AndroidManifest.xml', '.github/workflows/continuous-integration.yml', '.github/codecov.yml', 'jar-infer/android-jarinfer-models-sdk29/gradle.properties', 'jar-infer/android-jarinfer-models-sdk30/gradle.properties', 'gradle.properties', '.github/workflows/jmh-benchmark.yml', 'nullaway/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Lázaro Clapp <lazaro.clapp@gmail.com>,3,57,7.67,"['jar-infer/jar-infer-cli/gradle.properties', '.travis.yml', 'jar-infer/jar-infer-lib/gradle.properties', 'sample-app/src/main/AndroidManifest.xml', 'gradle.properties', 'nullaway/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Gautam Korlam <kageiit@users.noreply.github.com>,1,1,8.0,"['jar-infer/jar-infer-cli/gradle.properties', '.travis.yml', 'jar-infer/jar-infer-lib/gradle.properties', 'sample-app/src/main/AndroidManifest.xml', 'gradle.properties', 'nullaway/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Manu Sridharan <msridhar@gmail.com>,123,388,11.79,"['jar-infer/jar-infer-cli/gradle.properties', 'jar-infer/android-jarinfer-models-sdk31/gradle.properties', '.travis.yml', 'nullaway-bom/gradle.properties', 'jar-infer/jar-infer-lib/gradle.properties', 'sample-app/src/main/AndroidManifest.xml', '.github/workflows/continuous-integration.yml', '.coderabbit.yaml', 'gradle/libs.versions.toml', '.github/codecov.yml', 'jar-infer/android-jarinfer-models-sdk29/gradle.properties', 'jar-infer/android-jarinfer-models-sdk30/gradle.properties', 'gradle.properties', '.github/workflows/jmh-benchmark.yml', 'nullaway/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Jochen Schalanda <jochen@schalanda.name>,0,4,0.0,[]
+Subarno <subarno@umich.edu>,1,4,7.0,"['jar-infer/jar-infer-cli/gradle.properties', '.travis.yml', 'jar-infer/jar-infer-lib/gradle.properties', 'sample-app/src/main/AndroidManifest.xml', 'gradle.properties', 'nullaway/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+shubham ugare <shubhamugare@uber.com>,0,12,0.0,[]
+Thomas Broyer <t.broyer@ltgt.net>,0,2,0.0,[]
+Yanislav Mhaylov <jany81@gmail.com>,0,1,0.0,[]
+Shubham Ugare <shubhamugare@uber.com>,0,1,0.0,[]
+Lázaro Clapp <lazaro@uber.com>,15,74,9.87,"['jar-infer/jar-infer-cli/gradle.properties', 'jar-infer/android-jarinfer-models-sdk31/gradle.properties', '.travis.yml', 'jar-infer/jar-infer-lib/gradle.properties', 'sample-app/src/main/AndroidManifest.xml', '.github/workflows/continuous-integration.yml', 'jar-infer/android-jarinfer-models-sdk29/gradle.properties', 'jar-infer/android-jarinfer-models-sdk30/gradle.properties', 'gradle.properties', 'nullaway/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Raghavan Raman <ragr@uber.com>,3,7,8.0,"['jar-infer/jar-infer-cli/gradle.properties', '.travis.yml', 'jar-infer/jar-infer-lib/gradle.properties', 'sample-app/src/main/AndroidManifest.xml', 'gradle.properties', 'nullaway/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Filip Procházka <filip@prochazka.su>,0,1,0.0,[]
+David Gang <michaelgang@gmail.com>,0,3,0.0,[]
+shubham ugare <shubhamdugare@gmail.com>,0,4,0.0,[]
+Lycheeicy <49021065+Lycheeicy@users.noreply.github.com>,0,1,0.0,[]
+shtke <tkhrb9@gmail.com>,0,1,0.0,[]
+Ullrich Hafner <ullrich.hafner@gmail.com>,0,2,0.0,[]
+Nima Karimipour <karimipour.nima@gmail.com>,0,24,0.0,[]
+Pablo Grisafi <pablogrisafi1975@gmail.com>,0,1,0.0,[]
+MD <1917406+mdcfe@users.noreply.github.com>,0,1,0.0,[]
+Michael Hixson <michael.hixson@gmail.com>,0,1,0.0,[]
+Anuraag Agrawal <anuraaga@gmail.com>,0,1,0.0,[]
+Anoop <46913894+anoopmsivadas@users.noreply.github.com>,0,1,0.0,[]
+Michael Ernst <mernst@alum.mit.edu>,0,1,0.0,[]
+Kengo TODA <skypencil+github@gmail.com>,0,1,0.0,[]
+Jiahe Gellert Li <gellert.li1995@gmail.com>,0,1,0.0,[]
+Ameya Ketkar <94497232+ketkarameya@users.noreply.github.com>,0,1,0.0,[]
+Sparky <87631423+Sparky983@users.noreply.github.com>,0,1,0.0,[]
+Nima Karimipour <nimak@uber.com>,0,3,0.0,[]
+Michael Ernst <mernst@cs.washington.edu>,0,2,0.0,[]
+Carter Kozak <ckozak@ckozak.net>,0,3,0.0,[]
+David Schlosnagle <schlosna@gmail.com>,0,1,0.0,[]
+NikitaAware <nawar001@ucr.edu>,0,1,0.0,[]
+Dries Elliott <46838597+Byte27@users.noreply.github.com>,0,1,0.0,[]
+Christopher Lambert <christopher.lambert@dremio.com>,0,1,0.0,[]
+Christopher Lambert <xn137@gmx.de>,2,12,11.0,"['jar-infer/jar-infer-cli/gradle.properties', 'jar-infer/android-jarinfer-models-sdk31/gradle.properties', 'jar-infer/jar-infer-lib/gradle.properties', '.github/workflows/continuous-integration.yml', 'sample-app/src/main/AndroidManifest.xml', 'nullaway/gradle.properties', 'jar-infer/android-jarinfer-models-sdk29/gradle.properties', 'gradle.properties', 'jar-infer/android-jarinfer-models-sdk30/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+NikitaAware <nikita.aware@email.ucr.edu>,0,2,0.0,[]
+Yannick da Silva Bröker <yannick.broeker@me.com>,0,1,0.0,[]
+Nikita Dinkar Aware <nikita.aware@email.ucr.edu>,0,3,0.0,[]
+Asapin <1559761+Asapin@users.noreply.github.com>,0,1,0.0,[]
+Md Armughanuddin <52311490+armughan11@users.noreply.github.com>,4,1,12.25,"['jar-infer/jar-infer-cli/gradle.properties', 'jar-infer/android-jarinfer-models-sdk31/gradle.properties', 'jar-infer/jar-infer-lib/gradle.properties', '.github/workflows/continuous-integration.yml', 'sample-app/src/main/AndroidManifest.xml', 'nullaway/gradle.properties', '.github/codecov.yml', 'jar-infer/android-jarinfer-models-sdk29/gradle.properties', 'gradle.properties', '.github/workflows/jmh-benchmark.yml', 'jar-infer/android-jarinfer-models-sdk30/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+akulk022 <116849480+akulk022@users.noreply.github.com>,0,1,0.0,[]
+Md Armughanuddin <armughan2011@gmail.com>,1,10,13.0,"['jar-infer/jar-infer-cli/gradle.properties', 'jar-infer/android-jarinfer-models-sdk31/gradle.properties', 'jar-infer/jar-infer-lib/gradle.properties', '.github/workflows/continuous-integration.yml', 'sample-app/src/main/AndroidManifest.xml', 'nullaway/gradle.properties', '.github/codecov.yml', 'jar-infer/android-jarinfer-models-sdk29/gradle.properties', 'gradle.properties', '.github/workflows/jmh-benchmark.yml', 'jar-infer/android-jarinfer-models-sdk30/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Abhijit Kulkarni <akulk022@ucr.edu>,0,13,0.0,[]
+arteghem <52428902+oliviernotteghem@users.noreply.github.com>,0,1,0.0,[]
+Yuxin Wang <yuxinw@uber.com>,58,1,13.38,"['jar-infer/jar-infer-cli/gradle.properties', 'jar-infer/android-jarinfer-models-sdk31/gradle.properties', 'nullaway-bom/gradle.properties', 'jar-infer/jar-infer-lib/gradle.properties', '.github/workflows/continuous-integration.yml', 'sample-app/src/main/AndroidManifest.xml', 'nullaway/gradle.properties', '.coderabbit.yaml', 'gradle/libs.versions.toml', '.github/codecov.yml', 'jar-infer/android-jarinfer-models-sdk29/gradle.properties', 'gradle.properties', '.github/workflows/jmh-benchmark.yml', 'jar-infer/android-jarinfer-models-sdk30/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Yiheng Cao <65160922+Crispy-fried-chicken@users.noreply.github.com>,0,1,0.0,[]
+keiji muraishi <keiji.muraishi@gmail.com>,0,1,0.0,[]
+haewiful <yeahnkim@gmail.com>,0,2,0.0,[]
+compf <timo.schoemaker97@outlook.de>,0,1,0.0,[]
+etrandafir93 <75391049+etrandafir93@users.noreply.github.com>,0,1,0.0,[]
+Maurício Aniche <100812+mauricioaniche@users.noreply.github.com>,0,1,0.0,[]
+pochopsp <pasquale.1996@gmail.com>,0,1,0.0,[]
+Yeahn Kim <yeahnkim@gmail.com>,0,7,0.0,[]
+Ankit Yadav <49056780+avenger2597@users.noreply.github.com>,0,2,0.0,[]
+Mikkel Kjeldsen <commonquail@gmail.com>,0,1,0.0,[]
+Akshay Utture <akshay.utture@uber.com>,2,0,13.0,"['jar-infer/jar-infer-cli/gradle.properties', 'jar-infer/android-jarinfer-models-sdk31/gradle.properties', 'jar-infer/jar-infer-lib/gradle.properties', '.github/workflows/continuous-integration.yml', 'sample-app/src/main/AndroidManifest.xml', 'nullaway/gradle.properties', '.github/codecov.yml', 'jar-infer/android-jarinfer-models-sdk29/gradle.properties', 'gradle.properties', '.github/workflows/jmh-benchmark.yml', 'jar-infer/android-jarinfer-models-sdk30/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Dhruv Agrawal <44240347+dhruv-agr@users.noreply.github.com>,0,7,0.0,[]
+Johnny Lim <izeye@naver.com>,0,2,0.0,[]
+Stefano Cordio <stefano.cordio@gmail.com>,0,1,0.0,[]
+Rory MacQueen <rorymacqueen@gmail.com>,0,1,0.0,[]
+Rob Winch <362503+rwinch@users.noreply.github.com>,0,1,0.0,[]
+KOSEUNGBIN <kosb15@naver.com>,0,1,0.0,[]
+gulikoza <gulikoza@si-gamer.net>,0,1,0.0,[]
+Fx Morin <28154542+FxMorin@users.noreply.github.com>,0,1,0.0,[]
+Laurent Pireyn <laurent@pireyn.be>,0,1,0.0,[]
+romainmoreau <1763676+romainmoreau@users.noreply.github.com>,0,1,0.0,[]
+Victor Gabriel <100782235+vitinh0z@users.noreply.github.com>,1,0,16.0,"['jar-infer/jar-infer-cli/gradle.properties', 'jar-infer/android-jarinfer-models-sdk31/gradle.properties', 'nullaway-bom/gradle.properties', 'jar-infer/jar-infer-lib/gradle.properties', '.coderabbit.yaml', '.github/workflows/continuous-integration.yml', 'gradle/libs.versions.toml', 'nullaway/gradle.properties', 'sample-app/src/main/AndroidManifest.xml', '.github/codecov.yml', 'jar-infer/android-jarinfer-models-sdk29/gradle.properties', 'gradle.properties', '.github/workflows/jmh-benchmark.yml', 'jar-infer/android-jarinfer-models-sdk30/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Aurélien Mino <155828+murdos@users.noreply.github.com>,0,1,0.0,[]
+Yosuke Kobayashi <tokyosoul032@gmail.com>,0,2,0.0,[]
+RISHIK RAJ <91304008+rishikraj990@users.noreply.github.com>,1,0,16.0,"['jar-infer/jar-infer-cli/gradle.properties', 'jar-infer/android-jarinfer-models-sdk31/gradle.properties', 'nullaway-bom/gradle.properties', 'jar-infer/jar-infer-lib/gradle.properties', '.coderabbit.yaml', '.github/workflows/continuous-integration.yml', 'gradle/libs.versions.toml', 'nullaway/gradle.properties', 'sample-app/src/main/AndroidManifest.xml', '.github/codecov.yml', 'jar-infer/android-jarinfer-models-sdk29/gradle.properties', 'gradle.properties', '.github/workflows/jmh-benchmark.yml', 'jar-infer/android-jarinfer-models-sdk30/gradle.properties', 'jar-infer/android-jarinfer-models-sdk28/gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Jack Wickham <jackwickham@users.noreply.github.com>,0,1,0.0,[]

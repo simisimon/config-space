@@ -1,0 +1,22 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Kevin Lewi <klewi@cs.stanford.edu>,9,25,3.11,"['Cargo.toml', 'deny.toml', '.github/workflows/main.yml', '.github/workflows/publish.yml']"
+François Garillot <francois@garillot.net>,24,35,3.21,"['Cargo.toml', 'deny.toml', '.github/workflows/main.yml', '.github/workflows/publish.yml']"
+François Garillot <4142+huitseeker@users.noreply.github.com>,20,11,3.35,"['Cargo.toml', 'deny.toml', '.github/workflows/main.yml', '.github/workflows/publish.yml']"
+zer0x64 <dugre.philippe@hotmail.com>,0,1,0.0,[]
+Kevin Lewi <klewi@fb.com>,36,42,4.97,"['deny.toml', 'taplo.toml', '.github/workflows/main.yml', '.github/workflows/publish.yml', 'Cargo.toml', 'rustfmt.toml', '.github/dependabot.yml']"
+Kostas Chalkias <kostascrypto@fb.com>,0,2,0.0,[]
+Konstantinos Chalkias <kostascrypto@fb.com>,0,2,0.0,[]
+Tony <68489651+antoniokdacunha@users.noreply.github.com>,1,0,4.0,"['Cargo.toml', 'deny.toml', '.github/workflows/main.yml', '.github/workflows/publish.yml']"
+Marcelin Dupraz <marcelin.dupraz@gmail.com>,1,0,4.0,"['Cargo.toml', 'deny.toml', '.github/workflows/main.yml', '.github/workflows/publish.yml']"
+Valentin Tolmer <valentin.tolmer@gmail.com>,0,3,0.0,[]
+daxpedda <daxpedda@gmail.com>,36,37,6.11,"['deny.toml', 'clippy.toml', 'taplo.toml', '.github/workflows/main.yml', '.github/workflows/publish.yml', 'Cargo.toml', 'rustfmt.toml', '.github/dependabot.yml']"
+dAxpeDDa <daxpedda@gmail.com>,1,12,4.0,"['Cargo.toml', 'deny.toml', '.github/workflows/main.yml', '.github/workflows/publish.yml']"
+Aidan Gilmore <32880357+aidangilmore@users.noreply.github.com>,0,1,0.0,[]
+Falko <10247603+falko17@users.noreply.github.com>,0,1,0.0,[]
+jonahbeckford <71855677+jonahbeckford@users.noreply.github.com>,0,1,0.0,[]
+zer0x64 <17575242+zer0x64@users.noreply.github.com>,1,0,6.0,"['deny.toml', 'taplo.toml', '.github/workflows/main.yml', '.github/workflows/publish.yml', 'Cargo.toml', 'rustfmt.toml']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,10,0,7.3,"['deny.toml', 'clippy.toml', 'taplo.toml', '.github/workflows/main.yml', '.github/workflows/publish.yml', '.github/dependabot.yml', 'Cargo.toml', 'rustfmt.toml']"
+Nik Graf <nik@nikgraf.com>,0,4,0.0,[]
+Luca Bruno <lucab@lucabruno.net>,0,1,0.0,[]
+Cynthia <cynthia@cynthia.dev>,1,0,7.0,"['deny.toml', 'taplo.toml', '.github/workflows/main.yml', '.github/workflows/publish.yml', '.github/dependabot.yml', 'Cargo.toml', 'rustfmt.toml']"
+Kevin Lewi <lewi.kevin.k@gmail.com>,10,7,7.9,"['deny.toml', 'clippy.toml', 'taplo.toml', '.github/workflows/main.yml', '.github/workflows/publish.yml', '.github/dependabot.yml', 'Cargo.toml', 'rustfmt.toml']"

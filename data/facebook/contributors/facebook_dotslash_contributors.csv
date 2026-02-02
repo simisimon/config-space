@@ -1,0 +1,96 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+facebook-github-bot <facebook-github-bot@users.noreply.github.com>,1,0,5.0,"['.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Michael Bolin <mbolin@meta.com>,2,10,5.5,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Andres Suarez <asuarez@meta.com>,11,35,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Abhinav Gupta <mail@abhinavg.net>,3,0,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Rodrigo de Salvo Braz <rodrigobraz@meta.com>,0,1,0.0,[]
+Jon Janzen <jonjanzen@meta.com>,6,3,6.83,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', '.devcontainer/devcontainer.json', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json', '.github/dependabot.yml']"
+Sam Fu <samfu@meta.com>,0,1,0.0,[]
+Dimitris Iliopoulos <diliopoulos@meta.com>,4,5,6.5,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json']"
+Amethyst Reese <amethyst@meta.com>,0,1,0.0,[]
+generatedunixname89002005287564 <generatedunixname89002005287564@meta.com>,0,2,0.0,[]
+Kevin Hui <kevinhui@meta.com>,0,2,0.0,[]
+Alex Feng <alexfeng@meta.com>,0,1,0.0,[]
+Daniel Mueller <muellerd@meta.com>,0,2,0.0,[]
+Michael Bolin <bolinfest@gmail.com>,1,4,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Andrew Gallagher <andrewjcg@meta.com>,0,2,0.0,[]
+James Gill <jagill@meta.com>,0,1,0.0,[]
+Owen Valentine <omv@meta.com>,0,1,0.0,[]
+Sargun Dhillon <sargun@meta.com>,0,3,0.0,[]
+Steven Ware Jones <stevenwjones@meta.com>,0,1,0.0,[]
+Pierce Bartine <pbar@meta.com>,0,2,0.0,[]
+generatedunixname89002005232357 <generatedunixname89002005232357@meta.com>,1,3,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+David Tolnay <dtolnay@meta.com>,17,60,10.06,"['.rustc_info.json', 'windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', 'windows_shim/rust-toolchain.toml', '.devcontainer/devcontainer.json', 'node/package-lock.json', '.github/workflows/release.yml', 'node/package.json', '.github/workflows/release-downstream.yml', 'python/pyproject.toml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json', '.github/dependabot.yml']"
+Pete Tummillo <ptummillo@meta.com>,0,1,0.0,[]
+Stiopa Koltsov <nga@meta.com>,0,2,0.0,[]
+Jeremy Fitzhardinge <jsgf@meta.com>,0,3,0.0,[]
+Konstantin Grechishchev <kgrech@meta.com>,0,1,0.0,[]
+Keito Uchiyama <keito@meta.com>,1,1,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Pierre Chevalier <pierrec@meta.com>,2,1,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Neil Mitchell <ndmitchell@meta.com>,1,4,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Nick York <nickyork@meta.com>,0,1,0.0,[]
+David Reiss <dreiss@meta.com>,0,1,0.0,[]
+Zoltán Nagy <abesto@meta.com>,0,1,0.0,[]
+Damien Deville <damien@ddeville.me>,2,0,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Alex Barowski <barouski@meta.com>,0,1,0.0,[]
+Lucian Wischik <ljw@meta.com>,1,0,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Adrian Enache <aeh@meta.com>,0,1,0.0,[]
+Vinnie Magro <vmagro@meta.com>,1,0,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Chad Austin <chadaustin@meta.com>,2,0,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Pierre Moulon <pierrem@meta.com>,0,1,0.0,[]
+Paul Iatchenii <operasfantom@meta.com>,1,3,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Jesse Schalken <jesses@canva.com>,0,1,0.0,[]
+Zsolt Dollenstein <zsol.zsol@gmail.com>,2,1,11.5,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', 'windows_shim/rust-toolchain.toml', '.devcontainer/devcontainer.json', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json']"
+Carlos Fernandez <carlosfsanz@meta.com>,2,5,12.5,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', 'windows_shim/rust-toolchain.toml', '.devcontainer/devcontainer.json', 'node/package-lock.json', '.github/workflows/release.yml', 'node/package.json', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json']"
+Marius Eriksen <meriksen@meta.com>,1,0,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Mike Lui <mikelui@meta.com>,0,1,0.0,[]
+Zander Hill <zander@xargs.io>,0,1,0.0,[]
+Vladimir Makaev <vmakaev@meta.com>,2,0,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Stepan Koltsov <stepan.koltsov@gmail.com>,0,1,0.0,[]
+Jun Wu <quark@meta.com>,1,0,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Alexander Mols <asm@meta.com>,0,1,0.0,[]
+Gianluigi Pierini <gianluigi@meta.com>,0,1,0.0,[]
+Brian Chien <brchien@meta.com>,0,1,0.0,[]
+Mark Juggurnauth-Thomas <mbthomas@meta.com>,0,1,0.0,[]
+Eddie Shen <xes@meta.com>,1,0,7.0,"['.rustc_info.json', 'windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Pedro Rittner <prittner@meta.com>,0,1,0.0,[]
+Jakob Degen <jakobdegen@meta.com>,1,1,11.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', '.devcontainer/devcontainer.json', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json']"
+Khoi Tran <khoit@meta.com>,0,1,0.0,[]
+Dhaval Kapil <dhavalkapil@meta.com>,0,1,0.0,[]
+hn8 <10730886+hn8@users.noreply.github.com>,1,0,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Cj Longoria <cjlongoria@meta.com>,0,2,0.0,[]
+Alex Mastro <amastro@meta.com>,0,1,0.0,[]
+Cullen Walsh <ckwalsh@cullenwalsh.com>,1,0,6.0,"['windows_shim/Cargo.toml', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', 'Cargo.toml', 'website/package.json']"
+Grant Herman <gherma@meta.com>,0,1,0.0,[]
+Shawn Wilsher <sdwilsh@meta.com>,12,2,10.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', 'windows_shim/rust-toolchain.toml', '.devcontainer/devcontainer.json', 'node/package-lock.json', '.github/workflows/release.yml', 'node/package.json', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/workflows/release-feature.yml', 'Cargo.toml', 'website/package.json', '.github/dependabot.yml']"
+Ben Carr <carrben@meta.com>,1,0,8.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/release-feature.yml', 'Cargo.toml', 'website/package.json']"
+Moti Zilberman <moti@fb.com>,1,0,11.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', '.devcontainer/devcontainer.json', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json']"
+Paul O'Shannessy <poshannessy@meta.com>,0,1,0.0,[]
+Zsolt Dollenstein <zsol@meta.com>,3,0,11.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', '.devcontainer/devcontainer.json', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json']"
+Sean Lawlor <seanlawlor@meta.com>,0,1,0.0,[]
+Weixi Ma <mavc@meta.com>,1,0,11.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', '.devcontainer/devcontainer.json', '.github/workflows/release.yml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json']"
+Moti Zilberman <motiz88@gmail.com>,1,0,14.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', 'windows_shim/rust-toolchain.toml', '.devcontainer/devcontainer.json', 'node/package-lock.json', '.github/workflows/release.yml', 'node/package.json', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json']"
+Moti Zilberman <moti@meta.com>,1,0,14.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', 'windows_shim/rust-toolchain.toml', '.devcontainer/devcontainer.json', 'node/package-lock.json', '.github/workflows/release.yml', 'node/package.json', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json']"
+Eric J Nguyen <ejn@meta.com>,4,2,14.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', 'windows_shim/rust-toolchain.toml', '.devcontainer/devcontainer.json', 'node/package-lock.json', '.github/workflows/release.yml', 'node/package.json', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json']"
+Willy Lau <wwlau@meta.com>,1,1,14.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', 'windows_shim/rust-toolchain.toml', '.devcontainer/devcontainer.json', 'node/package-lock.json', '.github/workflows/release.yml', 'node/package.json', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json']"
+generatedunixname499836121 <generatedunixname499836121@meta.com>,0,1,0.0,[]
+Nick Spain <nicholas.spain@stileeducation.com>,0,1,0.0,[]
+Ivan Loskutov <iloskutov@meta.com>,0,1,0.0,[]
+Alex Hornby <ahornby@meta.com>,0,1,0.0,[]
+Ron Mordechai <ronmrdechai@meta.com>,0,2,0.0,[]
+Pawel Strzebonski <pawelstrz@meta.com>,0,1,0.0,[]
+David Tolnay <dtolnay@fb.com>,0,1,0.0,[]
+Facebook Community Bot <facebook-github-bot@users.noreply.github.com>,0,1,0.0,[]
+Spencer James Peters <spencerpeters@meta.com>,0,1,0.0,[]
+Ofek Lev <ofekmeister@gmail.com>,1,0,16.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', 'windows_shim/rust-toolchain.toml', '.devcontainer/devcontainer.json', 'node/package-lock.json', '.github/workflows/release.yml', 'node/package.json', 'python/pyproject.toml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json', '.github/workflows/release-downstream.yml']"
+Alok Priyadarshi <alokpr@meta.com>,0,1,0.0,[]
+Dhruv Mongia <dmongia@meta.com>,0,1,0.0,[]
+Danny Yang <yangdanny@meta.com>,0,1,0.0,[]
+generatedunixname89002005320881 <generatedunixname89002005320881@meta.com>,0,2,0.0,[]
+Nitin Singh <nitinsingh@meta.com>,0,2,0.0,[]
+Brian Chien <brchien@fb.com>,0,1,0.0,[]
+Salman Muin Kayser Chishti <13schishti@gmail.com>,2,0,16.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', 'windows_shim/rust-toolchain.toml', '.devcontainer/devcontainer.json', 'node/package-lock.json', '.github/workflows/release.yml', 'node/package.json', 'python/pyproject.toml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json', '.github/workflows/release-downstream.yml']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,1,7,16.0,"['windows_shim/Cargo.toml', 'devcontainer-features/src/dotslash/devcontainer-feature.json', 'windows_shim/rust-toolchain.toml', '.devcontainer/devcontainer.json', 'node/package-lock.json', '.github/workflows/release.yml', 'node/package.json', 'python/pyproject.toml', '.github/workflows/build.yml', '.github/workflows/publish-website.yml', '.github/workflows/devcontainer.yml', '.github/dependabot.yml', 'Cargo.toml', '.github/workflows/release-feature.yml', 'website/package.json', '.github/workflows/release-downstream.yml']"
+Bharath Sundararaj <bsundararaj@meta.com>,0,1,0.0,[]
+Daniel Gollahon <daniel.gollahon@gmail.com>,0,1,0.0,[]
+Bowie Chen <bowiechen@meta.com>,0,2,0.0,[]

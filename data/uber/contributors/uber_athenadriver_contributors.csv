@@ -1,0 +1,27 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+HenryAtUber <henry.wu@uber.com>,2,63,2.5,"['Gopkg.toml', '.codecov.yml', '.travis.yml']"
+Henry Wu <henry.wu@uber.com>,6,71,3.5,"['Gopkg.toml', '.codecov.yml', '_config.yml', '.travis.yml']"
+Henry Fuheng Wu <47995124+henrywu2019@users.noreply.github.com>,7,20,4.0,"['Gopkg.toml', '.codecov.yml', '_config.yml', '.travis.yml']"
+CurtisEppel <curtis.eppel@cultureamp.com>,0,1,0.0,[]
+Jason Culverhouse <jason@mischievous.org>,0,1,0.0,[]
+Recep Can <rewebcan@gmail.com>,0,1,0.0,[]
+Henry <wufuheng@gmail.com>,2,20,4.0,"['Gopkg.toml', '.codecov.yml', '_config.yml', '.travis.yml']"
+Alex Vanderpot <vanderpot@uber.com>,0,1,0.0,[]
+vanderpot-uber <56004721+vanderpot-uber@users.noreply.github.com>,0,1,0.0,[]
+weissleb <weissleb@gmail.com>,0,2,0.0,[]
+HenryFuhengWu <wufuheng@gmail.com>,1,6,4.0,"['Gopkg.toml', '.codecov.yml', '_config.yml', '.travis.yml']"
+Andres Martinez Gotor <andres.mgotor@gmail.com>,0,1,0.0,[]
+Nathan Yergler <nathan@yergler.net>,0,1,0.0,[]
+dfreiman-hbo <daniel.freiman@warnermedia.com>,0,6,0.0,[]
+Dan Freiman <84876537+dfreiman-hbo@users.noreply.github.com>,0,3,0.0,[]
+ShadowWalker <shadowwalker2718@gmail.com>,0,1,0.0,[]
+Kevin Yu <kevinwcyu@users.noreply.github.com>,0,1,0.0,[]
+Szilveszter Safar <szilveszter.safar@gmail.com>,0,1,0.0,[]
+Keshav Murthy <keshav@dataco.ai>,0,3,0.0,[]
+Jonathan Baker <jonebaker@gmail.com>,0,3,0.0,[]
+Henry Wu <wufuheng@gmail.com>,0,5,0.0,[]
+William Chieng <wchieng@launchdarkly.com>,0,1,0.0,[]
+William Chieng <1075488+wchieng@users.noreply.github.com>,0,1,0.0,[]
+Chris Duncan <veqryn@hotmail.com>,0,2,0.0,[]
+Nathan Cochran <nathanjcochran@gmail.com>,0,1,0.0,[]
+mrz1836 <mrz1818@gmail.com>,0,2,0.0,[]

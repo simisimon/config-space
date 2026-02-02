@@ -1,0 +1,62 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Christian Deonier <christian.deonier@airbnb.com>,10,22,3.4,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'library/src/main/AndroidManifest.xml', 'sample/src/main/AndroidManifest.xml']"
+Felipe Lima <felipe.lima@gmail.com>,51,91,4.1,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'sample-library/src/main/AndroidManifest.xml', 'sample/src/main/AndroidManifest.xml']"
+Christian Deonier <christian.deonier@airbedandbreakfast.com>,4,0,3.0,"['gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'sample/src/main/AndroidManifest.xml']"
+Felipe Lima <felipe.lima@airbnb.com>,1,2,3.0,"['gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'sample/src/main/AndroidManifest.xml']"
+Eric Petzel <epetzel@gmail.com>,0,1,0.0,[]
+Michael Evans <michaelcevans10@gmail.com>,3,7,4.0,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'sample/src/main/AndroidManifest.xml']"
+Tobias Preuss <tobias.preuss@googlemail.com>,0,1,0.0,[]
+Peter Xiao <peter@thumbtack.com>,0,2,0.0,[]
+Mouna Cheikhna <cheikhnamouna@gmail.com>,0,4,0.0,[]
+Shintaro Katafuchi <hot.chemistry21@gmail.com>,0,1,0.0,[]
+imlunacat <itslunacat@gmail.com>,0,3,0.0,[]
+Michael Goj <michael@freeletics.com>,1,1,4.0,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'sample/src/main/AndroidManifest.xml']"
+Arpit Anand <arpitanand0310@gmail.com>,0,1,0.0,[]
+mapyo <falcon.phantom.spidar.haptic@gmail.com>,0,2,0.0,[]
+Romain Piel <romain.piel@gmail.com>,0,1,0.0,[]
+Scott Alexander-Bown <dev@scottyab.com>,1,3,4.0,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'sample/src/main/AndroidManifest.xml']"
+Adam Shea <Adam.Shea@ticketmaster.com>,0,2,0.0,[]
+Adam <Adam.Shea@Ticketmaster.com>,0,2,0.0,[]
+Geobio Boo <geobio.boo@airbnb.com>,0,1,0.0,[]
+Zac Sweers <pandanomic@gmail.com>,2,0,4.0,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'sample/src/main/AndroidManifest.xml']"
+Tan Jun Rong <tanjunrong@gmail.com>,0,1,0.0,[]
+Chris Pierick <chris.pierick@ticketmaster.com>,0,4,0.0,[]
+Moyuru Aizawa <lVlA0805@gmail.com>,0,1,0.0,[]
+Richard Lee <dlackty@gmail.com>,1,0,4.0,"['gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'gradle.properties', 'sample/src/main/AndroidManifest.xml']"
+Cerrato Renaud <renaud.cerrato@gmail.com>,0,1,0.0,[]
+Sahil Dudeja <sahil.dudeja@timesgroup.com>,0,7,0.0,[]
+Manuel Garcia Urreta <mgurreta@mac.com>,0,1,0.0,[]
+Kevin Fang <kevin.fang.53@outlook.com>,1,1,5.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'sample-library/src/main/AndroidManifest.xml', 'sample/src/main/AndroidManifest.xml']"
+jonathan-caryl <github@jonathancaryl.co.uk>,0,1,0.0,[]
+Jiaheng Ge <gejiaheng@gmail.com>,0,1,0.0,[]
+Kaede Akatsuki <kidhaibara@gmail.com>,0,1,0.0,[]
+Marko Tiidla <marko.tiidla@hotmail.com>,0,1,0.0,[]
+Jingwei Hao <jingwei.hao@gmail.com>,0,2,0.0,[]
+megshao <megshao@users.noreply.github.com>,0,1,0.0,[]
+Ben Schwab <bschwab@coursera.org>,1,2,6.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'deeplinkdispatch/src/main/AndroidManifest.xml', 'sample-library/src/main/AndroidManifest.xml', 'sample/src/main/AndroidManifest.xml']"
+hisaichi5518 <hisaichi5518@gmail.com>,0,1,0.0,[]
+Joaquim Ley <joaquimley@gmail.com>,0,1,0.0,[]
+rossbacher <andreas.rossbacher@udo.edu>,1,2,5.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'sample-library/src/main/AndroidManifest.xml', 'sample/src/main/AndroidManifest.xml']"
+Carla Vaquero <carvaq@users.noreply.github.com>,1,0,6.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'deeplinkdispatch/src/main/AndroidManifest.xml', 'sample-library/src/main/AndroidManifest.xml', 'sample/src/main/AndroidManifest.xml']"
+dazza5000 <darran.kelinske@gmail.com>,0,1,0.0,[]
+Roger Hu <roger.hu@gmail.com>,1,2,6.0,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'gradle.properties', 'deeplinkdispatch/src/main/AndroidManifest.xml', 'sample-library/src/main/AndroidManifest.xml', 'sample/src/main/AndroidManifest.xml']"
+Andreas Rossbacher <andreas.rossbacher@udo.edu>,26,33,10.85,"['.travis.yml', '.github/workflows/deploy_snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', 'sample-kapt-library/src/main/AndroidManifest.xml', 'gradle.properties', 'deeplinkdispatch-base/gradle.properties', 'deeplinkdispatch-gradle-plugin/gradle.properties', 'deeplinkdispatch-processor/gradle.properties', 'sample-benchmark/src/main/AndroidManifest.xml', 'deeplinkdispatch/src/main/AndroidManifest.xml', 'sample-benchmarkable-library/src/main/AndroidManifest.xml', 'sample-ksp-library/src/main/AndroidManifest.xml', 'sample-library/src/main/AndroidManifest.xml', 'deeplinkdispatch/gradle.properties', 'sample/src/main/AndroidManifest.xml']"
+adellhk <adellhk@users.noreply.github.com>,3,1,9.67,"['.travis.yml', 'gradle/wrapper/gradle-wrapper.properties', 'deeplinkdispatch-base/gradle.properties', 'gradle.properties', 'deeplinkdispatch-processor/gradle.properties', 'sample-benchmark/src/main/AndroidManifest.xml', 'deeplinkdispatch/src/main/AndroidManifest.xml', 'sample-benchmarkable-library/src/main/AndroidManifest.xml', 'sample-library/src/main/AndroidManifest.xml', 'deeplinkdispatch/gradle.properties', 'sample/src/main/AndroidManifest.xml']"
+Lachlan McKee <lachlandevelopment@gmail.com>,0,1,0.0,[]
+Sam Doward <sam.doward@gmail.com>,0,1,0.0,[]
+Rifqi Mulya Fahmi <rifqi.fahmi@tokopedia.com>,0,1,0.0,[]
+Cody Henthorne <cody.henthorne@leafly.com>,0,1,0.0,[]
+Andreas Rossbacher <andreas.rossbacher@airbnb.com>,36,1,11.89,"['.travis.yml', '.github/workflows/deploy_snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', 'sample-kapt-library/src/main/AndroidManifest.xml', 'deeplinkdispatch-base/gradle.properties', 'gradle.properties', 'deeplinkdispatch-gradle-plugin/gradle.properties', 'deeplinkdispatch-processor/gradle.properties', 'sample-benchmark/src/main/AndroidManifest.xml', 'deeplinkdispatch/src/main/AndroidManifest.xml', 'sample-benchmarkable-library/src/main/AndroidManifest.xml', 'sample-ksp-library/src/main/AndroidManifest.xml', 'sample-library/src/main/AndroidManifest.xml', 'deeplinkdispatch/gradle.properties', 'sample/src/main/AndroidManifest.xml']"
+linnar <ljan@seznam.cz>,0,1,0.0,[]
+Colin White <colin@colinwhite.me>,0,1,0.0,[]
+Jintin <Jintin@users.noreply.github.com>,0,1,0.0,[]
+hengyu <hengyu@outlook.com>,0,1,0.0,[]
+Nick <nihk@users.noreply.github.com>,0,1,0.0,[]
+Eli Hart <eli.hart@airbnb.com>,3,4,12.67,"['.travis.yml', '.github/workflows/deploy_snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', 'sample-kapt-library/src/main/AndroidManifest.xml', 'deeplinkdispatch-base/gradle.properties', 'gradle.properties', 'deeplinkdispatch-gradle-plugin/gradle.properties', 'deeplinkdispatch-processor/gradle.properties', 'sample-benchmark/src/main/AndroidManifest.xml', 'deeplinkdispatch/src/main/AndroidManifest.xml', 'sample-benchmarkable-library/src/main/AndroidManifest.xml', 'sample-ksp-library/src/main/AndroidManifest.xml', 'sample-library/src/main/AndroidManifest.xml', 'deeplinkdispatch/gradle.properties', 'sample/src/main/AndroidManifest.xml']"
+Nelson Osacky <nelson@osacky.com>,0,1,0.0,[]
+Eric Kuck <eric@bluelinelabs.com>,0,1,0.0,[]
+Stanislav Novachevskyi <stasdjobs@gmail.com>,0,1,0.0,[]
+zz4zz <2322916463@qq.com>,0,1,0.0,[]
+Eduard Bosch Bertran <eduardboschbertran@gmail.com>,1,0,15.0,"['.github/workflows/deploy_snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', 'sample-kapt-library/src/main/AndroidManifest.xml', 'deeplinkdispatch-base/gradle.properties', 'deeplinkdispatch-gradle-plugin/gradle.properties', 'gradle.properties', 'deeplinkdispatch-processor/gradle.properties', 'sample-benchmark/src/main/AndroidManifest.xml', 'deeplinkdispatch/src/main/AndroidManifest.xml', 'sample-benchmarkable-library/src/main/AndroidManifest.xml', 'sample-ksp-library/src/main/AndroidManifest.xml', 'sample-library/src/main/AndroidManifest.xml', 'jitpack.yml', 'deeplinkdispatch/gradle.properties', 'sample/src/main/AndroidManifest.xml']"
+Nepomuk Crhonek <105591323+Nepomuk5665@users.noreply.github.com>,0,1,0.0,[]
+Salman Chishti <salmanmkc@GitHub.com>,1,0,14.0,"['.github/workflows/deploy_snapshot.yml', 'gradle/wrapper/gradle-wrapper.properties', 'sample-kapt-library/src/main/AndroidManifest.xml', 'deeplinkdispatch-base/gradle.properties', 'deeplinkdispatch-gradle-plugin/gradle.properties', 'gradle.properties', 'deeplinkdispatch-processor/gradle.properties', 'sample-benchmark/src/main/AndroidManifest.xml', 'deeplinkdispatch/src/main/AndroidManifest.xml', 'sample-benchmarkable-library/src/main/AndroidManifest.xml', 'sample-ksp-library/src/main/AndroidManifest.xml', 'sample-library/src/main/AndroidManifest.xml', 'deeplinkdispatch/gradle.properties', 'sample/src/main/AndroidManifest.xml']"

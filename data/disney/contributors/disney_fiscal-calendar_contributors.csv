@@ -1,0 +1,5 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Geoffrey Booth <webmaster@geoffreybooth.com>,4,12,2.0,"['package-lock.json', 'package.json']"
+Geoffrey Booth <webadmin@geoffreybooth.com>,7,1,2.0,"['package-lock.json', 'package.json']"
+Geoffrey Booth <geoffrey.booth@disney.com>,6,0,2.0,"['package-lock.json', 'package.json']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,4,0,2.0,"['package-lock.json', 'package.json']"

@@ -1,0 +1,57 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Phil Dibowitz <phil@ipom.com>,13,64,2.23,"['circle.yml', '.rubocop.yml', '.travis.yml']"
+Phil Dibowitz <phild@fb.com>,0,14,0.0,[]
+Marcin Sawicki <odcinek@gmail.com>,3,30,2.0,"['.rubocop.yml', '.travis.yml']"
+Marcin Sawicki <odcinek@fb.com>,2,22,1.5,"['.rubocop.yml', '.travis.yml']"
+Bryan Wann <bwann@wann.net>,0,5,0.0,[]
+chantra <chantra@fb.com>,0,1,0.0,[]
+Paul Paradise <paradise@fb.com>,0,1,0.0,[]
+Davide Cavalca <dcavalca@fb.com>,5,11,2.6,"['.github/workflows/ci.yml', 'circle.yml', '.rubocop.yml', '.travis.yml']"
+Pat Cox <pat@patcox.net>,0,4,0.0,[]
+Pat Cox <pcox@fb.com>,1,0,2.0,"['.rubocop.yml', '.travis.yml']"
+Nate Walck <nate.walck@gmail.com>,0,1,0.0,[]
+Joshua Miller <joshuamiller01@gmail.com>,0,6,0.0,[]
+Joshua Miller <joshmiller@fb.com>,0,4,0.0,[]
+Zeal Jagannatha <zealjagannatha@gmail.com>,0,1,0.0,[]
+Olivier Raginel <github@babar.us>,0,2,0.0,[]
+Dan Sedlacek <svmastersamurai@users.noreply.github.com>,0,1,0.0,[]
+Florent Thoumie <flz@xbsd.org>,0,1,0.0,[]
+Naomi Reeves <NaomiReeves@users.noreply.github.com>,7,8,2.43,"['.github/workflows/ci.yml', 'circle.yml', '.rubocop.yml', '.travis.yml']"
+Sean Karlage <skarlage@fb.com>,0,1,0.0,[]
+Mike Dodge <mikedodge04@gmail.com>,0,2,0.0,[]
+malmond77 <malmond@fb.com>,3,6,3.0,"['circle.yml', '.rubocop.yml', '.travis.yml']"
+rlangst <39741074+rlangst@users.noreply.github.com>,0,1,0.0,[]
+dkaplan1 <dylankaplan@gmail.com>,0,3,0.0,[]
+Naomi Reeves <naomi.c.reeves@gmail.com>,1,0,3.0,"['circle.yml', '.rubocop.yml', '.travis.yml']"
+Eric Roch <emroch@fb.com>,0,26,0.0,[]
+Omri Bahumi <omrib@fb.com>,0,1,0.0,[]
+Matthew Almond <malmond@fb.com>,0,5,0.0,[]
+Jason Cooke <Jason-Cooke@users.noreply.github.com>,0,1,0.0,[]
+Eric Roch <eric@roch.us>,0,1,0.0,[]
+nikitakoshikov <46608830+nikitakoshikov@users.noreply.github.com>,0,1,0.0,[]
+Nikit Koshikov <nikitakoshikov@fb.com>,0,1,0.0,[]
+ifel <ikanyuka@fb.com>,0,2,0.0,[]
+Phil Dibowitz <phil@vicarious.com>,0,1,0.0,[]
+Edward Pilatowicz <epilatow@fb.com>,1,1,2.0,"['.rubocop.yml', 'circle.yml']"
+Olivier Raginel <babar@fb.com>,0,1,0.0,[]
+scottruss <scottruss@users.noreply.github.com>,0,1,0.0,[]
+Nishchint Raina <nish@fb.com>,0,1,0.0,[]
+Nish <nishchintraina@users.noreply.github.com>,0,5,0.0,[]
+Pavlo Kushnir <oracle0809@gmail.com>,0,1,0.0,[]
+David Crosby <dcrosby@fb.com>,3,1,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+David T. Crosby <dafydd@dafyddcrosby.com>,1,0,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+David T. Crosby <dcrosby@fb.com>,1,0,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+Jim Heald <dev@jimheald.io>,0,1,0.0,[]
+David Heyer <dtheyer@fb.com>,0,1,0.0,[]
+Joshua Miller <joshmiller@meta.com>,2,3,2.5,"['.github/rubocop_matcher.json', '.github/workflows/ci.yml', '.rubocop.yml']"
+David T. Crosby <dave@dafyddcrosby.com>,0,1,0.0,[]
+dtheyer <davidheyer2016@gmail.com>,1,0,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+David T. Crosby <dcrosby@meta.com>,3,3,2.33,"['.github/rubocop_matcher.json', '.github/workflows/ci.yml', '.rubocop.yml']"
+dcrosby <dcrosby@fb.com>,2,5,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+William Theaker <william.theaker@gusto.com>,1,0,3.0,"['.github/rubocop_matcher.json', '.github/workflows/ci.yml', '.rubocop.yml']"
+Vladyslav Hlembotskyi <nobik@meta.com>,0,1,0.0,[]
+Franciszek Stokowacki <frs@fb.com>,0,1,0.0,[]
+Aaditya M Nair <AadityaNair@users.noreply.github.com>,1,1,3.0,"['.github/rubocop_matcher.json', '.github/workflows/ci.yml', '.rubocop.yml']"
+David Heyer <dtheyer@meta.com>,0,6,0.0,[]
+dtheyer <dtheyer@fb.com>,0,1,0.0,[]
+dcrosby <dcrosby@meta.com>,1,2,3.0,"['.github/rubocop_matcher.json', '.github/workflows/ci.yml', '.rubocop.yml']"

@@ -1,0 +1,45 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Sean Wiese <swiese@fb.com>,15,4,5.0,"['scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/AndroidManifest.xml']"
+Zhuowen Deng <dzhuowen@fb.com>,4,0,5.0,"['scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/AndroidManifest.xml']"
+Kevin Thai <kevinthai@fb.com>,10,0,5.0,"['scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/AndroidManifest.xml']"
+Stan Wu <dreamolight@fb.com>,6,1,5.0,"['scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/AndroidManifest.xml']"
+Zilin Zhang <kylinchang@fb.com>,36,54,5.56,"['scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'facebook-android-wrapper/AndroidManifest.xml']"
+Facebook Community Bot <facebook-github-bot@users.noreply.github.com>,0,1,0.0,[]
+KylinChang <kylinchang@fb.com>,0,2,0.0,[]
+Victor Chua <victorchua@fb.com>,0,1,0.0,[]
+Paul O'Shannessy <poshannessy@fb.com>,0,1,0.0,[]
+Nacho Quintero Rizo <roboto@fb.com>,5,23,6.0,"['scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'facebook-android-wrapper/AndroidManifest.xml']"
+Pansy Pan <pansy0419@fb.com>,0,2,0.0,[]
+Alan Wilms <alanwilms@fb.com>,2,8,6.0,"['scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'facebook-android-wrapper/AndroidManifest.xml']"
+Andres Suarez <asuarez@fb.com>,0,1,0.0,[]
+Yi Liu <yiliu@fb.com>,0,5,0.0,[]
+Nick Jiang <nickxjiang@fb.com>,0,1,0.0,[]
+Colin Creitz <ccreitz@fb.com>,0,2,0.0,[]
+Lauren Bentley <lebentle@fb.com>,0,1,0.0,[]
+Lev Iershov <lev.iershov@omnigon.com>,0,1,0.0,[]
+Paco Fernandez <ffgomez@fb.com>,3,17,6.0,"['scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'facebook-android-wrapper/AndroidManifest.xml']"
+Jordi Ramon <jordiramon@fb.com>,9,72,6.11,"['UnitySDK/Plugins/Android/AndroidManifest.xml', 'scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'facebook-android-wrapper/AndroidManifest.xml', '.github/ISSUE_TEMPLATE/config.yml']"
+Joe Susnick <joesusnick@fb.com>,0,2,0.0,[]
+Junjin Pu <junjinp@fb.com>,0,2,0.0,[]
+Owais Iqbal <owais91@fb.com>,2,5,6.0,"['scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', '.travis.yml', 'facebook-android-wrapper/AndroidManifest.xml']"
+Jawwad Ahmad <jawwad@fb.com>,0,1,0.0,[]
+Paul O’Shannessy <paul@oshannessy.com>,1,0,5.0,"['scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/AndroidManifest.xml']"
+Sergio Guerrero <sergioguerrero@fb.com>,0,11,0.0,[]
+Jared Warren <jarwarren@fb.com>,6,11,5.5,"['scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/AndroidManifest.xml', '.github/ISSUE_TEMPLATE/config.yml']"
+Esther Goh <esthergoh@fb.com>,3,4,6.0,"['scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/AndroidManifest.xml', '.github/ISSUE_TEMPLATE/config.yml']"
+Xiaoming Wang <xmwang@fb.com>,0,1,0.0,[]
+Oshion Niemela <oshion.n@gmail.com>,0,1,0.0,[]
+Esther Goh <esthergoh@meta.com>,1,1,7.0,"['UnitySDK/Plugins/Android/AndroidManifest.xml', 'scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/AndroidManifest.xml', '.github/ISSUE_TEMPLATE/config.yml']"
+Jordi Ramon <jordiramon@meta.com>,6,17,7.0,"['UnitySDK/Plugins/Android/AndroidManifest.xml', 'scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/AndroidManifest.xml', '.github/ISSUE_TEMPLATE/config.yml']"
+Jared Warren <jarwarren@meta.com>,0,3,0.0,[]
+Citrusjoy <113490332+Citrusjoy@users.noreply.github.com>,0,1,0.0,[]
+Sergio Guerrero <sergioguerrero@meta.com>,1,4,7.0,"['UnitySDK/Plugins/Android/AndroidManifest.xml', 'scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/AndroidManifest.xml', '.github/ISSUE_TEMPLATE/config.yml']"
+Matt Peebles <mattpeebles@meta.com>,0,1,0.0,[]
+M.Sz <gucio321@protonmail.com>,0,1,0.0,[]
+Jacky Jiang <jajiang@meta.com>,4,5,7.0,"['UnitySDK/Plugins/Android/AndroidManifest.xml', 'scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/AndroidManifest.xml', '.github/ISSUE_TEMPLATE/config.yml']"
+Vladimir Makaev <vmakaev@meta.com>,0,1,0.0,[]
+Ritvij Saxena <saxenaritvij@meta.com>,0,1,0.0,[]
+Sherif El Khatib <sherifelkhatib@meta.com>,1,0,7.0,"['UnitySDK/Plugins/Android/AndroidManifest.xml', 'scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/AndroidManifest.xml', '.github/ISSUE_TEMPLATE/config.yml']"
+Ryan Tobin <ryantobin@meta.com>,5,10,11.8,"['UnitySDK/Plugins/Android/AndroidManifest.xml', 'scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'UnitySDK/IAP-android-wrapper/gradle.properties', 'UnitySDK/IAP-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', '.github/ISSUE_TEMPLATE/config.yml', 'UnitySDK/IAP-android-wrapper/IAPUnity/src/main/AndroidManifest.xml', 'facebook-android-wrapper/AndroidManifest.xml', 'UnitySDK/IAP-android-wrapper/app/src/main/AndroidManifest.xml', 'UnitySDK/IAP-android-wrapper/gradle/libs.versions.toml']"
+Zilin Zhang <kylinchang@meta.com>,3,1,12.0,"['UnitySDK/Plugins/Android/AndroidManifest.xml', 'scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'UnitySDK/IAP-android-wrapper/gradle.properties', 'UnitySDK/IAP-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', '.github/ISSUE_TEMPLATE/config.yml', 'UnitySDK/IAP-android-wrapper/IAPUnity/src/main/AndroidManifest.xml', 'facebook-android-wrapper/AndroidManifest.xml', 'UnitySDK/IAP-android-wrapper/app/src/main/AndroidManifest.xml', 'UnitySDK/IAP-android-wrapper/gradle/libs.versions.toml']"
+Navid Qaragozlou <navidq@meta.com>,1,0,12.0,"['UnitySDK/Plugins/Android/AndroidManifest.xml', 'scripts/build.properties', 'facebook-android-wrapper/gradle.properties', 'UnitySDK/IAP-android-wrapper/gradle.properties', 'UnitySDK/IAP-android-wrapper/gradle/wrapper/gradle-wrapper.properties', 'facebook-android-wrapper/project.properties', 'facebook-android-wrapper/gradle/wrapper/gradle-wrapper.properties', '.github/ISSUE_TEMPLATE/config.yml', 'UnitySDK/IAP-android-wrapper/IAPUnity/src/main/AndroidManifest.xml', 'facebook-android-wrapper/AndroidManifest.xml', 'UnitySDK/IAP-android-wrapper/app/src/main/AndroidManifest.xml', 'UnitySDK/IAP-android-wrapper/gradle/libs.versions.toml']"

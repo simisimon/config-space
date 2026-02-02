@@ -1,0 +1,3 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Lucas Swartsenburg <504059+lswartsenburg@users.noreply.github.com>,1,0,7.0,"['package.json', 'package-lock.json', 'tsconfig.app.json', 'tsconfig.json', 'tsconfig.node.json', 'tsconfig.lib.json', '.github/workflows/node.js.yml']"
+Stephen Anthony Barton <stephenbarton@meta.com>,1,0,8.0,"['package.json', 'package-lock.json', 'tsconfig.app.json', '.github/workflows/publish.yml', 'tsconfig.node.json', 'tsconfig.lib.json', 'tsconfig.json', '.github/workflows/node.js.yml']"

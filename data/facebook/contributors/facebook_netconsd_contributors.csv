@@ -1,0 +1,20 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Davide Cavalca <dcavalca@fb.com>,5,5,1.4,"['.packit.yaml', '.github/workflows/ci.yml']"
+Dave Jones <dsj@fb.com>,0,12,0.0,[]
+Calvin Owens <jcalvinowens@gmail.com>,0,1,0.0,[]
+Jonathan Lassoff <joff@fb.com>,0,1,0.0,[]
+John Reese <jreese@fb.com>,0,1,0.0,[]
+Davide Cavalca <dcavalca@meta.com>,2,1,3.5,"['.packit.yaml', 'rust/example_module/Cargo.toml', '.github/workflows/ci.yml', 'rust/module/Cargo.toml', 'rust/blaster/Cargo.toml']"
+Domenico Cerasuolo <dceras@fb.com>,2,0,4.5,"['.packit.yaml', 'rust/example_module/Cargo.toml', '.github/workflows/ci.yml', 'rust/module/Cargo.toml', 'rust/blaster/Cargo.toml']"
+Domenico Cerasuolo <dceras@meta.com>,2,0,5.5,"['.packit.yaml', 'rust/example_module/Cargo.toml', '.github/workflows/ci.yml', 'Cargo.toml', 'rust/module/Cargo.toml', 'rust/blaster/Cargo.toml']"
+Richard Barnes <rbarnes@meta.com>,0,2,0.0,[]
+JP Kobryn <jpkobryn@meta.com>,0,4,0.0,[]
+Breno Leitao <leit@meta.com>,0,5,0.0,[]
+Dave Jones <dsj@meta.com>,3,19,2.33,"['.packit.yaml', 'Cargo.toml', '.github/workflows/ci.yml']"
+generatedunixname89002005287564 <generatedunixname89002005287564@meta.com>,0,5,0.0,[]
+Mat Wood <matwood@meta.com>,0,1,0.0,[]
+Michel Lind <michel@meta.com>,0,1,0.0,[]
+Paul O’Shannessy <paul@oshannessy.com>,0,1,0.0,[]
+Calvin Owens <calvin@wbinvd.org>,0,2,0.0,[]
+Facebook Community Bot <facebook-github-bot@users.noreply.github.com>,0,1,0.0,[]
+Nikita Lutsenko <nlutsenko@meta.com>,0,1,0.0,[]

@@ -1,0 +1,10 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Jordan Harband <ljharb@gmail.com>,0,1,0.0,[]
+Jiayu Liu <jiayu.liu@airbnb.com>,22,8,4.23,"['.travis.yml', '.github/workflows/build.yml', 'tsconfig.json', 'package-lock.json', 'package.json', 'npm-shrinkwrap.json']"
+Jiayu Liu <Jimexist@users.noreply.github.com>,8,4,4.12,"['.travis.yml', '.github/workflows/build.yml', 'tsconfig.json', 'package-lock.json', 'package.json', 'npm-shrinkwrap.json']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,19,9,5.0,"['.travis.yml', '.github/workflows/build.yml', 'tsconfig.json', 'package-lock.json', 'package.json']"
+Malash <i@malash.me>,17,10,4.82,"['.travis.yml', '.github/workflows/build.yml', 'tsconfig.json', 'package-lock.json', 'package.json']"
+Joe Lencioni <joe.lencioni@airbnb.com>,5,0,5.0,"['.travis.yml', '.github/workflows/build.yml', 'tsconfig.json', 'package-lock.json', 'package.json']"
+Mustafa Ateş Uzun <mustafauzun0@gmail.com>,0,1,0.0,[]
+Salman Muin Kayser Chishti <13schishti@gmail.com>,1,0,4.0,"['.travis.yml', 'package.json', '.github/workflows/build.yml', 'tsconfig.json']"
+Jiayu Liu <622789+jimexist@users.noreply.github.com>,1,0,4.0,"['.travis.yml', 'package.json', '.github/workflows/build.yml', 'tsconfig.json']"

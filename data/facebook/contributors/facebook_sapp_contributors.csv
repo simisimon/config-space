@@ -1,0 +1,68 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+facebook-github-bot <facebook-github-bot@users.noreply.github.com>,1,0,3.0,"['sapp/ui/frontend/public/manifest.json', 'sapp/ui/frontend/package.json', 'requirements.json']"
+Vincent Lee <vincentlee@fb.com>,0,20,0.0,[]
+Kenneth D Ray <kenray@fb.com>,0,7,0.0,[]
+Dominik Gabi <dominik@fb.com>,9,12,3.67,"['sapp/ui/frontend/package.json', '.github/workflows/lint.yml', '.github/workflows/pyre.yml', 'sapp/ui/frontend/public/manifest.json', '.pyproject.toml']"
+Dominik Gabi <dkgi@users.noreply.github.com>,1,2,4.0,"['sapp/ui/frontend/public/manifest.json', 'sapp/ui/frontend/package.json', 'requirements.json', '.github/workflows/lint.yml']"
+Panagiotis Vekris <pvekris@fb.com>,0,1,0.0,[]
+Yuh Shin Ong <yuhshin@fb.com>,2,20,6.0,"['sapp/ui/frontend/package.json', '.github/workflows/lint.yml', '.github/workflows/pyre.yml', '.github/workflows/jest.yml', 'sapp/ui/frontend/public/manifest.json', '.pyproject.toml']"
+Joseph Blomstedt <jdb@fb.com>,0,1,0.0,[]
+Sinan Cepel <sinancepel@fb.com>,0,1,0.0,[]
+generatedunixname89002005307016 <generatedunixname89002005307016@fb.com>,0,27,0.0,[]
+Anwesh Tuladhar <atuladhar@fb.com>,0,2,0.0,[]
+Edward Qiu <edq@fb.com>,7,80,5.71,"['sapp/ui/frontend/package.json', '.github/workflows/lint.yml', '.github/workflows/pyre.yml', 'sapp/ui/frontend/public/manifest.json', '.github/workflows/jest.yml', '.pyproject.toml']"
+Nathan Maue <nmaue@fb.com>,0,2,0.0,[]
+Maxime Arthaud <arthaud@fb.com>,0,30,0.0,[]
+Pyre Bot Jr <>,0,63,0.0,[]
+Abdullahi Abdalla <abdima@fb.com>,0,2,0.0,[]
+Manuel Fahndrich <fahndrich@fb.com>,0,23,0.0,[]
+Simran Virk <skvirk@fb.com>,0,8,0.0,[]
+Grace Gao <ggaoww@gmail.com>,0,1,0.0,[]
+Abishek V Ashok <abishekvashok@gmail.com>,4,26,5.0,"['sapp/ui/frontend/package.json', '.github/workflows/lint.yml', '.github/workflows/pyre.yml', 'sapp/ui/frontend/public/manifest.json', '.github/workflows/jest.yml', '.pyproject.toml']"
+Steven Troxler <stroxler@fb.com>,0,13,0.0,[]
+Edward <14011954+0xedward@users.noreply.github.com>,1,0,6.0,"['sapp/ui/frontend/package.json', '.github/workflows/lint.yml', '.github/workflows/pyre.yml', '.github/workflows/jest.yml', 'sapp/ui/frontend/public/manifest.json', '.pyproject.toml']"
+Shannon Zhu <szhu@fb.com>,0,1,0.0,[]
+JeremAIh <esiebomaj@gmail.com>,0,4,0.0,[]
+Alexander Woolf <awoolf@fb.com>,0,4,0.0,[]
+Alex Lambert <alexlambert@fb.com>,0,1,0.0,[]
+Andres Suarez <asuarez@fb.com>,0,1,0.0,[]
+Tianhan Lu <tianhanlu@fb.com>,0,4,0.0,[]
+EdOverflow <contact@edoverflow.com>,0,2,0.0,[]
+John Reese <jreese@fb.com>,1,2,6.0,"['sapp/ui/frontend/package.json', '.github/workflows/lint.yml', '.github/workflows/pyre.yml', '.github/workflows/jest.yml', 'sapp/ui/frontend/public/manifest.json', '.pyproject.toml']"
+Alex Blanck <alexblanck@fb.com>,0,7,0.0,[]
+Steven Troxler <steven.troxler@gmail.com>,0,1,0.0,[]
+Abdullahi Abdalla <abdima@meta.com>,1,4,6.0,"['sapp/ui/frontend/package.json', '.github/workflows/lint.yml', '.github/workflows/pyre.yml', '.github/workflows/jest.yml', 'sapp/ui/frontend/public/manifest.json', '.pyproject.toml']"
+Maxime Arthaud <arthaud@meta.com>,12,32,6.0,"['sapp/ui/frontend/package.json', '.github/workflows/lint.yml', '.github/workflows/pyre.yml', '.github/workflows/jest.yml', 'sapp/ui/frontend/public/manifest.json', '.pyproject.toml']"
+Alex Blanck <alexblanck@meta.com>,0,54,0.0,[]
+Dmitry Grigorenko <grigorenko@meta.com>,0,5,0.0,[]
+Tianhan Lu <tianhanlu@meta.com>,0,7,0.0,[]
+Manuel Fahndrich <fahndrich@meta.com>,0,29,0.0,[]
+Conner Nilsen <connernilsen@meta.com>,1,3,6.0,"['sapp/ui/frontend/package.json', '.github/workflows/lint.yml', '.github/workflows/pyre.yml', '.github/workflows/jest.yml', 'sapp/ui/frontend/public/manifest.json', '.pyproject.toml']"
+Sinan Cepel <sinancepel@meta.com>,0,13,0.0,[]
+Sheila Jimenez <jimenezshr@meta.com>,0,3,0.0,[]
+Joseph Blomstedt <jdb@meta.com>,0,2,0.0,[]
+Marat Turaev <maratturaev@meta.com>,0,4,0.0,[]
+Yuh Shin Ong <yuhshin@meta.com>,0,17,0.0,[]
+Alexander Woolf <awoolf@meta.com>,0,1,0.0,[]
+Sai Nagabhairava <sainagabhairava@meta.com>,0,1,0.0,[]
+generatedunixname89002005307016 <generatedunixname89002005307016@meta.com>,0,26,0.0,[]
+Ibrahim Mohamed <3219693+the-storm@users.noreply.github.com>,0,3,0.0,[]
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,0,1,0.0,[]
+Anwesh Tuladhar <atuladhar@meta.com>,0,8,0.0,[]
+Richard Barnes <rbarnes@meta.com>,0,2,0.0,[]
+generatedunixname89002005287564 <generatedunixname89002005287564@meta.com>,0,2,0.0,[]
+Jia Chen <grievejia@meta.com>,0,3,0.0,[]
+generatedunixname2443911735787003 <noreply+2443911735787003@fb.com>,0,1,0.0,[]
+Amethyst Reese <amethyst@meta.com>,0,1,0.0,[]
+The Knights Who Say Ni <noreply+647790274085263@fb.com>,1,0,6.0,"['sapp/ui/frontend/package.json', '.github/workflows/lint.yml', '.github/workflows/pyre.yml', '.github/workflows/jest.yml', 'sapp/ui/frontend/public/manifest.json', '.pyproject.toml']"
+snb2013 <sergej.batishchev@gmail.com>,0,1,0.0,[]
+Jinghao Jia <jinghao7@meta.com>,0,2,0.0,[]
+Matt Gramlich <matthewgramlich@meta.com>,0,2,0.0,[]
+Abishek V Ashok <abishekvashok@meta.com>,0,2,0.0,[]
+Alex Knaust <awknaust@meta.com>,0,1,0.0,[]
+Scott Blaha <sblaha@meta.com>,3,11,6.0,"['sapp/ui/frontend/package.json', '.github/workflows/lint.yml', '.github/workflows/pyre.yml', '.github/workflows/jest.yml', 'sapp/ui/frontend/public/manifest.json', '.pyproject.toml']"
+Thomas Polasek <thomaspolasek@meta.com>,0,1,0.0,[]
+Pranav Arora <pvarora@meta.com>,0,1,0.0,[]
+Pieter Hooimeijer <pieter.hooimeijer@gmail.com>,0,1,0.0,[]
+Bowie Chen <bowiechen@meta.com>,0,1,0.0,[]
+generatedunixname537391475639613 <noreply+537391475639613@fb.com>,0,1,0.0,[]

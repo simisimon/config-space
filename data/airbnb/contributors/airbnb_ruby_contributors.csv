@@ -1,0 +1,77 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Justin Jones <justin@airbnb.com>,0,9,0.0,[]
+jasonkb <jason@airbnb.com>,0,14,0.0,[]
+Justin Jones <justin@devpuppy.com>,0,3,0.0,[]
+Jason Katz-Brown <jason@airbnb.com>,0,22,0.0,[]
+Christopher Lin <powertothepenguins@gmail.com>,0,15,0.0,[]
+Christopher Lin <topher@airbnb.com>,0,23,0.0,[]
+Allen Kerr <allen.kerr@airbnb.com>,9,14,16.0,"['rubocop-airbnb/config/rubocop-naming.yml', '.travis.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', 'rubocop-airbnb/config/rubocop-lint.yml']"
+Eric Levine <eric.levine@airbnb.com>,0,5,0.0,[]
+Adrian Wisernig <adrian.wisernig@envoked.com>,0,2,0.0,[]
+Lou Kosak <lkosak@gmail.com>,0,2,0.0,[]
+Spike Brehm <spike@airbnb.com>,0,1,0.0,[]
+James Reggio <james.reggio@airbnb.com>,0,3,0.0,[]
+Horace Ko <horace@airbnb.com>,0,3,0.0,[]
+James Reggio <james.reggio@gmail.com>,0,1,0.0,[]
+Fiona Tay <fiona.tay@airbnb.com>,0,2,0.0,[]
+Fiona Tay <me@fionatay.com>,0,2,0.0,[]
+Andrew Kane <acekane1@gmail.com>,0,1,0.0,[]
+Roman Fuchs <roman.fuchs@airbnb.com>,0,1,0.0,[]
+romanfuchs <roman.fuchs@airbnb.com>,0,1,0.0,[]
+Arlandis Lawrence <arlandislawrence@gmail.com>,0,1,0.0,[]
+Max Jacobson <max@hardscrabble.net>,0,1,0.0,[]
+Brian Morearty <brian@morearty.org>,0,9,0.0,[]
+Phillippe Siclait <phillippe.siclait@airbnb.com>,0,1,0.0,[]
+Seth Krasnianski <seth@mojotech.com>,0,2,0.0,[]
+Brian Morearty <brian.morearty@airbnb.com>,0,5,0.0,[]
+Jon Atack <jon@atack.com>,0,1,0.0,[]
+Armen P. <blazesolo@gmail.com>,0,1,0.0,[]
+Steven DeMartini <steven.demartini@airbnb.com>,0,2,0.0,[]
+Steven DeMartini <sjdemartini@users.noreply.github.com>,0,1,0.0,[]
+Tommy Dang <tommy.dang@airbnb.com>,0,4,0.0,[]
+DANGerous <quantumventuress@gmail.com>,0,8,0.0,[]
+Ursa americanus kermodei <venantius@gmail.com>,0,12,0.0,[]
+Adrian Kuhn <adrian.kuhn@airbnb.com>,0,1,0.0,[]
+David Jarvis <david.jarvis@airbnb.com>,0,9,0.0,[]
+Jordan Harband <ljharb@gmail.com>,0,7,0.0,[]
+Tommy DANGerous <quantumventuress@gmail.com>,0,11,0.0,[]
+Parker Berg <parker.berg@airbnb.com>,0,28,0.0,[]
+Rahul <mailrhl@gmail.com>,0,1,0.0,[]
+Semyon Pupkov <semen.pupkov@gmail.com>,0,1,0.0,[]
+Erik Pearson <emp823@gmail.com>,0,1,0.0,[]
+Constance Jiang <conzjiang@gmail.com>,0,1,0.0,[]
+Constance Jiang <conzjiang@users.noreply.github.com>,0,1,0.0,[]
+Cheng Zheng <chengzheng.apply@gmail.com>,0,1,0.0,[]
+Chengyin Liu <chengyin@users.noreply.github.com>,0,1,0.0,[]
+Evan H. Carmi <evan.carmi@airbnb.com>,0,1,0.0,[]
+Evan Carmi <carmi@users.noreply.github.com>,0,1,0.0,[]
+Tobenna Ndu <tobenna.ndu@holidayextras.com>,0,1,0.0,[]
+Roy Crihfield <roy.crihfield@gmail.com>,0,1,0.0,[]
+Kevin Sun <kevin.sun@airbnb.com>,0,13,0.0,[]
+Andy Agrawal <aagrawal2001@gmail.com>,0,5,0.0,[]
+Adrian Kuhn <akuhn@iam.unibe.ch>,0,1,0.0,[]
+Andy <aagrawal2001@gmail.com>,0,4,0.0,[]
+Bryn Dyment <bryndyment@gmail.com>,0,1,0.0,[]
+Vinicius Brasil <marcosbrasilaraujo@gmail.com>,0,1,0.0,[]
+Milo Price <milo.price@gmail.com>,0,1,0.0,[]
+Nicolas Leger <nicolasleger@users.noreply.github.com>,1,0,16.0,"['rubocop-airbnb/config/rubocop-naming.yml', '.travis.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', 'rubocop-airbnb/config/rubocop-lint.yml']"
+Allen Kerr <alkerr@gmail.com>,7,3,16.0,"['rubocop-airbnb/config/rubocop-naming.yml', '.travis.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', 'rubocop-airbnb/config/rubocop-lint.yml']"
+Stéphane <Stephanyan@users.noreply.github.com>,0,1,0.0,[]
+Andrea Gómez <crypto.andrea@protonmail.ch>,0,1,0.0,[]
+Kevin Sun <kevin.sun@flexport.com>,2,2,16.0,"['rubocop-airbnb/config/rubocop-naming.yml', '.travis.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', 'rubocop-airbnb/config/rubocop-lint.yml']"
+Ian Armour <ianmarmour@gmail.com>,0,1,0.0,[]
+Samuel Tan <samuel.tan@airbnb.com>,0,1,0.0,[]
+zachary_sabin <zach.sabin@airbnb.com>,15,10,16.0,"['rubocop-airbnb/config/rubocop-naming.yml', '.travis.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', 'rubocop-airbnb/config/rubocop-lint.yml']"
+zachsabin <zacharysabin@gmail.com>,6,2,16.0,"['rubocop-airbnb/config/rubocop-naming.yml', '.travis.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', 'rubocop-airbnb/config/rubocop-lint.yml']"
+Clyde Law <clyde.law@airbnb.com>,0,2,0.0,[]
+José Miguel  Melo <josemiguelmelo94@gmail.com>,1,1,16.0,"['rubocop-airbnb/config/rubocop-naming.yml', '.travis.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', 'rubocop-airbnb/config/rubocop-lint.yml']"
+José Miguel Melo <josemiguelmelo94@gmail.com>,0,2,0.0,[]
+Landon Spear <phyujin@gmail.com>,1,0,16.0,"['rubocop-airbnb/config/rubocop-naming.yml', '.travis.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', 'rubocop-airbnb/config/rubocop-lint.yml']"
+Bozhidar Batsov <bozhidar.batsov@gmail.com>,0,1,0.0,[]
+Andrew Pariser <pariser@gmail.com>,6,4,16.33,"['rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-capybara.yml', 'rubocop-airbnb/config/rubocop-lint.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-factory_bot.yml', '.travis.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', '.github/workflows/rspec_rubocop.yml', 'rubocop-airbnb/config/rubocop-naming.yml']"
+Patrick Brinich-Langlois <pbrinichlanglois@gmail.com>,0,1,0.0,[]
+Renzo Minelli <renminelli@gmail.com>,2,0,16.0,"['rubocop-airbnb/config/rubocop-naming.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', '.github/workflows/rspec_rubocop.yml', 'rubocop-airbnb/config/rubocop-lint.yml']"
+Koichi ITO <koic.ito@gmail.com>,1,1,18.0,"['rubocop-airbnb/config/rubocop-naming.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/rubocop-factory_bot.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-capybara.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', '.github/workflows/rspec_rubocop.yml', 'rubocop-airbnb/config/rubocop-lint.yml']"
+Geronimo Mendez <113253381+Geromendez135@users.noreply.github.com>,1,0,16.0,"['rubocop-airbnb/config/rubocop-naming.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', '.github/workflows/rspec_rubocop.yml', 'rubocop-airbnb/config/rubocop-lint.yml']"
+David A. Black <david@davidablack.net>,0,1,0.0,[]
+Santiago Rodriguez <46354312+santiagorodriguez96@users.noreply.github.com>,1,0,18.0,"['rubocop-airbnb/config/rubocop-naming.yml', 'rubocop-airbnb/config/rubocop-gemspec.yml', 'rubocop-airbnb/config/rubocop-metrics.yml', 'rubocop-airbnb/config/rubocop-rails.yml', 'rubocop-airbnb/config/default.yml', 'rubocop-airbnb/.rubocop.yml', 'rubocop-airbnb/config/rubocop-factory_bot.yml', 'rubocop-airbnb/config/rubocop-security.yml', 'rubocop-airbnb/config/rubocop-airbnb.yml', 'rubocop-airbnb/.rubocop_airbnb.yml', 'rubocop-airbnb/config/rubocop-bundler.yml', 'rubocop-airbnb/config/rubocop-capybara.yml', 'rubocop-airbnb/config/rubocop-layout.yml', 'rubocop-airbnb/config/rubocop-rspec.yml', 'rubocop-airbnb/config/rubocop-performance.yml', 'rubocop-airbnb/config/rubocop-style.yml', '.github/workflows/rspec_rubocop.yml', 'rubocop-airbnb/config/rubocop-lint.yml']"

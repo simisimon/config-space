@@ -1,0 +1,16 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Jordan Harband <ljharb@gmail.com>,0,1,0.0,[]
+Matthew Wardrop <matthew.wardrop@airbnb.com>,5,120,1.0,['.travis.yml']
+Matthew Wardrop <mister.wardrop@gmail.com>,2,13,1.0,['.travis.yml']
+Daniel Frank <danfrankj@gmail.com>,1,35,1.0,['.travis.yml']
+Dennis Jung <inylove82@gmail.com>,0,2,0.0,[]
+delirious-lettuce <delirious.lettuce@gmail.com>,0,3,0.0,[]
+Matthew Wardrop <mawardrop@nfml-mawardroptgh.lan>,0,1,0.0,[]
+Matthew Wardrop <mawardrop@netflix.com>,14,108,2.5,"['.travis.yml', 'pyproject.toml', '.github/workflows/publish.yml', 'example_wrapper/example_wrapper/services.yml', 'tox.ini']"
+Matthew Wardrop <mpwardrop@gmail.com>,1,34,2.0,"['.travis.yml', 'tox.ini']"
+Naoya Kanai <naoya.kanai@airbnb.com>,1,2,3.0,"['.travis.yml', 'example_wrapper/example_wrapper/services.yml', 'tox.ini']"
+Harsha Mandadi <42734799+harsham4026@users.noreply.github.com>,0,3,0.0,[]
+Naoya Kanai <naopon@gmail.com>,0,4,0.0,[]
+Sebastien Williams-Wynn <s.williamswynn.mail@gmail.com>,0,3,0.0,[]
+Gauthier <gloutsch@users.noreply.github.com>,0,1,0.0,[]
+Glenn Thomas <45470716+gthomas-slack@users.noreply.github.com>,0,2,0.0,[]

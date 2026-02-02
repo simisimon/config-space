@@ -1,0 +1,8 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Joe Previte <jprevite@fb.com>,2,0,1.5,"['Cargo.toml', '.devcontainer/devcontainer.json']"
+Madyan <22075444+madyanalj@users.noreply.github.com>,2,1,1.5,"['Cargo.toml', '.devcontainer/devcontainer.json']"
+Aaron Lichtman <aaronlichtman@gmail.com>,14,26,3.5,"['Dockerfile', '.devcontainer/devcontainer.json', 'src/.claude/settings.local.json', '.claude/settings.local.json', 'docker-compose.yml', 'Cargo.toml']"
+Aaron Lichtman <alichtman@fb.com>,1,1,2.0,"['Cargo.toml', '.devcontainer/devcontainer.json']"
+Aaron Lichtman <alichtman@meta.com>,21,54,5.71,"['Dockerfile', '.devcontainer/devcontainer.json', 'src/.claude/settings.local.json', '.claude/settings.local.json', 'docker-compose.yml', '.cargo/config.toml', 'Cargo.toml', '.github/workflows/ci.yml']"
+Emmanuel See Te <39931114+emmanuelseete1996@users.noreply.github.com>,0,9,0.0,[]
+alichtman <alichtman@fb.com>,1,0,2.0,"['Cargo.toml', '.devcontainer/devcontainer.json']"

@@ -1,0 +1,19 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Grayson Koonce <grayson@uber.com>,1,11,1.0,['sally.yaml']
+Grayson Koonce <grayson.koonce@gmail.com>,10,3,3.1,"['Dockerfile', 'app.yaml', 'sally.yaml', '.travis.yml']"
+Kris Kowal <kris@cixar.com>,1,0,1.0,['sally.yaml']
+Abhinav Gupta <mail@abhinavg.net>,3,2,4.0,"['sally.yaml', '.travis.yml', 'Dockerfile', '.github/workflows/deploy.yml', 'app.yaml']"
+Prashant Varanasi <github@prashantv.com>,2,0,4.0,"['Dockerfile', 'app.yaml', 'sally.yaml', '.travis.yml']"
+bill fumerola <billf@mu.org>,1,0,4.0,"['Dockerfile', 'app.yaml', 'sally.yaml', '.travis.yml']"
+Aiden Scandella <sectioneight@users.noreply.github.com>,1,0,4.0,"['Dockerfile', 'app.yaml', 'sally.yaml', '.travis.yml']"
+Peter Edge <peter.edge@gmail.com>,3,0,4.0,"['Dockerfile', 'app.yaml', 'sally.yaml', '.travis.yml']"
+Glib Smaga <glibsm@users.noreply.github.com>,1,0,4.0,"['Dockerfile', 'app.yaml', 'sally.yaml', '.travis.yml']"
+Bryce Lampe <blampe@uber.com>,0,1,0.0,[]
+Akshay Shah <akshayjshah@users.noreply.github.com>,2,0,4.0,"['Dockerfile', 'app.yaml', 'sally.yaml', '.travis.yml']"
+Abhinav Gupta <abg@uber.com>,2,4,4.0,"['sally.yaml', '.travis.yml', 'Dockerfile', '.github/workflows/deploy.yml', 'app.yaml']"
+SyrieBianco <syriebianco@gmail.com>,0,1,0.0,[]
+Sung Yoon Whang <sungyoonwhang@gmail.com>,1,0,4.0,"['.github/workflows/deploy.yml', 'app.yaml', 'sally.yaml', 'Dockerfile']"
+Sung Yoon Whang <sungyoon@uber.com>,4,1,4.0,"['.github/workflows/deploy.yml', 'app.yaml', 'sally.yaml', 'Dockerfile']"
+Jonathan Baker <jonebaker@gmail.com>,0,1,0.0,[]
+Yuxin Wang <yuxinwang.dev@gmail.com>,1,0,4.0,"['.github/workflows/deploy.yml', 'app.yaml', 'sally.yaml', 'Dockerfile']"
+Jacob Oaks <jacoboaks.8@gmail.com>,2,0,4.0,"['.github/workflows/deploy.yml', 'app.yaml', 'sally.yaml', 'Dockerfile']"

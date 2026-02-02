@@ -1,0 +1,13 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+George <>,0,3,0.0,[]
+George Lyon <GeorgeLyon@users.noreply.github.com>,2,12,1.0,['.github/workflows/ci.yml']
+Francisco Diaz <patchdiaz@gmail.com>,1,1,1.0,['.github/workflows/ci.yml']
+Francisco Diaz <fdiaz@users.noreply.github.com>,3,2,1.0,['.github/workflows/ci.yml']
+Dan Federman <dfed@me.com>,3,1,1.0,['.github/workflows/ci.yml']
+Max Desiatov <max@desiatov.com>,1,1,1.0,['.github/workflows/ci.yml']
+Michael Bachand <michael.bachand@airbnb.com>,0,1,0.0,[]
+Pietro Caselani <pc1992@gmail.com>,0,1,0.0,[]
+Dan Federman <dan.federman@airbnb.com>,0,3,0.0,[]
+Hans Hamm <h.hamm@reply.de>,0,1,0.0,[]
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,1,6,1.0,['.github/workflows/ci.yml']
+Cal Stephens <cal@calstephens.tech>,1,2,1.0,['.github/workflows/ci.yml']

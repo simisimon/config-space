@@ -1,0 +1,62 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Nikhil Simha Raprolu <nikhil.simha@airbnb.com>,1,64,5.0,"['.circleci/Dockerfile', 'project/build.properties', 'api/py/tox.ini', '.github/workflows/scala.yml', '.circleci/config.yml']"
+Nikhil <r.nikhilsimha@gmail.com>,17,53,5.94,"['quickstart/mongo-online-impl/project/build.properties', '.circleci/Dockerfile', 'Dockerfile', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'project/build.properties', 'api/py/tox.ini', 'quickstart/Dockerfile', '.github/workflows/scala.yml', '.circleci/config.yml']"
+Pengyu <3771747+better365@users.noreply.github.com>,0,28,0.0,[]
+Pengyu Hou <3771747+better365@users.noreply.github.com>,1,47,5.0,"['.circleci/Dockerfile', 'project/build.properties', 'api/py/tox.ini', '.github/workflows/scala.yml', '.circleci/config.yml']"
+Cristian Figueroa <cristian.figueroa@airbnb.com>,0,17,0.0,[]
+vamsee_yarlagadda <vamsee.y@airbnb.com>,3,32,5.0,"['.circleci/Dockerfile', 'project/build.properties', 'api/py/tox.ini', '.github/workflows/scala.yml', '.circleci/config.yml']"
+vamseeyarla <vamsee.yarla@gmail.com>,0,6,0.0,[]
+Sophie Wang <sophie.wang@airbnb.com>,1,48,5.0,"['.circleci/Dockerfile', 'project/build.properties', 'api/py/tox.ini', '.github/workflows/scala.yml', '.circleci/config.yml']"
+Sophie <yu.wang@columbia.edu>,1,49,5.0,"['.circleci/Dockerfile', 'project/build.properties', 'api/py/tox.ini', '.github/workflows/scala.yml', '.circleci/config.yml']"
+Haozhen Ding <haozhen.ding@airbnb.com>,0,63,0.0,[]
+hzding621 <hzding621@users.noreply.github.com>,4,101,6.5,"['quickstart/mongo-online-impl/project/build.properties', '.circleci/Dockerfile', 'Dockerfile', 'spark/src/main/resources/log4j.properties', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'project/build.properties', 'api/py/.pre-commit-config.yaml', 'api/py/tox.ini', 'quickstart/Dockerfile', '.github/workflows/scala.yml', '.circleci/config.yml']"
+Cristian Figueroa <cristianrfr@gmail.com>,7,43,5.43,"['quickstart/mongo-online-impl/project/build.properties', '.circleci/Dockerfile', 'docker-compose.yml', 'project/build.properties', 'api/py/tox.ini', 'quickstart/Dockerfile', '.github/workflows/scala.yml', '.circleci/config.yml']"
+Varant Zanoyan <vzanoyan@gmail.com>,4,64,7.25,"['quickstart/mongo-online-impl/project/build.properties', '.circleci/Dockerfile', 'Dockerfile', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'project/build.properties', 'api/py/tox.ini', 'quickstart/Dockerfile', '.github/workflows/scala.yml', '.circleci/config.yml']"
+hzding621 <hzding621@gmail.com>,0,2,0.0,[]
+piyushn-stripe <74793191+piyushn-stripe@users.noreply.github.com>,0,6,0.0,[]
+cenhao <cenhao123@gmail.com>,1,9,5.0,"['.circleci/Dockerfile', 'project/build.properties', 'api/py/tox.ini', '.github/workflows/scala.yml', '.circleci/config.yml']"
+Gary Zheng <131824150+dyz-stripe@users.noreply.github.com>,0,1,0.0,[]
+Hao Cen <cenhao123@gmail.com>,0,8,0.0,[]
+charles lai <charlesjianlai@gmail.com>,0,2,0.0,[]
+Vamsee Yarlagadda <vamsee.yarla@gmail.com>,0,1,0.0,[]
+nikhilsimha <r.nikhilsimha@gmail.com>,3,67,10.33,"['quickstart/mongo-online-impl/project/build.properties', '.circleci/Dockerfile', 'Dockerfile', 'spark/src/main/resources/log4j.properties', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'project/build.properties', 'api/py/.pre-commit-config.yaml', 'api/py/tox.ini', 'quickstart/Dockerfile', '.github/workflows/scala.yml', '.circleci/config.yml']"
+divyamanohar-stripe <111152273+divyamanohar-stripe@users.noreply.github.com>,0,3,0.0,[]
+Henry Saputra <hsaputra@apache.org>,0,2,0.0,[]
+Caio Camatta (Stripe) <108533014+caiocamatta-stripe@users.noreply.github.com>,0,11,0.0,[]
+mears-stripe <80124746+mears-stripe@users.noreply.github.com>,0,3,0.0,[]
+aarongreen-stripe <51489162+aarongreen-stripe@users.noreply.github.com>,0,1,0.0,[]
+Adam Kocoloski <adam.kocoloski@airbnb.com>,0,2,0.0,[]
+donghanz <95720920+donghanz@users.noreply.github.com>,2,6,10.0,"['quickstart/mongo-online-impl/project/build.properties', '.circleci/Dockerfile', 'Dockerfile', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'api/py/.pre-commit-config.yaml', 'project/build.properties', 'api/py/tox.ini', 'quickstart/Dockerfile', '.circleci/config.yml']"
+hanyuli1995 <31667422+hanyuli1995@users.noreply.github.com>,2,5,9.5,"['quickstart/mongo-online-impl/project/build.properties', '.circleci/Dockerfile', 'Dockerfile', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'project/build.properties', 'api/py/.pre-commit-config.yaml', 'api/py/tox.ini', 'quickstart/Dockerfile', '.circleci/config.yml']"
+yuli_han <yuli_han@yuli-hans-MacBook-Pro.local>,0,71,0.0,[]
+donghanz <donghanz07@gmail.com>,0,25,0.0,[]
+jbrooks-stripe <107939661+jbrooks-stripe@users.noreply.github.com>,0,3,0.0,[]
+Pengyu Hou <3771747+pengyu-hou@users.noreply.github.com>,2,27,12.0,"['quickstart/mongo-online-impl/project/build.properties', 'service/src/main/resources/example_config.json', 'tox.ini', '.circleci/Dockerfile', 'Dockerfile', 'spark/src/main/resources/log4j.properties', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'api/py/.pre-commit-config.yaml', 'project/build.properties', 'quickstart/Dockerfile', '.circleci/config.yml']"
+yuli_han <yuli_han@yuli-hans-MBP.attlocal.net>,0,7,0.0,[]
+Praveen Kundurthy <p.kundurthy7@gmail.com>,1,9,11.0,"['quickstart/mongo-online-impl/project/build.properties', '.circleci/Dockerfile', 'Dockerfile', 'spark/src/main/resources/log4j.properties', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'api/py/.pre-commit-config.yaml', 'project/build.properties', 'api/py/tox.ini', 'quickstart/Dockerfile', '.circleci/config.yml']"
+yuli-han <31667422+yuli-han@users.noreply.github.com>,0,23,0.0,[]
+rohitgirme <1740149+rohitgirme@users.noreply.github.com>,2,5,11.0,"['quickstart/mongo-online-impl/project/build.properties', '.circleci/Dockerfile', 'Dockerfile', 'spark/src/main/resources/log4j.properties', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'api/py/.pre-commit-config.yaml', 'project/build.properties', 'api/py/tox.ini', 'quickstart/Dockerfile', '.circleci/config.yml']"
+Piyush Narang <piyush@zipline.ai>,3,1,11.67,"['quickstart/mongo-online-impl/project/build.properties', 'service/src/main/resources/example_config.json', 'tox.ini', '.circleci/Dockerfile', 'Dockerfile', 'spark/src/main/resources/log4j.properties', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'api/py/.pre-commit-config.yaml', 'project/build.properties', 'api/py/tox.ini', 'quickstart/Dockerfile', '.circleci/config.yml']"
+pallavia7 <pallavi.a7@gmail.com>,0,5,0.0,[]
+earangol-stripe <earangol@stripe.com>,0,4,0.0,[]
+bmarcott <481161+bmarcott@users.noreply.github.com>,0,1,0.0,[]
+smcnamara2-stripe <smcnamara@stripe.com>,0,2,0.0,[]
+Krish Narukulla <krisnaru@gmail.com>,2,7,12.0,"['quickstart/mongo-online-impl/project/build.properties', 'service/src/main/resources/example_config.json', 'tox.ini', '.circleci/Dockerfile', 'Dockerfile', 'spark/src/main/resources/log4j.properties', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'api/py/.pre-commit-config.yaml', 'project/build.properties', 'quickstart/Dockerfile', '.circleci/config.yml']"
+mickjermsurawong-openai <mickjermsurawong@openai.com>,0,4,0.0,[]
+Xiaohui Sun <sunxiaohui.bj@gmail.com>,0,12,0.0,[]
+yuli_han <yuli.han@airbnb.com>,0,9,0.0,[]
+xiaohui sun <xiaohui.sun@airbnb.com>,0,6,0.0,[]
+srenumakala <154341352+srenumakala@users.noreply.github.com>,0,2,0.0,[]
+nmarcott <481161+bmarcott@users.noreply.github.com>,0,2,0.0,[]
+Haozhen Ding <hzding621@users.noreply.github.com>,0,19,0.0,[]
+Pallavi Adusumilli <pallavi.adusumilli@airbnb.com>,0,2,0.0,[]
+Abby Whittier <abbywhittier309@gmail.com>,2,6,12.0,"['quickstart/mongo-online-impl/project/build.properties', 'service/src/main/resources/example_config.json', 'tox.ini', '.circleci/Dockerfile', 'Dockerfile', 'spark/src/main/resources/log4j.properties', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'api/py/.pre-commit-config.yaml', 'project/build.properties', 'quickstart/Dockerfile', '.circleci/config.yml']"
+tswitzer-netflix <tswitzer@netflix.com>,0,1,0.0,[]
+yuli-han <hanyuli1995@gmail.com>,0,2,0.0,[]
+Hui Cheng <101063171+Hui-Cheng-AirBnb@users.noreply.github.com>,0,3,0.0,[]
+Shiyinghaha <lsy.sl327@gmail.com>,1,11,12.0,"['quickstart/mongo-online-impl/project/build.properties', 'service/src/main/resources/example_config.json', 'tox.ini', '.circleci/Dockerfile', 'Dockerfile', 'spark/src/main/resources/log4j.properties', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'api/py/.pre-commit-config.yaml', 'project/build.properties', 'quickstart/Dockerfile', '.circleci/config.yml']"
+Robert Gruener <rgruener@users.noreply.github.com>,0,2,0.0,[]
+Ken Morton <ken@zipline.ai>,0,1,0.0,[]
+Yogesh <yogeshpv@users.noreply.github.com>,0,2,0.0,[]
+phaniv99 <76565874+phaniv99@users.noreply.github.com>,0,1,0.0,[]
+camweston-stripe <116691078+camweston-stripe@users.noreply.github.com>,2,0,12.0,"['quickstart/mongo-online-impl/project/build.properties', 'service/src/main/resources/example_config.json', 'tox.ini', '.circleci/Dockerfile', 'Dockerfile', 'spark/src/main/resources/log4j.properties', 'docker-compose.yml', 'online/src/main/resources/log4j.properties', 'api/py/.pre-commit-config.yaml', 'project/build.properties', 'quickstart/Dockerfile', '.circleci/config.yml']"

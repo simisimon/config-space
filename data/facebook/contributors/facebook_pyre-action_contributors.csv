@@ -1,0 +1,8 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Edward <14011954+0xedward@users.noreply.github.com>,2,0,1.0,['action.yml']
+Shannon Zhu <szhu@fb.com>,4,0,1.0,['action.yml']
+Benjamin Collet <benjamin.collet@protonmail.ch>,0,2,0.0,[]
+Conner Nilsen <connernilsen@gmail.com>,0,1,0.0,[]
+Christian Clauss <cclauss@me.com>,2,1,2.0,"['.github/dependabot.yml', 'action.yml']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,5,0,2.0,"['.github/dependabot.yml', 'action.yml']"
+Maxime Arthaud <maxime@arthaud.me>,0,1,0.0,[]

@@ -1,0 +1,8 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+dcrosby <dcrosby@fb.com>,1,0,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+David Crosby <dcrosby@fb.com>,0,1,0.0,[]
+Joshua Miller <joshuamiller01@gmail.com>,0,1,0.0,[]
+David Crosby <dcrosby@meta.com>,1,13,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+Aaditya M Nair <AadityaNair@users.noreply.github.com>,0,1,0.0,[]
+dcrosby <dcrosby@meta.com>,1,1,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+Facebook Community Bot <facebook-github-bot@users.noreply.github.com>,0,1,0.0,[]

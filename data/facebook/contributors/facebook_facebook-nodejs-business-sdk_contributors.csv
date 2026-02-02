@@ -1,0 +1,59 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Zain Aziz <zaziz@fb.com>,6,1,2.0,"['bower.json', 'package.json']"
+Jose Casanova <jose@flip.lease>,0,1,0.0,[]
+Zain Aziz <zanyaziz@gmail.com>,0,1,0.0,[]
+Jose Santiago Casanova <josescasanova@gmail.com>,0,1,0.0,[]
+Supasate Choochaisri <supasate.c@gmail.com>,0,1,0.0,[]
+Flarnie Marchan <flarnie@users.noreply.github.com>,0,1,0.0,[]
+Yuehui Wang <wyh@fb.com>,1,0,3.0,"['bower.json', 'package.json', 'package-lock.json']"
+Supasate Choochaisr <supasate@fb.com>,1,1,3.0,"['bower.json', 'package.json', 'package-lock.json']"
+Simon Cornelius P. Umacob <simoncpu@gmail.com>,0,1,0.0,[]
+Moyang <iammoyang@gmail.com>,0,5,0.0,[]
+Moyang He <hemoyang@fb.com>,11,3,3.0,"['bower.json', 'package.json', 'package-lock.json']"
+Ellen Tao <ellentao@fb.com>,0,1,0.0,[]
+Jing Ping <jingping@fb.com>,43,25,4.23,"['bower.json', 'package.json', '.github/workflows/ci-publish.yml', 'package-lock.json', '.vscode/settings.json', '.travis.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Facebook Github Bot <facebook-github-bot@users.noreply.github.com>,1,0,3.0,"['bower.json', 'package.json', 'package-lock.json']"
+Cody Winton <cody.t.winton@gmail.com>,1,0,5.0,"['bower.json', 'package.json', 'package-lock.json', '.vscode/settings.json', '.travis.yml']"
+generatedunixname89002005295453 <generatedunixname89002005295453@fb.com>,29,0,5.24,"['bower.json', 'package.json', '.github/workflows/ci-publish.yml', 'package-lock.json', '.vscode/settings.json', '.travis.yml', '.github/stale.yml', '.github/workflows/ci.yml']"
+Xinzhu Cai <kongxinzhu@fb.com>,0,1,0.0,[]
+Ram Chokkalingam <rchokkalingam@fb.com>,2,13,5.0,"['bower.json', 'package.json', 'package-lock.json', '.vscode/settings.json', '.travis.yml', '.github/stale.yml']"
+Nishad Prabhu <nishadprabhu@fb.com>,1,0,4.0,"['bower.json', '.vscode/settings.json', 'package.json', '.travis.yml']"
+Maxim Goretskyy <maximg@fb.com>,1,0,5.0,"['bower.json', 'package.json', '.vscode/settings.json', '.travis.yml', '.github/stale.yml']"
+David Yeghshatyan <david6@fb.com>,0,5,0.0,[]
+Hamish Blake <hblake@fb.com>,1,0,5.0,"['bower.json', 'package.json', '.vscode/settings.json', '.travis.yml', '.github/stale.yml']"
+Allen Liu <allenliu2@fb.com>,0,1,0.0,[]
+Mark Sliva <marksliva@fb.com>,3,6,5.0,"['bower.json', 'package.json', '.vscode/settings.json', '.travis.yml', '.github/stale.yml']"
+Hiep Le <hieptuanle@gmail.com>,0,1,0.0,[]
+Michael W. Clark <michaelwclark@gmail.com>,0,1,0.0,[]
+Jiayuan Hu <jiayuanhu@fb.com>,0,14,0.0,[]
+Donglin Wang <donglinw@fb.com>,0,5,0.0,[]
+Business SDK <>,5,0,6.0,"['bower.json', '.github/workflows/ci-publish.yml', 'package.json', '.vscode/settings.json', '.github/stale.yml', '.github/workflows/ci.yml']"
+Navneet Gupta <navneetg@fb.com>,1,0,6.0,"['bower.json', '.github/workflows/ci-publish.yml', 'package.json', '.vscode/settings.json', '.github/stale.yml', '.github/workflows/ci.yml']"
+Ping Supasate Choochaisri <supasate@fb.com>,0,2,0.0,[]
+Shuotian Cheng <shuotian@fb.com>,2,3,6.0,"['bower.json', '.github/workflows/ci-publish.yml', 'package.json', '.vscode/settings.json', '.github/stale.yml', '.github/workflows/ci.yml']"
+Finn Michael Halvorsen <finnmich@gmail.com>,1,0,6.0,"['bower.json', '.github/workflows/ci-publish.yml', 'package.json', '.vscode/settings.json', '.github/stale.yml', '.github/workflows/ci.yml']"
+Bharath Srinivasan <bharaths@fb.com>,0,1,0.0,[]
+Abdulrahman Alsaudi <aalsaudi@meta.com>,0,1,0.0,[]
+Will Gardner <57688524+willgardner9@users.noreply.github.com>,0,1,0.0,[]
+Shuotian Cheng <shuotian@meta.com>,7,14,6.0,"['bower.json', '.github/workflows/ci-publish.yml', 'package.json', '.vscode/settings.json', '.github/stale.yml', '.github/workflows/ci.yml']"
+Jonas <jonas1eliasson@gmail.com>,0,1,0.0,[]
+YJ Yoong <yongjian@meta.com>,0,1,0.0,[]
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,1,0,6.0,"['bower.json', '.github/workflows/ci-publish.yml', 'package.json', '.vscode/settings.json', '.github/stale.yml', '.github/workflows/ci.yml']"
+Matei Oprea <eu@opreamatei.ro>,0,1,0.0,[]
+Mentor Palokaj <mentor@palokaj.co>,0,1,0.0,[]
+DanieleRusso97 <64436891+DanieleRusso97@users.noreply.github.com>,0,1,0.0,[]
+generatedunixname89002005295453 <generatedunixname89002005295453@meta.com>,12,0,6.0,"['bower.json', '.github/workflows/ci-publish.yml', 'package.json', '.vscode/settings.json', '.github/stale.yml', '.github/workflows/ci.yml']"
+Ron Lloyd <rlloyd2001@gmail.com>,0,1,0.0,[]
+André Lago <andrelago.eu@gmail.com>,0,1,0.0,[]
+Grzegorz Chybziński <g.chybzinski@gamefound.com>,0,2,0.0,[]
+Rafael Batista <rafaelbatista@meta.com>,0,1,0.0,[]
+Victor Jaramillo Moreno <victorajm@meta.com>,0,1,0.0,[]
+Henry Wang <shuaiwa@meta.com>,0,2,0.0,[]
+Sean Larkin <sean@fueled.io>,0,1,0.0,[]
+Li Li (AXP) <lil@meta.com>,1,1,6.0,"['bower.json', '.github/workflows/ci-publish.yml', 'package.json', '.vscode/settings.json', '.github/stale.yml', '.github/workflows/ci.yml']"
+Jiaming You <jiamingyou@meta.com>,3,0,6.0,"['bower.json', '.github/workflows/ci-publish.yml', 'package.json', '.vscode/settings.json', '.github/stale.yml', '.github/workflows/ci.yml']"
+Satwika Reddy Maddi <satwika@meta.com>,14,1,6.14,"['bower.json', '.github/workflows/ci-publish.yml', 'package.json', 'package-lock.json', '.vscode/settings.json', '.github/stale.yml', '.github/workflows/ci.yml']"
+Shuotian Cheng <stcheng_89@hotmail.com>,1,0,6.0,"['bower.json', '.github/workflows/ci-publish.yml', 'package.json', '.vscode/settings.json', '.github/stale.yml', '.github/workflows/ci.yml']"
+John Holstein <jholstein@meta.com>,0,1,0.0,[]
+Ram Chokkalingam <rchokkalingam@meta.com>,0,1,0.0,[]
+Ji Li <jili929@meta.com>,0,2,0.0,[]

@@ -1,0 +1,9 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Aaron Pollack <aaronpollack@meta.com>,1,1,2.0,"['.pre-commit-hooks.yaml', 'pyproject.toml']"
+Facebook Community Bot <facebook-github-bot@users.noreply.github.com>,0,2,0.0,[]
+Aaron Pollack <pollackaaron@gmail.com>,0,3,0.0,[]
+Rebecca Chen <rechen@fb.com>,8,4,2.38,"['.pre-commit-hooks.yaml', 'pyproject.toml', '.github/workflows/auto-update-pyrefly.yml']"
+Rebecca Chen <rchen152@gmail.com>,1,1,3.0,"['.pre-commit-hooks.yaml', 'pyproject.toml', '.github/workflows/auto-update-pyrefly.yml']"
+github-actions[bot] <github-actions[bot]@users.noreply.github.com>,20,0,3.0,"['.pre-commit-hooks.yaml', 'pyproject.toml', '.github/workflows/auto-update-pyrefly.yml']"
+Conner Nilsen <connernilsen@fb.com>,0,2,0.0,[]
+Conner Nilsen <connernilsen@gmail.com>,0,2,0.0,[]

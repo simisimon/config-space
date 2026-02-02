@@ -272,34 +272,42 @@ def create_technology_combination_plot(name: str, data_file: str, num_combos: in
 
     data = from_memberships(memberships, data=counts)
 
-    # Create figure with better proportions
-    plt.figure(figsize=(20, 14))
+    # Aggregate duplicate memberships (can happen when combining companies)
+    data = data.groupby(level=data.index.names).sum()
 
-    # Create UpSet plot with visible labels
-    plot = UpSet(
-        data,
-        show_counts=True,
-        element_size=50,  # Circle size
-        totals_plot_elements=0,
-        min_subset_size=0,
-        sort_by='cardinality',
-        sort_categories_by=None
-    ).plot()
+    try:
+        # Create figure with better proportions
+        plt.figure(figsize=(20, 14))
 
-    # Adjust label sizes and spacing
-    plot["intersections"].set_ylabel("# Projects", fontsize=16, fontweight='bold')
-    plot["intersections"].tick_params(axis='y', labelsize=12)
-    plot["intersections"].tick_params(axis='x', labelsize=10)
+        # Create UpSet plot with visible labels
+        plot = UpSet(
+            data,
+            show_counts=True,
+            element_size=50,  # Circle size
+            totals_plot_elements=0,
+            min_subset_size=0,
+            sort_by='cardinality',
+            sort_categories_by=None
+        ).plot()
 
-    # Set the matrix y-axis labels (technology names)
-    if "matrix" in plot and plot["matrix"] is not None:
-        plot["matrix"].tick_params(axis='y', labelsize=14)
-        labels = plot["matrix"].get_yticklabels()
-        plot["matrix"].set_yticklabels(labels, fontweight='bold')
+        # Adjust label sizes and spacing
+        plot["intersections"].set_ylabel("# Projects", fontsize=16, fontweight='bold')
+        plot["intersections"].tick_params(axis='y', labelsize=12)
+        plot["intersections"].tick_params(axis='x', labelsize=10)
 
-    plt.suptitle(f"Technology Combinations Across {num_projects} Projects", fontsize=20, fontweight='bold', y=0.995)
-    output_path = f"../../data/{name}/technological/technology_combinations.png"
-    plt.savefig(output_path, dpi=300, bbox_inches='tight', pad_inches=0.3)
+        # Set the matrix y-axis labels (technology names)
+        if "matrix" in plot and plot["matrix"] is not None:
+            plot["matrix"].tick_params(axis='y', labelsize=14)
+            labels = plot["matrix"].get_yticklabels()
+            plot["matrix"].set_yticklabels(labels, fontweight='bold')
+
+        plt.suptitle(f"Technology Combinations Across {num_projects} Projects", fontsize=20, fontweight='bold', y=0.995)
+        output_path = f"../../data/{name}/technological/technology_combinations.png"
+        plt.savefig(output_path, dpi=300, bbox_inches='tight', pad_inches=0.3)
+    except Exception as e:
+        logger.error(f"Failed to create UpSet plot: {e}")
+    finally:
+        plt.close("all")
 
 
 def filter_technologies(technologies_str):
@@ -326,51 +334,112 @@ def filter_projects(data_file: str, output_file: str, refresh: bool = False):
     df_filtered = df[df["tech_count"] >= 2].drop(columns=["tech_count"])
     df_filtered.to_csv(output_file, index=False)
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=True, help="Name of the directory of a company")
-    parser.add_argument("--limit", type=int, help="Limit number of projects to process")
-    parser.add_argument("--refresh", action="store_true", help="Refresh technology extraction even if CSV exists")  
-    args = parser.parse_args()
-    
-    # Load project files
-    project_files = load_project_files(
-        args.input,
-        args.limit, 
-        refresh=args.refresh
+ALL_COMPANIES = ["netflix", "uber", "disney", "airbnb", "google", "facebook"]
+
+
+def run_single(name: str, limit: int | None, refresh: bool):
+    """Run the full pipeline for a single company."""
+    project_files = load_project_files(name, limit, refresh=refresh)
+
+    extract_technologies(
+        project_files=project_files,
+        output_file=f"../../data/{name}/technological/technologies.csv",
+        refresh=refresh,
     )
 
-    # Extract technologies
-    df_technologies = extract_technologies(
-        project_files=project_files, 
-        output_file=f"../../data/{args.input}/technological/technologies.csv", 
-        refresh=args.refresh
-    )
-
-    # Get technology landscape
     get_technology_landscape(
-        data_file=f"../../data/{args.input}/technological/technologies.csv", 
-        output_file=f"../../data/{args.input}/technological/technology_landscape.png",
-        refresh=args.refresh
+        data_file=f"../../data/{name}/technological/technologies.csv",
+        output_file=f"../../data/{name}/technological/technology_landscape.png",
+        refresh=refresh,
     )
 
     filter_projects(
-        data_file=f"../../data/{args.input}/technological/technologies.csv", 
-        output_file=f"../../data/{args.input}/technological/technologies_filtered.csv",
-        refresh=args.refresh
+        data_file=f"../../data/{name}/technological/technologies.csv",
+        output_file=f"../../data/{name}/technological/technologies_filtered.csv",
+        refresh=refresh,
     )
 
-    # Create new landscape with filtered data
     get_technology_landscape(
-        data_file=f"../../data/{args.input}/technological/technologies_filtered.csv", 
-        output_file=f"../../data/{args.input}/technological/technology_landscape_filtered.png",
-        refresh=args.refresh
+        data_file=f"../../data/{name}/technological/technologies_filtered.csv",
+        output_file=f"../../data/{name}/technological/technology_landscape_filtered.png",
+        refresh=refresh,
     )
 
-    # Get technology combinations
     create_technology_combination_plot(
-        name=args.input,
-        data_file=f"../../data/{args.input}/technological/technologies_filtered.csv", 
+        name=name,
+        data_file=f"../../data/{name}/technological/technologies_filtered.csv",
         num_combos=20,
-        refresh=args.refresh
+        refresh=refresh,
     )
+
+
+def run_all(refresh: bool):
+    """Aggregate technologies across all companies and generate combined outputs."""
+    output_dir = "../../data/all_companies/technological"
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Concatenate per-company technologies CSVs
+    frames = []
+    for company in ALL_COMPANIES:
+        csv_path = f"../../data/{company}/technological/technologies.csv"
+        if os.path.exists(csv_path):
+            df = pd.read_csv(csv_path)
+            logger.info(f"Loaded {len(df)} projects from {company}")
+            frames.append(df)
+        else:
+            logger.warning(f"Skipping {company}: {csv_path} not found")
+
+    if not frames:
+        logger.error("No per-company technology CSVs found. Run per-company first.")
+        return
+
+    df_all = pd.concat(frames, ignore_index=True)
+    combined_csv = f"{output_dir}/technologies.csv"
+    df_all.to_csv(combined_csv, index=False)
+    logger.info(f"Combined {len(df_all)} projects from {len(frames)} companies")
+
+    # Technology landscape
+    get_technology_landscape(
+        data_file=combined_csv,
+        output_file=f"{output_dir}/technology_landscape.png",
+        refresh=refresh,
+    )
+
+    # Filter and generate filtered landscape
+    filtered_csv = f"{output_dir}/technologies_filtered.csv"
+    filter_projects(
+        data_file=combined_csv,
+        output_file=filtered_csv,
+        refresh=refresh,
+    )
+
+    get_technology_landscape(
+        data_file=filtered_csv,
+        output_file=f"{output_dir}/technology_landscape_filtered.png",
+        refresh=refresh,
+    )
+
+    # Technology combinations
+    create_technology_combination_plot(
+        name="all_companies",
+        data_file=filtered_csv,
+        num_combos=20,
+        refresh=refresh,
+    )
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", required=False, help="Name of the directory of a company")
+    parser.add_argument("--limit", type=int, help="Limit number of projects to process")
+    parser.add_argument("--refresh", action="store_true", help="Refresh technology extraction even if CSV exists")
+    parser.add_argument("--all", action="store_true", dest="all_companies",
+                        help="Aggregate across all companies into data/all_companies/technological/")
+    args = parser.parse_args()
+
+    if args.all_companies:
+        run_all(refresh=args.refresh)
+    else:
+        if not args.input:
+            parser.error("--input is required unless --all is set")
+        run_single(args.input, args.limit, args.refresh)

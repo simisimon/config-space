@@ -22,9 +22,9 @@ def get_latest_commit_files(latest_commit_dir: str) -> set:
 
     project_names = set()
     for filename in os.listdir(latest_commit_dir):
-        if filename.endswith("_commit.json"):
-            # Remove _commit.json suffix to get project name
-            project_name = filename[:-len("_commit.json")]
+        if filename.endswith("_latest_commit.json"):
+            # Remove _latest_commit.json suffix to get project name
+            project_name = filename[:-len("_latest_commit.json")]
             project_names.add(project_name)
     return project_names
 

@@ -1,0 +1,166 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Aashay Desai <aashay@fb.com>,0,5,0.0,[]
+Dmitri Dranishnikov <dmitrid@fb.com>,0,40,0.0,[]
+Adam Hoff <ahoff@fb.com>,1,4,1.0,['composer.json']
+Jan Cinert <jan.cinert@gmail.com>,0,1,0.0,[]
+dmitridr <dmitrid@fb.com>,0,5,0.0,[]
+dmitridr <dmitri.dranish@gmail.com>,0,1,0.0,[]
+Kelly Du <kellydu@fb.com>,0,6,0.0,[]
+Lucas Guima <lucasguima.felipe@gmail.com>,0,1,0.0,[]
+Dmitri Dranishnikov <29133800+dmitridr@users.noreply.github.com>,0,5,0.0,[]
+Kathy Darling <helgatheviking@gmail.com>,0,3,0.0,[]
+Preston <preston@velocitywebworks.com>,0,1,0.0,[]
+Xia W <wuxia1989@gmail.com>,0,1,0.0,[]
+citymont <thibaut@moderntree.net>,0,2,0.0,[]
+mapt <mapt@ibs1c.ru>,0,1,0.0,[]
+Mengying (Kelly) Du <kellydu@fb.com>,0,81,0.0,[]
+Jing Liao <jingliao@fb.com>,0,1,0.0,[]
+Jonathan Wilson <wilsonjon@fb.com>,0,1,0.0,[]
+John Kalberer <jlkalberer@fb.com>,0,2,0.0,[]
+George Lagonikas <glagonikas@users.noreply.github.com>,0,2,0.0,[]
+Pavel Kostyuchenko <kostyuchenko.p@gmail.com>,0,1,0.0,[]
+Jiemin Zhang <jieminz@fb.com>,0,3,0.0,[]
+Yu Li <liyuhk@fb.com>,0,10,0.0,[]
+Jiyeon Seo <jiyeonseo@fb.com>,0,1,0.0,[]
+Yinan Zhou <yinanzhou@fb.com>,0,7,0.0,[]
+Long Chen <longc@fb.com>,0,5,0.0,[]
+addedlovely <565669+addedlovely@users.noreply.github.com>,0,1,0.0,[]
+James Kim <hyun@fb.com>,0,5,0.0,[]
+Lu Yu <luther@fb.com>,0,3,0.0,[]
+Lee Zhou <lizhou@fb.com>,0,1,0.0,[]
+Antonius Cezar Hegyes <a.hegyes@deep-web-solutions.de>,0,1,0.0,[]
+Camilo <43606394+camilo517@users.noreply.github.com>,0,1,0.0,[]
+Sushma Devendrappa <sdev@instagram.com>,0,15,0.0,[]
+Jordan Roth <jordanroth@fb.com>,0,1,0.0,[]
+Di Wang <diw2@fb.com>,0,1,0.0,[]
+cflood <cflood@devvm520.ftw3.facebook.com>,0,1,0.0,[]
+Connor Flood <cflood@fb.com>,0,6,0.0,[]
+Chase Wiseman <chase@skyverge.com>,2,1,4.0,"['codeception.dist.yml', 'codeception.local.yml', 'composer.json', 'package.json']"
+Beka Rice <beka.rice@gmail.com>,0,1,0.0,[]
+José Antonio Jiménez <josejia@fb.com>,2,1,4.0,"['codeception.dist.yml', 'codeception.local.yml', 'composer.json', 'package.json']"
+Jon Janzen <jonjanzen@fb.com>,0,1,0.0,[]
+Willington Vega <wvega@wvega.com>,1,3,4.0,"['codeception.dist.yml', 'codeception.local.yml', 'composer.json', 'package.json']"
+Adriano Castro <adrianostanley@gmail.com>,0,1,0.0,[]
+Fulvio Notarstefano <fulvio.notarstefano@gmail.com>,2,0,5.0,"['includes/Products/fb_google_product_categories_en_US_simple.json', 'codeception.dist.yml', 'package.json', 'codeception.local.yml', 'composer.json']"
+Max Dupenois <maxphi@fb.com>,0,1,0.0,[]
+Joshua Flowers <joshuatf@gmail.com>,0,2,0.0,[]
+Nabeel Molham <n.molham@gmail.com>,1,0,5.0,"['includes/Products/fb_google_product_categories_en_US_simple.json', 'codeception.dist.yml', 'package.json', 'codeception.local.yml', 'composer.json']"
+wilmerlm11 <68828840+wilmerlm11@users.noreply.github.com>,0,3,0.0,[]
+alexndlm <alexndlm@gmail.com>,0,4,0.0,[]
+Jason Conroy <jason@findingsimple.com>,0,1,0.0,[]
+Caleb Burks <caleb.burks@automattic.com>,0,1,0.0,[]
+Dennis Kwon <dkwon@fb.com>,0,5,0.0,[]
+Justin Palmer <justin.palmer@automattic.com>,6,17,5.5,"['package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'composer.json', '.github/release.yml']"
+denniskwon <dkwon@kwons.org>,0,3,0.0,[]
+Jason Conroy <jason.conroy@automattic.com>,0,2,0.0,[]
+Dan Bitzer <danielbitzer@gmail.com>,34,129,5.56,"['includes/Products/fb_google_product_categories_en_US_simple.json', 'codeception.dist.yml', 'package.json', '.github/workflows/php-coding-standards.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json']"
+Bartosz Budzanowski <bartosz.budzanowski@gmail.com>,43,221,5.72,"['codeception.dist.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml']"
+Daniel Bitzer <danielbitzer@users.noreply.github.com>,1,5,4.0,"['codeception.dist.yml', 'codeception.local.yml', 'composer.json', 'package.json']"
+haszari <rua@automattic.com>,16,82,5.75,"['codeception.dist.yml', 'package.json', '.github/workflows/php-coding-standards.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json']"
+Rua Haszard <rua@automattic.com>,0,1,0.0,[]
+Rommel Castro <rommelxcastro@gmail.com>,3,26,4.0,"['codeception.dist.yml', 'codeception.local.yml', 'composer.json', 'package.json']"
+Rua Haszard <rua.haszard@automattic.com>,5,17,6.0,"['codeception.dist.yml', 'package.json', '.github/workflows/php-coding-standards.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json']"
+Rommel Castro <rommel@automattic.com>,0,8,0.0,[]
+Dan Bitzer <danielbitzer@users.noreply.github.com>,8,7,5.75,"['codeception.dist.yml', 'package.json', '.github/workflows/php-coding-standards.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json']"
+budzanowski <bartosz.budzanowski@gmail.com>,0,4,0.0,[]
+Rua Haszard Morris <rua@cxr.fritz.box>,0,4,0.0,[]
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,3,1,8.0,"['codeception.dist.yml', 'package.json', '.github/workflows/prepare-release.yml', '.github/workflows/backlog-automation.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml', '.wp-env.json']"
+dgurram <dgurram@gmail.com>,0,2,0.0,[]
+mikkamp <michael.kamp@automattic.com>,4,10,7.0,"['codeception.dist.yml', 'package.json', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml']"
+Mik <mikkamp@users.noreply.github.com>,1,1,8.0,"['codeception.dist.yml', 'package.json', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml']"
+Jeremy Pry <jeremy.pry@gmail.com>,12,33,5.83,"['codeception.dist.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml']"
+Eason Su <eason.su.tw@gmail.com>,11,5,6.18,"['codeception.dist.yml', 'package.json', '.github/workflows/php-coding-standards.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml']"
+Eason <eason.su.tw@gmail.com>,4,0,6.25,"['codeception.dist.yml', 'package.json', '.github/workflows/php-coding-standards.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml']"
+Tomek Wytrębowicz <tomalecpub@gmail.com>,12,5,7.0,"['codeception.dist.yml', 'package.json', '.github/workflows/prepare-release.yml', '.github/workflows/backlog-automation.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml']"
+Ian Yu-Hsun Lin <ianlin@automattic.com>,0,2,0.0,[]
+Ian Yu-Hsun Lin <ianyuhsunlin@gmail.com>,3,1,6.0,"['codeception.dist.yml', 'package.json', '.github/workflows/php-coding-standards.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json']"
+Sergio Fonseca Casao <11557506+sergiocasao@users.noreply.github.com>,0,1,0.0,[]
+Rodrigue Tusse <rawdreeg@gmail.com>,1,26,6.0,"['codeception.dist.yml', 'package.json', '.github/workflows/php-coding-standards.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json']"
+Rodrigue <rodrigue.tusse@automattic.com>,42,99,7.57,"['codeception.dist.yml', 'package.json', '.github/workflows/prepare-release.yml', '.github/workflows/backlog-automation.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml', '.wp-env.json']"
+Dima <dmytro.maksiuta@automattic.com>,36,79,5.64,"['codeception.dist.yml', 'package.json', '.github/workflows/prepare-release.yml', '.github/workflows/backlog-automation.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml']"
+Dmytro <message-dimke@users.noreply.github.com>,25,10,7.16,"['codeception.dist.yml', 'package.json', '.github/workflows/prepare-release.yml', '.github/workflows/backlog-automation.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml', '.wp-env.json']"
+Rodrigue <rawdreeg@gmail.com>,5,17,8.0,"['codeception.dist.yml', 'package.json', '.github/workflows/prepare-release.yml', '.github/workflows/backlog-automation.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml']"
+Ian Yu-Hsun Lin <ianlin@MacBook-Pro.local>,2,1,6.0,"['codeception.dist.yml', 'package.json', '.github/workflows/php-coding-standards.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json']"
+Rodrigue Tusse <rodrigue.tusse@automattic.com>,20,126,7.3,"['codeception.dist.yml', 'package.json', '.github/workflows/prepare-release.yml', '.github/workflows/backlog-automation.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml']"
+Gan Eng Chin <ecgan@users.noreply.github.com>,31,12,6.87,"['codeception.dist.yml', 'package.json', '.github/workflows/prepare-release.yml', '.github/workflows/backlog-automation.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml', '.wp-env.json']"
+Rahul Maddineni <rahulmaddineni@fb.com>,0,2,0.0,[]
+Eric Caron <eric.caron@gmail.com>,0,1,0.0,[]
+urikanonov <urikanonov@gmail.com>,0,2,0.0,[]
+Kader Ibrahim Shaik Dawood <ibrahim@transvelo.com>,1,18,8.0,"['codeception.dist.yml', 'package.json', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml']"
+Kader Ibrahim S <kader.ibrahim.s@a8c.com>,46,134,7.35,"['codeception.dist.yml', 'package.json', '.github/workflows/prepare-release.yml', '.github/workflows/backlog-automation.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'codeception.local.yml', '.github/php-coding-standards.yml', 'composer.json', '.github/release.yml', '.wp-env.json']"
+Jeremy Pry <JPry@users.noreply.github.com>,10,1,5.4,"['package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'composer.json', '.github/release.yml']"
+Vahid Kaykhaei <vahidkay@meta.com>,16,17,12.94,"['.github/workflows/release-plugin.yml', '.github/workflows/build-plugin-artifact.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/final-qa-checks.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/validate-pr-labels.yml', '.github/workflows/shared-build-plugin-artifact.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+vahidkay-meta <117733236+vahidkay-meta@users.noreply.github.com>,2,12,13.0,"['.github/release.yml', '.github/workflows/release-plugin.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/final-qa-checks.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/validate-pr-labels.yml', '.github/workflows/shared-build-plugin-artifact.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/build-plugin-artifact.yml', '.wp-env.json']"
+Bartosz Budzanowski <bartosz.budzanowski@automattic.com>,0,7,0.0,[]
+Kathy <507025+helgatheviking@users.noreply.github.com>,0,1,0.0,[]
+Nima <nima.karimi@automattic.com>,1,1,6.0,"['package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'composer.json', '.github/release.yml']"
+Nima Karimi <73110514+nima-karimi@users.noreply.github.com>,8,1,6.0,"['package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'composer.json', '.github/release.yml']"
+Nima <73110514+nima-karimi@users.noreply.github.com>,3,4,6.0,"['package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'composer.json', '.github/release.yml']"
+Kruti Dugade <krutidugade@Krutis-MacBook-Pro.local>,11,33,7.64,"['package.json', '.github/workflows/prepare-release.yml', '.github/workflows/backlog-automation.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'composer.json', '.github/release.yml']"
+Kruti Dugade <33723519+krutidugade@users.noreply.github.com>,8,16,7.0,"['package.json', '.github/workflows/prepare-release.yml', '.github/workflows/backlog-automation.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/php-coding-standards.yml', '.github/workflows/branch-labels.yml', 'composer.json', '.github/release.yml']"
+Justin Palmer <228780+layoutd@users.noreply.github.com>,25,76,8.12,"['.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/php-coding-standards.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>,0,2,0.0,[]
+Vlad Fedosov <vlad.fedosov@gmail.com>,0,1,0.0,[]
+Dima <9010963+message-dimke@users.noreply.github.com>,8,12,8.25,"['.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+Debian <bitnami@ip-172-31-91-85.ec2.internal>,1,3,8.0,"['.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-coding-standards.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml']"
+VahidKay <vahidkay@meta.com>,4,3,8.0,"['.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-coding-standards.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml']"
+konradpomocny <konrad.starosz@gmail.com>,0,1,0.0,[]
+Rahul Raina <rahulraina@meta.com>,0,4,0.0,[]
+Rahul Raina <raina.anurag@gmail.com>,0,2,0.0,[]
+Rodrigue Tusse <Rodrigue.tusse@automattic.com>,4,25,8.25,"['.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+Brezo Cordero <8002881+brezocordero@users.noreply.github.com>,3,20,9.0,"['.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+Justin P <228780+layoutd@users.noreply.github.com>,5,1,9.0,"['.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+vinkmeta <vink@meta.com>,0,78,0.0,[]
+Marian Shymon <mshymon@fb.com>,0,3,0.0,[]
+Marian Shymon <marian.shymon@gmail.com>,0,20,0.0,[]
+Halil Ozan Akgül <hozanakgul@gmail.com>,1,0,9.0,"['.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+David <david.evbodaghe@gmail.com>,0,2,0.0,[]
+Facebook Community Bot <facebook-github-bot@users.noreply.github.com>,0,2,0.0,[]
+David Evbodaghe <davidevbodaghe@meta.com>,8,44,10.5,"['.github/workflows/release-plugin.yml', '.github/workflows/build-plugin-artifact.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/final-qa-checks.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/validate-pr-labels.yml', '.github/workflows/shared-build-plugin-artifact.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+Atul Dusane <atuldusane@fb.com>,1,0,9.0,"['.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+Carter Buce <carterbuce@gmail.com>,2,18,9.5,"['.github/workflows/build-plugin-artifact.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+Marko Ranđelović <marko@stuntcoders.com>,2,4,12.5,"['.github/release.yml', '.github/workflows/release-plugin.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/validate-pr-labels.yml', '.github/workflows/shared-build-plugin-artifact.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/build-plugin-artifact.yml', '.wp-env.json']"
+Neal Wei <nealwei@fb.com>,0,12,0.0,[]
+Garry Singh <gurtej@meta.com>,1,3,9.0,"['.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+ajello <143650567+ajello-meta@users.noreply.github.com>,0,1,0.0,[]
+Paul Kang <sollipse@meta.com>,0,80,0.0,[]
+Angelo Ou <angeloou@meta.com>,0,45,0.0,[]
+Sayan Pandey <sayanpandey@meta.com>,0,40,0.0,[]
+Noah Ostrowski <nrostrow@meta.com>,1,12,10.0,"['.github/release.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/build-plugin-artifact.yml', '.wp-env.json']"
+Julio Mendez Cabrera <jmencab@meta.com>,0,1,0.0,[]
+nealweiMeta <nealwei@meta.com>,0,1,0.0,[]
+Tzah Granot <granot.tzah@gmail.com>,2,0,9.0,"['.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+Franco Risso <francorisso@fb.com>,0,2,0.0,[]
+Cristian Ojog <crisojog@fb.com>,0,2,0.0,[]
+jczhuoMeta <134329391+jczhuoMeta@users.noreply.github.com>,0,6,0.0,[]
+Raymon Akladious <rayakladious@meta.com>,0,2,0.0,[]
+Vinod Kumar <vink@meta.com>,0,11,0.0,[]
+Martin Radvenis <mrad@fb.com>,2,11,9.5,"['.github/workflows/build-plugin-artifact.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/release.yml', '.wp-env.json']"
+Franco Risso <fran.art.soft@gmail.com>,0,1,0.0,[]
+sharunaanandraj <sanandraj@meta.com>,0,26,0.0,[]
+Andrea D'Souza <ardsouza@meta.com>,0,15,0.0,[]
+Marija Cehic <marijac@stuntcoders.com>,0,1,0.0,[]
+Jovana Ranđelović <jovana@stuntcoders.com>,0,1,0.0,[]
+Tzah Granot <3162581+tzahgr@users.noreply.github.com>,2,0,11.5,"['.github/release.yml', '.github/workflows/release-plugin.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/validate-pr-labels.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/build-plugin-artifact.yml', '.wp-env.json']"
+Tzah Granot <tzah@meta.com>,7,0,12.29,"['.github/release.yml', '.github/workflows/release-plugin.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/validate-pr-labels.yml', '.github/workflows/shared-build-plugin-artifact.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/build-plugin-artifact.yml', '.wp-env.json']"
+sarthakpandeymeta <sarthakpandey@meta.com>,0,1,0.0,[]
+Utsav Mangal <mangalutsav@meta.com>,0,1,0.0,[]
+Juan Carlos Gonçalves Da Silva <jcgds@meta.com>,0,1,0.0,[]
+Yuri Ferretti <fyuri@fb.com>,0,1,0.0,[]
+Rebeca Reis <rebecareis@fb.com>,0,2,0.0,[]
+Uros Rakic <uurosrakic@gmail.com>,0,6,0.0,[]
+Niranjan Madhavan Dindukurthu <nmadhav@meta.com>,14,3,15.07,"['.github/release.yml', '.github/workflows/release-plugin.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/final-qa-checks.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/auto-add-pr-label-for-internal.yml', '.github/workflows/validate-pr-labels.yml', '.github/workflows/shared-build-plugin-artifact.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/build-plugin-artifact.yml', '.wp-env.json']"
+Guansu Wang <guansu@meta.com>,0,2,0.0,[]
+Cheng Hao Chen <chenghaochen@meta.com>,3,3,15.0,"['.github/release.yml', '.github/workflows/release-plugin.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/final-qa-checks.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/auto-add-pr-label-for-internal.yml', '.github/workflows/validate-pr-labels.yml', '.github/workflows/shared-build-plugin-artifact.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/build-plugin-artifact.yml', '.wp-env.json']"
+Rithik Bhandari <48003177+rithikb24@users.noreply.github.com>,0,3,0.0,[]
+Unnikrishnan Vannadil <unniv@meta.com>,0,1,0.0,[]
+Rithik Bhandari <rithik@meta.com>,0,15,0.0,[]
+woo-ardsouza <ardsouza@meta.com>,0,2,0.0,[]
+Niranjan Madhavan D <33183357+immadhavv@users.noreply.github.com>,2,0,15.5,"['.github/release.yml', '.github/workflows/release-plugin.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/final-qa-checks.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/auto-add-pr-label-for-internal.yml', '.github/workflows/validate-pr-labels.yml', '.github/workflows/shared-build-plugin-artifact.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/build-plugin-artifact.yml', '.wp-env.json']"
+Rafael Louis Curran <rcurran@meta.com>,2,1,15.0,"['.github/release.yml', '.github/workflows/release-plugin.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/final-qa-checks.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/validate-pr-labels.yml', '.github/workflows/shared-build-plugin-artifact.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/build-plugin-artifact.yml', '.wp-env.json']"
+Zhuo (Joe) Chen <jczhuo@meta.com>,0,1,0.0,[]
+github-actions[bot] <github-actions[bot]@users.noreply.github.com>,3,0,15.0,"['.github/release.yml', '.github/workflows/release-plugin.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/final-qa-checks.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/validate-pr-labels.yml', '.github/workflows/shared-build-plugin-artifact.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/build-plugin-artifact.yml', '.wp-env.json']"
+Olu Atte <236670129+olu-meta@users.noreply.github.com>,0,1,0.0,[]
+Ashiqur R <ash4r@meta.com>,9,14,15.67,"['.github/release.yml', '.github/workflows/release-plugin.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/final-qa-checks.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/auto-add-pr-label-for-internal.yml', '.github/workflows/validate-pr-labels.yml', '.github/workflows/shared-build-plugin-artifact.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/build-plugin-artifact.yml', '.wp-env.json']"
+generatedunixname537391475639613 <noreply+537391475639613@fb.com>,0,4,0.0,[]
+Jarrett Hawrylak <jarrett@meta.com>,1,1,16.0,"['.github/release.yml', '.github/workflows/release-plugin.yml', '.github/workflows/prepare-release.yml', 'package.json', '.github/workflows/backlog-automation.yml', '.github/workflows/final-qa-checks.yml', '.github/workflows/php-cs-on-changes.yml', '.github/workflows/set-stable-tag.yml', '.github/workflows/auto-add-pr-label-for-internal.yml', '.github/workflows/validate-pr-labels.yml', '.github/workflows/shared-build-plugin-artifact.yml', 'composer.json', '.github/workflows/branch-labels.yml', '.github/workflows/post-release-automerge.yml', '.github/workflows/build-plugin-artifact.yml', '.wp-env.json']"

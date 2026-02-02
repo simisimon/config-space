@@ -1,0 +1,23 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Quentin Deslandes <qde@naccy.de>,51,981,2.75,"['.github/workflows/fork.yaml', 'codecov.yml', '.github/workflows/pages.yaml', 'pyproject.toml', '.github/workflows/ci.yaml']"
+Richard Phibel <rphibel@googlemail.com>,2,3,1.0,['.github/workflows/ci.yaml']
+Daan De Meyer <daan.j.demeyer@gmail.com>,1,2,1.0,['.github/workflows/ci.yaml']
+Jordan Rome <linux@jordanrome.com>,1,4,3.0,"['pyproject.toml', '.github/workflows/ci.yaml', 'codecov.yml']"
+Ivan Kruglov <mail@ikruglov.com>,0,1,0.0,[]
+orangepanda83 <165642881+orangepanda83@users.noreply.github.com>,0,1,0.0,[]
+DemoYeti <164791169+DemoYeti@users.noreply.github.com>,0,1,0.0,[]
+Shaikh Yaser <yaser.cse@gmail.com>,0,1,0.0,[]
+Ryan Wilson <ryantimwilson@meta.com>,0,1,0.0,[]
+Adin Scannell <adin@scannell.ca>,0,1,0.0,[]
+Ryan Sullivan <rysulliv@redhat.com>,0,2,0.0,[]
+Ryan B Sullivan <ryanbakersullivan@gmail.com>,0,4,0.0,[]
+Antonio <antoniodlavga@gmail.com>,0,1,0.0,[]
+Tommy Unger <tunger10@gmail.com>,0,1,0.0,[]
+CorentinMre <72888555+CorentinMre@users.noreply.github.com>,0,1,0.0,[]
+SkohTV <qlpth+github@proton.me>,0,5,0.0,[]
+VinX <vinx83@gmail.com>,0,3,0.0,[]
+Ali Ghaffarian <alighaffarian9@gmail.com>,0,1,0.0,[]
+Sudip Mukherjee <sudipm.mukherjee@gmail.com>,0,1,0.0,[]
+AliGhaffarian <alighaffarian9@gmail.com>,0,3,0.0,[]
+Pawel Zmarzly <pzmarzly0@gmail.com>,0,4,0.0,[]
+JonSnow1807 <JonSnow1807@users.noreply.github.com>,0,1,0.0,[]

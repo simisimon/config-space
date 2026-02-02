@@ -1,0 +1,32 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Steve Yang <steve.yang@uber.com>,21,145,1.0,['.travis.yml']
+Edwin Ng <edwinng@uber.com>,4,361,3.0,"['.github/workflows/pypi-deploy.yaml', '.readthedocs.yml', 'tox.ini', '.travis.yml']"
+Zhishi Wang <zhishiw@uber.com>,0,110,0.0,[]
+wangzhishi <wangzhishi@users.noreply.github.com>,0,20,0.0,[]
+Fritz Obermeyer <fritzo@uber.com>,0,1,0.0,[]
+Edwin Ng <edwinnglabs@gmail.com>,14,58,6.79,"['.github/workflows/build.yaml', '.travis.yml', '.github/workflows/post-merge-build.yaml', 'Dockerfile', 'orbit/config.json', '.readthedocs.yml', '.github/workflows/pypi-deploy.yaml', '.github/workflows/black.yaml', 'tox.ini', 'pyproject.toml']"
+Steve Yang <steven.s.yang@gmail.com>,0,4,0.0,[]
+Zhishi Wang <wangzhishi@users.noreply.github.com>,3,94,6.33,"['.github/workflows/build.yaml', '.travis.yml', '.github/workflows/post-merge-build.yaml', '.readthedocs.yml', '.github/workflows/pypi-deploy.yaml', '.github/workflows/black.yaml', 'tox.ini', 'pyproject.toml']"
+Yifeng Wu <yifeng.wu@uber.com>,0,2,0.0,[]
+ppstacy <ppstacy@gmail.com>,0,4,0.0,[]
+Jing Pan <jing.pan@uber.com>,0,4,0.0,[]
+Chi Po Choi <cpchoi@ucdavis.edu>,0,1,0.0,[]
+xiaoyangzhou <77080656+xiaoyangzhou@users.noreply.github.com>,0,1,0.0,[]
+Ariel Jiang <jiang579@umn.edu>,0,1,0.0,[]
+Daniel Chang <danielchang2022@u.northwestern.edu>,0,1,0.0,[]
+Nodar Okroshiashvili <n.okroshiashvili@gmail.com>,0,1,0.0,[]
+Ariel Jiang <ariel.jiang@uber.com>,0,9,0.0,[]
+GavinSteiningerUber <78235015+GavinSteiningerUber@users.noreply.github.com>,0,8,0.0,[]
+Mark Ma <szmark001@hotmail.com>,3,0,7.33,"['.github/workflows/post-merge-build.yaml', '.github/workflows/build.yaml', '.travis.yml', '.readthedocs.yml', '.github/workflows/pypi-deploy.yaml', '.github/workflows/black.yaml', 'tox.ini', 'pyproject.toml']"
+Michael Guo <michael.guo.221@gmail.com>,0,1,0.0,[]
+Michael Guo <michael.guo@uber.com>,0,1,0.0,[]
+Juan Orduz <juanitorduz@gmail.com>,0,1,0.0,[]
+Sugato Ray <sugatoray@users.noreply.github.com>,0,1,0.0,[]
+Jeong-Yoon Lee <jeongyoon.lee1@gmail.com>,1,1,7.0,"['.github/workflows/post-merge-build.yaml', '.github/workflows/build.yaml', '.readthedocs.yml', '.github/workflows/pypi-deploy.yaml', '.github/workflows/black.yaml', 'tox.ini', 'pyproject.toml']"
+edwinnglabs <edwinnglabs@gmail.com>,11,28,7.0,"['.github/workflows/post-merge-build.yaml', '.github/workflows/build.yaml', 'orbit/config.json', 'Dockerfile', '.readthedocs.yml', '.github/workflows/pypi-deploy.yaml', '.github/workflows/black.yaml', 'tox.ini', 'pyproject.toml']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,0,2,0.0,[]
+szmark001 <szmark001@hotmail.com>,1,0,7.0,"['.github/workflows/post-merge-build.yaml', '.github/workflows/build.yaml', '.readthedocs.yml', '.github/workflows/pypi-deploy.yaml', '.github/workflows/black.yaml', 'tox.ini', 'pyproject.toml']"
+swotai <swotai@gmail.com>,4,0,7.25,"['.github/workflows/post-merge-build.yaml', '.github/workflows/build.yaml', 'orbit/config.json', 'Dockerfile', '.readthedocs.yml', '.github/workflows/pypi-deploy.yaml', '.github/workflows/black.yaml', 'tox.ini', 'pyproject.toml']"
+Dennis Tai <swotai@gmail.com>,4,3,6.75,"['orbit/config.json', 'Dockerfile', '.readthedocs.yml', '.github/workflows/pypi-deploy.yaml', '.github/workflows/black.yaml', 'tox.ini', 'pyproject.toml']"
+George Haws <georgehaws@gmail.com>,0,7,0.0,[]
+George Haws <50718521+georgehaws@users.noreply.github.com>,0,1,0.0,[]

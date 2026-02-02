@@ -1,0 +1,15 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+CP <chris.putonen@disney.com>,0,1,0.0,[]
+Mitchell Cooper <mitchell.l.cooper@disney.com>,5,22,8.6,"['.github/workflows/checkov.yml', 'files/package.json', '.github/workflows/terraform-validate.yml', '.terraform-docs.yml', '.github/checkov-config.yaml', '.github/workflows/tfsec.yml', '.pre-commit-config.yaml', '.github/workflows/pre-commit.yml', '.github/tfsec-config.yml']"
+Kevin Kuszyk <kevin@kevinkuszyk.com>,0,2,0.0,[]
+Alex Farhadi <phundisk@users.noreply.github.com>,0,1,0.0,[]
+mlcooper <mitchell.l.cooper@disney.com>,0,4,0.0,[]
+Shawn O'Connell <32595858+ShawnUCD@users.noreply.github.com>,0,1,0.0,[]
+Martin Weber <martin.weber@axelspringer.de>,0,1,0.0,[]
+yzargari <yzargari@gmail.com>,0,1,0.0,[]
+Mitchell L. Cooper <mitchell.l.cooper@disney.com>,0,2,0.0,[]
+Bogdan Nazarenko <bogdan.nazarenko@outlook.com>,0,1,0.0,[]
+Tiago Lopo da Silva <tiago_lopo_da_silva@external.mckinsey.com>,0,1,0.0,[]
+Ranga Reddy Sabbasani <rangareddy543@gmail.com>,0,2,0.0,[]
+Nitin Jain <nitin_jain999@yahoo.co.in>,0,1,0.0,[]
+Amrendrasingh5 <amrendra.singh@atg.se>,0,4,0.0,[]

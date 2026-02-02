@@ -1,0 +1,8 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Jonathan Baker <jonebaker@gmail.com>,0,1,0.0,[]
+mnoah1 <mnoah1@uber.com>,18,28,7.0,"['.vscode/extensions.json', '.vscode/launch.json', '.vscode/tasks.json', '.eslintrc.json', 'package.json', 'tsconfig.json', '.vscode/settings.json']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,1,0,7.0,"['.vscode/extensions.json', '.vscode/launch.json', '.vscode/tasks.json', '.eslintrc.json', 'package.json', 'tsconfig.json', '.vscode/settings.json']"
+Michael Noah <92764374+mnoah1@users.noreply.github.com>,21,15,7.0,"['.vscode/extensions.json', '.vscode/launch.json', '.vscode/tasks.json', '.eslintrc.json', 'package.json', 'tsconfig.json', '.vscode/settings.json']"
+Jamy Timmermans <jamy@uber.com>,0,1,0.0,[]
+Hitendra Shukla <hitendrashukla111@gmail.com>,8,2,7.0,"['.vscode/extensions.json', '.vscode/launch.json', '.vscode/tasks.json', '.eslintrc.json', 'package.json', 'tsconfig.json', '.vscode/settings.json']"
+Haruna Oseni <harunaoseni23@gmail.com>,2,1,7.0,"['.vscode/extensions.json', '.vscode/launch.json', '.vscode/tasks.json', '.eslintrc.json', 'package.json', 'tsconfig.json', '.vscode/settings.json']"

@@ -1,0 +1,2 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+facebook-github-bot <facebook-github-bot@users.noreply.github.com>,2,0,4.0,"['samples/CameraAccess/gradle/wrapper/gradle-wrapper.properties', 'samples/CameraAccess/gradle/libs.versions.toml', 'samples/CameraAccess/gradle.properties', 'samples/CameraAccess/app/src/main/AndroidManifest.xml']"

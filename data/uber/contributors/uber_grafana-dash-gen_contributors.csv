@@ -1,0 +1,39 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Madan Thangavelu <madan@uber.com>,10,5,1.3,"['package.json', '.travis.yml']"
+Evan Culver <eculver@uber.com>,14,31,1.57,"['package.json', '.travis.yml']"
+Madan Thangavelu <madankumar.t@gmail.com>,3,11,1.33,"['package.json', '.travis.yml']"
+Jay A. Patel <jayp@uber.com>,0,2,0.0,[]
+Daniel Tsui <dtsui@uber.com>,0,2,0.0,[]
+Evan Culver <evan@evanculver.com>,0,8,0.0,[]
+Jay A. Patel <jay@patel.org.in>,0,1,0.0,[]
+Brandon Layton <blayton@uber.com>,0,6,0.0,[]
+Albert Wang <albertyw@uber.com>,17,8,3.06,"['package-lock.json', '.prettierrc.json', '.travis.yml', 'package.json', 'tsconfig.json', '.github/workflows/node.js.yml', 'tsconfig.build.json']"
+Albert Wang <aywang31@gmail.com>,0,1,0.0,[]
+Seung-Yeoul Yang <syyang@uber.com>,0,3,0.0,[]
+Ben Kaplan <kaplan@uber.com>,0,1,0.0,[]
+Willyham <willyd@uber.com>,1,0,2.0,"['package.json', '.travis.yml']"
+Evan Culver <eculver@users.noreply.github.com>,2,2,2.0,"['package.json', '.travis.yml']"
+Yuan Yao <yuan@uber.com>,0,1,0.0,[]
+Raynos <jakev@uber.com>,4,5,2.0,"['package.json', '.travis.yml']"
+Jake Verbaten <raynos2@gmail.com>,0,1,0.0,[]
+Nitin Shyamkumar <nitins@uber.com>,1,1,2.0,"['package.json', '.travis.yml']"
+Nitin Shyamkumar <nitinshyamk@users.noreply.github.com>,1,0,2.0,"['package.json', '.travis.yml']"
+Sam Wu <samwu@uber.com>,0,1,0.0,[]
+Bryce Kalow <bryce.kalow@target.com>,0,1,0.0,[]
+skiptomylu <chuntaolu13@gmail.com>,0,1,0.0,[]
+Jesper Nielsen <lindstrm@uber.com>,1,2,2.0,"['package.json', '.travis.yml']"
+Albert Wang <git@albertyw.com>,29,5,3.0,"['package.json', '.github/workflows/node.js.yml', 'package-lock.json', '.travis.yml']"
+Motiejus Jakštys <motiejus@uber.com>,0,2,0.0,[]
+rook2pawn <rook2pawn@gmail.com>,2,0,3.0,"['package.json', 'package-lock.json', '.travis.yml']"
+David Wee <david.wee@uber.com>,3,0,3.0,"['package.json', 'package-lock.json', '.travis.yml']"
+david wee <rook2pawn@gmail.com>,1,0,3.0,"['package.json', 'package-lock.json', '.travis.yml']"
+technotronic12 <elip@wix.com>,4,11,3.0,"['package.json', 'package-lock.json', '.travis.yml']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,18,0,3.33,"['package-lock.json', '.prettierrc.json', '.travis.yml', 'package.json', 'tsconfig.json', '.github/workflows/node.js.yml', 'tsconfig.build.json']"
+Jonathan Hurter <john@scalingo.com>,0,1,0.0,[]
+Johan K. Jensen <jj@johanjensen.dk>,0,1,0.0,[]
+Johan K. Jensen <johankj@uber.com>,0,1,0.0,[]
+Naji Sawas <naji.sawas@uber.com>,7,6,3.0,"['package.json', '.github/workflows/node.js.yml', 'package-lock.json']"
+Naji Sawas <naji.sawas.contact@gmail.com>,2,5,3.0,"['package.json', '.github/workflows/node.js.yml', 'package-lock.json']"
+Changmin Kim <changmin043@gmail.com>,0,1,0.0,[]
+Gleb Arkhipov <gleb.arkhipov@gmail.com>,0,1,0.0,[]
+Bogdan Savluk <savluk.bogdan@gmail.com>,6,4,5.33,"['package-lock.json', '.prettierrc.json', 'package.json', 'tsconfig.json', '.github/workflows/node.js.yml', 'tsconfig.build.json']"

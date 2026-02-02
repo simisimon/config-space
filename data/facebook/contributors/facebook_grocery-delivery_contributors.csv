@@ -1,0 +1,31 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Phil Dibowitz <phil@ipom.com>,11,17,2.0,"['circle.yml', '.rubocop.yml', '.travis.yml']"
+Phil Dibowitz <phild@fb.com>,0,6,0.0,[]
+Marcin Sawicki <odcinek@gmail.com>,4,7,2.0,"['.rubocop.yml', '.travis.yml']"
+Nils Landt <github@promisedlandt.de>,0,1,0.0,[]
+William Jimenez <wjimenez5271@gmail.com>,0,5,0.0,[]
+Marcin Sawicki <odcinek@fb.com>,2,0,1.5,"['.rubocop.yml', '.travis.yml']"
+Ilan Rabinovitch <ilan@ooyala.com>,0,1,0.0,[]
+Bryan Wann <bwann@wann.net>,0,1,0.0,[]
+odcinek <odcinek@ix.nest>,0,1,0.0,[]
+krzkowalczyk <krzkowalczyk@users.noreply.github.com>,0,2,0.0,[]
+Mike Dodge <mikedodge04@gmail.com>,0,1,0.0,[]
+Daniel Jakobsson <42004949+djakobsson@users.noreply.github.com>,0,1,0.0,[]
+Naomi Reeves <NaomiReeves@users.noreply.github.com>,6,2,2.33,"['.github/workflows/ci.yml', 'circle.yml', '.rubocop.yml', '.travis.yml']"
+Naomi Reeves <naomi.c.reeves@gmail.com>,1,0,3.0,"['circle.yml', '.rubocop.yml', '.travis.yml']"
+Jason Cooke <Jason-Cooke@users.noreply.github.com>,0,1,0.0,[]
+Davide Cavalca <dcavalca@fb.com>,4,1,3.0,"['circle.yml', '.github/workflows/ci.yml', '.rubocop.yml', '.travis.yml']"
+Igor Kanyuka <ikanyuka@fb.com>,0,2,0.0,[]
+ifel <ikanyuka@fb.com>,0,1,0.0,[]
+malmond77 <malmond@fb.com>,0,1,0.0,[]
+Joshua Miller <joshuamiller01@gmail.com>,0,1,0.0,[]
+Pavlo Kushnir <oracle0809@gmail.com>,0,1,0.0,[]
+Dmytro Bagaiev <dmitry.bagaev@gmail.com>,0,1,0.0,[]
+David Crosby <dcrosby@fb.com>,2,1,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+David T. Crosby <dcrosby@fb.com>,3,0,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+Austin Culter <austinculter@gmail.com>,0,1,0.0,[]
+Joshua Miller <joshmiller@meta.com>,3,1,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+dcrosby <dcrosby@fb.com>,5,7,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+Lauren Maghran <maghranlauren@gmail.com>,0,2,0.0,[]
+Isa Hekmat <isahekmat@meta.com>,1,0,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"
+dcrosby <dcrosby@meta.com>,1,1,2.0,"['.github/workflows/ci.yml', '.rubocop.yml']"

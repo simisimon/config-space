@@ -1,0 +1,80 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+facebook-github-bot <facebook-github-bot@users.noreply.github.com>,1,0,3.0,"['core/pom.xml', 'pom.xml', '.github/workflows/maven.yml']"
+Carmi Grushko <carmi@fb.com>,79,96,6.91,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', '.github/workflows/plugin.yml', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', '.github/workflows/maven.yml', 'website/package.json']"
+Omer Strulovich <ostrulovich@fb.com>,5,93,8.6,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', '.github/workflows/maven.yml', 'website/package.json']"
+Carmi Grushko <carmi.grushko@gmail.com>,3,3,8.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'website/package-lock.json', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', '.github/workflows/plugin.yml', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', '.github/workflows/publish_to_ossrh.yaml', '.github/workflows/maven.yml', 'website/package.json']"
+Nivaldo Bondança <nbondanca@fb.com>,0,17,0.0,[]
+Junpeng Qiu <qjp@fb.com>,0,2,0.0,[]
+Lior Israeli <liorisr@fb.com>,1,1,3.0,"['core/pom.xml', 'pom.xml', '.github/workflows/maven.yml']"
+Andres Suarez <asuarez@fb.com>,0,2,0.0,[]
+Ranadeep Polavarapu <ranadeep@icloud.com>,0,1,0.0,[]
+Kevin Rodriguez <karodriguez@fb.com>,0,1,0.0,[]
+generatedunixname89002005287564 <generatedunixname89002005287564@fb.com>,0,2,0.0,[]
+Francisco Visintini <fran.visintini7@gmail.com>,0,1,0.0,[]
+Ned Twigg <ned.twigg@diffplug.com>,0,1,0.0,[]
+Jef LeCompte <jeffreylec@gmail.com>,0,1,0.0,[]
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,16,0,9.5,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', 'gradle.properties', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'gradle/libs.versions.toml', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', '.github/workflows/maven.yml', 'gradle/wrapper/gradle-wrapper.properties', 'website/package.json']"
+Steven Grimm <koreth@gmail.com>,0,1,0.0,[]
+Nicola Corti <corti.nico@gmail.com>,0,1,0.0,[]
+Per Sandström <per.sandstrom@consultant.volvofinans.se>,0,1,0.0,[]
+Hilal Alsibai <halsibai@fb.com>,0,3,0.0,[]
+Javier Segovia Córdoba <javier@segoviacordoba.com>,1,2,6.0,"['pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', '.github/workflows/plugin.yml', 'core/pom.xml', '.github/workflows/maven.yml']"
+Beth Cutler <bcutler@google.com>,0,4,0.0,[]
+Dmitri Molchanov <dmolchanov@fb.com>,0,1,0.0,[]
+Steven Weiss <steventrouble@gmail.com>,0,1,0.0,[]
+Ilan Goldenstein <ilangold@fb.com>,0,1,0.0,[]
+Trevor Debrechtabel <debrechtabel@fb.com>,0,1,0.0,[]
+David Torosyan <dtoro@fb.com>,0,51,0.0,[]
+Martin Petrov <martin@martinpetrov.com>,2,0,10.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+Martin Petrov <mpetrov@google.com>,0,1,0.0,[]
+nickreid <nickreid@google.com>,3,37,10.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+Nadav Yosi Azaria <azarin@fb.com>,0,1,0.0,[]
+Varun Arora <5677408+avarun42@users.noreply.github.com>,0,1,0.0,[]
+Bhavesh Munot <bmunot@fb.com>,0,1,0.0,[]
+Nick Reid <40366972+nreid260@users.noreply.github.com>,1,3,10.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+Nicola Corti <ncor@fb.com>,0,1,0.0,[]
+David Torosyan <dtoro@meta.com>,0,7,0.0,[]
+Salvatore Benedetto <salvabenedetto@meta.com>,0,5,0.0,[]
+Carmi Grushko <carmi@meta.com>,8,4,10.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+generatedunixname89002005325672 <generatedunixname89002005325672@fb.com>,0,1,0.0,[]
+Omer Strulovich <ostrulovich@meta.com>,0,1,0.0,[]
+Tor Norbye <tnorbye@google.com>,0,1,0.0,[]
+Joe Dean <joe@joedean.dev>,1,0,10.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+Nivaldo Bondança <nbondanca@meta.com>,57,62,9.28,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', 'gradle.properties', 'ktfmt_idea_plugin/gradle/libs.versions.toml', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'gradle/libs.versions.toml', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json', 'gradle/wrapper/gradle-wrapper.properties']"
+Christopher-Marcel Esser <chris.esser.91@gmail.com>,1,0,10.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+Nate Stedman <natesm@meta.com>,0,4,0.0,[]
+generatedunixname89002005325672 <generatedunixname89002005325672@meta.com>,0,2,0.0,[]
+Chris Lee <chris@cloudshiftconsulting.com>,0,2,0.0,[]
+haruka <haruka@MacBook-Air>,0,1,0.0,[]
+Jeff Bahr <jbahr@meta.com>,1,1,11.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', 'ktfmt_idea_plugin/gradle/libs.versions.toml', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+Tim Winters <tim.winters@bevi.co>,0,1,0.0,[]
+Fredy Wijaya <fredy.wijaya@gmail.com>,0,2,0.0,[]
+Peter Laggner <peter.laggner@gmx.at>,1,0,10.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+Javier Segovia Córdoba <7463564+JavierSegoviaCordoba@users.noreply.github.com>,0,1,0.0,[]
+Nivaldo Bondança <hick209@gmail.com>,0,1,0.0,[]
+sabufung <86997400+sabufung30@users.noreply.github.com>,0,1,0.0,[]
+Nicola Corti <ncor@meta.com>,5,0,10.8,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', 'ktfmt_idea_plugin/gradle/libs.versions.toml', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+aandres <aandres@tradewelltech.co>,0,1,0.0,[]
+Rui Chen <rui@chenrui.dev>,0,1,0.0,[]
+Joseph Cooper <cooper.joseph@gmail.com>,0,4,0.0,[]
+Zongle Wang <wangzongler@gmail.com>,0,1,0.0,[]
+Tyler Thrailkill <tylerbthrailkill@gmail.com>,0,1,0.0,[]
+Sebastiano Poggi <sebp@google.com>,3,2,11.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', 'ktfmt_idea_plugin/gradle/libs.versions.toml', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+Simon Dierl <simon.dierl@cs.tu-dortmund.de>,0,1,0.0,[]
+ktfmt <ktfmt@facebook.com>,1,0,11.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', 'ktfmt_idea_plugin/gradle/libs.versions.toml', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+Sebastiano Poggi <rock3r@users.noreply.github.com>,0,1,0.0,[]
+rileymichael <riley.mcgee@thriveglobal.com>,0,1,0.0,[]
+Christoph Sturm <me@christophsturm.com>,1,0,11.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', 'ktfmt_idea_plugin/gradle/libs.versions.toml', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+Jinseong Jeon <jsjeon@google.com>,0,1,0.0,[]
+Nick Reid <nickreid@google.com>,0,1,0.0,[]
+Zac Sweers <pandanomic@gmail.com>,1,2,11.0,"['online_formatter/gradle/wrapper/gradle-wrapper.properties', 'pom.xml', 'ktfmt_idea_plugin/gradle/wrapper/gradle-wrapper.properties', 'ktfmt_idea_plugin/gradle.properties', 'ktfmt_idea_plugin/gradle/libs.versions.toml', '.github/workflows/publish_artifacts_on_release.yaml', 'online_formatter/gradle.properties', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'website/package.json']"
+Patrick Lucas <me@patricklucas.com>,0,1,0.0,[]
+Sergei Rybalkin <sergeirybalkin@meta.com>,1,0,9.0,"['pom.xml', '.github/workflows/publish_artifacts_on_release.yaml', 'gradle/libs.versions.toml', 'online_formatter/format.yaml', 'core/pom.xml', 'website/package-lock.json', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'website/package.json']"
+generatedunixname537391475639613 <noreply+537391475639613@fb.com>,0,1,0.0,[]
+Marty Christiansen <marty.christiansen@gmail.com>,0,1,0.0,[]
+Goooler <wangzongler@gmail.com>,3,0,7.0,"['.github/workflows/publish_artifacts_on_release.yaml', 'gradle/libs.versions.toml', 'online_formatter/format.yaml', 'website/package-lock.json', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'website/package.json']"
+Phil Davies <git@karn.co.uk>,1,2,7.0,"['.github/workflows/publish_artifacts_on_release.yaml', 'gradle/libs.versions.toml', 'online_formatter/format.yaml', 'website/package-lock.json', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties', 'website/package.json']"
+Ralf Wondratschek <r.wondr@gmail.com>,0,1,0.0,[]
+KaranPradhan266 <karanpradhan266@gmail.com>,0,1,0.0,[]
+Cornelius Roemer <cornelius.roemer@gmail.com>,0,1,0.0,[]
+Dayan Ruben <mail@dayanruben.com>,0,1,0.0,[]

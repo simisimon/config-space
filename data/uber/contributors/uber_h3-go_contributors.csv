@@ -1,0 +1,23 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Joseph Gilley <gilley@uber.com>,5,34,1.0,['.travis.yml']
+Joseph Gilley <joe.gilley@gmail.com>,2,12,1.0,['.travis.yml']
+Isaac Brodsky <isaac@isaacbrodsky.com>,0,2,0.0,[]
+Squiidz <jchaput@moncoyote.com>,0,2,0.0,[]
+Xin Ding <xin@fossa.com>,1,0,1.0,['.travis.yml']
+Jeff Schoner <jeffs@uber.com>,1,10,1.0,['.travis.yml']
+Isaac Brodsky <isaac@uber.com>,0,2,0.0,[]
+keisar <keisar@users.noreply.github.com>,0,1,0.0,[]
+glacialspring <foo.richard@gmail.com>,0,1,0.0,[]
+Robert Brown <robert@slan124.info>,1,2,1.0,['.github/workflows/build.yml']
+Joseph Gilley <j@banditml.com>,0,4,0.0,[]
+Robert Brown <robert@realyse.com>,0,2,0.0,[]
+MovieJo <65649595+MovieJo@users.noreply.github.com>,1,0,1.0,['.github/workflows/build.yml']
+Joseph Gilley <joseph@usesilo.com>,1,4,2.0,"['.github/workflows/build.yml', '.golangci.yml']"
+Fabrice Aneche <akhenakh@users.noreply.github.com>,0,2,0.0,[]
+Zachary Coleman <42484306+zachcoleman@users.noreply.github.com>,0,3,0.0,[]
+Mojtaba Arezoumand <mojixcoder@gmail.com>,0,1,0.0,[]
+Mojtaba Arezoumand <mojtaba.arezoomand@snapp.cab>,1,0,2.0,"['.github/workflows/build.yml', '.golangci.yml']"
+Mojtaba Arezoomand <mojtaba.arezoomand@snapp.cab>,1,2,2.0,"['.github/workflows/build.yml', '.golangci.yml']"
+Justin Hwang <justinhwang1996@gmail.com>,5,10,2.0,"['.github/workflows/build.yml', '.golangci.yml']"
+Justin Hwang <justinhwang@uber.com>,0,5,0.0,[]
+Joseph Gilley <joe.gilley@angellist.com>,0,2,0.0,[]

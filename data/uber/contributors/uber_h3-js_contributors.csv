@@ -1,0 +1,19 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Brian H <1657283+briankhsieh@users.noreply.github.com>,0,1,0.0,[]
+Nicholas Rabinowitz <nickr@uber.com>,51,61,1.96,"['package.json', '.travis.yml']"
+Nick Rabinowitz <public@nickrabinowitz.com>,46,39,1.8,"['package.json', 'tsconfig.json', '.travis.yml']"
+Isaac Brodsky <isaac@uber.com>,1,4,2.0,"['package.json', '.travis.yml']"
+Isaac Brodsky <isaac@isaacbrodsky.com>,7,23,2.0,"['package.json', 'tsconfig.json']"
+David Ellis <isv.damocles@gmail.com>,2,3,2.0,"['package.json', 'tsconfig.json', '.travis.yml']"
+Nick Rabinowitz <nickr@uber.com>,13,10,2.0,"['package.json', '.travis.yml']"
+Zacharias Knudsen <zachasme@gmail.com>,5,9,2.0,"['package.json', '.travis.yml']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,1,27,2.0,"['package.json', 'tsconfig.json']"
+Felix Kästner <kaestner.fe@gmail.com>,0,3,0.0,[]
+Nick Rabinowitz <nick@unfolded.ai>,30,43,1.6,"['package.json', 'tsconfig.json', '.travis.yml']"
+Isaac Brodsky <isaac@unfolded.ai>,2,26,1.5,"['package.json', 'tsconfig.json']"
+"Felix Kästner, M.Sc <git@felix-kaestner.com>",0,1,0.0,[]
+Felix Kästner <mail@felix-kaestner.com>,0,1,0.0,[]
+Anthony Lin <4nthonylin@gmail.com>,0,5,0.0,[]
+Shai Demri <shaidemri@gmail.com>,0,1,0.0,[]
+ShaiDemri <shaidemri@gmail.com>,0,1,0.0,[]
+Nick Rabinowitz <nick.rabinowitz@watershedclimate.com>,3,1,2.0,"['package.json', 'tsconfig.json']"

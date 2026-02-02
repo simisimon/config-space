@@ -1,0 +1,93 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Jeong-Yoon Lee <jeong@uber.com>,23,70,5.13,"['.github/workflows/black.yml', '.travis.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'foober.yaml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+Mike Yung <mike.yung@uber.com>,1,59,2.0,"['foober.yaml', '.travis.yml']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,0,3,0.0,[]
+zhenyuz0500 <zhenyuz0500@gmail.com>,0,7,0.0,[]
+zhenyuz0500 <50969405+zhenyuz0500@users.noreply.github.com>,0,12,0.0,[]
+Totte Harinen <23464531+t-tte@users.noreply.github.com>,4,35,13.0,"['.github/workflows/black.yml', '.travis.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', 'envs/environment-py36.yml', 'envs/environment-tf-py36.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+Jing Pan <jing.pan@uber.com>,4,8,13.0,"['.travis.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', 'envs/environment-py36.yml', 'envs/environment-tf-py36.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'tox.ini', '.github/.stale.yml']"
+ppstacy <ppstacy@gmail.com>,1,32,13.0,"['.travis.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', 'envs/environment-py36.yml', 'envs/environment-tf-py36.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'tox.ini', '.github/.stale.yml']"
+Yuchen Luo <yl@uber.com>,0,10,0.0,[]
+yluogit <yuchenlu@usc.edu>,0,1,0.0,[]
+yluogit <yl@uber.com>,0,5,0.0,[]
+Paul Lo <elohim123@gmail.com>,0,1,0.0,[]
+Paul Lo <paul.lo@uber.com>,0,26,0.0,[]
+Florian Wilhelm <FlorianWilhelm@users.noreply.github.com>,0,1,0.0,[]
+Fritz Obermeyer <fritz.obermeyer@gmail.com>,0,1,0.0,[]
+Peter Foley <pwfoley@gmail.com>,0,7,0.0,[]
+Tomasz Zamacinski <TomaszZamacinski@users.noreply.github.com>,0,1,0.0,[]
+Jeong-Yoon Lee <jeongyoon.lee1@gmail.com>,47,40,9.89,"['.github/workflows/black.yml', '.travis.yml', 'envs/environment-py38.yml', 'envs/environment-tf-py39.yml', '.github/workflows/python-publish.yml', 'envs/environment-py36.yml', 'envs/environment-tf-py36.yml', '.pre-commit-config.yaml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+Steve Yang <steve.yang@uber.com>,1,0,3.0,"['.readthedocs.yml', 'tox.ini', '.travis.yml']"
+Zhenyu Zhao <zhenyuz@uber.com>,0,2,0.0,[]
+Fritz Obermeyer <fritzo@uber.com>,0,1,0.0,[]
+Katherine Hoffmann Pham <khof312@users.noreply.github.com>,0,1,0.0,[]
+huigangchen <huigang@gmail.com>,0,5,0.0,[]
+Paul Lo <paullo0106@gmail.com>,3,45,10.0,"['.github/workflows/black.yml', '.travis.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', 'envs/environment-py36.yml', 'envs/environment-tf-py36.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+wijayam <mwijaya3@hotmail.com>,0,1,0.0,[]
+Harry Zhao <goodzhao@gmail.com>,0,1,0.0,[]
+Christophe <c.renaudin@criteo.com>,0,1,0.0,[]
+Georg Walther <waltherg@users.noreply.github.com>,0,1,0.0,[]
+Harsh Bardhan Mishra <47351025+HarshCasper@users.noreply.github.com>,0,2,0.0,[]
+"J, Manoj Balaji <manojbalaji1@gmail.com>",0,5,0.0,[]
+Vaclav Belak <vaclav@h2o.ai>,0,1,0.0,[]
+Suraj Iyer <suraj.iyer96@outlook.com>,0,4,0.0,[]
+Suraj Iyer <suraj.iyer@vodafoneziggo.com>,0,3,0.0,[]
+Matthew Koski <maccam912@gmail.com>,0,1,0.0,[]
+lleiou <leoliu0723@gmail.com>,0,1,0.0,[]
+Mohamed I. Hammad <ibraaaa@gmail.com>,0,1,0.0,[]
+Jannik <roessler.jannik@gmx.de>,0,2,0.0,[]
+Manoj Balaji Jagadeeshan <manojbalaji1@gmail.com>,0,3,0.0,[]
+jroessler <roessler.jannik@gmx.de>,0,1,0.0,[]
+luis.moneda <lg.moneda@gmail.com>,0,1,0.0,[]
+paullo0106 <paullo0106@gmail.com>,0,3,0.0,[]
+Ravi Kant Sharma <ravi.sharma@deliveryhero.com>,0,1,0.0,[]
+Jeong-Yoon Lee <jeong@netflix.com>,3,6,13.33,"['.github/workflows/black.yml', '.travis.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', 'envs/environment-py36.yml', 'envs/environment-tf-py36.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'tox.ini', '.github/.stale.yml']"
+Louis Hernandez <45039036+LouisHernandez17@users.noreply.github.com>,0,1,0.0,[]
+t-tte <th.harinen@gmail.com>,0,6,0.0,[]
+Huigang Chen <huigang@gmail.com>,0,15,0.0,[]
+JackRab <jack.anyone@gmail.com>,0,1,0.0,[]
+paul.lo <paul.lo@uber.com>,0,2,0.0,[]
+jpan2 <jpan2@snapchat.com>,0,7,0.0,[]
+Edo Arad <96378921+Edo-Arad-Forter@users.noreply.github.com>,0,1,0.0,[]
+Christian Clauss <cclauss@me.com>,1,2,12.0,"['.github/workflows/black.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+tonkolviktor <tonkol.viktor@gmail.com>,0,1,0.0,[]
+Florian Heiderich <florian@heiderich.org>,0,3,0.0,[]
+Saiwing Yeung <saiwingy@zillowgroup.com>,0,1,0.0,[]
+Xuan <527775508@qq.com>,0,1,0.0,[]
+Alden Rogers <aldenrogers@users.noreply.github.com>,0,1,0.0,[]
+Zhenyu Zhao <zhenyuz0500@gmail.com>,0,2,0.0,[]
+Yifeng Wu <yifeng.wu@uber.com>,0,8,0.0,[]
+Yifeng Wu <wuyifeng5@gmail.com>,4,6,12.0,"['.github/workflows/black.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+AlkanSte <49679645+AlkanSte@users.noreply.github.com>,0,1,0.0,[]
+enzoliao <lj520113@gmail.com>,0,1,0.0,[]
+Enzo <lj520113@gmail.com>,0,1,0.0,[]
+Alexander Popkov <30959770+alexander-pv@users.noreply.github.com>,4,7,10.75,"['.github/workflows/black.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', '.pre-commit-config.yaml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+Chris Trevino <darthtrevino@users.noreply.github.com>,1,0,12.0,"['.github/workflows/black.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+ras44 <9282281+ras44@users.noreply.github.com>,6,14,11.0,"['.github/workflows/black.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+Abhishek <75308940+AbhishekVermaDH@users.noreply.github.com>,0,1,0.0,[]
+Joel McMurry <108410624+joel-mcmurry@users.noreply.github.com>,0,1,0.0,[]
+Alexis <alxcollette@gmail.com>,0,1,0.0,[]
+alexander <alr.popkov@gmail.com>,3,8,12.0,"['.github/workflows/black.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+Kevin Klein <7267523+kklein@users.noreply.github.com>,0,2,0.0,[]
+volico <65400956+volico@users.noreply.github.com>,0,2,0.0,[]
+Jannik Rößler <roessler.jannik@gmx.de>,0,2,0.0,[]
+Ben Saunders <134115220+bsaunders27@users.noreply.github.com>,2,0,12.0,"['.github/workflows/black.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+Xhuliano Brace <34151358+xhulianoThe1@users.noreply.github.com>,0,1,0.0,[]
+zengpeiyang <2281678703@qq.com>,0,2,0.0,[]
+bsaunders23 <benjwsaunders@gmail.com>,0,1,0.0,[]
+Roland Stevenson <rolandrmgservices@gmail.com>,1,8,12.0,"['.github/workflows/black.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+peterloleungyau <50078219+peterloleungyau@users.noreply.github.com>,0,1,0.0,[]
+SuperBo <supernbo@gmail.com>,0,1,0.0,[]
+ZiJiaW <zijiaw@outlook.com>,0,1,0.0,[]
+Erik <erik.sverdrup@gmail.com>,1,1,12.0,"['.github/workflows/black.yml', 'envs/environment-py38.yml', '.github/workflows/python-publish.yml', 'envs/environment-tf-py39.yml', '.readthedocs.yml', 'envs/environment-tf-py38.yml', 'envs/environment-py37.yml', 'envs/environment-tf-py37.yml', 'envs/environment-py39.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+Jun Seok Lee <60756826+lee-junseok@users.noreply.github.com>,0,2,0.0,[]
+Ian Delbridge <67915427+IanDelbridge@users.noreply.github.com>,0,3,0.0,[]
+Oliver Spohngellert <ospohngellert@protonmail.com>,1,2,7.0,"['.github/workflows/black.yml', '.github/workflows/python-publish.yml', '.pre-commit-config.yaml', '.readthedocs.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+Emmanuel Ferdman <emmanuelferdman@gmail.com>,0,1,0.0,[]
+Javier Garea <javigarea@gmail.com>,0,1,0.0,[]
+Pavel Zwerschke <pavelzw@gmail.com>,1,0,7.0,"['.github/workflows/black.yml', '.github/workflows/python-publish.yml', '.pre-commit-config.yaml', '.readthedocs.yml', 'pyproject.toml', 'tox.ini', '.github/.stale.yml']"
+aaelony <aaelony@gmail.com>,0,2,0.0,[]
+Emilio Tanowe Maddalena <52652917+emilioMaddalena@users.noreply.github.com>,0,1,0.0,[]
+Iyar Lin <iyarlin@gmail.com>,0,1,0.0,[]
+00helloworld <42757757+00helloworld@users.noreply.github.com>,0,1,0.0,[]
+Mohsin Mehmood <55545648+mohsinm-dev@users.noreply.github.com>,0,1,0.0,[]

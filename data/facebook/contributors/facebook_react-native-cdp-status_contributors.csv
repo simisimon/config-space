@@ -1,0 +1,8 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Moti Zilberman <moti@meta.com>,15,45,6.0,"['package.json', 'package-lock.json', '.eslintrc.json', '.vscode/settings.json', '.vscode/extensions.json', '.github/workflows/main.yml', 'tsconfig.json', '.vscode/launch.json']"
+Blake Friedman <blakef@meta.com>,7,9,7.29,"['package.json', 'package-lock.json', '.eslintrc.json', '.vscode/settings.json', '.vscode/extensions.json', '.github/workflows/main.yml', 'tsconfig.json', '.vscode/launch.json']"
+Alex Hunt <hello@alexhunt.io>,1,2,7.0,"['package.json', 'package-lock.json', '.vscode/settings.json', '.vscode/extensions.json', '.github/workflows/main.yml', 'tsconfig.json', '.vscode/launch.json']"
+Alex Hunt <hello@alexhunt.dev>,1,0,7.0,"['package.json', 'package-lock.json', '.vscode/settings.json', '.vscode/extensions.json', '.github/workflows/main.yml', 'tsconfig.json', '.vscode/launch.json']"
+devan <sbuggay@gmail.com>,1,0,7.0,"['package.json', 'package-lock.json', '.vscode/settings.json', '.vscode/extensions.json', '.github/workflows/main.yml', 'tsconfig.json', '.vscode/launch.json']"
+sbuggay <sbuggay@gmail.com>,1,0,7.0,"['package.json', 'package-lock.json', '.vscode/settings.json', '.vscode/extensions.json', '.github/workflows/main.yml', 'tsconfig.json', '.vscode/launch.json']"
+Vitali Zaidman <vzaidman@gmail.com>,2,0,7.0,"['package.json', 'package-lock.json', '.vscode/settings.json', '.vscode/extensions.json', '.github/workflows/main.yml', 'tsconfig.json', '.vscode/launch.json']"

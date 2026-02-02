@@ -1,0 +1,263 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Open Source Synchronization <opensource@fb.com>,1,0,0.0,[]
+Sam Blackshear <shb@fb.com>,21,890,1.29,"['package.json', 'docker/Dockerfile', '.travis.yml']"
+Andrzej Kotulski <akotulski@fb.com>,2,420,3.0,"['package.json', 'docker/Dockerfile', '.travis.yml']"
+Dulma Rodriguez <dulmarod@fb.com>,2,115,1.0,['docker/Dockerfile']
+martinoluca <martinoluca@fb.com>,0,29,0.0,[]
+Cristiano Calcagno <cristianoc@fb.com>,1,184,3.0,"['package.json', 'docker/Dockerfile', '.travis.yml']"
+Jules Villard <jul@fb.com>,117,1900,4.63,"['package.json', '.github/workflows/deploy.yml', '.travis.yml', 'website/checkers.json', 'docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/Dockerfile', 'website/versions.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', 'website/versioned_sidebars/version-1.1.0-sidebars.json', 'website/package.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'docker/0.14.0/Dockerfile', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/.prettierrc.json', '.github/workflows/install.yml', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'docker/1.1.0/Dockerfile']"
+jrm <jrm@fb.com>,16,130,0.69,['docker/Dockerfile']
+Dino Distefano <ddino@fb.com>,4,138,2.25,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/Dockerfile', 'docker/0.14.0/Dockerfile', '.travis.yml']"
+Dan Ambrisco <dambrisco@gmail.com>,0,1,0.0,[]
+Anil Madhavapeddy <anil@recoil.org>,0,2,0.0,[]
+Chase choi <cs09gi@gmail.com>,0,1,0.0,[]
+Irene Papakonstantinou <irp@fb.com>,0,10,0.0,[]
+Tomoyuki Saito <aocchoda@gmail.com>,0,1,0.0,[]
+Rohan Jacob-Rao <rohanjr@fb.com>,0,44,0.0,[]
+=?UTF-8?q?Deniz=20T=C3=BCrkoglu?= <deniz@spotify.com>,0,2,0.0,[]
+Deniz Türkoglu <deniz@spotify.com>,0,3,0.0,[]
+Jeremy Dubreil <jrm@fb.com>,6,497,1.67,"['package.json', 'docker/Dockerfile', '.travis.yml']"
+Rahul Parsani <rahul.parsani@gmail.com>,0,1,0.0,[]
+Jonathan Keljo <jkeljo@fb.com>,0,2,0.0,[]
+David Soria Parra <davidsp@fb.com>,0,1,0.0,[]
+Victor Ilyukevich <ilyukevich.victor@gmail.com>,0,1,0.0,[]
+Hui Qian <542113578@qq.com>,1,0,1.0,['docker/Dockerfile']
+Peter O'Hearn <peteroh@fb.com>,2,50,1.0,['docker/Dockerfile']
+Josh Berdine <jjb@fb.com>,13,1728,3.62,"['docker/master-java/Dockerfile', 'package.json', 'docker/Dockerfile', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.travis.yml', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Samuel Blackshear <shb@fb.com>,0,3,0.0,[]
+Tony Cosentini <tonyc@uber.com>,0,3,0.0,[]
+Ken Yee <ken.yee@raizlabs.com>,0,1,0.0,[]
+kstreee <kstreee@gmail.com>,1,2,1.0,['docker/Dockerfile']
+Skyfold <pfalzgraf@drmartin.com>,0,1,0.0,[]
+Nick Firmani <nfirmani@uber.com>,0,1,0.0,[]
+Luis Cruz <luismirandacruz@gmail.com>,0,1,0.0,[]
+Dulma Churchill <dulmarod@fb.com>,9,521,4.89,"['package.json', '.github/workflows/deploy.yml', '.travis.yml', 'website/checkers.json', 'docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/Dockerfile', 'website/versions.json', 'website/versioned_sidebars/version-1.1.0-sidebars.json', 'website/package.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'docker/0.14.0/Dockerfile', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/.prettierrc.json', '.github/workflows/install.yml', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'docker/1.1.0/Dockerfile']"
+Daiva Naudziuniene <daivan@fb.com>,1,237,1.0,['docker/Dockerfile']
+Martino Luca <martinoluca@fb.com>,4,117,2.25,"['package.json', 'docker/Dockerfile', '.travis.yml']"
+Lázaro Clapp Jiménez Labora <lazaroclapp@fb.com>,6,15,2.0,"['docker/Dockerfile', '.travis.yml']"
+Carlos Sierra <carlos.sierra@liferay.com>,0,1,0.0,[]
+Zac Sweers <pandanomic@gmail.com>,0,1,0.0,[]
+Filippo Giunchedi <filippog@users.noreply.github.com>,0,1,0.0,[]
+Ryan Rhee <ryanrhee@fb.com>,4,44,2.75,"['package.json', 'docker/Dockerfile', '.travis.yml']"
+Vaibhav Tulsyan <vstulsyan@gmail.com>,0,1,0.0,[]
+Raghavendra Prabhu <me@rdprabhu.com>,0,1,0.0,[]
+Yunxing Dai <yunxing@fb.com>,4,4,3.0,"['package.json', 'docker/Dockerfile', '.travis.yml']"
+Thanassis Tsiodras <ttsiodras@gmail.com>,1,0,3.0,"['package.json', 'docker/Dockerfile', '.travis.yml']"
+0xC0FFEE <faiz_84123@yahoo.com>,0,1,0.0,[]
+Yunxing Dai <nov503@gmail.com>,0,1,0.0,[]
+Matthew Edwards <medwards@instructure.com>,1,0,3.0,"['package.json', 'docker/Dockerfile', '.travis.yml']"
+Kihong Heo <namriv05@gmail.com>,0,1,0.0,[]
+Gautam Korlam <gkorlam@uber.com>,0,2,0.0,[]
+Kihong Heo <khheo@ropas.snu.ac.kr>,0,2,0.0,[]
+Nikita Anisimov <anisimov.nikita@icloud.com>,0,1,0.0,[]
+Matthew Haughton <3flex@users.noreply.github.com>,5,3,3.0,"['info.json', 'docker/Dockerfile', '.travis.yml', 'package.json']"
+Juergen Hoetzel <juergen@archlinux.org>,1,0,3.0,"['package.json', 'docker/Dockerfile', '.travis.yml']"
+Ben Hudson <bhudson@wesleyan.edu>,0,2,0.0,[]
+Daniel Wagner-Hall <dwh@fb.com>,0,2,0.0,[]
+Mehdi Bouaziz <mbouaziz@fb.com>,2,500,2.0,"['docker/Dockerfile', '.travis.yml']"
+Paco Estevez Garcia <festevezga@fb.com>,0,1,0.0,[]
+htxs <t@htxs.me>,0,1,0.0,[]
+Adil Aliyev <adilaliev@gmail.com>,0,1,0.0,[]
+Kihong Heo <kihongh@fb.com>,0,7,0.0,[]
+Sungkeun Cho <scho@fb.com>,7,817,10.43,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.travis.yml', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Jia Chen <grievejia@fb.com>,0,45,0.0,[]
+Kyriakos Nikolaos Gkorogiannis <nikosgorogiannis@fb.com>,0,10,0.0,[]
+Don Stewart <dons@fb.com>,0,2,0.0,[]
+Sylvestre Ledru <sylvestre@debian.org>,0,1,0.0,[]
+Marco Concetto Rudilosso <marcoconcettorudilosso@gmail.com>,0,1,0.0,[]
+Radu Grigore <radugrigore@gmail.com>,0,4,0.0,[]
+Alexander Slesarev <alex.slesarev@nudatasecurity.com>,0,2,0.0,[]
+azhdar <azhdar@gmail.com>,0,1,0.0,[]
+Pavel Grafov <graphov@gmail.com>,0,1,0.0,[]
+Meng Zhang <mengz0@fb.com>,0,1,0.0,[]
+Greg Nisbet <gregorynisbet@fb.com>,0,1,0.0,[]
+Roy Li <royboy@fb.com>,0,1,0.0,[]
+Anders Papitto <andersj@fb.com>,0,1,0.0,[]
+Darío Hereñú <magallania@gmail.com>,0,1,0.0,[]
+Dominic Cooney <dpc@fb.com>,0,1,0.0,[]
+anuolu <33136650+anuolu@users.noreply.github.com>,0,1,0.0,[]
+Stephan Walters <stephanwalters7@gmail.com>,0,1,0.0,[]
+Aaron Wood <aaronjwood@gmail.com>,1,0,2.0,"['docker/Dockerfile', '.travis.yml']"
+Angel (scout387) <carlos.rivera73@upr.edu>,0,1,0.0,[]
+Philip Cohn-Cort <cliabhach@gmail.com>,0,1,0.0,[]
+Vivek Dhiman <vivekdhiman@fb.com>,0,1,0.0,[]
+vsilyaev@broadcom.com <vsilyaev@broadcom.com>,0,1,0.0,[]
+Peter Goldsborough <psag@fb.com>,0,1,0.0,[]
+Vladimir Silyaev <vsilyaev@broadcom.com>,0,1,0.0,[]
+Tony Hu <tonyhu@fb.com>,0,11,0.0,[]
+Varun Arora <varunarora@fb.com>,0,43,0.0,[]
+Nikos Gorogiannis <nikosgorogiannis@fb.com>,1,152,4.0,"['docker/0.14.0/Dockerfile', 'docker/master-java/Dockerfile', 'docker/master/Dockerfile', '.travis.yml']"
+Ilya Sergey <ilyaserge@fb.com>,0,2,0.0,[]
+Jérémie Marguerie <jmarg@fb.com>,0,1,0.0,[]
+Ezgi Çiçek <ezgi@fb.com>,3,474,6.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', '.travis.yml', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Frédéric Bour <def@fb.com>,0,1,0.0,[]
+Brandon Kieft <bkieft@fb.com>,0,7,0.0,[]
+Oliver Castillo <olivercs@gmail.com>,0,1,0.0,[]
+Jose Blanco <jblanco@5946-macbook-pro.local>,0,1,0.0,[]
+Martin Trojer <mtrojer@fb.com>,0,110,0.0,[]
+Kai Yang <kaiy@fb.com>,0,1,0.0,[]
+Katie Ots <kjo@fb.com>,0,7,0.0,[]
+Julian Sutherland <jsutherland@fb.com>,0,23,0.0,[]
+Pascal Hartig <phartig@rdrei.net>,0,1,0.0,[]
+Andrey Epin <ayepin@fb.com>,0,1,0.0,[]
+dWiGhT <dwightmulcahy@gmail.com>,0,1,0.0,[]
+Thomas M. DuBuisson <tommd@galois.com>,0,1,0.0,[]
+Vincent Siles <vsiles@fb.com>,0,3,0.0,[]
+Ted Reed <reed@fb.com>,0,2,0.0,[]
+David Lively <dflively@fb.com>,0,21,0.0,[]
+Fabio Milano <fabiomilano@fb.com>,0,5,0.0,[]
+Calascibetta Romain <romain.calascibetta@gmail.com>,0,1,0.0,[]
+Boris Yakobowski <yakobowski@adacore.com>,2,10,11.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Boris Valkov <bvalkov@fb.com>,0,1,0.0,[]
+Nikos Gorogiannis <nikosg@fb.com>,2,511,11.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Radu Grigore <rgrigore@fb.com>,0,140,0.0,[]
+Wenzhe Lu <wenzhelu@fb.com>,0,1,0.0,[]
+Lee Howes <lwh@fb.com>,0,2,0.0,[]
+Anton Kochkov <xvilka@gmail.com>,1,1,4.0,"['docker/0.14.0/Dockerfile', 'docker/master-java/Dockerfile', 'docker/master/Dockerfile', '.travis.yml']"
+Mitya Lyubarskiy <mityal@fb.com>,0,271,0.0,[]
+Daniel Mercier <mercier@adacore.com>,0,4,0.0,[]
+Andrew Adams-Moran <morabijn@fb.com>,0,1,0.0,[]
+Timotej Kapus <kapust@fb.com>,0,40,0.0,[]
+Jesús Marín <jesus.marin@innotec.security>,1,0,4.0,"['docker/0.14.0/Dockerfile', 'docker/master-java/Dockerfile', 'docker/master/Dockerfile', '.travis.yml']"
+Artem Pianykh <artempianykh@fb.com>,3,9,4.0,"['docker/0.14.0/Dockerfile', 'docker/master-java/Dockerfile', 'docker/master/Dockerfile', '.travis.yml']"
+Phoebe Nichols <pnichols@fb.com>,0,43,0.0,[]
+David Pichardie <dpichardie@fb.com>,0,96,0.0,[]
+Artem Pianykh <arr@fb.com>,3,135,5.67,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/.prettierrc.json', '.travis.yml', 'website/package.json']"
+Scott Owens <sowens@fb.com>,0,38,0.0,[]
+Benno Stein <bennostein@fb.com>,0,27,0.0,[]
+Taras Tsugrii <ttsugrii@fb.com>,0,1,0.0,[]
+Amar Paul <amar.paul16@gmail.com>,4,0,6.75,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', '.travis.yml', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Anton Kochkov <anton.kochkov@gmail.com>,3,0,6.67,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', '.travis.yml', 'website/package.json']"
+Artem Pyanykh <artem.pyanykh@gmail.com>,3,0,5.67,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', '.travis.yml', '.github/workflows/install.yml', 'website/package.json']"
+Waylon Cude <waylon@muse.dev>,1,0,4.0,"['docker/0.14.0/Dockerfile', 'docker/master-java/Dockerfile', 'docker/master/Dockerfile', '.travis.yml']"
+Fernando Gasperi Jabalera <fgasperi@fb.com>,0,26,0.0,[]
+Kfir Schindelhaim <kfirs@fb.com>,0,2,0.0,[]
+BSKY <git@bsky.moe>,4,1,6.5,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/.prettierrc.json', '.travis.yml', 'website/package.json']"
+Yangshun Tay <tay.yang.shun@gmail.com>,1,2,6.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', '.travis.yml', 'website/package.json']"
+Alexander Mols <asm@fb.com>,0,1,0.0,[]
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,0,46,0.0,[]
+Amar1729 <amar.paul16@gmail.com>,1,0,6.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', '.travis.yml', 'website/package.json']"
+Asy <asyard@gmail.com>,0,1,0.0,[]
+Andrew V. Jones <andrew.jones@vector.com>,0,1,0.0,[]
+Martin Raifer <martin.raifer@heigit.org>,0,1,0.0,[]
+Sora Morimoto <git@bsky.moe>,2,0,9.5,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', '.travis.yml', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Jesse Katsumata <niconico.clarinet@gmail.com>,1,0,9.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json']"
+Qianyi Shu <qianyishu@fb.com>,1,33,10.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Marat Khabibullin <maratx387@gmail.com>,0,1,0.0,[]
+Andrew V. Jones <andrewvaughanj@gmail.com>,0,7,0.0,[]
+GaloisNeko <11177488+GaloisNeko@users.noreply.github.com>,0,1,0.0,[]
+Jaehwang Jerry Jung <tomtomjhj@gmail.com>,1,0,10.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Mark R. Tuttle <mrtuttle@amazon.com>,1,0,11.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Darsh Shah <imdarshshah@gmail.com>,0,1,0.0,[]
+ubaierbhat <ubaierbhat@gmail.com>,0,1,0.0,[]
+Pratik raj <rajpratik71@gmail.com>,1,0,11.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Dominik Harmim <harmim6@gmail.com>,0,1,0.0,[]
+Joshua Selbo <jselbo@fb.com>,0,3,0.0,[]
+Edwin Kofler <24364012+eankeen@users.noreply.github.com>,0,1,0.0,[]
+Joscha Benz <jbenz@mailbox.org>,0,1,0.0,[]
+Loc Le <quangll@fb.com>,0,16,0.0,[]
+Petr Plavjanik <petr.plavjanik@broadcom.com>,0,1,0.0,[]
+Sora Morimoto <sora@morimoto.io>,1,0,11.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Franco Raimondi <f.raimondi@gmail.com>,0,1,0.0,[]
+Gabriela Cunha Sampaio <gabrielasampaio@fb.com>,1,26,11.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'website/versioned_sidebars/version-0.17.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Luka Rahne <luka.rahne@gmail.com>,0,1,0.0,[]
+Kevin Higgs <github@kevinhiggs.com>,0,1,0.0,[]
+Xiaoyu Liu <lixiaoyu@microsoft.com>,0,15,0.0,[]
+Adam Ernst <adamjernst@fb.com>,0,1,0.0,[]
+Daniel Schoepe <schoeped@amazon.com>,0,1,0.0,[]
+Andrey Makeev <amaksoft@gmail.com>,0,1,0.0,[]
+HARUYAMA Seigo <haruyama@tankyu.net>,0,1,0.0,[]
+Matthew Jin <38902361+matjin@users.noreply.github.com>,0,4,0.0,[]
+Roman Manevich <rmanevich@fb.com>,0,16,0.0,[]
+Matteo Marescotti <mmatteo@fb.com>,1,23,15.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Graham Sutherland <gsuberland@users.noreply.github.com>,0,1,0.0,[]
+Yoonseok Ko <mir597@gmail.com>,0,1,0.0,[]
+kmh11 <github@kevinhiggs.com>,0,2,0.0,[]
+Sangwoo Joh <work.sangwoo.joh@gmail.com>,0,1,0.0,[]
+Akos Hajdu <akoshajdu@fb.com>,3,204,13.67,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', 'docker/0.14.0/Dockerfile', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Vladislav Prekel <misterptits@yandex.ru>,0,1,0.0,[]
+Corentin De Souza <fantasio@fb.com>,2,80,12.5,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Sofia Reis <sofiaoreis@fb.com>,0,41,0.0,[]
+Matthew Jin <matjin@microsoft.com>,0,7,0.0,[]
+Ilya Zorin <izorin@fb.com>,1,30,11.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Tamonash-glitch <72143588+Tamonash-glitch@users.noreply.github.com>,0,1,0.0,[]
+Boris Yakobowski <boris@yakobowski.org>,1,0,11.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', '.github/workflows/deploy.yml', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Mats Cronqvist <massem@fb.com>,0,1,0.0,[]
+Logan <91910704+LoganLieou@users.noreply.github.com>,0,1,0.0,[]
+Pierre-Yves Strub <strubpy@fb.com>,0,6,0.0,[]
+Roberto Aloi <robertoaloi@fb.com>,0,2,0.0,[]
+Tobias Bergkvist <tobias@bergkv.ist>,0,1,0.0,[]
+thyecust <thy@mail.ecust.edu.cn>,0,1,0.0,[]
+dmitryvinn <dmitryvinn@gmail.com>,0,2,0.0,[]
+Thibault Suzanne <tsuzanne@fb.com>,0,54,0.0,[]
+Grayson Rodriguez <gray.rodriguez@gmail.com>,0,1,0.0,[]
+Gavin Wu <gavinwu@fb.com>,0,10,0.0,[]
+Hrutvik Kanabar <hrutvik@fb.com>,0,47,0.0,[]
+Benno Stein <benno@fb.com>,0,75,0.0,[]
+Sophia Drossopoulou <sophiadr@fb.com>,0,20,0.0,[]
+Marco Perronet <perronet@fb.com>,0,17,0.0,[]
+Linpeng Zhang <linpengzhang@fb.com>,0,32,0.0,[]
+Hyunseung Lee <78584173+HyunseungLee-Travis@users.noreply.github.com>,0,1,0.0,[]
+Travis Wilson <traviswilson@fb.com>,0,2,0.0,[]
+Rohan Bhaumik <95046652+rohan-at-sonatype@users.noreply.github.com>,0,1,0.0,[]
+Ghjuvan Lacambre <lacambre@adacore.com>,0,1,0.0,[]
+Diptarko Roy <dsroy@fb.com>,0,10,0.0,[]
+Jeremy Dubreil <jeremydubreil@users.noreply.github.com>,6,11,16.5,"['.github/workflows/deploy.yml', 'website/checkers.json', 'docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'website/versioned_sidebars/version-1.2.0-sidebars.json', 'website/versions.json', 'website/versioned_sidebars/version-1.1.0-sidebars.json', 'dependencies/charon/.github/workflows/ci.yml', 'website/package.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/.prettierrc.json', '.github/workflows/devsetup.yml', '.github/workflows/install.yml', 'docker/1.2.0/Dockerfile', 'dependencies/charon/.github/workflows/doc.yml', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'dependencies/charon/.github/workflows/weekly.yml', 'docker/1.1.0/Dockerfile', 'dependencies/charon/charon/macros/Cargo.toml', 'dependencies/charon/charon/Cargo.toml']"
+Ezgi Çiçek <ezgi@meta.com>,1,37,15.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Jules Villard <jul@meta.com>,16,501,15.81,"['dependencies/stdcompat/Dockerfile', 'dependencies/stdcompat/dockerfiles/ocaml-5-beta/Dockerfile', '.github/workflows/deploy.yml', 'website/checkers.json', 'docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'website/versioned_sidebars/version-1.2.0-sidebars.json', 'website/versions.json', 'website/versioned_sidebars/version-1.1.0-sidebars.json', 'website/package.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/.prettierrc.json', '.github/workflows/install.yml', 'dependencies/stdcompat/dockerfiles/old-ocamls/Dockerfile', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', 'dependencies/stdcompat/.github/workflows/ci.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'docker/1.1.0/Dockerfile']"
+Sungkeun Cho <scho@meta.com>,4,261,14.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/versioned_sidebars/version-1.2.0-sidebars.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Thibault Suzanne <tsuzanne@meta.com>,0,122,0.0,[]
+Radu Grigore <rgrigore@meta.com>,0,55,0.0,[]
+Corentin De Souza <fantasio@meta.com>,1,0,14.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Daiva Naudziuniene <daivan@meta.com>,0,1,0.0,[]
+Chu-Pan Wong <chupanw@fb.com>,1,0,14.0,"['docker/master-java/Dockerfile', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Mael Cravero <cravero@adacore.com>,0,1,0.0,[]
+David Flores <dflores0818@gmail.com>,0,1,0.0,[]
+=?UTF-8?q?Ezgi=20=C3=87i=C3=A7ek?= <ezgi@fb.com>,0,43,0.0,[]
+xkernel <xkernel.wang@foxmail.com>,0,2,0.0,[]
+Ezgi Cicek <ezgi@fb.com>,0,1,0.0,[]
+=?UTF-8?q?Ezgi=20=C3=87i=C3=A7ek?= <ezgi@meta.com>,0,10,0.0,[]
+David Hauzar <hauzar@adacore.com>,0,3,0.0,[]
+Nikos Gorogiannis <nikosg@meta.com>,12,396,16.83,"['dependencies/stdcompat/Dockerfile', 'dependencies/stdcompat/dockerfiles/ocaml-5-beta/Dockerfile', '.github/workflows/deploy.yml', 'website/checkers.json', 'docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'website/versioned_sidebars/version-1.2.0-sidebars.json', 'website/versions.json', 'website/versioned_sidebars/version-1.1.0-sidebars.json', 'dependencies/charon/.github/workflows/ci.yml', 'website/package.json', 'docker/master/Dockerfile', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/.prettierrc.json', '.github/workflows/install.yml', 'docker/1.2.0/Dockerfile', 'dependencies/stdcompat/dockerfiles/old-ocamls/Dockerfile', 'dependencies/charon/.github/workflows/doc.yml', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', 'dependencies/stdcompat/.github/workflows/ci.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'dependencies/charon/.github/workflows/weekly.yml', 'docker/1.1.0/Dockerfile', 'dependencies/charon/charon/macros/Cargo.toml', 'dependencies/charon/charon/Cargo.toml']"
+Pascal Kesseli <pascal.kesseli@lacework.net>,0,3,0.0,[]
+Pascal Kesseli <pascal_kesseli@hotmail.com>,0,2,0.0,[]
+whoismissing <whereismissing@gmail.com>,1,0,15.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Vincent Siles <vsiles@meta.com>,0,222,0.0,[]
+Benno Stein <benno@meta.com>,0,3,0.0,[]
+Roman Manevich <rmanevich@meta.com>,0,2,0.0,[]
+Artem Pianykh <arr@meta.com>,1,88,15.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Tobias Specht <specht.tobias@gmx.de>,0,1,0.0,[]
+David Pichardie <dpichardie@meta.com>,8,672,15.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/versioned_sidebars/version-1.2.0-sidebars.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Ilya Zorin <izorin@meta.com>,10,150,15.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/versioned_sidebars/version-1.2.0-sidebars.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Dulma Churchill <dulmarod@meta.com>,11,505,16.36,"['dependencies/stdcompat/Dockerfile', 'dependencies/stdcompat/dockerfiles/ocaml-5-beta/Dockerfile', '.github/workflows/deploy.yml', 'website/checkers.json', 'docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'website/versioned_sidebars/version-1.2.0-sidebars.json', 'website/versions.json', 'website/versioned_sidebars/version-1.1.0-sidebars.json', 'dependencies/charon/.github/workflows/ci.yml', 'website/package.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/.prettierrc.json', '.github/workflows/devsetup.yml', '.github/workflows/install.yml', 'docker/1.2.0/Dockerfile', 'dependencies/stdcompat/dockerfiles/old-ocamls/Dockerfile', 'dependencies/charon/.github/workflows/doc.yml', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', 'dependencies/stdcompat/.github/workflows/ci.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'dependencies/charon/.github/workflows/weekly.yml', 'docker/1.1.0/Dockerfile', 'dependencies/charon/charon/macros/Cargo.toml', 'dependencies/charon/charon/Cargo.toml']"
+Nick Benton <pnb@meta.com>,0,98,0.0,[]
+Matteo Marescotti <mmatteo@meta.com>,0,15,0.0,[]
+Dino Distefano <ddino@meta.com>,0,8,0.0,[]
+Fangyi Zhou <fangyiz@amazon.com>,0,1,0.0,[]
+Martin Trojer <mtrojer@meta.com>,0,34,0.0,[]
+Gabriela Cunha Sampaio <gabrielasampaio@meta.com>,2,106,15.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versioned_sidebars/version-1.2.0-sidebars.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Akos Hajdu <akoshajdu@meta.com>,4,166,15.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Andy Adams-Moran <morabijn@meta.com>,0,1,0.0,[]
+Dmitry Vinnik <dvinnik@meta.com>,1,0,15.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Cons Ahs <cons@meta.com>,0,1,0.0,[]
+Nicolas van Kempen <nvankempen@meta.com>,0,45,0.0,[]
+Mustafa UZUN <mustafauzun0@gmail.com>,0,1,0.0,[]
+Christian Kohlschütter <christian@kohlschutter.com>,0,1,0.0,[]
+Francesco Zappa Nardelli <fzn@meta.com>,0,1,0.0,[]
+Timotej Kapus <kapust@meta.com>,0,17,0.0,[]
+Arun Sathiya <arun@arun.blog>,1,0,15.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'website/versioned_sidebars/version-1.0.0-sidebars.json', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'website/package.json', 'website/checkers.json']"
+Kevin Ji <1146876+kevinji@users.noreply.github.com>,0,1,0.0,[]
+Kenny Ballou <kb@devnulllabs.io>,0,1,0.0,[]
+Junjie Shen <shenjunjiekoda@foxmail.com>,0,2,0.0,[]
+JOSTAR <52376093+shenjunjiekoda@users.noreply.github.com>,0,1,0.0,[]
+Roy Shen <royshen@meta.com>,0,1,0.0,[]
+Arjan Seijs <arjan.seijs@gmail.com>,2,3,15.5,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versioned_sidebars/version-1.2.0-sidebars.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'docker/1.2.0/Dockerfile', 'website/package.json', 'website/checkers.json']"
+Shargon <shargon@gmail.com>,1,0,16.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versioned_sidebars/version-1.2.0-sidebars.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'docker/1.2.0/Dockerfile', 'website/package.json', 'website/checkers.json']"
+Eric Woo <88691504+etwoo@users.noreply.github.com>,0,1,0.0,[]
+Julien Vanegue <jvanegue@bloomberg.net>,0,2,0.0,[]
+Nikos Gorogiannis <ngorogiannis@users.noreply.github.com>,1,0,16.0,"['docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'docker/master/Dockerfile', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', '.github/workflows/deploy.yml', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/versioned_sidebars/version-1.2.0-sidebars.json', 'website/versions.json', 'website/.prettierrc.json', 'docker/1.1.0/Dockerfile', 'website/versioned_sidebars/version-1.1.0-sidebars.json', '.github/workflows/install.yml', 'docker/1.2.0/Dockerfile', 'website/package.json', 'website/checkers.json']"
+vil02 <65706193+vil02@users.noreply.github.com>,0,1,0.0,[]
+Jules Villard <jvillard@jvillard.net>,0,1,0.0,[]
+Salman Muin Kayser Chishti <13schishti@gmail.com>,1,0,22.0,"['.github/workflows/deploy.yml', 'website/checkers.json', 'docker/master-java/Dockerfile', 'infer/config/taint/objc/NSLib/NSString_taintconfig.json', 'website/versioned_sidebars/version-1.2.0-sidebars.json', 'website/versions.json', 'dependencies/charon/.github/workflows/ci.yml', 'website/versioned_sidebars/version-1.1.0-sidebars.json', 'website/package.json', 'docker/master/Dockerfile', 'infer/config/taint/objc/NSLib/NSSet_taintconfig.json', 'website/.prettierrc.json', '.github/workflows/devsetup.yml', '.github/workflows/install.yml', 'docker/1.2.0/Dockerfile', 'dependencies/charon/.github/workflows/doc.yml', 'infer/config/taint/objc/NSLib/NSDictionary_taintconfig.json', 'infer/config/taint/objc/NSLib/NSArray_taintconfig.json', 'dependencies/charon/.github/workflows/weekly.yml', 'docker/1.1.0/Dockerfile', 'dependencies/charon/charon/macros/Cargo.toml', 'dependencies/charon/charon/Cargo.toml']"
+Nemo Xiong <nemo@anzupop.com>,0,1,0.0,[]
+Fabio Porcedda <fabio.porcedda@gmail.com>,0,1,0.0,[]

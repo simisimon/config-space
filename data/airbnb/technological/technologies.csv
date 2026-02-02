@@ -1,0 +1,27 @@
+project,technologies
+javascript_latest,"['github-action', 'markdownlint', 'npm']"
+lottie-ios_latest,"['github', 'github funding', 'github-action', 'npm', 'yaml']"
+visx_latest,"['eslint', 'github-action', 'json', 'lerna', 'npm', 'tsconfig', 'vercel', 'yarn']"
+billow_latest,['maven']
+MagazineLayout_latest,"['github-action', 'json', 'travis']"
+epoxy-ios_latest,"['github', 'github-action', 'json', 'yaml']"
+eslint-plugin-miniprogram_latest,"['github-action', 'npm', 'travis', 'tsconfig']"
+chronon_latest,"['circleci', 'configparser', 'docker', 'docker-compose', 'json', 'log4j', 'pre-commit', 'tox']"
+omniduct_latest,"['github-action', 'poetry', 'yaml']"
+mavericks_latest,"['android', 'configparser', 'github-action', 'gradle', 'gradle-wrapper', 'json', 'toml', 'yaml']"
+lottie-spm_latest,"['github', 'github-action', 'json']"
+lottie-android_latest,"['android', 'configparser', 'github funding', 'github-action', 'gradle', 'gradle-wrapper', 'json', 'toml']"
+HorizonCalendar_latest,"['github-action', 'json']"
+epoxy_latest,"['android', 'gradle', 'gradle-wrapper', 'json']"
+ruby_latest,"['github-action', 'rubocop', 'yaml']"
+DeepLinkDispatch_latest,"['android', 'github-action', 'gradle', 'gradle-wrapper']"
+ResilientDecoding_latest,['github-action']
+rudolph_latest,['json']
+Showkase_latest,"['android', 'github-action', 'gradle', 'gradle-wrapper', 'yaml']"
+paris_latest,"['android', 'gradle', 'gradle-wrapper']"
+goji-js_latest,"['crowdin', 'github-action', 'json', 'npm', 'tsconfig', 'yaml']"
+viaduct_latest,"['configparser', 'github', 'github-action', 'gradle', 'gradle-wrapper', 'spring', 'toml', 'yaml']"
+swift_latest,"['ansible-playbook', 'github', 'github-action', 'jekyll', 'yaml']"
+labelbox-custom-ui_latest,"['nodejs', 'npm']"
+lottie_latest,"['github funding', 'vscode']"
+aerosolve_latest,"['gradle', 'gradle-wrapper', 'log4j', 'travis']"

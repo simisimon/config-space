@@ -25,17 +25,17 @@ The script analyzes configuration option-value pairs across projects that use a 
 
 ```
 Input: Project JSON files + Technology name
-       “
+       
 1. Extract configuration option=value pairs for the technology
-       “
-2. Build binary matrix: projects × configuration pairs
-       “
+       
+2. Build binary matrix: projects Ã— configuration pairs
+       
 3. Compute Jaccard distance between projects
-       “
+       
 4. Run clustering algorithm with automatic parameter sweep
-       “
+       
 5. Identify configuration archetypes
-       “
+       
 Output: Cluster assignments, summaries, visualizations
 ```
 
@@ -258,7 +258,7 @@ All outputs saved to `../data/project_clustering_technology/` with technology-sp
 ### Data Files
 
 1. **`{technology}_config_matrix_{method}.csv`**
-   Binary project × configuration pairs matrix
+   Binary project ï¿½ configuration pairs matrix
    - Rows: projects
    - Columns: option=value pairs (e.g., "scripts=test", "private=true")
    - Values: 1 if project has pair, 0 otherwise
@@ -369,7 +369,7 @@ min_cluster_size,silhouette_score,n_clusters,n_noise
 ### Heatmap
 
 - **Hot (bright) cells**: Defining configurations for an archetype
-  - Example: Cluster 0 has 90% usage of "private=false" ’ likely library packages
+  - Example: Cluster 0 has 90% usage of "private=false" ï¿½ likely library packages
 - **Cold (dark) cells**: Rare or absent configurations
 - **Row patterns**: Configuration signature of each archetype
 - **Column patterns**: Options spanning multiple archetypes (common practices)
@@ -618,9 +618,9 @@ print(sweep.nlargest(5, 'silhouette_score'))
 - Gradual score changes (smooth curve)
 
 **Warning signs:**
-- Flat scores (all similar) ’ data may not cluster well
-- Score at boundary of range ’ expand range
-- Very low scores (<0.1) ’ clusters not well-separated
+- Flat scores (all similar) ï¿½ data may not cluster well
+- Score at boundary of range ï¿½ expand range
+- Very low scores (<0.1) ï¿½ clusters not well-separated
 
 ## Comparison with Technology Stack Clustering
 

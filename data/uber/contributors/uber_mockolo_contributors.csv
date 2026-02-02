@@ -1,0 +1,52 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+elsh <ellie@uber.com>,3,31,1.0,['.travis.yml']
+ellie <ellie@uber.com>,6,121,1.0,['.travis.yml']
+Ellie Shin <ellie@uber.com>,7,151,1.0,['.travis.yml']
+Rudro Samanta <rudro@uber.com>,0,3,0.0,[]
+Richard Howell <richardh@uber.com>,1,5,1.0,['.travis.yml']
+Alessandro Patti <apatti@uber.com>,0,3,0.0,[]
+Nonchalant <afrontier829@gmail.com>,0,1,0.0,[]
+Maxwell Elliott <elliott.432@buckeyemail.osu.edu>,0,8,0.0,[]
+Marcin Iwanicki <iwan@icode.pl>,0,2,0.0,[]
+Akio Yasui <yasui_akio@abema.tv>,0,5,0.0,[]
+andooown <andooown.dev@gmail.com>,0,28,0.0,[]
+Maxwell Elliott <maxwell.elliott@gotinder.com>,0,14,0.0,[]
+ildar sibagatov <siggb@yandex.com>,0,1,0.0,[]
+Jim Jagielski <jimjag@gmail.com>,0,1,0.0,[]
+Peter Tolsma <pejato@umich.edu>,0,3,0.0,[]
+shindyu <shindyu.dev@gmail.com>,0,1,0.0,[]
+Florian Fittschen <ffittschen@gmail.com>,0,6,0.0,[]
+Sho Ikeda <suicaicoca@gmail.com>,1,2,2.0,"['.github/workflows/builds.yml', '.github/workflows/release.yml']"
+unicov <3035992+unicov@users.noreply.github.com>,0,2,0.0,[]
+unicov <port9753@gmail.com>,2,5,1.5,"['.github/workflows/builds.yml', '.travis.yml']"
+EspressoCup <39891581+EspressoCup@users.noreply.github.com>,5,23,1.0,['.github/workflows/builds.yml']
+uhooi <the_uhooi@yahoo.co.jp>,15,24,1.4,"['.github/workflows/builds.yml', '.github/workflows/release.yml']"
+Luke Miletta <lmiletta@esri.com>,0,1,0.0,[]
+Luke Miletta <lukemiletta@gmail.com>,0,6,0.0,[]
+milettal <32145791+milettal@users.noreply.github.com>,0,1,0.0,[]
+ryogabarbie <ryoga1226@gmail.com>,0,1,0.0,[]
+nk-5 <nkws27@gmail.com>,0,1,0.0,[]
+kenta okamura <okamura@qoncept.co.jp>,0,3,0.0,[]
+yutailang0119 <yutailang0119@gmail.com>,0,3,0.0,[]
+Keigo Masuzumi <keigo.masuzumi@gree.net>,2,3,1.0,['.github/workflows/builds.yml']
+maiyama <myam0118@gmail.com>,0,4,0.0,[]
+Matthew Mourlam <matthew.mourlam@gotinder.com>,0,1,0.0,[]
+fummicc1 <fumiya.tennis1@gmail.com>,1,23,2.0,"['.github/workflows/builds.yml', '.github/workflows/release.yml']"
+Pablo Cornejo <pcornejo@icloud.com>,0,8,0.0,[]
+Iceman <okamura@qoncept.co.jp>,10,23,2.4,"['.github/workflows/builds.yml', 'bundle/info-macos.json', 'bundle/info.json', '.github/workflows/release.yml']"
+Ian Leitch <ian@leitch.io>,0,2,0.0,[]
+Fumiya Tanaka <fumiya.tennis1@gmail.com>,1,6,4.0,"['.github/workflows/builds.yml', 'bundle/info-macos.json', 'bundle/info.json', '.github/workflows/release.yml']"
+Iceman <side.junktown@gmail.com>,9,25,3.33,"['.github/workflows/builds.yml', 'bundle/info.json', 'bundle/info-macos.json', '.github/workflows/release.yml']"
+kenta okamura <side.junktown@gmail.com>,0,1,0.0,[]
+Fumiya Tanaka <fumiya989@gmail.com>,0,3,0.0,[]
+woxtu <woxtup@gmail.com>,0,3,0.0,[]
+Ryan Aveo <raveo@uber.com>,0,4,0.0,[]
+Ryan Aveo <ryan.aveo@gmail.com>,0,1,0.0,[]
+Alan Zeino <alanz@uber.com>,0,1,0.0,[]
+Kabir Khan <kabir.khan@sixt.com>,0,1,0.0,[]
+Niitsuma Hiroyasu <40600280+nhiroyasu@users.noreply.github.com>,0,1,0.0,[]
+Omar Zúñiga <omarzl@hotmail.es>,0,1,0.0,[]
+Daeho Ro <lamanus@outlook.kr>,0,1,0.0,[]
+fxwx23 <fxwx23@gmail.com>,1,0,4.0,"['.github/workflows/builds.yml', 'bundle/info-macos.json', 'bundle/info.json', '.github/workflows/release.yml']"
+Brad Walker <bradwalks@gmail.com>,0,1,0.0,[]
+Roshan Kumar Sah <roshankumar350@gmail.com>,1,1,4.0,"['.github/workflows/builds.yml', 'bundle/info-macos.json', 'bundle/info.json', '.github/workflows/release.yml']"

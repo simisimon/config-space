@@ -1,0 +1,16 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Isaac Brodsky <isaac@uber.com>,67,66,3.3,"['.appveyor.yml', 'h3version.properties', 'pom.xml', '.travis.yml']"
+Isaac Brodsky <isaacbrodsky@users.noreply.github.com>,5,3,2.2,"['h3version.properties', 'pom.xml', '.travis.yml']"
+David Ellis <isv.damocles@gmail.com>,0,1,0.0,[]
+Isaac Brodsky <9139378+isaacbrodsky@users.noreply.github.com>,1,3,3.0,"['h3version.properties', 'pom.xml', '.travis.yml']"
+Isaac Brodsky <isaac@isaacbrodsky.com>,64,35,5.08,"['src/main/resources/META-INF/native-image/com.uber/h3/jni-config.json', 'h3version.properties', '.github/workflows/release.yml', '.travis.yml', '.appveyor.yml', 'gradle/libs.versions.toml', '.github/workflows/slack-alert.yml', 'src/main/resources/META-INF/native-image/com.uber/h3/resource-config.json', '.github/workflows/website.yml', 'gradle.properties', 'pom.xml', 'gradle/wrapper/gradle-wrapper.properties']"
+Will Cohen <willcohen@users.noreply.github.com>,1,0,4.0,"['.appveyor.yml', 'h3version.properties', 'pom.xml', '.travis.yml']"
+Nick Rabinowitz <nickr@uber.com>,1,0,4.0,"['.appveyor.yml', 'h3version.properties', 'pom.xml', '.travis.yml']"
+Guocheng Xie <xie@uber.com>,8,5,4.0,"['.appveyor.yml', 'h3version.properties', 'pom.xml', '.travis.yml']"
+Guocheng Xie <boyxgc@users.noreply.github.com>,0,5,0.0,[]
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,4,0,3.75,"['h3version.properties', '.travis.yml', '.appveyor.yml', '.github/workflows/website.yml', 'pom.xml']"
+Isaac Brodsky <isaac@unfolded.ai>,44,18,3.07,"['h3version.properties', '.travis.yml', '.appveyor.yml', '.github/workflows/website.yml', 'pom.xml']"
+Donald Clark Jackson <dcj@clark-communications.com>,0,1,0.0,[]
+Tanapol Nearunchorn <tanapol.sh@gmail.com>,0,1,0.0,[]
+Lucas Rogerio Caetano Ferreira <luneo7@users.noreply.github.com>,5,1,4.8,"['src/main/resources/META-INF/native-image/com.uber/h3/jni-config.json', 'h3version.properties', '.github/workflows/slack-alert.yml', 'src/main/resources/META-INF/native-image/com.uber/h3/resource-config.json', '.github/workflows/website.yml', 'pom.xml']"
+George Polak <george.polak@gmail.com>,1,0,9.0,"['src/main/resources/META-INF/native-image/com.uber/h3/jni-config.json', 'h3version.properties', '.github/workflows/release.yml', 'gradle/libs.versions.toml', '.github/workflows/slack-alert.yml', 'src/main/resources/META-INF/native-image/com.uber/h3/resource-config.json', '.github/workflows/website.yml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"

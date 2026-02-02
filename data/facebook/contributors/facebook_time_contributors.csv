@@ -1,0 +1,63 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Oleg Obleukhov <leoleovich@fb.com>,14,132,3.29,"['.packit.yaml', '.circleci/config.yml', '.golangci.yml', '.github/config.json', '.github/workflows/lint.yml', '.github/workflows/cifuzz.yml', '.circleci/config.json', '.github/workflows/config.json']"
+Facebook Community Bot <facebook-github-bot@users.noreply.github.com>,0,2,0.0,[]
+Oleg Obleukhov <leoleovich@users.noreply.github.com>,12,113,2.75,"['.packit.yaml', '.circleci/config.yml', '.github/config.json', '.github/workflows/lint.yml', '.circleci/config.json', '.github/workflows/config.json']"
+Andrea Barberio <insomniac@slackware.it>,3,1,2.0,"['.travis/config.json', '.circleci/config.yml', '.circleci/config.json', '.travis.yml']"
+insomniac <insomniacslk@users.noreply.github.com>,2,0,2.0,"['.travis/config.json', '.circleci/config.yml', '.circleci/config.json', '.travis.yml']"
+Alexander Bulimov <abulimov@fb.com>,22,151,2.86,"['.packit.yaml', '.circleci/config.yml', '.golangci.yml', '.github/config.json', '.github/workflows/lint.yml', '.circleci/config.json', '.github/workflows/config.json']"
+Pablo Mazzini <pmazzini@gmail.com>,10,45,3.5,"['.packit.yaml', '.circleci/config.yml', '.github/config.json', '.github/workflows/lint.yml', '.circleci/config.json', '.github/workflows/config.json']"
+Yaroslav Kolomiiets <yarikos@gmail.com>,0,1,0.0,[]
+VladMihailescu <vtmihailescu@gmail.com>,1,0,2.0,"['.circleci/config.yml', '.circleci/config.json']"
+Jonathan Rockway <2367+jrockway@users.noreply.github.com>,0,1,0.0,[]
+Vadim Fedorenko <vadfed@fb.com>,0,9,0.0,[]
+Max Finney <mfinney@fb.com>,0,1,0.0,[]
+leozz37 <leonardoaugusto287@gmail.com>,0,1,0.0,[]
+Jonathan McDowell <noodles@fb.com>,0,1,0.0,[]
+vvfedorenko <77576009+vvfedorenko@users.noreply.github.com>,4,19,4.0,"['.packit.yaml', '.circleci/config.yml', '.circleci/config.json', '.github/workflows/lint.yml']"
+t3lurid3 <pcullen@fb.com>,0,7,0.0,[]
+Davide Cavalca <dcavalca@fb.com>,3,0,3.0,"['.packit.yaml', '.circleci/config.yml', '.github/workflows/lint.yml', '.circleci/config.json', '.github/workflows/config.json']"
+Daniel Schömer <quatauta@users.noreply.github.com>,0,2,0.0,[]
+ilyam8 <ilya@netdata.cloud>,0,1,0.0,[]
+Anastasiia Onipko <nastiia@fb.com>,0,1,0.0,[]
+Cihangir Savas <cihangir@fb.com>,0,2,0.0,[]
+Vadim Fedorenko <vadfed@meta.com>,2,94,5.0,"['.packit.yaml', '.golangci.yml', '.github/workflows/lint.yml', '.github/workflows/cifuzz.yml', '.github/workflows/config.json']"
+Josh Soref <2119212+jsoref@users.noreply.github.com>,0,2,0.0,[]
+Csergő Bálint <death0wl@meta.com>,1,2,4.0,"['.packit.yaml', '.github/workflows/lint.yml', '.github/workflows/config.json', '.golangci.yml']"
+Davide Cavalca <dcavalca@meta.com>,6,0,4.0,"['.packit.yaml', '.github/workflows/lint.yml', '.github/workflows/config.json', '.golangci.yml']"
+Balint Csergo <deathowlzz@gmail.com>,0,10,0.0,[]
+Balint Csergo <death0wl@meta.com>,0,9,0.0,[]
+Oleg Obleukhov <leoleovich@meta.com>,3,150,4.33,"['.packit.yaml', '.golangci.yml', '.github/workflows/lint.yml', '.github/workflows/cifuzz.yml', '.github/workflows/config.json']"
+Patrick Cullen <pcullen@meta.com>,0,30,0.0,[]
+Alexander Bulimov <abulimov@meta.com>,2,59,4.0,"['.packit.yaml', '.github/workflows/lint.yml', '.github/workflows/config.json', '.golangci.yml']"
+Piotr Gabryjeluk <gabrys@meta.com>,0,1,0.0,[]
+Facebook Community Bot <6422482+facebook-github-bot@users.noreply.github.com>,0,1,0.0,[]
+Yaroslav Kolomiiets <yrk@meta.com>,1,22,5.0,"['.packit.yaml', '.golangci.yml', '.github/workflows/lint.yml', '.github/workflows/cifuzz.yml', '.github/workflows/config.json']"
+Iqbal Hossain <iqbal@meta.com>,0,1,0.0,[]
+Dalton Bell <daltonbell@meta.com>,0,1,0.0,[]
+Anuragkillswitch <70265851+Anuragkillswitch@users.noreply.github.com>,0,1,0.0,[]
+Arjun Singh <ajsinghyadav00@gmail.com>,1,1,5.0,"['.packit.yaml', '.golangci.yml', '.github/workflows/lint.yml', '.github/workflows/cifuzz.yml', '.github/workflows/config.json']"
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,0,2,0.0,[]
+Pablo Mazzini <pmazzini@meta.com>,0,4,0.0,[]
+Jesson Yo <jessonyo@meta.com>,0,3,0.0,[]
+Michel Lind <michel@meta.com>,1,0,5.0,"['.packit.yaml', '.golangci.yml', '.github/workflows/lint.yml', '.github/workflows/cifuzz.yml', '.github/workflows/config.json']"
+Greg Daniel <gee@meta.com>,0,4,0.0,[]
+Richard Barnes <rbarnes@meta.com>,0,1,0.0,[]
+Deep Shah <deepshah@meta.com>,0,2,0.0,[]
+Cristiano Ruschel Marques Dias <crmdias@meta.com>,0,36,0.0,[]
+Raphael Seebacher <raphael@seebachers.ch>,0,1,0.0,[]
+deathowl <deathowlzz@deathowlsnest.com>,0,1,0.0,[]
+PDeanCalnex <phil.dean@calnexsol.com>,0,4,0.0,[]
+generatedunixname89002005279527 <generatedunixname89002005279527@meta.com>,0,1,0.0,[]
+Jack Chistyakov <jchistyakov@meta.com>,0,3,0.0,[]
+generatedunixname89002005287564 <generatedunixname89002005287564@meta.com>,0,3,0.0,[]
+Oittaa <eero@oittaa.net>,0,4,0.0,[]
+generatedunixname537391475639613 <noreply+537391475639613@fb.com>,0,16,0.0,[]
+skartikey <1942366+skartikey@users.noreply.github.com>,0,1,0.0,[]
+generatedunixname89002005320881 <generatedunixname89002005320881@meta.com>,0,2,0.0,[]
+generatedunixname89002005232357 <generatedunixname89002005232357@meta.com>,0,2,0.0,[]
+Meher C <meherrushi@meta.com>,3,1,5.0,"['.packit.yaml', '.golangci.yml', '.github/workflows/lint.yml', '.github/workflows/cifuzz.yml', '.github/workflows/config.json']"
+Vova Kharytonov <kharytov@meta.com>,0,1,0.0,[]
+Michael Podtserkovskii <michaelpo@meta.com>,0,1,0.0,[]
+Inomjon Muidinov <inom@meta.com>,0,1,0.0,[]
+Simon Li <simonsli@meta.com>,0,2,0.0,[]
+Vladimir Sukhonosov <xornet@meta.com>,0,1,0.0,[]

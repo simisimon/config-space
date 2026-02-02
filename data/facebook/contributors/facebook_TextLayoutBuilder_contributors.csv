@@ -1,0 +1,44 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Sriram Ramasubramanian <sriramramani@fb.com>,6,2,4.33,"['library/src/main/AndroidManifest.xml', 'library/libs/proxy/gradle.properties', 'sample/src/main/AndroidManifest.xml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Ahmed El-Helw <ahmedre@fb.com>,0,2,0.0,[]
+Benjamin Jaeger <bjaeger@fb.com>,0,1,0.0,[]
+Aziz Murtazaev <aziz@fb.com>,1,2,5.0,"['library/src/main/AndroidManifest.xml', 'library/libs/proxy/gradle.properties', 'sample/src/main/AndroidManifest.xml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Omer Strulovich <ostrulovich@fb.com>,0,1,0.0,[]
+Hilal Alsibai <halsibai@fb.com>,13,28,4.92,"['library/src/main/AndroidManifest.xml', 'library/libs/proxy/gradle.properties', 'sample/src/main/AndroidManifest.xml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Sriram Ramasubramanian <sriram.incredible@gmail.com>,1,3,5.0,"['library/src/main/AndroidManifest.xml', 'library/libs/proxy/gradle.properties', 'sample/src/main/AndroidManifest.xml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Hilal Alsibai <xiphirx@users.noreply.github.com>,2,1,5.0,"['library/src/main/AndroidManifest.xml', 'library/libs/proxy/gradle.properties', 'sample/src/main/AndroidManifest.xml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Corey Wu <coreywu@fb.com>,0,1,0.0,[]
+Seth Kirby <kid@fb.com>,0,1,0.0,[]
+Pascal Hartig <realpassy@fb.com>,1,0,5.0,"['library/src/main/AndroidManifest.xml', 'library/libs/proxy/gradle.properties', 'sample/src/main/AndroidManifest.xml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Abhilash Mishra <n.arrow001@gmail.com>,0,1,0.0,[]
+Dan Yang <dsyang@fb.com>,0,1,0.0,[]
+Rajath Moodithaya <rajath@fb.com>,0,1,0.0,[]
+infer <infer@fb.com>,0,1,0.0,[]
+Ron Edelstein <rone@fb.com>,0,2,0.0,[]
+Paul O'Shannessy <poshannessy@fb.com>,0,1,0.0,[]
+Andres Suarez <asuarez@fb.com>,2,0,5.0,"['library/src/main/AndroidManifest.xml', 'library/libs/proxy/gradle.properties', 'sample/src/main/AndroidManifest.xml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Joshua Selbo <jselbo@fb.com>,0,1,0.0,[]
+Brian Rosenfeld <brosenfeld@fb.com>,0,1,0.0,[]
+Andy Street <andrews@fb.com>,0,1,0.0,[]
+Sahil Jain <sahilj@fb.com>,0,2,0.0,[]
+Riley Dulin <dulinr@fb.com>,0,1,0.0,[]
+Ian Childs <ianc@fb.com>,0,1,0.0,[]
+Jorge Aguilar Diaz <joragu@fb.com>,0,1,0.0,[]
+dmitryvinn <dmitryvinn@gmail.com>,0,1,0.0,[]
+Carmi Grushko <carmi@fb.com>,0,1,0.0,[]
+Michal Karpinski <mkarpinski@meta.com>,2,2,5.0,"['library/src/main/AndroidManifest.xml', 'library/libs/proxy/gradle.properties', 'sample/src/main/AndroidManifest.xml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Joshua Selbo <jselbo@meta.com>,1,1,5.0,"['library/src/main/AndroidManifest.xml', 'library/libs/proxy/gradle.properties', 'sample/src/main/AndroidManifest.xml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Fabio Carballo <fabiocarballo@meta.com>,0,1,0.0,[]
+Ian Childs <ianc@meta.com>,0,1,0.0,[]
+Jeff Bahr <jbahr@meta.com>,0,1,0.0,[]
+generatedunixname89002005287564 <generatedunixname89002005287564@meta.com>,0,13,0.0,[]
+Philip Corriveau <pcorriveau@meta.com>,0,1,0.0,[]
+generatedunixname89002005232357 <generatedunixname89002005232357@meta.com>,0,1,0.0,[]
+Andy Street <andrews@meta.com>,0,1,0.0,[]
+generatedunixname537391475639613 <noreply+537391475639613@fb.com>,1,6,5.0,"['library/src/main/AndroidManifest.xml', 'library/libs/proxy/gradle.properties', 'sample/src/main/AndroidManifest.xml', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties']"
+Sebastian Barroso <sebarroso@meta.com>,0,1,0.0,[]
+Nivaldo Bondança <nbondanca@meta.com>,0,2,0.0,[]
+Harsh Guraya <gurayah@meta.com>,0,2,0.0,[]
+Anthony Liu <antliu@meta.com>,0,5,0.0,[]
+Ushana Goyal <ushanakg@meta.com>,0,8,0.0,[]
+Ofek Kasif <ofekkasif@meta.com>,0,3,0.0,[]

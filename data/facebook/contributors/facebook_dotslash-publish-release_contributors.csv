@@ -1,0 +1,6 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Michael Bolin <mbolin@meta.com>,1,1,2.0,"['action.yml', 'Dockerfile']"
+Jon Janzen <jonjanzen@meta.com>,0,3,0.0,[]
+Michael Bolin <bolinfest@gmail.com>,0,2,0.0,[]
+David Tolnay <dtolnay@gmail.com>,0,1,0.0,[]
+prathish D <harinifk@gmail.com>,1,0,2.0,"['action.yml', 'Dockerfile']"

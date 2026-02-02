@@ -155,51 +155,55 @@ def load_project_configs(data_dir: str, technology: str) -> pd.DataFrame:
     return df
 
 
-def build_configuration_matrix(df: pd.DataFrame, min_option_frequency: int = 2) -> tuple:
+def build_configuration_matrix(df: pd.DataFrame, min_option_frequency: int = 2,
+                               feature_mode: str = "option_value") -> tuple:
     """
     Build a project � configuration option binary matrix.
 
-    min_option_frequency: drop options that appear in fewer than this number of projects
+    min_option_frequency: drop features that appear in fewer than this number of projects
+    feature_mode: "option_value" uses option=value pairs as features,
+                  "option_only" uses option names only (ignoring values)
     """
-    # Collect all option=value pairs across all projects
-    all_option_value_pairs = Counter()
+    feature_counts = Counter()
 
     for config_options in df["config_options"]:
         for option, data in config_options.items():
-            values = data["values"]
-            # Each unique option=value combination is a feature
-            for value in values:
-                pair_key = f"{option}={value}"
-                all_option_value_pairs[pair_key] += 1
+            if feature_mode == "option_only":
+                feature_counts[option] += 1
+            else:
+                for value in data["values"]:
+                    feature_counts[f"{option}={value}"] += 1
 
-    # Keep only frequent option=value pairs
-    kept_pairs = sorted([
-        pair for pair, count in all_option_value_pairs.items()
+    kept_features = sorted([
+        f for f, count in feature_counts.items()
         if count >= min_option_frequency
     ])
 
-    print(f"Configuration matrix: {len(df)} projects x {len(kept_pairs)} option=value pairs "
+    feature_label = "options" if feature_mode == "option_only" else "option=value pairs"
+    print(f"Configuration matrix: {len(df)} projects x {len(kept_features)} {feature_label} "
           f"(min frequency >= {min_option_frequency})")
 
-    if len(kept_pairs) == 0:
+    if len(kept_features) == 0:
         raise ValueError(
-            f"No option=value pairs found with frequency >= {min_option_frequency}. "
+            f"No {feature_label} found with frequency >= {min_option_frequency}. "
             f"Try lowering --min-option-frequency"
         )
 
-    # Build binary matrix: 1 if project has this option=value pair, 0 otherwise
-    pair_index = {pair: i for i, pair in enumerate(kept_pairs)}
-    X = np.zeros((len(df), len(kept_pairs)), dtype=int)
+    feature_index = {f: i for i, f in enumerate(kept_features)}
+    X = np.zeros((len(df), len(kept_features)), dtype=int)
 
     for row_idx, config_options in enumerate(df["config_options"]):
         for option, data in config_options.items():
-            values = data["values"]
-            for value in values:
-                pair_key = f"{option}={value}"
-                if pair_key in pair_index:
-                    X[row_idx, pair_index[pair_key]] = 1
+            if feature_mode == "option_only":
+                if option in feature_index:
+                    X[row_idx, feature_index[option]] = 1
+            else:
+                for value in data["values"]:
+                    pair_key = f"{option}={value}"
+                    if pair_key in feature_index:
+                        X[row_idx, feature_index[pair_key]] = 1
 
-    return X, kept_pairs
+    return X, kept_features
 
 
 def compute_jaccard_distance(X: np.ndarray) -> np.ndarray:
@@ -645,6 +649,13 @@ def main():
         help="Minimum number of projects an option must appear in (default: 2)"
     )
     parser.add_argument(
+        "--feature-mode",
+        choices=["option_value", "option_only"],
+        default="option_value",
+        help="Feature type for clustering: 'option_value' uses option=value pairs, "
+             "'option_only' uses option names only, ignoring values (default: option_value)"
+    )
+    parser.add_argument(
         "--method",
         choices=["agglomerative", "hdbscan", "all"],
         default="agglomerative",
@@ -708,7 +719,8 @@ def main():
         return
 
     # Build configuration matrix
-    X, option_names = build_configuration_matrix(df, args.min_option_frequency)
+    X, option_names = build_configuration_matrix(df, args.min_option_frequency,
+                                                  args.feature_mode)
 
     # Compute distance matrix
     dist_matrix = compute_jaccard_distance(X)

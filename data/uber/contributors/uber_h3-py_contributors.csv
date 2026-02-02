@@ -1,0 +1,26 @@
+Contributor,Config Commits,Non-Config Commits,Avg Config Files Per Commit,Config Files
+Niel Hu <niel.hu@uber.com>,1,35,1.0,['.travis.yml']
+Isaac Brodsky <isaac@uber.com>,0,10,0.0,[]
+Isaac Brodsky <isaac@isaacbrodsky.com>,7,18,3.86,"['.github/workflows/deploy_docs.yml', '.github/workflows/wheels.yml', '.travis.yml', '.github/workflows/build_docs.yml', '.github/workflows/coverage-lint.yml', '.github/workflows/coverage-lint-pr.yml', '.github/workflows/lint_and_coverage.yml', 'appveyor.yml', 'pyproject.toml']"
+Niel Hu <10646097+TengHu@users.noreply.github.com>,0,16,0.0,[]
+David Ellis <isv.damocles@gmail.com>,0,9,0.0,[]
+Karl Rosaen <krosaen@gmail.com>,0,1,0.0,[]
+Sina Kashuk <kashuk@nyu.edu>,0,1,0.0,[]
+Nick Rabinowitz <public@nickrabinowitz.com>,0,3,0.0,[]
+William Chen <williamchen16@gmail.com>,0,1,0.0,[]
+William Chen <wwchen@users.noreply.github.com>,0,1,0.0,[]
+Taikun Liu <taikunliu4@gmail.com>,0,6,0.0,[]
+Matteo Nastasi <nastasi@openquake.org>,0,3,0.0,[]
+AJ Friend <ajfriend@gmail.com>,65,43,4.2,"['.github/workflows/deploy_docs.yml', '.github/workflows/ci-windows.yml', '.travis.yml', '.github/workflows/wheels.yml', '.github/workflows/build_docs.yml', '.github/workflows/ci-macos.yml', '.github/workflows/wheels-linux.yml', '.github/workflows/coverage-lint.yml', '.github/workflows/coverage-lint-pr.yml', '.github/workflows/lint_and_coverage.yml', '.github/workflows/wheels-windows.yml', '.github/workflows/wheels-mac.yml', 'appveyor.yml', 'pyproject.toml', 'tox.ini', '.github/workflows/ci-linux.yml']"
+Alejandro Hall <alejandrohall@users.noreply.github.com>,0,1,0.0,[]
+Kyle Barron <kylebarron2@gmail.com>,3,1,4.0,"['.github/workflows/deploy_docs.yml', '.github/workflows/wheels.yml', 'pyproject.toml', '.github/workflows/coverage-lint.yml']"
+Henry Schreiner <HenrySchreinerIII@gmail.com>,3,0,3.0,"['.github/workflows/wheels.yml', 'pyproject.toml', '.github/workflows/coverage-lint.yml']"
+Kyle Barron <kbarron@foursquare.com>,7,2,4.0,"['.github/workflows/deploy_docs.yml', '.github/workflows/wheels.yml', 'pyproject.toml', '.github/workflows/coverage-lint.yml']"
+SADIK KUZU <sadikkuzu@hotmail.com>,0,1,0.0,[]
+Tim Süll <t.suellner@web.de>,1,0,4.0,"['.github/workflows/deploy_docs.yml', '.github/workflows/wheels.yml', 'pyproject.toml', '.github/workflows/coverage-lint.yml']"
+Pieter Provoost <pieterprovoost@gmail.com>,0,1,0.0,[]
+Shiran Yuan <shiran.yuan@outlook.com>,0,1,0.0,[]
+dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,2,0,4.0,"['.github/workflows/wheels.yml', '.github/workflows/build_docs.yml', '.github/workflows/coverage-lint.yml', '.github/workflows/lint_and_coverage.yml', 'pyproject.toml']"
+Jongbin Jung <jungjongbin86@gmail.com>,1,2,5.0,"['.github/workflows/wheels.yml', '.github/workflows/build_docs.yml', '.github/workflows/coverage-lint.yml', '.github/workflows/coverage-lint-pr.yml', 'pyproject.toml']"
+Sukhdeep Gill <sgilldev@gmail.com>,0,1,0.0,[]
+newyork_loki <137760120+lowkeyrossi@users.noreply.github.com>,1,0,4.0,"['.github/workflows/lint_and_coverage.yml', '.github/workflows/build_docs.yml', 'pyproject.toml', '.github/workflows/wheels.yml']"
