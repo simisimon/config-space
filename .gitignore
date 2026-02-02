@@ -28,6 +28,8 @@ analysis.log
 **/data/google/latest_commit/*
 **/data/spotify/latest_commit/*
 **/data/airbnb/latest_commit/*
+**/data/microsoft/latest_commit/*
+
 
 **/data/netflix/projects/*
 **/data/uber/projects/*
@@ -36,6 +38,7 @@ analysis.log
 **/data/google/projects/*
 **/data/spotify/projects/*
 **/data/airbnb/projects/*
+**/data/microsoft/projects/*
 
 **/slurm/netflix/*
 **/slurm/uber/*
@@ -44,3 +47,13 @@ analysis.log
 **/slurm/google/*
 **/slurm/spotify/*
 **/slurm/airbnb/*
+**/slurm/microsoft/*
+
+**/data/netflix/actions/*
+**/data/uber/actions/*
+**/data/disney/actions/*
+**/data/facebook/actions/*
+**/data/google/actions/*
+**/data/spotify/actions/*
+**/data/airbnb/actions/*
+**/data/microsoft/actions/*
